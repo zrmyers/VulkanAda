@@ -22,9 +22,17 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
+with GLFW.Windows;
 
 procedure Vulkan_Test.Environment is
+
 begin
-   Ada.Text_IO.Put_Line("Hello World");
+    Ada.Text_IO.Put_Line("Initializing Windows");
+   
+   -- Initialize GLFW
+    GLFW.Init;
+   
+    
+   
 end Vulkan_Test.Environment;
 
