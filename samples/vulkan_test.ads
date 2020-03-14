@@ -21,14 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with "opengl-glfw";
-with "vulkan";
+package Vulkan_Test is
 
-project Vulkan.Test is
-
-    for Languages use ("ada");     
-    for Object_Dir use "obj";
-    for Exec_Dir use "bin";
-    for Source_Dirs use ("samples/");   
-    for Main use ("vulkan_test-environment.adb");
-end Vulkan.Test;
+end Vulkan_Test;
