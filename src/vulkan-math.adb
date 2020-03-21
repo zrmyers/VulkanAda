@@ -21,7 +21,33 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-package Vulkan is
-    pragma Preelaborate;
-    pragma Pure;
-end Vulkan;
+--
+-- This package proveds math types that can be used to interface with variables
+-- that are input or output from shaders via Vulkan.
+--------------------------------------------------------------------------------
+
+package body Vulkan.Math is
+
+    ----------------------------------------------------------------------------
+    -- Definitions for Scalar Boolean Operations
+    ----------------------------------------------------------------------------
+    -- Same as 'not'
+    function "-" (Right : Vkm_Bool) return Vkm_Bool is
+    begin
+        return not Right;
+    end "-";
+
+    -- Identity
+    function "+" (Right : Vkm_Bool) return Vkm_Bool is
+    begin
+        return Right;
+    end "+";
+
+    -- Same as 'and'
+    function "*" (Left, Right : Vkm_Bool) return Vkm_Bool is
+    begin
+        return Left and Right;
+    end "*";
+
+
+end Vulkan.Math;

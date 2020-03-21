@@ -21,7 +21,22 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-package Vulkan is
+generic
+
+    -- The type of component that makes up the vector. This can be either a 
+    -- floating point or a discrete type.
+    type Primitive_Type is private;
+    
+    -- The components that make up the vector.
+    type Components is (<>);
+
+package Vulkan.Math.Vectors is
     pragma Preelaborate;
-    pragma Pure;
-end Vulkan;
+    
+    type Vector is array (Components) of aliased Primitive_Type;
+    pragma Convention
+               (Convention => C,
+                Entity     => Vector);
+                      
+    
+end Vulkan.Math.Vectors;

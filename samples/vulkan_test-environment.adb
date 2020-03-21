@@ -22,17 +22,59 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
-with GLFW.Windows;
+With Glfw;
+with Vulkan;
 
 procedure Vulkan_Test.Environment is
 
+    hints : Glfw.Record_Window_Hints := (
+        Client_Api => Glfw.NO_API,
+        others     => <>);
+        
+    window_handle : Glfw.Glfw_Window := Glfw.No_Window;
+    
 begin
-    Ada.Text_IO.Put_Line("Initializing Windows");
+    Ada.Text_IO.Put_Line("Initializing Window System");
    
    -- Initialize GLFW
-    GLFW.Init;
+    GLFW.Platform_Init;
    
+    -- Initialize Window
+    GLFW.Window_Set_Hints(hints => hints);
+   
+    window_handle := Glfw.Window_Create(
+        width  => 1024,
+        height => 768,
+        title  => "Hello Vulkan!");
+        
+    -- Main Loop
+    loop 
     
+        ------------------------------------------------------------------------
+        -- This loop will run forever until the user closes the window or some
+        -- kind of exception occurs, which causes the program to begin handling
+        -- the exception.
+        ------------------------------------------------------------------------
+        pragma Warnings (Off, "variable ""window_handle"" is not modified in loop body");
+        pragma Warnings (Off, "possible infinite loop");
+        
+        exit when Glfw.Window_Should_Close(window_handle => window_handle);
+        
+        pragma Warnings (On, "variable ""window_handle"" is not modified in loop body");
+        pragma Warnings (On, "possible infinite loop");
+        
+        -- Poll for Glfw events
+        Glfw.Platform_Process_Events;
+    end loop;
+   
+    Ada.Text_IO.Put_Line("Destroying Window");
+   
+    Glfw.Window_Destroy(window_handle => window_handle);
+   
+    Ada.Text_IO.Put_Line("Shutting Down GLFW");
+    
+    -- Shut down the GLFW instance
+    Glfw.Platform_Shutdown;
    
 end Vulkan_Test.Environment;
 
