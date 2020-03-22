@@ -27,12 +27,19 @@
 --
 with Interfaces.C;
 
+--------------------------------------------------------------------------------
+-- The purpose for this math library is to provide a substitue for the GLM C
+-- library for using Vulkan in the Ada Programming language.  Each of the basic
+-- types described in the GLSL specification are implemented and tested using
+-- native Ada Types.
+--------------------------------------------------------------------------------
 package Vulkan.Math is
     pragma Preelaborate;
     pragma Pure;
     
     -- A conditional type taking on values of true or false.
-    type Vkm_Bool is new Boolean;
+    type Vkm_Bool is new Boolean
+    with Default_Value => False;
     for Vkm_Bool use (
         false => 0,
         true  => 1

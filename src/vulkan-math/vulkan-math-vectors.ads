@@ -22,21 +22,14 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 generic
-
-    -- The type of component that makes up the vector. This can be either a 
-    -- floating point or a discrete type.
-    type Primitive_Type is private;
-    
-    -- The components that make up the vector.
-    type Components is (<>);
-
+    type Basic_Type is private;
+    type Indices is (<>);
 package Vulkan.Math.Vectors is
     pragma Preelaborate;
+    pragma Pure;
     
-    type Vector is array (Components) of aliased Primitive_Type;
-    pragma Convention
-               (Convention => C,
-                Entity     => Vector);
-                      
-    
+    type Vec is array (Indices) of aliased Basic_Type;
+    pragma Convention (Convention => C,
+                       Entity     => Vec);
+                       
 end Vulkan.Math.Vectors;

@@ -37,12 +37,8 @@ procedure Vulkan_Test.Math is
 
     --------------------------------------------------------------------------------
     -- @brief
-    -- This operations tests the "and","or","xor","not", "=", and "/=" operators for the
-    -- following Vkm types:
-    --     Vkm_Bool
-    --     Vkm_Bvec2
-    --     Vkm_Bvec3
-    --     Vkm_Bvec4
+    -- This operations tests the "and"(*),"or" (+),"not" (-), "xor" (/)
+    --
     -- The Image operation is used to display results.
     --------------------------------------------------------------------------------
     procedure Vulkan_Test_Bool is
@@ -145,7 +141,7 @@ procedure Vulkan_Test.Math is
         end if;
 
         ------------------------------------------------------------------------
-        -- Part 1: 1 'and' 0 = 0
+        -- Part 2: 1 'and' 0 = 0
         --         1   '*' 0 = 0
         ------------------------------------------------------------------------
         test_scalar_1 := True;
@@ -175,7 +171,7 @@ procedure Vulkan_Test.Math is
         end if;
 
         ------------------------------------------------------------------------
-        -- Part 1: 0 'and' 1 = 0
+        -- Part 3: 0 'and' 1 = 0
         --         0   '*' 1 = 0
         ------------------------------------------------------------------------
         test_scalar_1 := False;
@@ -205,7 +201,7 @@ procedure Vulkan_Test.Math is
         end if;
 
         ------------------------------------------------------------------------
-        -- Part 1: 1 'and' 1 = 0
+        -- Part 4: 1 'and' 1 = 0
         --         1   '*' 1 = 0
         ------------------------------------------------------------------------
         test_scalar_1 := True;
@@ -233,6 +229,8 @@ procedure Vulkan_Test.Math is
             raise TEST_SCALAR_BOOL_FAIL with
                 "'*' for Vkm_Bool yielded unexpected result";
         end if;
+
+        Put_Line(Banner_L2);
 
     end Vulkan_Test_Bool;
 
