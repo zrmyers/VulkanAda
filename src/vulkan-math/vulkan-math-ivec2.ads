@@ -21,37 +21,17 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package provides a signed integer math type that can be used with Vulkan 
--- Shaders.
---
---------------------------------------------------------------------------------
-with Interfaces.C;
-with Vulkan.Math.Numerics;
-
-package Vulkan.Math.Int is
+package Vulkan.Math.Ivec2 is
     pragma Preelaborate;
     pragma Pure;
+    pragma Warnings (Off, "foreign convention function ""To_String"" should not return unconstrained array");
     
-    -- A conditional type taking on values of true or false.
-    type Vkm_Int is new Interfaces.C.int
-    with Default_Value => 0;
+    package Ivec2_Pkg is new Vulkan.Math.Vec2_Numeric(
+        Vkm_Bool, Vkm_Bool'Image, "-","+","-","abs","*","/","mod","rem","**");
+                       
+    type Vkm_Ivec2 is new Ivec2_Pkg.Vkm_Vec2_Numeric with null record;
     
-    -- Return the sign of the integer.
-    package Int_Numerics is new Vulkan.Math.Numerics
-        (Vkm_Int, Vkm_Int(0), Vkm_Int(1), Vkm_Int(-1),"<",">");
-         
-    -- Rename for visibility
-    function Sign  (x      : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Sign;
+    -- Relational Operators
+    function "<" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2;
     
-    function Max   (x      : in     Vkm_Int;
-                    y      : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Max;
-                   
-    function Min   (x      : in     Vkm_Int;
-                    y      : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Min;
-                   
-    function Clamp (x      : in     Vkm_Int;
-                    minVal : in     Vkm_Int;
-                    maxVal : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Clamp;
-
-end Vulkan.Math.Int;
+end Vulkan.Math.Ivec2;

@@ -30,7 +30,6 @@ package Vulkan.Math.Bvec2 is
     pragma Pure;
     pragma Warnings (Off, "foreign convention function ""To_String"" should not return unconstrained array");
     
-    
     package Vkm_Bvec2_Pkg is new Vulkan.Math.Vec2_Generic(
         Vkm_Bool, Vkm_Bool'Image, "-","+","-","abs","*","/","mod","rem","**");
                        
@@ -43,12 +42,12 @@ package Vulkan.Math.Bvec2 is
     function "not" (Right       : in     Vkm_Bvec2) return Vkm_Bvec2;
     
     -- Component-Wise Equality
-    function Equal     (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
-    function Not_Equal (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
+    function Is_Equal     (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
+    function Is_Not_Equal (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
     
     -- To Scalar
-    function Are_Any  (This        : in     Vkm_Bvec2) return Vkm_Bool;
-    function Are_All  (This        : in     Vkm_Bvec2) return Vkm_Bool;
+    function Is_Any  (This        : in     Vkm_Bvec2) return Vkm_Bool;
+    function Is_All  (This        : in     Vkm_Bvec2) return Vkm_Bool;
     
     
 end Vulkan.Math.Bvec2;

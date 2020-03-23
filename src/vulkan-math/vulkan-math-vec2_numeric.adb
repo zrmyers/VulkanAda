@@ -21,49 +21,29 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-package body Vulkan.Math.Bvec2 is
-    
-    -- Define Operations specific to a Bvec2
-    function "and" (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2 is
+with Vulkan.Math.Bool;
+use Vulkan.Math.Bool;
+
+package body Vulkan.Math.Vec2_Numeric is
+
+    -- Relational Operators
+    function "<" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
     begin
-        return Left * Right;
-    end "and";
+        return (Vkm_Bool(Left.comp_1 < Right.comp_1) & Vkm_Bool(Left.comp_2 < Right.comp_2));
+    end "<";
     
-    function "or"  (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2 is
+    function ">"  (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
     begin
-        return Left + Right;
-    end "or";
+        return (Vkm_Bool(Left.comp_1 > Right.comp_1) & Vkm_Bool(Left.comp_2 > Right.comp_2));
+    end ">";
     
-    function "xor" (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2 is
+    function "<=" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
     begin
-        return Left - Right;
-    end "xor";
     
-    function "not" (Right       : in     Vkm_Bvec2) return Vkm_Bvec2 is
+    end "<=";
+    function ">=" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
     begin
-        return -Right;
-    end "not";
     
-    function Is_Equal    (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2 is
-    begin
-        return (Vkm_Bool(Left.comp_1 = Right.comp_1) & Vkm_Bool(Left.comp_2 = Right.comp_2));
-    end Is_Equal;
+    end ">=";
     
-    function Is_Not_Equal (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2 is
-    begin
-        return (Vkm_Bool(Left.comp_1 /= Right.comp_1) & Vkm_Bool(Left.comp_2 /= Right.comp_2));
-    end Is_Not_Equal;
-    
-    function Is_Any (This        : in     Vkm_Bvec2) return Vkm_Bool is
-    begin
-        return (This.comp_1 or This.comp_2);
-    end Is_Any;
-    
-    function Is_All (This        : in     Vkm_Bvec2) return Vkm_Bool is
-    begin
-        return (This.comp_1 and This.comp_2);
-    end Is_All;
-    
-    
-    
-end Vulkan.Math.Bvec2;
+end Vulkan.Math.Vec2_Numeric;

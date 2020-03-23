@@ -29,6 +29,8 @@ use Vulkan.Math.Bool;
 with Vulkan.Math.Bvec2;
 use Vulkan.Math.Bvec2;
 use Ada.Text_IO;
+with Vulkan.Math.Int;
+use Vulkan.Math.Int;
 
 use type Vulkan.Math.Bvec2.Vkm_Bvec2;
 
@@ -263,10 +265,10 @@ procedure Vulkan_Test.Math is
         Put_Line("y or z    = " & To_String(y or z));
         Put_Line("y and z   = " & To_String(y and z));
         Put_Line("x xor y   = " & To_String(x xor y));
-        Put_Line("y.are_all = " & y.are_all'Image);
-        Put_Line("x.are_all = " & x.are_all'Image);
-        Put_Line("z.are_any = " & z.are_any'Image);
-        Put_Line("x.are_any = " & x.are_any'Image);
+        Put_Line("y.is_all = " & y.is_all'Image);
+        Put_Line("x.is_all = " & x.is_all'Image);
+        Put_Line("z.is_any = " & z.is_any'Image);
+        Put_Line("x.is_any = " & x.is_any'Image);
         
         if (x.get(0) /= true) or (x.get(1) /= false) then
             raise TEST_BVEC2_FAIL with "'&' operator failed.";
@@ -283,6 +285,29 @@ procedure Vulkan_Test.Math is
         -- Will do with manual verification for now.
     end Vulkan_Test_Bvec2;
     
+    Procedure Vulkan_Test_Int is
+    
+        x : Vkm_Int := 0;
+        y : Vkm_Int := 23;
+        z : Vkm_Int := 4;
+        w : Vkm_Int := -42;
+        
+    begin
+    
+        ------------------------------------------------------------------------
+        -- Testing Scalar Integer operations
+        ------------------------------------------------------------------------
+        Put_Line(Banner_L1);
+        Put_Line("Testing Scalar Integer Operations");
+        Put_Line(Banner_L2);
+        
+        Put_Line("x         = " & x'Image);
+        Put_Line("y         = " & y'Image);
+        Put_Line("z         = " & z'Image);
+        Put_Line("w         = " & w'Image);
+        Put_Line("w.Sign    = " & Sign(w)'Image);
+        Put_Line("Max(w,x)  = " & Max(w,x)'Image);
+    end Vulkan_Test_Int;
 begin
 
 
@@ -290,5 +315,8 @@ begin
     Vulkan_Test_Bool;
 
     Vulkan_Test_Bvec2;
+    
+    -- Int tests
+    Vulkan_Test_Int;
     
 end Vulkan_Test.Math;
