@@ -24,13 +24,20 @@
 with Ada.Text_IO;
 with Vulkan.Math;
 use Vulkan.Math;
+with Vulkan.Math.Bool;
+use Vulkan.Math.Bool;
+with Vulkan.Math.Bvec2;
+use Vulkan.Math.Bvec2;
 use Ada.Text_IO;
+
+use type Vulkan.Math.Bvec2.Vkm_Bvec2;
 
 procedure Vulkan_Test.Math is
 
     -- This error describes a failure of a test.
     TEST_SCALAR_BOOL_FAIL : exception;
-
+    TEST_BVEC2_FAIL : exception;
+    
     -- Banners
     BANNER_L1 : String := "***************************************";
     BANNER_L2 : String := "---------------------------------------";
@@ -43,7 +50,6 @@ procedure Vulkan_Test.Math is
     --------------------------------------------------------------------------------
     procedure Vulkan_Test_Bool is
 
-        passed : Vkm_Bool := False;
         test_scalar_1, test_scalar_2, test_scalar_3 : Vkm_Bool := False;
     begin
 
@@ -51,7 +57,7 @@ procedure Vulkan_Test.Math is
         -- First, various scalar boolean operations are tested.
         ------------------------------------------------------------------------
         Put_Line(Banner_L1);
-        Put_Line("Testing Scalar Vkm_Bool:");
+        Put_Line("Testing Scalar Vkm_Bool Operations");
         Put_Line(Banner_L2);
 
         ------------------------------------------------------------------------
@@ -234,8 +240,55 @@ procedure Vulkan_Test.Math is
 
     end Vulkan_Test_Bool;
 
+    procedure Vulkan_Test_Bvec2 is
+    
+    -- Try various methods for construction a Bvec2
+    x : Vkm_Bvec2 := True & False;
+    y : Vkm_Bvec2 := Make(True);
+    z : Vkm_Bvec2 := Make;
+    w : Vkm_Bvec2 := Make(False, True);
+    
+    begin
+        ------------------------------------------------------------------------
+        -- Testing Bvec2 operations
+        ------------------------------------------------------------------------
+        Put_Line(Banner_L1);
+        Put_Line("Testing 2D Bool Vector Operations");
+        Put_Line(Banner_L2);
+        Put_Line("x         = " & x.To_String);
+        Put_Line("y         = " & y.To_String);
+        Put_Line("z         = " & z.To_String);
+        Put_Line("w         = " & w.To_String);
+        Put_Line("w.get(yx) = " & w.get(yx).To_String);
+        Put_Line("y or z    = " & To_String(y or z));
+        Put_Line("y and z   = " & To_String(y and z));
+        Put_Line("x xor y   = " & To_String(x xor y));
+        Put_Line("y.are_all = " & y.are_all'Image);
+        Put_Line("x.are_all = " & x.are_all'Image);
+        Put_Line("z.are_any = " & z.are_any'Image);
+        Put_Line("x.are_any = " & x.are_any'Image);
+        
+        if (x.get(0) /= true) or (x.get(1) /= false) then
+            raise TEST_BVEC2_FAIL with "'&' operator failed.";
+        end if;
+        
+        if w.get(yx) /= x then
+            raise TEST_BVEC2_FAIL with "'/=' operator failed.";
+        end if;
+        
+        if (x xor y) /= (False & True) then
+            raise TEST_BVEC2_FAIL with "'xor' operator failed.";
+        end if;
+        
+        -- Will do with manual verification for now.
+    end Vulkan_Test_Bvec2;
+    
 begin
 
+
+    -- Bool tests
     Vulkan_Test_Bool;
 
+    Vulkan_Test_Bvec2;
+    
 end Vulkan_Test.Math;

@@ -21,11 +21,11 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-package body Vulkan.Math.Vec2 is
+package body Vulkan.Math.Vec2_Generic is
 
 -- Access components, Getters
     function Get (This : in     Vkm_Vec2; 
-                  comp : in     Vkm_Vec2i)  return Basic_Type is
+                  comp : in     Vkm_Vec2_Indices)  return Basic_Type is
     
         component : Basic_Type;
         
@@ -218,7 +218,7 @@ package body Vulkan.Math.Vec2 is
     
     -- Access components, Setters
     procedure Set (This  : in out Vkm_Vec2; 
-                   comp  : in     Vkm_Vec2i; 
+                   comp  : in     Vkm_Vec2_Indices; 
                    value : in     Basic_Type) is
     
     begin
@@ -417,8 +417,7 @@ package body Vulkan.Math.Vec2 is
                   
     begin
         
-        return " [ " & Image(This.comp_1) & 
-               " , " & Image(This.comp_2) & " ] ";
+        return " [ " & Image(This.comp_1) & " , " & Image(This.comp_2) & " ] ";
     end To_String;
     
     
@@ -508,19 +507,6 @@ package body Vulkan.Math.Vec2 is
     begin
         return Result;
     end "-";
-    
-    
-    ----------------------------------------------------------------------------
-    
-       
-    function "not" (Right : in Vkm_Vec2) return Vkm_Vec2 is 
-                  
-        Result : constant Vkm_Vec2 :=
-            (comp_1 => not Right.comp_1,
-             comp_2 => not Right.comp_2);
-    begin
-        return Result;
-    end "not";
     
     
     ----------------------------------------------------------------------------
@@ -709,7 +695,7 @@ package body Vulkan.Math.Vec2 is
              comp_2 => Left / Right.comp_2);
                   
     begin
-        null;
+        return Result;
     end "/";
     
     
@@ -719,11 +705,11 @@ package body Vulkan.Math.Vec2 is
     function "mod" (Left, Right : in Vkm_Vec2) return Vkm_Vec2 is 
                   
         Result : constant Vkm_Vec2 :=
-            (comp_1 => Left.comp_1 + Right,
-             comp_2 => Right.comp_2 + Right);
+            (comp_1 => Left.comp_1 mod Right.comp_1,
+             comp_2 => Left.comp_2 mod Right.comp_2);
                   
     begin
-        null;
+        return Result;
     end "mod";
     
     
@@ -734,11 +720,11 @@ package body Vulkan.Math.Vec2 is
                     Right : in     Basic_Type) return Vkm_Vec2 is 
                   
         Result : constant Vkm_Vec2 :=
-            (comp_1 => Left.comp_1 + Right,
-             comp_2 => Right.comp_2 + Right);
+            (comp_1 => Left.comp_1 mod Right,
+             comp_2 => Left.comp_2 mod Right);
                   
     begin
-        null;
+        return Result;
     end "mod";
     
     
@@ -749,11 +735,11 @@ package body Vulkan.Math.Vec2 is
                     Right : in     Vkm_Vec2) return Vkm_Vec2 is 
                   
         Result : constant Vkm_Vec2 :=
-            (comp_1 => Left.comp_1 + Right,
-             comp_2 => Right.comp_2 + Right);
+            (comp_1 => Left mod Right.comp_1,
+             comp_2 => Left mod Right.comp_2);
                   
     begin
-        null;
+        return Result;
     end "mod";
     
     
@@ -763,11 +749,11 @@ package body Vulkan.Math.Vec2 is
     function "rem" (Left, Right : in Vkm_Vec2) return Vkm_Vec2 is 
                   
         Result : constant Vkm_Vec2 :=
-            (comp_1 => Left.comp_1 + Right,
-             comp_2 => Right.comp_2 + Right);
+            (comp_1 => Left.comp_1 rem Right.comp_1,
+             comp_2 => Left.comp_2 rem Right.comp_2);
                   
     begin
-        null;
+        return Result;
     end "rem";
     
     
@@ -778,11 +764,11 @@ package body Vulkan.Math.Vec2 is
                     Right : in     Basic_Type) return Vkm_Vec2 is 
                   
         Result : constant Vkm_Vec2 :=
-            (comp_1 => Left.comp_1 + Right,
-             comp_2 => Right.comp_2 + Right);
+            (comp_1 => Left.comp_1 rem Right,
+             comp_2 => Left.comp_2 rem Right);
                   
     begin
-        null;
+        return Result;
     end "rem";
     
     
@@ -793,23 +779,66 @@ package body Vulkan.Math.Vec2 is
                     Right : in     Vkm_Vec2) return Vkm_Vec2 is 
                   
         Result : constant Vkm_Vec2 :=
-            (comp_1 => Left.comp_1 + Right,
-             comp_2 => Right.comp_2 + Right);
+            (comp_1 => Left rem Right.comp_1,
+             comp_2 => Left rem Right.comp_2);
                   
     begin
-        null;
+        return Result;
     end "rem";
     
     
     ----------------------------------------------------------------------------
     
-                    
+    
+    function "**"  (Left, Right : in Vkm_Vec2) return Vkm_Vec2 is 
+                  
+        Result : constant Vkm_Vec2 :=
+            (comp_1 => Left.comp_1 ** Right.comp_1,
+             comp_2 => Left.comp_2 ** Right.comp_2);
+                  
+    begin
+        return Result;
+    end "**";
+    
+    
+    ----------------------------------------------------------------------------
+    
+    
+    function "**"  (Left        : in     Vkm_Vec2;
+                    Right       : in     Basic_Type) return Vkm_Vec2 is 
+                  
+        Result : constant Vkm_Vec2 :=
+            (comp_1 => Left.comp_1 ** Right,
+             comp_2 => Left.comp_2 ** Right);
+                  
+    begin
+        return Result;
+    end "**";
+    
+    
+    ----------------------------------------------------------------------------
+    
+    
+    function "**"  (Left        : in     Basic_Type;
+                    Right       : in     Vkm_Vec2)   return Vkm_Vec2 is 
+                  
+        Result : constant Vkm_Vec2 :=
+            (comp_1 => Left ** Right.comp_1,
+             comp_2 => Left ** Right.comp_2);
+                  
+    begin
+        return Result;
+    end "**";
+    
+    
+    ----------------------------------------------------------------------------
+    
+    
     -- Relational Operators
     function "/=" (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
                   
-                  
     begin
-        null;
+        return Vkm_Bool((Left.comp_1 /= Right.comp_1) or (Left.comp_2 /= Right.comp_2));
     end "/=";
     
     
@@ -819,80 +848,21 @@ package body Vulkan.Math.Vec2 is
     function "="  (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
                   
     begin
-        null;
+        return Vkm_Bool((Left.comp_1 = Right.comp_1) and (Left.comp_2 = Right.comp_2));
     end "=";
     
     
     ----------------------------------------------------------------------------
     
-           
-    function ">"  (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
+    
+    -- Concatenation
+    function "&" (Left, Right : in Basic_Type) return Vkm_Vec2 is
+    
+        Result : constant Vkm_Vec2 := 
+            (comp_1 => Left,
+             comp_2 => Right);
     begin
-        null;
-    end ">";
+        return Result;
+    end "&";
     
-    
-    ----------------------------------------------------------------------------
-    
-          
-    function ">=" (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
-    begin
-        null;
-    end ">=";
-    
-    
-    ----------------------------------------------------------------------------
-    
-          
-    function "<"  (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
-    begin
-        null;
-    end "<";
-    
-    
-    ----------------------------------------------------------------------------
-    
-          
-    function "<=" (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
-    begin
-        null;
-    end "<=";
-    
-    
-    ----------------------------------------------------------------------------
-    
-         
-    
-    -- Logical Operators
-    function "and" (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
-    begin
-        null;
-    end "and";
-    
-    
-    ----------------------------------------------------------------------------
-    
-          
-    function "or"  (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
-    begin
-        null;
-    end "or";
-    
-    
-    ----------------------------------------------------------------------------
-    
-          
-    function "xor" (Left, Right : in Vkm_Vec2) return Vkm_Bool is 
-                  
-    begin
-        null;
-    end "xor";
-    
-       
-end Vulkan.Math.Vec2;
+end Vulkan.Math.Vec2_Generic;

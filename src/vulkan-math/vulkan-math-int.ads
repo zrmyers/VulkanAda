@@ -22,32 +22,26 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 --
--- This package proveds math types that can be used to interface with variables
--- that are input or output from shaders via Vulkan.
+-- This package provides a Boolean math type that can be used with Vulkan 
+-- Shaders.
+--
 --------------------------------------------------------------------------------
+with Interfaces.C;
 
-package body Vulkan.Math is
+package Vulkan.Math.Int is
+    pragma Preelaborate;
+    pragma Pure;
+    
+    -- An attempt to use an operation that is not defined for a type was made.
+    UNDEFINED_OPERATION : exception;
+    
+    -- A conditional type taking on values of true or false.
+    type Vkm_Int is new Interfaces.C.int
+    with Default_Value => 0;
+    
+    -- Get the sign of the integer. +1 if positive, -1 if negative
+    function Sign (x   : in     Vkm_Int) return Vkm_Int;
+                           
+    
 
-    ----------------------------------------------------------------------------
-    -- Definitions for Scalar Boolean Operations
-    ----------------------------------------------------------------------------
-    -- Same as 'not'
-    function "-" (Right : Vkm_Bool) return Vkm_Bool is
-    begin
-        return not Right;
-    end "-";
-
-    -- Identity
-    function "+" (Right : Vkm_Bool) return Vkm_Bool is
-    begin
-        return Right;
-    end "+";
-
-    -- Same as 'and'
-    function "*" (Left, Right : Vkm_Bool) return Vkm_Bool is
-    begin
-        return Left and Right;
-    end "*";
-
-
-end Vulkan.Math;
+end Vulkan.Math.Int;

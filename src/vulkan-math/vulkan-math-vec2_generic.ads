@@ -21,6 +21,9 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
+with Vulkan.Math.Bool;
+use Vulkan.Math.Bool;
+
 generic
 
     -- The type of component that makes up the vector. This can be either a 
@@ -28,27 +31,18 @@ generic
     type Basic_Type is private;
     with function Image (This        : in     Basic_Type) return String;
     with function "-"   (Right       : in     Basic_Type) return Basic_Type;
-    with function "not" (Right       : in     Basic_Type) return Basic_Type;
     with function "+"   (Left, Right : in     Basic_Type) return Basic_Type;
     with function "-"   (Left, Right : in     Basic_Type) return Basic_Type;
     with function "abs" (Right       : in     Basic_Type) return Basic_Type;
     with function "*"   (Left, Right : in     Basic_Type) return Basic_Type;
-package Vulkan.Math.Vec2 is
+    with function "/"   (Left, Right : in     Basic_Type) return Basic_Type;
+    with function "mod" (Left, Right : in     Basic_Type) return Basic_Type;
+    with function "rem" (Left, Right : in     Basic_Type) return Basic_Type;
+    with function "**"  (Left, Right : in     Basic_Type) return Basic_Type;
+package Vulkan.Math.Vec2_Generic is
     pragma Preelaborate;
-    
-    -- Vkm_Vec2 Size 
-    type Vkm_Vec2_Size is new Integer range 0 .. 2;
-    
-    -- Useful access Types
-    subtype Vkm_Vec2i is Vkm_Vec2_Size range 0 .. 1;
-    type Vkm_Vec2xy is ( x, y );    
-    type Vkm_Vec2rg is ( r, g );
-    type Vkm_Vec2st is ( s, t );
-    
-    -- Useful Swizzle access types.
-    type Vkm_Vec2xy_Swizzle2 is ( xx, xy, yx, yy);
-    type Vkm_Vec2rg_Swizzle2 is ( rr, rg, gr, gg);
-    type Vkm_Vec2st_Swizzle2 is ( ss, st, ts, tt);
+    pragma Pure;
+    pragma Warnings (Off, "foreign convention function ""To_String"" should not return unconstrained array");
     
     -- Data definition.
     type Vkm_Vec2 is tagged record
@@ -62,7 +56,7 @@ package Vulkan.Math.Vec2 is
     ----------------------------------------------------------------------------
     -- Access components, Getters
     function Get (This : in     Vkm_Vec2; 
-                  comp : in     Vkm_Vec2i)  return Basic_Type;                  
+                  comp : in     Vkm_Vec2_Indices)  return Basic_Type;                  
     function Get (This : in     Vkm_Vec2;
                   comp : in     Vkm_Vec2xy) return Basic_Type;                  
     function Get (This : in     Vkm_Vec2;
@@ -78,7 +72,7 @@ package Vulkan.Math.Vec2 is
     
     -- Access components, Setters
     procedure Set (This  : in out Vkm_Vec2; 
-                   comp  : in     Vkm_Vec2i; 
+                   comp  : in     Vkm_Vec2_Indices; 
                    value : in     Basic_Type);                   
     procedure Set (This  : in out Vkm_Vec2; 
                    comp  : in     Vkm_Vec2xy; 
@@ -101,10 +95,8 @@ package Vulkan.Math.Vec2 is
     
     -- Get the length of the vector
     function Length(This : in    Vkm_Vec2) return Vkm_Vec2_Size;
-    pragma Warnings (Off, "foreign convention function ""To_String"" should not return unconstrained array");
         
     function To_String(This : in    Vkm_Vec2) return String;    
-    pragma Warnings (On, "foreign convention function ""To_String"" should not return unconstrained array");
         
     -- Constructors
     function Make return Vkm_Vec2;
@@ -125,7 +117,6 @@ package Vulkan.Math.Vec2 is
     -- Unary Operators
     function "+"  (Right : in     Vkm_Vec2) return Vkm_Vec2;    
     function "-"  (Right : in     Vkm_Vec2) return Vkm_Vec2;
-    function "not" (Right : in    Vkm_Vec2) return Vkm_Vec2;
     function "abs" (Right : in    Vkm_Vec2) return Vkm_Vec2;
     
     -- Binary Operators
@@ -168,14 +159,8 @@ package Vulkan.Math.Vec2 is
     -- Relational Operators
     function "/=" (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
     function "="  (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    function ">"  (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    function ">=" (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    function "<"  (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    function "<=" (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    
-    -- Logical Operators
-    function "and" (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    function "or"  (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
-    function "xor" (Left, Right : in Vkm_Vec2) return Vkm_Bool;    
         
-end Vulkan.Math.Vec2;
+    -- Concatenation
+    function "&" (Left, Right : in Basic_Type) return Vkm_Vec2;
+    
+end Vulkan.Math.Vec2_Generic;
