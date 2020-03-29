@@ -21,33 +21,18 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Math.Vec2_Generic;
-with Vulkan.Math.Bool;
-use Vulkan.Math.Bool;
+-- This package describes a generic Unsigned Integer Vulkan Math type.
+--------------------------------------------------------------------------------
+with Vulkan.Math.GenType;
 
-package Vulkan.Math.Bvec2 is
+package Vulkan.Math.GenIType is
     pragma Preelaborate;
     pragma Pure;
-    pragma Warnings (Off, "foreign convention function ""To_String"" should not return unconstrained array");
-    
-    package Vkm_Bvec2_Pkg is new Vulkan.Math.Vec2_Generic(
-        Vkm_Bool, Vkm_Bool'Image, "-","+","-","abs","*","/","mod","rem","**");
-                       
-    type Vkm_Bvec2 is new Vkm_Bvec2_Pkg.Vkm_Vec2 with null record;
-    
-    -- Define Operations specific to a Bvec2
-    function "and" (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
-    function "or"  (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
-    function "xor" (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
-    function "not" (Right       : in     Vkm_Bvec2) return Vkm_Bvec2;
-    
-    -- Component-Wise Equality
-    function Is_Equal     (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
-    function Is_Not_Equal (Left, Right : in     Vkm_Bvec2) return Vkm_Bvec2;
-    
-    -- To Scalar
-    function Is_Any  (This        : in     Vkm_Bvec2) return Vkm_Bool;
-    function Is_All  (This        : in     Vkm_Bvec2) return Vkm_Bool;
-    
-    
-end Vulkan.Math.Bvec2;
+
+    package GIT is new Vulkan.Math.GenType(
+        Base_Type => Vkm_Int);
+
+    subtype Vkm_GenIType is GIT.Vkm_GenType;
+
+
+end Vulkan.Math.GenIType;

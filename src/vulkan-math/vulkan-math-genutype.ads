@@ -21,17 +21,18 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Ivec2 is
+-- This package describes a generic Unsigned Integer Vulkan Math type.
+--------------------------------------------------------------------------------
+with Vulkan.Math.GenType;
+
+package Vulkan.Math.GenUType is
     pragma Preelaborate;
     pragma Pure;
-    pragma Warnings (Off, "foreign convention function ""To_String"" should not return unconstrained array");
-    
-    package Ivec2_Pkg is new Vulkan.Math.Vec2_Numeric(
-        Vkm_Bool, Vkm_Bool'Image, "-","+","-","abs","*","/","mod","rem","**");
-                       
-    type Vkm_Ivec2 is new Ivec2_Pkg.Vkm_Vec2_Numeric with null record;
-    
-    -- Relational Operators
-    function "<" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2;
-    
-end Vulkan.Math.Ivec2;
+
+    package GUT is new Vulkan.Math.GenType(
+        Base_Type => Vkm_Uint);
+
+    subtype Vkm_GenUType is GUT.Vkm_GenType;
+
+
+end Vulkan.Math.GenUType;

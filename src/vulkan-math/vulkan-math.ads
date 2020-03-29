@@ -21,33 +21,137 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package proveds math types that can be used to interface with variables
--- that are input or output from shaders via Vulkan.
---
+with Interfaces.C;
+with Ada.Numerics;
 
---------------------------------------------------------------------------------
--- The purpose for this math library is to provide a substitue for the GLM C
--- library for using Vulkan in the Ada Programming language.  Each of the basic
--- types described in the GLSL specification are implemented and tested using
--- native Ada Types.
---------------------------------------------------------------------------------
 package Vulkan.Math is
     pragma Preelaborate;
     pragma Pure;
     
-    -- Vkm_Vec2 Size 
-    type Vkm_Vec2_Size is new Integer range 0 .. 2;
+    ----------------------------------------------------------------------------
+    -- Exceptions
+    ----------------------------------------------------------------------------
+    UNDEFINED_RESULT : exception;
     
-    -- Useful access Types
-    subtype Vkm_Vec2_Indices is Vkm_Vec2_Size range 0 .. 1;
-    type Vkm_Vec2xy is ( x, y );    
-    type Vkm_Vec2rg is ( r, g );
-    type Vkm_Vec2st is ( s, t );
+    ----------------------------------------------------------------------------
+    -- Math Constants
+    ----------------------------------------------------------------------------
+    PI : constant := Ada.Numerics.Pi;
+    E  : constant := Ada.Numerics.e;
     
-    -- Useful Swizzle access types.
-    type Vkm_Vec2xy_Swizzle2 is ( xx, xy, yx, yy);
-    type Vkm_Vec2rg_Swizzle2 is ( rr, rg, gr, gg);
-    type Vkm_Vec2st_Swizzle2 is ( ss, st, ts, tt);
+    ----------------------------------------------------------------------------
+    -- Math Scalar Types
+    ----------------------------------------------------------------------------
+    -- Boolean Type
+    type Vkm_Bool is new Boolean;
+    for Vkm_Bool use (False => 0,
+                      True  => 1);
+    for Vkm_Bool'Size use Interfaces.C.unsigned_char'Size;
     
+    -- Unsigned Integer Type
+    type Vkm_Uint is new Interfaces.C.unsigned;
+    
+    -- Integer Type
+    type Vkm_Int is new Interfaces.C.int;
+    
+    -- Single-Precision Floating Point Type
+    type Vkm_Float is new Interfaces.C.C_Float;
+    
+    -- Double-Precision Floating Point Type
+    type Vkm_Double is new Interfaces.C.double;
+    
+    
+    ----------------------------------------------------------------------------
+    -- Math Conversion Functions
+    ----------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- The following operations convert various VKM Math types to Vkm_Bool
+    -- math types.
+    --
+    -- If the value is not equal to zero, returns true. Otherwise returns false.
+    --
+    -- @param[in]     value The value to convert to Vkm_Bool.
+    --
+    -- @return The conversion to Vkm_Bool.
+    ----------------------------------------------------------------------------
+    function To_Bool (value : in     Vkm_Uint  ) return Vkm_Bool;
+    function To_Bool (value : in     Vkm_Int   ) return Vkm_Bool;
+    function To_Bool (value : in     Vkm_Float ) return Vkm_Bool;
+    function To_Bool (value : in     Vkm_Double) return Vkm_Bool;
+    
+    
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- The following operations convert various VKM Math types to Vkm_Uint
+    -- math types.
+    --
+    -- Conversion from Vkm_Int preserves the bit pattern of the argument, causing
+    -- the value of negative arguments to change.
+    --
+    -- Conversion from a negative floating point argument will yield and 
+    -- undefined result exception.
+    --
+    -- @param[in]     value The value to convert to Vkm_Uint.
+    --
+    -- @return The conversion to Vkm_Bool.
+    --
+    -- @error 
+    -- The following exceptions are thrown:
+    --     UNDEFINED_RESULT
+    ----------------------------------------------------------------------------
+    function To_Uint (value : in     Vkm_Bool  ) return Vkm_Uint;
+    function To_Uint (value : in     Vkm_Int   ) return Vkm_Uint;
+    function To_Uint (value : in     Vkm_Float ) return Vkm_Uint;
+    function To_Uint (value : in     Vkm_Double) return Vkm_Uint;
+    
+    
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- The following operations convert various VKM Math types to Vkm_Int
+    -- math types.
+    --
+    -- Conversion from Vkm_Int preserves the bit pattern of the argument, causing
+    -- the value of negative arguments to change.
+    --
+    -- @param[in]     value The value to convert to Vkm_Int.
+    --
+    -- @return The conversion to Vkm_Bool.
+    ----------------------------------------------------------------------------
+    function To_Int (value : in     Vkm_Bool  ) return Vkm_Int;
+    function To_Int (value : in     Vkm_Uint  ) return Vkm_Int;
+    function To_Int (value : in     Vkm_Float ) return Vkm_Int;
+    function To_Int (value : in     Vkm_Double) return Vkm_Int;
+    
+    
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- The following operations convert various VKM Math types to Vkm_Float
+    -- math types.
+    --
+    -- @param[in]     value The value to convert to Vkm_Float.
+    --
+    -- @return The conversion to Vkm_Float.
+    ----------------------------------------------------------------------------
+    function To_Float (value : in     Vkm_Bool  ) return Vkm_Float;
+    function To_Float (value : in     Vkm_Uint  ) return Vkm_Float;
+    function To_Float (value : in     Vkm_Int   ) return Vkm_Float;
+    function To_Float (value : in     Vkm_Double) return Vkm_Float;
+    
+    
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- The following operations convert various VKM Math types to Vkm_Float
+    -- math types.
+    --
+    -- @param[in]     value The value to convert to Vkm_Float.
+    --
+    -- @return The conversion to Vkm_Float.
+    ----------------------------------------------------------------------------
+    function To_Double (value : in     Vkm_Bool ) return Vkm_Double;
+    function To_Double (value : in     Vkm_Uint ) return Vkm_Double;
+    function To_Double (value : in     Vkm_Int  ) return Vkm_Double;
+    function To_Double (value : in     Vkm_Float) return Vkm_Double;
+ 
+ 
 end Vulkan.Math;

@@ -21,22 +21,30 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package instantiates Ada generic numerical operations for use by the 
--- Vulkan Math Library.
+-- This package describes a generic Double Precision Float Vulkan Math type.
 --------------------------------------------------------------------------------
-with Ada.Numerics.Generic_Elementary_Functions;
+with Vulkan.Math.GenType;
 
-private package Vulkan.Math.Numerics is
+package Vulkan.Math.GenDType is
     pragma Preelaborate;
     pragma Pure;
-    
-    --Instantiation of Generic Elementary Functions for Float.
-    package VKM_FLT_NEF is new 
-        Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Float);
-    
-    -- Instantiation of Generic Elemantry Functions for Double.
-    package VKM_DBL_NEF is new
-        Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Double);
-        
-end Vulkan.Math.Numerics;
+
+    package GDT is new Vulkan.Math.GenType(
+        Base_Type => Vkm_Double);
+
+    subtype Vkm_GenDType is GDT.Vkm_GenType;
+
+    ----------------------------------------------------------------------------
+    -- Operators
+    ----------------------------------------------------------------------------
+    -- Subtraction Operators
+    function "-" is new GDT.Apply_Func_IV_IV_RV("-");
+    function "-" is new GDT.Apply_Func_IV_IS_RV("-");
+    function "-" is new GDT.Apply_Func_IS_IV_RV("-");
+
+    -- Multiplication Operators
+    function "*" is new GDT.Apply_Func_IV_IV_RV("*");
+    function "*" is new GDT.Apply_Func_IS_IV_RV("*");
+    function "*" is new GDT.Apply_Func_IV_IS_RV("*");
+
+end Vulkan.Math.GenDType;

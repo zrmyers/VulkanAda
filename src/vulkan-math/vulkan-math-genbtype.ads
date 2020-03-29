@@ -21,29 +21,18 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Math.Bool;
-use Vulkan.Math.Bool;
+-- This package describes a generic Boolean Vulkan Math type.
+--------------------------------------------------------------------------------
+with Vulkan.Math.GenType;
 
-package body Vulkan.Math.Vec2_Numeric is
+package Vulkan.Math.GenBType is
+    pragma Preelaborate;
+    pragma Pure;
 
-    -- Relational Operators
-    function "<" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
-    begin
-        return (Vkm_Bool(Left.comp_1 < Right.comp_1) & Vkm_Bool(Left.comp_2 < Right.comp_2));
-    end "<";
-    
-    function ">"  (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
-    begin
-        return (Vkm_Bool(Left.comp_1 > Right.comp_1) & Vkm_Bool(Left.comp_2 > Right.comp_2));
-    end ">";
-    
-    function "<=" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
-    begin
-    
-    end "<=";
-    function ">=" (Left, Right : in     Vkm_Vec2_Numeric) return Vkm_BVec2 is
-    begin
-    
-    end ">=";
-    
-end Vulkan.Math.Vec2_Numeric;
+    package GenType is new Vulkan.Math.GenType(
+        Base_Type => Vkm_Bool);
+
+    type Vkm_GenBType is new GenType.Vkm_GenType with null record;
+
+
+end Vulkan.Math.GenBType;

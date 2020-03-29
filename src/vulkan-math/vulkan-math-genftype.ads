@@ -21,37 +21,31 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package provides a signed integer math type that can be used with Vulkan 
--- Shaders.
---
+-- This package describes a generic Single Precision Floating Point Vulkan Math type.
 --------------------------------------------------------------------------------
-with Interfaces.C;
-with Vulkan.Math.Numerics;
+with Vulkan.Math.GenType;
 
-package Vulkan.Math.Int is
+package Vulkan.Math.GenFType is
     pragma Preelaborate;
     pragma Pure;
-    
-    -- A conditional type taking on values of true or false.
-    type Vkm_Int is new Interfaces.C.int
-    with Default_Value => 0;
-    
-    -- Return the sign of the integer.
-    package Int_Numerics is new Vulkan.Math.Numerics
-        (Vkm_Int, Vkm_Int(0), Vkm_Int(1), Vkm_Int(-1),"<",">");
-         
-    -- Rename for visibility
-    function Sign  (x      : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Sign;
-    
-    function Max   (x      : in     Vkm_Int;
-                    y      : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Max;
-                   
-    function Min   (x      : in     Vkm_Int;
-                    y      : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Min;
-                   
-    function Clamp (x      : in     Vkm_Int;
-                    minVal : in     Vkm_Int;
-                    maxVal : in     Vkm_Int) return Vkm_Int renames Int_Numerics.Clamp;
 
-end Vulkan.Math.Int;
+    package GFT is new Vulkan.Math.GenType(
+        Base_Type => Vkm_Float);
+
+    subtype Vkm_GenFType is GFT.Vkm_GenType;
+
+
+    ----------------------------------------------------------------------------
+    -- Operations for Vkm_GenFType
+    ----------------------------------------------------------------------------
+    -- Subtraction Operators
+    function "-" is new GFT.Apply_Func_IV_IV_RV("-");
+    function "-" is new GFT.Apply_Func_IV_IS_RV("-");
+    function "-" is new GFT.Apply_Func_IS_IV_RV("-");
+
+    -- Multiplication Operators
+    function "*" is new GFT.Apply_Func_IV_IV_RV("*");
+    function "*" is new GFT.Apply_Func_IS_IV_RV("*");
+    function "*" is new GFT.Apply_Func_IV_IS_RV("*");
+
+end Vulkan.Math.GenFType;
