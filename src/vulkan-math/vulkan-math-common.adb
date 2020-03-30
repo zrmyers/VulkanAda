@@ -402,8 +402,8 @@ package body Vulkan.Math.Common is
     end Max;
 
 
-
-
+    ----------------------------------------------------------------------------
+    -- Clamp
     ----------------------------------------------------------------------------
 
 
@@ -418,6 +418,23 @@ package body Vulkan.Math.Common is
     end Clamp;
 
 
+    ----------------------------------------------------------------------------
+
+
+    function Clamp (x                 : in     Vkm_GenFType;
+                    minVal, maxVal    : in     Vkm_Float   ) return Vkm_GenFType is
+
+        function Compute_Clamp_F is new Compute_Clamp(Vkm_Float,Vkm_Float'Min,Vkm_Float'Max);
+
+        function Apply_Clamp is new  GFT.Apply_Func_IV_IS_IS_RV(Compute_Clamp_F);
+    begin
+        return Apply_Clamp(x, minVal, maxVal);
+    end Clamp;
+
+
+    ----------------------------------------------------------------------------
+
+
     function Clamp (x, minVal, maxVal : in     Vkm_GenDType) return Vkm_GenDType is
 
         function Compute_Clamp_D is new Compute_Clamp(Vkm_Double,Vkm_Double'Min,Vkm_Double'Max);
@@ -427,6 +444,24 @@ package body Vulkan.Math.Common is
     begin
         return Apply_Clamp(x, minVal, maxVal);
     end Clamp;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Clamp (x                 : in     Vkm_GenDType;
+                    minVal, maxVal    : in     Vkm_Double  ) return Vkm_GenDType is
+
+        function Compute_Clamp_D is new Compute_Clamp(Vkm_Double,Vkm_Double'Min,Vkm_Double'Max);
+
+        function Apply_Clamp is new  GDT.Apply_Func_IV_IS_IS_RV(Compute_Clamp_D);
+    begin
+        return Apply_Clamp(x, minVal, maxVal);
+    end Clamp;
+
+
+    ----------------------------------------------------------------------------
+
 
     function Clamp (x, minVal, maxVal : in     Vkm_GenUType  ) return Vkm_GenUType is
 
@@ -438,6 +473,10 @@ package body Vulkan.Math.Common is
         return Apply_Clamp(x, minVal, maxVal);
     end Clamp;
 
+
+    ----------------------------------------------------------------------------
+
+
     function Clamp (x, minVal, maxVal : in     Vkm_GenIType   ) return Vkm_GenIType is
 
         function Compute_Clamp_I is new Compute_Clamp(Vkm_Int,Vkm_Int'Min,Vkm_Int'Max);
@@ -447,6 +486,116 @@ package body Vulkan.Math.Common is
     begin
         return Apply_Clamp(x, minVal, maxVal);
     end Clamp;
+
+
+    ----------------------------------------------------------------------------
+    -- Mix, Linear Blend
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y, a : in     Vkm_GenFType) return Vkm_GenFType is
+        function Compute_Mix (x, y, a : Vkm_Float) return Vkm_Float is
+            (x * (1.0 - a) + y * a) with Inline;
+
+        function Apply_Mix is new GFT.Apply_Func_IV_IV_IV_RV(Compute_Mix);
+    begin
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y    : in     Vkm_GenFType;
+                  a       : in     Vkm_Float   ) return Vkm_GenFType is
+        function Compute_Mix (x, y, a : Vkm_Float) return Vkm_Float is
+            (x * (1.0 - a) + y * a) with Inline;
+
+        function Apply_Mix is new GFT.Apply_Func_IV_IV_IS_RV(Compute_Mix);
+    begin
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y, a : in     Vkm_GenDType) return Vkm_GenDType is
+        function Compute_Mix (x, y, a : Vkm_Double) return Vkm_Double is
+            (x * (1.0 -a) + y * a) with Inline;
+
+        function Apply_Mix is new GDT.Apply_Func_IV_IV_IV_RV(Compute_Mix);
+    begin
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y    : in     Vkm_GenDType;
+                  a       : in     Vkm_Double  ) return Vkm_GenDType is
+        function Compute_Mix (x, y, a : Vkm_Double) return Vkm_Double is
+            (x * (1.0 -a) + y * a) with Inline;
+
+        function Apply_Mix is new GDT.Apply_Func_IV_IV_IS_RV(Compute_Mix);
+    begin
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+    -- Mix, Boolean Mix Function.
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y : in     Vkm_GenFType;
+                  a    : in     Vkm_GenBType) return Vkm_GenFType is
+        function Compute_Mix (x, y : in     Vkm_Float;
+                              a    : in     Vkm_Bool ) return Vkm_Float is
+            (if a then x else y) with Inline;
+
+        function Apply_Mix is new Apply_Func_IVF_IVF_IVB_RVF(Compute_Mix);
+
+    begin
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y : in     Vkm_GenDType;
+                  a    : in     Vkm_GenBType) return Vkm_GenDType is
+        function Compute_Mix (x, y : in     Vkm_Double;
+                              a    : in     Vkm_Bool ) return Vkm_Double is
+            (if a then x else y) with Inline;
+
+        function Apply_Mix is new Apply_Func_IVD_IVD_IVB_RVD(Compute_Mix);
+
+    begin
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y : in     Vkm_GenUType;
+                  a    : in     Vkm_GenBType) return Vkm_GenUType is
+    begin
+        null;
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y : in     Vkm_GenIType;
+                  a    : in     Vkm_GenBType) return Vkm_GenIType is
+    begin
+        null;
+    end Mix;
 
 
     ----------------------------------------------------------------------------
@@ -505,5 +654,6 @@ package body Vulkan.Math.Common is
     begin
         return Max(Min(x,maxVal),minVal);
     end Compute_Clamp;
+
 
 end Vulkan.Math.Common;

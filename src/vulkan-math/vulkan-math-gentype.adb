@@ -30,11 +30,6 @@ package body Vulkan.Math.GenType is
         return A.data'Length;
     end Length;
 
-    function To_Indices (length : in Vkm_Length) return Vkm_Indices is
-    begin
-        return Vkm_Indices(Vkm_Length'Base(length) - 1);
-    end To_Indices;
-
     ----------------------------------------------------------------------------
     -- Operations on Vkm_GenType
     ----------------------------------------------------------------------------
@@ -113,6 +108,36 @@ package body Vulkan.Math.GenType is
         end loop;
         return Result;
     end Apply_Func_IV_IV_IV_RV;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IV_IV_IS_RV(IV1, IV2 : in     Vkm_GenType;
+                                    IS1      : in     Base_Type) return Vkm_GenType is
+
+        Result : Vkm_GenType(Last_Index => To_Indices(IV1.Length));
+    begin
+        for I in Vkm_Indices'First .. To_Indices(IV1.Length) loop
+            Result.data(I) := Func(IV1.data(I),IV2.data(I),IS1);
+        end loop;
+        return Result;
+    end Apply_Func_IV_IV_IS_RV;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IV_IS_IS_RV(IV1      : in     Vkm_GenType;
+                                    IS1, IS2 : in     Base_Type) return Vkm_GenType is
+
+        Result : Vkm_GenType(Last_Index => To_Indices(IV1.Length));
+    begin
+        for I in Vkm_Indices'First .. To_Indices(IV1.Length) loop
+            Result.data(I) := Func(IV1.data(I),IS1,IS2);
+        end loop;
+        return Result;
+    end Apply_Func_IV_IS_IS_RV;
 
 
 end Vulkan.Math.GenType;

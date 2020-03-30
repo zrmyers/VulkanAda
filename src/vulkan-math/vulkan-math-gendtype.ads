@@ -24,6 +24,8 @@
 -- This package describes a generic Double Precision Float Vulkan Math type.
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
+with Vulkan.Math.GenBType;
+use Vulkan.Math.GenBType;
 
 package Vulkan.Math.GenDType is
     pragma Preelaborate;
@@ -47,4 +49,14 @@ package Vulkan.Math.GenDType is
     function "*" is new GDT.Apply_Func_IS_IV_RV("*");
     function "*" is new GDT.Apply_Func_IV_IS_RV("*");
 
+
+    ----------------------------------------------------------------------------
+    -- Generic Operations
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(ISD1, ISD2 : in     Vkm_Double;
+                           ISB1       : in     Vkm_Bool ) return Vkm_Double;
+
+    function Apply_Func_IVD_IVD_IVB_RVD(IVD1, IVD2 : in     Vkm_GenDType;
+                                        IVB1       : in     Vkm_GenBType) return Vkm_GenDType;
 end Vulkan.Math.GenDType;

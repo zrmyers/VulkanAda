@@ -60,10 +60,19 @@ package Vulkan.Math is
     -- Double-Precision Floating Point Type
     type Vkm_Double is new Interfaces.C.double;
     
+    -- Maximum Dimmension for a vector or a row or column of a matrix.
+    type Vkm_Length is new Integer range 1 .. 4;
+    
+    -- The set of indices allowed for use with any vector or matrix.
+    type Vkm_Indices is new Integer range 0 .. 3;
+    
     
     ----------------------------------------------------------------------------
-    -- Math Conversion Functions
+    -- Conversion Functions
     ----------------------------------------------------------------------------
+    function To_Indices (length : in Vkm_Length) return Vkm_Indices;
+    
+    
     ----------------------------------------------------------------------------
     -- @brief
     -- The following operations convert various VKM Math types to Vkm_Bool

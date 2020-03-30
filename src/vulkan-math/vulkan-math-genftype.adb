@@ -23,41 +23,25 @@
 --------------------------------------------------------------------------------
 -- This package describes a generic Single Precision Floating Point Vulkan Math type.
 --------------------------------------------------------------------------------
-with Vulkan.Math.GenType;
-with Vulkan.Math.GenBType;
-use Vulkan.Math.GenBType;
+package body Vulkan.Math.GenFType is
 
-package Vulkan.Math.GenFType is
-    pragma Preelaborate;
-    pragma Pure;
-
-    package GFT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Float);
-
-    subtype Vkm_GenFType is GFT.Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- Operations for Vkm_GenFType
-    ----------------------------------------------------------------------------
-    -- Subtraction Operators
-    function "-" is new GFT.Apply_Func_IV_IV_RV("-");
-    function "-" is new GFT.Apply_Func_IV_IS_RV("-");
-    function "-" is new GFT.Apply_Func_IS_IV_RV("-");
-
-    -- Multiplication Operators
-    function "*" is new GFT.Apply_Func_IV_IV_RV("*");
-    function "*" is new GFT.Apply_Func_IS_IV_RV("*");
-    function "*" is new GFT.Apply_Func_IV_IS_RV("*");
 
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
-    generic
-        with function Func(ISF1, ISF2 : in     Vkm_Float;
-                           ISB1       : in     Vkm_Bool ) return Vkm_Float;
+
 
     function Apply_Func_IVF_IVF_IVB_RVF(IVF1, IVF2 : in     Vkm_GenFType;
-                                        IVB1       : in     Vkm_GenBType) return Vkm_GenFType;
+                                        IVB1       : in     Vkm_GenBType) return Vkm_GenFType is
+        Result : Vkm_GenFType := IVF1;
+
+    begin
+        for I in Vkm_Indices'First .. To_Indices(IVF1.Length) loop
+            Result.data(I) := Func(IVF1.data(I), IVF2.data(I), IVB1.data(I));
+        end loop;
+        return Result;
+    end Apply_Func_IVF_IVF_IVB_RVF;
+
+
 
 end Vulkan.Math.GenFType;

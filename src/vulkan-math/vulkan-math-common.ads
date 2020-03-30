@@ -33,6 +33,8 @@ with Vulkan.Math.GenIType;
 use Vulkan.Math.GenIType;
 with Vulkan.Math.GenUType;
 use Vulkan.Math.GenUType;
+with Vulkan.Math.GenBType;
+use Vulkan.Math.GenBType;
 
 package Vulkan.Math.Common is
     pragma Preelaborate;
@@ -215,11 +217,60 @@ package Vulkan.Math.Common is
     -- @errors
     -- Results are undefined for minVal > maxVal.
     ----------------------------------------------------------------------------
-    function Clamp (x, minVal, maxVal : in     Vkm_GenFType ) return Vkm_GenFType;
+    function Clamp (x, minVal, maxVal : in     Vkm_GenFType) return Vkm_GenFType;
+    function Clamp (x                 : in     Vkm_GenFType;
+                    minVal, maxVal    : in     Vkm_Float   ) return Vkm_GenFType;
     function Clamp (x, minVal, maxVal : in     Vkm_GenDType) return Vkm_GenDType;
-    function Clamp (x, minVal, maxVal : in     Vkm_GenUType  ) return Vkm_GenUType;
-    function Clamp (x, minVal, maxVal : in     Vkm_GenIType   ) return Vkm_GenIType;
+    function Clamp (x                 : in     Vkm_GenDType;
+                    minVal, maxVal    : in     Vkm_Double  ) return Vkm_GenDType;
+    function Clamp (x, minVal, maxVal : in     Vkm_GenUType) return Vkm_GenUType;
+    function Clamp (x, minVal, maxVal : in     Vkm_GenIType) return Vkm_GenIType;
 
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Mix the values 'x' and 'y' together using a linear blend function.
+    --
+    -- The linear blend function is 'x * (1 - a) + y * a'
+    --
+    -- @param[in]     x The input parameter 'x' that is mixed with 'y'
+    -- @param[in]     y The input paramter 'y' that is mixed with 'x'
+    -- @param[in]     a The input parameter 'a' which is a coefficient in the
+    --                  linear blend function.
+    --
+    -- @return X mixed with y.
+    ----------------------------------------------------------------------------
+    function Mix (x, y, a : in     Vkm_GenFType) return Vkm_GenFType;
+    function Mix (x, y    : in     Vkm_GenFType;
+                  a       : in     Vkm_Float   ) return Vkm_GenFType;
+    function Mix (x, y, a : in     Vkm_GenDType) return Vkm_GenDType;
+    function Mix (x, y    : in     Vkm_GenDType;
+                  a       : in     Vkm_Double  ) return Vkm_GenDType;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Mix the values 'x' and 'y' together using a boolean blend function.
+    --
+    -- The boolean blend function is applied component-wise as follows:
+    --     x if a is true
+    --     y if a is false
+    --
+    -- @param[in]     x The input parameter 'x' that is mixed with 'y'
+    -- @param[in]     y The input parameter 'y' that is mixed with 'x'
+    -- @param[in]     a The input parameter 'a' which is the boolean mixing
+    --                  coefficient.
+    --
+    -- @returns The mixture of x with y.
+    ----------------------------------------------------------------------------
+    function Mix (x, y : in     Vkm_GenFType;
+                  a    : in     Vkm_GenBType) return Vkm_GenFType;
+    function Mix (x, y : in     Vkm_GenDType;
+                  a    : in     Vkm_GenBType) return Vkm_GenDType;
+    function Mix (x, y : in     Vkm_GenUType;
+                  a    : in     Vkm_GenBType) return Vkm_GenUType;
+    function Mix (x, y : in     Vkm_GenIType;
+                  a    : in     Vkm_GenBType) return Vkm_GenIType;
 
 
 end Vulkan.Math.Common;

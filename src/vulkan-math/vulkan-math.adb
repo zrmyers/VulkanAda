@@ -26,6 +26,15 @@ with Ada.Unchecked_Conversion;
 package body Vulkan.Math is
 
 
+    function To_Indices (length : in Vkm_Length) return Vkm_Indices is
+    begin
+        return Vkm_Indices(Vkm_Length'Base(length) - 1);
+    end To_Indices;
+
+
+    ----------------------------------------------------------------------------
+
+
     function To_Bool(value : in     Vkm_Uint  ) return Vkm_Bool is
     begin
         return Vkm_Bool(value /= 0);

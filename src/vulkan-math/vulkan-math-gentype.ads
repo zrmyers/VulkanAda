@@ -29,8 +29,6 @@ package Vulkan.Math.GenType is
     pragma Preelaborate;
     pragma Pure;
 
-    type Vkm_Length is new Integer range 1 .. 4;
-    type Vkm_Indices is new Integer range 0 .. 3;
     type Vkm_Vector is array(Vkm_Indices range <>) of aliased Base_Type;
     pragma Convention(C,Vkm_Vector);
 
@@ -40,16 +38,23 @@ package Vulkan.Math.GenType is
             data : Vkm_Vector(Vkm_Indices'First .. Last_Index);
         end record;
 
-
     ----------------------------------------------------------------------------
     -- Operations on Vkm_GenType
     ----------------------------------------------------------------------------
     function Length (A : in     Vkm_GenType) return Vkm_Length;
 
-    function To_Indices (length : in Vkm_Length) return Vkm_Indices;
-
     ----------------------------------------------------------------------------
     -- Generic Vector Operations
+    ----------------------------------------------------------------------------
+    -- The following notation is used to descript the signatures of the generic
+    -- functions:
+    --     IV - A function has an input vector parameter
+    --     OV - A function has an output vector parameter
+    --     RV - A function returns a vector
+    --     IS - A function has an input scalar paramter.
+    --
+    -- The order of these symbols indicates the expected order that these parameter
+    -- are used in function passed in as a generic.
     ----------------------------------------------------------------------------
     -- @brief
     -- Apply function with pattern 'Func(IV,IV) return RV'.
@@ -111,6 +116,28 @@ package Vulkan.Math.GenType is
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IV_IV_RV(IV1, IV2, IV3 : in     Vkm_GenType) return Vkm_GenType;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Apply function with pattern 'Func(IV,IV,SV) return RV'
+    --
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
+    function Apply_Func_IV_IV_IS_RV(IV1, IV2 : in     Vkm_GenType;
+                                    IS1      : in     Base_Type) return Vkm_GenType;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Apply function with pattern 'Func(IV,SV,SV) return RV'
+    --
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
+    function Apply_Func_IV_IS_IS_RV(IV1      : in     Vkm_GenType;
+                                    IS1, IS2 : in     Base_Type) return Vkm_GenType;
 
 
 end Vulkan.Math.GenType;

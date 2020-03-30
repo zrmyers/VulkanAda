@@ -32,7 +32,7 @@ package Vulkan.Math.GenBType is
     package GenType is new Vulkan.Math.GenType(
         Base_Type => Vkm_Bool);
 
-    type Vkm_GenBType is new GenType.Vkm_GenType with null record;
+    subtype Vkm_GenBType is GenType.Vkm_GenType;
 
 
 end Vulkan.Math.GenBType;
