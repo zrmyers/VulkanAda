@@ -29,10 +29,10 @@ package Vulkan.Math.GenBType is
     pragma Preelaborate;
     pragma Pure;
 
-    package GenType is new Vulkan.Math.GenType(
+    package GBT is new Vulkan.Math.GenType(
         Base_Type => Vkm_Bool);
 
-    subtype Vkm_GenBType is GenType.Vkm_GenType;
+    subtype Vkm_GenBType is GBT.Vkm_GenType;
 
 
 end Vulkan.Math.GenBType;

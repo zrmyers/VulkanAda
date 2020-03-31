@@ -271,6 +271,7 @@ package Vulkan.Math.Common is
                   a    : in     Vkm_GenBType) return Vkm_GenUType;
     function Mix (x, y : in     Vkm_GenIType;
                   a    : in     Vkm_GenBType) return Vkm_GenIType;
-
+    function Mix (x, y : in     Vkm_GenBType;
+                  a    : in     Vkm_GenBType) return Vkm_GenBType;
 
 end Vulkan.Math.Common;

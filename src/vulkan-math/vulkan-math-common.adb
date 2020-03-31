@@ -583,8 +583,13 @@ package body Vulkan.Math.Common is
 
     function Mix (x, y : in     Vkm_GenUType;
                   a    : in     Vkm_GenBType) return Vkm_GenUType is
+        function Compute_Mix (x, y : in     Vkm_Uint;
+                              a    : in     Vkm_Bool ) return Vkm_Uint is
+            (if a then x else y) with Inline;
+
+        function Apply_Mix is new Apply_Func_IVU_IVU_IVB_RVU(Compute_Mix);
     begin
-        null;
+        return Apply_Mix(x, y, a);
     end Mix;
 
 
@@ -593,8 +598,28 @@ package body Vulkan.Math.Common is
 
     function Mix (x, y : in     Vkm_GenIType;
                   a    : in     Vkm_GenBType) return Vkm_GenIType is
+        function Compute_Mix (x, y : in     Vkm_Int;
+                              a    : in     Vkm_Bool ) return Vkm_Int is
+            (if a then x else y) with Inline;
+
+        function Apply_Mix is new Apply_Func_IVI_IVI_IVB_RVI(Compute_Mix);
     begin
-        null;
+        return Apply_Mix(x, y, a);
+    end Mix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Mix (x, y : in     Vkm_GenBType;
+                  a    : in     Vkm_GenBType) return Vkm_GenBType is
+        function Compute_Mix (x, y : in     Vkm_Bool;
+                              a    : in     Vkm_Bool) return Vkm_Bool is
+            (if a then x else y) with Inline;
+
+        function Apply_Mix is new GBT.Apply_Func_IV_IV_IV_RV(Compute_Mix);
+    begin
+        return Apply_Mix(x, y, a);
     end Mix;
 
 

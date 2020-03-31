@@ -47,7 +47,7 @@ package body Vulkan.Math.GenType is
 
 
     function Apply_Func_IS_IV_RV(Left  : in     Base_Type;
-                                      Right : in     Vkm_GenType) return Vkm_GenType is
+                                 Right : in     Vkm_GenType) return Vkm_GenType is
         Result : Vkm_GenType(Last_Index => To_Indices(Right.Length));
     begin
         for I in Vkm_Indices'First .. To_Indices(Right.Length) loop
@@ -56,11 +56,12 @@ package body Vulkan.Math.GenType is
         return Result;
     end Apply_Func_IS_IV_RV;
 
+
     ----------------------------------------------------------------------------
 
 
     function Apply_Func_IV_IS_RV(Left  : in     Vkm_GenType;
-                                      Right : in     Base_Type  ) return Vkm_GenType is
+                                 Right : in     Base_Type  ) return Vkm_GenType is
         Result : Vkm_GenType(Last_Index => To_Indices(Left.Length));
     begin
         for I in Vkm_Indices'First .. To_Indices(Left.Length) loop

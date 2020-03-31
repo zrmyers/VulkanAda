@@ -23,27 +23,23 @@
 --------------------------------------------------------------------------------
 -- This package describes a generic Unsigned Integer Vulkan Math type.
 --------------------------------------------------------------------------------
-with Vulkan.Math.GenType;
-with Vulkan.Math.GenBType;
-use Vulkan.Math.GenBType;
+package body Vulkan.Math.GenUType is
 
-package Vulkan.Math.GenUType is
-    pragma Preelaborate;
-    pragma Pure;
-
-    package GUT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Uint);
-
-    subtype Vkm_GenUType is GUT.Vkm_GenType;
 
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
-    generic
-        with function Func(ISF1, ISF2 : in     Vkm_Uint;
-                           ISB1       : in     Vkm_Bool ) return Vkm_Uint;
+
 
     function Apply_Func_IVU_IVU_IVB_RVU(IVU1, IVU2 : in     Vkm_GenUType;
-                                        IVB1       : in     Vkm_GenBType) return Vkm_GenUType;
+                                        IVB1       : in     Vkm_GenBType) return Vkm_GenUType is
+        Result : Vkm_GenUType := IVU1;
+    begin
+        for I in Vkm_Indices'First .. To_Indices(Result.Length) loop
+            Result.data(I) := Func(IVU1.data(I), IVU2.data(I), IVB1.data(I));
+        end loop;
+        return Result;
+    end Apply_Func_IVU_IVU_IVB_RVU;
+
 
 end Vulkan.Math.GenUType;

@@ -24,6 +24,8 @@
 -- This package describes a generic Unsigned Integer Vulkan Math type.
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
+with Vulkan.Math.GenBType;
+use Vulkan.Math.GenBType;
 
 package Vulkan.Math.GenIType is
     pragma Preelaborate;
@@ -33,6 +35,16 @@ package Vulkan.Math.GenIType is
         Base_Type => Vkm_Int);
 
     subtype Vkm_GenIType is GIT.Vkm_GenType;
+
+    ----------------------------------------------------------------------------
+    -- Generic Operations
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(ISF1, ISF2 : in     Vkm_Int;
+                           ISB1       : in     Vkm_Bool ) return Vkm_Int;
+
+    function Apply_Func_IVI_IVI_IVB_RVI(IVI1, IVI2 : in     Vkm_GenIType;
+                                        IVB1       : in     Vkm_GenBType) return Vkm_GenIType;
 
 
 end Vulkan.Math.GenIType;
