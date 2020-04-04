@@ -21,25 +21,57 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a generic Double Precision Float Vulkan Math type.
+--
+-- This package instantiates Ada generic numerical operations for use by the
+-- Vulkan Math Library.
 --------------------------------------------------------------------------------
-package body Vulkan.Math.GenDType is
+
+package body Vulkan.Math.Numerics is
 
 
     ----------------------------------------------------------------------------
-    -- Generic Operations
-    ----------------------------------------------------------------------------
 
 
-    function Apply_Func_IVD_IVD_IVB_RVD(IVD1, IVD2 : in     Vkm_GenDType;
-                                        IVB1       : in     Vkm_GenBType) return Vkm_GenDType is
-        Result : Vkm_GenDType := IVD1;
-
+    function Compute_Modf (x : in     Floating_Point;
+                           i :    out Floating_Point) return Floating_Point is
     begin
-        for I in Vkm_Indices'First .. To_Indices(IVD1.Length) loop
-            Result.data(I) := Func(IVD1.data(I), IVD2.data(I), IVB1.data(I));
-        end loop;
-        return Result;
-    end Apply_Func_IVD_IVD_IVB_RVD;
+        i := Floating_Point'Truncation(x);
+        return x - i;
+    end Compute_Modf;
 
-end Vulkan.Math.GenDType;
+    function Smooth_Step
+        (edge0, edge1, x : in     Floating_Point) return Floating_Point
+    is
+        t : constant Floating_Point := Clamp((x - edge0) / (edge1 - edge0), 0.0, 1.0);
+    begin
+        return (t * t * (3.0 - 2.0 * t));
+    end Smooth_Step;
+
+    function Is_Inf (x : in     Floating_Point) return Vkm_Bool is
+        pragma Unreferenced(x);
+    begin
+        return False;
+    end Is_Inf;
+
+
+    function Is_Nan (x : in     Floating_Point) return Vkm_Bool is
+        pragma Unreferenced(x);
+    begin
+        return False;
+    end Is_Nan;
+
+
+    function Frexp (x        : in     Floating_Point;
+                    exponent :    out Vkm_Int) return Floating_Point is
+    begin
+        exponent := Floating_Point'Exponent(x);
+        return Floating_Point'Fraction(x);
+    end Frexp;
+
+    function Ldexp (x        : in     Floating_Point;
+                    exponent : in     Vkm_Int) return Floating_Point is
+    begin
+        return Floating_Point'Compose(x, exponent);
+    end Ldexp;
+
+end Vulkan.Math.Numerics;

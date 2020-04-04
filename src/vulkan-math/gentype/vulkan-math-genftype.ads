@@ -25,7 +25,12 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
 with Vulkan.Math.GenBType;
+with Vulkan.Math.GenIType;
+with Vulkan.Math.GenUType;
+
 use Vulkan.Math.GenBType;
+use Vulkan.Math.GenUType;
+use Vulkan.Math.GenIType;
 
 package Vulkan.Math.GenFType is
     pragma Preelaborate;
@@ -56,8 +61,39 @@ package Vulkan.Math.GenFType is
     generic
         with function Func(ISF1, ISF2 : in     Vkm_Float;
                            ISB1       : in     Vkm_Bool ) return Vkm_Float;
-
     function Apply_Func_IVF_IVF_IVB_RVF(IVF1, IVF2 : in     Vkm_GenFType;
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenFType;
+
+    generic
+        with function Func(ISF : in     Vkm_Float) return Vkm_Bool;
+    function Apply_Func_IVF_RVB (IVF1 : in     Vkm_GenFType) return Vkm_GenBType;
+
+    generic
+        with function Func (ISF : in     Vkm_Float) return Vkm_Int;
+    function Apply_Func_IVF_RVI (IVF1 : in     Vkm_GenFType) return Vkm_GenIType;
+
+    generic
+        with function Func (ISI : in     Vkm_Int) return Vkm_Float;
+    function Apply_Func_IVI_RVF (IVI1 : in     Vkm_GenIType) return Vkm_GenFType;
+
+    generic
+        with function Func (ISF : in     Vkm_Float) return Vkm_Uint;
+    function Apply_Func_IVF_RVU (IVF1 : in     Vkm_GenFType) return Vkm_GenUType;
+
+    generic
+        with function Func (ISU : in     Vkm_Uint) return Vkm_Float;
+    function Apply_Func_IVU_RVF (IVU1 : in     Vkm_GenUType) return Vkm_GenFType;
+
+    generic
+        with function Func (ISF : in     Vkm_Float;
+                            OSI :    out Vkm_Int) return Vkm_Float;
+    function Apply_Func_IVF_OVI_RVF(IVF : in     Vkm_GenFType;
+                                    OVI :    out Vkm_GenIType) return Vkm_GenFType;
+
+    generic
+        with function Func (ISF : in     Vkm_Float;
+                            ISI : in     Vkm_Int) return Vkm_Float;
+    function Apply_Func_IVF_IVI_RVF(IVF : in     Vkm_GenFType;
+                                    IVI : in     Vkm_GenIType) return Vkm_GenFType;
 
 end Vulkan.Math.GenFType;

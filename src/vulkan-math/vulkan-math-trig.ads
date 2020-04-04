@@ -26,14 +26,17 @@
 -- Numerics packages.
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
+with Vulkan.Math.Numerics;
 
 use Vulkan.Math.GenFType;
 
 package Vulkan.Math.Trig is
     pragma Preelaborate;
     pragma Pure;
-    
  
+    DEGREES_TO_RADIANS : constant := PI / 180.0;
+    RADIANS_TO_DEGREES : constant := 180.0 / PI;
+    
     ----------------------------------------------------------------------------
     -- @brief
     -- Convert a generic floating point value in degrees to radians.
@@ -41,8 +44,10 @@ package Vulkan.Math.Trig is
     -- @param[in]     degrees The value to convert to radians.
     -- 
     -- @return The result in radians.
-    ----------------------------------------------------------------------------     
-    function Radians (degrees : in     Vkm_GenFType) return Vkm_GenFType;
+    ----------------------------------------------------------------------------
+    function Radians (degrees : in     Vkm_Float) return Vkm_Float is
+        (degrees * DEGREES_TO_RADIANS) with Inline;
+    function Radians is new GFT.Apply_Func_IV_RV(Radians);
     
     
     ----------------------------------------------------------------------------
@@ -53,7 +58,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The result in degrees.
     ----------------------------------------------------------------------------
-    function Degrees (radians : in     Vkm_GenFType) return Vkm_GenFType;
+    function Degrees (radians : in     Vkm_Float) return Vkm_Float is
+        (radians * RADIANS_TO_DEGREES) with Inline;
+    function Degrees is new GFT.Apply_Func_IV_RV(Degrees);
     
     
     ----------------------------------------------------------------------------
@@ -64,7 +71,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The sin of the angle.
     ----------------------------------------------------------------------------
-    function Sin (angle : in     Vkm_GenFType) return Vkm_GenFType;
+    function Sin (angle : in     Vkm_Float) return Vkm_Float 
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Sin;
+    function Sin is new GFT.Apply_Func_IV_RV(Sin);
     
     
     ----------------------------------------------------------------------------
@@ -75,7 +84,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The cos of the angle.
     ----------------------------------------------------------------------------
-    function Cos (angle : in     Vkm_GenFType) return Vkm_GenFType;
+    function Cos (angle : in     Vkm_Float) return Vkm_Float 
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Cos;
+    function Cos is new GFT.Apply_Func_IV_RV(Cos);
     
     
     ----------------------------------------------------------------------------
@@ -86,7 +97,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The tan of the angle.
     ----------------------------------------------------------------------------
-    function Tan (angle : in     Vkm_GenFType) return Vkm_GenFType;
+    function Tan (angle : in     Vkm_Float) return Vkm_Float 
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Tan;
+    function Tan is new GFT.Apply_Func_IV_RV(Tan);
     
     
     ----------------------------------------------------------------------------
@@ -97,7 +110,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The asin of the angle.
     ----------------------------------------------------------------------------
-    function Asin (angle : in     Vkm_GenFType) return Vkm_GenFType;
+    function Asin (angle : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Arcsin;
+    function Asin is new GFT.Apply_Func_IV_RV(Asin);
     
     
     ----------------------------------------------------------------------------
@@ -108,8 +123,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The arc cos of the angle.
     ----------------------------------------------------------------------------
-    function Acos (angle : in     Vkm_GenFType) return Vkm_GenFType;
-    
+    function Acos (angle : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Arccos;
+    function Acos is new GFT.Apply_Func_IV_RV(Acos);
     
     ----------------------------------------------------------------------------
     -- @brief
@@ -125,7 +141,11 @@ package Vulkan.Math.Trig is
     -- @error
     -- Results are undefined if x and y are both 0.
     ----------------------------------------------------------------------------
-    function Atan (y, x  : in     Vkm_GenFType) return Vkm_GenFType;
+    function Atan (y : in     Vkm_Float;
+                   x : in     Vkm_Float := 1.0) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Arctan;
+    function Atan is new GFT.Apply_Func_IV_IV_RV(Atan);
+    
     
     
     ----------------------------------------------------------------------------
@@ -139,7 +159,9 @@ package Vulkan.Math.Trig is
     -- @error
     -- Results are undefined if x and y are both 0.
     ----------------------------------------------------------------------------
-    function Atan (y_over_x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Atan (y_over_x : in     Vkm_Float) return Vkm_Float is
+        (Atan(y => y_over_x)) with Inline;
+    function Atan is new GFT.Apply_Func_IV_RV(Atan);
     
     
     ----------------------------------------------------------------------------
@@ -150,7 +172,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The hyperbolic sin of 'x'.
     ----------------------------------------------------------------------------
-    function Sinh (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Sinh (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Sinh;
+    function Sinh is new GFT.Apply_Func_IV_RV(Sinh);
     
     
     ----------------------------------------------------------------------------
@@ -161,7 +185,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The hyperbolic cos of 'x'.
     ----------------------------------------------------------------------------
-    function Cosh (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Cosh (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Cosh;
+    function Cosh is new GFT.Apply_Func_IV_RV(Cosh);
     
     
     ----------------------------------------------------------------------------
@@ -172,7 +198,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The hyperboic tan of 'x'.
     ----------------------------------------------------------------------------
-    function Tanh (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Tanh (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Tanh;
+    function Tanh is new GFT.Apply_Func_IV_RV(Tanh);
     
    
     ----------------------------------------------------------------------------
@@ -183,7 +211,9 @@ package Vulkan.Math.Trig is
     --
     -- @return The inverse of sinh.
     ----------------------------------------------------------------------------
-    function Asinh (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Asinh (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Arcsinh;
+    function Asinh is new GFT.Apply_Func_IV_RV(Asinh);
     
     
     ----------------------------------------------------------------------------
@@ -197,7 +227,9 @@ package Vulkan.Math.Trig is
     -- @error
     -- Results are undefined if x < 1.
     ----------------------------------------------------------------------------
-    function Acosh (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Acosh (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Arccosh;
+    function Acosh is new GFT.Apply_Func_IV_RV(Acosh);
     
     
     ----------------------------------------------------------------------------
@@ -211,7 +243,9 @@ package Vulkan.Math.Trig is
     -- @error
     -- Results are undefined if x >= 0.
     ----------------------------------------------------------------------------
-    function Atanh (x  : in     Vkm_GenFType) return Vkm_GenFType;
+    function Atanh (x  : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Arctanh;
+    function Atanh is new GFT.Apply_Func_IV_RV(Atanh);
     
     
 end Vulkan.Math.Trig;

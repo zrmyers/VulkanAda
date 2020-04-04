@@ -21,27 +21,30 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a generic Single Precision Floating Point Vulkan Math type.
+-- This package describes a generic Unsigned Integer Vulkan Math type.
 --------------------------------------------------------------------------------
-package body Vulkan.Math.GenFType is
+with Vulkan.Math.GenType;
+with Vulkan.Math.GenBType;
 
+use Vulkan.Math.GenBType;
+
+package Vulkan.Math.GenIType is
+    pragma Preelaborate;
+    pragma Pure;
+
+    package GIT is new Vulkan.Math.GenType(
+        Base_Type => Vkm_Int);
+
+    subtype Vkm_GenIType is GIT.Vkm_GenType;
 
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
+    generic
+        with function Func(ISI1, ISI2 : in     Vkm_Int;
+                           ISB1       : in     Vkm_Bool ) return Vkm_Int;
 
+    function Apply_Func_IVI_IVI_IVB_RVI(IVI1, IVI2 : in     Vkm_GenIType;
+                                        IVB1       : in     Vkm_GenBType) return Vkm_GenIType;
 
-    function Apply_Func_IVF_IVF_IVB_RVF(IVF1, IVF2 : in     Vkm_GenFType;
-                                        IVB1       : in     Vkm_GenBType) return Vkm_GenFType is
-        Result : Vkm_GenFType := IVF1;
-
-    begin
-        for I in Vkm_Indices'First .. To_Indices(IVF1.Length) loop
-            Result.data(I) := Func(IVF1.data(I), IVF2.data(I), IVB1.data(I));
-        end loop;
-        return Result;
-    end Apply_Func_IVF_IVF_IVB_RVF;
-
-
-
-end Vulkan.Math.GenFType;
+end Vulkan.Math.GenIType;

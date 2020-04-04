@@ -25,14 +25,21 @@
 --------------------------------------------------------------------------------
 package body Vulkan.Math.GenType is
 
+
+    ----------------------------------------------------------------------------
+    -- Operations on Vkm_GenType
+    ----------------------------------------------------------------------------
+
+
     function Length (A : in     Vkm_GenType) return Vkm_Length is
     begin
         return A.data'Length;
     end Length;
 
+
     ----------------------------------------------------------------------------
-    -- Operations on Vkm_GenType
-    ----------------------------------------------------------------------------
+
+
     function Apply_Func_IV_IV_RV(Left, Right : in     Vkm_GenType) return Vkm_GenType is
         Result : Vkm_GenType(Last_Index => To_Indices(Left.Length));
     begin

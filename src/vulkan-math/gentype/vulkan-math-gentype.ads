@@ -41,6 +41,7 @@ package Vulkan.Math.GenType is
     ----------------------------------------------------------------------------
     -- Operations on Vkm_GenType
     ----------------------------------------------------------------------------
+
     function Length (A : in     Vkm_GenType) return Vkm_Length;
 
     ----------------------------------------------------------------------------
@@ -63,77 +64,29 @@ package Vulkan.Math.GenType is
     generic
         with function Func(Left, Right : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IV_RV(Left, Right : in     Vkm_GenType) return Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IS,IV) return RV'.
-    --
-    ----------------------------------------------------------------------------
     generic
         with function Func(Left, Right : in     Base_Type) return Base_Type;
     function Apply_Func_IS_IV_RV(Left  : in     Base_Type;
                                       Right : in     Vkm_GenType) return Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV,IS) return RV'.
-    --
-    ----------------------------------------------------------------------------
     generic
         with function Func(Left, Right : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IS_RV(Left  : in     Vkm_GenType;
-                                      Right : in     Base_Type  ) return Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV) return RV'
-    --
-    ----------------------------------------------------------------------------
+                                 Right : in     Base_Type  ) return Vkm_GenType;
     generic
         with function Func(A : in     Base_Type) return Base_Type;
     function Apply_Func_IV_RV(A : in     Vkm_GenType) return Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV,OV) return RV'
-    --
-    ----------------------------------------------------------------------------
     generic
         with function Func(IS1 : in     Base_Type;
                            OS1 :    out Base_Type) return Base_Type;
     function Apply_Func_IV_OV_RV(IV1 : in     Vkm_GenType;
                                  OV1 :    out Vkm_GenType) return Vkm_GenType;
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV,IV,IV) return RV'
-    --
-    ----------------------------------------------------------------------------
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IV_IV_RV(IV1, IV2, IV3 : in     Vkm_GenType) return Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV,IV,SV) return RV'
-    --
-    ----------------------------------------------------------------------------
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IV_IS_RV(IV1, IV2 : in     Vkm_GenType;
                                     IS1      : in     Base_Type) return Vkm_GenType;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV,SV,SV) return RV'
-    --
-    ----------------------------------------------------------------------------
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IS_IS_RV(IV1      : in     Vkm_GenType;

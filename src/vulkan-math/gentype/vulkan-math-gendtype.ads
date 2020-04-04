@@ -25,7 +25,10 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
 with Vulkan.Math.GenBType;
+with Vulkan.Math.GenIType;
+
 use Vulkan.Math.GenBType;
+use Vulkan.Math.GenIType;
 
 package Vulkan.Math.GenDType is
     pragma Preelaborate;
@@ -56,7 +59,22 @@ package Vulkan.Math.GenDType is
     generic
         with function Func(ISD1, ISD2 : in     Vkm_Double;
                            ISB1       : in     Vkm_Bool ) return Vkm_Double;
-
     function Apply_Func_IVD_IVD_IVB_RVD(IVD1, IVD2 : in     Vkm_GenDType;
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenDType;
+
+    generic
+        with function Func(ISD : in     Vkm_Double) return Vkm_Bool;
+    function Apply_Func_IVD_RVB(IVD1 : in     Vkm_GenDType) return Vkm_GenBType;
+
+    generic
+        with function Func (ISD : in     Vkm_Double;
+                            ISI :    out Vkm_Int) return Vkm_Double;
+    function Apply_Func_IVD_OVI_RVD(IVD : in     Vkm_GenDType;
+                                    OVI :    out Vkm_GenIType) return Vkm_GenDType;
+
+    generic
+        with function Func (ISD : in     Vkm_Double;
+                            ISI : in     Vkm_Int) return Vkm_Double;
+    function Apply_Func_IVD_IVI_RVD(IVD : in     Vkm_GenDType;
+                                    IVI : in     Vkm_GenIType) return Vkm_GenDType;
 end Vulkan.Math.GenDType;
