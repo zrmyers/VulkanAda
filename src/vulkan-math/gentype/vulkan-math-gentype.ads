@@ -38,11 +38,57 @@ package Vulkan.Math.GenType is
             data : Vkm_Vector(Vkm_Indices'First .. Last_Index);
         end record;
 
+    -- A pointer to a value of type Base_Type
+    type Vkm_Access_Component(Data: not null access Base_Type) is null record
+        with Implicit_Dereference => Data;
+
     ----------------------------------------------------------------------------
     -- Operations on Vkm_GenType
     ----------------------------------------------------------------------------
-
+    -- @brief
+    -- Returns the number of components in the generic vector.
+    --
+    -- @param[in]     A An instance of a vector.
+    --
+    -- @returns The number of components in the instance.
+    ----------------------------------------------------------------------------
     function Length (A : in     Vkm_GenType) return Vkm_Length;
+
+    function Make (Last_Index : in     Vkm_Indices;
+                   value      : in     Base_Type) return Vkm_GenType;
+
+    function Make (value1 : in Base_Type) return Vkm_GenType;
+    function Make (value1, value2 : in Base_Type) return Vkm_GenType;
+    function Make (value1, value2, value3 : in Base_Type) return Vkm_GenType;
+    function Make (value1, value2, value3, value4 : in Base_Type) return Vkm_GenType;
+
+    ----------------------------------------------------------------------------
+    -- Access Components of the Vector
+    ----------------------------------------------------------------------------
+    function X (Instance : in out Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(0)'Unrestricted_Access) with Inline;
+    function Y (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(1)'Unrestricted_Access) with Inline;
+    function Z (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(2)'Unrestricted_Access) with Inline;
+    function W (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(3)'Unrestricted_Access) with Inline;
+    function R (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(0)'Unrestricted_Access) with Inline;
+    function G (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(1)'Unrestricted_Access) with Inline;
+    function B (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(2)'Unrestricted_Access) with Inline;
+    function A (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(3)'Unrestricted_Access) with Inline;
+    function S (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(0)'Unrestricted_Access) with Inline;
+    function T (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(1)'Unrestricted_Access) with Inline;
+    function P (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(2)'Unrestricted_Access) with Inline;
+    function Q (Instance : in     Vkm_GenType) return Vkm_Access_Component is
+        (Data => Instance.data(3)'Unrestricted_Access) with Inline;
 
     ----------------------------------------------------------------------------
     -- Generic Vector Operations

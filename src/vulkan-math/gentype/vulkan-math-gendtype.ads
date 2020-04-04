@@ -39,19 +39,6 @@ package Vulkan.Math.GenDType is
 
     subtype Vkm_GenDType is GDT.Vkm_GenType;
 
-    ----------------------------------------------------------------------------
-    -- Operators
-    ----------------------------------------------------------------------------
-    -- Subtraction Operators
-    function "-" is new GDT.Apply_Func_IV_IV_RV("-");
-    function "-" is new GDT.Apply_Func_IV_IS_RV("-");
-    function "-" is new GDT.Apply_Func_IS_IV_RV("-");
-
-    -- Multiplication Operators
-    function "*" is new GDT.Apply_Func_IV_IV_RV("*");
-    function "*" is new GDT.Apply_Func_IS_IV_RV("*");
-    function "*" is new GDT.Apply_Func_IV_IS_RV("*");
-
 
     ----------------------------------------------------------------------------
     -- Generic Operations

@@ -43,19 +43,6 @@ package Vulkan.Math.GenFType is
 
 
     ----------------------------------------------------------------------------
-    -- Operations for Vkm_GenFType
-    ----------------------------------------------------------------------------
-    -- Subtraction Operators
-    function "-" is new GFT.Apply_Func_IV_IV_RV("-");
-    function "-" is new GFT.Apply_Func_IV_IS_RV("-");
-    function "-" is new GFT.Apply_Func_IS_IV_RV("-");
-
-    -- Multiplication Operators
-    function "*" is new GFT.Apply_Func_IV_IV_RV("*");
-    function "*" is new GFT.Apply_Func_IS_IV_RV("*");
-    function "*" is new GFT.Apply_Func_IV_IS_RV("*");
-
-    ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
     generic

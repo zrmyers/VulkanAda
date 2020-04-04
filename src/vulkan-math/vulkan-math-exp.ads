@@ -31,10 +31,14 @@ use Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
 use Vulkan.Math.GenDType;
 
+with Vulkan.Math.Numerics;
+
 package Vulkan.Math.Exp is
     pragma Preelaborate;
     pragma Pure;
 
+    -- Ln(2)
+    LN2 : constant := 0.69314_71805_59945_30941_72321_21458_18;
 
     ----------------------------------------------------------------------------
     -- @brief
@@ -48,7 +52,9 @@ package Vulkan.Math.Exp is
     -- @error
     -- Results are undefined for x < 0 or x=0 and y <= 0.
     ----------------------------------------------------------------------------
-    function "**" (x, y : in     Vkm_GenFType) return Vkm_GenFType;
+    function Pow (x, y : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF."**";
+    function Pow is new GFT.Apply_Func_IV_IV_RV(Pow);
 
 
     ----------------------------------------------------------------------------
@@ -59,7 +65,9 @@ package Vulkan.Math.Exp is
     --
     -- @return Returns e^x.
     ----------------------------------------------------------------------------
-    function Exp (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Exp (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Exp;
+    function Exp is new GFT.Apply_Func_IV_RV(Exp);
 
 
     ----------------------------------------------------------------------------
@@ -73,7 +81,9 @@ package Vulkan.Math.Exp is
     -- @error
     -- Results are undefined if x <= 0.
     ----------------------------------------------------------------------------
-    function Log (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Log (x : in     Vkm_Float) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Log;
+    function Log is new GFT.Apply_Func_IV_RV(Log);
 
 
     ----------------------------------------------------------------------------
@@ -84,7 +94,9 @@ package Vulkan.Math.Exp is
     --
     -- @return Returns 2^x.
     ----------------------------------------------------------------------------
-    function Exp2 (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Exp2 (x : in     Vkm_Float) return Vkm_Float is
+        (Exp( LN2 * x)) with Inline;
+    function Exp2 is new GFT.Apply_Func_IV_RV(Exp2);
 
 
     ----------------------------------------------------------------------------
@@ -98,7 +110,9 @@ package Vulkan.Math.Exp is
     -- @error
     -- Results are undefined for x <= 0.
     ----------------------------------------------------------------------------
-    function Log2 (x : in     Vkm_GenFType) return Vkm_GenFType;
+    function Log2 (x : in     Vkm_Float) return Vkm_Float is
+        (Exp(x) / LN2) with Inline;
+    function Log2 is new GFT.Apply_Func_IV_RV(Log2);
 
 
     ----------------------------------------------------------------------------
@@ -112,8 +126,12 @@ package Vulkan.Math.Exp is
     -- @error
     -- Results are undefined for x < 0.
     ----------------------------------------------------------------------------
-    function Sqrt(x : in     Vkm_GenFType ) return Vkm_GenFType;
-    function Sqrt(x : in     Vkm_GenDType) return Vkm_GenDType;
+    function Sqrt (x : in     Vkm_Float ) return Vkm_Float
+        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Sqrt;
+    function Sqrt is new GFT.Apply_Func_IV_RV(Sqrt);
+    function Sqrt (x : in     Vkm_Double) return Vkm_Double
+        renames Vulkan.Math.Numerics.VKM_DBL_NEF.Sqrt;
+    function Sqrt is new GDT.Apply_Func_IV_RV(Sqrt);
 
 
     ----------------------------------------------------------------------------
@@ -127,7 +145,12 @@ package Vulkan.Math.Exp is
     -- @error
     -- Results are undefined for x <= 0.
     ----------------------------------------------------------------------------
-    function Inverse_Sqrt(x : in     Vkm_GenFType ) return Vkm_GenFType;
-    function Inverse_Sqrt(x : in     Vkm_GenDType) return Vkm_GenDType;
+    function Inverse_Sqrt(x : in     Vkm_Float ) return Vkm_Float is
+        (1.0 / Sqrt(x)) with Inline;
+    function Inverse_Sqrt(x : in     Vkm_Double) return Vkm_Double is
+        (1.0 / Sqrt(x)) with Inline;
+    function Inverse_Sqrt is new GFT.Apply_Func_IV_RV(Inverse_Sqrt);
+    function Inverse_Sqrt is new GDT.Apply_Func_IV_RV(Inverse_Sqrt);
+
 
 end Vulkan.Math.Exp;
