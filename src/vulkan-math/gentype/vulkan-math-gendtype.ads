@@ -35,7 +35,7 @@ package Vulkan.Math.GenDType is
     pragma Pure;
 
     package GDT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Double);
+        Base_Type => Vkm_Double, Image => Vkm_Double'Image);
 
     subtype Vkm_GenDType is GDT.Vkm_GenType;
 

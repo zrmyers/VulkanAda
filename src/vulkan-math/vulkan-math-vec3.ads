@@ -24,7 +24,10 @@
 -- This package describes a Floating Point Vector with 4 components.
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
+with Vulkan.Math.Vec2;
+
 use Vulkan.Math.GenFType;
+use Vulkan.Math.Vec2;
 
 package Vulkan.Math.Vec3 is
 
@@ -61,6 +64,34 @@ package Vulkan.Math.Vec3 is
 
     ----------------------------------------------------------------------------
     -- @brief
+    -- Produce a vector by copying components from an existing vector.
+    --
+    -- @param[in]     vec3_value The vec3 to copy components from.
+    --
+    -- @returns A vec3 with all of its components set equal to the corresponding
+    --          components of vec3_value.
+    ----------------------------------------------------------------------------
+    function Make_Vec3 (vec3_value : in     Vkm_Vec3) return Vkm_Vec3 is
+        (GFT.Make(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Produce a vector by specifying the values for each of its components.
+    --
+    -- @param[in]     value1 Value for component 1.
+    -- @param[in]     value2 Value for component 2.
+    -- @param[in]     value3 Value for componetn 3.
+    -- @param[in]     Value4 value for component 4.
+    --
+    -- @return A Vec4 with all components set as specified.
+    ----------------------------------------------------------------------------
+    function Make_Vec3 (value1, value2, value3 : in    Vkm_Float) return Vkm_Vec3
+        renames GFT.Make;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
     -- Produce a vector by concatenating a scalar float with a vec2.
     --
     -- vec3 = [scalar_value, vec2_value]
@@ -70,5 +101,26 @@ package Vulkan.Math.Vec3 is
     --
     -- @returns The instance of Vec3.
     ----------------------------------------------------------------------------
+    function Make_Vec3 (scalar_value : in     Vkm_Float;
+                        vec2_value   : in     Vkm_Vec2 ) return Vkm_Vec3 is
+        (Make_Vec3(scalar_value, vec2_value.x, vec2_value.y)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Produce a vector by concatenating a scalar float with a vec2.
+    --
+    -- vec3 = [vec2_value, scalar_value]
+    --
+    -- @param[in]     vec2_value   The vec2 to concatenate to the scalar value.
+    -- @param[in]     scalar_value The scalar value to concatenate with the vec3.
+    --
+    -- @returns The instance of Vec3.
+    ----------------------------------------------------------------------------
+    function Make_Vec3 (vec2_value   : in     Vkm_Vec2;
+                        scalar_value : in     Vkm_Float ) return Vkm_Vec3 is
+        (Make_Vec3(vec2_value.x, vec2_value.y, scalar_value)) with Inline;
+
+
 
 end Vulkan.Math.Vec3;

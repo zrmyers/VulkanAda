@@ -162,5 +162,4 @@ package Vulkan.Math is
     function To_Double (value : in     Vkm_Int  ) return Vkm_Double;
     function To_Double (value : in     Vkm_Float) return Vkm_Double;
  
- 
 end Vulkan.Math;

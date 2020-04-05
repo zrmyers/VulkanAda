@@ -37,10 +37,9 @@ package Vulkan.Math.GenFType is
     pragma Pure;
 
     package GFT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Float);
+        Base_Type => Vkm_Float, Image => Vkm_Float'Image);
 
     subtype Vkm_GenFType is GFT.Vkm_GenType;
-
 
     ----------------------------------------------------------------------------
     -- Generic Operations

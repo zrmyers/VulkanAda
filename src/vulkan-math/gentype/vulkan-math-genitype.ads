@@ -33,7 +33,7 @@ package Vulkan.Math.GenIType is
     pragma Pure;
 
     package GIT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Int);
+        Base_Type => Vkm_Int, Image => Vkm_Int'Image);
 
     subtype Vkm_GenIType is GIT.Vkm_GenType;
 

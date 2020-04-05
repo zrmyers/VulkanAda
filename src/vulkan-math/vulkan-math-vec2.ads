@@ -28,7 +28,6 @@ use Vulkan.Math.GenFType;
 
 package Vulkan.Math.Vec2 is
 
-
     subtype Vkm_Vec2 is Vkm_GenFType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
@@ -43,8 +42,8 @@ package Vulkan.Math.Vec2 is
     --
     -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
-    function Make_Vec3 return Vkm_Vec2 is
-        (GFT.Make(Last_Index => 2, value => 0.0)) with Inline;
+    function Make_Vec2 return Vkm_Vec2 is
+        (GFT.Make(Last_Index => 1, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -55,20 +54,36 @@ package Vulkan.Math.Vec2 is
     --
     -- @returns A Vec4 with all components set to scalar_value.
     ----------------------------------------------------------------------------
-    function Make_Vec3 (scalar_value : in     Vkm_Float) return Vkm_Vec2 is
-        (GFT.Make(Last_Index => 2, value => scalar_value)) with Inline;
+    function Make_Vec2 (scalar_value : in     Vkm_Float) return Vkm_Vec2 is
+        (GFT.Make(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
     -- @brief
-    -- Produce a vector by concatenating a scalar float with a vec2.
+    -- Produce a vector by copying components from an existing vector.
     --
-    -- vec3 = [scalar_value, vec2_value]
+    -- @param[in]     vec2_value The vec2 to copy components from.
     --
-    -- @param[in]     scalar_value The scalar value to concatenate with the vec3.
-    -- @param[in]     vec2_value   The vec2 to concatenate to the scalar value.
-    --
-    -- @returns The instance of Vec3.
+    -- @returns A vec2 with all of its components set equal to the corresponding
+    --          components of vec2_value.
     ----------------------------------------------------------------------------
+    function Make_Vec2 (vec2_value : in     Vkm_Vec2) return Vkm_Vec2 is
+        (GFT.Make(vec2_value.x,vec2_value.y)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    -- @brief
+    -- Produce a vector by specifying the values for each of its components.
+    --
+    -- @param[in]     value1 Value for component 1.
+    -- @param[in]     value2 Value for component 2.
+    -- @param[in]     value3 Value for componetn 3.
+    -- @param[in]     Value4 value for component 4.
+    --
+    -- @return A Vec4 with all components set as specified.
+    ----------------------------------------------------------------------------
+    function Make_Vec2 (value1, value2 : in    Vkm_Float) return Vkm_Vec2
+        renames GFT.Make;
+
 
 end Vulkan.Math.Vec2;

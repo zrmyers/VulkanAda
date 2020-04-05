@@ -32,7 +32,7 @@ package Vulkan.Math.GenUType is
     pragma Pure;
 
     package GUT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Uint);
+        Base_Type => Vkm_Uint, Image => Vkm_Uint'Image);
 
     subtype Vkm_GenUType is GUT.Vkm_GenType;
 

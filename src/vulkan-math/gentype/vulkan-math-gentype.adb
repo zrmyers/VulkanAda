@@ -37,6 +37,27 @@ package body Vulkan.Math.GenType is
     end Length;
 
 
+
+    function Image (Instance : in     Vkm_GenType) return String is
+    begin
+        case Instance.Length is
+            when 4 =>
+                return "[ " & Image(Instance.data(0)) &
+                       ", " & Image(Instance.data(1)) &
+                       ", " & Image(Instance.data(2)) &
+                       ", " & Image(Instance.data(3)) & " ]";
+            when 3 =>
+                return "[ " & Image(Instance.data(0)) &
+                       ", " & Image(Instance.data(1)) &
+                       ", " & Image(Instance.data(2)) & " ]";
+            when 2 =>
+                return "[ " & Image(Instance.data(0)) &
+                       ", " & Image(Instance.data(1)) & " ]";
+            when 1 =>
+                return "[ " & Image(Instance.data(0)) & " ]";
+        end case;
+    end Image;
+
     function Make (Last_Index : in     Vkm_Indices;
                    value      : in     Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => Last_Index);
@@ -81,6 +102,40 @@ package body Vulkan.Math.GenType is
         Instance.data(3) := value4;
         return Instance;
     end Make;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Get (Instance : in out Vkm_Access_Component_2D) return Vkm_GenType is
+        Result : Vkm_GenType(Last_Index => 1);
+    begin
+        Result.data(0) := Instance.Data0.all;
+        Result.data(1) := Instance.Data1.all;
+        return Result;
+    end Get;
+
+    procedure Copy (Destination : in out Vkm_GenType;
+                    Source      : in     Vkm_GenType;
+                    Num_Copy    : in     Vkm_Length;
+                    Offset      : in     Vkm_Indices) is
+    begin
+        for Data_Index in 0 .. To_Indices(Num_Copy) loop
+            Destination.data(Offset + Data_Index) := Source.data(Data_Index);
+        end loop;
+    end Copy;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Concatenate (Left, Right : in     Vkm_GenType) return Vkm_GenType is
+        Result : Vkm_GenType(Left.Last_Index + Right.Last_Index + 1);
+    begin
+        Result.Copy(Left,Left.Length,0);
+        Result.Copy(Right,Right.Length,To_Indices(Left.Length));
+        return Result;
+    end Concatenate;
 
     ----------------------------------------------------------------------------
 

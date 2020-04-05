@@ -30,7 +30,7 @@ package Vulkan.Math.GenBType is
     pragma Pure;
 
     package GBT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Bool);
+        Base_Type => Vkm_Bool, Image => Vkm_Bool'Image);
 
     subtype Vkm_GenBType is GBT.Vkm_GenType;
 
