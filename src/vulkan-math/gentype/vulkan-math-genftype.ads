@@ -82,4 +82,9 @@ package Vulkan.Math.GenFType is
     function Apply_Func_IVF_IVI_RVF(IVF : in     Vkm_GenFType;
                                     IVI : in     Vkm_GenIType) return Vkm_GenFType;
 
+    generic
+        with function Func (ISF1 : in     Vkm_Float;
+                            ISF2 : in     Vkm_Float) return Vkm_Bool;
+    function Apply_Func_IVF_IVF_RVB(IVF1, IVF2 : in     Vkm_GenFType) return Vkm_GenBType;
+
 end Vulkan.Math.GenFType;

@@ -25,9 +25,6 @@
 --------------------------------------------------------------------------------
 package body Vulkan.Math.GenFType is
 
-    ----------------------------------------------------------------------------
-    -- Operators
-    ----------------------------------------------------------------------------
 
     ----------------------------------------------------------------------------
     -- Generic Operations
@@ -115,5 +112,15 @@ package body Vulkan.Math.GenFType is
         end loop;
         return Result;
     end Apply_Func_IVF_IVI_RVF;
+
+
+    function Apply_Func_IVF_IVF_RVB(IVF1, IVF2 : in     Vkm_GenFType) return Vkm_GenBType is
+        Result : Vkm_GenBType := (Last_Index => IVF1.Last_Index, others => <>);
+    begin
+        for I in Vkm_Indices'First .. IVF1.Last_Index loop
+            Result.data(I) := Func(IVF1.data(I), IVF2.data(I));
+        end loop;
+        return Result;
+    end Apply_Func_IVF_IVF_RVB;
 
 end Vulkan.Math.GenFType;

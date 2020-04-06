@@ -47,4 +47,8 @@ package Vulkan.Math.GenIType is
     function Apply_Func_IVI_IVI_IVB_RVI(IVI1, IVI2 : in     Vkm_GenIType;
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenIType;
 
+    generic
+        with function Func(ISI1, ISI2 : in     Vkm_Int) return Vkm_Bool;
+    function Apply_Func_IVI_IVI_RVB(IVI1, IVI2 : in     Vkm_GenIType) return Vkm_GenBType;
+
 end Vulkan.Math.GenIType;

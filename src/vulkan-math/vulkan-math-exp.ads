@@ -55,7 +55,9 @@ package Vulkan.Math.Exp is
     function Pow (x, y : in     Vkm_Float) return Vkm_Float
         renames Vulkan.Math.Numerics.VKM_FLT_NEF."**";
     function Pow is new GFT.Apply_Func_IV_IV_RV(Pow);
-
+    function Pow (x, y : in     Vkm_Double) return Vkm_Double
+        renames Vulkan.Math.Numerics.VKM_DBL_NEF."**";
+    function Pow is new GDT.Apply_Func_IV_IV_RV(Pow);
 
     ----------------------------------------------------------------------------
     -- @brief

@@ -64,4 +64,11 @@ package Vulkan.Math.GenDType is
                             ISI : in     Vkm_Int) return Vkm_Double;
     function Apply_Func_IVD_IVI_RVD(IVD : in     Vkm_GenDType;
                                     IVI : in     Vkm_GenIType) return Vkm_GenDType;
+
+    generic
+        with function Func (ISD1 : in     Vkm_Double;
+                            ISD2 : in     Vkm_Double) return Vkm_Bool;
+    function Apply_Func_IVD_IVD_RVB(IVD1, IVD2 : in     Vkm_GenDType) return Vkm_GenBType;
+
+
 end Vulkan.Math.GenDType;

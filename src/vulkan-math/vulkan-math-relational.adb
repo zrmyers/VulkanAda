@@ -21,33 +21,37 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a generic Unsigned Integer Vulkan Math type.
+--
+-- This package provides operator definitions for all types.
 --------------------------------------------------------------------------------
-package body Vulkan.Math.GenUType is
+
+
+package body Vulkan.Math.Relational is
+
+    ----------------------------------------------------------------------------
+
+
+    function Is_Any (x : in     Vkm_GenBType) return Vkm_Bool is
+        Result : Vkm_Bool := False;
+    begin
+        for I in x.data'Range loop
+            Result := Result or x.data(I);
+        end loop;
+        return Result;
+    end Is_Any;
 
 
     ----------------------------------------------------------------------------
-    -- Generic Operations
-    ----------------------------------------------------------------------------
 
 
-    function Apply_Func_IVU_IVU_IVB_RVU(IVU1, IVU2 : in     Vkm_GenUType;
-                                        IVB1       : in     Vkm_GenBType) return Vkm_GenUType is
-        Result : Vkm_GenUType := IVU1;
+    function Is_All (x : in     Vkm_GenBType) return Vkm_Bool is
+        Result : Vkm_Bool := True;
     begin
-        for I in Vkm_Indices'First .. To_Indices(Result.Length) loop
-            Result.data(I) := Func(IVU1.data(I), IVU2.data(I), IVB1.data(I));
+        for I in x.data'Range loop
+            Result := Result and x.data(I);
         end loop;
         return Result;
-    end Apply_Func_IVU_IVU_IVB_RVU;
+    end Is_All;
 
-    function Apply_Func_IVU_IVU_RVB(IVU1, IVU2 : in     Vkm_GenUType) return Vkm_GenBType is
-        Result : Vkm_GenBType := (Last_Index => IVU1.Last_Index, others => <>);
-    begin
-        for I in Vkm_Indices'First .. IVU1.Last_Index loop
-            Result.data(I) := Func(IVU1.data(I), IVU2.data(I));
-        end loop;
-        return Result;
-    end Apply_Func_IVU_IVU_RVB;
 
-end Vulkan.Math.GenUType;
+end Vulkan.Math.Relational;

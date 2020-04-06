@@ -23,27 +23,27 @@
 --------------------------------------------------------------------------------
 -- This package describes a Single Precision Floating Point Vector with 2 components.
 --------------------------------------------------------------------------------
-with Vulkan.Math.GenFType;
-use Vulkan.Math.GenFType;
+with Vulkan.Math.GenDType;
+use Vulkan.Math.GenDType;
 
-package Vulkan.Math.Vec2 is
+package Vulkan.Math.Dvec2 is
 
-    subtype Vkm_Vec2 is Vkm_GenFType(Last_Index => 1);
+    subtype Vkm_Dvec2 is Vkm_GenDType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
     -- Ada does not have the concept of constructors in the sense that they exist
     -- in C++.  For this reason, we will instead define multiple methods for
     -- instantiating a vec2 here.
     ----------------------------------------------------------------------------
-    -- The following are explicit constructors for Vec4:
+    -- The following are explicit constructors for Vec2:
     ----------------------------------------------------------------------------
     -- @brief
     -- Produce a default vector with all components set to 0.0.
     --
     -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
-    function Make_Vec2 return Vkm_Vec2 is
-        (GFT.Make(Last_Index => 1, value => 0.0)) with Inline;
+    function Make_Dvec2 return Vkm_Dvec2 is
+        (GDT.Make(Last_Index => 1, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -54,8 +54,8 @@ package Vulkan.Math.Vec2 is
     --
     -- @returns A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
-    function Make_Vec2 (scalar_value : in     Vkm_Float) return Vkm_Vec2 is
-        (GFT.Make(Last_Index => 1, value => scalar_value)) with Inline;
+    function Make_Dvec2 (scalar_value : in     Vkm_Double) return Vkm_Dvec2 is
+        (GDT.Make(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -67,8 +67,8 @@ package Vulkan.Math.Vec2 is
     -- @returns A vec2 with all of its components set equal to the corresponding
     --          components of vec2_value.
     ----------------------------------------------------------------------------
-    function Make_Vec2 (vec2_value : in     Vkm_Vec2) return Vkm_Vec2 is
-        (GFT.Make(vec2_value.x,vec2_value.y)) with Inline;
+    function Make_Dvec2 (vec2_value : in     Vkm_Dvec2) return Vkm_Dvec2 is
+        (GDT.Make(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -80,8 +80,8 @@ package Vulkan.Math.Vec2 is
     --
     -- @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
-    function Make_Vec2 (value1, value2 : in    Vkm_Float) return Vkm_Vec2
-        renames GFT.Make;
+    function Make_Dvec2 (value1, value2 : in    Vkm_Double) return Vkm_Dvec2
+        renames GDT.Make;
 
 
-end Vulkan.Math.Vec2;
+end Vulkan.Math.Dvec2;

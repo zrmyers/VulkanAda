@@ -27,13 +27,24 @@ use Ada.Text_IO;
 with Vulkan.Math;
 use Vulkan.Math;
 
+with Vulkan.Math.Operators;
+use Vulkan.Math.Operators;
+
 with Vulkan.Math.Vec4;
 use Vulkan.Math.Vec4;
 
-procedure Vulkan_Test.Math is
+With Vulkan.Math.Vec2;
+use Vulkan.Math.vec2;
 
+
+procedure Vulkan_Test.Math is 
+    
+    
     x, y, z : Vkm_Vec4 := Make_Vec4(scalar_value => 1.0);
 
+    l,m : Vkm_Vec2 := Make_Vec2(scalar_value => 2.0);
+
+    
 begin
 
     Put_Line("Hello World!");
@@ -42,5 +53,15 @@ begin
     Put_Line("x.x: " & Vkm_Float'Image(x.x));
     Put_Line("y.z: " & Vkm_Float'Image(y.z));
     z.y := x.x + y.z;
-    Put_Line("z.y := x.x + y.z" & Vkm_Float'Image(z.y));
+    Put_Line("z.y := x.x + y.z" & Vkm_Float'Image(z.y));    
+    Put_Line(Vkm_Length'Image(z.Length));   
+    m.x := m.x * 2.0;    
+    Put_Line("m.x : " & Vkm_Float'Image(m.x));       
+    Put_Line("m.x : " & Vkm_Float'Image(m.x));
+    Put_Line("x : " & x.Image);
+    Put_Line("m : " & m.Image);
+    x := m & m;
+    Put_Line("x:= m & m " & x.Image);
+    z := 1.0 & 2.0 & 3.0 & 4.0;
+    
 end Vulkan_Test.Math;

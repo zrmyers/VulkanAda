@@ -46,4 +46,9 @@ package Vulkan.Math.GenUType is
     function Apply_Func_IVU_IVU_IVB_RVU(IVU1, IVU2 : in     Vkm_GenUType;
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenUType;
 
+    generic
+        with function Func(ISU1, ISU2 : in     Vkm_Uint) return Vkm_Bool;
+    function Apply_Func_IVU_IVU_RVB(IVU1, IVU2 : in     Vkm_GenUType) return Vkm_GenBType;
+
+
 end Vulkan.Math.GenUType;

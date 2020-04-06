@@ -35,4 +35,15 @@ package body Vulkan.Math.GenIType is
         return Result;
     end Apply_Func_IVI_IVI_IVB_RVI;
 
+
+    function Apply_Func_IVI_IVI_RVB(IVI1, IVI2 : in     Vkm_GenIType) return Vkm_GenBType is
+        Result : Vkm_GenBType := (Last_Index => IVI1.Last_Index, others => <>);
+    begin
+        for I in Vkm_Indices'First .. IVI1.Last_Index loop
+            Result.data(I) := Func(IVI1.data(I),IVI2.data(I));
+        end loop;
+        return Result;
+    end Apply_Func_IVI_IVI_RVB;
+
+
 end Vulkan.Math.GenIType;

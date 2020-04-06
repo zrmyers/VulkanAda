@@ -26,12 +26,11 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
+with Vulkan.Math.Exp;
+with Vulkan.Math.Common;
 
 use Vulkan.Math.GenFType;
 use Vulkan.Math.GenDType;
-
-with Vulkan.Math.Exp;
-with Vulkan.Math.Common;
 
 package Vulkan.Math.Operators is
     pragma Preelaborate;
@@ -39,7 +38,7 @@ package Vulkan.Math.Operators is
 
 
     ----------------------------------------------------------------------------
-    -- The Operators for floating point vectors are defined here.
+    -- The Operators for single precision floating point vectors are defined here.
     --
     -- A summary of operators that can be used with GenFType values of different
     -- size:
@@ -63,7 +62,13 @@ package Vulkan.Math.Operators is
     --
     -- A summary of relational operators that are component-wise on two input vecotrs
     -- of the same length, and return a vector of booleans of the same length:
-    --    - "<", Less than operator
+    --    - "<",  Less than operator
+    --    - ">",  Greater than operator
+    --    - "<=", Less than or equal to operator
+    --    - ">=", Greater than or equal to operator
+    --    - "=",  Equality operator
+    --    - "/=", Non-Equality operator (Implicitly defined)
+    --
     ----------------------------------------------------------------------------
     -- GenFType Concatenation Operators
     ----------------------------------------------------------------------------
@@ -143,5 +148,138 @@ package Vulkan.Math.Operators is
     function "/" is new GFT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
     function "/" is new GFT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
 
+
+    ----------------------------------------------------------------------------
+    -- GenFType Relational Operators
+    ----------------------------------------------------------------------------
+    function "<"  is new Apply_Func_IVF_IVF_RVB("<" );
+    function "<=" is new Apply_Func_IVF_IVF_RVB("<=");
+    function ">"  is new Apply_Func_IVF_IVF_RVB(">" );
+    function ">=" is new Apply_Func_IVF_IVF_RVB(">=");
+    function "="  is new Apply_Func_IVF_IVF_RVB("=" );
+    function "/=" is new Apply_Func_IVF_IVF_RVB("/=");
+
+
+    ----------------------------------------------------------------------------
+    -- The Operators for double precision floating point vectors are defined here.
+    --
+    -- A summary of operators that can be used with GenDType values of different
+    -- size:
+    --    - "&", Concatenation
+    --
+    -- A summary of operators that are component-wise Unary:
+    --    - "+"  , Unary plus operator.
+    --    - "-"  , Unary minus operator.
+    --    - "abs", Absolute value operator.
+    --
+    -- A summary of operators that are component-wise on two input vectors of the
+    -- same length. Additionally, a scalar may appear instead of a vector on the
+    -- left or right hand side of these operators:
+    --    - "mod", Modulus operator.
+    --    - "**",  Power operator.
+    --    - "+",   Addition operator.
+    --    - "-",   Subtraction operator.
+    --    - "rem", Remainder operator.
+    --    - "*",   Multiplication operator.
+    --    - "/",   Division operator.
+    --
+    -- A summary of relational operators that are component-wise on two input vecotrs
+    -- of the same length, and return a vector of booleans of the same length:
+    --    - "<",  Less than operator
+    --    - ">",  Greater than operator
+    --    - "<=", Less than or equal to operator
+    --    - ">=", Greater than or equal to operator
+    --    - "=",  Equality operator
+    --    - "/=", Non-Equality operator (Implicitly defined)
+    --
+    ----------------------------------------------------------------------------
+    -- GenFType Concatenation Operators
+    ----------------------------------------------------------------------------
+    function "&" (Left, Right : in     Vkm_GenDType) return Vkm_GenDType renames GDT.Concatenate;
+    function "&" (Left        : in     Vkm_Double   ;
+                  Right       : in     Vkm_GenDType) return Vkm_GenDType is
+        (GDT.Make(Left).Concatenate(Right)) with Inline;
+    function "&" (Left        : in     Vkm_GenDType;
+                  Right       : in     Vkm_Double   ) return Vkm_GenDType is
+        (Left.Concatenate(GDT.Make(Right))) with Inline;
+    function "&" (Left, Right : in     Vkm_Double   ) return Vkm_GenDType is
+        (GDT.Make(Left, Right)) with Inline;
+
+    ----------------------------------------------------------------------------
+    -- GenFtype Unary Plus Operator
+    ----------------------------------------------------------------------------
+    function "+" is new GDT.Apply_Func_IV_RV("+");
+
+    ----------------------------------------------------------------------------
+    -- GenFType Unary Minus Operator
+    ----------------------------------------------------------------------------
+    function "-" is new GDT.Apply_Func_IV_RV("-");
+
+    ----------------------------------------------------------------------------
+    -- GenFType Absolute Value Operator
+    ----------------------------------------------------------------------------
+    function "abs" is new GDT.Apply_Func_IV_RV(Vulkan.Math.Common.Absolute_Value); -- vector := abs vec
+
+    ----------------------------------------------------------------------------
+    -- GenFType Modulus Operator
+    ----------------------------------------------------------------------------
+    function "mod" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Common.Modulo); -- vector := vector mod vector
+    function "mod" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Common.Modulo); -- vector := vector mod scalar
+    function "mod" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Common.Modulo); -- vector := scalar mod vector
+
+    ----------------------------------------------------------------------------
+    -- GenFType Power Operator
+    ----------------------------------------------------------------------------
+    function "**" (Left, Right : in     Vkm_Double) return Vkm_Double renames Vulkan.Math.Exp.Pow;
+    function "**" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** vector
+    function "**" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** scalar
+    function "**" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow); -- vector := scalar ** vector
+
+    ----------------------------------------------------------------------------
+    -- GenFType Addition Operator
+    ----------------------------------------------------------------------------
+    function "+" is new GDT.Apply_Func_IV_IV_RV("+"); -- vector := vector + vector
+    function "+" is new GDT.Apply_Func_IV_IS_RV("+"); -- vector := vector + scalar
+    function "+" is new GDT.Apply_Func_IS_IV_RV("+"); -- vector := scalar + vector
+
+    ----------------------------------------------------------------------------
+    -- GenFType Subtraction Operator
+    ----------------------------------------------------------------------------
+    function "-" is new GDT.Apply_Func_IV_IV_RV("-"); -- vector := vector - vector
+    function "-" is new GDT.Apply_Func_IV_IS_RV("-"); -- vector := vector - scalar
+    function "-" is new GDT.Apply_Func_IS_IV_RV("-"); -- vector := scalar - vector
+
+    ----------------------------------------------------------------------------
+    -- GenFType Remainder Operator
+    ----------------------------------------------------------------------------
+    function "rem" (Left, Right : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Remainder;
+    function "rem" is new GDT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
+    function "rem" is new GDT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
+    function "rem" is new GDT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector
+
+    ----------------------------------------------------------------------------
+    -- GenFType Multiplication Operator
+    ----------------------------------------------------------------------------
+    function "*" is new GDT.Apply_Func_IV_IV_RV("*"); -- vector := vector * vector
+    function "*" is new GDT.Apply_Func_IV_IS_RV("*"); -- vector := vector * scalar
+    function "*" is new GDT.Apply_Func_IS_IV_RV("*"); -- vector := scalar * vector
+
+    ----------------------------------------------------------------------------
+    -- GenFType Division Operator
+    ----------------------------------------------------------------------------
+    function "/" is new GDT.Apply_Func_IV_IV_RV("/"); -- vector := vector / vector
+    function "/" is new GDT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
+    function "/" is new GDT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
+
+
+    ----------------------------------------------------------------------------
+    -- GenFType Relational Operators
+    ----------------------------------------------------------------------------
+    function "<"  is new Apply_Func_IVD_IVD_RVB("<");
+    function "<=" is new Apply_Func_IVD_IVD_RVB("<=");
+    function ">"  is new Apply_Func_IVD_IVD_RVB(">");
+    function ">=" is new Apply_Func_IVD_IVD_RVB(">=");
+    function "="  is new Apply_Func_IVD_IVD_RVB("=");
+    function "/=" is new Apply_Func_IVD_IVD_RVB("/=");
 
 end Vulkan.Math.Operators;

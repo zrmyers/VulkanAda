@@ -75,4 +75,14 @@ package body Vulkan.Math.GenDType is
     end Apply_Func_IVD_IVI_RVD;
 
 
+    function Apply_Func_IVD_IVD_RVB(IVD1, IVD2 : in     Vkm_GenDType) return Vkm_GenBType is
+        Result : Vkm_GenBType := (Last_Index => IVD1.Last_Index, others => <>);
+    begin
+        for I in Vkm_Indices'First .. IVD1.Last_Index loop
+            Result.data(I) := Func(IVD1.data(I),IVD2.data(I));
+        end loop;
+        return Result;
+    end Apply_Func_IVD_IVD_RVB;
+
+
 end Vulkan.Math.GenDType;
