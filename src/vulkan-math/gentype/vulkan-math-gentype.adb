@@ -109,7 +109,7 @@ package body Vulkan.Math.GenType is
                     Num_Copy    : in     Vkm_Length;
                     Offset      : in     Vkm_Indices) is
     begin
-        for Data_Index in 0 .. To_Indices(Num_Copy) loop
+        for Data_Index in 0 .. To_Vkm_Indices(Num_Copy) loop
             Destination.data(Offset + Data_Index) := Source.data(Data_Index);
         end loop;
     end Copy;
@@ -122,7 +122,7 @@ package body Vulkan.Math.GenType is
         Result : Vkm_GenType(Left.Last_Index + Right.Last_Index + 1);
     begin
         Result.Copy(Left,Left.Length,0);
-        Result.Copy(Right,Right.Length,To_Indices(Left.Length));
+        Result.Copy(Right,Right.Length,To_Vkm_Indices(Left.Length));
         return Result;
     end Concatenate;
 
@@ -130,9 +130,9 @@ package body Vulkan.Math.GenType is
 
 
     function Apply_Func_IV_IV_RV(Left, Right : in     Vkm_GenType) return Vkm_GenType is
-        Result : Vkm_GenType(Last_Index => To_Indices(Left.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(Left.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(Left.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(Left.Length) loop
             Result.data(I) := Func(Left.data(I), Right.data(I));
         end loop;
         return Result;
@@ -144,9 +144,9 @@ package body Vulkan.Math.GenType is
 
     function Apply_Func_IS_IV_RV(Left  : in     Base_Type;
                                  Right : in     Vkm_GenType) return Vkm_GenType is
-        Result : Vkm_GenType(Last_Index => To_Indices(Right.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(Right.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(Right.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(Right.Length) loop
             Result.data(I) := Func(Left, Right.data(I));
         end loop;
         return Result;
@@ -158,9 +158,9 @@ package body Vulkan.Math.GenType is
 
     function Apply_Func_IV_IS_RV(Left  : in     Vkm_GenType;
                                  Right : in     Base_Type  ) return Vkm_GenType is
-        Result : Vkm_GenType(Last_Index => To_Indices(Left.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(Left.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(Left.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(Left.Length) loop
             Result.data(I) := Func(Left.data(I), Right);
         end loop;
         return Result;
@@ -172,9 +172,9 @@ package body Vulkan.Math.GenType is
 
     function Apply_Func_IV_RV(A : in     Vkm_GenType) return Vkm_GenType is
 
-        Result : Vkm_GenType(Last_Index => To_Indices(A.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(A.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(A.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(A.Length) loop
             Result.data(I) := Func(A.data(I));
         end loop;
         return Result;
@@ -184,9 +184,9 @@ package body Vulkan.Math.GenType is
     function Apply_Func_IV_OV_RV(IV1 : in     Vkm_GenType;
                                  OV1 :    out Vkm_GenType) return Vkm_GenType is
 
-        Result : Vkm_GenType(Last_Index => To_Indices(IV1.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(IV1.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(IV1.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(IV1.Length) loop
             Result.data(I) := Func(IV1.data(I), OV1.data(I));
         end loop;
         return Result;
@@ -198,9 +198,9 @@ package body Vulkan.Math.GenType is
 
     function Apply_Func_IV_IV_IV_RV(IV1, IV2, IV3 : in     Vkm_GenType) return Vkm_GenType is
 
-        Result : Vkm_GenType(Last_Index => To_Indices(IV1.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(IV1.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(IV1.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(IV1.Length) loop
             Result.data(I) := Func(IV1.data(I),IV2.data(I),IV3.data(I));
         end loop;
         return Result;
@@ -213,9 +213,9 @@ package body Vulkan.Math.GenType is
     function Apply_Func_IV_IV_IS_RV(IV1, IV2 : in     Vkm_GenType;
                                     IS1      : in     Base_Type) return Vkm_GenType is
 
-        Result : Vkm_GenType(Last_Index => To_Indices(IV1.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(IV1.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(IV1.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(IV1.Length) loop
             Result.data(I) := Func(IV1.data(I),IV2.data(I),IS1);
         end loop;
         return Result;
@@ -228,9 +228,9 @@ package body Vulkan.Math.GenType is
     function Apply_Func_IV_IS_IS_RV(IV1      : in     Vkm_GenType;
                                     IS1, IS2 : in     Base_Type) return Vkm_GenType is
 
-        Result : Vkm_GenType(Last_Index => To_Indices(IV1.Length));
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(IV1.Length));
     begin
-        for I in Vkm_Indices'First .. To_Indices(IV1.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(IV1.Length) loop
             Result.data(I) := Func(IV1.data(I),IS1,IS2);
         end loop;
         return Result;

@@ -36,7 +36,7 @@ package body Vulkan.Math.GenDType is
         Result : Vkm_GenDType := IVD1;
 
     begin
-        for I in Vkm_Indices'First .. To_Indices(IVD1.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(IVD1.Length) loop
             Result.data(I) := Func(IVD1.data(I), IVD2.data(I), IVB1.data(I));
         end loop;
         return Result;

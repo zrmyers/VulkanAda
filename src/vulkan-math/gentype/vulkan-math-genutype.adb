@@ -35,7 +35,7 @@ package body Vulkan.Math.GenUType is
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenUType is
         Result : Vkm_GenUType := IVU1;
     begin
-        for I in Vkm_Indices'First .. To_Indices(Result.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(Result.Length) loop
             Result.data(I) := Func(IVU1.data(I), IVU2.data(I), IVB1.data(I));
         end loop;
         return Result;

@@ -311,7 +311,7 @@ package Vulkan.Math.Operators is
     -- GenIType Unary Complement Operator
     ----------------------------------------------------------------------------
     function "not" (right : in     Vkm_Int) return Vkm_Int is
-        (To_Int(not To_Uint(right))) with Inline;
+        (To_Vkm_Int(not To_Vkm_Uint(right))) with Inline;
     function "not" is new GIT.Apply_Func_IV_RV("not");
     
     ----------------------------------------------------------------------------

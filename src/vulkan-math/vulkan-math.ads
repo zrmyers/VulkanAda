@@ -23,10 +23,10 @@
 --------------------------------------------------------------------------------
 with Interfaces.C;
 with Ada.Numerics;
+with Ada.Unchecked_Conversion;
 
 --------------------------------------------------------------------------------
---< @group Vulkan.Math
---
+--< @group Vulkan Math Interface
 --------------------------------------------------------------------------------
 package Vulkan.Math is
     pragma Preelaborate;
@@ -35,130 +35,312 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     -- Math Constants
     ----------------------------------------------------------------------------
+    --< A constant value representing PI.
     PI : constant := Ada.Numerics.Pi;
+    
+    --< A constant value representing Euler's number e.
     E  : constant := Ada.Numerics.e;
     
     ----------------------------------------------------------------------------
     -- Math Scalar Types
     ----------------------------------------------------------------------------
-    -- Boolean Type
+    --< A value that can either be true or false. This type has the same size
+    --< as a boolean value in C.
     type Vkm_Bool is new Boolean;
     for Vkm_Bool use (False => 0,
                       True  => 1);
     for Vkm_Bool'Size use Interfaces.C.unsigned_char'Size;
     
-    -- Unsigned Integer Type
+    --< A 32-bit unsigned integer type.
     type Vkm_Uint is new Interfaces.C.unsigned;
     
-    -- Integer Type
+    --< A 32-bit 2's complement signed integer type.
     type Vkm_Int is new Interfaces.C.int;
     
-    -- Single-Precision Floating Point Type
+    --< A 32-bit single precision signed floating point number.
     type Vkm_Float is new Interfaces.C.C_Float;
     
-    -- Double-Precision Floating Point Type
+    --< A 64-bit double precision signed floating point number.
     type Vkm_Double is new Interfaces.C.double;
     
-    -- Maximum Dimmension for a vector or a row or column of a matrix.
+    --< The maximum dmmension for a vector or a row or column of a matrix.
     type Vkm_Length is new Integer range 1 .. 4;
     
-    -- The set of indices allowed for use with any vector or matrix.
+    --< The set of indices allowed for use with any vector or matrix.
     type Vkm_Indices is new Integer range 0 .. 3;
-    
     
     ----------------------------------------------------------------------------
     -- Conversion Functions
     ----------------------------------------------------------------------------
-    function To_Indices (length : in Vkm_Length) return Vkm_Indices;
+    --< @description
+    --< Convert a value of type Vkm_Length to a value of type Vkm_Indices.
+    --<
+    --< @param length The length value to convert to indices.
+    --<
+    --< @return The length converted to an index.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Indices (length : in Vkm_Length) return Vkm_Indices is
+        (Vkm_Indices(Vkm_Length'Base(length) - 1)) with Inline;
     
     
     ----------------------------------------------------------------------------
-    -- @brief
-    -- The following operations convert various VKM Math types to Vkm_Bool
-    -- math types.
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Bool type.
     --
-    -- If the value is not equal to zero, returns true. Otherwise returns false.
+    --< If the value is not equal to zero, returns true; Otherwise returns false.
     --
-    -- @param[in]     value The value to convert to Vkm_Bool.
+    --< @param     value The value to convert to Vkm_Bool.
     --
-    -- @return The conversion to Vkm_Bool.
+    --< @return The conversion to Vkm_Bool.
     ----------------------------------------------------------------------------
-    function To_Bool (value : in     Vkm_Uint  ) return Vkm_Bool;
-    function To_Bool (value : in     Vkm_Int   ) return Vkm_Bool;
-    function To_Bool (value : in     Vkm_Float ) return Vkm_Bool;
-    function To_Bool (value : in     Vkm_Double) return Vkm_Bool;
+    function To_Vkm_Bool (value : in     Vkm_Uint  ) return Vkm_Bool is
+        (Vkm_Bool(value /= 0)) with Inline;
     
     
     ----------------------------------------------------------------------------
-    -- @brief
-    -- The following operations convert various VKM Math types to Vkm_Uint
-    -- math types.
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Bool type.
     --
-    -- Conversion from Vkm_Int preserves the bit pattern of the argument, causing
-    -- the value of negative arguments to change.
+    --< If the value is not equal to zero, returns true; Otherwise returns false.
     --
-    -- Conversion from a negative floating point argument will yield and 
-    -- undefined result exception.
+    --< @param     value The value to convert to Vkm_Bool.
     --
-    -- @param[in]     value The value to convert to Vkm_Uint.
-    --
-    -- @return The conversion to Vkm_Bool.
-    --
-    -- @error 
-    -- The following exceptions are thrown:
-    --     UNDEFINED_RESULT
+    --< @return The conversion to Vkm_Bool.
     ----------------------------------------------------------------------------
-    function To_Uint (value : in     Vkm_Bool  ) return Vkm_Uint;
-    function To_Uint (value : in     Vkm_Int   ) return Vkm_Uint;
-    function To_Uint (value : in     Vkm_Float ) return Vkm_Uint;
-    function To_Uint (value : in     Vkm_Double) return Vkm_Uint;
+    function To_Vkm_Bool (value : in     Vkm_Int   ) return Vkm_Bool is
+        (Vkm_Bool(value /= 0)) with Inline;
     
     
     ----------------------------------------------------------------------------
-    -- @brief
-    -- The following operations convert various VKM Math types to Vkm_Int
-    -- math types.
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Bool type.
     --
-    -- Conversion from Vkm_Int preserves the bit pattern of the argument, causing
-    -- the value of negative arguments to change.
+    --< If the value is not equal to zero, returns true; Otherwise returns false.
     --
-    -- @param[in]     value The value to convert to Vkm_Int.
+    --< @param     value The value to convert to Vkm_Bool.
     --
-    -- @return The conversion to Vkm_Bool.
+    --< @return The conversion to Vkm_Bool.
     ----------------------------------------------------------------------------
-    function To_Int (value : in     Vkm_Bool  ) return Vkm_Int;
-    function To_Int (value : in     Vkm_Uint  ) return Vkm_Int;
-    function To_Int (value : in     Vkm_Float ) return Vkm_Int;
-    function To_Int (value : in     Vkm_Double) return Vkm_Int;
+    function To_Vkm_Bool (value : in     Vkm_Float ) return Vkm_Bool is
+        (Vkm_Bool(value /= 0.0)) with Inline;
     
     
     ----------------------------------------------------------------------------
-    -- @brief
-    -- The following operations convert various VKM Math types to Vkm_Float
-    -- math types.
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Bool type.
     --
-    -- @param[in]     value The value to convert to Vkm_Float.
+    --< If the value is not equal to zero, returns true; Otherwise returns false.
     --
-    -- @return The conversion to Vkm_Float.
+    --< @param     value The value to convert to Vkm_Bool.
+    --
+    --< @return The conversion to Vkm_Bool.
     ----------------------------------------------------------------------------
-    function To_Float (value : in     Vkm_Bool  ) return Vkm_Float;
-    function To_Float (value : in     Vkm_Uint  ) return Vkm_Float;
-    function To_Float (value : in     Vkm_Int   ) return Vkm_Float;
-    function To_Float (value : in     Vkm_Double) return Vkm_Float;
+    function To_Vkm_Bool (value : in     Vkm_Double) return Vkm_Bool is
+        (Vkm_Bool(value /= 0.0)) with Inline;
     
     
     ----------------------------------------------------------------------------
-    -- @brief
-    -- The following operations convert various VKM Math types to Vkm_Float
-    -- math types.
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Uint type.
     --
-    -- @param[in]     value The value to convert to Vkm_Float.
+    --< If value is true returns 1; Otherwise returns 0.
     --
-    -- @return The conversion to Vkm_Float.
+    --< @param     value The value to convert
+    --
+    --< @return The conversion to Vkm_Uint.
     ----------------------------------------------------------------------------
-    function To_Double (value : in     Vkm_Bool ) return Vkm_Double;
-    function To_Double (value : in     Vkm_Uint ) return Vkm_Double;
-    function To_Double (value : in     Vkm_Int  ) return Vkm_Double;
-    function To_Double (value : in     Vkm_Float) return Vkm_Double;
+    function To_Vkm_Uint (value : in     Vkm_Bool  ) return Vkm_Uint is
+        (if value then 1 else 0) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Uint type.
+    --
+    --< Conversion from Vkm_Int preserves the bit pattern of the argument, modifying
+    --< the value of negative arguments.
+    --
+    --< @return The conversion to Vkm_Uint.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Uint is new Ada.Unchecked_Conversion(Source => Vkm_Int, Target => Vkm_Uint);
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Uint type.
+    --
+    --< @param     value The value to convert to Vkm_Uint.
+    --
+    --< @return The conversion to Vkm_Uint.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Uint (value : in     Vkm_Float ) return Vkm_Uint is
+        (Vkm_Uint(Vkm_Float'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< Convert a vulkan math type to the Vkm_Uint type.
+    --
+    --< @param     value The value to convert to Vkm_Uint.
+    --
+    --< @return The conversion to Vkm_Uint.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Uint (value : in     Vkm_Double) return Vkm_Uint is
+        (Vkm_Uint(Vkm_Double'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< Convert various VKM Math types to the Vkm_Int type.
+    --
+    --< @param     value The value to convert to Vkm_Int.
+    --
+    --< @return The conversion to Vkm_Int.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Int (value : in     Vkm_Bool  ) return Vkm_Int is
+        (if value then 1 else 0) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Int
+    --< math types.
+    --
+    --< Conversion from Vkm_Uint preserves the bit pattern of the argument, 
+    --< causing the values of very large unsigned integer to change due to the
+    --< sign bit being set.
+    --
+    --< @return The conversion to Vkm_Int.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Int is new Ada.Unchecked_Conversion(Source => Vkm_Uint, Target => Vkm_Int);
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< Convert various VKM Math types to the Vkm_Int type.
+    --
+    --< @param     value The value to convert to Vkm_Int.
+    --
+    --< @return The conversion to Vkm_Int.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Int (value : in     Vkm_Float ) return Vkm_Int is
+        (Vkm_Int(Vkm_Float'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< Convert various VKM Math types to the Vkm_Int type.
+    --
+    --< @param     value The value to convert to Vkm_Int.
+    --
+    --< @return The conversion to Vkm_Int.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Int (value : in     Vkm_Double) return Vkm_Int is
+        (Vkm_Int(Vkm_Double'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Float
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Float.
+    --
+    --< @return The conversion to Vkm_Float.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Float (value : in     Vkm_Bool  ) return Vkm_Float is
+        (if value then 1.0 else 0.0) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Float
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Float.
+    --
+    --< @return The conversion to Vkm_Float.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Float (value : in     Vkm_Uint  ) return Vkm_Float is
+        (Vkm_Float(Vkm_Uint'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Float
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Float.
+    --
+    --< @return The conversion to Vkm_Float.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Float (value : in     Vkm_Int   ) return Vkm_Float is
+        (Vkm_Float(Vkm_Int'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Float
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Float.
+    --
+    --< @return The conversion to Vkm_Float.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Float (value : in     Vkm_Double) return Vkm_Float is
+        (Vkm_Float(Vkm_Double'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @brief
+    --< The following operations convert various VKM Math types to Vkm_Double
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Double.
+    --
+    --< @return The conversion to Vkm_Double.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Double (value : in     Vkm_Bool ) return Vkm_Double is
+        (if value then 1.0 else 0.0) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Double
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Double.
+    --
+    --< @return The conversion to Vkm_Double.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Double (value : in     Vkm_Uint ) return Vkm_Double is
+        (Vkm_Double(Vkm_Uint'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Double
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Double.
+    --
+    --< @return The conversion to Vkm_Double.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Double (value : in     Vkm_Int  ) return Vkm_Double is
+        (Vkm_Double(Vkm_Int'Base(value))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @description
+    --< The following operations convert various VKM Math types to Vkm_Double
+    --< math types.
+    --
+    --< @param     value The value to convert to Vkm_Double.
+    --
+    --< @return The conversion to Vkm_Double.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Double (value : in     Vkm_Float) return Vkm_Double is
+        (Vkm_Double(Vkm_Float'Base(value))) with Inline;
+        
  
 end Vulkan.Math;

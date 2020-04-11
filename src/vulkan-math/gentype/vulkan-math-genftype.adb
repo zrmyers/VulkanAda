@@ -36,7 +36,7 @@ package body Vulkan.Math.GenFType is
         Result : Vkm_GenFType := IVF1;
 
     begin
-        for I in Vkm_Indices'First .. To_Indices(IVF1.Length) loop
+        for I in Vkm_Indices'First .. To_Vkm_Indices(IVF1.Length) loop
             Result.data(I) := Func(IVF1.data(I), IVF2.data(I), IVB1.data(I));
         end loop;
         return Result;
