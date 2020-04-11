@@ -27,7 +27,7 @@
 
 .PHONY: default samples
 
-default: samples
+default: samples vulkan
 
 DIRS = obj bin lib
 
@@ -35,8 +35,15 @@ $(DIRS):
 	@echo "Making Directory $@"
 	mkdir -p $@
 
-samples: $(DIRS)
+vulkan: $(DIRS)
+	@echo "Building VulkanAda Library"
+	gprbuild -p vulkan.gpr
+
+samples: $(DIRS) vulkan
 	gprbuild -p vulkan-test.gpr
-	
+
+docs: vulkan
+	gnatdoc -Pvulkan.gpr -l
+
 clean:
 	rm -rf $(DIRS)

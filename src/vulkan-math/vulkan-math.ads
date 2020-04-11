@@ -24,6 +24,10 @@
 with Interfaces.C;
 with Ada.Numerics;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan.Math
+--
+--------------------------------------------------------------------------------
 package Vulkan.Math is
     pragma Preelaborate;
     pragma Pure;

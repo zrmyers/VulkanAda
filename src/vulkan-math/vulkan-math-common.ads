@@ -382,8 +382,6 @@ package Vulkan.Math.Common is
     -- @brief
     -- Determine whether the input holds a NaN. Always returns false in Ada.
     --
-    -- @param     x The value to test
-    --
     -- @returns False, always
     ----------------------------------------------------------------------------
     function Is_Nan is new Vulkan.Math.Numerics.Is_Nan(Vkm_Float);
@@ -395,8 +393,6 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     -- @brief
     -- Determine whether the input holds an Inf. Always returns false in Ada.
-    --
-    -- @param     x The value to test.
     --
     -- @returns False, always.
     ----------------------------------------------------------------------------

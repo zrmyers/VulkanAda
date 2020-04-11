@@ -30,6 +30,11 @@ library project Vulkan is
     for Library_Dir use "lib";
     for Source_Dirs use ("src/**");
     
+    package Documentation is
+        for Documentation_Dir use "docs";
+        for Doc_Pattern use "^<";
+    end Documentation;
+    
     package Compiler is
         for Switches ("Ada") use (
             "-gnatwae" -- Turn on warnings as errors

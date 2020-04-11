@@ -9,4 +9,5 @@
 bin
 lib
 obj
+docs
 *.lexch
