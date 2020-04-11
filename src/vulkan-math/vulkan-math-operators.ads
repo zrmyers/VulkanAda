@@ -27,18 +27,91 @@
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
 with Vulkan.Math.GenUType;
+with Vulkan.Math.GenIType;
+with Vulkan.Math.GenBType;
 with Vulkan.Math.Exp;
 with Vulkan.Math.Common;
 
 use Vulkan.Math.GenFType;
 use Vulkan.Math.GenDType;
 use Vulkan.Math.GenUType;
+use Vulkan.Math.GenIType;
+use Vulkan.Math.GenBType;
 
 package Vulkan.Math.Operators is
     pragma Preelaborate;
     pragma Pure;
 
 
+    ----------------------------------------------------------------------------
+    -- The Operators for boolean vectors are defined here.
+    --
+    -- A summary of operators that can be used with GenBType values of different
+    -- size:
+    --    - "&", Concatenation
+    --
+    -- A summary of operators that are component-wise Unary:
+    --    - "not", Bitwise complement operator
+    --
+    -- A summary of operators that are component-wise on two input vectors of the
+    -- same length. Additionally, a scalar may appear instead of a vector on the
+    -- left or right hand side of these operators:
+    --    - "and", Bitwise AND operator.
+    --    - "or" , Bitwise OR operator.
+    --    - "xor", Bitwise XOR operator.
+    --
+    -- A summary of relational operators that are component-wise on two input vecotrs
+    -- of the same length, and return a vector of booleans of the same length:
+    --    - "=",  Equality operator
+    --    - "/=", Non-Equality operator (Implicitly defined)
+    --
+    ----------------------------------------------------------------------------
+    -- GenBType Concatenation Operators
+    ----------------------------------------------------------------------------
+    function "&" (Left, Right : in     Vkm_GenBType) return Vkm_GenBType renames GBT.Concatenate;
+    function "&" (Left        : in     Vkm_Bool   ;
+                  Right       : in     Vkm_GenBType) return Vkm_GenBType is
+        (GBT.Make(Left).Concatenate(Right)) with Inline;
+    function "&" (Left        : in     Vkm_GenBType;
+                  Right       : in     Vkm_Bool   ) return Vkm_GenBType is
+        (Left.Concatenate(GBT.Make(Right))) with Inline;
+    function "&" (Left, Right : in     Vkm_Bool   ) return Vkm_GenBType is
+        (GBT.Make(Left, Right)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    -- GenBType Unary Complement Operator
+    ----------------------------------------------------------------------------
+    function "not" is new GBT.Apply_Func_IV_RV("not");
+
+    ----------------------------------------------------------------------------
+    -- GenBType Bitwise AND Operator
+    ----------------------------------------------------------------------------
+    function "and" is new GBT.Apply_Func_IV_IV_RV("and"); -- vector := vector and vector
+    function "and" is new GBT.Apply_Func_IV_IS_RV("and"); -- vector := vector and scalar
+    function "and" is new GBT.Apply_Func_IS_IV_RV("and"); -- vector := scalar and vector
+
+    ----------------------------------------------------------------------------
+    -- GenBType Bitwise OR Operator
+    ----------------------------------------------------------------------------
+    function "or" is new GBT.Apply_Func_IV_IV_RV("or"); -- vector := vector or vector
+    function "or" is new GBT.Apply_Func_IV_IS_RV("or"); -- vector := vector or scalar
+    function "or" is new GBT.Apply_Func_IS_IV_RV("or"); -- vector := scalar or vector
+
+    ----------------------------------------------------------------------------
+    -- GenBType Bitwise XOR Operator
+    ----------------------------------------------------------------------------
+    function "xor" is new GBT.Apply_Func_IV_IV_RV("xor"); -- vector := vector xor vector
+    function "xor" is new GBT.Apply_Func_IV_IS_RV("xor"); -- vector := vector xor scalar
+    function "xor" is new GBT.Apply_Func_IS_IV_RV("xor"); -- vector := scalar xor vector
+
+    ----------------------------------------------------------------------------
+    -- GenBType Relational Operators
+    ----------------------------------------------------------------------------
+    function "="  is new GBT.Apply_Func_IV_IV_RV("=");
+    function "/=" is new GBT.Apply_Func_IV_IV_RV("/=");
+    
+    
     ----------------------------------------------------------------------------
     -- The Operators for unsigned integer vectors are defined here.
     --
@@ -174,6 +247,151 @@ package Vulkan.Math.Operators is
     function ">=" is new Apply_Func_IVU_IVU_RVB(">=");
     function "="  is new Apply_Func_IVU_IVU_RVB("=" );
     function "/=" is new Apply_Func_IVU_IVU_RVB("/=");
+    
+    
+    ----------------------------------------------------------------------------
+    -- The Operators for integer vectors are defined here.
+    --
+    -- A summary of operators that can be used with GenIType values of different
+    -- size:
+    --    - "&", Concatenation
+    --
+    -- A summary of operators that are component-wise Unary:
+    --    - "+"  , Unary plus operator.
+    --    - "-"  , Unary minus operator.
+    --    - "not", Bitwise complement operator
+    --
+    -- A summary of operators that are component-wise on two input vectors of the
+    -- same length. Additionally, a scalar may appear instead of a vector on the
+    -- left or right hand side of these operators:
+    --    - "mod", Modulus operator.
+    --    - "+",   Addition operator.
+    --    - "-",   Subtraction operator.
+    --    - "rem", Remainder operator.
+    --    - "*",   Multiplication operator.
+    --    - "/",   Division operator.
+    --    - "and", Bitwise AND operator.
+    --    - "or" , Bitwise OR operator.
+    --    - "xor", Bitwise XOR operator.
+    --
+    -- A summary of relational operators that are component-wise on two input vecotrs
+    -- of the same length, and return a vector of booleans of the same length:
+    --    - "<",  Less than operator
+    --    - ">",  Greater than operator
+    --    - "<=", Less than or equal to operator
+    --    - ">=", Greater than or equal to operator
+    --    - "=",  Equality operator
+    --    - "/=", Non-Equality operator (Implicitly defined)
+    --
+    ----------------------------------------------------------------------------
+    -- GenIType Concatenation Operators
+    ----------------------------------------------------------------------------
+    function "&" (Left, Right : in     Vkm_GenIType) return Vkm_GenIType renames GIT.Concatenate;
+    function "&" (Left        : in     Vkm_Int   ;
+                  Right       : in     Vkm_GenIType) return Vkm_GenIType is
+        (GIT.Make(Left).Concatenate(Right)) with Inline;
+    function "&" (Left        : in     Vkm_GenIType;
+                  Right       : in     Vkm_Int   ) return Vkm_GenIType is
+        (Left.Concatenate(GIT.Make(Right))) with Inline;
+    function "&" (Left, Right : in     Vkm_Int   ) return Vkm_GenIType is
+        (GIT.Make(Left, Right)) with Inline;
+
+    ----------------------------------------------------------------------------
+    -- GenIType Unary Plus Operator
+    ----------------------------------------------------------------------------
+    function "+" is new GIT.Apply_Func_IV_RV("+");
+
+    ----------------------------------------------------------------------------
+    -- GenIType Unary Minus Operator
+    ----------------------------------------------------------------------------
+    function "-" is new GIT.Apply_Func_IV_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    -- GenIType Unary Complement Operator
+    ----------------------------------------------------------------------------
+    function "not" (right : in     Vkm_Int) return Vkm_Int is
+        (To_Int(not To_Uint(right))) with Inline;
+    function "not" is new GIT.Apply_Func_IV_RV("not");
+    
+    ----------------------------------------------------------------------------
+    -- GenIType Modulus Operator
+    ----------------------------------------------------------------------------
+    function "mod" is new GIT.Apply_Func_IV_IV_RV("mod"); -- vector := vector mod vector
+    function "mod" is new GIT.Apply_Func_IV_IS_RV("mod"); -- vector := vector mod scalar
+    function "mod" is new GIT.Apply_Func_IS_IV_RV("mod"); -- vector := scalar mod vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Addition Operator
+    ----------------------------------------------------------------------------
+    function "+" is new GIT.Apply_Func_IV_IV_RV("+"); -- vector := vector + vector
+    function "+" is new GIT.Apply_Func_IV_IS_RV("+"); -- vector := vector + scalar
+    function "+" is new GIT.Apply_Func_IS_IV_RV("+"); -- vector := scalar + vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Subtraction Operator
+    ----------------------------------------------------------------------------
+    function "-" is new GIT.Apply_Func_IV_IV_RV("-"); -- vector := vector - vector
+    function "-" is new GIT.Apply_Func_IV_IS_RV("-"); -- vector := vector - scalar
+    function "-" is new GIT.Apply_Func_IS_IV_RV("-"); -- vector := scalar - vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Remainder Operator
+    ----------------------------------------------------------------------------
+    function "rem" is new GIT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
+    function "rem" is new GIT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
+    function "rem" is new GIT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Multiplication Operator
+    ----------------------------------------------------------------------------
+    function "*" is new GIT.Apply_Func_IV_IV_RV("*"); -- vector := vector * vector
+    function "*" is new GIT.Apply_Func_IV_IS_RV("*"); -- vector := vector * scalar
+    function "*" is new GIT.Apply_Func_IS_IV_RV("*"); -- vector := scalar * vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Division Operator
+    ----------------------------------------------------------------------------
+    function "/" is new GIT.Apply_Func_IV_IV_RV("/"); -- vector := vector / vector
+    function "/" is new GIT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
+    function "/" is new GIT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Bitwise AND Operator
+    ----------------------------------------------------------------------------
+    function "and" (left, right : in     Vkm_Int) return Vkm_Int is
+        (Vkm_Int( Vkm_Uint(left) and Vkm_Uint(right))) with Inline;
+    function "and" is new GIT.Apply_Func_IV_IV_RV("and"); -- vector := vector and vector
+    function "and" is new GIT.Apply_Func_IV_IS_RV("and"); -- vector := vector and scalar
+    function "and" is new GIT.Apply_Func_IS_IV_RV("and"); -- vector := scalar and vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Bitwise OR Operator
+    ----------------------------------------------------------------------------
+    function "or" (left, right : in     Vkm_Int) return Vkm_Int is
+        (Vkm_Int(Vkm_Uint(left) or Vkm_Uint(right))) with Inline;
+    function "or" is new GIT.Apply_Func_IV_IV_RV("or"); -- vector := vector or vector
+    function "or" is new GIT.Apply_Func_IV_IS_RV("or"); -- vector := vector or scalar
+    function "or" is new GIT.Apply_Func_IS_IV_RV("or"); -- vector := scalar or vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Bitwise XOR Operator
+    ----------------------------------------------------------------------------
+    function "xor" (left, right : in     Vkm_Int) return Vkm_Int is
+        (Vkm_Int(Vkm_Uint(left) xor Vkm_Uint(right))) with Inline;
+    function "xor" is new GIT.Apply_Func_IV_IV_RV("xor"); -- vector := vector xor vector
+    function "xor" is new GIT.Apply_Func_IV_IS_RV("xor"); -- vector := vector xor scalar
+    function "xor" is new GIT.Apply_Func_IS_IV_RV("xor"); -- vector := scalar xor vector
+
+    ----------------------------------------------------------------------------
+    -- GenIType Relational Operators
+    ----------------------------------------------------------------------------
+    function "<"  is new Apply_Func_IVI_IVI_RVB("<" );
+    function "<=" is new Apply_Func_IVI_IVI_RVB("<=");
+    function ">"  is new Apply_Func_IVI_IVI_RVB(">" );
+    function ">=" is new Apply_Func_IVI_IVI_RVB(">=");
+    function "="  is new Apply_Func_IVI_IVI_RVB("=" );
+    function "/=" is new Apply_Func_IVI_IVI_RVB("/=");
     
     
     ----------------------------------------------------------------------------
