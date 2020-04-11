@@ -20,6 +20,7 @@
 --< LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 --< OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 --< SOFTWARE.
+--------------------------------------------------------------------------------
 with Vulkan.Math.GenUType;
 with Vulkan.Math.Uvec3;
 with Vulkan.Math.Uvec2;
