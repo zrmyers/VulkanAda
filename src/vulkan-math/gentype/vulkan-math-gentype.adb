@@ -104,17 +104,6 @@ package body Vulkan.Math.GenType is
     end Make;
 
 
-    ----------------------------------------------------------------------------
-
-
-    function Get (Instance : in out Vkm_Access_Component_2D) return Vkm_GenType is
-        Result : Vkm_GenType(Last_Index => 1);
-    begin
-        Result.data(0) := Instance.Data0.all;
-        Result.data(1) := Instance.Data1.all;
-        return Result;
-    end Get;
-
     procedure Copy (Destination : in out Vkm_GenType;
                     Source      : in     Vkm_GenType;
                     Num_Copy    : in     Vkm_Length;

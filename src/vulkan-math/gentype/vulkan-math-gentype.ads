@@ -40,27 +40,9 @@ package Vulkan.Math.GenType is
             data : Vkm_Vector(Vkm_Indices'First .. Last_Index);
         end record;
 
-    subtype Vkm_GenType_1D is Vkm_GenType(Last_Index => 0);
-    subtype Vkm_GenType_2D is Vkm_GenType(Last_Index => 1);
-    subtype Vkm_GenType_3D is Vkm_GenType(Last_Index => 2);
-    subtype Vkm_GenType_4D is Vkm_GenType(Last_Index => 3);
-
     -- A pointer to a value of type Base_Type
     type Vkm_Access_Component(Data: not null access Base_Type) is null record
         with Implicit_Dereference => Data;
-
-    -- A 2D Pointer to a value of type Base_type
-    type Vkm_Access_Component_2D is
-        record
-            Data0 : not null access Base_Type;
-            Data1 : not null access Base_Type;
-        end record;
-
-    -- A 3D pointer to a value of type Base_Type
-    type Vkm_Access_Component_3D (
-        Data0 : not null access Base_Type;
-        Data1 : not null access Base_Type;
-        Data2 : not null access Base_Type) is null record;
 
     ----------------------------------------------------------------------------
     -- Operations on Vkm_GenType
@@ -163,154 +145,131 @@ package Vulkan.Math.GenType is
     ----------------------------------------------------------------------------
     -- 1 D -> 2 D, X
     ----------------------------------------------------------------------------
-    function XX (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(0)'Unrestricted_Access,
-         Data1 => Instance.data(0)'Unrestricted_Access) with Inline;
+    function XX (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.x, Instance.x)) with Inline;
 
     ----------------------------------------------------------------------------
     -- 1 D -> 2 D, R
     ----------------------------------------------------------------------------
-    function RR (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XX;
+    function RR (Instance : in     Vkm_GenType) return Vkm_GenType renames XX;
 
     ----------------------------------------------------------------------------
     -- 1 D -> 2 D, S
     ----------------------------------------------------------------------------
-    function SS (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XX;
+    function SS (Instance : in     Vkm_GenType) return Vkm_GenType renames XX;
 
     ----------------------------------------------------------------------------
     -- 2 D -> 2 D, XY
     ----------------------------------------------------------------------------
-    function YY (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(1)'Unrestricted_Access,
-         Data1 => Instance.data(1)'Unrestricted_Access) with Inline;
-    function YX (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(1)'Unrestricted_Access,
-         Data1 => Instance.data(0)'Unrestricted_Access) with Inline;
-    function XY (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(0)'Unrestricted_Access,
-         Data1 => Instance.data(1)'Unrestricted_Access) with Inline;
+    function YY (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.y, Instance.y)) with Inline;
+    function YX (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.y, Instance.x)) with Inline;
+    function XY (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.x, Instance.y)) with Inline;
 
     ----------------------------------------------------------------------------
     -- 2 D -> 2 D, RG
     ----------------------------------------------------------------------------
-    function GG (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YY;
-    function GR (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YX;
-    function RG (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XY;
+    function GG (Instance : in     Vkm_GenType) return Vkm_GenType renames YY;
+    function GR (Instance : in     Vkm_GenType) return Vkm_GenType renames YX;
+    function RG (Instance : in     Vkm_GenType) return Vkm_GenType renames XY;
 
     ----------------------------------------------------------------------------
     -- 2 D -> 2 D, ST
     ----------------------------------------------------------------------------
-    function TT (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YY;
-    function TS (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YX;
-    function ST (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XY;
+    function TT (Instance : in     Vkm_GenType) return Vkm_GenType renames YY;
+    function TS (Instance : in     Vkm_GenType) return Vkm_GenType renames YX;
+    function ST (Instance : in     Vkm_GenType) return Vkm_GenType renames XY;
 
     ----------------------------------------------------------------------------
     -- 3 D -> 2 D, XYZ
     ----------------------------------------------------------------------------
-    function ZZ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(2)'Unrestricted_Access,
-         Data1 => Instance.data(2)'Unrestricted_Access) with Inline;
-    function ZX (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(2)'Unrestricted_Access,
-         Data1 => Instance.data(0)'Unrestricted_Access) with Inline;
-    function XZ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(0)'Unrestricted_Access,
-         Data1 => Instance.data(2)'Unrestricted_Access) with Inline;
-    function ZY (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(2)'Unrestricted_Access,
-         Data1 => Instance.data(1)'Unrestricted_Access) with Inline;
-    function YZ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(1)'Unrestricted_Access,
-         Data1 => Instance.data(2)'Unrestricted_Access) with Inline;
+    function ZZ (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.z, Instance.z)) with Inline;
+    function ZX (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.z, Instance.x)) with Inline;
+    function XZ (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.x, Instance.z)) with Inline;
+    function ZY (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.z, Instance.y)) with Inline;
+    function YZ (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.y, Instance.z)) with Inline;
 
     ----------------------------------------------------------------------------
     -- 3 D -> 2 D, RGB
     ----------------------------------------------------------------------------
-    function BB (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZZ;
-    function BR (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZX;
-    function RB (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XZ;
-    function BG (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZY;
-    function GB (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YZ;
+    function BB (Instance : in     Vkm_GenType) return Vkm_GenType renames ZZ;
+    function BR (Instance : in     Vkm_GenType) return Vkm_GenType renames ZX;
+    function RB (Instance : in     Vkm_GenType) return Vkm_GenType renames XZ;
+    function BG (Instance : in     Vkm_GenType) return Vkm_GenType renames ZY;
+    function GB (Instance : in     Vkm_GenType) return Vkm_GenType renames YZ;
 
     ----------------------------------------------------------------------------
     -- 3 D -> 2 D, STP
     ----------------------------------------------------------------------------
-    function PP (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZZ;
-    function PS (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZX;
-    function SP (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XZ;
-    function PT (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZY;
-    function TP (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YZ;
+    function PP (Instance : in     Vkm_GenType) return Vkm_GenType renames ZZ;
+    function PS (Instance : in     Vkm_GenType) return Vkm_GenType renames ZX;
+    function SP (Instance : in     Vkm_GenType) return Vkm_GenType renames XZ;
+    function PT (Instance : in     Vkm_GenType) return Vkm_GenType renames ZY;
+    function TP (Instance : in     Vkm_GenType) return Vkm_GenType renames YZ;
 
     ----------------------------------------------------------------------------
     -- 4 D to 2 D, XYZW
     ----------------------------------------------------------------------------
-    function WW (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(3)'Unrestricted_Access,
-         Data1 => Instance.data(3)'Unrestricted_Access) with Inline;
-    function WX (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(3)'Unrestricted_Access,
-         Data1 => Instance.data(0)'Unrestricted_Access) with Inline;
-    function XW (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(0)'Unrestricted_Access,
-         Data1 => Instance.data(3)'Unrestricted_Access) with Inline;
-    function WY (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(3)'Unrestricted_Access,
-         Data1 => Instance.data(1)'Unrestricted_Access) with Inline;
-    function YW (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(1)'Unrestricted_Access,
-         Data1 => Instance.data(3)'Unrestricted_Access) with Inline;
-    function WZ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(3)'Unrestricted_Access,
-         Data1 => Instance.data(2)'Unrestricted_Access) with Inline;
-    function ZW (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D is
-        (Data0 => Instance.data(2)'Unrestricted_Access,
-         Data1 => Instance.data(3)'Unrestricted_Access) with Inline;
+    function WW (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.w, Instance.w)) with Inline;
+    function WX (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.w, Instance.x)) with Inline;
+    function XW (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.x, Instance.w)) with Inline;
+    function WY (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.w, Instance.y)) with Inline;
+    function YW (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.y, Instance.w)) with Inline;
+    function WZ (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.w, Instance.z)) with Inline;
+    function ZW (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.z, Instance.w)) with Inline;
 
     ----------------------------------------------------------------------------
     -- 4 D to 2 D, RGBA
     ----------------------------------------------------------------------------
-    function AA (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WW;
-    function AR (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WX;
-    function RA (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XW;
-    function AG (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WY;
-    function GA (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YW;
-    function AB (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WZ;
-    function BA (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZW;
+    function AA (Instance : in     Vkm_GenType) return Vkm_GenType renames WW;
+    function AR (Instance : in     Vkm_GenType) return Vkm_GenType renames WX;
+    function RA (Instance : in     Vkm_GenType) return Vkm_GenType renames XW;
+    function AG (Instance : in     Vkm_GenType) return Vkm_GenType renames WY;
+    function GA (Instance : in     Vkm_GenType) return Vkm_GenType renames YW;
+    function AB (Instance : in     Vkm_GenType) return Vkm_GenType renames WZ;
+    function BA (Instance : in     Vkm_GenType) return Vkm_GenType renames ZW;
 
     ----------------------------------------------------------------------------
     -- 4 D to 2 D, STPQ
     ----------------------------------------------------------------------------
-    function QQ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WW;
-    function QS (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WX;
-    function SQ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames XW;
-    function QT (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WY;
-    function TQ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames YW;
-    function QP (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames WZ;
-    function PQ (Instance : in     Vkm_GenType) return Vkm_Access_Component_2D renames ZW;
+    function QQ (Instance : in     Vkm_GenType) return Vkm_GenType renames WW;
+    function QS (Instance : in     Vkm_GenType) return Vkm_GenType renames WX;
+    function SQ (Instance : in     Vkm_GenType) return Vkm_GenType renames XW;
+    function QT (Instance : in     Vkm_GenType) return Vkm_GenType renames WY;
+    function TQ (Instance : in     Vkm_GenType) return Vkm_GenType renames YW;
+    function QP (Instance : in     Vkm_GenType) return Vkm_GenType renames WZ;
+    function PQ (Instance : in     Vkm_GenType) return Vkm_GenType renames ZW;
 
     ----------------------------------------------------------------------------
     -- 1 D -> 3 D, X
     ----------------------------------------------------------------------------
-    function XXX (Instance : in     Vkm_GenType) return Vkm_Access_Component_3D is
-        (Data0 => Instance.data(0)'Unrestricted_Access,
-         Data1 => Instance.data(0)'Unrestricted_Access,
-         Data2 => Instance.data(0)'Unrestricted_Access) with Inline;
+    function XXX (Instance : in     Vkm_GenType) return Vkm_GenType is
+        (Make(Instance.x, Instance.x, Instance.x)) with Inline;
 
     ----------------------------------------------------------------------------
     -- 1 D -> 3 D, R
     ----------------------------------------------------------------------------
-    function RRR (Instance : in     Vkm_GenType) return Vkm_Access_Component_3D renames XXX;
+    function RRR (Instance : in     Vkm_GenType) return Vkm_GenType renames XXX;
 
     ----------------------------------------------------------------------------
     -- 1 D -> 3 D, S
     ----------------------------------------------------------------------------
-    function SSS (Instance : in     Vkm_GenType) return Vkm_Access_Component_3D renames XXX;
+    function SSS (Instance : in     Vkm_GenType) return Vkm_GenType renames XXX;
 
-
-    ----------------------------------------------------------------------------
-    -- Accessor Set and Get
-    ----------------------------------------------------------------------------
-    function Get (Instance : in out Vkm_Access_Component_2D) return Vkm_GenType;
 
 
     ----------------------------------------------------------------------------
