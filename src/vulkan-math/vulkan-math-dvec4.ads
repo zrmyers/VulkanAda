@@ -32,6 +32,8 @@ use Vulkan.Math.Dvec3;
 use Vulkan.Math.Dvec2;
 
 package Vulkan.Math.Dvec4 is
+    pragma Preelaborate;
+    pragma Pure;
 
     -- A 4-compoent floating point vector.
     subtype Vkm_Dvec4 is Vkm_GenDType(Last_Index => 3);

@@ -21,34 +21,31 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a Floating Point Vector with 4 components.
+-- This package describes a Boolean Vector with 2 components.
 --------------------------------------------------------------------------------
-with Vulkan.Math.GenDType;
-with Vulkan.Math.Dvec2;
+with Vulkan.Math.GenBType;
+use Vulkan.Math.GenBType;
 
-use Vulkan.Math.GenDType;
-use Vulkan.Math.Dvec2;
-
-package Vulkan.Math.Dvec3 is
+package Vulkan.Math.Bvec2 is
     pragma Preelaborate;
     pragma Pure;
 
-    subtype Vkm_Dvec3 is Vkm_GenDType(Last_Index => 2);
+    subtype Vkm_Bvec2 is Vkm_GenBType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
     -- Ada does not have the concept of constructors in the sense that they exist
     -- in C++.  For this reason, we will instead define multiple methods for
-    -- instantiating a dvec3 here.
+    -- instantiating a vec2 here.
     ----------------------------------------------------------------------------
-    -- The following are explicit constructors for Dvec3:
+    -- The following are explicit constructors for Vec2:
     ----------------------------------------------------------------------------
     -- @brief
     -- Produce a default vector with all components set to 0.0.
     --
-    -- @returns a Dvec3 with all components set to 0.0.
+    -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
-    function Make_Dvec3 return Vkm_Dvec3 is
-        (GDT.Make(Last_Index => 2, value => 0.0)) with Inline;
+    function Make_Bvec2 return Vkm_Bvec2 is
+        (GBT.Make(Last_Index => 1, value => False)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -57,23 +54,23 @@ package Vulkan.Math.Dvec3 is
     --
     -- @param[in]     scalar_value The value to set all components to.
     --
-    -- @returns A Dvec3 with all components set to scalar_value.
+    -- @returns A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
-    function Make_Dvec3 (scalar_value : in     Vkm_Double) return Vkm_Dvec3 is
-        (GDT.Make(Last_Index => 2, value => scalar_value)) with Inline;
+    function Make_Bvec2 (scalar_value : in     Vkm_Bool) return Vkm_Bvec2 is
+        (GBT.Make(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
     -- @brief
     -- Produce a vector by copying components from an existing vector.
     --
-    -- @param[in]     Dvec3_value The Dvec3 to copy components from.
+    -- @param[in]     vec2_value The vec2 to copy components from.
     --
-    -- @returns A Dvec3 with all of its components set equal to the corresponding
-    --          components of Dvec3_value.
+    -- @returns A vec2 with all of its components set equal to the corresponding
+    --          components of vec2_value.
     ----------------------------------------------------------------------------
-    function Make_Dvec3 (Dvec3_value : in     Vkm_Dvec3) return Vkm_Dvec3 is
-        (GDT.Make(Dvec3_value.data(0),Dvec3_value.data(1), Dvec3_value.data(2))) with Inline;
+    function Make_Bvec2 (vec2_value : in     Vkm_Bvec2) return Vkm_Bvec2 is
+        (GBT.Make(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -82,46 +79,11 @@ package Vulkan.Math.Dvec3 is
     --
     -- @param[in]     value1 Value for component 1.
     -- @param[in]     value2 Value for component 2.
-    -- @param[in]     value3 Value for componetn 3.
-    -- @param[in]     Value4 value for component 4.
     --
-    -- @return A Dvec3 with all components set as specified.
+    -- @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
-    function Make_Dvec3 (value1, value2, value3 : in    Vkm_Double) return Vkm_Dvec3
-        renames GDT.Make;
+    function Make_Bvec2 (value1, value2 : in    Vkm_Bool) return Vkm_Bvec2
+        renames GBT.Make;
 
 
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by concatenating a scalar float with a vec2.
-    --
-    -- Dvec3 = [scalar_value, vec2_value]
-    --
-    -- @param[in]     scalar_value The scalar value to concatenate with the Dvec3.
-    -- @param[in]     vec2_value   The vec2 to concatenate to the scalar value.
-    --
-    -- @returns The instance of Dvec3.
-    ----------------------------------------------------------------------------
-    function Make_Dvec3 (scalar_value : in     Vkm_Double;
-                         vec2_value   : in     Vkm_Dvec2 ) return Vkm_Dvec3 is
-        (Make_Dvec3(scalar_value, vec2_value.x, vec2_value.y)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by concatenating a scalar float with a vec2.
-    --
-    -- Dvec3 = [vec2_value, scalar_value]
-    --
-    -- @param[in]     vec2_value   The vec2 to concatenate to the scalar value.
-    -- @param[in]     scalar_value The scalar value to concatenate with the Dvec3.
-    --
-    -- @returns The instance of Dvec3.
-    ----------------------------------------------------------------------------
-    function Make_Dvec3 (vec2_value   : in     Vkm_Dvec2;
-                         scalar_value : in     Vkm_Double ) return Vkm_Dvec3 is
-        (Make_Dvec3(vec2_value.x, vec2_value.y, scalar_value)) with Inline;
-
-
-
-end Vulkan.Math.Dvec3;
+end Vulkan.Math.Bvec2;

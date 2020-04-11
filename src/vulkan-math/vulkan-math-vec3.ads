@@ -30,7 +30,8 @@ use Vulkan.Math.GenFType;
 use Vulkan.Math.Vec2;
 
 package Vulkan.Math.Vec3 is
-
+    pragma Preelaborate;
+    pragma Pure;
 
     subtype Vkm_Vec3 is Vkm_GenFType(Last_Index => 2);
 

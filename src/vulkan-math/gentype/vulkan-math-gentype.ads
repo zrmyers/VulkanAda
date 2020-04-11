@@ -302,7 +302,7 @@ package Vulkan.Math.GenType is
     function RRR (Instance : in     Vkm_GenType) return Vkm_Access_Component_3D renames XXX;
 
     ----------------------------------------------------------------------------
-    -- 1 D -> 4 D, S
+    -- 1 D -> 3 D, S
     ----------------------------------------------------------------------------
     function SSS (Instance : in     Vkm_GenType) return Vkm_Access_Component_3D renames XXX;
 

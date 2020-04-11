@@ -27,6 +27,8 @@ with Vulkan.Math.GenDType;
 use Vulkan.Math.GenDType;
 
 package Vulkan.Math.Dvec2 is
+    pragma Preelaborate;
+    pragma Pure;
 
     subtype Vkm_Dvec2 is Vkm_GenDType(Last_Index => 1);
 

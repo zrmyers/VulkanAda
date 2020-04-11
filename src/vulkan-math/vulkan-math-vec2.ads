@@ -27,6 +27,8 @@ with Vulkan.Math.GenFType;
 use Vulkan.Math.GenFType;
 
 package Vulkan.Math.Vec2 is
+    pragma Preelaborate;
+    pragma Pure;
 
     subtype Vkm_Vec2 is Vkm_GenFType(Last_Index => 1);
 
