@@ -84,11 +84,12 @@ package body Vulkan.Math.Geometry is
 
 
     function Cross (x, y : in     Vkm_Vec3 ) return Vkm_Vec3 is
-        cross_product : constant Vkm_Vec3 := Make_Vec3(0.0);
+        cross_product : Vkm_Vec3 := Make_Vec3(0.0);
     begin
-        cross_product.x := x.y*y.z - x.z * y.y;
-        cross_product.y := x.z*y.x - x.x * y.z;
-        cross_product.z := x.x*y.y - x.y * y.x;
+    
+        cross_product.x(x.y*y.z - x.z * y.y)
+                     .y(x.z*y.x - x.x * y.z)
+                     .z(x.x*y.y - x.y * y.x);
         return cross_product;
     end Cross;
 
@@ -97,11 +98,11 @@ package body Vulkan.Math.Geometry is
 
 
     function Cross (x, y : in     Vkm_Dvec3) return Vkm_Dvec3 is
-        cross_product : constant Vkm_Dvec3 := Make_Dvec3(0.0);
+        cross_product : Vkm_Dvec3 := Make_Dvec3(0.0);
     begin
-        cross_product.x := x.y*y.z - x.z * y.y;
-        cross_product.y := x.z*y.x - x.x * y.z;
-        cross_product.z := x.x*y.y - x.y * y.x;
+        cross_product.x(x.y*y.z - x.z * y.y)
+                     .y(x.z*y.x - x.x * y.z)
+                     .z(x.x*y.y - x.y * y.x);
         return cross_product;
     end Cross;
 

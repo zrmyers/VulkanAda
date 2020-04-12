@@ -104,6 +104,16 @@ package body Vulkan.Math.GenType is
     end Make;
 
 
+    function Make (value : in     Vkm_GenType) return Vkm_GenType is
+        Instance : Vkm_GenType(Last_Index => value.Last_Index);
+    begin
+        for I in Instance.data'Range loop
+            Instance.data(I) := value.data(I);
+        end loop;
+        return Instance;
+    end Make;
+
+
     procedure Copy (Destination : in out Vkm_GenType;
                     Source      : in     Vkm_GenType;
                     Num_Copy    : in     Vkm_Length;
@@ -114,7 +124,162 @@ package body Vulkan.Math.GenType is
         end loop;
     end Copy;
 
-
+    
+    function x (vec1  : in out Vkm_GenType;
+                value : in     Base_Type  ) return Vkm_Vector_Access is
+        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+    begin
+        x(vec1,value);
+        return vec1_access;
+    end x; 
+            
+    procedure x (vec1 : in out Vkm_GenType;
+                 value : in    Base_Type  ) is
+    begin
+        case vec1.Last_Index is
+            when 3 => vec1.data(0) := value;
+            when 2 => vec1.data(0) := value;
+            when 1 => vec1.data(0) := value;
+            when 0 => vec1.data(0) := value;
+        end case;
+    end x;
+    
+    function y (vec1  : in out Vkm_GenType;
+                value : in     Base_Type  ) return Vkm_Vector_Access is
+        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+    begin
+        y(vec1, value);
+        return vec1_access;
+    end y; 
+    
+    procedure y (vec1 : in out Vkm_GenType;
+                 value : in    Base_Type  ) is
+    begin
+        case vec1.Last_Index is
+            when 3 => vec1.data(1) := value;
+            when 2 => vec1.data(1) := value;
+            when 1 => vec1.data(1) := value;
+            when 0 => null;
+        end case;
+    end y;
+            
+            
+    function z (vec1  : in out Vkm_GenType;
+                value : in     Base_Type  ) return Vkm_Vector_Access is
+        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+    begin
+        z(vec1, value);
+        return vec1_access;
+    end z;
+    
+    
+    procedure z (vec1 : in out Vkm_GenType;
+                 value : in    Base_Type  ) is
+    begin
+        case vec1.Last_Index is
+            when 3 => vec1.data(2) := value;
+            when 2 => vec1.data(2) := value;
+            when 1 => null;
+            when 0 => null;
+        end case;
+    end z;
+            
+            
+    function w (vec1  : in out Vkm_GenType;
+                value : in     Base_Type  ) return Vkm_Vector_Access is
+        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+    begin
+        w(vec1, value);
+        return vec1_access;
+    end w; 
+    
+    
+    procedure w (vec1 : in out Vkm_GenType;
+                 value : in    Base_Type  ) is
+    begin
+        case vec1.Last_Index is
+            when 3 => vec1.data(3) := value;
+            when 2 => null;
+            when 1 => null;
+            when 0 => null;
+        end case;    
+    end w;
+    
+    
+    procedure xy (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).y(vec2.y);
+    end xy;
+    
+    procedure xz (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).z(vec2.y);
+    end xz;
+    
+    procedure xw (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).w(vec2.y);
+    end xw;
+    
+    procedure yx (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).x(vec2.y);
+    end yx;
+    
+    procedure yz (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).z(vec2.y);
+    end yz;
+    
+    procedure yw (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).w(vec2.y);
+    end yw;
+    
+    procedure zx (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).x(vec2.y);
+    end zx;
+    
+    procedure zy (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).y(vec2.y);
+    end zy;
+    
+    procedure zw (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).w(vec2.y);
+    end zw;
+    
+    procedure wx (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).x(vec2.y);
+    end wx;
+    
+    procedure wy (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).y(vec2.y);
+    end wy;
+    
+    procedure wz (vec1 : in out Vkm_GenType;
+                  vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).z(vec2.y);
+    end wz;
+    
+    
+    
     ----------------------------------------------------------------------------
 
 
@@ -122,9 +287,10 @@ package body Vulkan.Math.GenType is
         Result : Vkm_GenType(Left.Last_Index + Right.Last_Index + 1);
     begin
         Result.Copy(Left,Left.Length,0);
-        Result.Copy(Right,Right.Length,To_Vkm_Indices(Left.Length));
+        Result.Copy(Right,Right.Length,To_Vkm_Indices(Left.Length + 1));
         return Result;
     end Concatenate;
+
 
     ----------------------------------------------------------------------------
 
