@@ -124,7 +124,11 @@ package body Vulkan.Math.GenType is
         end loop;
     end Copy;
 
-    
+
+
+    ----------------------------------------------------------------
+
+
     function x (vec1  : in out Vkm_GenType;
                 value : in     Base_Type  ) return Vkm_Vector_Access is
         vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
@@ -143,7 +147,11 @@ package body Vulkan.Math.GenType is
             when 0 => vec1.data(0) := value;
         end case;
     end x;
-    
+
+
+    ----------------------------------------------------------------
+
+
     function y (vec1  : in out Vkm_GenType;
                 value : in     Base_Type  ) return Vkm_Vector_Access is
         vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
@@ -151,7 +159,11 @@ package body Vulkan.Math.GenType is
         y(vec1, value);
         return vec1_access;
     end y; 
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure y (vec1 : in out Vkm_GenType;
                  value : in    Base_Type  ) is
     begin
@@ -171,7 +183,11 @@ package body Vulkan.Math.GenType is
         z(vec1, value);
         return vec1_access;
     end z;
-    
+
+
+    ----------------------------------------------------------------
+
+
     
     procedure z (vec1 : in out Vkm_GenType;
                  value : in    Base_Type  ) is
@@ -192,7 +208,11 @@ package body Vulkan.Math.GenType is
         w(vec1, value);
         return vec1_access;
     end w; 
-    
+
+
+    ----------------------------------------------------------------
+
+
     
     procedure w (vec1 : in out Vkm_GenType;
                  value : in    Base_Type  ) is
@@ -204,80 +224,132 @@ package body Vulkan.Math.GenType is
             when 0 => null;
         end case;    
     end w;
-    
+
+
+    ----------------------------------------------------------------
+
+
     
     procedure xy (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.x(vec2.x).y(vec2.y);
     end xy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xz (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.x(vec2.x).z(vec2.y);
     end xz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xw (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.x(vec2.x).w(vec2.y);
     end xw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yx (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.y(vec2.x).x(vec2.y);
     end yx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yz (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.y(vec2.x).z(vec2.y);
     end yz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yw (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.y(vec2.x).w(vec2.y);
     end yw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zx (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.z(vec2.x).x(vec2.y);
     end zx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zy (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.z(vec2.x).y(vec2.y);
     end zy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zw (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.z(vec2.x).w(vec2.y);
     end zw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wx (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.w(vec2.x).x(vec2.y);
     end wx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wy (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.w(vec2.x).y(vec2.y);
     end wy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wz (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
         vec1.w(vec2.x).z(vec2.y);
     end wz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xyz (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -285,7 +357,11 @@ package body Vulkan.Math.GenType is
             .y(vec2.y)
             .z(vec2.z);
     end xyz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xyw (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -293,7 +369,11 @@ package body Vulkan.Math.GenType is
             .y(vec2.y)
             .w(vec2.z);
     end xyw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xzy (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -301,7 +381,11 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .y(vec2.z);
     end xzy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xzw (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -309,7 +393,11 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .w(vec2.z);
     end xzw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xwy (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -317,7 +405,11 @@ package body Vulkan.Math.GenType is
             .w(vec2.y)
             .y(vec2.z);
     end xwy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure xwz (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -325,7 +417,11 @@ package body Vulkan.Math.GenType is
             .w(vec2.y)
             .z(vec2.z);
     end xwz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yxz (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -333,7 +429,11 @@ package body Vulkan.Math.GenType is
             .x(vec2.y)
             .z(vec2.z);
     end yxz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yxw (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -341,7 +441,11 @@ package body Vulkan.Math.GenType is
             .x(vec2.y)
             .w(vec2.z);
     end yxw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yzx (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -349,7 +453,11 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .x(vec2.z);
     end yzx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure yzw (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -357,7 +465,11 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .w(vec2.z);
     end yzw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure ywx (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -365,7 +477,11 @@ package body Vulkan.Math.GenType is
             .w(vec2.y)
             .x(vec2.z);
     end ywx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure ywz (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -373,7 +489,11 @@ package body Vulkan.Math.GenType is
             .w(vec2.y)
             .z(vec2.z);
     end ywz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zxy (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -381,7 +501,11 @@ package body Vulkan.Math.GenType is
             .x(vec2.y)
             .y(vec2.z);
     end zxy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zxw (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -389,7 +513,11 @@ package body Vulkan.Math.GenType is
             .x(vec2.y)
             .w(vec2.z);
     end zxw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zyx (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -397,7 +525,11 @@ package body Vulkan.Math.GenType is
             .y(vec2.y)
             .x(vec2.z);
     end zyx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zyw (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -405,7 +537,11 @@ package body Vulkan.Math.GenType is
             .y(vec2.y)
             .w(vec2.z);
     end zyw;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zwx (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -413,7 +549,11 @@ package body Vulkan.Math.GenType is
             .w(vec2.y)
             .x(vec2.z);
     end zwx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure zwy (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -421,7 +561,11 @@ package body Vulkan.Math.GenType is
             .w(vec2.y)
             .y(vec2.z);
     end zwy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wxy (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -429,7 +573,11 @@ package body Vulkan.Math.GenType is
             .x(vec2.y)
             .y(vec2.z);
     end wxy;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wxz (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -437,7 +585,11 @@ package body Vulkan.Math.GenType is
             .x(vec2.y)
             .z(vec2.z);
     end wxz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wyx (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -445,7 +597,11 @@ package body Vulkan.Math.GenType is
             .y(vec2.y)
             .x(vec2.z);
     end wyx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wyz (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -453,7 +609,11 @@ package body Vulkan.Math.GenType is
             .y(vec2.y)
             .z(vec2.z);
     end wyz;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wzx (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -461,7 +621,11 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .x(vec2.z);
     end wzx;
-    
+
+
+    ----------------------------------------------------------------
+
+
     procedure wzy (vec1 : in out Vkm_GenType;
                    vec2 : in     Vkm_GenType) is
     begin
@@ -469,6 +633,247 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .y(vec2.z);
     end wzy;
+    
+    
+    ----------------------------------------------------------------------------
+    
+    
+    procedure xyzw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).y(vec2.y).z(vec2.z).w(vec2.w);
+    end xyzw;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure xywz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).y(vec2.y).w(vec2.z).z(vec2.w);
+    end xywz;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure xzyw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).z(vec2.y).y(vec2.z).w(vec2.w);
+    end xzyw;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure xzwy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).z(vec2.y).w(vec2.z).y(vec2.w);
+    end xzwy;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure xwyz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).w(vec2.y).y(vec2.z).z(vec2.w);
+    end xwyz;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure xwzy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x).w(vec2.y).z(vec2.z).y(vec2.w);
+    end xwzy;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure yxzw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).x(vec2.y).z(vec2.z).w(vec2.w);
+    end yxzw;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure yxwz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).x(vec2.y).w(vec2.z).z(vec2.w);
+    end yxwz;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure yzxw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).z(vec2.y).x(vec2.z).w(vec2.w);
+    end yzxw;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure yzwx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).z(vec2.y).w(vec2.z).x(vec2.w);
+    end yzwx;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure ywxz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).w(vec2.y).x(vec2.z).z(vec2.w);
+    end ywxz;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure ywzx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x).w(vec2.y).z(vec2.z).x(vec2.w);
+    end ywzx;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure zxyw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).x(vec2.y).y(vec2.z).w(vec2.w);
+    end zxyw;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure zxwy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).x(vec2.y).w(vec2.z).y(vec2.w);
+    end zxwy;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure zyxw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).y(vec2.y).x(vec2.z).w(vec2.w);
+    end zyxw;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure zywx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).y(vec2.y).w(vec2.z).x(vec2.w);
+    end zywx;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure zwxy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).w(vec2.y).x(vec2.z).y(vec2.w);
+    end zwxy;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure zwyx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x).w(vec2.y).y(vec2.z).x(vec2.w);
+    end zwyx;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure wxyz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).x(vec2.y).y(vec2.z).z(vec2.w);
+    end wxyz;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure wxzy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).x(vec2.y).z(vec2.z).y(vec2.w);
+    end wxzy;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure wyxz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).y(vec2.y).x(vec2.z).z(vec2.w);
+    end wyxz;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure wyzx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).y(vec2.y).z(vec2.z).x(vec2.w);
+    end wyzx;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure wzxy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).z(vec2.y).x(vec2.z).y(vec2.w);
+    end wzxy;
+
+
+    ----------------------------------------------------------------
+
+
+    procedure wzyx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x).z(vec2.y).y(vec2.z).x(vec2.w);
+    end wzyx;
+    
     
     ----------------------------------------------------------------------------
 

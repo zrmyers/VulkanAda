@@ -1750,7 +1750,57 @@ package Vulkan.Math.GenType is
     function qqqp (vec : in     Vkm_GenType) return Vkm_GenType renames wwwz;
     function qqqq (vec : in     Vkm_GenType) return Vkm_GenType renames wwww;
 
-    
+    -- Set
+    procedure xyzw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure xywz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure xzyw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure xzwy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure xwyz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure xwzy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure yxzw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure yxwz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure yzxw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure yzwx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure ywxz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure ywzx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure zxyw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure zxwy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure zyxw (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure zywx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure zwxy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure zwyx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure wxyz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure wxzy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure wyxz (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure wyzx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure wzxy (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+    procedure wzyx (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType);
+                   
+                   
     ----------------------------------------------------------------------------
     -- Generic Vector Operations
     ----------------------------------------------------------------------------
