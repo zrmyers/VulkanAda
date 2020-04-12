@@ -47,3 +47,5 @@ docs: vulkan
 
 clean:
 	rm -rf $(DIRS)
+	rm -rf docs
+
