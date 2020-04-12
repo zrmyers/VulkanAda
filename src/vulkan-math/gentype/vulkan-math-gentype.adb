@@ -278,7 +278,197 @@ package body Vulkan.Math.GenType is
         vec1.w(vec2.x).z(vec2.y);
     end wz;
     
+    procedure xyz (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x)
+            .y(vec2.y)
+            .z(vec2.z);
+    end xyz;
     
+    procedure xyw (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x)
+            .y(vec2.y)
+            .w(vec2.z);
+    end xyw;
+    
+    procedure xzy (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x)
+            .z(vec2.y)
+            .y(vec2.z);
+    end xzy;
+    
+    procedure xzw (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x)
+            .z(vec2.y)
+            .w(vec2.z);
+    end xzw;
+    
+    procedure xwy (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x)
+            .w(vec2.y)
+            .y(vec2.z);
+    end xwy;
+    
+    procedure xwz (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.x(vec2.x)
+            .w(vec2.y)
+            .z(vec2.z);
+    end xwz;
+    
+    procedure yxz (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x)
+            .x(vec2.y)
+            .z(vec2.z);
+    end yxz;
+    
+    procedure yxw (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x)
+            .x(vec2.y)
+            .w(vec2.z);
+    end yxw;
+    
+    procedure yzx (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x)
+            .z(vec2.y)
+            .x(vec2.z);
+    end yzx;
+    
+    procedure yzw (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x)
+            .z(vec2.y)
+            .w(vec2.z);
+    end yzw;
+    
+    procedure ywx (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x)
+            .w(vec2.y)
+            .x(vec2.z);
+    end ywx;
+    
+    procedure ywz (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.y(vec2.x)
+            .w(vec2.y)
+            .z(vec2.z);
+    end ywz;
+    
+    procedure zxy (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x)
+            .x(vec2.y)
+            .y(vec2.z);
+    end zxy;
+    
+    procedure zxw (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x)
+            .x(vec2.y)
+            .w(vec2.z);
+    end zxw;
+    
+    procedure zyx (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x)
+            .y(vec2.y)
+            .x(vec2.z);
+    end zyx;
+    
+    procedure zyw (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x)
+            .y(vec2.y)
+            .w(vec2.z);
+    end zyw;
+    
+    procedure zwx (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x)
+            .w(vec2.y)
+            .x(vec2.z);
+    end zwx;
+    
+    procedure zwy (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.z(vec2.x)
+            .w(vec2.y)
+            .y(vec2.z);
+    end zwy;
+    
+    procedure wxy (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x)
+            .x(vec2.y)
+            .y(vec2.z);
+    end wxy;
+    
+    procedure wxz (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x)
+            .x(vec2.y)
+            .z(vec2.z);
+    end wxz;
+    
+    procedure wyx (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x)
+            .y(vec2.y)
+            .x(vec2.z);
+    end wyx;
+    
+    procedure wyz (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x)
+            .y(vec2.y)
+            .z(vec2.z);
+    end wyz;
+    
+    procedure wzx (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x)
+            .z(vec2.y)
+            .x(vec2.z);
+    end wzx;
+    
+    procedure wzy (vec1 : in out Vkm_GenType;
+                   vec2 : in     Vkm_GenType) is
+    begin
+        vec1.w(vec2.x)
+            .z(vec2.y)
+            .y(vec2.z);
+    end wzy;
     
     ----------------------------------------------------------------------------
 
