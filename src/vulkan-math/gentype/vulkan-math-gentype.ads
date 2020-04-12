@@ -1799,6 +1799,55 @@ package Vulkan.Math.GenType is
                     vec2 : in     Vkm_GenType);
     procedure wzyx (vec1 : in out Vkm_GenType;
                     vec2 : in     Vkm_GenType);
+
+    procedure rgba (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames xyzw;
+    procedure rgab (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames xywz;
+    procedure rbga (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames xzyw;
+    procedure rbag (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames xzwy;
+    procedure ragb (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames xwyz;
+    procedure rabg (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames xwzy;
+    procedure grba (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames yxzw;
+    procedure grab (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames yxwz;
+    procedure gbra (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames yzxw;
+    procedure gbar (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames yzwx;
+    procedure garb (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames ywxz;
+    procedure gabr (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames ywzx;
+    procedure brga (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames zxyw;
+    procedure brag (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames zxwy;
+    procedure bgra (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames zyxw;
+    procedure bgar (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames zywx;
+    procedure barg (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames zwxy;
+    procedure bagr (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames zwyx;
+    procedure argb (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames wxyz;
+    procedure arbg (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames wxzy;
+    procedure agrb (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames wyxz;
+    procedure agbr (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames wyzx;
+    procedure abrg (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames wzxy;
+    procedure abgr (vec1 : in out Vkm_GenType;
+                    vec2 : in     Vkm_GenType) renames wzyx;
                    
                    
     ----------------------------------------------------------------------------
