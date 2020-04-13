@@ -30,10 +30,11 @@ use Vulkan.Math.Uvec3;
 use Vulkan.Math.Uvec2;
 
 --------------------------------------------------------------------------------
---< @group Vulkan Math Interface
+--< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
 --< This package provides a 32-bit unsigned integer vector type with 4 components.
+--------------------------------------------------------------------------------
 package Vulkan.Math.Uvec4 is
     pragma Preelaborate;
     pragma Pure;

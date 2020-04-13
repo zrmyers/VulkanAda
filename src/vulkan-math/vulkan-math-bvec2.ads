@@ -25,7 +25,7 @@ with Vulkan.Math.GenBType;
 use Vulkan.Math.GenBType;
 
 --------------------------------------------------------------------------------
---< @group Vulkan Math Interface
+--< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
 --< This package defines a boolean vector type with 2 components.
@@ -34,6 +34,7 @@ package Vulkan.Math.Bvec2 is
     pragma Preelaborate;
     pragma Pure;
 
+    -- A 2 component vector of boolean values.
     subtype Vkm_Bvec2 is Vkm_GenBType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
@@ -43,10 +44,11 @@ package Vulkan.Math.Bvec2 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Vec2:
     ----------------------------------------------------------------------------
-    --> @description
-    --> Produce a default vector with all components set to False.
-    -->
-    --> @return a Vec2 with all components set to false.
+    --< @description
+    --< Produce a default vector with all components set to false.
+    --<
+    --< @return 
+    --< A 2D boolean vector with all components set to false.
     ----------------------------------------------------------------------------
     function Make_Bvec2 return Vkm_Bvec2 is
         (GBT.Make_GenType(Last_Index => 1, value => False)) with Inline;

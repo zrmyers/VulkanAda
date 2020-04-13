@@ -26,7 +26,7 @@ with Ada.Numerics;
 with Ada.Unchecked_Conversion;
 
 --------------------------------------------------------------------------------
---< @group Vulkan Math Interface
+--< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 package Vulkan.Math is
     pragma Preelaborate;

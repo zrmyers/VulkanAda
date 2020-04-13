@@ -30,7 +30,7 @@ use Vulkan.Math.Ivec3;
 use Vulkan.Math.Ivec2;
 
 --------------------------------------------------------------------------------
---< @group Vulkan Math Interface
+--< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
 --< This package defines a 32-bit signed integer vector type with 4 components.
