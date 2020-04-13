@@ -73,10 +73,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenType_Reference",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L68C10",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L98C10",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L68"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L98"
     },
     {
       "label": "Vkm_GenUType",

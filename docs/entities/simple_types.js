@@ -52,10 +52,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_Vector",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L46C10",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L76C10",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L46"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L76"
     }
   ]
 };

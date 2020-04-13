@@ -7,7 +7,7 @@ GNATdoc.Documentation = {
   ],
   "instantiation": {
     "label": "Vulkan.Math.GenType",
-    "docHref": "docs/vulkan__math__gentype___spec.html#L36C21"
+    "docHref": "docs/vulkan__math__gentype___spec.html#L66C21"
   },
   "entities": [
   ]

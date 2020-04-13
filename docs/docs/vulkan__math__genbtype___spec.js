@@ -64,7 +64,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "GBT.Vkm_GenType",
-                      "href": "docs/vulkan__math__gentype___spec.html#L61C10"
+                      "href": "docs/vulkan__math__gentype___spec.html#L91C10"
                     },
                     {
                       "kind": "span",
@@ -248,7 +248,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenType",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L36C21"
+            "docHref": "docs/vulkan__math__gentype___spec.html#L66C21"
           }
         }
       ],
