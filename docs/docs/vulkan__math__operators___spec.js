@@ -384,7 +384,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GBT.Make"
+                      "text": "GBT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -687,7 +687,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GBT.Make"
+                      "text": "GBT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -923,7 +923,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GBT.Make"
+                      "text": "GBT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -1386,7 +1386,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -1689,7 +1689,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -1925,7 +1925,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -2388,7 +2388,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GIT.Make"
+                      "text": "GIT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -2691,7 +2691,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GIT.Make"
+                      "text": "GIT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -2927,7 +2927,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GIT.Make"
+                      "text": "GIT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -3390,7 +3390,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -3693,7 +3693,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -3929,7 +3929,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -4392,7 +4392,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GDT.Make"
+                      "text": "GDT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -4695,7 +4695,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GDT.Make"
+                      "text": "GDT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -4931,7 +4931,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GDT.Make"
+                      "text": "GDT.Make_GenType"
                     },
                     {
                       "kind": "span",

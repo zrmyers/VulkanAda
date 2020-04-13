@@ -1,26 +1,21 @@
 GNATdoc.DocumentationIndex = [
   {
-    "label": "Vulkan Math GenType",
-    "items": [
-      {
-        "label": "Vulkan.Math.GenType",
-        "qualifier": "",
-        "file": "docs/vulkan__math__gentype___spec.html"
-      },
-      {
-        "label": "Vulkan.Math.GenUType",
-        "qualifier": "",
-        "file": "docs/vulkan__math__genutype___spec.html"
-      }
-    ]
-  },
-  {
-    "label": "Vulkan Math Interface",
+    "label": "Vulkan Math Basic Types",
     "items": [
       {
         "label": "Vulkan.Math",
         "qualifier": "",
         "file": "docs/vulkan__math___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Bvec2",
+        "qualifier": "",
+        "file": "docs/vulkan__math__bvec2___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Bvec3",
+        "qualifier": "",
+        "file": "docs/vulkan__math__bvec3___spec.html"
       },
       {
         "label": "Vulkan.Math.Ivec3",
@@ -40,19 +35,24 @@ GNATdoc.DocumentationIndex = [
     ]
   },
   {
+    "label": "Vulkan Math GenType",
+    "items": [
+      {
+        "label": "Vulkan.Math.GenType",
+        "qualifier": "",
+        "file": "docs/vulkan__math__gentype___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.GenUType",
+        "qualifier": "",
+        "file": "docs/vulkan__math__genutype___spec.html"
+      }
+    ]
+  },
+  {
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Bvec2",
-    "qualifier": "",
-    "file": "docs/vulkan__math__bvec2___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Bvec3",
-    "qualifier": "",
-    "file": "docs/vulkan__math__bvec3___spec.html"
   },
   {
     "label": "Vulkan.Math.Bvec4",

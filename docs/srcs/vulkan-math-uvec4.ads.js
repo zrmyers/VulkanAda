@@ -440,7 +440,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @group Vulkan Math Interface"
+          "text": "--< @group Vulkan Math Basic Types"
         }
       ]
     },
@@ -483,6 +483,17 @@ GNATdoc.SourceFile = {
       "children": [
         {
           "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 38,
+      "children": [
+        {
+          "kind": "span",
           "cssClass": "keyword",
           "text": "package"
         },
@@ -495,7 +506,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vulkan.Math.Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L37C21"
+          "href": "docs/vulkan__math__uvec4___spec.html#L38C21"
         },
         {
           "kind": "span",
@@ -511,7 +522,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 38,
+      "number": 39,
       "children": [
         {
           "kind": "span",
@@ -542,7 +553,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 39,
+      "number": 40,
       "children": [
         {
           "kind": "span",
@@ -573,13 +584,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 40,
+      "number": 41,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 41,
+      "number": 42,
       "children": [
         {
           "kind": "span",
@@ -595,7 +606,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 42,
+      "number": 43,
       "children": [
         {
           "kind": "span",
@@ -616,7 +627,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -683,24 +694,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 43,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 44,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -715,7 +710,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- Ada does not have the concept of constructors in the sense that they exist"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -731,7 +726,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- in C++.  For this reason, we will instead define multiple methods for"
+          "text": "-- Ada does not have the concept of constructors in the sense that they exist"
         }
       ]
     },
@@ -747,7 +742,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- instantiating a Uvec4 here."
+          "text": "-- in C++.  For this reason, we will instead define multiple methods for"
         }
       ]
     },
@@ -763,7 +758,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "-- instantiating a Uvec4 here."
         }
       ]
     },
@@ -779,7 +774,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- The following are explicit constructors for Uvec4:"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -795,7 +790,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "-- The following are explicit constructors for Uvec4:"
         }
       ]
     },
@@ -811,7 +806,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -827,7 +822,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a default vector with all components set to 0.0."
+          "text": "--< @description"
         }
       ]
     },
@@ -843,7 +838,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a default vector with all components set to 0.0."
         }
       ]
     },
@@ -859,7 +854,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return a Uvec4 with all components set to 0.0."
+          "text": "--"
         }
       ]
     },
@@ -875,13 +870,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @return a Uvec4 with all components set to 0.0."
         }
       ]
     },
     {
       "kind": "line",
       "number": 56,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 57,
       "children": [
         {
           "kind": "span",
@@ -902,7 +913,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L56C14"
+          "href": "docs/vulkan__math__uvec4___spec.html#L57C14"
         },
         {
           "kind": "span",
@@ -923,7 +934,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -939,7 +950,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 57,
+      "number": 58,
       "children": [
         {
           "kind": "span",
@@ -954,7 +965,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GUT.Make"
+          "text": "GUT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1055,12 +1066,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 58,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 59,
       "children": [
       ]
@@ -1069,16 +1074,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 60,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -1093,7 +1088,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -1109,7 +1104,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector with all components set to the same value."
+          "text": "--< @description"
         }
       ]
     },
@@ -1125,7 +1120,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector with all components set to the same value."
         }
       ]
     },
@@ -1141,7 +1136,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar_value The value to set all components to."
+          "text": "--"
         }
       ]
     },
@@ -1157,7 +1152,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     scalar_value The value to set all components to."
         }
       ]
     },
@@ -1173,7 +1168,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return A Uvec4 with all components set to scalar_value."
+          "text": "--"
         }
       ]
     },
@@ -1189,13 +1184,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @return A Uvec4 with all components set to scalar_value."
         }
       ]
     },
     {
       "kind": "line",
       "number": 68,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 69,
       "children": [
         {
           "kind": "span",
@@ -1216,7 +1227,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L68C14"
+          "href": "docs/vulkan__math__uvec4___spec.html#L69C14"
         },
         {
           "kind": "span",
@@ -1232,7 +1243,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L68C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L69C26"
         },
         {
           "kind": "span",
@@ -1289,7 +1300,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -1305,7 +1316,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 69,
+      "number": 70,
       "children": [
         {
           "kind": "span",
@@ -1320,7 +1331,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GUT.Make"
+          "text": "GUT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1421,12 +1432,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 70,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 71,
       "children": [
       ]
@@ -1435,16 +1440,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 72,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -1459,7 +1454,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -1475,7 +1470,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by copying components from an existing vector."
+          "text": "--< @description"
         }
       ]
     },
@@ -1491,7 +1486,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by copying components from an existing vector."
         }
       ]
     },
@@ -1507,7 +1502,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec4_value The Uvec4 to copy components from."
+          "text": "--"
         }
       ]
     },
@@ -1523,7 +1518,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     vec4_value The Uvec4 to copy components from."
         }
       ]
     },
@@ -1539,7 +1534,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return A Uvec4 with all of its components set equal to the corresponding"
+          "text": "--"
         }
       ]
     },
@@ -1555,7 +1550,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<          components of vec4_value."
+          "text": "--< @return A Uvec4 with all of its components set equal to the corresponding"
         }
       ]
     },
@@ -1571,13 +1566,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<          components of vec4_value."
         }
       ]
     },
     {
       "kind": "line",
       "number": 81,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 82,
       "children": [
         {
           "kind": "span",
@@ -1598,7 +1609,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L81C14"
+          "href": "docs/vulkan__math__uvec4___spec.html#L82C14"
         },
         {
           "kind": "span",
@@ -1614,7 +1625,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec4_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L81C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L82C26"
         },
         {
           "kind": "span",
@@ -1645,7 +1656,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -1671,7 +1682,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -1687,7 +1698,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 82,
+      "number": 83,
       "children": [
         {
           "kind": "span",
@@ -1702,7 +1713,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GUT.Make"
+          "text": "GUT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1763,12 +1774,12 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 83,
+      "number": 84,
       "children": [
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "                  "
+          "text": "                          "
         },
         {
           "kind": "span",
@@ -1849,12 +1860,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 84,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 85,
       "children": [
       ]
@@ -1863,16 +1868,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 86,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -1887,7 +1882,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -1903,7 +1898,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by specifying the values for each of its components."
+          "text": "--< @description"
         }
       ]
     },
@@ -1919,7 +1914,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by specifying the values for each of its components."
         }
       ]
     },
@@ -1935,7 +1930,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     value1 Value for component 1."
+          "text": "--"
         }
       ]
     },
@@ -1951,7 +1946,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     value2 Value for component 2."
+          "text": "--< @param     value1 Value for component 1."
         }
       ]
     },
@@ -1967,7 +1962,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     value3 Value for componetn 3."
+          "text": "--< @param     value2 Value for component 2."
         }
       ]
     },
@@ -1983,7 +1978,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     value4 value for component 4."
+          "text": "--< @param     value3 Value for componetn 3."
         }
       ]
     },
@@ -1999,7 +1994,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     value4 value for component 4."
         }
       ]
     },
@@ -2015,7 +2010,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return A Uvec4 with all components set as specified."
+          "text": "--"
         }
       ]
     },
@@ -2031,13 +2026,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @return A Uvec4 with all components set as specified."
         }
       ]
     },
     {
       "kind": "line",
       "number": 97,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 98,
       "children": [
         {
           "kind": "span",
@@ -2058,7 +2069,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L97C14"
+          "href": "docs/vulkan__math__uvec4___spec.html#L98C14"
         },
         {
           "kind": "span",
@@ -2074,7 +2085,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value1",
-          "href": "docs/vulkan__math__uvec4___spec.html#L97C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L98C26"
         },
         {
           "kind": "span",
@@ -2090,7 +2101,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value2",
-          "href": "docs/vulkan__math__uvec4___spec.html#L97C34"
+          "href": "docs/vulkan__math__uvec4___spec.html#L98C34"
         },
         {
           "kind": "span",
@@ -2106,7 +2117,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value3",
-          "href": "docs/vulkan__math__uvec4___spec.html#L97C42"
+          "href": "docs/vulkan__math__uvec4___spec.html#L98C42"
         },
         {
           "kind": "span",
@@ -2122,7 +2133,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L97C50"
+          "href": "docs/vulkan__math__uvec4___spec.html#L98C50"
         },
         {
           "kind": "span",
@@ -2179,13 +2190,13 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 98,
+      "number": 99,
       "children": [
         {
           "kind": "span",
@@ -2205,7 +2216,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GUT.Make"
+          "text": "GUT.Make_GenType"
         },
         {
           "kind": "span",
@@ -2216,24 +2227,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 99,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 100,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -2248,7 +2243,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2264,7 +2259,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by concatenating a scalar value with a Uvec3."
+          "text": "--< @description"
         }
       ]
     },
@@ -2280,7 +2275,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by concatenating a scalar value with a Uvec3."
         }
       ]
     },
@@ -2296,7 +2291,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Uvec4 = [scalar_value, vec3_value  ]"
+          "text": "--"
         }
       ]
     },
@@ -2312,7 +2307,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Uvec4 = [scalar_value, vec3_value  ]"
         }
       ]
     },
@@ -2328,7 +2323,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar_value The scalar value to concatenate with the Uvec3."
+          "text": "--"
         }
       ]
     },
@@ -2344,7 +2339,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec3_value   The Uvec3 to concatenate to the scalar value."
+          "text": "--< @param     scalar_value The scalar value to concatenate with the Uvec3."
         }
       ]
     },
@@ -2360,7 +2355,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     vec3_value   The Uvec3 to concatenate to the scalar value."
         }
       ]
     },
@@ -2376,7 +2371,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return The instance of Uvec4."
+          "text": "--"
         }
       ]
     },
@@ -2392,13 +2387,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @return The instance of Uvec4."
         }
       ]
     },
     {
       "kind": "line",
       "number": 111,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 112,
       "children": [
         {
           "kind": "span",
@@ -2419,7 +2430,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L111C14"
+          "href": "docs/vulkan__math__uvec4___spec.html#L112C14"
         },
         {
           "kind": "span",
@@ -2435,7 +2446,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L111C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L112C26"
         },
         {
           "kind": "span",
@@ -2477,7 +2488,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 112,
+      "number": 113,
       "children": [
         {
           "kind": "span",
@@ -2488,7 +2499,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec3_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L112C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L113C26"
         },
         {
           "kind": "span",
@@ -2561,7 +2572,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 113,
+      "number": 114,
       "children": [
         {
           "kind": "span",
@@ -2597,42 +2608,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 114,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "                    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "vec3_value.data"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "number",
-          "text": "0"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 115,
       "children": [
         {
@@ -2653,7 +2628,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "number",
-          "text": "1"
+          "text": "0"
         },
         {
           "kind": "span",
@@ -2689,6 +2664,42 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "number",
+          "text": "1"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 117,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "                    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "vec3_value.data"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "number",
           "text": "2"
         },
         {
@@ -2730,12 +2741,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 117,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 118,
       "children": [
       ]
@@ -2744,16 +2749,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 119,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -2768,7 +2763,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2784,7 +2779,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by concatenating a Uvec3 with a scalar value."
+          "text": "--< @description"
         }
       ]
     },
@@ -2800,7 +2795,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by concatenating a Uvec3 with a scalar value."
         }
       ]
     },
@@ -2816,7 +2811,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Uvec4 = [vec3_value, scalar_value]"
+          "text": "--"
         }
       ]
     },
@@ -2832,7 +2827,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Uvec4 = [vec3_value, scalar_value]"
         }
       ]
     },
@@ -2848,7 +2843,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec3_value   The Uvec3 to concatenate to the scalar value."
+          "text": "--"
         }
       ]
     },
@@ -2864,7 +2859,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar_value The scalar value to concatenate to the Uvec3."
+          "text": "--< @param     vec3_value   The Uvec3 to concatenate to the scalar value."
         }
       ]
     },
@@ -2880,7 +2875,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     scalar_value The scalar value to concatenate to the Uvec3."
         }
       ]
     },
@@ -2896,7 +2891,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return The instance of Uvec4."
+          "text": "--"
         }
       ]
     },
@@ -2912,13 +2907,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @return The instance of Uvec4."
         }
       ]
     },
     {
       "kind": "line",
       "number": 130,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 131,
       "children": [
         {
           "kind": "span",
@@ -2939,7 +2950,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L130C14"
+          "href": "docs/vulkan__math__uvec4___spec.html#L131C14"
         },
         {
           "kind": "span",
@@ -2955,7 +2966,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec3_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L130C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L131C26"
         },
         {
           "kind": "span",
@@ -2997,7 +3008,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 131,
+      "number": 132,
       "children": [
         {
           "kind": "span",
@@ -3008,7 +3019,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L131C26"
+          "href": "docs/vulkan__math__uvec4___spec.html#L132C26"
         },
         {
           "kind": "span",
@@ -3065,7 +3076,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -3081,7 +3092,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 132,
+      "number": 133,
       "children": [
         {
           "kind": "span",
@@ -3132,7 +3143,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 133,
+      "number": 134,
       "children": [
         {
           "kind": "span",
@@ -3168,7 +3179,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 134,
+      "number": 135,
       "children": [
         {
           "kind": "span",
@@ -3204,7 +3215,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 135,
+      "number": 136,
       "children": [
         {
           "kind": "span",
@@ -3255,12 +3266,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 136,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 137,
       "children": [
       ]
@@ -3269,16 +3274,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 138,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -3293,7 +3288,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "---------------------------------------------------------------------------"
         }
       ]
     },
@@ -3309,7 +3304,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by concatenating a Uvec2 with a Uvec2."
+          "text": "--< @description"
         }
       ]
     },
@@ -3325,7 +3320,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by concatenating a Uvec2 with a Uvec2."
         }
       ]
     },
@@ -3341,7 +3336,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Uvec4 = [vec2_value1, vec2_value2]"
+          "text": "--"
         }
       ]
     },
@@ -3357,7 +3352,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Uvec4 = [vec2_value1, vec2_value2]"
         }
       ]
     },
@@ -3373,7 +3368,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec2_value1 The first Uvec2."
+          "text": "--"
         }
       ]
     },
@@ -3389,7 +3384,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec2_value2 The second Uvec2."
+          "text": "--< @param     vec2_value1 The first Uvec2."
         }
       ]
     },
@@ -3405,7 +3400,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     vec2_value2 The second Uvec2."
         }
       ]
     },
@@ -3421,7 +3416,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return The instance of Uvec4."
+          "text": "--"
         }
       ]
     },
@@ -3437,13 +3432,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
+          "text": "--< @return The instance of Uvec4."
         }
       ]
     },
     {
       "kind": "line",
       "number": 149,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 150,
       "children": [
         {
           "kind": "span",
@@ -3464,7 +3475,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L149C15"
+          "href": "docs/vulkan__math__uvec4___spec.html#L150C15"
         },
         {
           "kind": "span",
@@ -3480,7 +3491,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec2_value1",
-          "href": "docs/vulkan__math__uvec4___spec.html#L149C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L150C27"
         },
         {
           "kind": "span",
@@ -3496,7 +3507,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec2_value2",
-          "href": "docs/vulkan__math__uvec4___spec.html#L149C40"
+          "href": "docs/vulkan__math__uvec4___spec.html#L150C40"
         },
         {
           "kind": "span",
@@ -3553,7 +3564,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -3569,7 +3580,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 150,
+      "number": 151,
       "children": [
         {
           "kind": "span",
@@ -3645,7 +3656,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 151,
+      "number": 152,
       "children": [
         {
           "kind": "span",
@@ -3716,12 +3727,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 152,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 153,
       "children": [
       ]
@@ -3730,16 +3735,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 154,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -3754,7 +3749,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "---------------------------------------------------------------------------"
         }
       ]
     },
@@ -3770,7 +3765,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by concatenating two scalar values with a Uvec2."
+          "text": "--< @description"
         }
       ]
     },
@@ -3786,7 +3781,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by concatenating two scalar values with a Uvec2."
         }
       ]
     },
@@ -3802,7 +3797,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Uvec4 = [scalar1, scalar2, vec2_value]"
+          "text": "--"
         }
       ]
     },
@@ -3818,7 +3813,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Uvec4 = [scalar1, scalar2, vec2_value]"
         }
       ]
     },
@@ -3834,7 +3829,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar1    First scalar value."
+          "text": "--"
         }
       ]
     },
@@ -3850,7 +3845,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar2    Second scalar value."
+          "text": "--< @param     scalar1    First scalar value."
         }
       ]
     },
@@ -3866,7 +3861,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec2_value The Uvec2 value."
+          "text": "--< @param     scalar2    Second scalar value."
         }
       ]
     },
@@ -3882,7 +3877,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     vec2_value The Uvec2 value."
         }
       ]
     },
@@ -3898,7 +3893,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return The instance of Uvec4."
+          "text": "--"
         }
       ]
     },
@@ -3914,13 +3909,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
+          "text": "--< @return The instance of Uvec4."
         }
       ]
     },
     {
       "kind": "line",
       "number": 166,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 167,
       "children": [
         {
           "kind": "span",
@@ -3941,7 +3952,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L166C15"
+          "href": "docs/vulkan__math__uvec4___spec.html#L167C15"
         },
         {
           "kind": "span",
@@ -3957,7 +3968,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar1",
-          "href": "docs/vulkan__math__uvec4___spec.html#L166C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L167C27"
         },
         {
           "kind": "span",
@@ -3973,7 +3984,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar2",
-          "href": "docs/vulkan__math__uvec4___spec.html#L166C36"
+          "href": "docs/vulkan__math__uvec4___spec.html#L167C36"
         },
         {
           "kind": "span",
@@ -4015,7 +4026,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 167,
+      "number": 168,
       "children": [
         {
           "kind": "span",
@@ -4026,7 +4037,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec2_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L167C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L168C27"
         },
         {
           "kind": "span",
@@ -4083,7 +4094,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -4099,7 +4110,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 168,
+      "number": 169,
       "children": [
         {
           "kind": "span",
@@ -4215,12 +4226,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 169,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 170,
       "children": [
       ]
@@ -4229,16 +4234,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 171,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -4253,7 +4248,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "---------------------------------------------------------------------------"
         }
       ]
     },
@@ -4269,7 +4264,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by concatenating two scalar values with a Uvec2."
+          "text": "--< @description"
         }
       ]
     },
@@ -4285,7 +4280,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by concatenating two scalar values with a Uvec2."
         }
       ]
     },
@@ -4301,7 +4296,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Uvec4 = [scalar1, vec2_value, scalar2]"
+          "text": "--"
         }
       ]
     },
@@ -4317,7 +4312,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Uvec4 = [scalar1, vec2_value, scalar2]"
         }
       ]
     },
@@ -4333,7 +4328,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar1    First scalar value."
+          "text": "--"
         }
       ]
     },
@@ -4349,7 +4344,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec2_value The Uvec2 value."
+          "text": "--< @param     scalar1    First scalar value."
         }
       ]
     },
@@ -4365,7 +4360,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar2    Second scalar value."
+          "text": "--< @param     vec2_value The Uvec2 value."
         }
       ]
     },
@@ -4381,7 +4376,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     scalar2    Second scalar value."
         }
       ]
     },
@@ -4397,7 +4392,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return The instance of Uvec4."
+          "text": "--"
         }
       ]
     },
@@ -4413,13 +4408,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
+          "text": "--< @return The instance of Uvec4."
         }
       ]
     },
     {
       "kind": "line",
       "number": 183,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 184,
       "children": [
         {
           "kind": "span",
@@ -4440,7 +4451,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L183C15"
+          "href": "docs/vulkan__math__uvec4___spec.html#L184C15"
         },
         {
           "kind": "span",
@@ -4456,7 +4467,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar1",
-          "href": "docs/vulkan__math__uvec4___spec.html#L183C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L184C27"
         },
         {
           "kind": "span",
@@ -4498,7 +4509,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 184,
+      "number": 185,
       "children": [
         {
           "kind": "span",
@@ -4509,7 +4520,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec2_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L184C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L185C27"
         },
         {
           "kind": "span",
@@ -4556,7 +4567,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 185,
+      "number": 186,
       "children": [
         {
           "kind": "span",
@@ -4567,7 +4578,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar2",
-          "href": "docs/vulkan__math__uvec4___spec.html#L185C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L186C27"
         },
         {
           "kind": "span",
@@ -4624,7 +4635,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -4640,7 +4651,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 186,
+      "number": 187,
       "children": [
         {
           "kind": "span",
@@ -4756,12 +4767,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 187,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 188,
       "children": [
       ]
@@ -4770,16 +4775,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 189,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -4794,7 +4789,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "---------------------------------------------------------------------------"
         }
       ]
     },
@@ -4810,7 +4805,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Produce a vector by concatenating two scalar values with a Uvec2."
+          "text": "--< @description"
         }
       ]
     },
@@ -4826,7 +4821,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Produce a vector by concatenating two scalar values with a Uvec2."
         }
       ]
     },
@@ -4842,7 +4837,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Uvec4 = [vec2_value, scalar1, scalar2]"
+          "text": "--"
         }
       ]
     },
@@ -4858,7 +4853,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< Uvec4 = [vec2_value, scalar1, scalar2]"
         }
       ]
     },
@@ -4874,7 +4869,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     vec2_value The Uvec2 value."
+          "text": "--"
         }
       ]
     },
@@ -4890,7 +4885,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar1    First scalar value."
+          "text": "--< @param     vec2_value The Uvec2 value."
         }
       ]
     },
@@ -4906,7 +4901,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param     scalar2    Second scalar value."
+          "text": "--< @param     scalar1    First scalar value."
         }
       ]
     },
@@ -4922,7 +4917,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param     scalar2    Second scalar value."
         }
       ]
     },
@@ -4938,7 +4933,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return The instance of Uvec4."
+          "text": "--"
         }
       ]
     },
@@ -4954,13 +4949,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "---------------------------------------------------------------------------"
+          "text": "--< @return The instance of Uvec4."
         }
       ]
     },
     {
       "kind": "line",
       "number": 201,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 202,
       "children": [
         {
           "kind": "span",
@@ -4981,7 +4992,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L201C15"
+          "href": "docs/vulkan__math__uvec4___spec.html#L202C15"
         },
         {
           "kind": "span",
@@ -4997,7 +5008,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec2_value",
-          "href": "docs/vulkan__math__uvec4___spec.html#L201C27"
+          "href": "docs/vulkan__math__uvec4___spec.html#L202C27"
         },
         {
           "kind": "span",
@@ -5044,59 +5055,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 202,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "                          "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "scalar1",
-          "href": "docs/vulkan__math__uvec4___spec.html#L202C27"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_Uint",
-          "href": "docs/vulkan__math___spec.html#L55C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 203,
       "children": [
         {
@@ -5107,7 +5065,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "scalar2",
+          "text": "scalar1",
           "href": "docs/vulkan__math__uvec4___spec.html#L203C27"
         },
         {
@@ -5144,6 +5102,59 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 204,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "                          "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "scalar2",
+          "href": "docs/vulkan__math__uvec4___spec.html#L204C27"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_Uint",
+          "href": "docs/vulkan__math___spec.html#L55C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
           "text": ")"
         },
         {
@@ -5165,7 +5176,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec4",
-          "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+          "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
         },
         {
           "kind": "span",
@@ -5181,7 +5192,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 204,
+      "number": 205,
       "children": [
         {
           "kind": "span",
@@ -5297,12 +5308,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 205,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 206,
       "children": [
       ]
@@ -5310,6 +5315,12 @@ GNATdoc.SourceFile = {
     {
       "kind": "line",
       "number": 207,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 208,
       "children": [
         {
           "kind": "span",

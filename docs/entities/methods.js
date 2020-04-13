@@ -30,42 +30,42 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L244"
     },
     {
-      "label": "Make",
+      "label": "Make_GenType",
       "docHref": "docs/vulkan__math__gentype___spec.html#L124C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L124"
     },
     {
-      "label": "Make",
+      "label": "Make_GenType",
       "docHref": "docs/vulkan__math__gentype___spec.html#L142C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L142"
     },
     {
-      "label": "Make",
+      "label": "Make_GenType",
       "docHref": "docs/vulkan__math__gentype___spec.html#L162C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L162"
     },
     {
-      "label": "Make",
+      "label": "Make_GenType",
       "docHref": "docs/vulkan__math__gentype___spec.html#L185C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L185"
     },
     {
-      "label": "Make",
+      "label": "Make_GenType",
       "docHref": "docs/vulkan__math__gentype___spec.html#L211C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L211"
     },
     {
-      "label": "Make",
+      "label": "Make_GenType",
       "docHref": "docs/vulkan__math__gentype___spec.html#L229C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",

@@ -20,7 +20,7 @@ GNATdoc.Documentation = {
         {
           "label": "Vkm_Uvec4",
           "qualifier": "",
-          "line": 42,
+          "line": 43,
           "column": 13,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -31,7 +31,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 42,
+                  "number": 43,
                   "children": [
                     {
                       "kind": "span",
@@ -52,7 +52,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -138,7 +138,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 56,
+          "line": 57,
           "column": 14,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -149,7 +149,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 56,
+                  "number": 57,
                   "children": [
                     {
                       "kind": "span",
@@ -170,7 +170,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L56C14"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L57C14"
                     },
                     {
                       "kind": "span",
@@ -191,7 +191,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -207,7 +207,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 57,
+                  "number": 58,
                   "children": [
                     {
                       "kind": "span",
@@ -222,7 +222,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -350,7 +350,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 68,
+          "line": 69,
           "column": 14,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -361,7 +361,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 68,
+                  "number": 69,
                   "children": [
                     {
                       "kind": "span",
@@ -382,7 +382,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L68C14"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L69C14"
                     },
                     {
                       "kind": "span",
@@ -398,7 +398,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L68C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L69C26"
                     },
                     {
                       "kind": "span",
@@ -455,7 +455,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -471,7 +471,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 69,
+                  "number": 70,
                   "children": [
                     {
                       "kind": "span",
@@ -486,7 +486,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -600,7 +600,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 68,
+              "line": 69,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -636,7 +636,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 81,
+          "line": 82,
           "column": 14,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -647,7 +647,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 81,
+                  "number": 82,
                   "children": [
                     {
                       "kind": "span",
@@ -668,7 +668,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L81C14"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L82C14"
                     },
                     {
                       "kind": "span",
@@ -684,7 +684,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec4_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L81C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L82C26"
                     },
                     {
                       "kind": "span",
@@ -715,7 +715,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -741,7 +741,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -757,7 +757,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 82,
+                  "number": 83,
                   "children": [
                     {
                       "kind": "span",
@@ -772,7 +772,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -833,12 +833,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 83,
+                  "number": 84,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                  "
+                      "text": "                          "
                     },
                     {
                       "kind": "span",
@@ -932,11 +932,11 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec4_value",
-              "line": 81,
+              "line": 82,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Uvec4.Vkm_Uvec4",
-                "docHref": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                "docHref": "docs/vulkan__math__uvec4___spec.html#L43C13"
               },
               "description": [
                 {
@@ -968,7 +968,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "(renaming)",
-          "line": 97,
+          "line": 98,
           "column": 14,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -979,7 +979,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 97,
+                  "number": 98,
                   "children": [
                     {
                       "kind": "span",
@@ -1000,7 +1000,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L97C14"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L98C14"
                     },
                     {
                       "kind": "span",
@@ -1016,7 +1016,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L97C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L98C26"
                     },
                     {
                       "kind": "span",
@@ -1032,7 +1032,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L97C34"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L98C34"
                     },
                     {
                       "kind": "span",
@@ -1048,7 +1048,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value3",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L97C42"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L98C42"
                     },
                     {
                       "kind": "span",
@@ -1064,7 +1064,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L97C50"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L98C50"
                     },
                     {
                       "kind": "span",
@@ -1121,13 +1121,13 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     }
                   ]
                 },
                 {
                   "kind": "line",
-                  "number": 98,
+                  "number": 99,
                   "children": [
                     {
                       "kind": "span",
@@ -1147,7 +1147,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GUT.Make"
+                      "text": "GUT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -1171,7 +1171,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 97,
+              "line": 98,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -1191,7 +1191,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value2",
-              "line": 97,
+              "line": 98,
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -1211,7 +1211,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value3",
-              "line": 97,
+              "line": 98,
               "column": 42,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -1231,7 +1231,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value4",
-              "line": 97,
+              "line": 98,
               "column": 50,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -1267,7 +1267,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 111,
+          "line": 112,
           "column": 14,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -1278,7 +1278,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 111,
+                  "number": 112,
                   "children": [
                     {
                       "kind": "span",
@@ -1299,7 +1299,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L111C14"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L112C14"
                     },
                     {
                       "kind": "span",
@@ -1315,7 +1315,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L111C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L112C26"
                     },
                     {
                       "kind": "span",
@@ -1357,7 +1357,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 112,
+                  "number": 113,
                   "children": [
                     {
                       "kind": "span",
@@ -1368,7 +1368,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L112C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L113C26"
                     },
                     {
                       "kind": "span",
@@ -1441,7 +1441,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 113,
+                  "number": 114,
                   "children": [
                     {
                       "kind": "span",
@@ -1477,7 +1477,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 114,
+                  "number": 115,
                   "children": [
                     {
                       "kind": "span",
@@ -1513,7 +1513,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 115,
+                  "number": 116,
                   "children": [
                     {
                       "kind": "span",
@@ -1549,7 +1549,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 116,
+                  "number": 117,
                   "children": [
                     {
                       "kind": "span",
@@ -1627,7 +1627,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 111,
+              "line": 112,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -1647,7 +1647,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec3_value",
-              "line": 112,
+              "line": 113,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Uvec3.Vkm_Uvec3",
@@ -1683,7 +1683,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 130,
+          "line": 131,
           "column": 14,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -1694,7 +1694,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 130,
+                  "number": 131,
                   "children": [
                     {
                       "kind": "span",
@@ -1715,7 +1715,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L130C14"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L131C14"
                     },
                     {
                       "kind": "span",
@@ -1731,7 +1731,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L130C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L131C26"
                     },
                     {
                       "kind": "span",
@@ -1773,7 +1773,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 131,
+                  "number": 132,
                   "children": [
                     {
                       "kind": "span",
@@ -1784,7 +1784,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L131C26"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L132C26"
                     },
                     {
                       "kind": "span",
@@ -1841,7 +1841,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -1857,7 +1857,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 132,
+                  "number": 133,
                   "children": [
                     {
                       "kind": "span",
@@ -1908,7 +1908,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 133,
+                  "number": 134,
                   "children": [
                     {
                       "kind": "span",
@@ -1944,7 +1944,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 134,
+                  "number": 135,
                   "children": [
                     {
                       "kind": "span",
@@ -1980,7 +1980,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 135,
+                  "number": 136,
                   "children": [
                     {
                       "kind": "span",
@@ -2048,7 +2048,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec3_value",
-              "line": 130,
+              "line": 131,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Uvec3.Vkm_Uvec3",
@@ -2068,7 +2068,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar_value",
-              "line": 131,
+              "line": 132,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -2104,7 +2104,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 149,
+          "line": 150,
           "column": 15,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -2115,7 +2115,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 149,
+                  "number": 150,
                   "children": [
                     {
                       "kind": "span",
@@ -2136,7 +2136,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L149C15"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L150C15"
                     },
                     {
                       "kind": "span",
@@ -2152,7 +2152,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value1",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L149C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L150C27"
                     },
                     {
                       "kind": "span",
@@ -2168,7 +2168,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value2",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L149C40"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L150C40"
                     },
                     {
                       "kind": "span",
@@ -2225,7 +2225,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -2241,7 +2241,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 150,
+                  "number": 151,
                   "children": [
                     {
                       "kind": "span",
@@ -2317,7 +2317,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 151,
+                  "number": 152,
                   "children": [
                     {
                       "kind": "span",
@@ -2405,7 +2405,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value1",
-              "line": 149,
+              "line": 150,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
@@ -2425,7 +2425,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value2",
-              "line": 149,
+              "line": 150,
               "column": 40,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
@@ -2461,7 +2461,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 166,
+          "line": 167,
           "column": 15,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -2472,7 +2472,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 166,
+                  "number": 167,
                   "children": [
                     {
                       "kind": "span",
@@ -2493,7 +2493,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L166C15"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L167C15"
                     },
                     {
                       "kind": "span",
@@ -2509,7 +2509,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L166C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L167C27"
                     },
                     {
                       "kind": "span",
@@ -2525,7 +2525,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L166C36"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L167C36"
                     },
                     {
                       "kind": "span",
@@ -2567,7 +2567,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 167,
+                  "number": 168,
                   "children": [
                     {
                       "kind": "span",
@@ -2578,7 +2578,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L167C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L168C27"
                     },
                     {
                       "kind": "span",
@@ -2635,7 +2635,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -2651,7 +2651,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 168,
+                  "number": 169,
                   "children": [
                     {
                       "kind": "span",
@@ -2784,7 +2784,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar1",
-              "line": 166,
+              "line": 167,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -2804,7 +2804,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 166,
+              "line": 167,
               "column": 36,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -2824,7 +2824,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value",
-              "line": 167,
+              "line": 168,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
@@ -2860,7 +2860,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 183,
+          "line": 184,
           "column": 15,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -2871,7 +2871,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 183,
+                  "number": 184,
                   "children": [
                     {
                       "kind": "span",
@@ -2892,7 +2892,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L183C15"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L184C15"
                     },
                     {
                       "kind": "span",
@@ -2908,7 +2908,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L183C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L184C27"
                     },
                     {
                       "kind": "span",
@@ -2950,7 +2950,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 184,
+                  "number": 185,
                   "children": [
                     {
                       "kind": "span",
@@ -2961,7 +2961,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L184C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L185C27"
                     },
                     {
                       "kind": "span",
@@ -3008,7 +3008,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 185,
+                  "number": 186,
                   "children": [
                     {
                       "kind": "span",
@@ -3019,7 +3019,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L185C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L186C27"
                     },
                     {
                       "kind": "span",
@@ -3076,7 +3076,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -3092,7 +3092,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 186,
+                  "number": 187,
                   "children": [
                     {
                       "kind": "span",
@@ -3225,7 +3225,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar1",
-              "line": 183,
+              "line": 184,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -3245,7 +3245,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value",
-              "line": 184,
+              "line": 185,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
@@ -3265,7 +3265,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 185,
+              "line": 186,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -3301,7 +3301,7 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec4",
           "qualifier": "",
-          "line": 201,
+          "line": 202,
           "column": 15,
           "src": "srcs/vulkan-math-uvec4.ads.html",
           "summary": [
@@ -3312,7 +3312,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 201,
+                  "number": 202,
                   "children": [
                     {
                       "kind": "span",
@@ -3333,7 +3333,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L201C15"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L202C15"
                     },
                     {
                       "kind": "span",
@@ -3349,7 +3349,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L201C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L202C27"
                     },
                     {
                       "kind": "span",
@@ -3396,7 +3396,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 202,
+                  "number": 203,
                   "children": [
                     {
                       "kind": "span",
@@ -3407,7 +3407,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L202C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L203C27"
                     },
                     {
                       "kind": "span",
@@ -3449,7 +3449,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 203,
+                  "number": 204,
                   "children": [
                     {
                       "kind": "span",
@@ -3460,7 +3460,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L203C27"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L204C27"
                     },
                     {
                       "kind": "span",
@@ -3517,7 +3517,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec4",
-                      "href": "docs/vulkan__math__uvec4___spec.html#L42C13"
+                      "href": "docs/vulkan__math__uvec4___spec.html#L43C13"
                     },
                     {
                       "kind": "span",
@@ -3533,7 +3533,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 204,
+                  "number": 205,
                   "children": [
                     {
                       "kind": "span",
@@ -3666,7 +3666,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value",
-              "line": 201,
+              "line": 202,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
@@ -3686,7 +3686,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar1",
-              "line": 202,
+              "line": 203,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -3706,7 +3706,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 203,
+              "line": 204,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",

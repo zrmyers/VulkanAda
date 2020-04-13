@@ -388,7 +388,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @group Vulkan Math Interface"
+          "text": "--< @group Vulkan Math Basic Types"
         }
       ]
     },
@@ -913,7 +913,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Make"
+          "text": "GIT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1279,7 +1279,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Make"
+          "text": "GIT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1693,7 +1693,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Make"
+          "text": "GIT.Make_GenType"
         },
         {
           "kind": "span",
@@ -2133,7 +2133,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Make"
+          "text": "GIT.Make_GenType"
         },
         {
           "kind": "span",

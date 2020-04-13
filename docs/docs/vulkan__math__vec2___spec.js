@@ -204,7 +204,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -446,7 +446,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -701,7 +701,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",
@@ -922,7 +922,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GFT.Make"
+                      "text": "GFT.Make_GenType"
                     },
                     {
                       "kind": "span",

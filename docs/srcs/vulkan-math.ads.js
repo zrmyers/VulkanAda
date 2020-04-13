@@ -356,7 +356,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @group Vulkan Math Interface"
+          "text": "--< @group Vulkan Math Basic Types"
         }
       ]
     },

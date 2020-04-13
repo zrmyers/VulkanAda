@@ -853,7 +853,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GDT.Make"
+          "text": "GDT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1219,7 +1219,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GDT.Make"
+          "text": "GDT.Make_GenType"
         },
         {
           "kind": "span",
@@ -1601,7 +1601,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GDT.Make"
+          "text": "GDT.Make_GenType"
         },
         {
           "kind": "span",
@@ -2057,7 +2057,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GDT.Make"
+          "text": "GDT.Make_GenType"
         },
         {
           "kind": "span",
