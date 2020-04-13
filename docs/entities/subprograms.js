@@ -710,115 +710,115 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Make_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L58C14",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L56C14",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L58"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L56"
     },
     {
       "label": "Make_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L72C14",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L70C14",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L72"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L70"
     },
     {
       "label": "Make_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L87C14",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L85C14",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L87"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L85"
     },
     {
       "label": "Make_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L107C14",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L105C14",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L107"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L105"
     },
     {
       "label": "Make_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L126C14",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L124C14",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L126"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L124"
     },
     {
       "label": "Make_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L146C14",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L144C14",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L146"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L144"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L53C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L60C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L53"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L60"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L65C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L74C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L65"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L74"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L78C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L88C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L78"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L88"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L94C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L112C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L94"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L112"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L108C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L126C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L108"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L126"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L127C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L149C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L127"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L149"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L146C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L172C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L146"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L172"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L163C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L195C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L163"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L195"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L180C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L218C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L180"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L218"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L198C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L242C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L198"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L242"
     },
     {
       "label": "Make_Dvec2",

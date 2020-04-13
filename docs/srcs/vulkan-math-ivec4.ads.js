@@ -600,7 +600,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< A 4-compoent floating point vector."
+          "text": "--< A 4-component signed integer vector."
         }
       ]
     },

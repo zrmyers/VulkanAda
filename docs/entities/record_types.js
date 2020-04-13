@@ -10,17 +10,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_Bvec3",
-      "docHref": "docs/vulkan__math__bvec3___spec.html#L43C13",
+      "docHref": "docs/vulkan__math__bvec3___spec.html#L41C13",
       "declared": "Vulkan.Math.Bvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L43"
+      "srcHref": "srcs/vulkan-math-bvec3.ads.html#L41"
     },
     {
       "label": "Vkm_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L39C13",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L45C13",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L39"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L45"
     },
     {
       "label": "Vkm_Dvec2",

@@ -124,7 +124,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "A 4-compoent floating point vector.\n"
+                  "text": "A 4-component unsigned integer vector.\n"
                 }
               ]
             }

@@ -18,6 +18,11 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__bvec3___spec.html"
       },
       {
+        "label": "Vulkan.Math.Bvec4",
+        "qualifier": "",
+        "file": "docs/vulkan__math__bvec4___spec.html"
+      },
+      {
         "label": "Vulkan.Math.Ivec3",
         "qualifier": "",
         "file": "docs/vulkan__math__ivec3___spec.html"
@@ -53,11 +58,6 @@ GNATdoc.DocumentationIndex = [
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Bvec4",
-    "qualifier": "",
-    "file": "docs/vulkan__math__bvec4___spec.html"
   },
   {
     "label": "Vulkan.Math.Common",
