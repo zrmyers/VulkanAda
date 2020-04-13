@@ -28,8 +28,38 @@
 --< and functors for a generic vector type.
 --<
 --< @description
+--< The Vkm_GenType is a tagged record which contains either a 1D, 2D, 3D, or 4D
+--< vector of elements of the generic Base_Type.
 --< 
+--< The components of each vector can be accessed via component names XYZW, RGBA,
+--< or STPQ.  Additionally, components of a generic type can be set with these
+--< names. The following is an example of getting the second component of one 4D
+--< vector and setting a component of another 4D vector:
+--<     declare
+--<         vec1, vec2 : Vkm_GenType(last_index => 3);
+--<     begin
+--<         -- Set vec1.x to vec2.y
+--<         vec1.x(vec2.y)
+--<     end
 --<
+--< Swizzling can also be done to obtain different permutations of a components 
+--< from vectors or set different combinations of components in a vector.
+--< An example is shown below:
+--<    declare
+--<        vec1, vec2 : Vkm_GenType(last_index => 3);
+--<    begin
+--<        -- Set vec1.x to vec2.y and vec1.w to vec2.z.
+--<        vec1.xw(vec2.yz)
+--<    end
+--<
+--< The following restrictions apply to swizzling:
+--< - A swizzle get or set operation will raise a constraint exception if attempting to
+--<   access a component only available for vectors of dimmension greater than
+--<   the dimmension of the vector the get operation is being performed on.
+--< - A swizzle set cannot be done for combinations that include multiple of the
+--<   same component. I.e. vec1.xx(vec2.xy) is not allowed.
+--< 
+--------------------------------------------------------------------------------
 generic
     type Base_Type is private;
     with function Image (Instance : in     Base_Type) return String;
@@ -9809,49 +9839,223 @@ package Vulkan.Math.GenType is
     procedure qpts (vec1 : in out Vkm_GenType;
                     vec2 : in     Vkm_GenType) renames wzyx;
     
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply binary function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise between two vectors.
+    --<
+    --<    RV := [Func(IV1.x,IV2.x) ... Func(IV1.w, IV2.w)]
+    --<
+    --< @param left
+    --< The first input vector parameter.
+    --<
+    --< @param right
+    --< The second input vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
     ----------------------------------------------------------------------------
-    -- Generic Vector Operations
+    generic
+        with function Func(left, right : in     Base_Type) return Base_Type;
+        
+    function Apply_Func_IV_IV_RV(left, right : in     Vkm_GenType) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply binary function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise between a vector and a scalar.
+    --<
+    --<    RV := [Func(IS,IV2.x) ... Func(IS, IV2.w)]
+    --<
+    --< @param left
+    --< The first input scalar parameter.
+    --<
+    --< @param right
+    --< The second input vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
     ----------------------------------------------------------------------------
-    -- The following notation is used to descript the signatures of the generic
-    -- functions:
-    --     IV - A function has an input vector parameter
-    --     OV - A function has an output vector parameter
-    --     RV - A function returns a vector
-    --     IS - A function has an input scalar paramter.
-    --
-    -- The order of these symbols indicates the expected order that these parameter
-    -- are used in function passed in as a generic.
-    ----------------------------------------------------------------------------
-    -- @brief
-    -- Apply function with pattern 'Func(IV,IV) return RV'.
-    --
+    generic
+        with function Func(left, right : in     Base_Type) return Base_Type;
+        
+    function Apply_Func_IS_IV_RV(left  : in     Base_Type;
+                                 right : in     Vkm_GenType) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply binary function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise between a vector and a scalar.
+    --<
+    --<    RV := [Func(IV1.x,IS) ... Func(IV1.w, IS)]
+    --<
+    --< @param left
+    --< The first input scalar parameter.
+    --<
+    --< @param right
+    --< The second input vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
     ----------------------------------------------------------------------------
     generic
         with function Func(Left, Right : in     Base_Type) return Base_Type;
-    function Apply_Func_IV_IV_RV(Left, Right : in     Vkm_GenType) return Vkm_GenType;
-    generic
-        with function Func(Left, Right : in     Base_Type) return Base_Type;
-    function Apply_Func_IS_IV_RV(Left  : in     Base_Type;
-                                      Right : in     Vkm_GenType) return Vkm_GenType;
-    generic
-        with function Func(Left, Right : in     Base_Type) return Base_Type;
-    function Apply_Func_IV_IS_RV(Left  : in     Vkm_GenType;
-                                 Right : in     Base_Type  ) return Vkm_GenType;
+    function Apply_Func_IV_IS_RV(left  : in     Vkm_GenType;
+                                 right : in     Base_Type  ) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply unary function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on a vector.
+    --<
+    --<    RV := [Func(A.x) ... Func(A.w)]
+    --<
+    --< @param A
+    --< The input vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
     generic
         with function Func(A : in     Base_Type) return Base_Type;
     function Apply_Func_IV_RV(A : in     Vkm_GenType) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on a vector. This outputs a
+    --< vector parameter in addition to the return value.
+    --<
+    --<    RV := [Func(IV1.x, OV1.x) ... Func(IV1.w, OV1.w)]
+    --<
+    --< @param IV1
+    --< The input vector parameter.
+    --<
+    --< @param OV1
+    --< The output vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
     generic
         with function Func(IS1 : in     Base_Type;
                            OS1 :    out Base_Type) return Base_Type;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on a vector. This outputs a
+    --< vector parameter in addition to the return value.
+    --<
+    --<    RV := [Func(IV1.x, OV1.x) ... Func(IV1.w, OV1.w)]
+    --<
+    --< @param IV1
+    --< The input vector parameter.
+    --<
+    --< @param OV1
+    --< The output vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
     function Apply_Func_IV_OV_RV(IV1 : in     Vkm_GenType;
                                  OV1 :    out Vkm_GenType) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on three input vectors.
+    --<
+    --<    RV := [Func(IV1.x, IV2.x, IV3.x) ... Func(IV1.w, IV2.w, IV3.w)]
+    --<
+    --< @param IV1
+    --< The first input vector parameter.
+    --<
+    --< @param IV2
+    --< The second input vector parameter.
+    --<
+    --< @param IV3
+    --< The third input vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IV_IV_RV(IV1, IV2, IV3 : in     Vkm_GenType) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on two input vectors and a
+    --< scalar value.
+    --<
+    --<    RV := [Func(IV1.x, IV2.x, IS1) ... Func(IV1.w, IV2.w, IS1)]
+    --<
+    --< @param IV1
+    --< The first input vector parameter.
+    --<
+    --< @param IV2
+    --< The second input vector parameter.
+    --<
+    --< @param IS1
+    --< The first scalar parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IV_IS_RV(IV1, IV2 : in     Vkm_GenType;
                                     IS1      : in     Base_Type) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on one input vectors and two
+    --< scalar values.
+    --<
+    --<    RV := [Func(IV1.x, IS1, IS2) ... Func(IV1.w, IS1, IS2)]
+    --<
+    --< @param IV1
+    --< The first input vector parameter.
+    --<
+    --< @param IS1
+    --< The first input scalar parameter.
+    --<
+    --< @param IS2
+    --< The second input scalar parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
     generic
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IS_IS_RV(IV1      : in     Vkm_GenType;
