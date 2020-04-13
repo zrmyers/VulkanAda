@@ -774,7 +774,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "GFT.Vkm_GenType",
-          "href": "docs/vulkan__math__gentype___spec.html#L38C10"
+          "href": "docs/vulkan__math__gentype___spec.html#L61C10"
         },
         {
           "kind": "span",

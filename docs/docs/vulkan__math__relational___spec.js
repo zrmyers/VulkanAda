@@ -375,7 +375,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L1067C14"
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9842C14"
           }
         },
         {

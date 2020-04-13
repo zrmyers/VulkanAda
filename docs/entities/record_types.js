@@ -72,6 +72,13 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-genitype.ads.html#L38"
     },
     {
+      "label": "Vkm_GenType_Reference",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L68C10",
+      "declared": "Vulkan.Math.GenType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L68"
+    },
+    {
       "label": "Vkm_GenUType",
       "docHref": "docs/vulkan__math__genutype___spec.html#L37C13",
       "declared": "Vulkan.Math.GenUType",
@@ -140,13 +147,6 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.Vec4",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-vec4.ads.html#L39"
-    },
-    {
-      "label": "Vkm_Vector_Access",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L43C10",
-      "declared": "Vulkan.Math.GenType",
-      "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L43"
     }
   ]
 };
