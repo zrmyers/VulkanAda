@@ -21,8 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a Boolean Vector with 3 components.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenBType;
 with Vulkan.Math.Bvec2;
 

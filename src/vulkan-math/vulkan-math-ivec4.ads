@@ -39,7 +39,7 @@ package Vulkan.Math.Ivec4 is
     pragma Preelaborate;
     pragma Pure;
 
-    --< A 4-compoent floating point vector.
+    --< A 4-component signed integer vector.
     subtype Vkm_Ivec4 is Vkm_GenIType(Last_Index => 3);
 
     ----------------------------------------------------------------------------
