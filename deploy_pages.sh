@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=date
+DATE=`date`
 
 # Deploy the generated documentation to github pages.
 mv docs .docs
