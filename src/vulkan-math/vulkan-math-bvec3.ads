@@ -48,7 +48,7 @@ package Vulkan.Math.Bvec3 is
     -- @returns a Bvec3 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Bvec3 return Vkm_Bvec3 is
-        (GBT.Make(Last_Index => 2, value => false)) with Inline;
+        (GBT.Make_GenType(Last_Index => 2, value => false)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -60,7 +60,7 @@ package Vulkan.Math.Bvec3 is
     -- @returns A Bvec3 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Bvec3 (scalar_value : in     Vkm_Bool) return Vkm_Bvec3 is
-        (GBT.Make(Last_Index => 2, value => scalar_value)) with Inline;
+        (GBT.Make_GenType(Last_Index => 2, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -73,7 +73,7 @@ package Vulkan.Math.Bvec3 is
     --          components of vec3_value.
     ----------------------------------------------------------------------------
     function Make_Bvec3 (vec3_value : in     Vkm_Bvec3) return Vkm_Bvec3 is
-        (GBT.Make(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
+        (GBT.Make_GenType(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ package Vulkan.Math.Bvec3 is
     -- @return A Bvec3 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Bvec3 (value1, value2, value3 : in    Vkm_Bool) return Vkm_Bvec3
-        renames GBT.Make;
+        renames GBT.Make_GenType;
 
 
     ----------------------------------------------------------------------------

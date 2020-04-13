@@ -45,7 +45,7 @@ package Vulkan.Math.Ivec2 is
     -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Ivec2 return Vkm_Ivec2 is
-        (GIT.Make(Last_Index => 1, value => 0)) with Inline;
+        (GIT.Make_GenType(Last_Index => 1, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -57,7 +57,7 @@ package Vulkan.Math.Ivec2 is
     -- @returns A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Ivec2 (scalar_value : in     Vkm_Int) return Vkm_Ivec2 is
-        (GIT.Make(Last_Index => 1, value => scalar_value)) with Inline;
+        (GIT.Make_GenType(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -70,7 +70,7 @@ package Vulkan.Math.Ivec2 is
     --          components of vec2_value.
     ----------------------------------------------------------------------------
     function Make_Ivec2 (vec2_value : in     Vkm_Ivec2) return Vkm_Ivec2 is
-        (GIT.Make(vec2_value.x,vec2_value.y)) with Inline;
+        (GIT.Make_GenType(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -83,7 +83,7 @@ package Vulkan.Math.Ivec2 is
     -- @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Ivec2 (value1, value2 : in    Vkm_Int) return Vkm_Ivec2
-        renames GIT.Make;
+        renames GIT.Make_GenType;
 
 
 end Vulkan.Math.Ivec2;

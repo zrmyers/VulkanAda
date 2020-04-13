@@ -54,7 +54,7 @@ package Vulkan.Math.Uvec4 is
     --< @return a Uvec4 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Uvec4 return Vkm_Uvec4 is
-        (GUT.Make(Last_Index => 3, value => 0)) with Inline;
+        (GUT.Make_GenType(Last_Index => 3, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -66,7 +66,7 @@ package Vulkan.Math.Uvec4 is
     --< @return A Uvec4 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Uvec4 (scalar_value : in     Vkm_Uint) return Vkm_Uvec4 is
-        (GUT.Make(Last_Index => 3, value => scalar_value)) with Inline;
+        (GUT.Make_GenType(Last_Index => 3, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -79,8 +79,8 @@ package Vulkan.Math.Uvec4 is
     --<          components of vec4_value.
     ----------------------------------------------------------------------------
     function Make_Uvec4 (vec4_value : in     Vkm_Uvec4) return Vkm_Uvec4 is
-        (GUT.Make(vec4_value.data(0),vec4_value.data(1),
-                  vec4_value.data(2),vec4_value.data(3))) with Inline;
+        (GUT.Make_GenType(vec4_value.data(0),vec4_value.data(1),
+                          vec4_value.data(2),vec4_value.data(3))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -95,7 +95,7 @@ package Vulkan.Math.Uvec4 is
     --< @return A Uvec4 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Uvec4 (value1, value2, value3, value4 : in    Vkm_Uint) return Vkm_Uvec4
-        renames GUT.Make;
+        renames GUT.Make_GenType;
 
     ----------------------------------------------------------------------------
     --< @description

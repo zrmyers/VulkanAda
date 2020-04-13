@@ -48,7 +48,7 @@ package Vulkan.Math.Uvec3 is
     -- @returns a Uvec3 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Uvec3 return Vkm_Uvec3 is
-        (GUT.Make(Last_Index => 2, value => 0)) with Inline;
+        (GUT.Make_GenType(Last_Index => 2, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -60,7 +60,7 @@ package Vulkan.Math.Uvec3 is
     -- @returns A Uvec3 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (scalar_value : in     Vkm_Uint) return Vkm_Uvec3 is
-        (GUT.Make(Last_Index => 2, value => scalar_value)) with Inline;
+        (GUT.Make_GenType(Last_Index => 2, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -73,7 +73,7 @@ package Vulkan.Math.Uvec3 is
     --          components of vec3_value.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (vec3_value : in     Vkm_Uvec3) return Vkm_Uvec3 is
-        (GUT.Make(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
+        (GUT.Make_GenType(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ package Vulkan.Math.Uvec3 is
     -- @return A Uvec3 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (value1, value2, value3 : in    Vkm_Uint) return Vkm_Uvec3
-        renames GUT.Make;
+        renames GUT.Make_GenType;
 
 
     ----------------------------------------------------------------------------

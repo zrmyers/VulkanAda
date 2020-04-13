@@ -45,7 +45,7 @@ package Vulkan.Math.Dvec2 is
     -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Dvec2 return Vkm_Dvec2 is
-        (GDT.Make(Last_Index => 1, value => 0.0)) with Inline;
+        (GDT.Make_GenType(Last_Index => 1, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -57,7 +57,7 @@ package Vulkan.Math.Dvec2 is
     -- @returns A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Dvec2 (scalar_value : in     Vkm_Double) return Vkm_Dvec2 is
-        (GDT.Make(Last_Index => 1, value => scalar_value)) with Inline;
+        (GDT.Make_GenType(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -70,7 +70,7 @@ package Vulkan.Math.Dvec2 is
     --          components of vec2_value.
     ----------------------------------------------------------------------------
     function Make_Dvec2 (vec2_value : in     Vkm_Dvec2) return Vkm_Dvec2 is
-        (GDT.Make(vec2_value.x,vec2_value.y)) with Inline;
+        (GDT.Make_GenType(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -83,7 +83,7 @@ package Vulkan.Math.Dvec2 is
     -- @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Dvec2 (value1, value2 : in    Vkm_Double) return Vkm_Dvec2
-        renames GDT.Make;
+        renames GDT.Make_GenType;
 
 
 end Vulkan.Math.Dvec2;

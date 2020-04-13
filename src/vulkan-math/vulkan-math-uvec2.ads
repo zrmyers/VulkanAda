@@ -45,7 +45,7 @@ package Vulkan.Math.Uvec2 is
     -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Uvec2 return Vkm_Uvec2 is
-        (GUT.Make(Last_Index => 1, value => 0)) with Inline;
+        (GUT.Make_GenType(Last_Index => 1, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -57,7 +57,7 @@ package Vulkan.Math.Uvec2 is
     -- @returns A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Uvec2 (scalar_value : in     Vkm_Uint) return Vkm_Uvec2 is
-        (GUT.Make(Last_Index => 1, value => scalar_value)) with Inline;
+        (GUT.Make_GenType(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -70,7 +70,7 @@ package Vulkan.Math.Uvec2 is
     --          components of vec2_value.
     ----------------------------------------------------------------------------
     function Make_Uvec2 (vec2_value : in     Vkm_Uvec2) return Vkm_Uvec2 is
-        (GUT.Make(vec2_value.x,vec2_value.y)) with Inline;
+        (GUT.Make_GenType(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -83,7 +83,7 @@ package Vulkan.Math.Uvec2 is
     -- @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Uvec2 (value1, value2 : in    Vkm_Uint) return Vkm_Uvec2
-        renames GUT.Make;
+        renames GUT.Make_GenType;
 
 
 end Vulkan.Math.Uvec2;

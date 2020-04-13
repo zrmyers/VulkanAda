@@ -48,7 +48,7 @@ package Vulkan.Math.Vec3 is
     -- @returns a Vec3 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Vec3 return Vkm_Vec3 is
-        (GFT.Make(Last_Index => 2, value => 0.0)) with Inline;
+        (GFT.Make_GenType(Last_Index => 2, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -60,7 +60,7 @@ package Vulkan.Math.Vec3 is
     -- @returns A Vec4 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Vec3 (scalar_value : in     Vkm_Float) return Vkm_Vec3 is
-        (GFT.Make(Last_Index => 2, value => scalar_value)) with Inline;
+        (GFT.Make_GenType(Last_Index => 2, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -73,7 +73,7 @@ package Vulkan.Math.Vec3 is
     --          components of vec3_value.
     ----------------------------------------------------------------------------
     function Make_Vec3 (vec3_value : in     Vkm_Vec3) return Vkm_Vec3 is
-        (GFT.Make(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
+        (GFT.Make_GenType(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -88,7 +88,7 @@ package Vulkan.Math.Vec3 is
     -- @return A Vec4 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Vec3 (value1, value2, value3 : in    Vkm_Float) return Vkm_Vec3
-        renames GFT.Make;
+        renames GFT.Make_GenType;
 
 
     ----------------------------------------------------------------------------

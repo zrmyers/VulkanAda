@@ -71,12 +71,12 @@ package Vulkan.Math.Operators is
     function "&" (Left, Right : in     Vkm_GenBType) return Vkm_GenBType renames GBT.Concatenate;
     function "&" (Left        : in     Vkm_Bool   ;
                   Right       : in     Vkm_GenBType) return Vkm_GenBType is
-        (GBT.Make(Left).Concatenate(Right)) with Inline;
+        (GBT.Make_GenType(Left).Concatenate(Right)) with Inline;
     function "&" (Left        : in     Vkm_GenBType;
                   Right       : in     Vkm_Bool   ) return Vkm_GenBType is
-        (Left.Concatenate(GBT.Make(Right))) with Inline;
+        (Left.Concatenate(GBT.Make_GenType(Right))) with Inline;
     function "&" (Left, Right : in     Vkm_Bool   ) return Vkm_GenBType is
-        (GBT.Make(Left, Right)) with Inline;
+        (GBT.Make_GenType(Left, Right)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -152,12 +152,12 @@ package Vulkan.Math.Operators is
     function "&" (Left, Right : in     Vkm_GenUType) return Vkm_GenUType renames GUT.Concatenate;
     function "&" (Left        : in     Vkm_Uint   ;
                   Right       : in     Vkm_GenUType) return Vkm_GenUType is
-        (GUT.Make(Left).Concatenate(Right)) with Inline;
+        (GUT.Make_GenType(Left).Concatenate(Right)) with Inline;
     function "&" (Left        : in     Vkm_GenUType;
                   Right       : in     Vkm_Uint   ) return Vkm_GenUType is
-        (Left.Concatenate(GUT.Make(Right))) with Inline;
+        (Left.Concatenate(GUT.Make_GenType(Right))) with Inline;
     function "&" (Left, Right : in     Vkm_Uint   ) return Vkm_GenUType is
-        (GUT.Make(Left, Right)) with Inline;
+        (GUT.Make_GenType(Left, Right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenUType Unary Plus Operator
@@ -289,12 +289,12 @@ package Vulkan.Math.Operators is
     function "&" (Left, Right : in     Vkm_GenIType) return Vkm_GenIType renames GIT.Concatenate;
     function "&" (Left        : in     Vkm_Int   ;
                   Right       : in     Vkm_GenIType) return Vkm_GenIType is
-        (GIT.Make(Left).Concatenate(Right)) with Inline;
+        (GIT.Make_GenType(Left).Concatenate(Right)) with Inline;
     function "&" (Left        : in     Vkm_GenIType;
                   Right       : in     Vkm_Int   ) return Vkm_GenIType is
-        (Left.Concatenate(GIT.Make(Right))) with Inline;
+        (Left.Concatenate(GIT.Make_GenType(Right))) with Inline;
     function "&" (Left, Right : in     Vkm_Int   ) return Vkm_GenIType is
-        (GIT.Make(Left, Right)) with Inline;
+        (GIT.Make_GenType(Left, Right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenIType Unary Plus Operator
@@ -432,12 +432,12 @@ package Vulkan.Math.Operators is
     function "&" (Left, Right : in     Vkm_GenFType) return Vkm_GenFType renames GFT.Concatenate;
     function "&" (Left        : in     Vkm_Float   ;
                   Right       : in     Vkm_GenFType) return Vkm_GenFType is
-        (GFT.Make(Left).Concatenate(Right)) with Inline;
+        (GFT.Make_GenType(Left).Concatenate(Right)) with Inline;
     function "&" (Left        : in     Vkm_GenFType;
                   Right       : in     Vkm_Float   ) return Vkm_GenFType is
-        (Left.Concatenate(GFT.Make(Right))) with Inline;
+        (Left.Concatenate(GFT.Make_GenType(Right))) with Inline;
     function "&" (Left, Right : in     Vkm_Float   ) return Vkm_GenFType is
-        (GFT.Make(Left, Right)) with Inline;
+        (GFT.Make_GenType(Left, Right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenFtype Unary Plus Operator
@@ -555,12 +555,12 @@ package Vulkan.Math.Operators is
     function "&" (Left, Right : in     Vkm_GenDType) return Vkm_GenDType renames GDT.Concatenate;
     function "&" (Left        : in     Vkm_Double   ;
                   Right       : in     Vkm_GenDType) return Vkm_GenDType is
-        (GDT.Make(Left).Concatenate(Right)) with Inline;
+        (GDT.Make_GenType(Left).Concatenate(Right)) with Inline;
     function "&" (Left        : in     Vkm_GenDType;
                   Right       : in     Vkm_Double   ) return Vkm_GenDType is
-        (Left.Concatenate(GDT.Make(Right))) with Inline;
+        (Left.Concatenate(GDT.Make_GenType(Right))) with Inline;
     function "&" (Left, Right : in     Vkm_Double   ) return Vkm_GenDType is
-        (GDT.Make(Left, Right)) with Inline;
+        (GDT.Make_GenType(Left, Right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenDType Unary Plus Operator

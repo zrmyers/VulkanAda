@@ -53,7 +53,7 @@ package Vulkan.Math.Ivec3 is
     --< @return a Ivec3 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Ivec3 return Vkm_Ivec3 is
-        (GIT.Make(Last_Index => 2, value => 0)) with Inline;
+        (GIT.Make_GenType(Last_Index => 2, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -65,7 +65,7 @@ package Vulkan.Math.Ivec3 is
     --< @return An Ivec3 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Ivec3 (scalar_value : in     Vkm_Int) return Vkm_Ivec3 is
-        (GIT.Make(Last_Index => 2, value => scalar_value)) with Inline;
+        (GIT.Make_GenType(Last_Index => 2, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -80,7 +80,7 @@ package Vulkan.Math.Ivec3 is
     --< components of vec3_value.
     ----------------------------------------------------------------------------
     function Make_Ivec3 (vec3_value : in     Vkm_Ivec3) return Vkm_Ivec3 is
-        (GIT.Make(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
+        (GIT.Make_GenType(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -94,7 +94,7 @@ package Vulkan.Math.Ivec3 is
     --< @return An Ivec3 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Ivec3 (value1, value2, value3 : in    Vkm_Int) return Vkm_Ivec3
-        renames GIT.Make;
+        renames GIT.Make_GenType;
 
 
     ----------------------------------------------------------------------------

@@ -45,7 +45,7 @@ package Vulkan.Math.Vec2 is
     -- @returns a Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Vec2 return Vkm_Vec2 is
-        (GFT.Make(Last_Index => 1, value => 0.0)) with Inline;
+        (GFT.Make_GenType(Last_Index => 1, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -57,7 +57,7 @@ package Vulkan.Math.Vec2 is
     -- @returns A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Vec2 (scalar_value : in     Vkm_Float) return Vkm_Vec2 is
-        (GFT.Make(Last_Index => 1, value => scalar_value)) with Inline;
+        (GFT.Make_GenType(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -70,7 +70,7 @@ package Vulkan.Math.Vec2 is
     --          components of vec2_value.
     ----------------------------------------------------------------------------
     function Make_Vec2 (vec2_value : in     Vkm_Vec2) return Vkm_Vec2 is
-        (GFT.Make(vec2_value.x,vec2_value.y)) with Inline;
+        (GFT.Make_GenType(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -83,7 +83,7 @@ package Vulkan.Math.Vec2 is
     -- @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Vec2 (value1, value2 : in    Vkm_Float) return Vkm_Vec2
-        renames GFT.Make;
+        renames GFT.Make_GenType;
 
 
 end Vulkan.Math.Vec2;

@@ -51,7 +51,7 @@ package Vulkan.Math.Vec4 is
     -- @returns a Vec4 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Vec4 return Vkm_Vec4 is
-        (GFT.Make(Last_Index => 3, value => 0.0)) with Inline;
+        (GFT.Make_GenType(Last_Index => 3, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -63,7 +63,7 @@ package Vulkan.Math.Vec4 is
     -- @returns A Vec4 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Vec4 (scalar_value : in     Vkm_Float) return Vkm_Vec4 is
-        (GFT.Make(Last_Index => 3, value => scalar_value)) with Inline;
+        (GFT.Make_GenType(Last_Index => 3, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -76,8 +76,8 @@ package Vulkan.Math.Vec4 is
     --          components of vec4_value.
     ----------------------------------------------------------------------------
     function Make_Vec4 (vec4_value : in     Vkm_Vec4) return Vkm_Vec4 is
-        (GFT.Make(vec4_value.data(0),vec4_value.data(1),
-                  vec4_value.data(2),vec4_value.data(3))) with Inline;
+        (GFT.Make_GenType(vec4_value.data(0),vec4_value.data(1),
+                          vec4_value.data(2),vec4_value.data(3))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -92,7 +92,7 @@ package Vulkan.Math.Vec4 is
     -- @return A Vec4 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Vec4 (value1, value2, value3, value4 : in    Vkm_Float) return Vkm_Vec4
-        renames GFT.Make;
+        renames GFT.Make_GenType;
 
     ----------------------------------------------------------------------------
     -- @brief

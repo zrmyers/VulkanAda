@@ -121,8 +121,8 @@ package Vulkan.Math.GenType is
     --< @return
     --< A new instance of Vkm_GenType.
     ----------------------------------------------------------------------------
-    function Make (last_index : in     Vkm_Indices;
-                   value      : in     Base_Type) return Vkm_GenType;
+    function Make_GenType (last_index : in     Vkm_Indices;
+                           value      : in     Base_Type) return Vkm_GenType;
 
 
     ----------------------------------------------------------------------------
@@ -139,7 +139,7 @@ package Vulkan.Math.GenType is
     --< @return
     --< A new instance of Vkm_GenType.
     ----------------------------------------------------------------------------
-    function Make (value1 : in Base_Type) return Vkm_GenType;
+    function Make_GenType (value1 : in Base_Type) return Vkm_GenType;
 
 
     ----------------------------------------------------------------------------
@@ -159,7 +159,7 @@ package Vulkan.Math.GenType is
     --< @return
     --< A new instance of Vkm_GenType.
     ----------------------------------------------------------------------------
-    function Make (value1, value2 : in Base_Type) return Vkm_GenType;
+    function Make_GenType (value1, value2 : in Base_Type) return Vkm_GenType;
 
 
     ----------------------------------------------------------------------------
@@ -182,7 +182,7 @@ package Vulkan.Math.GenType is
     --< @return
     --< A new instance of Vkm_GenType.
     ----------------------------------------------------------------------------
-    function Make (value1, value2, value3 : in Base_Type) return Vkm_GenType;
+    function Make_GenType (value1, value2, value3 : in Base_Type) return Vkm_GenType;
 
 
     ----------------------------------------------------------------------------
@@ -208,7 +208,7 @@ package Vulkan.Math.GenType is
     --< @return
     --< A new instance of Vkm_GenType.
     ----------------------------------------------------------------------------
-    function Make (value1, value2, value3, value4 : in Base_Type) return Vkm_GenType;
+    function Make_GenType (value1, value2, value3, value4 : in Base_Type) return Vkm_GenType;
 
 
     ----------------------------------------------------------------------------
@@ -226,7 +226,7 @@ package Vulkan.Math.GenType is
     --< @return
     --< A new instance of Vkm_GenType.
     ----------------------------------------------------------------------------
-    function Make (value : in     Vkm_GenType) return Vkm_GenType;
+    function Make_GenType (value : in     Vkm_GenType) return Vkm_GenType;
     
     ----------------------------------------------------------------------------
     --< @summary
@@ -1000,7 +1000,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function xx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1008,7 +1008,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function xy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1016,7 +1016,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function xz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1024,7 +1024,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function xw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1032,7 +1032,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function yx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1040,7 +1040,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function yy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1048,7 +1048,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function yz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1056,7 +1056,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function yw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1064,7 +1064,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function zx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1072,7 +1072,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function zy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1080,7 +1080,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function zz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1088,7 +1088,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function zw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1096,7 +1096,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function wx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1104,7 +1104,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function wy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1112,7 +1112,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function wz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1120,7 +1120,7 @@ package Vulkan.Math.GenType is
     --< Gets a 2D swizzle of the instance of Vkm_GenType.
     ----------------------------------------------------------------------------
     function ww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1646,7 +1646,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1654,7 +1654,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1662,7 +1662,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1670,7 +1670,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1678,7 +1678,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1686,7 +1686,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1694,7 +1694,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1702,7 +1702,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1710,7 +1710,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1718,7 +1718,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1726,7 +1726,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1734,7 +1734,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1742,7 +1742,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1750,7 +1750,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1758,7 +1758,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1766,7 +1766,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1774,7 +1774,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1782,7 +1782,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1790,7 +1790,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1798,7 +1798,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1806,7 +1806,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1814,7 +1814,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1822,7 +1822,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1830,7 +1830,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1838,7 +1838,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1846,7 +1846,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1854,7 +1854,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1862,7 +1862,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1870,7 +1870,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1878,7 +1878,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1886,7 +1886,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1894,7 +1894,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1902,7 +1902,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1910,7 +1910,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1918,7 +1918,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1926,7 +1926,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1934,7 +1934,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1942,7 +1942,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1950,7 +1950,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1958,7 +1958,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1966,7 +1966,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1974,7 +1974,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1982,7 +1982,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1990,7 +1990,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -1998,7 +1998,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2006,7 +2006,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2014,7 +2014,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2022,7 +2022,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2030,7 +2030,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.w, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2038,7 +2038,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.w, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2046,7 +2046,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.w, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2054,7 +2054,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.w, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2062,7 +2062,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.w, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2070,7 +2070,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.w, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2078,7 +2078,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.w, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2086,7 +2086,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.w, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2094,7 +2094,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.w, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2102,7 +2102,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.w, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2110,7 +2110,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.w, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2118,7 +2118,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.w, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2126,7 +2126,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.w, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2134,7 +2134,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.w, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2142,7 +2142,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.w, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -2150,7 +2150,7 @@ package Vulkan.Math.GenType is
     --< Gets a 3D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function www (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.w, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.w, vec.w, vec.w)) with Inline;
         
 
     ----------------------------------------------------------------------------
@@ -3633,7 +3633,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3641,7 +3641,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3649,7 +3649,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3657,7 +3657,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3665,7 +3665,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3673,7 +3673,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3681,7 +3681,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3689,7 +3689,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3697,7 +3697,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3705,7 +3705,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3713,7 +3713,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3721,7 +3721,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3729,7 +3729,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3737,7 +3737,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3745,7 +3745,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3753,7 +3753,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xxww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.x, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.x, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3761,7 +3761,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3769,7 +3769,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3777,7 +3777,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3785,7 +3785,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3793,7 +3793,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3801,7 +3801,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3809,7 +3809,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3817,7 +3817,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3825,7 +3825,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3833,7 +3833,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3841,7 +3841,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3849,7 +3849,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3857,7 +3857,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xywx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3865,7 +3865,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xywy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3873,7 +3873,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xywz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3881,7 +3881,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xyww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.y, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.y, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3889,7 +3889,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3897,7 +3897,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3905,7 +3905,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3913,7 +3913,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3921,7 +3921,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3929,7 +3929,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3937,7 +3937,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3945,7 +3945,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3953,7 +3953,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3961,7 +3961,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3969,7 +3969,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3977,7 +3977,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3985,7 +3985,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -3993,7 +3993,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4001,7 +4001,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4009,7 +4009,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xzww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.z, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.z, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4017,7 +4017,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4025,7 +4025,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4033,7 +4033,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4041,7 +4041,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4049,7 +4049,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4057,7 +4057,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4065,7 +4065,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4073,7 +4073,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4081,7 +4081,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4089,7 +4089,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4097,7 +4097,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4105,7 +4105,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4113,7 +4113,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4121,7 +4121,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4129,7 +4129,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4137,7 +4137,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function xwww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.x, vec.w, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.x, vec.w, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4145,7 +4145,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4153,7 +4153,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4161,7 +4161,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4169,7 +4169,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4177,7 +4177,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4185,7 +4185,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4193,7 +4193,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4201,7 +4201,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4209,7 +4209,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4217,7 +4217,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4225,7 +4225,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4233,7 +4233,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4241,7 +4241,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4249,7 +4249,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4257,7 +4257,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4265,7 +4265,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yxww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4273,7 +4273,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4281,7 +4281,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4289,7 +4289,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4297,7 +4297,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4305,7 +4305,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4313,7 +4313,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4321,7 +4321,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4329,7 +4329,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4337,7 +4337,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4345,7 +4345,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4353,7 +4353,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4361,7 +4361,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4369,7 +4369,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yywx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4377,7 +4377,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yywy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4385,7 +4385,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yywz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4393,7 +4393,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yyww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4401,7 +4401,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4409,7 +4409,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4417,7 +4417,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4425,7 +4425,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4433,7 +4433,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4441,7 +4441,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4449,7 +4449,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4457,7 +4457,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4465,7 +4465,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4473,7 +4473,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4481,7 +4481,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4489,7 +4489,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4497,7 +4497,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4505,7 +4505,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4513,7 +4513,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4521,7 +4521,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function yzww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4529,7 +4529,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4537,7 +4537,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4545,7 +4545,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4553,7 +4553,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4561,7 +4561,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4569,7 +4569,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4577,7 +4577,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4585,7 +4585,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4593,7 +4593,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4601,7 +4601,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4609,7 +4609,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4617,7 +4617,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4625,7 +4625,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4633,7 +4633,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4641,7 +4641,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4649,7 +4649,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function ywww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4657,7 +4657,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4665,7 +4665,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4673,7 +4673,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4681,7 +4681,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4689,7 +4689,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4697,7 +4697,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4705,7 +4705,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4713,7 +4713,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4721,7 +4721,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4729,7 +4729,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4737,7 +4737,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4745,7 +4745,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4753,7 +4753,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4761,7 +4761,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4769,7 +4769,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4777,7 +4777,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zxww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.x, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.x, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4785,7 +4785,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4793,7 +4793,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4801,7 +4801,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4809,7 +4809,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4817,7 +4817,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4825,7 +4825,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4833,7 +4833,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4841,7 +4841,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4849,7 +4849,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4857,7 +4857,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4865,7 +4865,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4873,7 +4873,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4881,7 +4881,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zywx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4889,7 +4889,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zywy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4897,7 +4897,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zywz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4905,7 +4905,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zyww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.y, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.y, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4913,7 +4913,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4921,7 +4921,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4929,7 +4929,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4937,7 +4937,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4945,7 +4945,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4953,7 +4953,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4961,7 +4961,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4969,7 +4969,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4977,7 +4977,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4985,7 +4985,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -4993,7 +4993,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5001,7 +5001,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5009,7 +5009,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5017,7 +5017,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5025,7 +5025,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5033,7 +5033,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zzww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.z, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.z, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5041,7 +5041,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5049,7 +5049,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5057,7 +5057,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5065,7 +5065,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5073,7 +5073,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5081,7 +5081,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5089,7 +5089,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5097,7 +5097,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5105,7 +5105,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5113,7 +5113,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5121,7 +5121,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5129,7 +5129,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5137,7 +5137,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5145,7 +5145,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5153,7 +5153,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5161,7 +5161,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function zwww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.z, vec.w, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.z, vec.w, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5169,7 +5169,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5177,7 +5177,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5185,7 +5185,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5193,7 +5193,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5201,7 +5201,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5209,7 +5209,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5217,7 +5217,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5225,7 +5225,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5233,7 +5233,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5241,7 +5241,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5249,7 +5249,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5257,7 +5257,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5265,7 +5265,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5273,7 +5273,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5281,7 +5281,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5289,7 +5289,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wxww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.x, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.x, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5297,7 +5297,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5305,7 +5305,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5313,7 +5313,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5321,7 +5321,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5329,7 +5329,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5337,7 +5337,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5345,7 +5345,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5353,7 +5353,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5361,7 +5361,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5369,7 +5369,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5377,7 +5377,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5385,7 +5385,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5393,7 +5393,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wywx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5401,7 +5401,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wywy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5409,7 +5409,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wywz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5417,7 +5417,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wyww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.y, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.y, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5425,7 +5425,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5433,7 +5433,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5441,7 +5441,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5449,7 +5449,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5457,7 +5457,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5465,7 +5465,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5473,7 +5473,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5481,7 +5481,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5489,7 +5489,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5497,7 +5497,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5505,7 +5505,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5513,7 +5513,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5521,7 +5521,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5529,7 +5529,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5537,7 +5537,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5545,7 +5545,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wzww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.z, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.z, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5553,7 +5553,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwxx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5561,7 +5561,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwxy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5569,7 +5569,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwxz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5577,7 +5577,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwxw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.x, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.x, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5585,7 +5585,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwyx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5593,7 +5593,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwyy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5601,7 +5601,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwyz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5609,7 +5609,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwyw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.y, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.y, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5617,7 +5617,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwzx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5625,7 +5625,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwzy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5633,7 +5633,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwzz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5641,7 +5641,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwzw (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.z, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.z, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5649,7 +5649,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwwx (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.x)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.x)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5657,7 +5657,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwwy (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.y)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.y)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5665,7 +5665,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwwz (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.z)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.z)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -5673,7 +5673,7 @@ package Vulkan.Math.GenType is
     --< Gets a 4D swizzle from an N-Dimmensional vector vec1.
     ----------------------------------------------------------------------------
     function wwww (vec : in     Vkm_GenType) return Vkm_GenType is
-        (Make(vec.y, vec.w, vec.w, vec.w)) with Inline;
+        (Make_GenType(vec.y, vec.w, vec.w, vec.w)) with Inline;
         
         
     ----------------------------------------------------------------------------

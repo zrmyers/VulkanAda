@@ -21,11 +21,15 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a Boolean Vector with 2 components.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenBType;
 use Vulkan.Math.GenBType;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math Interface
+--------------------------------------------------------------------------------
+--< @summary
+--< This package defines a boolean vector type with 2 components.
+--------------------------------------------------------------------------------
 package Vulkan.Math.Bvec2 is
     pragma Preelaborate;
     pragma Pure;
@@ -39,51 +43,58 @@ package Vulkan.Math.Bvec2 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Vec2:
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a default vector with all components set to 0.0.
-    --
-    -- @returns a Vec2 with all components set to 0.0.
+    --> @description
+    --> Produce a default vector with all components set to False.
+    -->
+    --> @return a Vec2 with all components set to false.
     ----------------------------------------------------------------------------
     function Make_Bvec2 return Vkm_Bvec2 is
-        (GBT.Make(Last_Index => 1, value => False)) with Inline;
+        (GBT.Make_GenType(Last_Index => 1, value => False)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector with all components set to the same value.
-    --
-    -- @param[in]     scalar_value The value to set all components to.
-    --
-    -- @returns A Vec2 with all components set to scalar_value.
+    --< @description
+    --< Produce a vector with all components set to the same value.
+    --<
+    --< @param scalar_value
+    --< The value to set all components to.
+    --<
+    --< @return 
+    --< A 2D vector with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Bvec2 (scalar_value : in     Vkm_Bool) return Vkm_Bvec2 is
-        (GBT.Make(Last_Index => 1, value => scalar_value)) with Inline;
+        (GBT.Make_GenType(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by copying components from an existing vector.
-    --
-    -- @param[in]     vec2_value The vec2 to copy components from.
-    --
-    -- @returns A vec2 with all of its components set equal to the corresponding
-    --          components of vec2_value.
+    --< @brief
+    --< Produces a vector by copying components from an existing vector.
+    --<
+    --< @param vec2_value 
+    --< The 2D vector to copy components from.
+    --<
+    --< @returns 
+    --< A 2D vector with all of its components set equal to the corresponding
+    --< components of vec2_value.
     ----------------------------------------------------------------------------
     function Make_Bvec2 (vec2_value : in     Vkm_Bvec2) return Vkm_Bvec2 is
-        (GBT.Make(vec2_value.x,vec2_value.y)) with Inline;
+        (GBT.Make_GenType(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by specifying the values for each of its components.
+    --< @brief
+    --< Produces a vector by specifying the values for each of its components.
     --
-    -- @param[in]     value1 Value for component 1.
-    -- @param[in]     value2 Value for component 2.
+    --< @param value1 
+    --< Value for component 1 of the constructed vector.
+    --<
+    --< @param value2 
+    --< Value for component 2 of the constructed vector.
     --
-    -- @return A Vec2 with all components set as specified.
+    --< @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Bvec2 (value1, value2 : in    Vkm_Bool) return Vkm_Bvec2
-        renames GBT.Make;
+        renames GBT.Make_GenType;
 
 
 end Vulkan.Math.Bvec2;

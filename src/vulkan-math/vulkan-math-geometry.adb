@@ -115,17 +115,22 @@ package body Vulkan.Math.Geometry is
         dot_n_i : constant Vkm_Float := Dot(n, i);
         k : constant Vkm_Float := 1.0 - eta * eta * (1.0 - dot_n_i * dot_n_i);
     begin
-        return (if k < 0.0 then GFT.Make(Last_Index => i.Last_Index, value => 0.0)
+        return (if k < 0.0 then GFT.Make_GenType(Last_Index => i.Last_Index, value => 0.0)
                            else eta*i - (eta * dot_n_i + Sqrt(k)) * N);
     end Refract;
 
+
+    ----------------------------------------------------------------------------
+    
+    
     function Refract(i, n : in     Vkm_GenDType;
                      eta  : in     Vkm_Double  ) return Vkm_GenDType is
         dot_n_i : constant Vkm_Double := Dot(n, i);
         k : constant Vkm_Double := 1.0 - eta * eta * (1.0 - dot_n_i * dot_n_i);
     begin
-        return (if k < 0.0 then GDT.Make(Last_Index => i.Last_Index, value => 0.0)
+        return (if k < 0.0 then GDT.Make_GenType(Last_Index => i.Last_Index, value => 0.0)
                            else eta*i - (eta * dot_n_i + Sqrt(k)) * N);
     end Refract;
+
 
 end Vulkan.Math.Geometry;

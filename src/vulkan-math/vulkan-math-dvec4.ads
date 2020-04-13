@@ -51,7 +51,7 @@ package Vulkan.Math.Dvec4 is
     -- @returns a Dvec4 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Dvec4 return Vkm_Dvec4 is
-        (GDT.Make(Last_Index => 3, value => 0.0)) with Inline;
+        (GDT.Make_GenType(Last_Index => 3, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -63,7 +63,7 @@ package Vulkan.Math.Dvec4 is
     -- @returns A Dvec4 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Dvec4 (scalar_value : in     Vkm_Double) return Vkm_Dvec4 is
-        (GDT.Make(Last_Index => 3, value => scalar_value)) with Inline;
+        (GDT.Make_GenType(Last_Index => 3, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -76,8 +76,8 @@ package Vulkan.Math.Dvec4 is
     --          components of dvec4_value.
     ----------------------------------------------------------------------------
     function Make_Dvec4 (dvec4_value : in     Vkm_Dvec4) return Vkm_Dvec4 is
-        (GDT.Make(dvec4_value.data(0),dvec4_value.data(1),
-                  dvec4_value.data(2),dvec4_value.data(3))) with Inline;
+        (GDT.Make_GenType(dvec4_value.data(0),dvec4_value.data(1),
+                          dvec4_value.data(2),dvec4_value.data(3))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -92,7 +92,7 @@ package Vulkan.Math.Dvec4 is
     -- @return A Dvec4 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Dvec4 (value1, value2, value3, value4 : in    Vkm_Double) return Vkm_Dvec4
-        renames GDT.Make;
+        renames GDT.Make_GenType;
 
     ----------------------------------------------------------------------------
     -- @brief

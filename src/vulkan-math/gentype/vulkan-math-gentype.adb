@@ -50,42 +50,61 @@ package body Vulkan.Math.GenType is
         end case;
     end Image;
 
-    function Make (Last_Index : in     Vkm_Indices;
-                   value      : in     Base_Type) return Vkm_GenType is
+
+    ----------------------------------------------------------------------------
+    
+    
+    function Make_GenType (Last_Index : in     Vkm_Indices;
+                           value      : in     Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => Last_Index);
     begin
         for I in Vkm_Indices'First .. Instance.Last_Index loop
             Instance.data(I) := value;
         end loop;
         return Instance;
-    end Make;
+    end Make_GenType;
 
 
-    function Make (value1 : in Base_Type) return Vkm_GenType is
+    ----------------------------------------------------------------------------
+    
+    
+    function Make_GenType (value1 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 0);
     begin
         Instance.data(0) := value1;
         return Instance;
-    end Make;
+    end Make_GenType;
 
-    function Make (value1, value2 : in Base_Type) return Vkm_GenType is
+
+    ----------------------------------------------------------------------------
+    
+    
+    function Make_GenType (value1, value2 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 1);
     begin
         Instance.data(0) := value1;
         Instance.data(1) := Value2;
         return Instance;
-    end Make;
+    end Make_GenType;
 
-    function Make (value1, value2, value3 : in Base_Type) return Vkm_GenType is
+
+    ----------------------------------------------------------------------------
+    
+    
+    function Make_GenType (value1, value2, value3 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 2);
     begin
         Instance.data(0) := value1;
         Instance.data(1) := value2;
         Instance.data(2) := value3;
         return Instance;
-    end Make;
+    end Make_GenType;
 
-    function Make (value1, value2, value3, value4 : in Base_Type) return Vkm_GenType is
+
+    ----------------------------------------------------------------------------
+    
+    
+    function Make_GenType (value1, value2, value3, value4 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 3);
     begin
         Instance.data(0) := value1;
@@ -93,19 +112,25 @@ package body Vulkan.Math.GenType is
         Instance.data(2) := value3;
         Instance.data(3) := value4;
         return Instance;
-    end Make;
+    end Make_GenType;
 
 
-    function Make (value : in     Vkm_GenType) return Vkm_GenType is
+    ----------------------------------------------------------------------------
+    
+    
+    function Make_GenType (value : in     Vkm_GenType) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => value.Last_Index);
     begin
         for I in Instance.data'Range loop
             Instance.data(I) := value.data(I);
         end loop;
         return Instance;
-    end Make;
+    end Make_GenType;
 
 
+    ----------------------------------------------------------------------------
+    
+    
     procedure Copy (Destination : in out Vkm_GenType;
                     Source      : in     Vkm_GenType;
                     Num_Copy    : in     Vkm_Length;
@@ -115,7 +140,6 @@ package body Vulkan.Math.GenType is
             Destination.data(Offset + Data_Index) := Source.data(Data_Index);
         end loop;
     end Copy;
-
 
 
     ----------------------------------------------------------------
