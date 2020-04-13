@@ -34,7 +34,7 @@ package Vulkan.Math.Bvec2 is
     pragma Preelaborate;
     pragma Pure;
 
-    -- A 2 component vector of boolean values.
+    --< A 2 component vector of boolean values.
     subtype Vkm_Bvec2 is Vkm_GenBType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
