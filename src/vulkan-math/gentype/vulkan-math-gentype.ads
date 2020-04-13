@@ -21,7 +21,7 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---< @group Vulkan Math Generics
+--< @group Vulkan Math GenType
 --------------------------------------------------------------------------------
 --< @summary
 --< This generic package provides constructors, getters and setters, swizzlers,
