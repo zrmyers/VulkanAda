@@ -30,14 +30,6 @@ package body Vulkan.Math.GenType is
     -- Operations on Vkm_GenType
     ----------------------------------------------------------------------------
 
-
-    function Length (A : in     Vkm_GenType) return Vkm_Length is
-    begin
-        return A.data'Length;
-    end Length;
-
-
-
     function Image (Instance : in     Vkm_GenType) return String is
     begin
         case Instance.Length is
@@ -130,8 +122,8 @@ package body Vulkan.Math.GenType is
 
 
     function x (vec1  : in out Vkm_GenType;
-                value : in     Base_Type  ) return Vkm_Vector_Access is
-        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+                value : in     Base_Type  ) return Vkm_GenType_Reference is
+        vec1_access : constant Vkm_GenType_Reference := (Vector => vec1'Unrestricted_Access);
     begin
         x(vec1,value);
         return vec1_access;
@@ -153,8 +145,8 @@ package body Vulkan.Math.GenType is
 
 
     function y (vec1  : in out Vkm_GenType;
-                value : in     Base_Type  ) return Vkm_Vector_Access is
-        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+                value : in     Base_Type  ) return Vkm_GenType_Reference is
+        vec1_access : constant Vkm_GenType_Reference := (Vector => vec1'Unrestricted_Access);
     begin
         y(vec1, value);
         return vec1_access;
@@ -177,8 +169,8 @@ package body Vulkan.Math.GenType is
             
             
     function z (vec1  : in out Vkm_GenType;
-                value : in     Base_Type  ) return Vkm_Vector_Access is
-        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+                value : in     Base_Type  ) return Vkm_GenType_Reference is
+        vec1_access : constant Vkm_GenType_Reference := (Vector => vec1'Unrestricted_Access);
     begin
         z(vec1, value);
         return vec1_access;
@@ -202,8 +194,8 @@ package body Vulkan.Math.GenType is
             
             
     function w (vec1  : in out Vkm_GenType;
-                value : in     Base_Type  ) return Vkm_Vector_Access is
-        vec1_access : constant Vkm_Vector_Access := (Vector => vec1'Unrestricted_Access);
+                value : in     Base_Type  ) return Vkm_GenType_Reference is
+        vec1_access : constant Vkm_GenType_Reference := (Vector => vec1'Unrestricted_Access);
     begin
         w(vec1, value);
         return vec1_access;
