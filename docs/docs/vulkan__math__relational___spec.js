@@ -763,7 +763,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L51C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L107C14"
           }
         },
         {
@@ -1151,7 +1151,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L51C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L107C14"
           }
         },
         {
@@ -1539,7 +1539,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L51C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L107C14"
           }
         },
         {
@@ -1927,7 +1927,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L51C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L107C14"
           }
         },
         {
@@ -2315,7 +2315,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L51C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L107C14"
           }
         },
         {
@@ -2703,7 +2703,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L51C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L107C14"
           }
         }
       ],

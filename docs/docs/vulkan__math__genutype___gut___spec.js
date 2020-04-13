@@ -4,6 +4,15 @@ GNATdoc.Documentation = {
   "summary": [
   ],
   "description": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "An instance of the generic GenType package, with Vkm_Uint as the Base_Type.\n"
+        }
+      ]
+    }
   ],
   "instantiation": {
     "label": "Vulkan.Math.GenType",

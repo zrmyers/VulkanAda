@@ -360,17 +360,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IVU_IVU_IVB_RVU",
-      "docHref": "docs/vulkan__math__genutype___spec.html#L46C14",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L82C14",
       "declared": "Vulkan.Math.GenUType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genutype.ads.html#L46"
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L82"
     },
     {
       "label": "Apply_Func_IVU_IVU_RVB",
-      "docHref": "docs/vulkan__math__genutype___spec.html#L51C14",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L107C14",
       "declared": "Vulkan.Math.GenUType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genutype.ads.html#L51"
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L107"
     },
     {
       "label": "Apply_Func_IVU_RVF",

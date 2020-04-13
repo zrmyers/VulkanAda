@@ -1220,7 +1220,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenUType",
-                      "href": "docs/vulkan__math__genutype___spec.html#L37C13"
+                      "href": "docs/vulkan__math__genutype___spec.html#L51C13"
                     },
                     {
                       "kind": "span",
@@ -1462,7 +1462,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenUType",
-                      "href": "docs/vulkan__math__genutype___spec.html#L37C13"
+                      "href": "docs/vulkan__math__genutype___spec.html#L51C13"
                     },
                     {
                       "kind": "span",
@@ -1507,7 +1507,7 @@ GNATdoc.Documentation = {
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.GenUType.Vkm_GenUType",
-                "docHref": "docs/vulkan__math__genutype___spec.html#L37C13"
+                "docHref": "docs/vulkan__math__genutype___spec.html#L51C13"
               },
               "description": [
               ]

@@ -80,10 +80,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenUType",
-      "docHref": "docs/vulkan__math__genutype___spec.html#L37C13",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L51C13",
       "declared": "Vulkan.Math.GenUType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genutype.ads.html#L37"
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L51"
     },
     {
       "label": "Vkm_Ivec2",

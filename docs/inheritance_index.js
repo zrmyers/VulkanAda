@@ -77,7 +77,7 @@ GNATdoc.InheritanceIndex = [
       },
       {
         "label": "Vkm_GenUType",
-        "docHref": "docs/vulkan__math__genutype___spec.html#L37C13",
+        "docHref": "docs/vulkan__math__genutype___spec.html#L51C13",
         "inherited": [
           {
             "label": "Vkm_Uvec2",

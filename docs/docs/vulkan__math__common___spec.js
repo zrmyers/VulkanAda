@@ -16120,7 +16120,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_IVB_RVU",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L46C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L82C14"
           }
         },
         {
