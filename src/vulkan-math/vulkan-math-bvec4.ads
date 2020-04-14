@@ -103,7 +103,7 @@ package Vulkan.Math.Bvec4 is
     --< @param value3 
     --< Value for component 3.
     --<
-    --< @param Value4 
+    --< @param value4 
     --< Value for component 4.
     --<
     --< @return 
@@ -113,15 +113,18 @@ package Vulkan.Math.Bvec4 is
         renames GBT.Make_GenType;
 
     ----------------------------------------------------------------------------
-    -- @description
-    -- Produce a vector by concatenating a scalar value with a Bvec3.
-    --
-    -- Bvec4 = [scalar_value, vec3_value  ]
-    --
-    -- @param[in]     scalar_value The scalar value to concatenate with the Bvec3.
-    -- @param[in]     vec3_value   The Bvec3 to concatenate to the scalar value.
-    --
-    -- @returns The instance of Bvec4.
+    --< @description
+    --< Produce a vector by concatenating a scalar value with a Bvec3.
+    --<
+    --<     Bvec4 = [scalar_value, vec3_value  ]
+    --<
+    --< @param scalar_value 
+    --< The scalar value to concatenate with the Bvec3.
+    --<
+    --< @param vec3_value   
+    --< The Bvec3 to concatenate to the scalar value.
+    --<
+    --< @return The instance of Bvec4.
     ----------------------------------------------------------------------------
     function Make_Bvec4 (scalar_value : in     Vkm_Bool;
                          vec3_value   : in     Vkm_Bvec3) return Vkm_Bvec3 is

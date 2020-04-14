@@ -21,10 +21,7 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package provides a mapping of the GLSL common functions to Ada's
--- Numerical operations.
---------------------------------------------------------------------------------
+
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
 with Vulkan.Math.GenIType;
@@ -40,77 +37,302 @@ use Vulkan.Math.GenIType;
 use Vulkan.Math.GenUType;
 use Vulkan.Math.GenBType;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math Functions
+--------------------------------------------------------------------------------
+--< @summary
+--< This package provides GLSL Common Built-in functions.
+--<
+--< @description
+--< All common functions operate component-wise.
+--------------------------------------------------------------------------------
 package Vulkan.Math.Common is
     pragma Preelaborate;
     pragma Pure;
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Computes the absolute value of x.
-    --
-    -- @param[in]     x The input parameter
-    --
-    -- @return Returns x if x >= 0; otherwise it returns -x.
+    --< @summary
+    --< Computes the absolute value of x.
+    --<
+    --< @description
+    --< Computes the absolute value of scalar Vkm_Float x.
+    --<
+    --< @param x 
+    --< The input parameter
+    --<
+    --< @return 
+    --< Returns x if x >= 0.0; otherwise it returns -x.
     ----------------------------------------------------------------------------
     function Absolute_Value (x : in     Vkm_Float ) return Vkm_Float is
         (if x >= 0.0 then x else -x) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the absolute value of x.
+    --<
+    --< @description
+    --< Computes the absolute value of scalar Vkm_Double x.
+    --<
+    --< @param x 
+    --< The input parameter
+    --<
+    --< @return 
+    --< Returns x if x >= 0.0; otherwise it returns -x.
+    ----------------------------------------------------------------------------
     function Absolute_Value (x : in     Vkm_Double) return Vkm_Double is
         (if x >= 0.0 then x else -x) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the absolute value of x.
+    --<
+    --< @description
+    --< Computes the absolute value of scalar Vkm_Int x.
+    --<
+    --< @param x 
+    --< The input parameter
+    --<
+    --< @return 
+    --< Returns x if x >= 0; otherwise it returns -x.
+    ----------------------------------------------------------------------------
     function Absolute_Value (x : in     Vkm_Int) return Vkm_Int is
         (if x >= 0 then x else -x)   with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the absolute value of x.
+    --<
+    --< @description
+    --< Applies Absolute_Value() component-wise on a GenFType vector, returning
+    --< a GenFType vector with the result.
+    ----------------------------------------------------------------------------
     function Absolute_Value is new GFT.Apply_Func_IV_RV(Absolute_Value);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the absolute value of x.
+    --<
+    --< @description
+    --< Applies Absolute_Value() component-wise on a GenDType vector, returning
+    --< a GenDType vector with the result.
+    ----------------------------------------------------------------------------
     function Absolute_Value is new GDT.Apply_Func_IV_RV(Absolute_Value);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the absolute value of x.
+    --<
+    --< @description
+    --< Applies Absolute_Value() component-wise on a GenIType vector, returning
+    --< a GenIType vector with the result.
+    ----------------------------------------------------------------------------
     function Absolute_Value is new GIT.Apply_Func_IV_RV(Absolute_Value);
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Determines the sign of x.
-    --
-    -- @param[in]     x The input parameter
-    --
-    -- @return Returns:
-    --    1 if X > 0
-    --    0 if X = 0
-    --   -1 if x < 0
+    --< @summary
+    --< Determines the sign of x.
+    --<
+    --< @description
+    --< Determines the sign of a scalar Vkm_Float.
+    --<
+    --< @param x 
+    --< The scalar input parameter
+    --<
+    --< @return 
+    --< Returns one of the following:
+    --< -  1 if X > 0
+    --< -  0 if X = 0
+    --< - -1 if x < 0
     ----------------------------------------------------------------------------
     function Sign (x : in     Vkm_Float ) return Vkm_Float is
         (if x > 0.0 then 1.0 elsif x < 0.0 then -1.0 else 0.0) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determines the sign of x.
+    --<
+    --< @description
+    --< Determines the sign of a scalar Vkm_Double.
+    --<
+    --< @param x 
+    --< The scalar input parameter
+    --<
+    --< @return 
+    --< Returns one of the following:
+    --< -  1 if X > 0
+    --< -  0 if X = 0
+    --< - -1 if x < 0
+    ----------------------------------------------------------------------------
     function Sign (x : in     Vkm_Double) return Vkm_Double is
         (if x > 0.0 then 1.0 elsif x < 0.0 then -1.0 else 0.0) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determines the sign of x.
+    --<
+    --< @description
+    --< Determines the sign of a scalar Vkm_Int.
+    --<
+    --< @param x 
+    --< The scalar input parameter
+    --<
+    --< @return 
+    --< Returns one of the following:
+    --< -  1 if X > 0
+    --< -  0 if X = 0
+    --< - -1 if x < 0
+    ----------------------------------------------------------------------------
     function Sign (x : in     Vkm_Int   ) return Vkm_Int is
         (if x > 0 then 1 elsif x < 0 then -1 else 0) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determines the sign of x.
+    --<
+    --< @description
+    --< Determines the sign of each component of GenFType vector x.
+    ----------------------------------------------------------------------------
     function Sign is new GFT.Apply_Func_IV_RV(Sign);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determines the sign of x.
+    --<
+    --< @description
+    --< Determines the sign of each component of GenDType vector x.
+    ----------------------------------------------------------------------------
     function Sign is new GDT.Apply_Func_IV_RV(Sign);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determines the sign of x.
+    --<
+    --< @description
+    --< Determines the sign of each component of GenDType vector x.
+    ----------------------------------------------------------------------------
     function Sign is new GIT.Apply_Func_IV_RV(Sign);
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Computes the floor of x.
-    --
-    -- @param[in]     x The input parameter
-    --
-    -- @return Returns the nearest integer y that is less than or equal to x.
+    --< @summary
+    --< Computes the floor of x.
+    --<
+    --< @description
+    --< Computes the floor, y, as the nearest integer that is less than or equal
+    --< to scalar Vkm_Float x.
+    --<
+    --< @param x 
+    --< The value for which the floor is computed.
+    --<
+    --< @return 
+    --< Returns the floor, y.
     ----------------------------------------------------------------------------
     function Floor (x : in     Vkm_Float)  return Vkm_Float renames Vkm_Float'Floor;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the floor of x.
+    --<
+    --< @description
+    --< Computes the floor, y, as the nearest integer that is less than or equal
+    --< to scalar Vkm_Double x.
+    --<
+    --< @param x 
+    --< The value for which the floor is computed.
+    --<
+    --< @return 
+    --< Returns the floor, y.
+    ----------------------------------------------------------------------------
     function Floor (x : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Floor;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the floor of x.
+    --<
+    --< @description
+    --< Computes the floor for each component of the GenFType, returning a vector
+    --< containing the component-wise result.
+    ----------------------------------------------------------------------------
     function Floor is new GFT.Apply_Func_IV_RV(Floor);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the floor of x.
+    --<
+    --< @description
+    --< Computes the floor for each component of the GenDType, returning a vector
+    --< containing the component-wise result.
+    ----------------------------------------------------------------------------
     function Floor is new GDT.Apply_Func_IV_RV(Floor);
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Computes the truncation of x.
-    --
-    -- @param[in]     x The input parameter
-    --
-    -- @return Returns the nearest integer y that whose absolute value is less
-    --         than or equal to the absolute value of x.
+    --< @summary
+    --< Computes the truncation of x.
+    --<
+    --< @description
+    --< Computes the trunction of x, y, as the nearest integer to x whose absolute
+    --< value is less than or equal to the absolute value of x.
+    --<
+    --< @param x
+    --< The value on which truncation is performed.
+    --<
+    --< @return 
+    --< The truncation of x, y.
     ----------------------------------------------------------------------------
     function Trunc (x : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Truncation;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the truncation of x.
+    --<
+    --< @description
+    --< Computes the trunction of x, y, as the nearest integer to x whose absolute
+    --< value is less than or equal to the absolute value of x.
+    --<
+    --< @param x
+    --< The value on which truncation is performed.
+    --<
+    --< @return 
+    --< The truncation of x, y.
+    ----------------------------------------------------------------------------
     function Trunc (x : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Truncation;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the truncation of x.
+    --<
+    --< @description
+    --< Computes component-wise trunction on a vector x, returning a vector
+    --< with the result.
+    ----------------------------------------------------------------------------
     function Trunc is new GFT.Apply_Func_IV_RV(Trunc);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the truncation of x.
+    --<
+    --< @description
+    --< Computes component-wise trunction on a vector x, returning a vector
+    --< with the result.
+    ----------------------------------------------------------------------------
     function Trunc is new GDT.Apply_Func_IV_RV(Trunc);
 
 
@@ -191,13 +413,13 @@ package Vulkan.Math.Common is
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Compute the modf of x and y.
-    --
-    -- @param[in]    x The input parameter
-    -- @param[out]   i The integer part of x.
-    --
-    -- @return Returns the fraction part of x.
+    --< @brief
+    --< Compute the modf of x and y.
+    --<
+    --< @param x The input parameter
+    --< @param i The integer part of x.
+    --<
+    --< @return Returns the fraction part of x.
     ----------------------------------------------------------------------------
     function Modf is new Vulkan.Math.Numerics.Compute_Modf(Vkm_Float);
     function Modf is new Vulkan.Math.Numerics.Compute_Modf(Vkm_Double);
