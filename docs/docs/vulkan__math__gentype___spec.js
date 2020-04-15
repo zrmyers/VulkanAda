@@ -933,6 +933,301 @@ GNATdoc.Documentation = {
     {
       "entities": [
         {
+          "label": "Apply_Func_IS_IS_IV_RV",
+          "qualifier": "",
+          "line": 10089,
+          "column": 14,
+          "src": "srcs/vulkan-math-gentype.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply function for parameters of Base_Type on Vkm_GenType vector.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 10089,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IS_IS_IV_RV",
+                      "href": "docs/vulkan__math__gentype___spec.html#L10089C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "IS1",
+                      "href": "docs/vulkan__math__gentype___spec.html#L10089C37"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "IS2",
+                      "href": "docs/vulkan__math__gentype___spec.html#L10089C42"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Base_Type"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 10090,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                                    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "IV1",
+                      "href": "docs/vulkan__math__gentype___spec.html#L10090C37"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "      "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_GenType",
+                      "href": "docs/vulkan__math__gentype___spec.html#L91C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_GenType",
+                      "href": "docs/vulkan__math__gentype___spec.html#L91C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply's a supplied function component wise on one input vectors and two\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "scalar values.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "RV := [Func(IS1, IS2, IV1.x) ... Func(IS1, IS2, IV1.w)]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "IS1",
+              "line": 10089,
+              "column": 37,
+              "type": {
+                "label": "Vulkan.Math.GenType.Base_Type",
+                "docHref": "docs/vulkan__math__gentype___spec.html#L64C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The first input scalar parameter.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "IS2",
+              "line": 10089,
+              "column": 42,
+              "type": {
+                "label": "Vulkan.Math.GenType.Base_Type",
+                "docHref": "docs/vulkan__math__gentype___spec.html#L64C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The second input scalar parameter.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "IV1",
+              "line": 10090,
+              "column": 37,
+              "type": {
+                "label": "Vulkan.Math.GenType.Vkm_GenType",
+                "docHref": "docs/vulkan__math__gentype___spec.html#L91C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input vector parameter.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result, RV.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
           "label": "Apply_Func_IS_IV_RV",
           "qualifier": "",
           "line": 9888,

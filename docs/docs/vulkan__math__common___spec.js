@@ -3284,7 +3284,7 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "",
-          "line": 1204,
+          "line": 1706,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -3295,7 +3295,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1204,
+                  "number": 1706,
                   "children": [
                     {
                       "kind": "span",
@@ -3316,7 +3316,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1204C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1706C14"
                     },
                     {
                       "kind": "span",
@@ -3327,7 +3327,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1204C18"
+                      "href": "docs/vulkan__math__common___spec.html#L1706C18"
                     },
                     {
                       "kind": "span",
@@ -3343,7 +3343,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "b",
-                      "href": "docs/vulkan__math__common___spec.html#L1204C21"
+                      "href": "docs/vulkan__math__common___spec.html#L1706C21"
                     },
                     {
                       "kind": "span",
@@ -3359,7 +3359,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "c",
-                      "href": "docs/vulkan__math__common___spec.html#L1204C24"
+                      "href": "docs/vulkan__math__common___spec.html#L1706C24"
                     },
                     {
                       "kind": "span",
@@ -3432,7 +3432,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1205,
+                  "number": 1707,
                   "children": [
                     {
                       "kind": "span",
@@ -3539,7 +3539,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "a",
-              "line": 1204,
+              "line": 1706,
               "column": 18,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3550,7 +3550,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "b",
-              "line": 1204,
+              "line": 1706,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3561,7 +3561,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "c",
-              "line": 1204,
+              "line": 1706,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3588,7 +3588,7 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "",
-          "line": 1207,
+          "line": 1709,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -3599,7 +3599,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1207,
+                  "number": 1709,
                   "children": [
                     {
                       "kind": "span",
@@ -3620,7 +3620,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1207C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1709C14"
                     },
                     {
                       "kind": "span",
@@ -3631,7 +3631,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1207C18"
+                      "href": "docs/vulkan__math__common___spec.html#L1709C18"
                     },
                     {
                       "kind": "span",
@@ -3647,7 +3647,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "b",
-                      "href": "docs/vulkan__math__common___spec.html#L1207C21"
+                      "href": "docs/vulkan__math__common___spec.html#L1709C21"
                     },
                     {
                       "kind": "span",
@@ -3663,7 +3663,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "c",
-                      "href": "docs/vulkan__math__common___spec.html#L1207C24"
+                      "href": "docs/vulkan__math__common___spec.html#L1709C24"
                     },
                     {
                       "kind": "span",
@@ -3736,7 +3736,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1208,
+                  "number": 1710,
                   "children": [
                     {
                       "kind": "span",
@@ -3826,7 +3826,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "a",
-              "line": 1207,
+              "line": 1709,
               "column": 18,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -3837,7 +3837,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "b",
-              "line": 1207,
+              "line": 1709,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -3848,7 +3848,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "c",
-              "line": 1207,
+              "line": 1709,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -6362,10 +6362,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "",
-          "line": 1047,
+          "line": 1115,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix x and y together using a linear blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -6373,7 +6382,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1047,
+                  "number": 1115,
                   "children": [
                     {
                       "kind": "span",
@@ -6394,7 +6403,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1047C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1115C14"
                     },
                     {
                       "kind": "span",
@@ -6410,7 +6419,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1047C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1115C19"
                     },
                     {
                       "kind": "span",
@@ -6426,7 +6435,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1047C22"
+                      "href": "docs/vulkan__math__common___spec.html#L1115C22"
                     },
                     {
                       "kind": "span",
@@ -6442,7 +6451,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1047C25"
+                      "href": "docs/vulkan__math__common___spec.html#L1115C25"
                     },
                     {
                       "kind": "span",
@@ -6515,7 +6524,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1048,
+                  "number": 1116,
                   "children": [
                     {
                       "kind": "span",
@@ -6656,27 +6665,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Mix the values 'x' and 'y' together using a linear blend function.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "The linear blend function is 'x * (1 - a) + y * a'\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     x The input parameter 'x' that is mixed with 'y'\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     y The input paramter 'y' that is mixed with 'x'\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     a The input parameter 'a' which is a coefficient in the\n"
+                  "text": "Mix the values 'x' and 'y' together using a linear blend function:\n"
                 }
               ]
             },
@@ -6688,7 +6677,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "linear blend function."
+                      "text": "blend := 'x * (1 - a) + y * a'"
                     }
                   ]
                 }
@@ -6698,35 +6687,62 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 1047,
+              "line": 1115,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "y",
-              "line": 1047,
+              "line": 1115,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input paramter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "a",
-              "line": 1047,
+              "line": 1115,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'a' which is a coefficient in the linear blend function.\n"
+                    }
+                  ]
+                }
               ]
             }
           ],
@@ -6747,10 +6763,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "",
-          "line": 1049,
+          "line": 1139,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix x and y together using a linear blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -6758,7 +6783,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1049,
+                  "number": 1139,
                   "children": [
                     {
                       "kind": "span",
@@ -6779,7 +6804,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1049C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1139C14"
                     },
                     {
                       "kind": "span",
@@ -6795,7 +6820,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1049C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1139C19"
                     },
                     {
                       "kind": "span",
@@ -6811,7 +6836,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1049C22"
+                      "href": "docs/vulkan__math__common___spec.html#L1139C22"
                     },
                     {
                       "kind": "span",
@@ -6827,7 +6852,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1049C25"
+                      "href": "docs/vulkan__math__common___spec.html#L1139C25"
                     },
                     {
                       "kind": "span",
@@ -6900,7 +6925,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1050,
+                  "number": 1140,
                   "children": [
                     {
                       "kind": "span",
@@ -7035,462 +7060,123 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a linear blend function:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "blend := 'x * (1 - a) + y * a'"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 1049,
+              "line": 1139,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "y",
-              "line": 1049,
+              "line": 1139,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input paramter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "a",
-              "line": 1049,
+              "line": 1139,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Mix",
-          "qualifier": "",
-          "line": 1072,
-          "column": 14,
-          "src": "srcs/vulkan-math-common.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
                 {
-                  "kind": "line",
-                  "number": 1072,
+                  "kind": "paragraph",
                   "children": [
                     {
                       "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1072C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1072C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1072C22"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L61C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1073,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1073C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L49C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L61C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1074,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "if"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "a"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "then"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "x"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "else"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "y"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "with"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " Inline"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
+                      "text": "The input parameter 'a' which is a coefficient in the linear blend function.\n"
                     }
                   ]
                 }
               ]
-            },
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "X mixed with y.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Mix",
+          "qualifier": "",
+          "line": 1210,
+          "column": 14,
+          "src": "srcs/vulkan-math-common.ads.html",
+          "summary": [
             {
               "kind": "paragraph",
               "children": [
-                {
-                  "kind": "span",
-                  "text": "@brief\n"
-                },
                 {
                   "kind": "span",
                   "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "The boolean blend function is applied component-wise as follows:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "x if a is true"
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "y if a is false"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@param[in]     x The input parameter 'x' that is mixed with 'y'\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     y The input parameter 'y' that is mixed with 'x'\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     a The input parameter 'a' which is the boolean mixing\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "coefficient."
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@returns The mixture of x with y.\n"
                 }
               ]
             }
-          ],
-          "parameters": [
-            {
-              "label": "x",
-              "line": 1072,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Float",
-                "docHref": "docs/vulkan__math___spec.html#L61C10"
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "y",
-              "line": 1072,
-              "column": 22,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Float",
-                "docHref": "docs/vulkan__math___spec.html#L61C10"
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "a",
-              "line": 1073,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Bool",
-                "docHref": "docs/vulkan__math___spec.html#L49C10"
-              },
-              "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Mix",
-          "qualifier": "",
-          "line": 1075,
-          "column": 14,
-          "src": "srcs/vulkan-math-common.ads.html",
-          "summary": [
           ],
           "description": [
             {
@@ -7498,7 +7184,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1075,
+                  "number": 1210,
                   "children": [
                     {
                       "kind": "span",
@@ -7519,7 +7205,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1075C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1210C14"
                     },
                     {
                       "kind": "span",
@@ -7535,7 +7221,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1075C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1210C19"
                     },
                     {
                       "kind": "span",
@@ -7551,7 +7237,419 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1075C22"
+                      "href": "docs/vulkan__math__common___spec.html#L1210C22"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 1211,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "a",
+                      "href": "docs/vulkan__math__common___spec.html#L1211C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Bool",
+                      "href": "docs/vulkan__math___spec.html#L49C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 1212,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "if"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "a"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "then"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "x"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "else"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "y"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "x if a is true\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "y if a is false\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "x",
+              "line": 1210,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "y",
+              "line": 1210,
+              "column": 22,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "a",
+              "line": 1211,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Bool",
+                "docHref": "docs/vulkan__math___spec.html#L49C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'a' which is the boolean mixing coefficient.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The mixture of x with y.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Mix",
+          "qualifier": "",
+          "line": 1236,
+          "column": 14,
+          "src": "srcs/vulkan-math-common.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 1236,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Mix",
+                      "href": "docs/vulkan__math__common___spec.html#L1236C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "x",
+                      "href": "docs/vulkan__math__common___spec.html#L1236C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "y",
+                      "href": "docs/vulkan__math__common___spec.html#L1236C22"
                     },
                     {
                       "kind": "span",
@@ -7593,7 +7691,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1076,
+                  "number": 1237,
                   "children": [
                     {
                       "kind": "span",
@@ -7604,7 +7702,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1076C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1237C19"
                     },
                     {
                       "kind": "span",
@@ -7677,7 +7775,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1077,
+                  "number": 1238,
                   "children": [
                     {
                       "kind": "span",
@@ -7777,51 +7875,132 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "x if a is true\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "y if a is false\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 1075,
+              "line": 1236,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "y",
-              "line": 1075,
+              "line": 1236,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "a",
-              "line": 1076,
+              "line": 1237,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'a' which is the boolean mixing coefficient.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The mixture of x with y.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Mix",
           "qualifier": "",
-          "line": 1078,
+          "line": 1262,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -7829,7 +8008,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1078,
+                  "number": 1262,
                   "children": [
                     {
                       "kind": "span",
@@ -7850,7 +8029,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1078C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1262C14"
                     },
                     {
                       "kind": "span",
@@ -7866,7 +8045,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1078C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1262C19"
                     },
                     {
                       "kind": "span",
@@ -7882,7 +8061,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1078C22"
+                      "href": "docs/vulkan__math__common___spec.html#L1262C22"
                     },
                     {
                       "kind": "span",
@@ -7924,7 +8103,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1079,
+                  "number": 1263,
                   "children": [
                     {
                       "kind": "span",
@@ -7935,7 +8114,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1079C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1263C19"
                     },
                     {
                       "kind": "span",
@@ -8008,7 +8187,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1080,
+                  "number": 1264,
                   "children": [
                     {
                       "kind": "span",
@@ -8108,51 +8287,132 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "x if a is true\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "y if a is false\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 1078,
+              "line": 1262,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "y",
-              "line": 1078,
+              "line": 1262,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "a",
-              "line": 1079,
+              "line": 1263,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'a' which is the boolean mixing coefficient.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The mixture of x with y.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Mix",
           "qualifier": "",
-          "line": 1081,
+          "line": 1288,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -8160,7 +8420,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1081,
+                  "number": 1288,
                   "children": [
                     {
                       "kind": "span",
@@ -8181,7 +8441,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1081C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1288C14"
                     },
                     {
                       "kind": "span",
@@ -8197,7 +8457,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1081C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1288C19"
                     },
                     {
                       "kind": "span",
@@ -8213,7 +8473,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1081C22"
+                      "href": "docs/vulkan__math__common___spec.html#L1288C22"
                     },
                     {
                       "kind": "span",
@@ -8255,7 +8515,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1082,
+                  "number": 1289,
                   "children": [
                     {
                       "kind": "span",
@@ -8266,7 +8526,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1082C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1289C19"
                     },
                     {
                       "kind": "span",
@@ -8339,7 +8599,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1083,
+                  "number": 1290,
                   "children": [
                     {
                       "kind": "span",
@@ -8439,51 +8699,132 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "x if a is true\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "y if a is false\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 1081,
+              "line": 1288,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "y",
-              "line": 1081,
+              "line": 1288,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "a",
-              "line": 1082,
+              "line": 1289,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'a' which is the boolean mixing coefficient.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The mixture of x with y.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Mix",
           "qualifier": "",
-          "line": 1084,
+          "line": 1314,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -8491,7 +8832,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1084,
+                  "number": 1314,
                   "children": [
                     {
                       "kind": "span",
@@ -8512,7 +8853,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1084C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1314C14"
                     },
                     {
                       "kind": "span",
@@ -8528,7 +8869,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1084C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1314C19"
                     },
                     {
                       "kind": "span",
@@ -8544,7 +8885,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__common___spec.html#L1084C22"
+                      "href": "docs/vulkan__math__common___spec.html#L1314C22"
                     },
                     {
                       "kind": "span",
@@ -8586,7 +8927,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1085,
+                  "number": 1315,
                   "children": [
                     {
                       "kind": "span",
@@ -8597,7 +8938,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1085C19"
+                      "href": "docs/vulkan__math__common___spec.html#L1315C19"
                     },
                     {
                       "kind": "span",
@@ -8670,7 +9011,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1086,
+                  "number": 1316,
                   "children": [
                     {
                       "kind": "span",
@@ -8770,43 +9111,115 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "x if a is true\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "y if a is false\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 1084,
+              "line": 1314,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'x' that is mixed with 'y'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "y",
-              "line": 1084,
+              "line": 1314,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'y' that is mixed with 'x'\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "a",
-              "line": 1085,
+              "line": 1315,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter 'a' which is the boolean mixing coefficient.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The mixture of x with y.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Modulo",
@@ -11539,10 +11952,19 @@ GNATdoc.Documentation = {
         {
           "label": "Step",
           "qualifier": "",
-          "line": 1107,
+          "line": 1397,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -11550,7 +11972,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1107,
+                  "number": 1397,
                   "children": [
                     {
                       "kind": "span",
@@ -11571,7 +11993,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1107C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1397C14"
                     },
                     {
                       "kind": "span",
@@ -11587,7 +12009,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "edge",
-                      "href": "docs/vulkan__math__common___spec.html#L1107C20"
+                      "href": "docs/vulkan__math__common___spec.html#L1397C20"
                     },
                     {
                       "kind": "span",
@@ -11603,7 +12025,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1107C26"
+                      "href": "docs/vulkan__math__common___spec.html#L1397C26"
                     },
                     {
                       "kind": "span",
@@ -11676,7 +12098,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1108,
+                  "number": 1398,
                   "children": [
                     {
                       "kind": "span",
@@ -11797,55 +12219,30 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
+                  "text": "Compute the step function as follows:\n"
                 },
                 {
-                  "kind": "span",
-                  "text": "Step function.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "For each component of edge:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
+                  "kind": "ul",
                   "children": [
                     {
-                      "kind": "span",
-                      "text": "y = 0.0 if x <  edge"
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "Return 0.0 if x <  edge\n"
+                        }
+                      ]
+                    },
                     {
-                      "kind": "span",
-                      "text": "y = 1.0 if x >= edge"
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "Return 1.0 if x >= edge\n"
+                        }
+                      ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@param[in]     edge\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     x\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@returns y\n"
                 }
               ]
             }
@@ -11853,35 +12250,75 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "edge",
-              "line": 1107,
+              "line": 1397,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The edge input value.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "x",
-              "line": 1107,
+              "line": 1397,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The parameter to which the step function is applied.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Returns the step function.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Step",
           "qualifier": "",
-          "line": 1109,
+          "line": 1419,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -11889,7 +12326,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1109,
+                  "number": 1419,
                   "children": [
                     {
                       "kind": "span",
@@ -11910,7 +12347,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1109C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1419C14"
                     },
                     {
                       "kind": "span",
@@ -11926,7 +12363,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "edge",
-                      "href": "docs/vulkan__math__common___spec.html#L1109C20"
+                      "href": "docs/vulkan__math__common___spec.html#L1419C20"
                     },
                     {
                       "kind": "span",
@@ -11942,7 +12379,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__common___spec.html#L1109C26"
+                      "href": "docs/vulkan__math__common___spec.html#L1419C26"
                     },
                     {
                       "kind": "span",
@@ -12015,7 +12452,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1110,
+                  "number": 1420,
                   "children": [
                     {
                       "kind": "span",
@@ -12130,32 +12567,95 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute the step function as follows:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "Return 0.0 if x <  edge\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "Return 1.0 if x >= edge\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "edge",
-              "line": 1109,
+              "line": 1419,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The edge input value.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "x",
-              "line": 1109,
+              "line": 1419,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The parameter to which the step function is applied.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Returns the step function.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Trunc",
@@ -13176,10 +13676,19 @@ GNATdoc.Documentation = {
         {
           "label": "Clamp",
           "qualifier": "(generic instantiation)",
-          "line": 1027,
+          "line": 1035,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Clamp x between minVal and maxVal.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13187,7 +13696,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1027,
+                  "number": 1035,
                   "children": [
                     {
                       "kind": "span",
@@ -13208,7 +13717,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Clamp",
-                      "href": "docs/vulkan__math__common___spec.html#L1027C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1035C14"
                     },
                     {
                       "kind": "span",
@@ -13263,6 +13772,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Clamp() function component-wise on the three input vectors, returning\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a vector with the result.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -13273,10 +13795,19 @@ GNATdoc.Documentation = {
         {
           "label": "Clamp",
           "qualifier": "(generic instantiation)",
-          "line": 1028,
+          "line": 1046,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Clamp x between minVal and maxVal.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13284,7 +13815,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1028,
+                  "number": 1046,
                   "children": [
                     {
                       "kind": "span",
@@ -13305,7 +13836,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Clamp",
-                      "href": "docs/vulkan__math__common___spec.html#L1028C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1046C14"
                     },
                     {
                       "kind": "span",
@@ -13360,6 +13891,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Clamp() function component-wise on the three input vectors, returning\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a vector with the result.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -13370,10 +13914,19 @@ GNATdoc.Documentation = {
         {
           "label": "Clamp",
           "qualifier": "(generic instantiation)",
-          "line": 1029,
+          "line": 1057,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Clamp x between minVal and maxVal.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13381,7 +13934,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1029,
+                  "number": 1057,
                   "children": [
                     {
                       "kind": "span",
@@ -13402,7 +13955,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Clamp",
-                      "href": "docs/vulkan__math__common___spec.html#L1029C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1057C14"
                     },
                     {
                       "kind": "span",
@@ -13457,6 +14010,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Clamp() function component-wise on the three input vectors, returning\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a vector with the result.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -13467,10 +14033,19 @@ GNATdoc.Documentation = {
         {
           "label": "Clamp",
           "qualifier": "(generic instantiation)",
-          "line": 1030,
+          "line": 1068,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Clamp x between minVal and maxVal.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13478,7 +14053,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1030,
+                  "number": 1068,
                   "children": [
                     {
                       "kind": "span",
@@ -13499,7 +14074,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Clamp",
-                      "href": "docs/vulkan__math__common___spec.html#L1030C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1068C14"
                     },
                     {
                       "kind": "span",
@@ -13554,6 +14129,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Clamp() function component-wise on the three input vectors, returning\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a vector with the result.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -13564,10 +14152,19 @@ GNATdoc.Documentation = {
         {
           "label": "Clamp",
           "qualifier": "(generic instantiation)",
-          "line": 1031,
+          "line": 1080,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Clamp x between minVal and maxVal.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13575,7 +14172,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1031,
+                  "number": 1080,
                   "children": [
                     {
                       "kind": "span",
@@ -13596,7 +14193,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Clamp",
-                      "href": "docs/vulkan__math__common___spec.html#L1031C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1080C14"
                     },
                     {
                       "kind": "span",
@@ -13651,6 +14248,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Clamp() function component-wise on one input vectors using two\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "input scalars for the minVal and maxVal of each component, returning a\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector with the result.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -13661,10 +14275,19 @@ GNATdoc.Documentation = {
         {
           "label": "Clamp",
           "qualifier": "(generic instantiation)",
-          "line": 1032,
+          "line": 1092,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Clamp x between minVal and maxVal.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13672,7 +14295,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1032,
+                  "number": 1092,
                   "children": [
                     {
                       "kind": "span",
@@ -13693,7 +14316,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Clamp",
-                      "href": "docs/vulkan__math__common___spec.html#L1032C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1092C14"
                     },
                     {
                       "kind": "span",
@@ -13748,6 +14371,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Clamp() function component-wise on one input vectors using two\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "input scalars for the minVal and maxVal of each component, returning a\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector with the result.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -13758,10 +14398,36 @@ GNATdoc.Documentation = {
         {
           "label": "Float_Bits_To_Int",
           "qualifier": "(generic instantiation)",
-          "line": 1171,
+          "line": 1643,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert float bits to int bits.\n"
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "@description.\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Convert the floating point value to a signed integer that\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "represents the encoding for the floating point value.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13769,7 +14435,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1171,
+                  "number": 1643,
                   "children": [
                     {
                       "kind": "span",
@@ -13790,7 +14456,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Float_Bits_To_Int",
-                      "href": "docs/vulkan__math__common___spec.html#L1171C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1643C14"
                     },
                     {
                       "kind": "span",
@@ -13816,7 +14482,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1172,
+                  "number": 1644,
                   "children": [
                     {
                       "kind": "span",
@@ -13908,41 +14574,42 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@brief\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Convert the floating point value to a signed or unsigned integer that\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "represents the encoding for the floating point value.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     value The floating point value.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@returns The signed or unsigned integer representation of the float.\n"
-                }
-              ]
             }
           ]
         },
         {
           "label": "Float_Bits_To_Int",
           "qualifier": "(generic instantiation)",
-          "line": 1175,
+          "line": 1667,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert float bits to int bits.\n"
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "@description.\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Apply Float_Bits_To_Int() to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting GenIType vector is returned.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13950,7 +14617,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1175,
+                  "number": 1667,
                   "children": [
                     {
                       "kind": "span",
@@ -13971,7 +14638,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Float_Bits_To_Int",
-                      "href": "docs/vulkan__math__common___spec.html#L1175C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1667C14"
                     },
                     {
                       "kind": "span",
@@ -14036,10 +14703,36 @@ GNATdoc.Documentation = {
         {
           "label": "Float_Bits_To_Uint",
           "qualifier": "(generic instantiation)",
-          "line": 1173,
+          "line": 1655,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert float bits to uint bits.\n"
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "@description.\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Convert the floating point value to an unsigned integer that\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "represents the encoding for the floating point value.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -14047,7 +14740,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1173,
+                  "number": 1655,
                   "children": [
                     {
                       "kind": "span",
@@ -14068,7 +14761,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Float_Bits_To_Uint",
-                      "href": "docs/vulkan__math__common___spec.html#L1173C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1655C14"
                     },
                     {
                       "kind": "span",
@@ -14094,7 +14787,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1174,
+                  "number": 1656,
                   "children": [
                     {
                       "kind": "span",
@@ -14192,10 +14885,36 @@ GNATdoc.Documentation = {
         {
           "label": "Float_Bits_To_Uint",
           "qualifier": "(generic instantiation)",
-          "line": 1176,
+          "line": 1678,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert float bits to uint bits.\n"
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "@description.\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Apply Float_Bits_To_Uint() to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting GenUType vector is returned.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -14203,7 +14922,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1176,
+                  "number": 1678,
                   "children": [
                     {
                       "kind": "span",
@@ -14224,7 +14943,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Float_Bits_To_Uint",
-                      "href": "docs/vulkan__math__common___spec.html#L1176C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1678C14"
                     },
                     {
                       "kind": "span",
@@ -14527,7 +15246,7 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "(generic instantiation)",
-          "line": 1206,
+          "line": 1708,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -14538,7 +15257,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1206,
+                  "number": 1708,
                   "children": [
                     {
                       "kind": "span",
@@ -14559,7 +15278,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1206C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1708C14"
                     },
                     {
                       "kind": "span",
@@ -14624,7 +15343,7 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "(generic instantiation)",
-          "line": 1209,
+          "line": 1711,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -14635,7 +15354,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1209,
+                  "number": 1711,
                   "children": [
                     {
                       "kind": "span",
@@ -14656,7 +15375,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1209C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1711C14"
                     },
                     {
                       "kind": "span",
@@ -14959,7 +15678,7 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1223,
+          "line": 1725,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -14970,7 +15689,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1223,
+                  "number": 1725,
                   "children": [
                     {
                       "kind": "span",
@@ -14991,7 +15710,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1223C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1725C14"
                     },
                     {
                       "kind": "span",
@@ -15097,7 +15816,7 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1224,
+          "line": 1726,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -15108,7 +15827,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1224,
+                  "number": 1726,
                   "children": [
                     {
                       "kind": "span",
@@ -15129,7 +15848,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1224C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1726C14"
                     },
                     {
                       "kind": "span",
@@ -15195,7 +15914,7 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1225,
+          "line": 1727,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -15206,7 +15925,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1225,
+                  "number": 1727,
                   "children": [
                     {
                       "kind": "span",
@@ -15227,7 +15946,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1225C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1727C14"
                     },
                     {
                       "kind": "span",
@@ -15292,7 +16011,7 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1226,
+          "line": 1728,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -15303,7 +16022,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1226,
+                  "number": 1728,
                   "children": [
                     {
                       "kind": "span",
@@ -15324,7 +16043,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1226C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1728C14"
                     },
                     {
                       "kind": "span",
@@ -15389,7 +16108,7 @@ GNATdoc.Documentation = {
         {
           "label": "Int_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1188,
+          "line": 1690,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -15400,7 +16119,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1188,
+                  "number": 1690,
                   "children": [
                     {
                       "kind": "span",
@@ -15421,7 +16140,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Int_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1188C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1690C14"
                     },
                     {
                       "kind": "span",
@@ -15447,7 +16166,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1189,
+                  "number": 1691,
                   "children": [
                     {
                       "kind": "span",
@@ -15570,7 +16289,7 @@ GNATdoc.Documentation = {
         {
           "label": "Int_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1192,
+          "line": 1694,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -15581,7 +16300,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1192,
+                  "number": 1694,
                   "children": [
                     {
                       "kind": "span",
@@ -15602,7 +16321,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Int_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1192C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1694C14"
                     },
                     {
                       "kind": "span",
@@ -15667,10 +16386,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Inf",
           "qualifier": "(generic instantiation)",
-          "line": 1156,
+          "line": 1600,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15678,7 +16406,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1156,
+                  "number": 1600,
                   "children": [
                     {
                       "kind": "span",
@@ -15699,7 +16427,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Inf",
-                      "href": "docs/vulkan__math__common___spec.html#L1156C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1600C14"
                     },
                     {
                       "kind": "span",
@@ -15761,15 +16489,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Determine whether the input holds an Inf. Always returns false in Ada.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@returns False, always.\n"
+                  "text": "Determine whether the input holds an Inf. Always returns false.\n"
                 }
               ]
             }
@@ -15782,10 +16502,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Inf",
           "qualifier": "(generic instantiation)",
-          "line": 1157,
+          "line": 1610,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15793,7 +16522,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1157,
+                  "number": 1610,
                   "children": [
                     {
                       "kind": "span",
@@ -15814,7 +16543,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Inf",
-                      "href": "docs/vulkan__math__common___spec.html#L1157C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1610C14"
                     },
                     {
                       "kind": "span",
@@ -15870,6 +16599,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf. Always returns false.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15880,10 +16618,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Inf",
           "qualifier": "(generic instantiation)",
-          "line": 1158,
+          "line": 1621,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15891,7 +16638,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1158,
+                  "number": 1621,
                   "children": [
                     {
                       "kind": "span",
@@ -15912,7 +16659,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Inf",
-                      "href": "docs/vulkan__math__common___spec.html#L1158C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1621C14"
                     },
                     {
                       "kind": "span",
@@ -15967,6 +16714,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Is_Inf() component-wise to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting vector of boolean values is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15977,10 +16737,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Inf",
           "qualifier": "(generic instantiation)",
-          "line": 1159,
+          "line": 1632,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15988,7 +16757,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1159,
+                  "number": 1632,
                   "children": [
                     {
                       "kind": "span",
@@ -16009,7 +16778,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Inf",
-                      "href": "docs/vulkan__math__common___spec.html#L1159C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1632C14"
                     },
                     {
                       "kind": "span",
@@ -16062,6 +16831,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Is_Inf() component-wise to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting vector of boolean values is returned.\n"
                 }
               ]
             }
@@ -16074,10 +16856,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Nan",
           "qualifier": "(generic instantiation)",
-          "line": 1144,
+          "line": 1558,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16085,7 +16876,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1144,
+                  "number": 1558,
                   "children": [
                     {
                       "kind": "span",
@@ -16106,7 +16897,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Nan",
-                      "href": "docs/vulkan__math__common___spec.html#L1144C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1558C14"
                     },
                     {
                       "kind": "span",
@@ -16168,15 +16959,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Determine whether the input holds a NaN. Always returns false in Ada.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@returns False, always\n"
+                  "text": "Determine whether the input holds a NaN. Always returns false.\n"
                 }
               ]
             }
@@ -16189,10 +16972,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Nan",
           "qualifier": "(generic instantiation)",
-          "line": 1145,
+          "line": 1568,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16200,7 +16992,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1145,
+                  "number": 1568,
                   "children": [
                     {
                       "kind": "span",
@@ -16221,7 +17013,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Nan",
-                      "href": "docs/vulkan__math__common___spec.html#L1145C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1568C14"
                     },
                     {
                       "kind": "span",
@@ -16277,6 +17069,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN. Always returns false.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16287,10 +17088,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Nan",
           "qualifier": "(generic instantiation)",
-          "line": 1146,
+          "line": 1579,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16298,7 +17108,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1146,
+                  "number": 1579,
                   "children": [
                     {
                       "kind": "span",
@@ -16319,7 +17129,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Nan",
-                      "href": "docs/vulkan__math__common___spec.html#L1146C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1579C14"
                     },
                     {
                       "kind": "span",
@@ -16374,6 +17184,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Is_Nan() component-wise to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting vector of boolean values is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16384,10 +17207,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_Nan",
           "qualifier": "(generic instantiation)",
-          "line": 1147,
+          "line": 1590,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16395,7 +17227,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1147,
+                  "number": 1590,
                   "children": [
                     {
                       "kind": "span",
@@ -16416,7 +17248,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Nan",
-                      "href": "docs/vulkan__math__common___spec.html#L1147C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1590C14"
                     },
                     {
                       "kind": "span",
@@ -16469,6 +17301,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Is_Nan() component-wise to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting vector of boolean values is returned.\n"
                 }
               ]
             }
@@ -16481,7 +17326,7 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1241,
+          "line": 1743,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -16492,7 +17337,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1241,
+                  "number": 1743,
                   "children": [
                     {
                       "kind": "span",
@@ -16513,7 +17358,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1241C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1743C14"
                     },
                     {
                       "kind": "span",
@@ -16627,7 +17472,7 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1242,
+          "line": 1744,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -16638,7 +17483,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1242,
+                  "number": 1744,
                   "children": [
                     {
                       "kind": "span",
@@ -16659,7 +17504,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1242C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1744C14"
                     },
                     {
                       "kind": "span",
@@ -16725,7 +17570,7 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1243,
+          "line": 1745,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -16736,7 +17581,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1243,
+                  "number": 1745,
                   "children": [
                     {
                       "kind": "span",
@@ -16757,7 +17602,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1243C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1745C14"
                     },
                     {
                       "kind": "span",
@@ -16822,7 +17667,7 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1244,
+          "line": 1746,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -16833,7 +17678,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1244,
+                  "number": 1746,
                   "children": [
                     {
                       "kind": "span",
@@ -16854,7 +17699,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1244C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1746C14"
                     },
                     {
                       "kind": "span",
@@ -17871,10 +18716,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1051,
+          "line": 1152,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix x and y together using a linear blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17882,7 +18736,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1051,
+                  "number": 1152,
                   "children": [
                     {
                       "kind": "span",
@@ -17903,7 +18757,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1051C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1152C14"
                     },
                     {
                       "kind": "span",
@@ -17958,6 +18812,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the linear mix function component-wise on input vectors x and y, using\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "components from input vector a as the blend coefficient. The resulting vector\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -17968,10 +18839,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1052,
+          "line": 1163,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix x and y together using a linear blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17979,7 +18859,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1052,
+                  "number": 1163,
                   "children": [
                     {
                       "kind": "span",
@@ -18000,7 +18880,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1052C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1163C14"
                     },
                     {
                       "kind": "span",
@@ -18055,6 +18935,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the linear mix function component-wise on input vectors x and y, using\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "input scalar a as the blend coefficient. The resulting vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18065,10 +18958,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1053,
+          "line": 1175,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix x and y together using a linear blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18076,7 +18978,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1053,
+                  "number": 1175,
                   "children": [
                     {
                       "kind": "span",
@@ -18097,7 +18999,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1053C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1175C14"
                     },
                     {
                       "kind": "span",
@@ -18152,6 +19054,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the linear mix function component-wise on input vectors x and y, using\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "components from input vector a as the blend coefficient. The resulting vector\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18162,10 +19081,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1054,
+          "line": 1186,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix x and y together using a linear blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18173,7 +19101,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1054,
+                  "number": 1186,
                   "children": [
                     {
                       "kind": "span",
@@ -18194,7 +19122,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1054C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1186C14"
                     },
                     {
                       "kind": "span",
@@ -18249,6 +19177,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the linear mix function component-wise on input vectors x and y, using\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "input scalar a as the blend coefficient. The resulting vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18259,10 +19200,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1087,
+          "line": 1328,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18270,7 +19220,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1087,
+                  "number": 1328,
                   "children": [
                     {
                       "kind": "span",
@@ -18291,7 +19241,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1087C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1328C14"
                     },
                     {
                       "kind": "span",
@@ -18346,6 +19296,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies the boolean Mix() function component wise to input vectors x, y \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "and a, where components of a are used as the mixing coefficent. The resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18356,10 +19323,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1088,
+          "line": 1340,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18367,7 +19343,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1088,
+                  "number": 1340,
                   "children": [
                     {
                       "kind": "span",
@@ -18388,7 +19364,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1088C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1340C14"
                     },
                     {
                       "kind": "span",
@@ -18443,6 +19419,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies the boolean Mix() function component wise to input vectors x, y \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "and a, where components of a are used as the mixing coefficent. The resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18453,10 +19446,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1089,
+          "line": 1352,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18464,7 +19466,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1089,
+                  "number": 1352,
                   "children": [
                     {
                       "kind": "span",
@@ -18485,7 +19487,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1089C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1352C14"
                     },
                     {
                       "kind": "span",
@@ -18540,6 +19542,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies the boolean Mix() function component wise to input vectors x, y \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "and a, where components of a are used as the mixing coefficent. The resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18550,10 +19569,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1090,
+          "line": 1364,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18561,7 +19589,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1090,
+                  "number": 1364,
                   "children": [
                     {
                       "kind": "span",
@@ -18582,7 +19610,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1090C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1364C14"
                     },
                     {
                       "kind": "span",
@@ -18637,6 +19665,23 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies the boolean Mix() function component wise to input vectors x, y \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "and a, where components of a are used as the mixing coefficent. The resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18647,10 +19692,19 @@ GNATdoc.Documentation = {
         {
           "label": "Mix",
           "qualifier": "(generic instantiation)",
-          "line": 1091,
+          "line": 1376,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Mix the values 'x' and 'y' together using a boolean blend function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18658,7 +19712,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1091,
+                  "number": 1376,
                   "children": [
                     {
                       "kind": "span",
@@ -18679,7 +19733,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mix",
-                      "href": "docs/vulkan__math__common___spec.html#L1091C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1376C14"
                     },
                     {
                       "kind": "span",
@@ -18732,6 +19786,23 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies the boolean Mix() function component wise to input vectors x, y \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "and a, where components of a are used as the mixing coefficent. The resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector is returned.\n"
                 }
               ]
             }
@@ -20297,10 +21368,19 @@ GNATdoc.Documentation = {
         {
           "label": "Smooth_Step",
           "qualifier": "(generic instantiation)",
-          "line": 1130,
+          "line": 1483,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Smooth unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -20308,7 +21388,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1130,
+                  "number": 1483,
                   "children": [
                     {
                       "kind": "span",
@@ -20329,7 +21409,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1130C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1483C14"
                     },
                     {
                       "kind": "span",
@@ -20401,15 +21481,43 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
+                  "text": "Compute the smooth step function of x between edge0 and edge1:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "If x is less than edge0, the step is 0. \n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "If x is greater than edge1 the step is 1.\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "If x is between edge0 and edge1, the step is range [0.0 .. 1.0].\n"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "kind": "span",
-                  "text": "Smooth step function.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Compute:  t = clamp ((x - edge0) / (edge1 - edge0), 0, 1).\n"
+                  "text": "This algorithm is computed as follows:\n"
                 }
               ]
             },
@@ -20421,26 +21529,36 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
+                      "text": "t = clamp ((x - edge0) / (edge1 - edge0), 0, 1)."
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
                       "text": "t = t^2(3 - 2t)"
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@param[in]     edge0 The lower edge.\n"
                 },
                 {
-                  "kind": "span",
-                  "text": "@param[in]     edge1 The upper edge.\n"
+                  "number": 3,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "return t."
+                    }
+                  ]
                 },
                 {
-                  "kind": "span",
-                  "text": "@param[in]     x     The value to compute the smooth step of.\n"
+                  "number": 4,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": ""
+                    }
+                  ]
                 }
               ]
             }
@@ -20453,115 +21571,27 @@ GNATdoc.Documentation = {
         {
           "label": "Smooth_Step",
           "qualifier": "(generic instantiation)",
-          "line": 1131,
+          "line": 1502,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
-          ],
-          "description": [
             {
-              "kind": "code",
+              "kind": "paragraph",
               "children": [
                 {
-                  "kind": "line",
-                  "number": 1131,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1131C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Smooth_Step"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
+                  "kind": "span",
+                  "text": "Smooth unit step function.\n"
                 }
               ]
             }
           ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L10006C14"
-          }
-        },
-        {
-          "label": "Smooth_Step",
-          "qualifier": "(generic instantiation)",
-          "line": 1132,
-          "column": 14,
-          "src": "srcs/vulkan-math-common.ads.html",
-          "summary": [
-          ],
           "description": [
             {
               "kind": "code",
               "children": [
                 {
                   "kind": "line",
-                  "number": 1132,
+                  "number": 1502,
                   "children": [
                     {
                       "kind": "span",
@@ -20582,104 +21612,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1132C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Smooth_Step"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L10033C14"
-          }
-        },
-        {
-          "label": "Smooth_Step",
-          "qualifier": "(generic instantiation)",
-          "line": 1133,
-          "column": 14,
-          "src": "srcs/vulkan-math-common.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 1133,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1133C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1502C14"
                     },
                     {
                       "kind": "span",
@@ -20745,6 +21678,92 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute the smooth step function of x between edge0 and edge1:\n"
+                },
+                {
+                  "kind": "ul",
+                  "children": [
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "If x is less than edge0, the step is 0. \n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "If x is greater than edge1 the step is 1.\n"
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "li",
+                      "children": [
+                        {
+                          "kind": "span",
+                          "text": "If x is between edge0 and edge1, the step is range [0.0 .. 1.0].\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "span",
+                  "text": "This algorithm is computed as follows:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "t = clamp ((x - edge0) / (edge1 - edge0), 0, 1)."
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "t = t^2(3 - 2t)"
+                    }
+                  ]
+                },
+                {
+                  "number": 3,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "return t."
+                    }
+                  ]
+                },
+                {
+                  "number": 4,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -20755,10 +21774,19 @@ GNATdoc.Documentation = {
         {
           "label": "Smooth_Step",
           "qualifier": "(generic instantiation)",
-          "line": 1134,
+          "line": 1513,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Smooth unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -20766,7 +21794,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1134,
+                  "number": 1513,
                   "children": [
                     {
                       "kind": "span",
@@ -20787,7 +21815,249 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1134C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1513C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IV_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Smooth_Step"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Smooth_Step() function component-wise on input vectors edge0,\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "edge1, and x. The resulting vector is returned.\n"
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L10006C14"
+          }
+        },
+        {
+          "label": "Smooth_Step",
+          "qualifier": "(generic instantiation)",
+          "line": 1525,
+          "column": 14,
+          "src": "srcs/vulkan-math-common.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Smooth unit step function.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 1525,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Smooth_Step",
+                      "href": "docs/vulkan__math__common___spec.html#L1525C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IS_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Smooth_Step"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Smooth_Step() function component-wise on input vector x, using\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "the input scalars edge0 and edge1 for each component. Return the resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L10089C14"
+          }
+        },
+        {
+          "label": "Smooth_Step",
+          "qualifier": "(generic instantiation)",
+          "line": 1536,
+          "column": 14,
+          "src": "srcs/vulkan-math-common.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Smooth unit step function.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 1536,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Smooth_Step",
+                      "href": "docs/vulkan__math__common___spec.html#L1536C14"
                     },
                     {
                       "kind": "span",
@@ -20842,6 +22112,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Smooth_Step() function component-wise on input vectors edge0,\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "edge1, and x. The resulting vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -20852,10 +22135,19 @@ GNATdoc.Documentation = {
         {
           "label": "Smooth_Step",
           "qualifier": "(generic instantiation)",
-          "line": 1135,
+          "line": 1548,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Smooth unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -20863,7 +22155,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1135,
+                  "number": 1548,
                   "children": [
                     {
                       "kind": "span",
@@ -20884,7 +22176,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1135C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1548C14"
                     },
                     {
                       "kind": "span",
@@ -20914,7 +22206,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IV_IV_IS_RV"
+                      "text": "GDT.Apply_Func_IS_IS_IV_RV"
                     },
                     {
                       "kind": "span",
@@ -20939,20 +22231,46 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Smooth_Step() function component-wise on input vector x, using\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "the input scalars edge0 and edge1 for each component. Return the resulting\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L10033C14"
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L10089C14"
           }
         },
         {
           "label": "Step",
           "qualifier": "(generic instantiation)",
-          "line": 1111,
+          "line": 1431,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -20960,7 +22278,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1111,
+                  "number": 1431,
                   "children": [
                     {
                       "kind": "span",
@@ -20981,7 +22299,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1111C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1431C14"
                     },
                     {
                       "kind": "span",
@@ -21036,6 +22354,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Step() to each component of input vectors x and edge, returning the\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -21046,10 +22377,19 @@ GNATdoc.Documentation = {
         {
           "label": "Step",
           "qualifier": "(generic instantiation)",
-          "line": 1112,
+          "line": 1442,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -21057,7 +22397,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1112,
+                  "number": 1442,
                   "children": [
                     {
                       "kind": "span",
@@ -21078,7 +22418,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1112C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1442C14"
                     },
                     {
                       "kind": "span",
@@ -21133,6 +22473,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Step() to each component of input vectors x using the scalar edge\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "for each component. The resulting vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -21143,10 +22496,19 @@ GNATdoc.Documentation = {
         {
           "label": "Step",
           "qualifier": "(generic instantiation)",
-          "line": 1113,
+          "line": 1453,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -21154,7 +22516,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1113,
+                  "number": 1453,
                   "children": [
                     {
                       "kind": "span",
@@ -21175,7 +22537,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1113C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1453C14"
                     },
                     {
                       "kind": "span",
@@ -21230,6 +22592,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Step() to each component of input vectors x and edge, returning the\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -21240,10 +22615,19 @@ GNATdoc.Documentation = {
         {
           "label": "Step",
           "qualifier": "(generic instantiation)",
-          "line": 1114,
+          "line": 1464,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unit step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -21251,7 +22635,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1114,
+                  "number": 1464,
                   "children": [
                     {
                       "kind": "span",
@@ -21272,7 +22656,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Step",
-                      "href": "docs/vulkan__math__common___spec.html#L1114C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1464C14"
                     },
                     {
                       "kind": "span",
@@ -21325,6 +22709,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Step() to each component of input vectors x using the scalar edge\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "for each component. The resulting vector is returned.\n"
                 }
               ]
             }
@@ -21575,7 +22972,7 @@ GNATdoc.Documentation = {
         {
           "label": "Uint_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1190,
+          "line": 1692,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -21586,7 +22983,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1190,
+                  "number": 1692,
                   "children": [
                     {
                       "kind": "span",
@@ -21607,7 +23004,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Uint_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1190C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1692C14"
                     },
                     {
                       "kind": "span",
@@ -21633,7 +23030,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1191,
+                  "number": 1693,
                   "children": [
                     {
                       "kind": "span",
@@ -21731,7 +23128,7 @@ GNATdoc.Documentation = {
         {
           "label": "Uint_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1193,
+          "line": 1695,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
@@ -21742,7 +23139,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1193,
+                  "number": 1695,
                   "children": [
                     {
                       "kind": "span",
@@ -21763,7 +23160,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Uint_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1193C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1695C14"
                     },
                     {
                       "kind": "span",

@@ -198,6 +198,13 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-operators.ads.html#L362"
     },
     {
+      "label": "Apply_Func_IS_IS_IV_RV",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10089C14",
+      "declared": "Vulkan.Math.GenType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10089"
+    },
+    {
       "label": "Apply_Func_IS_IV_RV",
       "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14",
       "declared": "Vulkan.Math.GenType",
@@ -570,17 +577,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Fma",
-      "docHref": "docs/vulkan__math__common___spec.html#L1204C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1706C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1204"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1706"
     },
     {
       "label": "Fma",
-      "docHref": "docs/vulkan__math__common___spec.html#L1207C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1709C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1207"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1709"
     },
     {
       "label": "Fract",
@@ -1438,52 +1445,52 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1047C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1115C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1047"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1115"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1049C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1139C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1049"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1139"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1072C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1210C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1072"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1210"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1075C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1236C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1075"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1236"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1078C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1262C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1078"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1262"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1081C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1288C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1081"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1288"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L1084C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1314C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1084"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1314"
     },
     {
       "label": "Modulo",
@@ -1676,17 +1683,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Step",
-      "docHref": "docs/vulkan__math__common___spec.html#L1107C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1397C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1107"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1397"
     },
     {
       "label": "Step",
-      "docHref": "docs/vulkan__math__common___spec.html#L1109C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1419C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1109"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1419"
     },
     {
       "label": "Tan",
