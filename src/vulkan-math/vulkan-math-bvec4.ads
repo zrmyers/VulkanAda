@@ -51,6 +51,9 @@ package Vulkan.Math.Bvec4 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Bvec4:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to false.
     --<
@@ -62,6 +65,9 @@ package Vulkan.Math.Bvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --<
@@ -76,6 +82,9 @@ package Vulkan.Math.Bvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --<
@@ -91,6 +100,9 @@ package Vulkan.Math.Bvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --<
@@ -113,6 +125,9 @@ package Vulkan.Math.Bvec4 is
         renames GBT.Make_GenType;
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar value with a Bvec3.
     --<
@@ -135,6 +150,9 @@ package Vulkan.Math.Bvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a Bvec3 with a scalar value.
     --<
@@ -157,95 +175,107 @@ package Vulkan.Math.Bvec4 is
                     scalar_value      )) with Inline;
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating a Bvec2 with a Bvec2.
-     --<
-     --<     Bvec4 = [vec2_value1, vec2_value2]
-     --<
-     --< @param vec2_value1 
-     --< The first Bvec2.
-     --<
-     --< @param vec2_value2 
-     --< The second Bvec2.
-     --<
-     --< @return 
-     --< The instance of Bvec4.
-     ---------------------------------------------------------------------------
-     function Make_Bvec4 (vec2_value1, vec2_value2 : in     Vkm_Bvec2) return Vkm_Bvec4 is
-         (Make_Bvec4(vec2_value1.data(0),vec2_value1.data(1),
-                     vec2_value2.data(0),vec2_value2.data(1)));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating a Bvec2 with a Bvec2.
+    --<
+    --<     Bvec4 = [vec2_value1, vec2_value2]
+    --<
+    --< @param vec2_value1 
+    --< The first Bvec2.
+    --<
+    --< @param vec2_value2 
+    --< The second Bvec2.
+    --<
+    --< @return 
+    --< The instance of Bvec4.
+    ---------------------------------------------------------------------------
+    function Make_Bvec4 (vec2_value1, vec2_value2 : in     Vkm_Bvec2) return Vkm_Bvec4 is
+        (Make_Bvec4(vec2_value1.data(0),vec2_value1.data(1),
+                    vec2_value2.data(0),vec2_value2.data(1)));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Bvec2.
-     --<
-     --<     Bvec4 = [scalar1, scalar2, vec2_value]
-     --<
-     --< @param scalar1    
-     --< First scalar value.
-     --<
-     --< @param scalar2
-     --< Second scalar value.
-     --<
-     --< @param vec2_value 
-     --< The Bvec2 value.
-     --<
-     --< @return 
-     --< The instance of Bvec4.
-     ---------------------------------------------------------------------------
-     function Make_Bvec4 (scalar1, scalar2 : in     Vkm_Bool;
-                          vec2_value       : in     Vkm_Bvec2) return Vkm_Bvec4 is
-         (Make_Bvec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Bvec2.
+    --<
+    --<     Bvec4 = [scalar1, scalar2, vec2_value]
+    --<
+    --< @param scalar1    
+    --< First scalar value.
+    --<
+    --< @param scalar2
+    --< Second scalar value.
+    --<
+    --< @param vec2_value 
+    --< The Bvec2 value.
+    --<
+    --< @return 
+    --< The instance of Bvec4.
+    ---------------------------------------------------------------------------
+    function Make_Bvec4 (scalar1, scalar2 : in     Vkm_Bool;
+                         vec2_value       : in     Vkm_Bvec2) return Vkm_Bvec4 is
+        (Make_Bvec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Bvec2.
-     --<
-     --<     Bvec4 = [scalar1, vec2_value, scalar2]
-     --<
-     --< @param scalar1
-     --< First scalar value.
-     --<
-     --< @param vec2_value 
-     --< The Bvec2 value.
-     --<
-     --< @param scalar2
-     --< Second scalar value.
-     --<
-     --< @return
-     --< The instance of Bvec4.
-     ---------------------------------------------------------------------------
-     function Make_Bvec4 (scalar1     : in     Vkm_Bool;
-                          vec2_value : in     Vkm_Bvec2 ;
-                          scalar2     : in     Vkm_Bool) return Vkm_Bvec4 is
-         (Make_Bvec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Bvec2.
+    --<
+    --<     Bvec4 = [scalar1, vec2_value, scalar2]
+    --<
+    --< @param scalar1
+    --< First scalar value.
+    --<
+    --< @param vec2_value 
+    --< The Bvec2 value.
+    --<
+    --< @param scalar2
+    --< Second scalar value.
+    --<
+    --< @return
+    --< The instance of Bvec4.
+    ---------------------------------------------------------------------------
+    function Make_Bvec4 (scalar1     : in     Vkm_Bool;
+                         vec2_value : in     Vkm_Bvec2 ;
+                         scalar2     : in     Vkm_Bool) return Vkm_Bvec4 is
+        (Make_Bvec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Bvec2.
-     --<
-     --< Bvec4 = [vec2_value, scalar1, scalar2]
-     --<
-     --< @param vec2_value 
-     --< The Bvec2 value.
-     --<
-     --< @param scalar1
-     --< First scalar value.
-     --<
-     --< @param scalar2 
-     --< Second scalar value.
-     --<
-     --< @return
-     --< The instance of Bvec4.
-     ---------------------------------------------------------------------------
-     function Make_Bvec4 (vec2_value : in     Vkm_Bvec2 ;
-                          scalar1     : in     Vkm_Bool;
-                          scalar2     : in     Vkm_Bool) return Vkm_Bvec4 is
-         (Make_Bvec4(vec2_value.data(0),vec2_value.data(1), scalar1, scalar2));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Bvec2.
+    --<
+    --< Bvec4 = [vec2_value, scalar1, scalar2]
+    --<
+    --< @param vec2_value 
+    --< The Bvec2 value.
+    --<
+    --< @param scalar1
+    --< First scalar value.
+    --<
+    --< @param scalar2 
+    --< Second scalar value.
+    --<
+    --< @return
+    --< The instance of Bvec4.
+    ---------------------------------------------------------------------------
+    function Make_Bvec4 (vec2_value : in     Vkm_Bvec2 ;
+                         scalar1     : in     Vkm_Bool;
+                         scalar2     : in     Vkm_Bool) return Vkm_Bvec4 is
+        (Make_Bvec4(vec2_value.data(0),vec2_value.data(1), scalar1, scalar2));
 
 
 end Vulkan.Math.Bvec4;

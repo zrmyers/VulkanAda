@@ -49,6 +49,9 @@ package Vulkan.Math.Uvec4 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Uvec4:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to 0.0.
     --
@@ -59,6 +62,9 @@ package Vulkan.Math.Uvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --
@@ -71,6 +77,9 @@ package Vulkan.Math.Uvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --
@@ -85,6 +94,9 @@ package Vulkan.Math.Uvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --
@@ -99,6 +111,9 @@ package Vulkan.Math.Uvec4 is
         renames GUT.Make_GenType;
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar value with a Uvec3.
     --
@@ -118,6 +133,9 @@ package Vulkan.Math.Uvec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a Uvec3 with a scalar value.
     --
@@ -136,73 +154,85 @@ package Vulkan.Math.Uvec4 is
                     scalar_value      )) with Inline;
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating a Uvec2 with a Uvec2.
-     --
-     --< Uvec4 = [vec2_value1, vec2_value2]
-     --
-     --< @param     vec2_value1 The first Uvec2.
-     --< @param     vec2_value2 The second Uvec2.
-     --
-     --< @return The instance of Uvec4.
-     ---------------------------------------------------------------------------
-     function Make_Uvec4 (vec2_value1, vec2_value2 : in     Vkm_Uvec2) return Vkm_Uvec4 is
-         (Make_Uvec4(vec2_value1.data(0),vec2_value1.data(1),
-                     vec2_value2.data(0),vec2_value2.data(1)));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating a Uvec2 with a Uvec2.
+    --
+    --< Uvec4 = [vec2_value1, vec2_value2]
+    --
+    --< @param     vec2_value1 The first Uvec2.
+    --< @param     vec2_value2 The second Uvec2.
+    --
+    --< @return The instance of Uvec4.
+    ---------------------------------------------------------------------------
+    function Make_Uvec4 (vec2_value1, vec2_value2 : in     Vkm_Uvec2) return Vkm_Uvec4 is
+        (Make_Uvec4(vec2_value1.data(0),vec2_value1.data(1),
+                    vec2_value2.data(0),vec2_value2.data(1)));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Uvec2.
-     --
-     --< Uvec4 = [scalar1, scalar2, vec2_value]
-     --
-     --< @param     scalar1    First scalar value.
-     --< @param     scalar2    Second scalar value.
-     --< @param     vec2_value The Uvec2 value.
-     --
-     --< @return The instance of Uvec4.
-     ---------------------------------------------------------------------------
-     function Make_Uvec4 (scalar1, scalar2 : in     Vkm_Uint;
-                          vec2_value       : in     Vkm_Uvec2) return Vkm_Uvec4 is
-         (Make_Uvec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Uvec2.
+    --
+    --< Uvec4 = [scalar1, scalar2, vec2_value]
+    --
+    --< @param     scalar1    First scalar value.
+    --< @param     scalar2    Second scalar value.
+    --< @param     vec2_value The Uvec2 value.
+    --
+    --< @return The instance of Uvec4.
+    ---------------------------------------------------------------------------
+    function Make_Uvec4 (scalar1, scalar2 : in     Vkm_Uint;
+                         vec2_value       : in     Vkm_Uvec2) return Vkm_Uvec4 is
+        (Make_Uvec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Uvec2.
-     --
-     --< Uvec4 = [scalar1, vec2_value, scalar2]
-     --
-     --< @param     scalar1    First scalar value.
-     --< @param     vec2_value The Uvec2 value.
-     --< @param     scalar2    Second scalar value.
-     --
-     --< @return The instance of Uvec4.
-     ---------------------------------------------------------------------------
-     function Make_Uvec4 (scalar1    : in     Vkm_Uint;
-                          vec2_value : in     Vkm_Uvec2 ;
-                          scalar2    : in     Vkm_Uint) return Vkm_Uvec4 is
-         (Make_Uvec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Uvec2.
+    --
+    --< Uvec4 = [scalar1, vec2_value, scalar2]
+    --
+    --< @param     scalar1    First scalar value.
+    --< @param     vec2_value The Uvec2 value.
+    --< @param     scalar2    Second scalar value.
+    --
+    --< @return The instance of Uvec4.
+    ---------------------------------------------------------------------------
+    function Make_Uvec4 (scalar1    : in     Vkm_Uint;
+                         vec2_value : in     Vkm_Uvec2 ;
+                         scalar2    : in     Vkm_Uint) return Vkm_Uvec4 is
+        (Make_Uvec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Uvec2.
-     --
-     --< Uvec4 = [vec2_value, scalar1, scalar2]
-     --
-     --< @param     vec2_value The Uvec2 value.
-     --< @param     scalar1    First scalar value.
-     --< @param     scalar2    Second scalar value.
-     --
-     --< @return The instance of Uvec4.
-     ---------------------------------------------------------------------------
-     function Make_Uvec4 (vec2_value : in     Vkm_Uvec2 ;
-                          scalar1     : in     Vkm_Uint;
-                          scalar2     : in     Vkm_Uint) return Vkm_Uvec4 is
-         (Make_Uvec4(vec2_value.data(0),vec2_value.data(1), scalar1, scalar2));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Uvec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Uvec2.
+    --
+    --< Uvec4 = [vec2_value, scalar1, scalar2]
+    --
+    --< @param     vec2_value The Uvec2 value.
+    --< @param     scalar1    First scalar value.
+    --< @param     scalar2    Second scalar value.
+    --
+    --< @return The instance of Uvec4.
+    ---------------------------------------------------------------------------
+    function Make_Uvec4 (vec2_value : in     Vkm_Uvec2 ;
+                         scalar1     : in     Vkm_Uint;
+                         scalar2     : in     Vkm_Uint) return Vkm_Uvec4 is
+        (Make_Uvec4(vec2_value.data(0),vec2_value.data(1), scalar1, scalar2));
 
 
 end Vulkan.Math.Uvec4;

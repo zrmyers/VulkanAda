@@ -49,16 +49,22 @@ package Vulkan.Math.Ivec4 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Ivec4:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to 0.0.
     --
-    --< @return a Ivec4 with all components set to 0.0.
+    --< @return An Ivec4 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Ivec4 return Vkm_Ivec4 is
         (GIT.Make_GenType(Last_Index => 3, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --
@@ -71,6 +77,9 @@ package Vulkan.Math.Ivec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --
@@ -85,6 +94,9 @@ package Vulkan.Math.Ivec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --
@@ -99,10 +111,13 @@ package Vulkan.Math.Ivec4 is
         renames GIT.Make_GenType;
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar value with a Ivec3.
     --
-    --< Ivec4 = [scalar_value, vec3_value  ]
+    --<     Ivec4 = [scalar_value, vec3_value  ]
     --
     --< @param     scalar_value The scalar value to concatenate with the Ivec3.
     --< @param     vec3_value   The Ivec3 to concatenate to the scalar value.
@@ -118,14 +133,17 @@ package Vulkan.Math.Ivec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a Ivec3 with a scalar value.
-    --
-    --< Ivec4 = [vec3_value, scalar_value]
-    --
+    --<
+    --<     Ivec4 = [vec3_value, scalar_value]
+    --<
     --< @param     vec3_value   The Ivec3 to concatenate to the scalar value.
     --< @param     scalar_value The scalar value to concatenate to the Ivec3.
-    --
+    --<
     --< @return The instance of Ivec4.
     ----------------------------------------------------------------------------
     function Make_Ivec4 (vec3_value   : in     Vkm_Ivec3;
@@ -136,73 +154,85 @@ package Vulkan.Math.Ivec4 is
                     scalar_value      )) with Inline;
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating a Ivec2 with a Ivec2.
-     --
-     --< Ivec4 = [vec2_value1, vec2_value2]
-     --
-     --< @param     vec2_value1 The first Ivec2.
-     --< @param     vec2_value2 The second Ivec2.
-     --
-     --< @return The instance of Ivec4.
-     ---------------------------------------------------------------------------
-     function Make_Ivec4 (vec2_value1, vec2_value2 : in     Vkm_Ivec2) return Vkm_Ivec4 is
-         (Make_Ivec4(vec2_value1.data(0),vec2_value1.data(1),
-                     vec2_value2.data(0),vec2_value2.data(1)));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating a Ivec2 with a Ivec2.
+    --<
+    --<     Ivec4 = [vec2_value1, vec2_value2]
+    --<
+    --< @param     vec2_value1 The first Ivec2.
+    --< @param     vec2_value2 The second Ivec2.
+    --<
+    --< @return The instance of Ivec4.
+    ---------------------------------------------------------------------------
+    function Make_Ivec4 (vec2_value1, vec2_value2 : in     Vkm_Ivec2) return Vkm_Ivec4 is
+        (Make_Ivec4(vec2_value1.data(0),vec2_value1.data(1),
+                    vec2_value2.data(0),vec2_value2.data(1)));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Ivec2.
-     --
-     --< Ivec4 = [scalar1, scalar2, vec2_value]
-     --
-     --< @param     scalar1    First scalar value.
-     --< @param     scalar2    Second scalar value.
-     --< @param     vec2_value The Ivec2 value.
-     --
-     --< @return The instance of Ivec4.
-     ---------------------------------------------------------------------------
-     function Make_Ivec4 (scalar1, scalar2 : in     Vkm_Int;
-                          vec2_value       : in     Vkm_Ivec2) return Vkm_Ivec4 is
-         (Make_Ivec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Ivec2.
+    --
+    --<     Ivec4 = [scalar1, scalar2, vec2_value]
+    --
+    --< @param     scalar1    First scalar value.
+    --< @param     scalar2    Second scalar value.
+    --< @param     vec2_value The Ivec2 value.
+    --
+    --< @return The instance of Ivec4.
+    ---------------------------------------------------------------------------
+    function Make_Ivec4 (scalar1, scalar2 : in     Vkm_Int;
+                         vec2_value       : in     Vkm_Ivec2) return Vkm_Ivec4 is
+        (Make_Ivec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Ivec2.
-     --
-     --< Ivec4 = [scalar1, vec2_value, scalar2]
-     --
-     --< @param     scalar1    First scalar value.
-     --< @param     vec2_value The Ivec2 value.
-     --< @param     scalar2    Second scalar value.
-     --
-     --< @return The instance of Ivec4.
-     ---------------------------------------------------------------------------
-     function Make_Ivec4 (scalar1    : in     Vkm_Int;
-                          vec2_value : in     Vkm_Ivec2 ;
-                          scalar2    : in     Vkm_Int) return Vkm_Ivec4 is
-         (Make_Ivec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Ivec2.
+    --
+    --<     Ivec4 = [scalar1, vec2_value, scalar2]
+    --
+    --< @param     scalar1    First scalar value.
+    --< @param     vec2_value The Ivec2 value.
+    --< @param     scalar2    Second scalar value.
+    --
+    --< @return The instance of Ivec4.
+    ---------------------------------------------------------------------------
+    function Make_Ivec4 (scalar1    : in     Vkm_Int;
+                         vec2_value : in     Vkm_Ivec2 ;
+                         scalar2    : in     Vkm_Int) return Vkm_Ivec4 is
+        (Make_Ivec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
 
 
-     ---------------------------------------------------------------------------
-     --< @description
-     --< Produce a vector by concatenating two scalar values with a Ivec2.
-     --
-     --< Ivec4 = [vec2_value, scalar1, scalar2]
-     --
-     --< @param     vec2_value The Ivec2 value.
-     --< @param     scalar1    First scalar value.
-     --< @param     scalar2    Second scalar value.
-     --
-     --< @return The instance of Ivec4.
-     ---------------------------------------------------------------------------
-     function Make_Ivec4 (vec2_value : in     Vkm_Ivec2 ;
-                          scalar1     : in     Vkm_Int;
-                          scalar2     : in     Vkm_Int) return Vkm_Ivec4 is
-         (Make_Ivec4(vec2_value.data(0),vec2_value.data(1), scalar1, scalar2));
+    ---------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec4 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating two scalar values with a Ivec2.
+    --<
+    --<     Ivec4 = [vec2_value, scalar1, scalar2]
+    --<
+    --< @param     vec2_value The Ivec2 value.
+    --< @param     scalar1    First scalar value.
+    --< @param     scalar2    Second scalar value.
+    --
+    --< @return The instance of Ivec4.
+    ---------------------------------------------------------------------------
+    function Make_Ivec4 (vec2_value : in     Vkm_Ivec2 ;
+                         scalar1     : in     Vkm_Int;
+                         scalar2     : in     Vkm_Int) return Vkm_Ivec4 is
+        (Make_Ivec4(vec2_value.data(0),vec2_value.data(1), scalar1, scalar2));
 
 
 end Vulkan.Math.Ivec4;

@@ -44,6 +44,9 @@ package Vulkan.Math.Bvec2 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Vec2:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec2 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to false.
     --<
@@ -55,6 +58,9 @@ package Vulkan.Math.Bvec2 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec2 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --<
@@ -69,13 +75,16 @@ package Vulkan.Math.Bvec2 is
 
 
     ----------------------------------------------------------------------------
-    --< @brief
+    --< @summary
+    --< Constructor for Vkm_Bvec2 type.
+    --<
+    --< @description
     --< Produces a vector by copying components from an existing vector.
     --<
     --< @param vec2_value 
     --< The 2D vector to copy components from.
     --<
-    --< @returns 
+    --< @return
     --< A 2D vector with all of its components set equal to the corresponding
     --< components of vec2_value.
     ----------------------------------------------------------------------------
@@ -84,7 +93,10 @@ package Vulkan.Math.Bvec2 is
 
 
     ----------------------------------------------------------------------------
-    --< @brief
+    --< @summary
+    --< Constructor for Vkm_Bvec2 type.
+    --<
+    --< @description
     --< Produces a vector by specifying the values for each of its components.
     --
     --< @param value1 

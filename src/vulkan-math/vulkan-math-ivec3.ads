@@ -47,6 +47,9 @@ package Vulkan.Math.Ivec3 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Ivec3:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec3 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to 0.
     --
@@ -57,25 +60,33 @@ package Vulkan.Math.Ivec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec3 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --
-    --< @param     scalar_value The value to set all components to.
+    --< @param scalar_value 
+    --< The value to set all components to.
     --
-    --< @return An Ivec3 with all components set to scalar_value.
+    --< @return 
+    --<An Ivec3 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Ivec3 (scalar_value : in     Vkm_Int) return Vkm_Ivec3 is
         (GIT.Make_GenType(Last_Index => 2, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec3 type.
+    --<
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --
     --< @param vec3_value 
     --< The Ivec3 to copy components from.
     --
-    --< @returns 
+    --< @return
     --< An Ivec3 with all of its components set equal to the corresponding
     --< components of vec3_value.
     ----------------------------------------------------------------------------
@@ -84,6 +95,9 @@ package Vulkan.Math.Ivec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec3 type.
+    --<
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --
@@ -98,6 +112,9 @@ package Vulkan.Math.Ivec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec3 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar float with a vec2.
     --
@@ -106,7 +123,7 @@ package Vulkan.Math.Ivec3 is
     --< @param     scalar_value The scalar value to concatenate with the Ivec3.
     --< @param     vec2_value   The vec2 to concatenate to the scalar value.
     --
-    --< @returns The instance of Ivec3.
+    --< @return The instance of Ivec3.
     ----------------------------------------------------------------------------
     function Make_Ivec3 (scalar_value : in     Vkm_Int;
                          vec2_value   : in     Vkm_Ivec2 ) return Vkm_Ivec3 is
@@ -114,6 +131,9 @@ package Vulkan.Math.Ivec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Ivec3 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar float with a vec2.
     --
@@ -122,7 +142,7 @@ package Vulkan.Math.Ivec3 is
     --< @param     vec2_value   The vec2 to concatenate to the scalar value.
     --< @param     scalar_value The scalar value to concatenate with the Ivec3.
     --
-    --< @returns The instance of Ivec3.
+    --< @return The instance of Ivec3.
     ----------------------------------------------------------------------------
     function Make_Ivec3 (vec2_value   : in     Vkm_Ivec2;
                          scalar_value : in     Vkm_Int ) return Vkm_Ivec3 is

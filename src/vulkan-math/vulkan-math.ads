@@ -72,6 +72,9 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     -- Conversion Functions
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Indices.
+    --<
     --< @description
     --< Convert a value of type Vkm_Length to a value of type Vkm_Indices.
     --<
@@ -84,6 +87,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Bool.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Bool type.
     --
@@ -98,6 +104,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Bool.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Bool type.
     --
@@ -112,6 +121,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Bool.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Bool type.
     --
@@ -126,6 +138,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Bool.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Bool type.
     --
@@ -140,6 +155,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Uint.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Uint type.
     --
@@ -154,6 +172,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Uint.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Uint type.
     --
@@ -166,6 +187,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Uint.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Uint type.
     --
@@ -178,6 +202,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Uint.
+    --<
     --< @description
     --< Convert a vulkan math type to the Vkm_Uint type.
     --
@@ -190,6 +217,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Int.
+    --<
     --< @description
     --< Convert various VKM Math types to the Vkm_Int type.
     --
@@ -202,6 +232,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Int.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Int
     --< math types.
@@ -216,6 +249,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Int.
+    --<
     --< @description
     --< Convert various VKM Math types to the Vkm_Int type.
     --
@@ -228,6 +264,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Int.
+    --<
     --< @description
     --< Convert various VKM Math types to the Vkm_Int type.
     --
@@ -240,6 +279,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Float.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Float
     --< math types.
@@ -253,6 +295,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Float.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Float
     --< math types.
@@ -266,6 +311,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Float.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Float
     --< math types.
@@ -279,6 +327,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Float.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Float
     --< math types.
@@ -292,7 +343,10 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
-    --< @brief
+    --< @summary
+    --< Convert to Vkm_Float.
+    --<
+    --< @description
     --< The following operations convert various VKM Math types to Vkm_Double
     --< math types.
     --
@@ -305,6 +359,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Double.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Double
     --< math types.
@@ -318,6 +375,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Double.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Double
     --< math types.
@@ -331,6 +391,9 @@ package Vulkan.Math is
     
     
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert to Vkm_Double.
+    --<
     --< @description
     --< The following operations convert various VKM Math types to Vkm_Double
     --< math types.

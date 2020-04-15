@@ -47,6 +47,9 @@ package Vulkan.Math.Bvec3 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Bvec3:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec3 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to false
     --<
@@ -58,6 +61,9 @@ package Vulkan.Math.Bvec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec3 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --<
@@ -72,6 +78,9 @@ package Vulkan.Math.Bvec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec3 type.
+    --<
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --<
@@ -87,6 +96,9 @@ package Vulkan.Math.Bvec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec3 type.
+    --<
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --<
@@ -107,6 +119,9 @@ package Vulkan.Math.Bvec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec3 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar float with a vec2.
     --<
@@ -127,6 +142,9 @@ package Vulkan.Math.Bvec3 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Bvec3 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar float with a vec2.
     --<
