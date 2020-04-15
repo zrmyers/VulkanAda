@@ -10060,6 +10060,34 @@ package Vulkan.Math.GenType is
         with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
     function Apply_Func_IV_IS_IS_RV(IV1      : in     Vkm_GenType;
                                     IS1, IS2 : in     Base_Type) return Vkm_GenType;
+    
+    
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Base_Type on Vkm_GenType vector.
+    --<
+    --< @description
+    --< Apply's a supplied function component wise on one input vectors and two
+    --< scalar values.
+    --<
+    --<    RV := [Func(IS1, IS2, IV1.x) ... Func(IS1, IS2, IV1.w)]
+    --<
+    --< @param IS1
+    --< The first input scalar parameter.
+    --<
+    --< @param IS2
+    --< The second input scalar parameter.
+    --<
+    --< @param IV1
+    --< The input vector parameter.
+    --<
+    --< @return
+    --< The result, RV.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(IS1, IS2, IS3 : in     Base_Type) return Base_Type;
+    function Apply_Func_IS_IS_IV_RV(IS1, IS2 : in     Base_Type;
+                                    IV1      : in     Vkm_GenType) return Vkm_GenType;
 
 
 end Vulkan.Math.GenType;

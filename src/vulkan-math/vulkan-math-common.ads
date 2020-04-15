@@ -1022,157 +1022,659 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     function Clamp (x, minVal, maxVal : in     Vkm_Int)    return Vkm_Int is
         (Min(Max(x,minVal),maxVal)) with Inline;
-        
-        
-    function Clamp is new GFT.Apply_Func_IV_IV_IV_RV(Clamp);
-    function Clamp is new GDT.Apply_Func_IV_IV_IV_RV(Clamp);
-    function Clamp is new GUT.Apply_Func_IV_IV_IV_RV(Clamp);
-    function Clamp is new GIT.Apply_Func_IV_IV_IV_RV(Clamp);
-    function Clamp is new GFT.Apply_Func_IV_IS_IS_RV(Clamp);
-    function Clamp is new GDT.Apply_Func_IV_IS_IS_RV(Clamp);
+
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Mix the values 'x' and 'y' together using a linear blend function.
-    --
-    --< The linear blend function is 'x * (1 - a) + y * a'
-    --
-    --< @param[in]     x The input parameter 'x' that is mixed with 'y'
-    --< @param[in]     y The input paramter 'y' that is mixed with 'x'
-    --< @param[in]     a The input parameter 'a' which is a coefficient in the
-    --<                  linear blend function.
-    --
+    --< @summary
+    --< Clamp x between minVal and maxVal.
+    --<
+    --< @description
+    --< Apply the Clamp() function component-wise on the three input vectors, returning
+    --< a vector with the result.
+    ----------------------------------------------------------------------------
+    function Clamp is new GFT.Apply_Func_IV_IV_IV_RV(Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Clamp x between minVal and maxVal.
+    --<
+    --< @description
+    --< Apply the Clamp() function component-wise on the three input vectors, returning
+    --< a vector with the result.
+    ----------------------------------------------------------------------------
+    function Clamp is new GDT.Apply_Func_IV_IV_IV_RV(Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Clamp x between minVal and maxVal.
+    --<
+    --< @description
+    --< Apply the Clamp() function component-wise on the three input vectors, returning
+    --< a vector with the result.
+    ----------------------------------------------------------------------------
+    function Clamp is new GUT.Apply_Func_IV_IV_IV_RV(Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Clamp x between minVal and maxVal.
+    --<
+    --< @description
+    --< Apply the Clamp() function component-wise on the three input vectors, returning
+    --< a vector with the result.
+    ----------------------------------------------------------------------------
+    function Clamp is new GIT.Apply_Func_IV_IV_IV_RV(Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Clamp x between minVal and maxVal.
+    --<
+    --< @description
+    --< Apply the Clamp() function component-wise on one input vectors using two
+    --< input scalars for the minVal and maxVal of each component, returning a
+    --< vector with the result.
+    ----------------------------------------------------------------------------
+    function Clamp is new GFT.Apply_Func_IV_IS_IS_RV(Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Clamp x between minVal and maxVal.
+    --<
+    --< @description
+    --< Apply the Clamp() function component-wise on one input vectors using two
+    --< input scalars for the minVal and maxVal of each component, returning a
+    --< vector with the result.
+    ----------------------------------------------------------------------------
+    function Clamp is new GDT.Apply_Func_IV_IS_IS_RV(Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix x and y together using a linear blend function.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a linear blend function:
+    --<
+    --<     blend := 'x * (1 - a) + y * a'
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input paramter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is a coefficient in the linear blend function.
+    --<
     --< @return X mixed with y.
     ----------------------------------------------------------------------------
     function Mix (x, y, a : in     Vkm_Float) return Vkm_Float is
         (x * (1.0 - a) + y * a) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix x and y together using a linear blend function.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a linear blend function:
+    --<
+    --<     blend := 'x * (1 - a) + y * a'
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input paramter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is a coefficient in the linear blend function.
+    --<
+    --< @return X mixed with y.
+    ----------------------------------------------------------------------------
     function Mix (x, y, a : in     Vkm_Double) return Vkm_Double is
         (x * (1.0 - a) + y * a) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix x and y together using a linear blend function.
+    --<
+    --< @description
+    --< Apply the linear mix function component-wise on input vectors x and y, using
+    --< components from input vector a as the blend coefficient. The resulting vector
+    --< is returned.
+    ----------------------------------------------------------------------------
     function Mix is new GFT.Apply_Func_IV_IV_IV_RV(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix x and y together using a linear blend function.
+    --<
+    --< @description
+    --< Apply the linear mix function component-wise on input vectors x and y, using
+    --< input scalar a as the blend coefficient. The resulting vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new GFT.Apply_Func_IV_IV_IS_RV(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix x and y together using a linear blend function.
+    --<
+    --< @description
+    --< Apply the linear mix function component-wise on input vectors x and y, using
+    --< components from input vector a as the blend coefficient. The resulting vector
+    --< is returned.
+    ----------------------------------------------------------------------------
     function Mix is new GDT.Apply_Func_IV_IV_IV_RV(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix x and y together using a linear blend function.
+    --<
+    --< @description
+    --< Apply the linear mix function component-wise on input vectors x and y, using
+    --< input scalar a as the blend coefficient. The resulting vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new GDT.Apply_Func_IV_IV_IS_RV(Mix);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
+    --< @summary
     --< Mix the values 'x' and 'y' together using a boolean blend function.
-    --
-    --< The boolean blend function is applied component-wise as follows:
-    --<     x if a is true
-    --<     y if a is false
-    --
-    --< @param[in]     x The input parameter 'x' that is mixed with 'y'
-    --< @param[in]     y The input parameter 'y' that is mixed with 'x'
-    --< @param[in]     a The input parameter 'a' which is the boolean mixing
-    --<                  coefficient.
-    --
-    --< @returns The mixture of x with y.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a boolean blend function:
+    --< - x if a is true
+    --< - y if a is false
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input parameter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is the boolean mixing coefficient.
+    --<
+    --< @return 
+    --< The mixture of x with y.
     ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Float;
                   a    : in     Vkm_Bool) return Vkm_Float is
         (if a then x else y ) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a boolean blend function:
+    --< - x if a is true
+    --< - y if a is false
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input parameter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is the boolean mixing coefficient.
+    --<
+    --< @return 
+    --< The mixture of x with y.
+    ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Double;
                   a    : in     Vkm_Bool) return Vkm_Double is
         (if a then x else y ) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a boolean blend function:
+    --< - x if a is true
+    --< - y if a is false
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input parameter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is the boolean mixing coefficient.
+    --<
+    --< @return 
+    --< The mixture of x with y.
+    ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Uint;
                   a    : in     Vkm_Bool) return Vkm_Uint is
         (if a then x else y ) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a boolean blend function:
+    --< - x if a is true
+    --< - y if a is false
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input parameter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is the boolean mixing coefficient.
+    --<
+    --< @return 
+    --< The mixture of x with y.
+    ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Int;
                   a    : in     Vkm_Bool) return Vkm_Int is
         (if a then x else y ) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Mix the values 'x' and 'y' together using a boolean blend function:
+    --< - x if a is true
+    --< - y if a is false
+    --<
+    --< @param x 
+    --< The input parameter 'x' that is mixed with 'y'
+    --<
+    --< @param y 
+    --< The input parameter 'y' that is mixed with 'x'
+    --<
+    --< @param a 
+    --< The input parameter 'a' which is the boolean mixing coefficient.
+    --<
+    --< @return 
+    --< The mixture of x with y.
+    ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Bool;
                   a    : in     Vkm_Bool) return Vkm_Bool is
         (if a then x else y ) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< and a, where components of a are used as the mixing coefficent. The resulting
+    --< vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new Apply_Func_IVF_IVF_IVB_RVF(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< and a, where components of a are used as the mixing coefficent. The resulting
+    --< vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new Apply_Func_IVD_IVD_IVB_RVD(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< and a, where components of a are used as the mixing coefficent. The resulting
+    --< vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new Apply_Func_IVI_IVI_IVB_RVI(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< and a, where components of a are used as the mixing coefficent. The resulting
+    --< vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new Apply_Func_IVU_IVU_IVB_RVU(Mix);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Mix the values 'x' and 'y' together using a boolean blend function.
+    --<
+    --< @description
+    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< and a, where components of a are used as the mixing coefficent. The resulting
+    --< vector is returned.
+    ----------------------------------------------------------------------------
     function Mix is new GBT.Apply_Func_IV_IV_IV_RV(Mix);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Step function.
-    --
-    --< For each component of edge:
-    --<     y = 0.0 if x <  edge
-    --<     y = 1.0 if x >= edge
-    --
-    --< @param[in]     edge
-    --< @param[in]     x
-    --
-    --< @returns y
+    --< @summary
+    --< Unit step function.
+    --<
+    --< @description
+    --< Compute the step function as follows:
+    --< - Return 0.0 if x <  edge
+    --< - Return 1.0 if x >= edge
+    --<
+    --< @param edge
+    --< The edge input value.
+    --<
+    --< @param x
+    --< The parameter to which the step function is applied.
+    --<
+    --< @return
+    --< Returns the step function.
     ----------------------------------------------------------------------------
     function Step (edge, x : in     Vkm_Float) return Vkm_Float is
         (if x < edge then 0.0 else 1.0) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Unit step function.
+    --<
+    --< @description
+    --< Compute the step function as follows:
+    --< - Return 0.0 if x <  edge
+    --< - Return 1.0 if x >= edge
+    --<
+    --< @param edge
+    --< The edge input value.
+    --<
+    --< @param x
+    --< The parameter to which the step function is applied.
+    --<
+    --< @return
+    --< Returns the step function.
+    ----------------------------------------------------------------------------
     function Step (edge, x : in     Vkm_Double) return Vkm_Double is
         (if x < edge then 0.0 else 1.0) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Unit step function.
+    --<
+    --< @description
+    --< Apply Step() to each component of input vectors x and edge, returning the
+    --< resulting vector.
+    ----------------------------------------------------------------------------
     function Step is new GFT.Apply_Func_IV_IV_RV(Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Unit step function.
+    --<
+    --< @description
+    --< Apply Step() to each component of input vectors x using the scalar edge
+    --< for each component. The resulting vector is returned.
+    ----------------------------------------------------------------------------
     function Step is new GFT.Apply_Func_IV_IS_RV(Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Unit step function.
+    --<
+    --< @description
+    --< Apply Step() to each component of input vectors x and edge, returning the
+    --< resulting vector.
+    ----------------------------------------------------------------------------
     function Step is new GDT.Apply_Func_IV_IV_RV(Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Unit step function.
+    --<
+    --< @description
+    --< Apply Step() to each component of input vectors x using the scalar edge
+    --< for each component. The resulting vector is returned.
+    ----------------------------------------------------------------------------
     function Step is new GDT.Apply_Func_IV_IS_RV(Step);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Smooth step function.
-    --
-    --< Compute:  t = clamp ((x - edge0) / (edge1 - edge0), 0, 1).
-    --<           t = t^2(3 - 2t)
-    --
-    --< @param[in]     edge0 The lower edge.
-    --< @param[in]     edge1 The upper edge.
-    --< @param[in]     x     The value to compute the smooth step of.
-    --
-    --< @return t
+    --< @summary
+    --< Smooth unit step function.
+    --<
+    --< @description
+    --< Compute the smooth step function of x between edge0 and edge1:
+    --< - If x is less than edge0, the step is 0. 
+    --< - If x is greater than edge1 the step is 1.
+    --< - If x is between edge0 and edge1, the step is range [0.0 .. 1.0].
+    --<
+    --< This algorithm is computed as follows:
+    --<     t = clamp ((x - edge0) / (edge1 - edge0), 0, 1).
+    --<     t = t^2(3 - 2t)
+    --<     return t.
+    --<
     ----------------------------------------------------------------------------
     function Smooth_Step is new Vulkan.Math.Numerics.Smooth_Step(Vkm_Float,Clamp);
-    function Smooth_Step is new GFT.Apply_Func_IV_IV_IV_RV(Smooth_Step);
-    function Smooth_Step is new GFT.Apply_Func_IV_IV_IS_RV(Smooth_Step);
-    function Smooth_Step is new Vulkan.Math.Numerics.Smooth_Step(Vkm_Double,Clamp);
-    function Smooth_Step is new GDT.Apply_Func_IV_IV_IV_RV(Smooth_Step);
-    function Smooth_Step is new GDT.Apply_Func_IV_IV_IS_RV(Smooth_Step);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Determine whether the input holds a NaN. Always returns false in Ada.
-    --
-    --< @returns False, always
+    --< @summary
+    --< Smooth unit step function.
+    --<
+    --< @description
+    --< Compute the smooth step function of x between edge0 and edge1:
+    --< - If x is less than edge0, the step is 0. 
+    --< - If x is greater than edge1 the step is 1.
+    --< - If x is between edge0 and edge1, the step is range [0.0 .. 1.0].
+    --<
+    --< This algorithm is computed as follows:
+    --<     t = clamp ((x - edge0) / (edge1 - edge0), 0, 1).
+    --<     t = t^2(3 - 2t)
+    --<     return t.
+    --<
+    ----------------------------------------------------------------------------
+    function Smooth_Step is new Vulkan.Math.Numerics.Smooth_Step(Vkm_Double,Clamp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Smooth unit step function.
+    --<
+    --< @description
+    --< Apply the Smooth_Step() function component-wise on input vectors edge0,
+    --< edge1, and x. The resulting vector is returned.
+    ----------------------------------------------------------------------------
+    function Smooth_Step is new GFT.Apply_Func_IV_IV_IV_RV(Smooth_Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Smooth unit step function.
+    --<
+    --< @description
+    --< Apply the Smooth_Step() function component-wise on input vector x, using
+    --< the input scalars edge0 and edge1 for each component. Return the resulting
+    --< vector.
+    ----------------------------------------------------------------------------
+    function Smooth_Step is new GFT.Apply_Func_IS_IS_IV_RV(Smooth_Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Smooth unit step function.
+    --<
+    --< @description
+    --< Apply the Smooth_Step() function component-wise on input vectors edge0,
+    --< edge1, and x. The resulting vector is returned.
+    ----------------------------------------------------------------------------
+    function Smooth_Step is new GDT.Apply_Func_IV_IV_IV_RV(Smooth_Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Smooth unit step function.
+    --<
+    --< @description
+    --< Apply the Smooth_Step() function component-wise on input vector x, using
+    --< the input scalars edge0 and edge1 for each component. Return the resulting
+    --< vector.
+    ----------------------------------------------------------------------------
+    function Smooth_Step is new GDT.Apply_Func_IS_IS_IV_RV(Smooth_Step);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds a NaN.
+    --<
+    --< @description
+    --< Determine whether the input holds a NaN. Always returns false.
     ----------------------------------------------------------------------------
     function Is_Nan is new Vulkan.Math.Numerics.Is_Nan(Vkm_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds a NaN.
+    --<
+    --< @description
+    --< Determine whether the input holds a NaN. Always returns false.
+    ----------------------------------------------------------------------------
     function Is_Nan is new Vulkan.Math.Numerics.Is_Nan(Vkm_Double);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds a NaN.
+    --<
+    --< @description
+    --< Apply Is_Nan() component-wise to each component of the input vector. The
+    --< resulting vector of boolean values is returned.
+    ----------------------------------------------------------------------------
     function Is_Nan is new Apply_Func_IVF_RVB(Is_Nan);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds a NaN.
+    --<
+    --< @description
+    --< Apply Is_Nan() component-wise to each component of the input vector. The
+    --< resulting vector of boolean values is returned.
+    ----------------------------------------------------------------------------
     function Is_Nan is new Apply_Func_IVD_RVB(Is_Nan);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Determine whether the input holds an Inf. Always returns false in Ada.
-    --
-    --< @returns False, always.
+    --< @summary
+    --< Determine whether the input holds an Inf.
+    --<
+    --< @description
+    --< Determine whether the input holds an Inf. Always returns false.
     ----------------------------------------------------------------------------
     function Is_Inf is new Vulkan.Math.Numerics.Is_Inf(Vkm_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds an Inf.
+    --<
+    --< @description
+    --< Determine whether the input holds an Inf. Always returns false.
+    ----------------------------------------------------------------------------
     function Is_Inf is new Vulkan.Math.Numerics.Is_Inf(Vkm_Double);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds an Inf.
+    --<
+    --< @description
+    --< Apply Is_Inf() component-wise to each component of the input vector. The
+    --< resulting vector of boolean values is returned.
+    ----------------------------------------------------------------------------
     function Is_Inf is new Apply_Func_IVF_RVB(Is_Inf);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Determine whether the input holds an Inf.
+    --<
+    --< @description
+    --< Apply Is_Inf() component-wise to each component of the input vector. The
+    --< resulting vector of boolean values is returned.
+    ----------------------------------------------------------------------------
     function Is_Inf is new Apply_Func_IVD_RVB(Is_Inf);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Convert the floating point value to a signed or unsigned integer that
+    --< @summary
+    --< Convert float bits to int bits.
+    --<
+    --< @description
+    --< Convert the floating point value to a signed integer that
     --< represents the encoding for the floating point value.
-    --
-    --< @param[in]     value The floating point value.
-    --
-    --< @returns The signed or unsigned integer representation of the float.
     ----------------------------------------------------------------------------
     function Float_Bits_To_Int is new
         Ada.Unchecked_Conversion(Source => Vkm_Float, Target => Vkm_Int);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert float bits to uint bits.
+    --<
+    --< @description
+    --< Convert the floating point value to an unsigned integer that
+    --< represents the encoding for the floating point value.
+    ----------------------------------------------------------------------------
     function Float_Bits_To_Uint is new
         Ada.Unchecked_Conversion(Source => Vkm_Float, Target => Vkm_Uint);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert float bits to int bits.
+    --<
+    --< @description
+    --< Apply Float_Bits_To_Int() to each component of the input vector. The
+    --< resulting GenIType vector is returned.
+    ----------------------------------------------------------------------------
     function Float_Bits_To_Int is new Apply_Func_IVF_RVI(Float_Bits_To_Int);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert float bits to uint bits.
+    --<
+    --< @description
+    --< Apply Float_Bits_To_Uint() to each component of the input vector. The
+    --< resulting GenUType vector is returned.
+    ----------------------------------------------------------------------------
     function Float_Bits_To_Uint is new Apply_Func_IVF_RVU(Float_Bits_To_Uint);
 
 

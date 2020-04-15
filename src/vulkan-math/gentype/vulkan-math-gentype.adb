@@ -1014,4 +1014,19 @@ package body Vulkan.Math.GenType is
     end Apply_Func_IV_IS_IS_RV;
 
 
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IS_IS_IV_RV(IS1, IS2 : in     Base_Type;
+                                    IV1      : in     Vkm_GenType) return Vkm_GenType is
+                                    
+        Result : Vkm_GenType(Last_Index => To_Vkm_Indices(IV1.Length));
+    begin
+        for I in Result.data'Range loop
+            Result.data(I) := Func(IS1,IS2,IV1.data(I));
+        end loop;
+        return Result;
+    end Apply_Func_IS_IS_IV_RV;
+
+
 end Vulkan.Math.GenType;
