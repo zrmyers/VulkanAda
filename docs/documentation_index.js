@@ -40,6 +40,16 @@ GNATdoc.DocumentationIndex = [
     ]
   },
   {
+    "label": "Vulkan Math Functions",
+    "items": [
+      {
+        "label": "Vulkan.Math.Common",
+        "qualifier": "",
+        "file": "docs/vulkan__math__common___spec.html"
+      }
+    ]
+  },
+  {
     "label": "Vulkan Math GenType",
     "items": [
       {
@@ -58,11 +68,6 @@ GNATdoc.DocumentationIndex = [
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Common",
-    "qualifier": "",
-    "file": "docs/vulkan__math__common___spec.html"
   },
   {
     "label": "Vulkan.Math.Dvec2",

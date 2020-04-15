@@ -157,24 +157,24 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Absolute_Value",
-      "docHref": "docs/vulkan__math__common___spec.html#L55C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L66C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L55"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L66"
     },
     {
       "label": "Absolute_Value",
-      "docHref": "docs/vulkan__math__common___spec.html#L57C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L83C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L57"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L83"
     },
     {
       "label": "Absolute_Value",
-      "docHref": "docs/vulkan__math__common___spec.html#L59C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L100C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L59"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L100"
     },
     {
       "label": "Acos",
@@ -416,45 +416,45 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Ceil",
-      "docHref": "docs/vulkan__math__common___spec.html#L154C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L464C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L154"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L464"
     },
     {
       "label": "Ceil",
-      "docHref": "docs/vulkan__math__common___spec.html#L155C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L480C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L155"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L480"
     },
     {
       "label": "Clamp",
-      "docHref": "docs/vulkan__math__common___spec.html#L262C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L935C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L262"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L935"
     },
     {
       "label": "Clamp",
-      "docHref": "docs/vulkan__math__common___spec.html#L264C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L937C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L264"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L937"
     },
     {
       "label": "Clamp",
-      "docHref": "docs/vulkan__math__common___spec.html#L266C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L939C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L266"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L939"
     },
     {
       "label": "Clamp",
-      "docHref": "docs/vulkan__math__common___spec.html#L268C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L941C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L268"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L941"
     },
     {
       "label": "Compute_Modf",
@@ -556,45 +556,45 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Floor",
-      "docHref": "docs/vulkan__math__common___spec.html#L96C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L241C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L96"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L241"
     },
     {
       "label": "Floor",
-      "docHref": "docs/vulkan__math__common___spec.html#L97C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L258C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L97"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L258"
     },
     {
       "label": "Fma",
-      "docHref": "docs/vulkan__math__common___spec.html#L447C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1120C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L447"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1120"
     },
     {
       "label": "Fma",
-      "docHref": "docs/vulkan__math__common___spec.html#L450C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1123C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L450"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1123"
     },
     {
       "label": "Fract",
-      "docHref": "docs/vulkan__math__common___spec.html#L168C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L520C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L168"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L520"
     },
     {
       "label": "Fract",
-      "docHref": "docs/vulkan__math__common___spec.html#L170C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L539C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L170"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L539"
     },
     {
       "label": "Frexp",
@@ -780,45 +780,45 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L126C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L129C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L126"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L129"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L149C14",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L152C14",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L149"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L152"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L172C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L175C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L172"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L175"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L195C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L198C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L195"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L198"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L218C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L221C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L218"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L221"
     },
     {
       "label": "Make_Bvec4",
-      "docHref": "docs/vulkan__math__bvec4___spec.html#L242C15",
+      "docHref": "docs/vulkan__math__bvec4___spec.html#L245C15",
       "declared": "Vulkan.Math.Bvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L242"
+      "srcHref": "srcs/vulkan-math-bvec4.ads.html#L245"
     },
     {
       "label": "Make_Dvec2",
@@ -1382,122 +1382,122 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Max",
-      "docHref": "docs/vulkan__math__common___spec.html#L236C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L815C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L236"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L815"
     },
     {
       "label": "Max",
-      "docHref": "docs/vulkan__math__common___spec.html#L237C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L834C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L237"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L834"
     },
     {
       "label": "Max",
-      "docHref": "docs/vulkan__math__common___spec.html#L238C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L853C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L238"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L853"
     },
     {
       "label": "Max",
-      "docHref": "docs/vulkan__math__common___spec.html#L239C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L872C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L239"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L872"
     },
     {
       "label": "Min",
-      "docHref": "docs/vulkan__math__common___spec.html#L217C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L695C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L217"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L695"
     },
     {
       "label": "Min",
-      "docHref": "docs/vulkan__math__common___spec.html#L218C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L714C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L218"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L714"
     },
     {
       "label": "Min",
-      "docHref": "docs/vulkan__math__common___spec.html#L219C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L733C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L219"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L733"
     },
     {
       "label": "Min",
-      "docHref": "docs/vulkan__math__common___spec.html#L220C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L752C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L220"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L752"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L290C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L963C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L290"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L963"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L292C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L965C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L292"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L965"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L315C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L988C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L315"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L988"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L318C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L991C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L318"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L991"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L321C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L994C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L321"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L994"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L324C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L997C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L324"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L997"
     },
     {
       "label": "Mix",
-      "docHref": "docs/vulkan__math__common___spec.html#L327C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1000C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L327"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1000"
     },
     {
       "label": "Modulo",
-      "docHref": "docs/vulkan__math__common___spec.html#L185C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L583C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L185"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L583"
     },
     {
       "label": "Modulo",
-      "docHref": "docs/vulkan__math__common___spec.html#L187C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L605C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L187"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L605"
     },
     {
       "label": "Normalize",
@@ -1592,52 +1592,52 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Round",
-      "docHref": "docs/vulkan__math__common___spec.html#L125C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L353C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L125"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L353"
     },
     {
       "label": "Round",
-      "docHref": "docs/vulkan__math__common___spec.html#L126C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L370C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L126"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L370"
     },
     {
       "label": "RoundEven",
-      "docHref": "docs/vulkan__math__common___spec.html#L140C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L409C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L140"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L409"
     },
     {
       "label": "RoundEven",
-      "docHref": "docs/vulkan__math__common___spec.html#L141C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L426C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L141"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L426"
     },
     {
       "label": "Sign",
-      "docHref": "docs/vulkan__math__common___spec.html#L77C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L153C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L77"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L153"
     },
     {
       "label": "Sign",
-      "docHref": "docs/vulkan__math__common___spec.html#L79C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L173C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L79"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L173"
     },
     {
       "label": "Sign",
-      "docHref": "docs/vulkan__math__common___spec.html#L81C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L193C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L81"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L193"
     },
     {
       "label": "Sin",
@@ -1676,17 +1676,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Step",
-      "docHref": "docs/vulkan__math__common___spec.html#L350C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1023C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L350"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1023"
     },
     {
       "label": "Step",
-      "docHref": "docs/vulkan__math__common___spec.html#L352C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1025C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L352"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1025"
     },
     {
       "label": "Tan",
@@ -1837,17 +1837,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Trunc",
-      "docHref": "docs/vulkan__math__common___spec.html#L111C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L297C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L111"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L297"
     },
     {
       "label": "Trunc",
-      "docHref": "docs/vulkan__math__common___spec.html#L112C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L314C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L112"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L314"
     },
     {
       "label": "xor",
