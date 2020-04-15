@@ -138,10 +138,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec2",
           "qualifier": "",
-          "line": 53,
+          "line": 56,
           "column": 14,
           "src": "srcs/vulkan-math-bvec2.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec2 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -149,7 +158,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 53,
+                  "number": 56,
                   "children": [
                     {
                       "kind": "span",
@@ -170,7 +179,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec2",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L53C14"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L56C14"
                     },
                     {
                       "kind": "span",
@@ -207,7 +216,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 54,
+                  "number": 57,
                   "children": [
                     {
                       "kind": "span",
@@ -350,10 +359,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec2",
           "qualifier": "",
-          "line": 67,
+          "line": 73,
           "column": 14,
           "src": "srcs/vulkan-math-bvec2.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec2 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -361,7 +379,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 67,
+                  "number": 73,
                   "children": [
                     {
                       "kind": "span",
@@ -382,7 +400,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec2",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L67C14"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L73C14"
                     },
                     {
                       "kind": "span",
@@ -398,7 +416,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L67C26"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L73C26"
                     },
                     {
                       "kind": "span",
@@ -471,7 +489,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 68,
+                  "number": 74,
                   "children": [
                     {
                       "kind": "span",
@@ -600,7 +618,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 67,
+              "line": 73,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -636,10 +654,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec2",
           "qualifier": "",
-          "line": 82,
+          "line": 91,
           "column": 14,
           "src": "srcs/vulkan-math-bvec2.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec2 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -647,7 +674,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 82,
+                  "number": 91,
                   "children": [
                     {
                       "kind": "span",
@@ -668,7 +695,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec2",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L82C14"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L91C14"
                     },
                     {
                       "kind": "span",
@@ -684,7 +711,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L82C26"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L91C26"
                     },
                     {
                       "kind": "span",
@@ -757,7 +784,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 83,
+                  "number": 92,
                   "children": [
                     {
                       "kind": "span",
@@ -833,7 +860,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief Produces a vector by copying components from an existing vector.\n"
+                  "text": "Produces a vector by copying components from an existing vector.\n"
                 }
               ]
             }
@@ -841,7 +868,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value",
-              "line": 82,
+              "line": 91,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec2.Vkm_Bvec2",
@@ -856,35 +883,44 @@ GNATdoc.Documentation = {
                       "text": "The 2D vector to copy components from.\n"
                     }
                   ]
-                },
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "@returns \n"
-                    },
-                    {
-                      "kind": "span",
-                      "text": "A 2D vector with all of its components set equal to the corresponding\n"
-                    },
-                    {
-                      "kind": "span",
-                      "text": "components of vec2_value.\n"
-                    }
-                  ]
                 }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A 2D vector with all of its components set equal to the corresponding\n"
+                  },
+                  {
+                    "kind": "span",
+                    "text": "components of vec2_value.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Make_Bvec2",
           "qualifier": "(renaming)",
-          "line": 98,
+          "line": 110,
           "column": 14,
           "src": "srcs/vulkan-math-bvec2.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec2 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -892,7 +928,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 98,
+                  "number": 110,
                   "children": [
                     {
                       "kind": "span",
@@ -913,7 +949,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec2",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L98C14"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L110C14"
                     },
                     {
                       "kind": "span",
@@ -929,7 +965,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L98C26"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L110C26"
                     },
                     {
                       "kind": "span",
@@ -945,7 +981,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__bvec2___spec.html#L98C34"
+                      "href": "docs/vulkan__math__bvec2___spec.html#L110C34"
                     },
                     {
                       "kind": "span",
@@ -1008,7 +1044,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 99,
+                  "number": 111,
                   "children": [
                     {
                       "kind": "span",
@@ -1044,7 +1080,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief Produces a vector by specifying the values for each of its components.\n"
+                  "text": "Produces a vector by specifying the values for each of its components.\n"
                 }
               ]
             }
@@ -1052,7 +1088,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 98,
+              "line": 110,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -1072,7 +1108,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value2",
-              "line": 98,
+              "line": 110,
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",

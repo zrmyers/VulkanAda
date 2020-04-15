@@ -138,10 +138,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 57,
+          "line": 60,
           "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -149,7 +158,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 57,
+                  "number": 60,
                   "children": [
                     {
                       "kind": "span",
@@ -170,7 +179,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L57C14"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L60C14"
                     },
                     {
                       "kind": "span",
@@ -207,7 +216,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 58,
+                  "number": 61,
                   "children": [
                     {
                       "kind": "span",
@@ -340,7 +349,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "a Ivec4 with all components set to 0.0.\n"
+                    "text": "An Ivec4 with all components set to 0.0.\n"
                   }
                 ]
               }
@@ -350,10 +359,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 69,
+          "line": 75,
           "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -361,7 +379,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 69,
+                  "number": 75,
                   "children": [
                     {
                       "kind": "span",
@@ -382,7 +400,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L69C14"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L75C14"
                     },
                     {
                       "kind": "span",
@@ -398,7 +416,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L69C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L75C26"
                     },
                     {
                       "kind": "span",
@@ -471,7 +489,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 70,
+                  "number": 76,
                   "children": [
                     {
                       "kind": "span",
@@ -600,7 +618,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 69,
+              "line": 75,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -636,10 +654,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 82,
+          "line": 91,
           "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -647,7 +674,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 82,
+                  "number": 91,
                   "children": [
                     {
                       "kind": "span",
@@ -668,7 +695,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L82C14"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L91C14"
                     },
                     {
                       "kind": "span",
@@ -684,7 +711,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec4_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L82C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L91C26"
                     },
                     {
                       "kind": "span",
@@ -757,7 +784,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 83,
+                  "number": 92,
                   "children": [
                     {
                       "kind": "span",
@@ -833,7 +860,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 84,
+                  "number": 93,
                   "children": [
                     {
                       "kind": "span",
@@ -932,7 +959,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec4_value",
-              "line": 82,
+              "line": 91,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec4.Vkm_Ivec4",
@@ -968,10 +995,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "(renaming)",
-          "line": 98,
+          "line": 110,
           "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -979,7 +1015,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 98,
+                  "number": 110,
                   "children": [
                     {
                       "kind": "span",
@@ -1000,7 +1036,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L98C14"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L110C14"
                     },
                     {
                       "kind": "span",
@@ -1016,7 +1052,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L98C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L110C26"
                     },
                     {
                       "kind": "span",
@@ -1032,7 +1068,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L98C34"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L110C34"
                     },
                     {
                       "kind": "span",
@@ -1048,7 +1084,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value3",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L98C42"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L110C42"
                     },
                     {
                       "kind": "span",
@@ -1064,7 +1100,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L98C50"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L110C50"
                     },
                     {
                       "kind": "span",
@@ -1127,7 +1163,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 99,
+                  "number": 111,
                   "children": [
                     {
                       "kind": "span",
@@ -1171,7 +1207,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 98,
+              "line": 110,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -1191,7 +1227,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value2",
-              "line": 98,
+              "line": 110,
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -1211,7 +1247,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value3",
-              "line": 98,
+              "line": 110,
               "column": 42,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -1231,7 +1267,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value4",
-              "line": 98,
+              "line": 110,
               "column": 50,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -1267,10 +1303,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 112,
+          "line": 127,
           "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1278,7 +1323,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 112,
+                  "number": 127,
                   "children": [
                     {
                       "kind": "span",
@@ -1299,7 +1344,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L112C14"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L127C14"
                     },
                     {
                       "kind": "span",
@@ -1315,7 +1360,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L112C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L127C26"
                     },
                     {
                       "kind": "span",
@@ -1357,7 +1402,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 113,
+                  "number": 128,
                   "children": [
                     {
                       "kind": "span",
@@ -1368,7 +1413,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L113C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L128C26"
                     },
                     {
                       "kind": "span",
@@ -1441,7 +1486,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 114,
+                  "number": 129,
                   "children": [
                     {
                       "kind": "span",
@@ -1477,7 +1522,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 115,
+                  "number": 130,
                   "children": [
                     {
                       "kind": "span",
@@ -1513,7 +1558,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 116,
+                  "number": 131,
                   "children": [
                     {
                       "kind": "span",
@@ -1549,7 +1594,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 117,
+                  "number": 132,
                   "children": [
                     {
                       "kind": "span",
@@ -1616,10 +1661,20 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Produce a vector by concatenating a scalar value with a Ivec3.\n"
-                },
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Ivec4 = [scalar_value, vec3_value  ]\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Ivec4 = [scalar_value, vec3_value  ]"
+                    }
+                  ]
                 }
               ]
             }
@@ -1627,7 +1682,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 112,
+              "line": 127,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -1647,7 +1702,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec3_value",
-              "line": 113,
+              "line": 128,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec3.Vkm_Ivec3",
@@ -1683,10 +1738,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 131,
+          "line": 149,
           "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1694,7 +1758,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 131,
+                  "number": 149,
                   "children": [
                     {
                       "kind": "span",
@@ -1715,7 +1779,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L131C14"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L149C14"
                     },
                     {
                       "kind": "span",
@@ -1731,7 +1795,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L131C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L149C26"
                     },
                     {
                       "kind": "span",
@@ -1773,7 +1837,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 132,
+                  "number": 150,
                   "children": [
                     {
                       "kind": "span",
@@ -1784,7 +1848,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L132C26"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L150C26"
                     },
                     {
                       "kind": "span",
@@ -1857,7 +1921,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 133,
+                  "number": 151,
                   "children": [
                     {
                       "kind": "span",
@@ -1908,7 +1972,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 134,
+                  "number": 152,
                   "children": [
                     {
                       "kind": "span",
@@ -1944,7 +2008,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 135,
+                  "number": 153,
                   "children": [
                     {
                       "kind": "span",
@@ -1980,7 +2044,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 136,
+                  "number": 154,
                   "children": [
                     {
                       "kind": "span",
@@ -2037,10 +2101,20 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Produce a vector by concatenating a Ivec3 with a scalar value.\n"
-                },
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Ivec4 = [vec3_value, scalar_value]\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Ivec4 = [vec3_value, scalar_value]"
+                    }
+                  ]
                 }
               ]
             }
@@ -2048,7 +2122,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec3_value",
-              "line": 131,
+              "line": 149,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec3.Vkm_Ivec3",
@@ -2068,7 +2142,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar_value",
-              "line": 132,
+              "line": 150,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -2104,10 +2178,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 150,
-          "column": 15,
+          "line": 171,
+          "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2115,12 +2198,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 150,
+                  "number": 171,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -2136,7 +2219,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L150C15"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L171C14"
                     },
                     {
                       "kind": "span",
@@ -2152,7 +2235,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value1",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L150C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L171C26"
                     },
                     {
                       "kind": "span",
@@ -2168,7 +2251,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value2",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L150C40"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L171C39"
                     },
                     {
                       "kind": "span",
@@ -2241,12 +2324,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 151,
+                  "number": 172,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -2317,12 +2400,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 152,
+                  "number": 173,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                     "
+                      "text": "                    "
                     },
                     {
                       "kind": "span",
@@ -2394,10 +2477,20 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Produce a vector by concatenating a Ivec2 with a Ivec2.\n"
-                },
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Ivec4 = [vec2_value1, vec2_value2]\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Ivec4 = [vec2_value1, vec2_value2]"
+                    }
+                  ]
                 }
               ]
             }
@@ -2405,8 +2498,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value1",
-              "line": 150,
-              "column": 27,
+              "line": 171,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec2.Vkm_Ivec2",
                 "docHref": "docs/vulkan__math__ivec2___spec.html#L33C13"
@@ -2425,8 +2518,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value2",
-              "line": 150,
-              "column": 40,
+              "line": 171,
+              "column": 39,
               "type": {
                 "label": "Vulkan.Math.Ivec2.Vkm_Ivec2",
                 "docHref": "docs/vulkan__math__ivec2___spec.html#L33C13"
@@ -2461,10 +2554,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 167,
-          "column": 15,
+          "line": 191,
+          "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2472,12 +2574,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 167,
+                  "number": 191,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -2493,7 +2595,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L167C15"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L191C14"
                     },
                     {
                       "kind": "span",
@@ -2509,7 +2611,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L167C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L191C26"
                     },
                     {
                       "kind": "span",
@@ -2525,7 +2627,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L167C36"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L191C35"
                     },
                     {
                       "kind": "span",
@@ -2567,18 +2669,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 168,
+                  "number": 192,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L168C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L192C26"
                     },
                     {
                       "kind": "span",
@@ -2651,12 +2753,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 169,
+                  "number": 193,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -2773,10 +2875,20 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Produce a vector by concatenating two scalar values with a Ivec2.\n"
-                },
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Ivec4 = [scalar1, scalar2, vec2_value]\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Ivec4 = [scalar1, scalar2, vec2_value]"
+                    }
+                  ]
                 }
               ]
             }
@@ -2784,8 +2896,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar1",
-              "line": 167,
-              "column": 27,
+              "line": 191,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
@@ -2804,8 +2916,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 167,
-              "column": 36,
+              "line": 191,
+              "column": 35,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
@@ -2824,8 +2936,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value",
-              "line": 168,
-              "column": 27,
+              "line": 192,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec2.Vkm_Ivec2",
                 "docHref": "docs/vulkan__math__ivec2___spec.html#L33C13"
@@ -2860,10 +2972,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 184,
-          "column": 15,
+          "line": 211,
+          "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2871,12 +2992,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 184,
+                  "number": 211,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -2892,7 +3013,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L184C15"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L211C14"
                     },
                     {
                       "kind": "span",
@@ -2908,7 +3029,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L184C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L211C26"
                     },
                     {
                       "kind": "span",
@@ -2950,18 +3071,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 185,
+                  "number": 212,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L185C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L212C26"
                     },
                     {
                       "kind": "span",
@@ -3008,18 +3129,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 186,
+                  "number": 213,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L186C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L213C26"
                     },
                     {
                       "kind": "span",
@@ -3092,12 +3213,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 187,
+                  "number": 214,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -3214,10 +3335,20 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Produce a vector by concatenating two scalar values with a Ivec2.\n"
-                },
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Ivec4 = [scalar1, vec2_value, scalar2]\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Ivec4 = [scalar1, vec2_value, scalar2]"
+                    }
+                  ]
                 }
               ]
             }
@@ -3225,8 +3356,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar1",
-              "line": 184,
-              "column": 27,
+              "line": 211,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
@@ -3245,8 +3376,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value",
-              "line": 185,
-              "column": 27,
+              "line": 212,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec2.Vkm_Ivec2",
                 "docHref": "docs/vulkan__math__ivec2___spec.html#L33C13"
@@ -3265,8 +3396,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 186,
-              "column": 27,
+              "line": 213,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
@@ -3301,10 +3432,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Ivec4",
           "qualifier": "",
-          "line": 202,
-          "column": 15,
+          "line": 232,
+          "column": 14,
           "src": "srcs/vulkan-math-ivec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Ivec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3312,12 +3452,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 202,
+                  "number": 232,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -3333,7 +3473,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Ivec4",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L202C15"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L232C14"
                     },
                     {
                       "kind": "span",
@@ -3349,7 +3489,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L202C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L232C26"
                     },
                     {
                       "kind": "span",
@@ -3396,18 +3536,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 203,
+                  "number": 233,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L203C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L233C26"
                     },
                     {
                       "kind": "span",
@@ -3449,18 +3589,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 204,
+                  "number": 234,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__ivec4___spec.html#L204C27"
+                      "href": "docs/vulkan__math__ivec4___spec.html#L234C26"
                     },
                     {
                       "kind": "span",
@@ -3533,12 +3673,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 205,
+                  "number": 235,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -3655,10 +3795,20 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Produce a vector by concatenating two scalar values with a Ivec2.\n"
-                },
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Ivec4 = [vec2_value, scalar1, scalar2]\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Ivec4 = [vec2_value, scalar1, scalar2]"
+                    }
+                  ]
                 }
               ]
             }
@@ -3666,8 +3816,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value",
-              "line": 202,
-              "column": 27,
+              "line": 232,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Ivec2.Vkm_Ivec2",
                 "docHref": "docs/vulkan__math__ivec2___spec.html#L33C13"
@@ -3686,8 +3836,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar1",
-              "line": 203,
-              "column": 27,
+              "line": 233,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
@@ -3706,8 +3856,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 204,
-              "column": 27,
+              "line": 234,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"

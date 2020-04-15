@@ -138,10 +138,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 60,
+          "line": 63,
           "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -149,7 +158,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 60,
+                  "number": 63,
                   "children": [
                     {
                       "kind": "span",
@@ -170,7 +179,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L60C14"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L63C14"
                     },
                     {
                       "kind": "span",
@@ -207,7 +216,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 61,
+                  "number": 64,
                   "children": [
                     {
                       "kind": "span",
@@ -350,10 +359,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 74,
+          "line": 80,
           "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -361,7 +379,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 74,
+                  "number": 80,
                   "children": [
                     {
                       "kind": "span",
@@ -382,7 +400,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L74C14"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L80C14"
                     },
                     {
                       "kind": "span",
@@ -398,7 +416,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L74C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L80C26"
                     },
                     {
                       "kind": "span",
@@ -471,7 +489,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 75,
+                  "number": 81,
                   "children": [
                     {
                       "kind": "span",
@@ -600,7 +618,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 74,
+              "line": 80,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -636,10 +654,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 88,
+          "line": 97,
           "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -647,7 +674,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 88,
+                  "number": 97,
                   "children": [
                     {
                       "kind": "span",
@@ -668,7 +695,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L88C14"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L97C14"
                     },
                     {
                       "kind": "span",
@@ -684,7 +711,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec4_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L88C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L97C26"
                     },
                     {
                       "kind": "span",
@@ -757,7 +784,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 89,
+                  "number": 98,
                   "children": [
                     {
                       "kind": "span",
@@ -833,7 +860,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 90,
+                  "number": 99,
                   "children": [
                     {
                       "kind": "span",
@@ -941,7 +968,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec4_value",
-              "line": 88,
+              "line": 97,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec4.Vkm_Bvec4",
@@ -972,10 +999,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "(renaming)",
-          "line": 112,
+          "line": 124,
           "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -983,7 +1019,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 112,
+                  "number": 124,
                   "children": [
                     {
                       "kind": "span",
@@ -1004,7 +1040,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L112C14"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L124C14"
                     },
                     {
                       "kind": "span",
@@ -1020,7 +1056,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L112C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L124C26"
                     },
                     {
                       "kind": "span",
@@ -1036,7 +1072,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L112C34"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L124C34"
                     },
                     {
                       "kind": "span",
@@ -1052,7 +1088,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value3",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L112C42"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L124C42"
                     },
                     {
                       "kind": "span",
@@ -1068,7 +1104,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L112C50"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L124C50"
                     },
                     {
                       "kind": "span",
@@ -1131,7 +1167,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 113,
+                  "number": 125,
                   "children": [
                     {
                       "kind": "span",
@@ -1175,7 +1211,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 112,
+              "line": 124,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -1195,7 +1231,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value2",
-              "line": 112,
+              "line": 124,
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -1215,7 +1251,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value3",
-              "line": 112,
+              "line": 124,
               "column": 42,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -1235,7 +1271,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value4",
-              "line": 112,
+              "line": 124,
               "column": 50,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -1271,10 +1307,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 129,
+          "line": 144,
           "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1282,7 +1327,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 129,
+                  "number": 144,
                   "children": [
                     {
                       "kind": "span",
@@ -1303,7 +1348,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L129C14"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L144C14"
                     },
                     {
                       "kind": "span",
@@ -1319,7 +1364,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L129C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L144C26"
                     },
                     {
                       "kind": "span",
@@ -1361,7 +1406,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 130,
+                  "number": 145,
                   "children": [
                     {
                       "kind": "span",
@@ -1372,7 +1417,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L130C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L145C26"
                     },
                     {
                       "kind": "span",
@@ -1445,7 +1490,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 131,
+                  "number": 146,
                   "children": [
                     {
                       "kind": "span",
@@ -1481,7 +1526,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 132,
+                  "number": 147,
                   "children": [
                     {
                       "kind": "span",
@@ -1517,7 +1562,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 133,
+                  "number": 148,
                   "children": [
                     {
                       "kind": "span",
@@ -1553,7 +1598,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 134,
+                  "number": 149,
                   "children": [
                     {
                       "kind": "span",
@@ -1641,7 +1686,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 129,
+              "line": 144,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -1661,7 +1706,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec3_value",
-              "line": 130,
+              "line": 145,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec3.Vkm_Bvec3",
@@ -1697,10 +1742,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 152,
+          "line": 170,
           "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1708,7 +1762,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 152,
+                  "number": 170,
                   "children": [
                     {
                       "kind": "span",
@@ -1729,7 +1783,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L152C14"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L170C14"
                     },
                     {
                       "kind": "span",
@@ -1745,7 +1799,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L152C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L170C26"
                     },
                     {
                       "kind": "span",
@@ -1787,7 +1841,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 153,
+                  "number": 171,
                   "children": [
                     {
                       "kind": "span",
@@ -1798,7 +1852,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L153C26"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L171C26"
                     },
                     {
                       "kind": "span",
@@ -1871,7 +1925,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 154,
+                  "number": 172,
                   "children": [
                     {
                       "kind": "span",
@@ -1922,7 +1976,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 155,
+                  "number": 173,
                   "children": [
                     {
                       "kind": "span",
@@ -1958,7 +2012,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 156,
+                  "number": 174,
                   "children": [
                     {
                       "kind": "span",
@@ -1994,7 +2048,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 157,
+                  "number": 175,
                   "children": [
                     {
                       "kind": "span",
@@ -2072,7 +2126,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec3_value",
-              "line": 152,
+              "line": 170,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec3.Vkm_Bvec3",
@@ -2092,7 +2146,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar_value",
-              "line": 153,
+              "line": 171,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -2128,10 +2182,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 175,
-          "column": 15,
+          "line": 196,
+          "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2139,12 +2202,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 175,
+                  "number": 196,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -2160,7 +2223,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L175C15"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L196C14"
                     },
                     {
                       "kind": "span",
@@ -2176,7 +2239,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value1",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L175C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L196C26"
                     },
                     {
                       "kind": "span",
@@ -2192,7 +2255,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value2",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L175C40"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L196C39"
                     },
                     {
                       "kind": "span",
@@ -2265,12 +2328,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 176,
+                  "number": 197,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -2341,12 +2404,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 177,
+                  "number": 198,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                     "
+                      "text": "                    "
                     },
                     {
                       "kind": "span",
@@ -2439,8 +2502,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value1",
-              "line": 175,
-              "column": 27,
+              "line": 196,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec2.Vkm_Bvec2",
                 "docHref": "docs/vulkan__math__bvec2___spec.html#L38C13"
@@ -2459,8 +2522,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value2",
-              "line": 175,
-              "column": 40,
+              "line": 196,
+              "column": 39,
               "type": {
                 "label": "Vulkan.Math.Bvec2.Vkm_Bvec2",
                 "docHref": "docs/vulkan__math__bvec2___spec.html#L38C13"
@@ -2495,10 +2558,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 198,
-          "column": 15,
+          "line": 222,
+          "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2506,12 +2578,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 198,
+                  "number": 222,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -2527,7 +2599,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L198C15"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L222C14"
                     },
                     {
                       "kind": "span",
@@ -2543,7 +2615,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L198C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L222C26"
                     },
                     {
                       "kind": "span",
@@ -2559,7 +2631,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L198C36"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L222C35"
                     },
                     {
                       "kind": "span",
@@ -2601,18 +2673,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 199,
+                  "number": 223,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L199C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L223C26"
                     },
                     {
                       "kind": "span",
@@ -2685,12 +2757,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 200,
+                  "number": 224,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -2828,8 +2900,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar1",
-              "line": 198,
-              "column": 27,
+              "line": 222,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
@@ -2848,8 +2920,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 198,
-              "column": 36,
+              "line": 222,
+              "column": 35,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
@@ -2868,8 +2940,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value",
-              "line": 199,
-              "column": 27,
+              "line": 223,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec2.Vkm_Bvec2",
                 "docHref": "docs/vulkan__math__bvec2___spec.html#L38C13"
@@ -2904,10 +2976,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 221,
-          "column": 15,
+          "line": 248,
+          "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2915,12 +2996,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 221,
+                  "number": 248,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -2936,7 +3017,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L221C15"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L248C14"
                     },
                     {
                       "kind": "span",
@@ -2952,7 +3033,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L221C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L248C26"
                     },
                     {
                       "kind": "span",
@@ -2994,18 +3075,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 222,
+                  "number": 249,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L222C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L249C26"
                     },
                     {
                       "kind": "span",
@@ -3052,18 +3133,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 223,
+                  "number": 250,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L223C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L250C26"
                     },
                     {
                       "kind": "span",
@@ -3136,12 +3217,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 224,
+                  "number": 251,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -3279,8 +3360,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "scalar1",
-              "line": 221,
-              "column": 27,
+              "line": 248,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
@@ -3299,8 +3380,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "vec2_value",
-              "line": 222,
-              "column": 27,
+              "line": 249,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec2.Vkm_Bvec2",
                 "docHref": "docs/vulkan__math__bvec2___spec.html#L38C13"
@@ -3319,8 +3400,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 223,
-              "column": 27,
+              "line": 250,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
@@ -3355,10 +3436,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Bvec4",
           "qualifier": "",
-          "line": 245,
-          "column": 15,
+          "line": 275,
+          "column": 14,
           "src": "srcs/vulkan-math-bvec4.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Bvec4 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3366,12 +3456,12 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 245,
+                  "number": 275,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "     "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -3387,7 +3477,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Bvec4",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L245C15"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L275C14"
                     },
                     {
                       "kind": "span",
@@ -3403,7 +3493,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L245C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L275C26"
                     },
                     {
                       "kind": "span",
@@ -3450,18 +3540,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 246,
+                  "number": 276,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar1",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L246C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L276C26"
                     },
                     {
                       "kind": "span",
@@ -3503,18 +3593,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 247,
+                  "number": 277,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                          "
+                      "text": "                         "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar2",
-                      "href": "docs/vulkan__math__bvec4___spec.html#L247C27"
+                      "href": "docs/vulkan__math__bvec4___spec.html#L277C26"
                     },
                     {
                       "kind": "span",
@@ -3587,12 +3677,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 248,
+                  "number": 278,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "         "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
@@ -3725,8 +3815,8 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "vec2_value",
-              "line": 245,
-              "column": 27,
+              "line": 275,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Bvec2.Vkm_Bvec2",
                 "docHref": "docs/vulkan__math__bvec2___spec.html#L38C13"
@@ -3745,8 +3835,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar1",
-              "line": 246,
-              "column": 27,
+              "line": 276,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
@@ -3765,8 +3855,8 @@ GNATdoc.Documentation = {
             },
             {
               "label": "scalar2",
-              "line": 247,
-              "column": 27,
+              "line": 277,
+              "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
