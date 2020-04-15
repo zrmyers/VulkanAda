@@ -3284,10 +3284,19 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "",
-          "line": 1706,
+          "line": 1747,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute a fused multiply add operation.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3295,7 +3304,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1706,
+                  "number": 1747,
                   "children": [
                     {
                       "kind": "span",
@@ -3316,7 +3325,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1706C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1747C14"
                     },
                     {
                       "kind": "span",
@@ -3327,7 +3336,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1706C18"
+                      "href": "docs/vulkan__math__common___spec.html#L1747C18"
                     },
                     {
                       "kind": "span",
@@ -3343,7 +3352,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "b",
-                      "href": "docs/vulkan__math__common___spec.html#L1706C21"
+                      "href": "docs/vulkan__math__common___spec.html#L1747C21"
                     },
                     {
                       "kind": "span",
@@ -3359,7 +3368,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "c",
-                      "href": "docs/vulkan__math__common___spec.html#L1706C24"
+                      "href": "docs/vulkan__math__common___spec.html#L1747C24"
                     },
                     {
                       "kind": "span",
@@ -3432,7 +3441,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1707,
+                  "number": 1748,
                   "children": [
                     {
                       "kind": "span",
@@ -3523,15 +3532,21 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
-                },
+                  "text": "Compute the fused multiply add operation as follows:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
                 {
-                  "kind": "span",
-                  "text": "Compute a fused multiply add operation.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     a, b, c The parameters for the computation.\n"
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "fma := a * b + c"
+                    }
+                  ]
                 }
               ]
             }
@@ -3539,35 +3554,62 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "a",
-              "line": 1706,
+              "line": 1747,
               "column": 18,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left multiply operand.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "b",
-              "line": 1706,
+              "line": 1747,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right multiply operand.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "c",
-              "line": 1706,
+              "line": 1747,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right addition operand, which is added to the product of a and b.\n"
+                    }
+                  ]
+                }
               ]
             }
           ],
@@ -3578,7 +3620,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "a * b + c\n"
+                    "text": "The result of the fused multiply add operation.\n"
                   }
                 ]
               }
@@ -3588,10 +3630,19 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "",
-          "line": 1709,
+          "line": 1771,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute a fused multiply add operation.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3599,7 +3650,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1709,
+                  "number": 1771,
                   "children": [
                     {
                       "kind": "span",
@@ -3620,7 +3671,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1709C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1771C14"
                     },
                     {
                       "kind": "span",
@@ -3631,7 +3682,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "a",
-                      "href": "docs/vulkan__math__common___spec.html#L1709C18"
+                      "href": "docs/vulkan__math__common___spec.html#L1771C18"
                     },
                     {
                       "kind": "span",
@@ -3647,7 +3698,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "b",
-                      "href": "docs/vulkan__math__common___spec.html#L1709C21"
+                      "href": "docs/vulkan__math__common___spec.html#L1771C21"
                     },
                     {
                       "kind": "span",
@@ -3663,7 +3714,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "c",
-                      "href": "docs/vulkan__math__common___spec.html#L1709C24"
+                      "href": "docs/vulkan__math__common___spec.html#L1771C24"
                     },
                     {
                       "kind": "span",
@@ -3736,7 +3787,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1710,
+                  "number": 1772,
                   "children": [
                     {
                       "kind": "span",
@@ -3821,43 +3872,106 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute the fused multiply add operation as follows:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "fma := a * b + c"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "a",
-              "line": 1709,
+              "line": 1771,
               "column": 18,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left multiply operand.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "b",
-              "line": 1709,
+              "line": 1771,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right multiply operand.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "c",
-              "line": 1709,
+              "line": 1771,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right addition operand, which is added to the product of a and b.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the fused multiply add operation.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Fract",
@@ -14410,23 +14524,6 @@ GNATdoc.Documentation = {
                   "text": "Convert float bits to int bits.\n"
                 }
               ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@description.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Convert the floating point value to a signed integer that\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "represents the encoding for the floating point value.\n"
-                }
-              ]
             }
           ],
           "description": [
@@ -14574,6 +14671,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert the floating point value to a signed integer that\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "represents the encoding for the floating point value.\n"
+                }
+              ]
             }
           ]
         },
@@ -14590,23 +14700,6 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Convert float bits to int bits.\n"
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@description.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Apply Float_Bits_To_Int() to each component of the input vector. The\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "resulting GenIType vector is returned.\n"
                 }
               ]
             }
@@ -14693,6 +14786,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Float_Bits_To_Int() to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting GenIType vector is returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -14713,23 +14819,6 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Convert float bits to uint bits.\n"
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@description.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Convert the floating point value to an unsigned integer that\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "represents the encoding for the floating point value.\n"
                 }
               ]
             }
@@ -14879,6 +14968,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert the floating point value to an unsigned integer that\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "represents the encoding for the floating point value.\n"
+                }
+              ]
             }
           ]
         },
@@ -14895,23 +14997,6 @@ GNATdoc.Documentation = {
                 {
                   "kind": "span",
                   "text": "Convert float bits to uint bits.\n"
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@description.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Apply Float_Bits_To_Uint() to each component of the input vector. The\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "resulting GenUType vector is returned.\n"
                 }
               ]
             }
@@ -14996,6 +15081,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Float_Bits_To_Uint() to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting GenUType vector is returned.\n"
                 }
               ]
             }
@@ -15246,10 +15344,19 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "(generic instantiation)",
-          "line": 1708,
+          "line": 1783,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute a fused multiply add operation.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15257,7 +15364,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1708,
+                  "number": 1783,
                   "children": [
                     {
                       "kind": "span",
@@ -15278,7 +15385,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1708C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1783C14"
                     },
                     {
                       "kind": "span",
@@ -15333,6 +15440,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Fma() component-wise on three input vectors. The resulting vector is\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "returned.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15343,10 +15463,19 @@ GNATdoc.Documentation = {
         {
           "label": "Fma",
           "qualifier": "(generic instantiation)",
-          "line": 1711,
+          "line": 1794,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Compute a fused multiply add operation.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15354,7 +15483,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1711,
+                  "number": 1794,
                   "children": [
                     {
                       "kind": "span",
@@ -15375,7 +15504,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Fma",
-                      "href": "docs/vulkan__math__common___spec.html#L1711C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1794C14"
                     },
                     {
                       "kind": "span",
@@ -15428,6 +15557,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Fma() component-wise on three input vectors. The resulting vector is\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "returned.\n"
                 }
               ]
             }
@@ -15678,10 +15820,19 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1725,
+          "line": 1805,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Splits the floating point value x into its significand and exponent parts.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15689,7 +15840,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1725,
+                  "number": 1805,
                   "children": [
                     {
                       "kind": "span",
@@ -15710,7 +15861,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1725C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1805C14"
                     },
                     {
                       "kind": "span",
@@ -15772,10 +15923,6 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
-                },
-                {
-                  "kind": "span",
                   "text": "Splits the floating point value x into its significand and exponent parts.\n"
                 }
               ]
@@ -15793,19 +15940,6 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@param[in]     x        The value to split.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[out]    exponent The exponent of x.\n"
-                }
-              ]
             }
           ],
           "instantiation": {
@@ -15816,10 +15950,19 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1726,
+          "line": 1816,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Splits the floating point value x into its significand and exponent parts.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15827,7 +15970,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1726,
+                  "number": 1816,
                   "children": [
                     {
                       "kind": "span",
@@ -15848,7 +15991,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1726C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1816C14"
                     },
                     {
                       "kind": "span",
@@ -15904,6 +16047,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Splits the floating point value x into its significand and exponent parts.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "x = significand * 2^exponent"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15914,10 +16080,19 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1727,
+          "line": 1827,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Splits the floating point value x into its significand and exponent parts.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15925,7 +16100,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1727,
+                  "number": 1827,
                   "children": [
                     {
                       "kind": "span",
@@ -15946,7 +16121,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1727C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1827C14"
                     },
                     {
                       "kind": "span",
@@ -16001,6 +16176,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies Frexp() on components of an input vector, setting an output GenIType\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector to the exponent value, and returning a vector with the significands.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16011,10 +16199,19 @@ GNATdoc.Documentation = {
         {
           "label": "Frexp",
           "qualifier": "(generic instantiation)",
-          "line": 1728,
+          "line": 1838,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Splits the floating point value x into its significand and exponent parts.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16022,7 +16219,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1728,
+                  "number": 1838,
                   "children": [
                     {
                       "kind": "span",
@@ -16043,7 +16240,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Frexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1728C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1838C14"
                     },
                     {
                       "kind": "span",
@@ -16098,6 +16295,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Applies Frexp() on components of an input vector, setting an output GenIType\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector to the exponent value, and returning a vector with the significands.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16108,10 +16318,19 @@ GNATdoc.Documentation = {
         {
           "label": "Int_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1690,
+          "line": 1689,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert integer bits to float.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16119,7 +16338,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1690,
+                  "number": 1689,
                   "children": [
                     {
                       "kind": "span",
@@ -16140,7 +16359,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Int_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1690C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1689C14"
                     },
                     {
                       "kind": "span",
@@ -16166,7 +16385,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1691,
+                  "number": 1690,
                   "children": [
                     {
                       "kind": "span",
@@ -16264,23 +16483,11 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
+                  "text": "Convert the integer, which contains the binary encoding of a float, to a\n"
                 },
                 {
                   "kind": "span",
-                  "text": "Convert the floating point value to a signed or unsigned integer that\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "represents the encoding for the floating point value.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     value The floating point value.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@returns The signed or unsigned integer representation of the float.\n"
+                  "text": "float.\n"
                 }
               ]
             }
@@ -16289,10 +16496,19 @@ GNATdoc.Documentation = {
         {
           "label": "Int_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1694,
+          "line": 1713,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert signed integer bits to float.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16300,7 +16516,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1694,
+                  "number": 1713,
                   "children": [
                     {
                       "kind": "span",
@@ -16321,7 +16537,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Int_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1694C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1713C14"
                     },
                     {
                       "kind": "span",
@@ -16374,6 +16590,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Int_Bits_To_Float() to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting GenFType vector is returned.\n"
                 }
               ]
             }
@@ -17326,10 +17555,23 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1743,
+          "line": 1851,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "This operation composes a floting point number from a significand and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "an exponent value.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17337,7 +17579,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1743,
+                  "number": 1851,
                   "children": [
                     {
                       "kind": "span",
@@ -17358,7 +17600,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1743C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1851C14"
                     },
                     {
                       "kind": "span",
@@ -17420,11 +17662,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "@brief\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "This operation composes a floting point number from a fraction value and\n"
+                  "text": "This operation composes a floting point number from a significand and\n"
                 },
                 {
                   "kind": "span",
@@ -17445,23 +17683,6 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "@param[in]     significand The significand.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@param[in]     exponent    The exponent.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "@returns x\n"
-                }
-              ]
             }
           ],
           "instantiation": {
@@ -17472,10 +17693,23 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1744,
+          "line": 1864,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "This operation composes a floting point number from a significand and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "an exponent value.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17483,7 +17717,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1744,
+                  "number": 1864,
                   "children": [
                     {
                       "kind": "span",
@@ -17504,7 +17738,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1744C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1864C14"
                     },
                     {
                       "kind": "span",
@@ -17560,6 +17794,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "This operation composes a floting point number from a significand and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "an exponent value.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "x = significand * 2^exponent"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -17570,10 +17831,23 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1745,
+          "line": 1876,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "This operation composes a floting point number from a significand and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "an exponent value.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17581,7 +17855,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1745,
+                  "number": 1876,
                   "children": [
                     {
                       "kind": "span",
@@ -17602,7 +17876,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1745C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1876C14"
                     },
                     {
                       "kind": "span",
@@ -17657,6 +17931,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Ldexp() function to two input vectors, one of significands and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "the other of exponents, returning a vector of composed floating point numbers. \n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -17667,10 +17954,23 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "(generic instantiation)",
-          "line": 1746,
+          "line": 1888,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "This operation composes a floting point number from a significand and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "an exponent value.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17678,7 +17978,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1746,
+                  "number": 1888,
                   "children": [
                     {
                       "kind": "span",
@@ -17699,7 +17999,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__common___spec.html#L1746C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1888C14"
                     },
                     {
                       "kind": "span",
@@ -17752,6 +18052,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the Ldexp() function to two input vectors, one of significands and\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "the other of exponents, returning a vector of composed floating point numbers. \n"
                 }
               ]
             }
@@ -22972,10 +23285,19 @@ GNATdoc.Documentation = {
         {
           "label": "Uint_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1692,
+          "line": 1701,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert unsigned integer bits to float.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -22983,7 +23305,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1692,
+                  "number": 1701,
                   "children": [
                     {
                       "kind": "span",
@@ -23004,7 +23326,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Uint_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1692C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1701C14"
                     },
                     {
                       "kind": "span",
@@ -23030,7 +23352,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1693,
+                  "number": 1702,
                   "children": [
                     {
                       "kind": "span",
@@ -23122,16 +23444,38 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert the unsigned integer, which contains the binary encoding of a float, to a\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "float.\n"
+                }
+              ]
             }
           ]
         },
         {
           "label": "Uint_Bits_To_Float",
           "qualifier": "(generic instantiation)",
-          "line": 1695,
+          "line": 1724,
           "column": 14,
           "src": "srcs/vulkan-math-common.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert unsigned integer bits to float.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -23139,7 +23483,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1695,
+                  "number": 1724,
                   "children": [
                     {
                       "kind": "span",
@@ -23160,7 +23504,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Uint_Bits_To_Float",
-                      "href": "docs/vulkan__math__common___spec.html#L1695C14"
+                      "href": "docs/vulkan__math__common___spec.html#L1724C14"
                     },
                     {
                       "kind": "span",
@@ -23213,6 +23557,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply Uint_Bits_To_Float() to each component of the input vector. The\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "resulting GenFType vector is returned.\n"
                 }
               ]
             }

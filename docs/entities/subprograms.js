@@ -577,17 +577,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Fma",
-      "docHref": "docs/vulkan__math__common___spec.html#L1706C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1747C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1706"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1747"
     },
     {
       "label": "Fma",
-      "docHref": "docs/vulkan__math__common___spec.html#L1709C14",
+      "docHref": "docs/vulkan__math__common___spec.html#L1771C14",
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-common.ads.html#L1709"
+      "srcHref": "srcs/vulkan-math-common.ads.html#L1771"
     },
     {
       "label": "Fract",
