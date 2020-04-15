@@ -1679,70 +1679,212 @@ package Vulkan.Math.Common is
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< Convert the floating point value to a signed or unsigned integer that
-    --< represents the encoding for the floating point value.
-    --
-    --< @param[in]     value The floating point value.
-    --
-    --< @returns The signed or unsigned integer representation of the float.
+    --< @summary
+    --< Convert integer bits to float.
+    --<
+    --< @description
+    --< Convert the integer, which contains the binary encoding of a float, to a
+    --< float.
     ----------------------------------------------------------------------------
     function Int_Bits_To_Float is new
         Ada.Unchecked_Conversion(Source => Vkm_Int, Target => Vkm_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert unsigned integer bits to float.
+    --<
+    --< @description
+    --< Convert the unsigned integer, which contains the binary encoding of a float, to a
+    --< float.
+    ----------------------------------------------------------------------------
     function Uint_Bits_To_Float is new
         Ada.Unchecked_Conversion(Source => Vkm_Uint, Target => Vkm_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert signed integer bits to float.
+    --<
+    --< @description
+    --< Apply Int_Bits_To_Float() to each component of the input vector. The
+    --< resulting GenFType vector is returned.
+    ----------------------------------------------------------------------------
     function Int_Bits_To_Float is new Apply_Func_IVI_RVF(Int_Bits_To_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Convert unsigned integer bits to float.
+    --<
+    --< @description
+    --< Apply Uint_Bits_To_Float() to each component of the input vector. The
+    --< resulting GenFType vector is returned.
+    ----------------------------------------------------------------------------
     function Uint_Bits_To_Float is new Apply_Func_IVU_RVF(Uint_Bits_To_Float);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
+    --< @summary
     --< Compute a fused multiply add operation.
-    --
-    --< @param[in]     a, b, c The parameters for the computation.
-    --
-    --< @return a * b + c
+    --<
+    --< @description
+    --< Compute the fused multiply add operation as follows:
+    --<     fma := a * b + c
+    --<
+    --< @param a
+    --< The left multiply operand.
+    --< 
+    --< @param b
+    --< The right multiply operand.
+    --<
+    --< @param c
+    --< The right addition operand, which is added to the product of a and b.
+    --<
+    --< @return
+    --< The result of the fused multiply add operation.
     ----------------------------------------------------------------------------
     function Fma(a, b, c : in     Vkm_Float) return Vkm_Float is
         (a * b + c) with Inline;
-    function Fma is new GFT.Apply_Func_IV_IV_IV_RV(Fma);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Compute a fused multiply add operation.
+    --<
+    --< @description
+    --< Compute the fused multiply add operation as follows:
+    --<     fma := a * b + c
+    --<
+    --< @param a
+    --< The left multiply operand.
+    --< 
+    --< @param b
+    --< The right multiply operand.
+    --<
+    --< @param c
+    --< The right addition operand, which is added to the product of a and b.
+    --<
+    --< @return
+    --< The result of the fused multiply add operation.
+    ----------------------------------------------------------------------------
     function Fma(a, b, c : in     Vkm_Double) return Vkm_Double is
         (a * b + c) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Compute a fused multiply add operation.
+    --<
+    --< @description
+    --< Apply Fma() component-wise on three input vectors. The resulting vector is
+    --< returned.
+    ----------------------------------------------------------------------------
+    function Fma is new GFT.Apply_Func_IV_IV_IV_RV(Fma);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Compute a fused multiply add operation.
+    --<
+    --< @description
+    --< Apply Fma() component-wise on three input vectors. The resulting vector is
+    --< returned.
+    ----------------------------------------------------------------------------
     function Fma is new GDT.Apply_Func_IV_IV_IV_RV(Fma);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
+    --< @summary
     --< Splits the floating point value x into its significand and exponent parts.
-    --
+    --<
+    --< @description
+    --< Splits the floating point value x into its significand and exponent parts.
     --<     x = significand * 2^exponent
-    --
-    --< @param[in]     x        The value to split.
-    --< @param[out]    exponent The exponent of x.
-    --
-    --< @return The significand of x.
     ----------------------------------------------------------------------------
     function Frexp is new Vulkan.Math.Numerics.Frexp(Vkm_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Splits the floating point value x into its significand and exponent parts.
+    --<
+    --< @description
+    --< Splits the floating point value x into its significand and exponent parts.
+    --<     x = significand * 2^exponent
+    ----------------------------------------------------------------------------
     function Frexp is new Vulkan.Math.Numerics.Frexp(Vkm_Double);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Splits the floating point value x into its significand and exponent parts.
+    --<
+    --< @description
+    --< Applies Frexp() on components of an input vector, setting an output GenIType
+    --< vector to the exponent value, and returning a vector with the significands.
+    ----------------------------------------------------------------------------
     function Frexp is new Apply_Func_IVF_OVI_RVF(Frexp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Splits the floating point value x into its significand and exponent parts.
+    --<
+    --< @description
+    --< Applies Frexp() on components of an input vector, setting an output GenIType
+    --< vector to the exponent value, and returning a vector with the significands.
+    ----------------------------------------------------------------------------
     function Frexp is new Apply_Func_IVD_OVI_RVD(Frexp);
 
 
     ----------------------------------------------------------------------------
-    --< @brief
-    --< This operation composes a floting point number from a fraction value and
+    --< @summary
+    --< This operation composes a floting point number from a significand and
     --< an exponent value.
-    --
+    --<
+    --< @description
+    --< This operation composes a floting point number from a significand and
+    --< an exponent value.
     --<     x = significand * 2^exponent
-    --
-    --< @param[in]     significand The significand.
-    --< @param[in]     exponent    The exponent.
-    --
-    --< @returns x
     ----------------------------------------------------------------------------
     function Ldexp is new Vulkan.Math.Numerics.Ldexp(Vkm_Float);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation composes a floting point number from a significand and
+    --< an exponent value.
+    --<
+    --< @description
+    --< This operation composes a floting point number from a significand and
+    --< an exponent value.
+    --<     x = significand * 2^exponent
+    ----------------------------------------------------------------------------
     function Ldexp is new Vulkan.Math.Numerics.Ldexp(Vkm_Double);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation composes a floting point number from a significand and
+    --< an exponent value.
+    --<
+    --< @description
+    --< Apply the Ldexp() function to two input vectors, one of significands and
+    --< the other of exponents, returning a vector of composed floating point numbers. 
+    ----------------------------------------------------------------------------
     function Ldexp is new Apply_Func_IVF_IVI_RVF(Ldexp);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation composes a floting point number from a significand and
+    --< an exponent value.
+    --<
+    --< @description
+    --< Apply the Ldexp() function to two input vectors, one of significands and
+    --< the other of exponents, returning a vector of composed floating point numbers. 
+    ----------------------------------------------------------------------------
     function Ldexp is new Apply_Func_IVD_IVI_RVD(Ldexp);
 
 end Vulkan.Math.Common;
