@@ -68,10 +68,10 @@ package body Vulkan.Math.Numerics is
         return Floating_Point'Fraction(x);
     end Frexp;
 
-    function Ldexp (x        : in     Floating_Point;
-                    exponent : in     Vkm_Int) return Floating_Point is
+    function Ldexp (significand : in     Floating_Point;
+                    exponent    : in     Vkm_Int) return Floating_Point is
     begin
-        return Floating_Point'Compose(x, exponent);
+        return Floating_Point'Compose(significand, exponent);
     end Ldexp;
 
 end Vulkan.Math.Numerics;
