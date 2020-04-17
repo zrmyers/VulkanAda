@@ -680,7 +680,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -811,7 +811,7 @@ GNATdoc.Documentation = {
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -822,7 +822,7 @@ GNATdoc.Documentation = {
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -1088,7 +1088,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -1133,7 +1133,7 @@ GNATdoc.Documentation = {
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -1144,7 +1144,7 @@ GNATdoc.Documentation = {
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -1594,7 +1594,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -1620,7 +1620,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -1790,7 +1790,7 @@ GNATdoc.Documentation = {
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -1801,7 +1801,7 @@ GNATdoc.Documentation = {
               "column": 30,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -1812,7 +1812,7 @@ GNATdoc.Documentation = {
               "column": 33,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -2035,7 +2035,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2080,7 +2080,7 @@ GNATdoc.Documentation = {
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -2379,7 +2379,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2405,7 +2405,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2510,7 +2510,7 @@ GNATdoc.Documentation = {
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -2907,7 +2907,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2933,7 +2933,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -3093,7 +3093,7 @@ GNATdoc.Documentation = {
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -3104,7 +3104,7 @@ GNATdoc.Documentation = {
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -3429,7 +3429,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -3513,7 +3513,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -3532,7 +3532,7 @@ GNATdoc.Documentation = {
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
@@ -3543,7 +3543,7 @@ GNATdoc.Documentation = {
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]

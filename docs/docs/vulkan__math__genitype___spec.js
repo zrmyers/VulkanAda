@@ -228,7 +228,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenBType",
-                      "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+                      "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
                     },
                     {
                       "kind": "span",
@@ -295,7 +295,7 @@ GNATdoc.Documentation = {
               "column": 41,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
-                "docHref": "docs/vulkan__math__genbtype___spec.html#L35C13"
+                "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
               ]
@@ -421,7 +421,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenBType",
-                      "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+                      "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
                     },
                     {
                       "kind": "span",

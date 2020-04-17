@@ -2,8 +2,34 @@ GNATdoc.Documentation = {
   "label": "Vulkan.Math.GenBType",
   "qualifier": "",
   "summary": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "This package describes any length vector of Vkm_Bool type.\n"
+        }
+      ]
+    }
   ],
   "description": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "Provides an instantiation of the generic GenType  package with a Base_Type of \n"
+        },
+        {
+          "kind": "span",
+          "text": "Vkm_Bool. This is used to provide the Vkm_GenBType subtype for the Vulkan Math \n"
+        },
+        {
+          "kind": "span",
+          "text": "library.\n"
+        }
+      ]
+    }
   ],
   "entities": [
     {
@@ -11,7 +37,7 @@ GNATdoc.Documentation = {
         {
           "label": "Vkm_GenBType",
           "qualifier": "",
-          "line": 35,
+          "line": 48,
           "column": 13,
           "src": "srcs/vulkan-math-genbtype.ads.html",
           "summary": [
@@ -22,7 +48,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 35,
+                  "number": 48,
                   "children": [
                     {
                       "kind": "span",
@@ -43,7 +69,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenBType",
-                      "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+                      "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
                     },
                     {
                       "kind": "span",
@@ -74,185 +100,24 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "A subtype of the instantiated Vkm_GenType that represents the GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "described in the GLSL specification.\n"
+                }
+              ]
             }
           ]
         }
       ],
       "label": "Record types"
-    },
-    {
-      "entities": [
-        {
-          "label": "GBT",
-          "qualifier": "(generic instantiation)",
-          "line": 32,
-          "column": 13,
-          "src": "srcs/vulkan-math-genbtype.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 32,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "package"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GBT"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vulkan.Math.GenType"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 33,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L49C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Image"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L49C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "'"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Image"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L66C21"
-          }
-        }
-      ],
-      "label": "Generic instantiations"
     }
   ]
 };

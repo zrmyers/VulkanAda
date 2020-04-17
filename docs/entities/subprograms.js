@@ -262,38 +262,38 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IVD_IVD_IVB_RVD",
-      "docHref": "docs/vulkan__math__gendtype___spec.html#L49C14",
+      "docHref": "docs/vulkan__math__gendtype___spec.html#L85C14",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L49"
+      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L85"
     },
     {
       "label": "Apply_Func_IVD_IVD_RVB",
-      "docHref": "docs/vulkan__math__gendtype___spec.html#L71C14",
+      "docHref": "docs/vulkan__math__gendtype___spec.html#L188C14",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L71"
+      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L188"
     },
     {
       "label": "Apply_Func_IVD_IVI_RVD",
-      "docHref": "docs/vulkan__math__gendtype___spec.html#L65C14",
+      "docHref": "docs/vulkan__math__gendtype___spec.html#L161C14",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L65"
+      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L161"
     },
     {
       "label": "Apply_Func_IVD_OVI_RVD",
-      "docHref": "docs/vulkan__math__gendtype___spec.html#L59C14",
+      "docHref": "docs/vulkan__math__gendtype___spec.html#L134C14",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L59"
+      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L134"
     },
     {
       "label": "Apply_Func_IVD_RVB",
-      "docHref": "docs/vulkan__math__gendtype___spec.html#L54C14",
+      "docHref": "docs/vulkan__math__gendtype___spec.html#L108C14",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L54"
+      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L108"
     },
     {
       "label": "Apply_Func_IVF_IVF_IVB_RVF",
@@ -367,17 +367,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IVU_IVU_IVB_RVU",
-      "docHref": "docs/vulkan__math__genutype___spec.html#L82C14",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L81C14",
       "declared": "Vulkan.Math.GenUType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genutype.ads.html#L82"
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L81"
     },
     {
       "label": "Apply_Func_IVU_IVU_RVB",
-      "docHref": "docs/vulkan__math__genutype___spec.html#L107C14",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L106C14",
       "declared": "Vulkan.Math.GenUType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genutype.ads.html#L107"
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L106"
     },
     {
       "label": "Apply_Func_IVU_RVF",

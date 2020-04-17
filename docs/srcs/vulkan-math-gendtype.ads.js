@@ -424,6 +424,127 @@ GNATdoc.SourceFile = {
       "children": [
         {
           "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 34,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @group Vulkan Math GenType"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 35,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 36,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 37,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< This package describes any length vector of Vkm_Double type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 38,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 39,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 40,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Provides an instantiation of the generic GenType  package with a Base_Type of "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 41,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_Double. This is used to provide the Vkm_GenBType subtype for the Vulkan Math "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 42,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< library."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 43,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 44,
+      "children": [
+        {
+          "kind": "span",
           "cssClass": "keyword",
           "text": "package"
         },
@@ -436,7 +557,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vulkan.Math.GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L33C21"
+          "href": "docs/vulkan__math__gendtype___spec.html#L44C21"
         },
         {
           "kind": "span",
@@ -452,7 +573,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 34,
+      "number": 45,
       "children": [
         {
           "kind": "span",
@@ -483,7 +604,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 35,
+      "number": 46,
       "children": [
         {
           "kind": "span",
@@ -514,13 +635,45 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 36,
+      "number": 47,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 37,
+      "number": 48,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @private"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 49,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< An instance of the generic GenType package, with Vkm_Double as the Base_Type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 50,
       "children": [
         {
           "kind": "span",
@@ -581,7 +734,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 38,
+      "number": 51,
       "children": [
         {
           "kind": "span",
@@ -674,13 +827,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 39,
+      "number": 52,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 40,
+      "number": 53,
       "children": [
         {
           "kind": "span",
@@ -701,7 +854,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -733,19 +886,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 41,
+      "number": 54,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 42,
+      "number": 55,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 43,
+      "number": 56,
       "children": [
         {
           "kind": "span",
@@ -761,7 +914,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 44,
+      "number": 57,
       "children": [
         {
           "kind": "span",
@@ -777,7 +930,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 45,
+      "number": 58,
       "children": [
         {
           "kind": "span",
@@ -793,7 +946,375 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 46,
+      "number": 59,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------- "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 60,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 61,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function for parameters of Vkm_Double and Vkm_Bool type to GenDType"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 62,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< and GenBType vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 63,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 64,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 65,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies a supplied function component wise on two GenDType vectors and"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 66,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< a GenBType vector returning a GenDType vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 67,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 68,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    RVD := [Func(IVD1.x, IVD2.x, IVB1.x) ... Func(IVD1.w, IVD2.w, IVB1.w)]"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 69,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 70,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 71,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The first input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 72,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 73,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD2"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 74,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The second input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 75,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 76,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVB1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 77,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The first input GenBType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 78,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 79,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 80,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The result GenDType vector, RVD."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 81,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 82,
       "children": [
         {
           "kind": "span",
@@ -809,7 +1330,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 47,
+      "number": 83,
       "children": [
         {
           "kind": "span",
@@ -840,7 +1361,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Func",
-          "href": "docs/vulkan__math__gendtype___spec.html#L47C23"
+          "href": "docs/vulkan__math__gendtype___spec.html#L83C23"
         },
         {
           "kind": "span",
@@ -851,7 +1372,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L47C28"
+          "href": "docs/vulkan__math__gendtype___spec.html#L83C28"
         },
         {
           "kind": "span",
@@ -867,7 +1388,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD2",
-          "href": "docs/vulkan__math__gendtype___spec.html#L47C34"
+          "href": "docs/vulkan__math__gendtype___spec.html#L83C34"
         },
         {
           "kind": "span",
@@ -909,7 +1430,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 48,
+      "number": 84,
       "children": [
         {
           "kind": "span",
@@ -920,7 +1441,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISB1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L48C28"
+          "href": "docs/vulkan__math__gendtype___spec.html#L84C28"
         },
         {
           "kind": "span",
@@ -993,7 +1514,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 49,
+      "number": 85,
       "children": [
         {
           "kind": "span",
@@ -1014,7 +1535,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Apply_Func_IVD_IVD_IVB_RVD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L49C14"
+          "href": "docs/vulkan__math__gendtype___spec.html#L85C14"
         },
         {
           "kind": "span",
@@ -1025,7 +1546,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L49C41"
+          "href": "docs/vulkan__math__gendtype___spec.html#L85C41"
         },
         {
           "kind": "span",
@@ -1041,7 +1562,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD2",
-          "href": "docs/vulkan__math__gendtype___spec.html#L49C47"
+          "href": "docs/vulkan__math__gendtype___spec.html#L85C47"
         },
         {
           "kind": "span",
@@ -1072,7 +1593,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -1083,7 +1604,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 50,
+      "number": 86,
       "children": [
         {
           "kind": "span",
@@ -1094,7 +1615,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVB1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L50C41"
+          "href": "docs/vulkan__math__gendtype___spec.html#L86C41"
         },
         {
           "kind": "span",
@@ -1125,7 +1646,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenBType",
-          "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+          "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
         },
         {
           "kind": "span",
@@ -1151,7 +1672,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -1162,13 +1683,291 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 51,
+      "number": 87,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 52,
+      "number": 88,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 89,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------- "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 90,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 91,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function on a Vkm_Double input that returns a VKm_Bool component-wise"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 92,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< to a GenDType vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 93,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 94,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 95,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies a supplied function component wise on a GenDType vector returning "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 96,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< a GenBType vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 97,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 98,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    RVB := [Func(IVD1.x) ... Func(IVD1.w)]"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 99,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 100,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 101,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 102,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 103,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 104,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The resulting GenBType vector, RVB."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 105,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 106,
       "children": [
         {
           "kind": "span",
@@ -1184,7 +1983,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 53,
+      "number": 107,
       "children": [
         {
           "kind": "span",
@@ -1215,7 +2014,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Func",
-          "href": "docs/vulkan__math__gendtype___spec.html#L53C23"
+          "href": "docs/vulkan__math__gendtype___spec.html#L107C23"
         },
         {
           "kind": "span",
@@ -1226,7 +2025,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L53C28"
+          "href": "docs/vulkan__math__gendtype___spec.html#L107C28"
         },
         {
           "kind": "span",
@@ -1294,7 +2093,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 54,
+      "number": 108,
       "children": [
         {
           "kind": "span",
@@ -1315,7 +2114,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Apply_Func_IVD_RVB",
-          "href": "docs/vulkan__math__gendtype___spec.html#L54C14"
+          "href": "docs/vulkan__math__gendtype___spec.html#L108C14"
         },
         {
           "kind": "span",
@@ -1326,7 +2125,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L54C33"
+          "href": "docs/vulkan__math__gendtype___spec.html#L108C33"
         },
         {
           "kind": "span",
@@ -1357,7 +2156,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -1383,7 +2182,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenBType",
-          "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+          "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
         },
         {
           "kind": "span",
@@ -1394,13 +2193,339 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 55,
+      "number": 109,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 56,
+      "number": 110,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 111,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------- "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 112,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 113,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function on a Vkm_Double input and a Vkm_Int outut that returns a Vkm_Double"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 114,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< component-wise to the corresponding vector types."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 115,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 116,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 117,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies a supplied function component wise on a GenDType and GenIType"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 118,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< vector, returning a GenDType vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 119,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 120,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    RVD := [Func(IVD.x,OVI.x) ... Func(IVD.w,OVI.w)]"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 121,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 122,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 123,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 124,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 125,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param OVI"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 126,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The output GenIType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 127,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 128,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 129,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The resulting GenDType vector, RVD."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 130,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 131,
       "children": [
         {
           "kind": "span",
@@ -1416,7 +2541,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 57,
+      "number": 132,
       "children": [
         {
           "kind": "span",
@@ -1447,7 +2572,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Func",
-          "href": "docs/vulkan__math__gendtype___spec.html#L57C23"
+          "href": "docs/vulkan__math__gendtype___spec.html#L132C23"
         },
         {
           "kind": "span",
@@ -1463,7 +2588,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L57C29"
+          "href": "docs/vulkan__math__gendtype___spec.html#L132C29"
         },
         {
           "kind": "span",
@@ -1505,7 +2630,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 58,
+      "number": 133,
       "children": [
         {
           "kind": "span",
@@ -1516,7 +2641,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISI",
-          "href": "docs/vulkan__math__gendtype___spec.html#L58C29"
+          "href": "docs/vulkan__math__gendtype___spec.html#L133C29"
         },
         {
           "kind": "span",
@@ -1584,7 +2709,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 59,
+      "number": 134,
       "children": [
         {
           "kind": "span",
@@ -1605,7 +2730,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Apply_Func_IVD_OVI_RVD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L59C14"
+          "href": "docs/vulkan__math__gendtype___spec.html#L134C14"
         },
         {
           "kind": "span",
@@ -1616,7 +2741,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L59C37"
+          "href": "docs/vulkan__math__gendtype___spec.html#L134C37"
         },
         {
           "kind": "span",
@@ -1647,7 +2772,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -1658,7 +2783,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 60,
+      "number": 135,
       "children": [
         {
           "kind": "span",
@@ -1669,7 +2794,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "OVI",
-          "href": "docs/vulkan__math__gendtype___spec.html#L60C37"
+          "href": "docs/vulkan__math__gendtype___spec.html#L135C37"
         },
         {
           "kind": "span",
@@ -1726,7 +2851,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -1737,13 +2862,339 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 61,
+      "number": 136,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 62,
+      "number": 137,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 138,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------- "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 139,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 140,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function on a Vkm_Double and a Vkm_Int input that returns a Vkm_Double "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 141,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< component-wise to the corresponding vector types."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 142,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 143,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 144,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies a supplied function component wise on a GenDType and GenIType"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 145,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< vector, returning a GenDType vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 146,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 147,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    RVD := [Func(IVD.x,IVI.x) ... Func(IVD.w,IVI.w)]"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 148,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 149,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 150,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 151,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 152,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVI"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 153,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The input GenIType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 154,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 155,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 156,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The resulting GenDType vector, RVD."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 157,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 158,
       "children": [
         {
           "kind": "span",
@@ -1759,7 +3210,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 63,
+      "number": 159,
       "children": [
         {
           "kind": "span",
@@ -1790,7 +3241,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Func",
-          "href": "docs/vulkan__math__gendtype___spec.html#L63C23"
+          "href": "docs/vulkan__math__gendtype___spec.html#L159C23"
         },
         {
           "kind": "span",
@@ -1806,7 +3257,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L63C29"
+          "href": "docs/vulkan__math__gendtype___spec.html#L159C29"
         },
         {
           "kind": "span",
@@ -1848,7 +3299,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 64,
+      "number": 160,
       "children": [
         {
           "kind": "span",
@@ -1859,7 +3310,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISI",
-          "href": "docs/vulkan__math__gendtype___spec.html#L64C29"
+          "href": "docs/vulkan__math__gendtype___spec.html#L160C29"
         },
         {
           "kind": "span",
@@ -1927,7 +3378,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 65,
+      "number": 161,
       "children": [
         {
           "kind": "span",
@@ -1948,7 +3399,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Apply_Func_IVD_IVI_RVD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L65C14"
+          "href": "docs/vulkan__math__gendtype___spec.html#L161C14"
         },
         {
           "kind": "span",
@@ -1959,7 +3410,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD",
-          "href": "docs/vulkan__math__gendtype___spec.html#L65C37"
+          "href": "docs/vulkan__math__gendtype___spec.html#L161C37"
         },
         {
           "kind": "span",
@@ -1990,7 +3441,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -2001,7 +3452,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 66,
+      "number": 162,
       "children": [
         {
           "kind": "span",
@@ -2012,7 +3463,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVI",
-          "href": "docs/vulkan__math__gendtype___spec.html#L66C37"
+          "href": "docs/vulkan__math__gendtype___spec.html#L162C37"
         },
         {
           "kind": "span",
@@ -2069,7 +3520,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -2080,13 +3531,339 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 67,
+      "number": 163,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 68,
+      "number": 164,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 165,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "---------------------------------------------------------------------------- "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 166,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 167,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function on two Vkm_Double inputs that returns a Vkm_Bool component-wise"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 168,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< to two Vkm_GenDType vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 169,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 170,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 171,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies a supplied function component wise on two GenDType vectors, "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 172,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< returning a GenBType vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 173,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 174,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    RVB := [Func(IVD1.x,IVD2.x) ... Func(IVD1.w,IVD2.w)]"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 175,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 176,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 177,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The first input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 178,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 179,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param IVD2"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 180,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The second input GenDType parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 181,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 182,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 183,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The resulting GenBType vector, RVB."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 184,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 185,
       "children": [
         {
           "kind": "span",
@@ -2102,7 +3879,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 69,
+      "number": 186,
       "children": [
         {
           "kind": "span",
@@ -2133,7 +3910,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Func",
-          "href": "docs/vulkan__math__gendtype___spec.html#L69C23"
+          "href": "docs/vulkan__math__gendtype___spec.html#L186C23"
         },
         {
           "kind": "span",
@@ -2149,7 +3926,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L69C29"
+          "href": "docs/vulkan__math__gendtype___spec.html#L186C29"
         },
         {
           "kind": "span",
@@ -2191,7 +3968,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 70,
+      "number": 187,
       "children": [
         {
           "kind": "span",
@@ -2202,7 +3979,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "ISD2",
-          "href": "docs/vulkan__math__gendtype___spec.html#L70C29"
+          "href": "docs/vulkan__math__gendtype___spec.html#L187C29"
         },
         {
           "kind": "span",
@@ -2270,7 +4047,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 71,
+      "number": 188,
       "children": [
         {
           "kind": "span",
@@ -2291,7 +4068,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Apply_Func_IVD_IVD_RVB",
-          "href": "docs/vulkan__math__gendtype___spec.html#L71C14"
+          "href": "docs/vulkan__math__gendtype___spec.html#L188C14"
         },
         {
           "kind": "span",
@@ -2302,7 +4079,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD1",
-          "href": "docs/vulkan__math__gendtype___spec.html#L71C37"
+          "href": "docs/vulkan__math__gendtype___spec.html#L188C37"
         },
         {
           "kind": "span",
@@ -2318,7 +4095,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "IVD2",
-          "href": "docs/vulkan__math__gendtype___spec.html#L71C43"
+          "href": "docs/vulkan__math__gendtype___spec.html#L188C43"
         },
         {
           "kind": "span",
@@ -2349,7 +4126,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L40C13"
+          "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -2375,7 +4152,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenBType",
-          "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+          "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
         },
         {
           "kind": "span",
@@ -2386,19 +4163,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 72,
+      "number": 189,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 73,
+      "number": 190,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 74,
+      "number": 191,
       "children": [
         {
           "kind": "span",

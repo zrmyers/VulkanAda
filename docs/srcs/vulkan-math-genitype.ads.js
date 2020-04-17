@@ -1073,7 +1073,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenBType",
-          "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+          "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
         },
         {
           "kind": "span",
@@ -1363,7 +1363,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenBType",
-          "href": "docs/vulkan__math__genbtype___spec.html#L35C13"
+          "href": "docs/vulkan__math__genbtype___spec.html#L48C13"
         },
         {
           "kind": "span",

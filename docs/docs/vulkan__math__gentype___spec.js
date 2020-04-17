@@ -857,7 +857,7 @@ GNATdoc.Documentation = {
           "inherited": [
             {
               "label": "Vkm_GenBType",
-              "docHref": "docs/vulkan__math__genbtype___spec.html#L35C13"
+              "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
             },
             {
               "label": "Vkm_GenIType",
@@ -865,11 +865,11 @@ GNATdoc.Documentation = {
             },
             {
               "label": "Vkm_GenDType",
-              "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13"
+              "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
             },
             {
               "label": "Vkm_GenUType",
-              "docHref": "docs/vulkan__math__genutype___spec.html#L51C13"
+              "docHref": "docs/vulkan__math__genutype___spec.html#L50C13"
             },
             {
               "label": "Vkm_GenFType",

@@ -16312,7 +16312,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenDType.Apply_Func_IVD_OVI_RVD",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L59C14"
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L134C14"
           }
         },
         {
@@ -17079,7 +17079,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenDType.Apply_Func_IVD_RVB",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L54C14"
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L108C14"
           }
         },
         {
@@ -17549,7 +17549,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenDType.Apply_Func_IVD_RVB",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L54C14"
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L108C14"
           }
         },
         {
@@ -18071,7 +18071,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenDType.Apply_Func_IVD_IVI_RVD",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L65C14"
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L161C14"
           }
         },
         {
@@ -19753,7 +19753,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenDType.Apply_Func_IVD_IVD_IVB_RVD",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L49C14"
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L85C14"
           }
         },
         {
@@ -19999,7 +19999,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_IVB_RVU",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L82C14"
+            "docHref": "docs/vulkan__math__genutype___spec.html#L81C14"
           }
         },
         {

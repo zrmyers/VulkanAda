@@ -45,17 +45,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenBType",
-      "docHref": "docs/vulkan__math__genbtype___spec.html#L35C13",
+      "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13",
       "declared": "Vulkan.Math.GenBType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genbtype.ads.html#L35"
+      "srcHref": "srcs/vulkan-math-genbtype.ads.html#L48"
     },
     {
       "label": "Vkm_GenDType",
-      "docHref": "docs/vulkan__math__gendtype___spec.html#L40C13",
+      "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L40"
+      "srcHref": "srcs/vulkan-math-gendtype.ads.html#L53"
     },
     {
       "label": "Vkm_GenFType",
@@ -80,10 +80,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenUType",
-      "docHref": "docs/vulkan__math__genutype___spec.html#L51C13",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L50C13",
       "declared": "Vulkan.Math.GenUType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genutype.ads.html#L51"
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L50"
     },
     {
       "label": "Vkm_Ivec2",
