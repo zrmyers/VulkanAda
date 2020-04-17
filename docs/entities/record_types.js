@@ -24,24 +24,24 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_Dvec2",
-      "docHref": "docs/vulkan__math__dvec2___spec.html#L33C13",
+      "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13",
       "declared": "Vulkan.Math.Dvec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L33"
+      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L40"
     },
     {
       "label": "Vkm_Dvec3",
-      "docHref": "docs/vulkan__math__dvec3___spec.html#L36C13",
+      "docHref": "docs/vulkan__math__dvec3___spec.html#L43C13",
       "declared": "Vulkan.Math.Dvec3",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec3.ads.html#L36"
+      "srcHref": "srcs/vulkan-math-dvec3.ads.html#L43"
     },
     {
       "label": "Vkm_Dvec4",
-      "docHref": "docs/vulkan__math__dvec4___spec.html#L39C13",
+      "docHref": "docs/vulkan__math__dvec4___spec.html#L44C13",
       "declared": "Vulkan.Math.Dvec4",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec4.ads.html#L39"
+      "srcHref": "srcs/vulkan-math-dvec4.ads.html#L44"
     },
     {
       "label": "Vkm_GenBType",

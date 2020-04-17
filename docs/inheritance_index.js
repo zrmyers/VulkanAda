@@ -27,15 +27,15 @@ GNATdoc.InheritanceIndex = [
         "inherited": [
           {
             "label": "Vkm_Dvec2",
-            "docHref": "docs/vulkan__math__dvec2___spec.html#L33C13"
+            "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13"
           },
           {
             "label": "Vkm_Dvec3",
-            "docHref": "docs/vulkan__math__dvec3___spec.html#L36C13"
+            "docHref": "docs/vulkan__math__dvec3___spec.html#L43C13"
           },
           {
             "label": "Vkm_Dvec4",
-            "docHref": "docs/vulkan__math__dvec4___spec.html#L39C13"
+            "docHref": "docs/vulkan__math__dvec4___spec.html#L44C13"
           }
         ]
       },
