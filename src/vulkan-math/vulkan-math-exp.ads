@@ -127,6 +127,16 @@ package Vulkan.Math.Exp is
     ----------------------------------------------------------------------------
     function Exp (x : in     Vkm_Float) return Vkm_Float
         renames Vulkan.Math.Numerics.VKM_FLT_NEF.Exp;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the natural exponentiation of x, component-wise.
+    --<
+    --< @description
+    --< Computes the component-wise natural exponentiation of x, e^x for a 
+    --< GenFType vector.
+    ----------------------------------------------------------------------------
     function Exp is new GFT.Apply_Func_IV_RV(Exp);
 
 
@@ -146,6 +156,16 @@ package Vulkan.Math.Exp is
     ----------------------------------------------------------------------------
     function Log (x : in     Vkm_Float) return Vkm_Float
         renames Vulkan.Math.Numerics.VKM_FLT_NEF.Log;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the natural logarithm of x, component-wise.
+    --<
+    --< @description
+    --< Computes the natural logarithm of x, which satisfies equation x=e^y, for
+    --< a GenFType vector.
+    ----------------------------------------------------------------------------
     function Log is new GFT.Apply_Func_IV_RV(Log);
 
 
@@ -157,14 +177,23 @@ package Vulkan.Math.Exp is
     --< Computes 2 raised to the x power, 2^x, for a single precision floating
     --< point number.
     --<
-    --< @param x T
-    --< he value 'x'
+    --< @param x
+    --< The value 'x'.
     --<
     --< @return
     --< The result of 2^x.
     ----------------------------------------------------------------------------
     function Exp2 (x : in     Vkm_Float) return Vkm_Float is
         (Exp( LN2 * x)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the binary exponentiation of x, component-wise.
+    --<
+    --< @description
+    --< Computes 2 raised to the x power, 2^x, for a GenFType vector.
+    ----------------------------------------------------------------------------
     function Exp2 is new GFT.Apply_Func_IV_RV(Exp2);
 
 
@@ -176,7 +205,8 @@ package Vulkan.Math.Exp is
     --< Computes log base 2 of x, finding the value y which satisfies y = 2^x, for
     --< a single precision floating point number.
     --<
-    --< @param x The value 'x'
+    --< @param x 
+    --< The value 'x'.
     --<
     --< @returns y = 2^x.
     --<
@@ -185,44 +215,130 @@ package Vulkan.Math.Exp is
     ----------------------------------------------------------------------------
     function Log2 (x : in     Vkm_Float) return Vkm_Float is
         (Exp(x) / LN2) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes log base 2 of x, component-wise.
+    --<
+    --< @description
+    --< Computes the component-wise log base 2 of x, finding the value y which 
+    --< satisfies y = 2^x, for a GenFType vector.
+    ----------------------------------------------------------------------------
     function Log2 is new GFT.Apply_Func_IV_RV(Log2);
 
 
     ----------------------------------------------------------------------------
-    --< @description
+    --< @summary
     --< Computes the square root of x.
     --<
-    --< @param x The value 'x'
+    --< @description
+    --< Computes the square root of x for a single-precision floating point 
+    --< number.
     --<
-    --< @returns y = sqrt(x)
+    --< @param x 
+    --< The value 'x'
     --<
-    --< @error
-    --< Results are undefined for x < 0.
+    --< @return 
+    --< The result of sqrt(x)
     ----------------------------------------------------------------------------
     function Sqrt (x : in     Vkm_Float ) return Vkm_Float
         renames Vulkan.Math.Numerics.VKM_FLT_NEF.Sqrt;
-    function Sqrt is new GFT.Apply_Func_IV_RV(Sqrt);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the square root of x.
+    --<
+    --< @description
+    --< Computes the square root of x for a double-precision floating point 
+    --< number.
+    --<
+    --< @param x 
+    --< The value 'x'
+    --<
+    --< @return 
+    --< The result of sqrt(x)
+    ----------------------------------------------------------------------------
     function Sqrt (x : in     Vkm_Double) return Vkm_Double
         renames Vulkan.Math.Numerics.VKM_DBL_NEF.Sqrt;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the square root of x, component-wise.
+    --<
+    --< @description
+    --< Computes the component-wise square root of x for a GenFType vector.
+    ----------------------------------------------------------------------------
+    function Sqrt is new GFT.Apply_Func_IV_RV(Sqrt);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the square root of x, component-wise.
+    --<
+    --< @description
+    --< Computes the component-wise square root of x for a GenDType vector.
+    ----------------------------------------------------------------------------
     function Sqrt is new GDT.Apply_Func_IV_RV(Sqrt);
 
 
     ----------------------------------------------------------------------------
-    --< @description
+    --< @summary
     --< Computes the inverse square root of x.
     --<
-    --< @param x The value 'x'
+    --< @description
+    --< Computes the inverse square root of x for a single precision floating point
+    --< number:
+    --<     y = 1/sqrt(x)
     --<
-    --< @returns y = 1/sqrt(x)
+    --< @param x 
+    --< The value 'x'
     --<
-    --< @error
-    --< Results are undefined for x <= 0.
+    --< @return
+    --< The inverse square root of x.
     ----------------------------------------------------------------------------
     function Inverse_Sqrt(x : in     Vkm_Float ) return Vkm_Float is
         (1.0 / Sqrt(x)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the inverse square root of x.
+    --<
+    --< @description
+    --< Computes the inverse square root of x for a double precision floating point
+    --< number:
+    --<     y = 1/sqrt(x)
+    --<
+    --< @param x 
+    --< The value 'x'
+    --<
+    --< @return
+    --< The inverse square root of x.
+    ----------------------------------------------------------------------------
     function Inverse_Sqrt(x : in     Vkm_Double) return Vkm_Double is
         (1.0 / Sqrt(x)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the inverse square root of x, component-wise.
+    --<
+    --< @description
+    --< Computes the component-wise inverse square root of x for a GenFType vector.
+    ----------------------------------------------------------------------------
     function Inverse_Sqrt is new GFT.Apply_Func_IV_RV(Inverse_Sqrt);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Computes the inverse square root of x, component-wise.
+    --<
+    --< @description
+    --< Computes the component-wise inverse square root of x for a GenDType vector.
+    ----------------------------------------------------------------------------
     function Inverse_Sqrt is new GDT.Apply_Func_IV_RV(Inverse_Sqrt);
 
 
