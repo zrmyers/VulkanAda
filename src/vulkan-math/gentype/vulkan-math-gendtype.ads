@@ -48,6 +48,8 @@ package Vulkan.Math.GenDType is
     package GDT is new Vulkan.Math.GenType(
         Base_Type => Vkm_Double, Image => Vkm_Double'Image);
 
+    --< A subtype of the instantiated Vkm_GenType that represents the GenDType 
+    --< described in the GLSL specification.
     subtype Vkm_GenDType is GDT.Vkm_GenType;
 
 
