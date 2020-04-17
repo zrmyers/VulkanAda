@@ -26,6 +26,9 @@ with Vulkan.Math.GenBType;
 
 use Vulkan.Math.GenBType;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math GenType
+--------------------------------------------------------------------------------
 --< @summary
 --< This package describes any length vector of Vkm_Int type.
 --<
