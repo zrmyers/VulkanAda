@@ -2,8 +2,38 @@ GNATdoc.Documentation = {
   "label": "Vulkan.Math.Numerics",
   "qualifier": "",
   "summary": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "This package instantiates Ada generic numerical operations for use by the \n"
+        },
+        {
+          "kind": "span",
+          "text": "Vulkan Math Library.\n"
+        }
+      ]
+    }
   ],
   "description": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "The Ada Numerics Generic Elementary Functions are instantiated for the Vkm_Double\n"
+        },
+        {
+          "kind": "span",
+          "text": "and Vkm_Float types. Additional generic algorithms for Ada floating point types\n"
+        },
+        {
+          "kind": "span",
+          "text": "are provided.\n"
+        }
+      ]
+    }
   ],
   "entities": [
     {
@@ -11,10 +41,19 @@ GNATdoc.Documentation = {
         {
           "label": "Compute_Modf",
           "qualifier": "",
-          "line": 56,
+          "line": 71,
           "column": 14,
           "src": "srcs/vulkan-math-numerics.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Algorithm for computing the \"modf\" for a floating point type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -22,7 +61,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 56,
+                  "number": 71,
                   "children": [
                     {
                       "kind": "span",
@@ -43,7 +82,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Compute_Modf",
-                      "href": "docs/vulkan__math__numerics___spec.html#L56C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L71C14"
                     },
                     {
                       "kind": "span",
@@ -59,7 +98,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__numerics___spec.html#L56C28"
+                      "href": "docs/vulkan__math__numerics___spec.html#L71C28"
                     },
                     {
                       "kind": "span",
@@ -90,7 +129,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L70C14"
                     },
                     {
                       "kind": "span",
@@ -101,7 +140,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 57,
+                  "number": 72,
                   "children": [
                     {
                       "kind": "span",
@@ -112,7 +151,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__numerics___spec.html#L57C28"
+                      "href": "docs/vulkan__math__numerics___spec.html#L72C28"
                     },
                     {
                       "kind": "span",
@@ -143,7 +182,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L70C14"
                     },
                     {
                       "kind": "span",
@@ -169,7 +208,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L70C14"
                     },
                     {
                       "kind": "span",
@@ -179,40 +218,340 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "This operation separates the floating point into its integer part and its \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "fraction part.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 56,
+              "line": 71,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.Numerics.Compute_Modf.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L55C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L70C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Mixed integer and fraction number.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "i",
-              "line": 57,
+              "line": 72,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.Numerics.Compute_Modf.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L55C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L70C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The integer part of 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The fraction part of 'x'\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Frexp",
+          "qualifier": "",
+          "line": 155,
+          "column": 14,
+          "src": "srcs/vulkan-math-numerics.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Break a floating point value into its significand and exponent parts.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 155,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Frexp",
+                      "href": "docs/vulkan__math__numerics___spec.html#L155C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "x",
+                      "href": "docs/vulkan__math__numerics___spec.html#L155C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Floating_Point",
+                      "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 156,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "exponent",
+                      "href": "docs/vulkan__math__numerics___spec.html#L156C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "out"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Int",
+                      "href": "docs/vulkan__math___spec.html#L58C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Floating_Point",
+                      "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Break a floating point value into its significand and exponent parts.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "x",
+              "line": 155,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Numerics.Frexp.Floating_Point",
+                "docHref": "docs/vulkan__math__numerics___spec.html#L154C14"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The input parameter..\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "exponent",
+              "line": 156,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Int",
+                "docHref": "docs/vulkan__math___spec.html#L58C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The exponent part of x.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The significand part of x.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Is_Inf",
           "qualifier": "",
           "line": 116,
           "column": 14,
           "src": "srcs/vulkan-math-numerics.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf. \n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -240,7 +579,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Frexp",
+                      "text": "Is_Inf",
                       "href": "docs/vulkan__math__numerics___spec.html#L116C14"
                     },
                     {
@@ -257,205 +596,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__numerics___spec.html#L116C21"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L115C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 117,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "exponent",
-                      "href": "docs/vulkan__math__numerics___spec.html#L117C21"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L115C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "x",
-              "line": 116,
-              "column": 21,
-              "type": {
-                "label": "Vulkan.Math.Numerics.Frexp.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L115C14"
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "exponent",
-              "line": 117,
-              "column": 21,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Int",
-                "docHref": "docs/vulkan__math___spec.html#L58C10"
-              },
-              "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Is_Inf",
-          "qualifier": "",
-          "line": 89,
-          "column": 14,
-          "src": "srcs/vulkan-math-numerics.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 89,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Is_Inf",
-                      "href": "docs/vulkan__math__numerics___spec.html#L89C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "x",
-                      "href": "docs/vulkan__math__numerics___spec.html#L89C22"
+                      "href": "docs/vulkan__math__numerics___spec.html#L116C22"
                     },
                     {
                       "kind": "span",
@@ -486,7 +627,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L88C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L115C14"
                     },
                     {
                       "kind": "span",
@@ -522,29 +663,69 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds an Inf. Always returns false.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 89,
+              "line": 116,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Numerics.Is_Inf.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L88C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L115C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to test.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "False, always.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Is_Nan",
           "qualifier": "",
-          "line": 102,
+          "line": 134,
           "column": 14,
           "src": "srcs/vulkan-math-numerics.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -552,7 +733,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 102,
+                  "number": 134,
                   "children": [
                     {
                       "kind": "span",
@@ -573,7 +754,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Nan",
-                      "href": "docs/vulkan__math__numerics___spec.html#L102C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L134C14"
                     },
                     {
                       "kind": "span",
@@ -589,7 +770,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__numerics___spec.html#L102C22"
+                      "href": "docs/vulkan__math__numerics___spec.html#L134C22"
                     },
                     {
                       "kind": "span",
@@ -620,7 +801,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L101C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L133C14"
                     },
                     {
                       "kind": "span",
@@ -656,18 +837,49 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Determine whether the input holds a NaN. Always returns false.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 102,
+              "line": 134,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Numerics.Is_Nan.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L101C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L133C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to test.\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "@returns \n"
+                    },
+                    {
+                      "kind": "span",
+                      "text": "False, always.\n"
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -675,10 +887,19 @@ GNATdoc.Documentation = {
         {
           "label": "Ldexp",
           "qualifier": "",
-          "line": 131,
+          "line": 177,
           "column": 14,
           "src": "srcs/vulkan-math-numerics.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Form a floating point value from a significand and exponent.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -686,7 +907,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 131,
+                  "number": 177,
                   "children": [
                     {
                       "kind": "span",
@@ -707,7 +928,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Ldexp",
-                      "href": "docs/vulkan__math__numerics___spec.html#L131C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L177C14"
                     },
                     {
                       "kind": "span",
@@ -722,13 +943,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "x",
-                      "href": "docs/vulkan__math__numerics___spec.html#L131C21"
+                      "text": "significand",
+                      "href": "docs/vulkan__math__numerics___spec.html#L177C21"
                     },
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "        "
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -754,7 +975,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L130C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L176C14"
                     },
                     {
                       "kind": "span",
@@ -765,7 +986,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 132,
+                  "number": 178,
                   "children": [
                     {
                       "kind": "span",
@@ -776,12 +997,12 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "exponent",
-                      "href": "docs/vulkan__math__numerics___spec.html#L132C21"
+                      "href": "docs/vulkan__math__numerics___spec.html#L178C21"
                     },
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": " "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
@@ -833,7 +1054,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L130C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L176C14"
                     },
                     {
                       "kind": "span",
@@ -843,40 +1064,89 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Form a floating point value from a significand and exponent.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "x",
-              "line": 131,
+              "label": "significand",
+              "line": 177,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Numerics.Ldexp.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L130C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L176C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The significand.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "exponent",
-              "line": 132,
+              "line": 178,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
                 "docHref": "docs/vulkan__math___spec.html#L58C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The exponent.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "x = significand * 2^exponent.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Smooth_Step",
           "qualifier": "",
-          "line": 76,
+          "line": 98,
           "column": 14,
           "src": "srcs/vulkan-math-numerics.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Algorithm for computing a smooth step function.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -884,7 +1154,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 76,
+                  "number": 98,
                   "children": [
                     {
                       "kind": "span",
@@ -905,7 +1175,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Smooth_Step",
-                      "href": "docs/vulkan__math__numerics___spec.html#L76C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L98C14"
                     },
                     {
                       "kind": "span",
@@ -921,7 +1191,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "edge0",
-                      "href": "docs/vulkan__math__numerics___spec.html#L76C27"
+                      "href": "docs/vulkan__math__numerics___spec.html#L98C27"
                     },
                     {
                       "kind": "span",
@@ -937,7 +1207,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "edge1",
-                      "href": "docs/vulkan__math__numerics___spec.html#L76C34"
+                      "href": "docs/vulkan__math__numerics___spec.html#L98C34"
                     },
                     {
                       "kind": "span",
@@ -953,7 +1223,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__numerics___spec.html#L76C41"
+                      "href": "docs/vulkan__math__numerics___spec.html#L98C41"
                     },
                     {
                       "kind": "span",
@@ -984,7 +1254,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L96C14"
                     },
                     {
                       "kind": "span",
@@ -1010,12 +1280,44 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Floating_Point",
-                      "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+                      "href": "docs/vulkan__math__numerics___spec.html#L96C14"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes smooth step as follows:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "t = Clamp((x - edge0) / (edge1 - edge0), 0, 1)"
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "t = t * t * (3 - 2 * t)"
                     }
                   ]
                 }
@@ -1025,279 +1327,81 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "edge0",
-              "line": 76,
+              "line": 98,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Numerics.Smooth_Step.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L74C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L96C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The first edge to interpolate between.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "edge1",
-              "line": 76,
+              "line": 98,
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.Numerics.Smooth_Step.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L74C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L96C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The second edge to interpolate between.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "x",
-              "line": 76,
+              "line": 98,
               "column": 41,
               "type": {
                 "label": "Vulkan.Math.Numerics.Smooth_Step.Floating_Point",
-                "docHref": "docs/vulkan__math__numerics___spec.html#L74C14"
+                "docHref": "docs/vulkan__math__numerics___spec.html#L96C14"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to apply the step function to.\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "@returns\n"
+                    },
+                    {
+                      "kind": "span",
+                      "text": "The smooth step function of x.\n"
+                    }
+                  ]
+                }
               ]
             }
           ]
         }
       ],
       "label": "Subprograms"
-    },
-    {
-      "entities": [
-        {
-          "label": "VKM_DBL_NEF",
-          "qualifier": "(generic instantiation)",
-          "line": 39,
-          "column": 13,
-          "src": "srcs/vulkan-math-numerics.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 39,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "package"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "VKM_DBL_NEF"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 40,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Ada.Numerics.Generic_Elementary_Functions"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Float_Type"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L64C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "VKM_FLT_NEF",
-          "qualifier": "(generic instantiation)",
-          "line": 35,
-          "column": 13,
-          "src": "srcs/vulkan-math-numerics.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 35,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "package"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "VKM_FLT_NEF"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 36,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Ada.Numerics.Generic_Elementary_Functions"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Float_Type"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L61C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "label": "Generic instantiations"
     }
   ]
 };

@@ -465,10 +465,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Compute_Modf",
-      "docHref": "docs/vulkan__math__numerics___spec.html#L56C14",
+      "docHref": "docs/vulkan__math__numerics___spec.html#L71C14",
       "declared": "Vulkan.Math.Numerics",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-numerics.ads.html#L56"
+      "srcHref": "srcs/vulkan-math-numerics.ads.html#L71"
     },
     {
       "label": "Cos",
@@ -605,10 +605,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Frexp",
-      "docHref": "docs/vulkan__math__numerics___spec.html#L116C14",
+      "docHref": "docs/vulkan__math__numerics___spec.html#L155C14",
       "declared": "Vulkan.Math.Numerics",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-numerics.ads.html#L116"
+      "srcHref": "srcs/vulkan-math-numerics.ads.html#L155"
     },
     {
       "label": "Inverse_Sqrt",
@@ -640,24 +640,24 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Is_Inf",
-      "docHref": "docs/vulkan__math__numerics___spec.html#L89C14",
+      "docHref": "docs/vulkan__math__numerics___spec.html#L116C14",
       "declared": "Vulkan.Math.Numerics",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-numerics.ads.html#L89"
+      "srcHref": "srcs/vulkan-math-numerics.ads.html#L116"
     },
     {
       "label": "Is_Nan",
-      "docHref": "docs/vulkan__math__numerics___spec.html#L102C14",
+      "docHref": "docs/vulkan__math__numerics___spec.html#L134C14",
       "declared": "Vulkan.Math.Numerics",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-numerics.ads.html#L102"
+      "srcHref": "srcs/vulkan-math-numerics.ads.html#L134"
     },
     {
       "label": "Ldexp",
-      "docHref": "docs/vulkan__math__numerics___spec.html#L131C14",
+      "docHref": "docs/vulkan__math__numerics___spec.html#L177C14",
       "declared": "Vulkan.Math.Numerics",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-numerics.ads.html#L131"
+      "srcHref": "srcs/vulkan-math-numerics.ads.html#L177"
     },
     {
       "label": "Log",
@@ -829,31 +829,31 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Make_Dvec2",
-      "docHref": "docs/vulkan__math__dvec2___spec.html#L58C14",
+      "docHref": "docs/vulkan__math__dvec2___spec.html#L57C14",
       "declared": "Vulkan.Math.Dvec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L58"
+      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L57"
     },
     {
       "label": "Make_Dvec2",
-      "docHref": "docs/vulkan__math__dvec2___spec.html#L74C14",
+      "docHref": "docs/vulkan__math__dvec2___spec.html#L73C14",
       "declared": "Vulkan.Math.Dvec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L74"
+      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L73"
     },
     {
       "label": "Make_Dvec2",
-      "docHref": "docs/vulkan__math__dvec2___spec.html#L92C14",
+      "docHref": "docs/vulkan__math__dvec2___spec.html#L91C14",
       "declared": "Vulkan.Math.Dvec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L92"
+      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L91"
     },
     {
       "label": "Make_Dvec2",
-      "docHref": "docs/vulkan__math__dvec2___spec.html#L112C14",
+      "docHref": "docs/vulkan__math__dvec2___spec.html#L111C14",
       "declared": "Vulkan.Math.Dvec2",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L112"
+      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L111"
     },
     {
       "label": "Make_Dvec3",
@@ -969,31 +969,31 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Make_Ivec2",
-      "docHref": "docs/vulkan__math__ivec2___spec.html#L47C14",
+      "docHref": "docs/vulkan__math__ivec2___spec.html#L58C14",
       "declared": "Vulkan.Math.Ivec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L47"
+      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L58"
     },
     {
       "label": "Make_Ivec2",
-      "docHref": "docs/vulkan__math__ivec2___spec.html#L59C14",
+      "docHref": "docs/vulkan__math__ivec2___spec.html#L75C14",
       "declared": "Vulkan.Math.Ivec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L59"
+      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L75"
     },
     {
       "label": "Make_Ivec2",
-      "docHref": "docs/vulkan__math__ivec2___spec.html#L72C14",
+      "docHref": "docs/vulkan__math__ivec2___spec.html#L93C14",
       "declared": "Vulkan.Math.Ivec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L72"
+      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L93"
     },
     {
       "label": "Make_Ivec2",
-      "docHref": "docs/vulkan__math__ivec2___spec.html#L85C14",
+      "docHref": "docs/vulkan__math__ivec2___spec.html#L113C14",
       "declared": "Vulkan.Math.Ivec2",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L85"
+      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L113"
     },
     {
       "label": "Make_Ivec3",
@@ -1662,10 +1662,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Smooth_Step",
-      "docHref": "docs/vulkan__math__numerics___spec.html#L76C14",
+      "docHref": "docs/vulkan__math__numerics___spec.html#L98C14",
       "declared": "Vulkan.Math.Numerics",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-numerics.ads.html#L76"
+      "srcHref": "srcs/vulkan-math-numerics.ads.html#L98"
     },
     {
       "label": "Sqrt",

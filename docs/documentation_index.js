@@ -38,6 +38,11 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__dvec4___spec.html"
       },
       {
+        "label": "Vulkan.Math.Ivec2",
+        "qualifier": "",
+        "file": "docs/vulkan__math__ivec2___spec.html"
+      },
+      {
         "label": "Vulkan.Math.Ivec3",
         "qualifier": "",
         "file": "docs/vulkan__math__ivec3___spec.html"
@@ -110,29 +115,19 @@ GNATdoc.DocumentationIndex = [
     ]
   },
   {
+    "label": "Vulkan Math Numerics",
+    "items": [
+      {
+        "label": "Vulkan.Math.Numerics",
+        "qualifier": "",
+        "file": "docs/vulkan__math__numerics___spec.html"
+      }
+    ]
+  },
+  {
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Ivec2",
-    "qualifier": "",
-    "file": "docs/vulkan__math__ivec2___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Numerics",
-    "qualifier": "",
-    "file": "docs/vulkan__math__numerics___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Numerics.VKM_DBL_NEF",
-    "qualifier": "(generic instantiation)",
-    "file": "docs/vulkan__math__numerics___vkm_dbl_nef___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Numerics.VKM_FLT_NEF",
-    "qualifier": "(generic instantiation)",
-    "file": "docs/vulkan__math__numerics___vkm_flt_nef___spec.html"
   },
   {
     "label": "Vulkan.Math.Operators",

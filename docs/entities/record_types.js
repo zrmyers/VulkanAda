@@ -24,10 +24,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_Dvec2",
-      "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13",
+      "docHref": "docs/vulkan__math__dvec2___spec.html#L39C13",
       "declared": "Vulkan.Math.Dvec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L40"
+      "srcHref": "srcs/vulkan-math-dvec2.ads.html#L39"
     },
     {
       "label": "Vkm_Dvec3",
@@ -87,10 +87,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_Ivec2",
-      "docHref": "docs/vulkan__math__ivec2___spec.html#L33C13",
+      "docHref": "docs/vulkan__math__ivec2___spec.html#L40C13",
       "declared": "Vulkan.Math.Ivec2",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L33"
+      "srcHref": "srcs/vulkan-math-ivec2.ads.html#L40"
     },
     {
       "label": "Vkm_Ivec3",

@@ -340,6 +340,72 @@ GNATdoc.SourceFile = {
       "children": [
         {
           "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 30,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @group Vulkan Math Basic Types"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 31,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 32,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 33,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< This package defines a 32-bit signed integer vector type with 2 components."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 34,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 35,
+      "children": [
+        {
+          "kind": "span",
           "cssClass": "keyword",
           "text": "package"
         },
@@ -352,7 +418,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vulkan.Math.Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L29C21"
+          "href": "docs/vulkan__math__ivec2___spec.html#L35C21"
         },
         {
           "kind": "span",
@@ -368,7 +434,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 30,
+      "number": 36,
       "children": [
         {
           "kind": "span",
@@ -399,7 +465,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 31,
+      "number": 37,
       "children": [
         {
           "kind": "span",
@@ -430,13 +496,29 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 32,
+      "number": 38,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 33,
+      "number": 39,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< A 2 component vector of 32-bit signed integers."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 40,
       "children": [
         {
           "kind": "span",
@@ -457,7 +539,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -524,120 +606,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 34,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 35,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 36,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Ada does not have the concept of constructors in the sense that they exist"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 37,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- in C++.  For this reason, we will instead define multiple methods for"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 38,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- instantiating a vec2 here."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 39,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 40,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- The following are explicit constructors for Vec2:"
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 41,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -652,7 +622,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @brief"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -668,7 +638,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- Produce a default vector with all components set to 0.0."
+          "text": "-- Ada does not have the concept of constructors in the sense that they exist"
         }
       ]
     },
@@ -684,7 +654,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "-- in C++.  For this reason, we will instead define multiple methods for"
         }
       ]
     },
@@ -700,7 +670,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @returns a Vec2 with all components set to 0.0."
+          "text": "-- instantiating a vec2 here."
         }
       ]
     },
@@ -731,6 +701,182 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
+          "cssClass": "comment",
+          "text": "-- The following are explicit constructors for Vec2:"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 48,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 49,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 50,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Constructor for Vkm_Ivec2 type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 51,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 52,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 53,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Produce a default vector with all components set to 0."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 54,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 55,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 56,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< A Vec2 with all components set to 0."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 57,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 58,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
           "cssClass": "keyword",
           "text": "function"
         },
@@ -743,7 +889,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L47C14"
+          "href": "docs/vulkan__math__ivec2___spec.html#L58C14"
         },
         {
           "kind": "span",
@@ -764,7 +910,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -780,7 +926,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 48,
+      "number": 59,
       "children": [
         {
           "kind": "span",
@@ -896,131 +1042,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 49,
+      "number": 60,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 50,
+      "number": 61,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 51,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 52,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 53,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Produce a vector with all components set to the same value."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 54,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 55,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     scalar_value The value to set all components to."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 56,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 57,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @returns A Vec2 with all components set to scalar_value."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 58,
+      "number": 62,
       "children": [
         {
           "kind": "span",
@@ -1036,7 +1070,199 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 59,
+      "number": 63,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 64,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Constructor for Vkm_Ivec2 type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 65,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 66,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 67,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Produce a vector with all components set to the same value."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 68,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 69,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param scalar_value "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 70,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The value to set all components to."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 71,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 72,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 73,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< A Vec2 with all components set to scalar_value."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 74,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 75,
       "children": [
         {
           "kind": "span",
@@ -1057,7 +1283,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L59C14"
+          "href": "docs/vulkan__math__ivec2___spec.html#L75C14"
         },
         {
           "kind": "span",
@@ -1073,7 +1299,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "scalar_value",
-          "href": "docs/vulkan__math__ivec2___spec.html#L59C26"
+          "href": "docs/vulkan__math__ivec2___spec.html#L75C26"
         },
         {
           "kind": "span",
@@ -1130,7 +1356,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -1146,7 +1372,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 60,
+      "number": 76,
       "children": [
         {
           "kind": "span",
@@ -1262,147 +1488,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 61,
+      "number": 77,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 62,
+      "number": 78,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 63,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 64,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 65,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Produce a vector by copying components from an existing vector."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 66,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 67,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     vec2_value The vec2 to copy components from."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 68,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 69,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @returns A vec2 with all of its components set equal to the corresponding"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 70,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--          components of vec2_value."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 71,
+      "number": 79,
       "children": [
         {
           "kind": "span",
@@ -1418,7 +1516,215 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 72,
+      "number": 80,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 81,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Constructor for Vkm_Ivec2 type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 82,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 83,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 84,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Produce a vector by copying components from an existing vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 85,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 86,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param vec2_value "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 87,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The vec2 to copy components from."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 88,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 89,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 90,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< A vec2 with all of its components set equal to the corresponding"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 91,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< components of vec2_value."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 92,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 93,
       "children": [
         {
           "kind": "span",
@@ -1439,7 +1745,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L72C14"
+          "href": "docs/vulkan__math__ivec2___spec.html#L93C14"
         },
         {
           "kind": "span",
@@ -1455,7 +1761,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "vec2_value",
-          "href": "docs/vulkan__math__ivec2___spec.html#L72C26"
+          "href": "docs/vulkan__math__ivec2___spec.html#L93C26"
         },
         {
           "kind": "span",
@@ -1486,7 +1792,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -1512,7 +1818,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -1528,7 +1834,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 73,
+      "number": 94,
       "children": [
         {
           "kind": "span",
@@ -1599,147 +1905,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 74,
+      "number": 95,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 75,
+      "number": 96,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 76,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 77,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 78,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Produce a vector by specifying the values for each of its components."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 79,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 80,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     value1 Value for component 1."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 81,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     value2 Value for component 2."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 82,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 83,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @return A Vec2 with all components set as specified."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 84,
+      "number": 97,
       "children": [
         {
           "kind": "span",
@@ -1755,7 +1933,247 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 85,
+      "number": 98,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 99,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Constructor for Vkm_Ivec2 type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 100,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 101,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 102,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Produce a vector by specifying the values for each of its components."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 103,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 104,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param value1 "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 105,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Value for component 1."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 106,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 107,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param value2 "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 108,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Value for component 2."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 109,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 110,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 111,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< A Vec2 with all components set as specified."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 112,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 113,
       "children": [
         {
           "kind": "span",
@@ -1776,7 +2194,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L85C14"
+          "href": "docs/vulkan__math__ivec2___spec.html#L113C14"
         },
         {
           "kind": "span",
@@ -1792,7 +2210,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value1",
-          "href": "docs/vulkan__math__ivec2___spec.html#L85C26"
+          "href": "docs/vulkan__math__ivec2___spec.html#L113C26"
         },
         {
           "kind": "span",
@@ -1808,7 +2226,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L85C34"
+          "href": "docs/vulkan__math__ivec2___spec.html#L113C34"
         },
         {
           "kind": "span",
@@ -1865,13 +2283,13 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 86,
+      "number": 114,
       "children": [
         {
           "kind": "span",
@@ -1902,19 +2320,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 87,
+      "number": 115,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 88,
+      "number": 116,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 89,
+      "number": 117,
       "children": [
         {
           "kind": "span",

@@ -260,50 +260,6 @@ GNATdoc.SourceFile = {
       "children": [
         {
           "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 25,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- This package instantiates Ada generic numerical operations for use by the "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 26,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Vulkan Math Library."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 27,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--------------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 28,
-      "children": [
-        {
-          "kind": "span",
           "cssClass": "keyword",
           "text": "with"
         },
@@ -326,13 +282,145 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 29,
+      "number": 25,
       "children": [
       ]
     },
     {
       "kind": "line",
+      "number": 26,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 27,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @group Vulkan Math Numerics"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 28,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 29,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
       "number": 30,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< This package instantiates Ada generic numerical operations for use by the "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 31,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vulkan Math Library."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 32,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 33,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 34,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The Ada Numerics Generic Elementary Functions are instantiated for the Vkm_Double"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 35,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< and Vkm_Float types. Additional generic algorithms for Ada floating point types"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 36,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< are provided."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 37,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 38,
       "children": [
         {
           "kind": "span",
@@ -348,7 +436,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vulkan.Math.Numerics",
-          "href": "docs/vulkan__math__numerics___spec.html#L30C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L38C21"
         },
         {
           "kind": "span",
@@ -364,7 +452,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 31,
+      "number": 39,
       "children": [
         {
           "kind": "span",
@@ -395,7 +483,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 32,
+      "number": 40,
       "children": [
         {
           "kind": "span",
@@ -426,7 +514,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 33,
+      "number": 41,
       "children": [
         {
           "kind": "span",
@@ -437,7 +525,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 34,
+      "number": 42,
       "children": [
         {
           "kind": "span",
@@ -447,13 +535,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--Instantiation of Generic Elementary Functions for Float."
+          "text": "--< @private"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 35,
+      "number": 43,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Instantiation of Generic Elementary Functions for Float."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 44,
       "children": [
         {
           "kind": "span",
@@ -504,7 +608,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 36,
+      "number": 45,
       "children": [
         {
           "kind": "span",
@@ -561,7 +665,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 37,
+      "number": 46,
       "children": [
         {
           "kind": "span",
@@ -572,7 +676,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 38,
+      "number": 47,
       "children": [
         {
           "kind": "span",
@@ -582,13 +686,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- Instantiation of Generic Elemantry Functions for Double."
+          "text": "--< @private"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 39,
+      "number": 48,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Instantiation of Generic Elemantry Functions for Double."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 49,
       "children": [
         {
           "kind": "span",
@@ -634,7 +754,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 40,
+      "number": 50,
       "children": [
         {
           "kind": "span",
@@ -691,172 +811,12 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 41,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 42,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 43,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 44,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Algorithm for computing the \"modf\" for a floating point type."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 45,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 46,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- This separates the floating point into its integer part and its fraction"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 47,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- part."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 48,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 49,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     x Mixed integer and fraction number."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 50,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[out]    i The integer part of 'x'."
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 51,
       "children": [
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
+          "text": "        "
         }
       ]
     },
@@ -872,7 +832,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @return The fraction part of 'x'"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -888,13 +848,253 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @summary"
         }
       ]
     },
     {
       "kind": "line",
       "number": 54,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Algorithm for computing the \"modf\" for a floating point type."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 55,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 56,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 57,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< This operation separates the floating point into its integer part and its "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 58,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< fraction part."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 59,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 60,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param x "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 61,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Mixed integer and fraction number."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 62,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 63,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param i "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 64,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The integer part of 'x'."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 65,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 66,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 67,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The fraction part of 'x'"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 68,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 69,
       "children": [
         {
           "kind": "span",
@@ -910,7 +1110,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 55,
+      "number": 70,
       "children": [
         {
           "kind": "span",
@@ -931,7 +1131,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L70C14"
         },
         {
           "kind": "span",
@@ -972,7 +1172,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 56,
+      "number": 71,
       "children": [
         {
           "kind": "span",
@@ -993,7 +1193,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Compute_Modf",
-          "href": "docs/vulkan__math__numerics___spec.html#L56C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L71C14"
         },
         {
           "kind": "span",
@@ -1009,7 +1209,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L56C28"
+          "href": "docs/vulkan__math__numerics___spec.html#L71C28"
         },
         {
           "kind": "span",
@@ -1040,7 +1240,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L70C14"
         },
         {
           "kind": "span",
@@ -1051,7 +1251,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 57,
+      "number": 72,
       "children": [
         {
           "kind": "span",
@@ -1062,7 +1262,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "i",
-          "href": "docs/vulkan__math__numerics___spec.html#L57C28"
+          "href": "docs/vulkan__math__numerics___spec.html#L72C28"
         },
         {
           "kind": "span",
@@ -1093,7 +1293,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L70C14"
         },
         {
           "kind": "span",
@@ -1119,7 +1319,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L55C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L70C14"
         },
         {
           "kind": "span",
@@ -1130,242 +1330,349 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 58,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "                      "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 59,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 60,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 61,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Algorithm for computing a smooth step function."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 62,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 63,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Computes:"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 64,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--    t = Clamp((x - edge0) / (edge1 - edge0), 0, 1)"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 65,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--    t = t * t * (3 - 2 * t)"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 66,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 67,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     edge0 The first edge to interpolate between."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 68,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     edge1 The second edge to interpolate between."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 69,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     x     The value to apply the step function to."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 70,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 71,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @returns t"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 72,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 73,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 74,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 75,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 76,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Algorithm for computing a smooth step function."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 77,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 78,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 79,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Computes smooth step as follows:"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 80,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    t = Clamp((x - edge0) / (edge1 - edge0), 0, 1)"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 81,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<    t = t * t * (3 - 2 * t)"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 82,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 83,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param edge0 "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 84,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The first edge to interpolate between."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 85,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 86,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param edge1 "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 87,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The second edge to interpolate between."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 88,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 89,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param x "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 90,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The value to apply the step function to."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 91,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 92,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @returns"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 93,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The smooth step function of x."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 94,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 95,
       "children": [
         {
           "kind": "span",
@@ -1381,7 +1688,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 74,
+      "number": 96,
       "children": [
         {
           "kind": "span",
@@ -1402,7 +1709,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
         },
         {
           "kind": "span",
@@ -1443,7 +1750,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 75,
+      "number": 97,
       "children": [
         {
           "kind": "span",
@@ -1474,7 +1781,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Clamp",
-          "href": "docs/vulkan__math__numerics___spec.html#L75C23"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C23"
         },
         {
           "kind": "span",
@@ -1490,7 +1797,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge0",
-          "href": "docs/vulkan__math__numerics___spec.html#L75C30"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C30"
         },
         {
           "kind": "span",
@@ -1506,7 +1813,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge1",
-          "href": "docs/vulkan__math__numerics___spec.html#L75C37"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C37"
         },
         {
           "kind": "span",
@@ -1522,7 +1829,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L75C44"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C44"
         },
         {
           "kind": "span",
@@ -1553,7 +1860,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
         },
         {
           "kind": "span",
@@ -1579,7 +1886,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
         },
         {
           "kind": "span",
@@ -1590,7 +1897,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 76,
+      "number": 98,
       "children": [
         {
           "kind": "span",
@@ -1611,7 +1918,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Smooth_Step",
-          "href": "docs/vulkan__math__numerics___spec.html#L76C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C14"
         },
         {
           "kind": "span",
@@ -1627,7 +1934,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge0",
-          "href": "docs/vulkan__math__numerics___spec.html#L76C27"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C27"
         },
         {
           "kind": "span",
@@ -1643,7 +1950,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge1",
-          "href": "docs/vulkan__math__numerics___spec.html#L76C34"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C34"
         },
         {
           "kind": "span",
@@ -1659,7 +1966,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L76C41"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C41"
         },
         {
           "kind": "span",
@@ -1690,7 +1997,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
         },
         {
           "kind": "span",
@@ -1716,484 +2023,12 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L74C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
         },
         {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 77,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 78,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 79,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 80,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 81,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Determine whether the input holds an Inf. Always returns false in Ada."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 82,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 83,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param     x The value to test."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 84,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 85,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @returns False, always."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 86,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 87,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "generic"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 88,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "type"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L88C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "digits"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "<>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 89,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Is_Inf",
-          "href": "docs/vulkan__math__numerics___spec.html#L89C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L89C22"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L88C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "return"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_Bool",
-          "href": "docs/vulkan__math___spec.html#L49C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 90,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 91,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 92,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 93,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 94,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Determine whether the input holds a NaN. Always returns false in Ada."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 95,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 96,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param     x The value to test."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 97,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 98,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @returns False, always."
         }
       ]
     },
@@ -2205,11 +2040,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2221,16 +2051,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "generic"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
         }
       ]
     },
@@ -2241,58 +2061,12 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "        "
+          "text": "    "
         },
         {
           "kind": "span",
-          "cssClass": "keyword",
-          "text": "type"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L101C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "digits"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "<>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2307,97 +2081,8 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Is_Nan",
-          "href": "docs/vulkan__math__numerics___spec.html#L102C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L102C22"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L101C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "return"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_Bool",
-          "href": "docs/vulkan__math___spec.html#L49C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
+          "cssClass": "comment",
+          "text": "--< @summary"
         }
       ]
     },
@@ -2409,6 +2094,11 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Determine whether the input holds an Inf. "
         }
       ]
     },
@@ -2420,6 +2110,11 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
         }
       ]
     },
@@ -2435,7 +2130,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< @description"
         }
       ]
     },
@@ -2451,7 +2146,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @brief"
+          "text": "--< Determine whether the input holds an Inf. Always returns false."
         }
       ]
     },
@@ -2467,7 +2162,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- Break a floating point value into its significand and exponent parts."
+          "text": "--<"
         }
       ]
     },
@@ -2483,7 +2178,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @param x "
         }
       ]
     },
@@ -2499,7 +2194,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @param[in]     x        The value."
+          "text": "--< The value to test."
         }
       ]
     },
@@ -2515,7 +2210,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @param[out]    exponent The exponent"
+          "text": "--<"
         }
       ]
     },
@@ -2531,7 +2226,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--< @return "
         }
       ]
     },
@@ -2547,7 +2242,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- @return The significand."
+          "text": "--< False, always."
         }
       ]
     },
@@ -2672,7 +2367,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "Frexp",
+          "text": "Is_Inf",
           "href": "docs/vulkan__math__numerics___spec.html#L116C14"
         },
         {
@@ -2689,12 +2384,12 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L116C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L116C22"
         },
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "        "
+          "text": " "
         },
         {
           "kind": "span",
@@ -2725,6 +2420,32 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_Bool",
+          "href": "docs/vulkan__math___spec.html#L49C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
           "text": ";"
         }
       ]
@@ -2736,13 +2457,871 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "text",
+          "text": "    "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 118,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 119,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 120,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 121,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Determine whether the input holds a NaN."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 122,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 123,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 124,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Determine whether the input holds a NaN. Always returns false."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 125,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 126,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param x "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 127,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The value to test."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 128,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 129,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @returns "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 130,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< False, always."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 131,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 132,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "generic"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 133,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "type"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Floating_Point",
+          "href": "docs/vulkan__math__numerics___spec.html#L133C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "digits"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "<>"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 134,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Is_Nan",
+          "href": "docs/vulkan__math__numerics___spec.html#L134C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "x",
+          "href": "docs/vulkan__math__numerics___spec.html#L134C22"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Floating_Point",
+          "href": "docs/vulkan__math__numerics___spec.html#L133C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_Bool",
+          "href": "docs/vulkan__math___spec.html#L49C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 135,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 136,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 137,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 138,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 139,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Break a floating point value into its significand and exponent parts."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 140,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 141,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 142,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Break a floating point value into its significand and exponent parts."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 143,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 144,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param x "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 145,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The input parameter.."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 146,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 147,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param exponent "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 148,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The exponent part of x."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 149,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 150,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 151,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The significand part of x."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 152,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 153,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "generic"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 154,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "type"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Floating_Point",
+          "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "digits"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "<>"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 155,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Frexp",
+          "href": "docs/vulkan__math__numerics___spec.html#L155C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "x",
+          "href": "docs/vulkan__math__numerics___spec.html#L155C21"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Floating_Point",
+          "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 156,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
           "text": "                    "
         },
         {
           "kind": "span",
           "cssClass": "identifier",
           "text": "exponent",
-          "href": "docs/vulkan__math__numerics___spec.html#L117C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L156C21"
         },
         {
           "kind": "span",
@@ -2799,7 +3378,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L115C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L154C14"
         },
         {
           "kind": "span",
@@ -2810,7 +3389,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 118,
+      "number": 157,
       "children": [
         {
           "kind": "span",
@@ -2821,7 +3400,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 119,
+      "number": 158,
       "children": [
         {
           "kind": "span",
@@ -2832,135 +3411,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 120,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 121,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @brief"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 122,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- Form a floating point value from its significand and exponent parts."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 123,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 124,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     significand The significand."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 125,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @param[in]     exponent    The exponent."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 126,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 127,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- @return x = significand * 2^exponent."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 128,
+      "number": 159,
       "children": [
         {
           "kind": "span",
@@ -2976,7 +3427,247 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 129,
+      "number": 160,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 161,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Form a floating point value from a significand and exponent."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 162,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 163,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 164,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Form a floating point value from a significand and exponent."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 165,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 166,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param significand"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 167,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The significand."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 168,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 169,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param exponent"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 170,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The exponent."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 171,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 172,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 173,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< x = significand * 2^exponent."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 174,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 175,
       "children": [
         {
           "kind": "span",
@@ -2997,7 +3688,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 130,
+      "number": 176,
       "children": [
         {
           "kind": "span",
@@ -3018,7 +3709,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L130C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L176C14"
         },
         {
           "kind": "span",
@@ -3059,7 +3750,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 131,
+      "number": 177,
       "children": [
         {
           "kind": "span",
@@ -3080,7 +3771,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Ldexp",
-          "href": "docs/vulkan__math__numerics___spec.html#L131C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L177C14"
         },
         {
           "kind": "span",
@@ -3095,13 +3786,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L131C21"
+          "text": "significand",
+          "href": "docs/vulkan__math__numerics___spec.html#L177C21"
         },
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "        "
+          "text": " "
         },
         {
           "kind": "span",
@@ -3127,7 +3818,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L130C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L176C14"
         },
         {
           "kind": "span",
@@ -3138,7 +3829,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 132,
+      "number": 178,
       "children": [
         {
           "kind": "span",
@@ -3149,12 +3840,12 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "exponent",
-          "href": "docs/vulkan__math__numerics___spec.html#L132C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L178C21"
         },
         {
           "kind": "span",
           "cssClass": "text",
-          "text": " "
+          "text": "    "
         },
         {
           "kind": "span",
@@ -3206,7 +3897,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L130C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L176C14"
         },
         {
           "kind": "span",
@@ -3217,7 +3908,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 133,
+      "number": 179,
       "children": [
         {
           "kind": "span",
@@ -3228,7 +3919,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 134,
+      "number": 180,
       "children": [
         {
           "kind": "span",

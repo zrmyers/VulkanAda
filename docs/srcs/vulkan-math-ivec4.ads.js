@@ -3874,7 +3874,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -4452,7 +4452,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -4983,7 +4983,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",
@@ -5519,7 +5519,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Ivec2",
-          "href": "docs/vulkan__math__ivec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__ivec2___spec.html#L40C13"
         },
         {
           "kind": "span",

@@ -2902,7 +2902,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Dvec2",
-          "href": "docs/vulkan__math__dvec2___spec.html#L40C13"
+          "href": "docs/vulkan__math__dvec2___spec.html#L39C13"
         },
         {
           "kind": "span",
@@ -3408,7 +3408,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Dvec2",
-          "href": "docs/vulkan__math__dvec2___spec.html#L40C13"
+          "href": "docs/vulkan__math__dvec2___spec.html#L39C13"
         },
         {
           "kind": "span",

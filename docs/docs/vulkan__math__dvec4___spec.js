@@ -2290,7 +2290,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Dvec2",
-                      "href": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                      "href": "docs/vulkan__math__dvec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
@@ -2510,7 +2510,7 @@ GNATdoc.Documentation = {
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Dvec2.Vkm_Dvec2",
-                "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__dvec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -2530,7 +2530,7 @@ GNATdoc.Documentation = {
               "column": 40,
               "type": {
                 "label": "Vulkan.Math.Dvec2.Vkm_Dvec2",
-                "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__dvec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -2719,7 +2719,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Dvec2",
-                      "href": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                      "href": "docs/vulkan__math__dvec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
@@ -2948,7 +2948,7 @@ GNATdoc.Documentation = {
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Dvec2.Vkm_Dvec2",
-                "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__dvec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -3121,7 +3121,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Dvec2",
-                      "href": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                      "href": "docs/vulkan__math__dvec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
@@ -3388,7 +3388,7 @@ GNATdoc.Documentation = {
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Dvec2.Vkm_Dvec2",
-                "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__dvec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -3528,7 +3528,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Dvec2",
-                      "href": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                      "href": "docs/vulkan__math__dvec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
@@ -3828,7 +3828,7 @@ GNATdoc.Documentation = {
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Dvec2.Vkm_Dvec2",
-                "docHref": "docs/vulkan__math__dvec2___spec.html#L40C13"
+                "docHref": "docs/vulkan__math__dvec2___spec.html#L39C13"
               },
               "description": [
                 {
