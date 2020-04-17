@@ -21,8 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a generic Double Precision Float Vulkan Math type.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
 with Vulkan.Math.GenBType;
 with Vulkan.Math.GenIType;
@@ -38,7 +36,7 @@ use Vulkan.Math.GenIType;
 --<
 --< @description
 --< Provides an instantiation of the generic GenType  package with a Base_Type of 
---< Vkm_Double. This is used to provide the Vkm_GenBType subtype for the Vulkan Math 
+--< Vkm_Double. This is used to provide the Vkm_GenDType subtype for the Vulkan Math 
 --< library.
 --------------------------------------------------------------------------------
 package Vulkan.Math.GenDType is
