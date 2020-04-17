@@ -21,17 +21,30 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a generic Boolean Vulkan Math type.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math GenType
+--------------------------------------------------------------------------------
+--< @summary
+--< This package describes any length vector of Vkm_Bool type.
+--<
+--< @description
+--< Provides an instantiation of the generic GenType  package with a Base_Type of 
+--< Vkm_Bool. This is used to provide the Vkm_GenBType subtype for the Vulkan Math 
+--< library.
+--------------------------------------------------------------------------------
 package Vulkan.Math.GenBType is
     pragma Preelaborate;
     pragma Pure;
 
+    --< @private
+    --< An instance of the generic GenType package, with Vkm_Bool as the Base_Type.
     package GBT is new Vulkan.Math.GenType(
         Base_Type => Vkm_Bool, Image => Vkm_Bool'Image);
 
+    --< A subtype of the instantiated Vkm_GenType that represents the GenBType 
+    --< described in the GLSL specification.
     subtype Vkm_GenBType is GBT.Vkm_GenType;
 
 

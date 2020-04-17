@@ -32,7 +32,7 @@ use Vulkan.Math.GenBType;
 --< This package describes any length vector of Vkm_Uint type.
 --<
 --< @description
---< Provides an instatiation of the generic GenType  package with a Base_Type of 
+--< Provides an instantiation of the generic GenType  package with a Base_Type of 
 --< Vkm_Uint. This is used to provide the GenUType subtype for the Vulkan Math 
 --< library.
 --------------------------------------------------------------------------------
@@ -40,7 +40,6 @@ package Vulkan.Math.GenUType is
     pragma Preelaborate;
     pragma Pure;
 
-    ----------------------------------------------------------------------------
     --< @private
     --< An instance of the generic GenType package, with Vkm_Uint as the Base_Type.
     package GUT is new Vulkan.Math.GenType(
