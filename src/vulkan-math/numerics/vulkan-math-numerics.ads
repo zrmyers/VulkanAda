@@ -29,6 +29,11 @@ with Ada.Numerics.Generic_Elementary_Functions;
 --< @summary
 --< This package instantiates Ada generic numerical operations for use by the 
 --< Vulkan Math Library.
+--< 
+--< @description
+--< The Ada Numerics Generic Elementary Functions are instantiated for the Vkm_Double
+--< and Vkm_Float types. Additional generic algorithms for Ada floating point types
+--< are provided.
 --------------------------------------------------------------------------------
 package Vulkan.Math.Numerics is
     pragma Preelaborate;
