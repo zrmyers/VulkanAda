@@ -535,17 +535,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Exp",
-      "docHref": "docs/vulkan__math__exp___spec.html#L117C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L128C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L117"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L128"
     },
     {
       "label": "Exp2",
-      "docHref": "docs/vulkan__math__exp___spec.html#L146C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L186C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L146"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L186"
     },
     {
       "label": "Face_Forward",
@@ -612,17 +612,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Inverse_Sqrt",
-      "docHref": "docs/vulkan__math__exp___spec.html#L197C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L302C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L197"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L302"
     },
     {
       "label": "Inverse_Sqrt",
-      "docHref": "docs/vulkan__math__exp___spec.html#L199C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L321C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L199"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L321"
     },
     {
       "label": "Is_All",
@@ -661,17 +661,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Log",
-      "docHref": "docs/vulkan__math__exp___spec.html#L133C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L157C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L133"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L157"
     },
     {
       "label": "Log2",
-      "docHref": "docs/vulkan__math__exp___spec.html#L162C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L216C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L162"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L216"
     },
     {
       "label": "Mag",
@@ -1536,17 +1536,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Pow",
-      "docHref": "docs/vulkan__math__exp___spec.html#L66C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L67C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L66"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L67"
     },
     {
       "label": "Pow",
-      "docHref": "docs/vulkan__math__exp___spec.html#L86C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L88C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L86"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L88"
     },
     {
       "label": "Radians",
@@ -1669,17 +1669,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Sqrt",
-      "docHref": "docs/vulkan__math__exp___spec.html#L178C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L245C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L178"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L245"
     },
     {
       "label": "Sqrt",
-      "docHref": "docs/vulkan__math__exp___spec.html#L181C14",
+      "docHref": "docs/vulkan__math__exp___spec.html#L263C14",
       "declared": "Vulkan.Math.Exp",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-exp.ads.html#L181"
+      "srcHref": "srcs/vulkan-math-exp.ads.html#L263"
     },
     {
       "label": "Step",

@@ -33,10 +33,19 @@ GNATdoc.Documentation = {
         {
           "label": "Exp",
           "qualifier": "",
-          "line": 117,
+          "line": 128,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural exponentiation of x, e^x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -44,7 +53,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 117,
+                  "number": 128,
                   "children": [
                     {
                       "kind": "span",
@@ -65,7 +74,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Exp",
-                      "href": "docs/vulkan__math__exp___spec.html#L117C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L128C14"
                     },
                     {
                       "kind": "span",
@@ -81,7 +90,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L117C19"
+                      "href": "docs/vulkan__math__exp___spec.html#L128C19"
                     },
                     {
                       "kind": "span",
@@ -144,7 +153,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 118,
+                  "number": 129,
                   "children": [
                     {
                       "kind": "span",
@@ -174,28 +183,72 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural exponentiation of x, e^x for a single precision\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "floating point number.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 117,
+              "line": 128,
               "column": 19,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of e^x.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Exp2",
           "qualifier": "",
-          "line": 146,
+          "line": 186,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the binary exponentiation of x, 2^x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -203,7 +256,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 146,
+                  "number": 186,
                   "children": [
                     {
                       "kind": "span",
@@ -224,7 +277,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Exp2",
-                      "href": "docs/vulkan__math__exp___spec.html#L146C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L186C14"
                     },
                     {
                       "kind": "span",
@@ -240,7 +293,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L146C20"
+                      "href": "docs/vulkan__math__exp___spec.html#L186C20"
                     },
                     {
                       "kind": "span",
@@ -313,7 +366,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 147,
+                  "number": 187,
                   "children": [
                     {
                       "kind": "span",
@@ -398,29 +451,73 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes 2 raised to the x power, 2^x, for a single precision floating\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "point number.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 146,
+              "line": 186,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of 2^x.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Inverse_Sqrt",
           "qualifier": "",
-          "line": 197,
+          "line": 302,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the inverse square root of x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -428,7 +525,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 197,
+                  "number": 302,
                   "children": [
                     {
                       "kind": "span",
@@ -449,7 +546,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Inverse_Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L197C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L302C14"
                     },
                     {
                       "kind": "span",
@@ -460,7 +557,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L197C27"
+                      "href": "docs/vulkan__math__exp___spec.html#L302C27"
                     },
                     {
                       "kind": "span",
@@ -538,7 +635,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 198,
+                  "number": 303,
                   "children": [
                     {
                       "kind": "span",
@@ -618,29 +715,87 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the inverse square root of x for a single precision floating point\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "number:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "y = 1/sqrt(x)"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 197,
+              "line": 302,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The inverse square root of x.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Inverse_Sqrt",
           "qualifier": "",
-          "line": 199,
+          "line": 321,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the inverse square root of x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -648,7 +803,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 199,
+                  "number": 321,
                   "children": [
                     {
                       "kind": "span",
@@ -669,7 +824,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Inverse_Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L199C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L321C14"
                     },
                     {
                       "kind": "span",
@@ -680,7 +835,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L199C27"
+                      "href": "docs/vulkan__math__exp___spec.html#L321C27"
                     },
                     {
                       "kind": "span",
@@ -753,7 +908,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 200,
+                  "number": 322,
                   "children": [
                     {
                       "kind": "span",
@@ -833,29 +988,87 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the inverse square root of x for a double precision floating point\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "number:\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "y = 1/sqrt(x)"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 199,
+              "line": 321,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The inverse square root of x.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Log",
           "qualifier": "",
-          "line": 133,
+          "line": 157,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural logarithm of x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -863,7 +1076,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 133,
+                  "number": 157,
                   "children": [
                     {
                       "kind": "span",
@@ -884,7 +1097,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Log",
-                      "href": "docs/vulkan__math__exp___spec.html#L133C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L157C14"
                     },
                     {
                       "kind": "span",
@@ -900,7 +1113,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L133C19"
+                      "href": "docs/vulkan__math__exp___spec.html#L157C19"
                     },
                     {
                       "kind": "span",
@@ -963,7 +1176,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 134,
+                  "number": 158,
                   "children": [
                     {
                       "kind": "span",
@@ -993,28 +1206,72 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural logarithm of x, which satisfies equation x=e^y, for\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a single precision floating point number.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 133,
+              "line": 157,
               "column": 19,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of ln(x).\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Log2",
           "qualifier": "",
-          "line": 162,
+          "line": 216,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes log base 2 of x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1022,7 +1279,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 162,
+                  "number": 216,
                   "children": [
                     {
                       "kind": "span",
@@ -1043,7 +1300,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Log2",
-                      "href": "docs/vulkan__math__exp___spec.html#L162C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L216C14"
                     },
                     {
                       "kind": "span",
@@ -1059,7 +1316,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L162C20"
+                      "href": "docs/vulkan__math__exp___spec.html#L216C20"
                     },
                     {
                       "kind": "span",
@@ -1132,7 +1389,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 163,
+                  "number": 217,
                   "children": [
                     {
                       "kind": "span",
@@ -1212,18 +1469,62 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes log base 2 of x, finding the value y which satisfies y = 2^x, for\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a single precision floating point number.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 162,
+              "line": 216,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "@returns y = 2^x.\n"
+                    }
+                  ]
+                },
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "@error\n"
+                    },
+                    {
+                      "kind": "span",
+                      "text": "Results are undefined for x <= 0.\n"
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1231,7 +1532,7 @@ GNATdoc.Documentation = {
         {
           "label": "Pow",
           "qualifier": "",
-          "line": 66,
+          "line": 67,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
@@ -1251,7 +1552,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 66,
+                  "number": 67,
                   "children": [
                     {
                       "kind": "span",
@@ -1272,7 +1573,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Pow",
-                      "href": "docs/vulkan__math__exp___spec.html#L66C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L67C14"
                     },
                     {
                       "kind": "span",
@@ -1288,7 +1589,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L66C19"
+                      "href": "docs/vulkan__math__exp___spec.html#L67C19"
                     },
                     {
                       "kind": "span",
@@ -1304,7 +1605,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__exp___spec.html#L66C22"
+                      "href": "docs/vulkan__math__exp___spec.html#L67C22"
                     },
                     {
                       "kind": "span",
@@ -1367,7 +1668,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 67,
+                  "number": 68,
                   "children": [
                     {
                       "kind": "span",
@@ -1425,7 +1726,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 66,
+              "line": 67,
               "column": 19,
               "type": {
                 "label": ""
@@ -1444,7 +1745,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "y",
-              "line": 66,
+              "line": 67,
               "column": 22,
               "type": {
                 "label": ""
@@ -1479,7 +1780,7 @@ GNATdoc.Documentation = {
         {
           "label": "Pow",
           "qualifier": "",
-          "line": 86,
+          "line": 88,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
@@ -1499,7 +1800,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 86,
+                  "number": 88,
                   "children": [
                     {
                       "kind": "span",
@@ -1520,7 +1821,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Pow",
-                      "href": "docs/vulkan__math__exp___spec.html#L86C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L88C14"
                     },
                     {
                       "kind": "span",
@@ -1536,7 +1837,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L86C19"
+                      "href": "docs/vulkan__math__exp___spec.html#L88C19"
                     },
                     {
                       "kind": "span",
@@ -1552,7 +1853,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__exp___spec.html#L86C22"
+                      "href": "docs/vulkan__math__exp___spec.html#L88C22"
                     },
                     {
                       "kind": "span",
@@ -1615,7 +1916,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 87,
+                  "number": 89,
                   "children": [
                     {
                       "kind": "span",
@@ -1673,7 +1974,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 86,
+              "line": 88,
               "column": 19,
               "type": {
                 "label": ""
@@ -1692,7 +1993,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "y",
-              "line": 86,
+              "line": 88,
               "column": 22,
               "type": {
                 "label": ""
@@ -1727,10 +2028,19 @@ GNATdoc.Documentation = {
         {
           "label": "Sqrt",
           "qualifier": "",
-          "line": 178,
+          "line": 245,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the square root of x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1738,7 +2048,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 178,
+                  "number": 245,
                   "children": [
                     {
                       "kind": "span",
@@ -1759,7 +2069,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L178C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L245C14"
                     },
                     {
                       "kind": "span",
@@ -1775,7 +2085,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L178C20"
+                      "href": "docs/vulkan__math__exp___spec.html#L245C20"
                     },
                     {
                       "kind": "span",
@@ -1843,7 +2153,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 179,
+                  "number": 246,
                   "children": [
                     {
                       "kind": "span",
@@ -1873,28 +2183,72 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the square root of x for a single-precision floating point \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "number.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 178,
+              "line": 245,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of sqrt(x)\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Sqrt",
           "qualifier": "",
-          "line": 181,
+          "line": 263,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the square root of x.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1902,7 +2256,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 181,
+                  "number": 263,
                   "children": [
                     {
                       "kind": "span",
@@ -1923,7 +2277,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L181C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L263C14"
                     },
                     {
                       "kind": "span",
@@ -1939,7 +2293,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__exp___spec.html#L181C20"
+                      "href": "docs/vulkan__math__exp___spec.html#L263C20"
                     },
                     {
                       "kind": "span",
@@ -2002,7 +2356,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 182,
+                  "number": 264,
                   "children": [
                     {
                       "kind": "span",
@@ -2032,20 +2386,55 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the square root of x for a double-precision floating point \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "number.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 181,
+              "line": 263,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of sqrt(x)\n"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "label": "Subprograms"
@@ -2055,10 +2444,19 @@ GNATdoc.Documentation = {
         {
           "label": "Exp",
           "qualifier": "(generic instantiation)",
-          "line": 119,
+          "line": 140,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural exponentiation of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2066,7 +2464,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 119,
+                  "number": 140,
                   "children": [
                     {
                       "kind": "span",
@@ -2087,7 +2485,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Exp",
-                      "href": "docs/vulkan__math__exp___spec.html#L119C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L140C14"
                     },
                     {
                       "kind": "span",
@@ -2142,6 +2540,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the component-wise natural exponentiation of x, e^x for a \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "GenFType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2152,10 +2563,19 @@ GNATdoc.Documentation = {
         {
           "label": "Exp2",
           "qualifier": "(generic instantiation)",
-          "line": 148,
+          "line": 197,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the binary exponentiation of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2163,7 +2583,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 148,
+                  "number": 197,
                   "children": [
                     {
                       "kind": "span",
@@ -2184,7 +2604,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Exp2",
-                      "href": "docs/vulkan__math__exp___spec.html#L148C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L197C14"
                     },
                     {
                       "kind": "span",
@@ -2239,6 +2659,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes 2 raised to the x power, 2^x, for a GenFType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2249,10 +2678,19 @@ GNATdoc.Documentation = {
         {
           "label": "Inverse_Sqrt",
           "qualifier": "(generic instantiation)",
-          "line": 201,
+          "line": 332,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the inverse square root of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2260,7 +2698,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 201,
+                  "number": 332,
                   "children": [
                     {
                       "kind": "span",
@@ -2281,7 +2719,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Inverse_Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L201C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L332C14"
                     },
                     {
                       "kind": "span",
@@ -2336,6 +2774,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the component-wise inverse square root of x for a GenFType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2346,10 +2793,19 @@ GNATdoc.Documentation = {
         {
           "label": "Inverse_Sqrt",
           "qualifier": "(generic instantiation)",
-          "line": 202,
+          "line": 342,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the inverse square root of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2357,7 +2813,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 202,
+                  "number": 342,
                   "children": [
                     {
                       "kind": "span",
@@ -2378,7 +2834,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Inverse_Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L202C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L342C14"
                     },
                     {
                       "kind": "span",
@@ -2433,6 +2889,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the component-wise inverse square root of x for a GenDType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2443,10 +2908,19 @@ GNATdoc.Documentation = {
         {
           "label": "Log",
           "qualifier": "(generic instantiation)",
-          "line": 135,
+          "line": 169,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural logarithm of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2454,7 +2928,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 135,
+                  "number": 169,
                   "children": [
                     {
                       "kind": "span",
@@ -2475,7 +2949,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Log",
-                      "href": "docs/vulkan__math__exp___spec.html#L135C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L169C14"
                     },
                     {
                       "kind": "span",
@@ -2530,6 +3004,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the natural logarithm of x, which satisfies equation x=e^y, for\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "a GenFType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2540,10 +3027,19 @@ GNATdoc.Documentation = {
         {
           "label": "Log2",
           "qualifier": "(generic instantiation)",
-          "line": 164,
+          "line": 228,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes log base 2 of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2551,7 +3047,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 164,
+                  "number": 228,
                   "children": [
                     {
                       "kind": "span",
@@ -2572,7 +3068,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Log2",
-                      "href": "docs/vulkan__math__exp___spec.html#L164C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L228C14"
                     },
                     {
                       "kind": "span",
@@ -2627,6 +3123,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the component-wise log base 2 of x, finding the value y which \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "satisfies y = 2^x, for a GenFType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2637,7 +3146,7 @@ GNATdoc.Documentation = {
         {
           "label": "Pow",
           "qualifier": "(generic instantiation)",
-          "line": 97,
+          "line": 100,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
@@ -2657,7 +3166,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 97,
+                  "number": 100,
                   "children": [
                     {
                       "kind": "span",
@@ -2678,7 +3187,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Pow",
-                      "href": "docs/vulkan__math__exp___spec.html#L97C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L100C14"
                     },
                     {
                       "kind": "span",
@@ -2756,7 +3265,7 @@ GNATdoc.Documentation = {
         {
           "label": "Pow",
           "qualifier": "(generic instantiation)",
-          "line": 107,
+          "line": 111,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
@@ -2776,7 +3285,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 107,
+                  "number": 111,
                   "children": [
                     {
                       "kind": "span",
@@ -2797,7 +3306,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Pow",
-                      "href": "docs/vulkan__math__exp___spec.html#L107C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L111C14"
                     },
                     {
                       "kind": "span",
@@ -2875,10 +3384,19 @@ GNATdoc.Documentation = {
         {
           "label": "Sqrt",
           "qualifier": "(generic instantiation)",
-          "line": 180,
+          "line": 274,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the square root of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2886,7 +3404,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 180,
+                  "number": 274,
                   "children": [
                     {
                       "kind": "span",
@@ -2907,7 +3425,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L180C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L274C14"
                     },
                     {
                       "kind": "span",
@@ -2962,6 +3480,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the component-wise square root of x for a GenFType vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2972,10 +3499,19 @@ GNATdoc.Documentation = {
         {
           "label": "Sqrt",
           "qualifier": "(generic instantiation)",
-          "line": 183,
+          "line": 284,
           "column": 14,
           "src": "srcs/vulkan-math-exp.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the square root of x, component-wise.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2983,7 +3519,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 183,
+                  "number": 284,
                   "children": [
                     {
                       "kind": "span",
@@ -3004,7 +3540,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sqrt",
-                      "href": "docs/vulkan__math__exp___spec.html#L183C14"
+                      "href": "docs/vulkan__math__exp___spec.html#L284C14"
                     },
                     {
                       "kind": "span",
@@ -3057,6 +3593,15 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Computes the component-wise square root of x for a GenDType vector.\n"
                 }
               ]
             }
