@@ -21,8 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a Floating Point Vector with 4 components.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenDType;
 with Vulkan.Math.Dvec2;
 
@@ -41,6 +39,7 @@ package Vulkan.Math.Dvec3 is
     pragma Preelaborate;
     pragma Pure;
 
+    --< A 3 component vector of double-precision floating point values.
     subtype Vkm_Dvec3 is Vkm_GenDType(Last_Index => 2);
 
     ----------------------------------------------------------------------------
@@ -158,7 +157,8 @@ package Vulkan.Math.Dvec3 is
     --< @param scalar_value 
     --< The scalar value to concatenate with the Dvec3.
     --<
-    --< @return The instance of Dvec3.
+    --< @return 
+    --< The instance of Dvec3.
     ----------------------------------------------------------------------------
     function Make_Dvec3 (vec2_value   : in     Vkm_Dvec2;
                          scalar_value : in     Vkm_Double ) return Vkm_Dvec3 is
