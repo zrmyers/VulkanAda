@@ -260,28 +260,6 @@ GNATdoc.SourceFile = {
       "children": [
         {
           "kind": "span",
-          "cssClass": "comment",
-          "text": "-- This package describes a generic Double Precision Float Vulkan Math type."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 25,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--------------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 26,
-      "children": [
-        {
-          "kind": "span",
           "cssClass": "keyword",
           "text": "with"
         },
@@ -304,7 +282,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 27,
+      "number": 25,
       "children": [
         {
           "kind": "span",
@@ -330,7 +308,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 28,
+      "number": 26,
       "children": [
         {
           "kind": "span",
@@ -346,6 +324,38 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vulkan.Math.GenIType"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 27,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 28,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "use"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vulkan.Math.GenBType"
         },
         {
           "kind": "span",
@@ -358,38 +368,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 29,
       "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 30,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "use"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vulkan.Math.GenBType"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 31,
-      "children": [
         {
           "kind": "span",
           "cssClass": "keyword",
@@ -414,8 +392,30 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 30,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 31,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--------------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
       "number": 32,
       "children": [
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @group Vulkan Math GenType"
+        }
       ]
     },
     {
@@ -436,7 +436,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @group Vulkan Math GenType"
+          "text": "--< @summary"
         }
       ]
     },
@@ -447,7 +447,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--------------------------------------------------------------------------------"
+          "text": "--< This package describes any length vector of Vkm_Double type."
         }
       ]
     },
@@ -458,7 +458,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "--<"
         }
       ]
     },
@@ -469,7 +469,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< This package describes any length vector of Vkm_Double type."
+          "text": "--< @description"
         }
       ]
     },
@@ -480,7 +480,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Provides an instantiation of the generic GenType  package with a Base_Type of "
         }
       ]
     },
@@ -491,7 +491,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--< Vkm_Double. This is used to provide the Vkm_GenDType subtype for the Vulkan Math "
         }
       ]
     },
@@ -502,7 +502,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Provides an instantiation of the generic GenType  package with a Base_Type of "
+          "text": "--< library."
         }
       ]
     },
@@ -513,35 +513,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_Double. This is used to provide the Vkm_GenBType subtype for the Vulkan Math "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 42,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< library."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 43,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "comment",
           "text": "--------------------------------------------------------------------------------"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 44,
+      "number": 42,
       "children": [
         {
           "kind": "span",
@@ -557,7 +535,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vulkan.Math.GenDType",
-          "href": "docs/vulkan__math__gendtype___spec.html#L44C21"
+          "href": "docs/vulkan__math__gendtype___spec.html#L42C21"
         },
         {
           "kind": "span",
@@ -573,7 +551,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 45,
+      "number": 43,
       "children": [
         {
           "kind": "span",
@@ -604,7 +582,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 46,
+      "number": 44,
       "children": [
         {
           "kind": "span",
@@ -635,13 +613,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 47,
+      "number": 45,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 48,
+      "number": 46,
       "children": [
         {
           "kind": "span",
@@ -657,7 +635,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 49,
+      "number": 47,
       "children": [
         {
           "kind": "span",
@@ -673,7 +651,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 50,
+      "number": 48,
       "children": [
         {
           "kind": "span",
@@ -734,7 +712,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 51,
+      "number": 49,
       "children": [
         {
           "kind": "span",
@@ -827,8 +805,40 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 50,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 51,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< A subtype of the instantiated Vkm_GenType that represents the GenDType "
+        }
+      ]
+    },
+    {
+      "kind": "line",
       "number": 52,
       "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< described in the GLSL specification."
+        }
       ]
     },
     {
@@ -2825,7 +2835,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenIType",
-          "href": "docs/vulkan__math__genitype___spec.html#L38C13"
+          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
         },
         {
           "kind": "span",
@@ -3494,7 +3504,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenIType",
-          "href": "docs/vulkan__math__genitype___spec.html#L38C13"
+          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
         },
         {
           "kind": "span",

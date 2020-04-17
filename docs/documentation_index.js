@@ -66,6 +66,11 @@ GNATdoc.DocumentationIndex = [
         "label": "Vulkan.Math.Exp",
         "qualifier": "",
         "file": "docs/vulkan__math__exp___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Geometry",
+        "qualifier": "",
+        "file": "docs/vulkan__math__geometry___spec.html"
       }
     ]
   },
@@ -83,6 +88,16 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__gendtype___spec.html"
       },
       {
+        "label": "Vulkan.Math.GenFType",
+        "qualifier": "",
+        "file": "docs/vulkan__math__genftype___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.GenIType",
+        "qualifier": "",
+        "file": "docs/vulkan__math__genitype___spec.html"
+      },
+      {
         "label": "Vulkan.Math.GenType",
         "qualifier": "",
         "file": "docs/vulkan__math__gentype___spec.html"
@@ -98,31 +113,6 @@ GNATdoc.DocumentationIndex = [
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.GenFType",
-    "qualifier": "",
-    "file": "docs/vulkan__math__genftype___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.GenFType.GFT",
-    "qualifier": "(generic instantiation)",
-    "file": "docs/vulkan__math__genftype___gft___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.GenIType",
-    "qualifier": "",
-    "file": "docs/vulkan__math__genitype___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.GenIType.GIT",
-    "qualifier": "(generic instantiation)",
-    "file": "docs/vulkan__math__genitype___git___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Geometry",
-    "qualifier": "",
-    "file": "docs/vulkan__math__geometry___spec.html"
   },
   {
     "label": "Vulkan.Math.Ivec2",

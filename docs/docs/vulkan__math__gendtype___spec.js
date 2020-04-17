@@ -22,7 +22,7 @@ GNATdoc.Documentation = {
         },
         {
           "kind": "span",
-          "text": "Vkm_Double. This is used to provide the Vkm_GenBType subtype for the Vulkan Math \n"
+          "text": "Vkm_Double. This is used to provide the Vkm_GenDType subtype for the Vulkan Math \n"
         },
         {
           "kind": "span",
@@ -98,6 +98,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "A subtype of the instantiated Vkm_GenType that represents the GenDType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "described in the GLSL specification.\n"
                 }
               ]
             }
@@ -778,7 +791,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L38C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
                     },
                     {
                       "kind": "span",
@@ -870,7 +883,7 @@ GNATdoc.Documentation = {
               "column": 37,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L38C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
               },
               "description": [
                 {
@@ -1042,7 +1055,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L38C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
                     },
                     {
                       "kind": "span",
@@ -1134,7 +1147,7 @@ GNATdoc.Documentation = {
               "column": 37,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L38C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
               },
               "description": [
                 {

@@ -59,17 +59,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenFType",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L42C13",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L55C13",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L42"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L55"
     },
     {
       "label": "Vkm_GenIType",
-      "docHref": "docs/vulkan__math__genitype___spec.html#L38C13",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L51C13",
       "declared": "Vulkan.Math.GenIType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genitype.ads.html#L38"
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L51"
     },
     {
       "label": "Vkm_GenType_Reference",

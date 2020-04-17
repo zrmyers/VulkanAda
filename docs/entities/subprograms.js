@@ -297,73 +297,73 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IVF_IVF_IVB_RVF",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L50C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L86C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L50"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L86"
     },
     {
       "label": "Apply_Func_IVF_IVF_RVB",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L88C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L277C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L88"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L277"
     },
     {
       "label": "Apply_Func_IVF_IVI_RVF",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L82C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L250C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L82"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L250"
     },
     {
       "label": "Apply_Func_IVF_OVI_RVF",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L76C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L223C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L76"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L223"
     },
     {
       "label": "Apply_Func_IVF_RVB",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L55C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L109C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L55"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L109"
     },
     {
       "label": "Apply_Func_IVF_RVI",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L59C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L131C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L59"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L131"
     },
     {
       "label": "Apply_Func_IVF_RVU",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L67C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L175C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L67"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L175"
     },
     {
       "label": "Apply_Func_IVI_IVI_IVB_RVI",
-      "docHref": "docs/vulkan__math__genitype___spec.html#L47C14",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L83C14",
       "declared": "Vulkan.Math.GenIType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genitype.ads.html#L47"
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L83"
     },
     {
       "label": "Apply_Func_IVI_IVI_RVB",
-      "docHref": "docs/vulkan__math__genitype___spec.html#L52C14",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L109C14",
       "declared": "Vulkan.Math.GenIType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genitype.ads.html#L52"
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L109"
     },
     {
       "label": "Apply_Func_IVI_RVF",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L63C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L153C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L63"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L153"
     },
     {
       "label": "Apply_Func_IVU_IVU_IVB_RVU",
@@ -381,10 +381,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IVU_RVF",
-      "docHref": "docs/vulkan__math__genftype___spec.html#L71C14",
+      "docHref": "docs/vulkan__math__genftype___spec.html#L197C14",
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genftype.ads.html#L71"
+      "srcHref": "srcs/vulkan-math-genftype.ads.html#L197"
     },
     {
       "label": "Asin",
@@ -486,17 +486,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Cross",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L104C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L202C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L104"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L202"
     },
     {
       "label": "Cross",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L105C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L226C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L105"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L226"
     },
     {
       "label": "Degrees",
@@ -507,31 +507,31 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Distance",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L68C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L106C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L68"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L106"
     },
     {
       "label": "Distance",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L70C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L129C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L70"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L129"
     },
     {
       "label": "Dot",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L87C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L154C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L87"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L154"
     },
     {
       "label": "Dot",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L88C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L178C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L88"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L178"
     },
     {
       "label": "Exp",
@@ -549,17 +549,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Face_Forward",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L138C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L288C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L138"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L288"
     },
     {
       "label": "Face_Forward",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L140C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L317C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L140"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L317"
     },
     {
       "label": "Floor",
@@ -675,17 +675,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Mag",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L53C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L67C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L53"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L67"
     },
     {
       "label": "Mag",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L54C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L84C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L54"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L84"
     },
     {
       "label": "Make_Bvec2",
@@ -1508,17 +1508,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Normalize",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L116C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L242C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L116"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L242"
     },
     {
       "label": "Normalize",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L118C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L259C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L118"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L259"
     },
     {
       "label": "not",
@@ -1557,31 +1557,31 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Reflect",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L156C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L340C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L156"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L340"
     },
     {
       "label": "Reflect",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L158C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L363C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L158"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L363"
     },
     {
       "label": "Refract",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L178C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L392C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L178"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L392"
     },
     {
       "label": "Refract",
-      "docHref": "docs/vulkan__math__geometry___spec.html#L180C14",
+      "docHref": "docs/vulkan__math__geometry___spec.html#L421C14",
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-geometry.ads.html#L180"
+      "srcHref": "srcs/vulkan-math-geometry.ads.html#L421"
     },
     {
       "label": "rem",
