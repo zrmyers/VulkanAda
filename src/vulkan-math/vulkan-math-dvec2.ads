@@ -40,13 +40,13 @@ package Vulkan.Math.Dvec2 is
     subtype Vkm_Dvec2 is Vkm_GenDType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
-    --< Ada does not have the concept of constructors in the sense that they exist
-    --< in C++.  For this reason, we will instead define multiple methods for
-    --< instantiating a vec2 here.
+    -- Ada does not have the concept of constructors in the sense that they exist
+    -- in C++.  For this reason, we will instead define multiple methods for
+    -- instantiating a vec2 here.
     ----------------------------------------------------------------------------
-    --< The following are explicit constructors for Vec2:
+    -- The following are explicit constructors for Vec2:
     ----------------------------------------------------------------------------
-    --< summary
+    --< @summary
     --< Constructor for Vkm_Dvec2 type.
     --<
     --< @description
@@ -60,7 +60,7 @@ package Vulkan.Math.Dvec2 is
 
 
     ----------------------------------------------------------------------------
-    --< summary
+    --< @summary
     --< Constructor for Vkm_Dvec2 type.
     --<
     --< @description
@@ -76,7 +76,7 @@ package Vulkan.Math.Dvec2 is
 
 
     ----------------------------------------------------------------------------
-    --< summary
+    --< @summary
     --< Constructor for Vkm_Dvec2 type.
     --<
     --< @description
@@ -94,7 +94,7 @@ package Vulkan.Math.Dvec2 is
 
 
     ----------------------------------------------------------------------------
-    --< summary
+    --< @summary
     --< Constructor for Vkm_Dvec2 type.
     --<
     --< @description
