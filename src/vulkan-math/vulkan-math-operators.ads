@@ -21,9 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package provides operator definitions for all types.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
 with Vulkan.Math.GenUType;
@@ -38,6 +35,13 @@ use Vulkan.Math.GenUType;
 use Vulkan.Math.GenIType;
 use Vulkan.Math.GenBType;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math Operators
+--------------------------------------------------------------------------------
+--< @summary
+--< This package provides operator definitions for all basic vector and matrix 
+--< types.
+--------------------------------------------------------------------------------
 package Vulkan.Math.Operators is
     pragma Preelaborate;
     pragma Pure;
@@ -68,28 +72,134 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenBType Concatenation Operators
     ----------------------------------------------------------------------------
-    function "&" (Left, Right : in     Vkm_GenBType) return Vkm_GenBType renames GBT.Concatenate;
-    function "&" (Left        : in     Vkm_Bool   ;
-                  Right       : in     Vkm_GenBType) return Vkm_GenBType is
-        (GBT.Make_GenType(Left).Concatenate(Right)) with Inline;
-    function "&" (Left        : in     Vkm_GenBType;
-                  Right       : in     Vkm_Bool   ) return Vkm_GenBType is
-        (Left.Concatenate(GBT.Make_GenType(Right))) with Inline;
-    function "&" (Left, Right : in     Vkm_Bool   ) return Vkm_GenBType is
-        (GBT.Make_GenType(Left, Right)) with Inline;
+    --< @summary
+    --< Vkm_GenBType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two Vkm_GenBType vectors.
+    --<    vector := vector & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left vector.
+    ----------------------------------------------------------------------------
+    function "&" (left, right : in     Vkm_GenBType) return Vkm_GenBType renames GBT.Concatenate;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a scalar Vkm_Bool and a Vkm_GenBType vector.
+    --<    vector := scalar & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left scalar.
+    ----------------------------------------------------------------------------
+    function "&" (left        : in     Vkm_Bool   ;
+                  right       : in     Vkm_GenBType) return Vkm_GenBType is
+        (GBT.Make_GenType(left).Concatenate(right)) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a scalar Vkm_Bool and a Vkm_GenBType vector.
+    --<    vector := vector & scalar;
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left vector.
+    ----------------------------------------------------------------------------
+    function "&" (left        : in     Vkm_GenBType;
+                  right       : in     Vkm_Bool   ) return Vkm_GenBType is
+        (left.Concatenate(GBT.Make_GenType(right))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two scalar Vkm_Bool parameters.
+    --<    vector := scalar & scalar;
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left scalar.
+    ----------------------------------------------------------------------------
+    function "&" (left, right : in     Vkm_Bool   ) return Vkm_GenBType is
+        (GBT.Make_GenType(left, right)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- GenBType Unary Complement Operator
+    --< @summary
+    --< Vkm_GenBType logical complement operator.
+    --<
+    --< @description
+    --< Apply a logical complement component-wise on a Vkm_GenBType vector.
+    --<    vector := not vector
     ----------------------------------------------------------------------------
     function "not" is new GBT.Apply_Func_IV_RV("not");
 
+
     ----------------------------------------------------------------------------
-    -- GenBType Bitwise AND Operator
+    --< @summary
+    --< Vkm_GenBType logical and operator.
+    --<
+    --< @description
+    --< Apply a logical "and" component-wise on two Vkm_GenBType vectors.
+    --<     vector := vector and vector;
     ----------------------------------------------------------------------------
-    function "and" is new GBT.Apply_Func_IV_IV_RV("and"); -- vector := vector and vector
-    function "and" is new GBT.Apply_Func_IV_IS_RV("and"); -- vector := vector and scalar
-    function "and" is new GBT.Apply_Func_IS_IV_RV("and"); -- vector := scalar and vector
+    function "and" is new GBT.Apply_Func_IV_IV_RV("and");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType logical and operator.
+    --<
+    --< @description
+    --< Apply a logical "and" component-wise on a Vkm_GenBType vector and 
+    --< Vkm_Bool scalar.
+    --<     vector := vector and scalar;
+    ----------------------------------------------------------------------------
+    function "and" is new GBT.Apply_Func_IV_IS_RV("and");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType logical and operator.
+    --<
+    --< @description
+    --< Apply a logical "and" component-wise on a Vkm_GenBType vector and 
+    --< Vkm_Bool scalar.
+    --<     vector := scalar and scalar;
+    ----------------------------------------------------------------------------
+    function "and" is new GBT.Apply_Func_IS_IV_RV("and");
 
     ----------------------------------------------------------------------------
     -- GenBType Bitwise OR Operator
@@ -149,15 +259,15 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenUType Concatenation Operators
     ----------------------------------------------------------------------------
-    function "&" (Left, Right : in     Vkm_GenUType) return Vkm_GenUType renames GUT.Concatenate;
-    function "&" (Left        : in     Vkm_Uint   ;
-                  Right       : in     Vkm_GenUType) return Vkm_GenUType is
-        (GUT.Make_GenType(Left).Concatenate(Right)) with Inline;
-    function "&" (Left        : in     Vkm_GenUType;
-                  Right       : in     Vkm_Uint   ) return Vkm_GenUType is
-        (Left.Concatenate(GUT.Make_GenType(Right))) with Inline;
-    function "&" (Left, Right : in     Vkm_Uint   ) return Vkm_GenUType is
-        (GUT.Make_GenType(Left, Right)) with Inline;
+    function "&" (left, right : in     Vkm_GenUType) return Vkm_GenUType renames GUT.Concatenate;
+    function "&" (left        : in     Vkm_Uint   ;
+                  right       : in     Vkm_GenUType) return Vkm_GenUType is
+        (GUT.Make_GenType(left).Concatenate(right)) with Inline;
+    function "&" (left        : in     Vkm_GenUType;
+                  right       : in     Vkm_Uint   ) return Vkm_GenUType is
+        (left.Concatenate(GUT.Make_GenType(right))) with Inline;
+    function "&" (left, right : in     Vkm_Uint   ) return Vkm_GenUType is
+        (GUT.Make_GenType(left, right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenUType Unary Plus Operator
@@ -286,15 +396,15 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenIType Concatenation Operators
     ----------------------------------------------------------------------------
-    function "&" (Left, Right : in     Vkm_GenIType) return Vkm_GenIType renames GIT.Concatenate;
-    function "&" (Left        : in     Vkm_Int   ;
-                  Right       : in     Vkm_GenIType) return Vkm_GenIType is
-        (GIT.Make_GenType(Left).Concatenate(Right)) with Inline;
-    function "&" (Left        : in     Vkm_GenIType;
-                  Right       : in     Vkm_Int   ) return Vkm_GenIType is
-        (Left.Concatenate(GIT.Make_GenType(Right))) with Inline;
-    function "&" (Left, Right : in     Vkm_Int   ) return Vkm_GenIType is
-        (GIT.Make_GenType(Left, Right)) with Inline;
+    function "&" (left, right : in     Vkm_GenIType) return Vkm_GenIType renames GIT.Concatenate;
+    function "&" (left        : in     Vkm_Int   ;
+                  right       : in     Vkm_GenIType) return Vkm_GenIType is
+        (GIT.Make_GenType(left).Concatenate(right)) with Inline;
+    function "&" (left        : in     Vkm_GenIType;
+                  right       : in     Vkm_Int   ) return Vkm_GenIType is
+        (left.Concatenate(GIT.Make_GenType(right))) with Inline;
+    function "&" (left, right : in     Vkm_Int   ) return Vkm_GenIType is
+        (GIT.Make_GenType(left, right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenIType Unary Plus Operator
@@ -429,15 +539,15 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenFType Concatenation Operators
     ----------------------------------------------------------------------------
-    function "&" (Left, Right : in     Vkm_GenFType) return Vkm_GenFType renames GFT.Concatenate;
-    function "&" (Left        : in     Vkm_Float   ;
-                  Right       : in     Vkm_GenFType) return Vkm_GenFType is
-        (GFT.Make_GenType(Left).Concatenate(Right)) with Inline;
-    function "&" (Left        : in     Vkm_GenFType;
-                  Right       : in     Vkm_Float   ) return Vkm_GenFType is
-        (Left.Concatenate(GFT.Make_GenType(Right))) with Inline;
-    function "&" (Left, Right : in     Vkm_Float   ) return Vkm_GenFType is
-        (GFT.Make_GenType(Left, Right)) with Inline;
+    function "&" (left, right : in     Vkm_GenFType) return Vkm_GenFType renames GFT.Concatenate;
+    function "&" (left        : in     Vkm_Float   ;
+                  right       : in     Vkm_GenFType) return Vkm_GenFType is
+        (GFT.Make_GenType(left).Concatenate(right)) with Inline;
+    function "&" (left        : in     Vkm_GenFType;
+                  right       : in     Vkm_Float   ) return Vkm_GenFType is
+        (left.Concatenate(GFT.Make_GenType(right))) with Inline;
+    function "&" (left, right : in     Vkm_Float   ) return Vkm_GenFType is
+        (GFT.Make_GenType(left, right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenFtype Unary Plus Operator
@@ -464,7 +574,7 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenFType Power Operator
     ----------------------------------------------------------------------------
-    function "**" (Left, Right : in     Vkm_Float) return Vkm_Float renames Vulkan.Math.Exp.Pow;
+    function "**" (left, right : in     Vkm_Float) return Vkm_Float renames Vulkan.Math.Exp.Pow;
     function "**" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** vector
     function "**" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** scalar
     function "**" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow); -- vector := scalar ** vector
@@ -486,7 +596,7 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenFType Remainder Operator
     ----------------------------------------------------------------------------
-    function "rem" (Left, Right : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Remainder;
+    function "rem" (left, right : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Remainder;
     function "rem" is new GFT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
     function "rem" is new GFT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
     function "rem" is new GFT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector
@@ -552,15 +662,15 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenDType Concatenation Operators
     ----------------------------------------------------------------------------
-    function "&" (Left, Right : in     Vkm_GenDType) return Vkm_GenDType renames GDT.Concatenate;
-    function "&" (Left        : in     Vkm_Double   ;
-                  Right       : in     Vkm_GenDType) return Vkm_GenDType is
-        (GDT.Make_GenType(Left).Concatenate(Right)) with Inline;
-    function "&" (Left        : in     Vkm_GenDType;
-                  Right       : in     Vkm_Double   ) return Vkm_GenDType is
-        (Left.Concatenate(GDT.Make_GenType(Right))) with Inline;
-    function "&" (Left, Right : in     Vkm_Double   ) return Vkm_GenDType is
-        (GDT.Make_GenType(Left, Right)) with Inline;
+    function "&" (left, right : in     Vkm_GenDType) return Vkm_GenDType renames GDT.Concatenate;
+    function "&" (left        : in     Vkm_Double   ;
+                  right       : in     Vkm_GenDType) return Vkm_GenDType is
+        (GDT.Make_GenType(left).Concatenate(right)) with Inline;
+    function "&" (left        : in     Vkm_GenDType;
+                  right       : in     Vkm_Double   ) return Vkm_GenDType is
+        (left.Concatenate(GDT.Make_GenType(right))) with Inline;
+    function "&" (left, right : in     Vkm_Double   ) return Vkm_GenDType is
+        (GDT.Make_GenType(left, right)) with Inline;
 
     ----------------------------------------------------------------------------
     -- GenDType Unary Plus Operator
@@ -587,7 +697,7 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenDType Power Operator
     ----------------------------------------------------------------------------
-    function "**" (Left, Right : in     Vkm_Double) return Vkm_Double renames Vulkan.Math.Exp.Pow;
+    function "**" (left, right : in     Vkm_Double) return Vkm_Double renames Vulkan.Math.Exp.Pow;
     function "**" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** vector
     function "**" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** scalar
     function "**" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow); -- vector := scalar ** vector
@@ -609,7 +719,7 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenDType Remainder Operator
     ----------------------------------------------------------------------------
-    function "rem" (Left, Right : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Remainder;
+    function "rem" (left, right : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Remainder;
     function "rem" is new GDT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
     function "rem" is new GDT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
     function "rem" is new GDT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector

@@ -62,5 +62,8 @@ begin
     x := m & m;
     Put_Line("x:= m & m " & x.Image);
     z := 1.0 & 2.0 & 3.0 & 4.0;
+    Put_Line("z = " & z.Image);
+    y := z + x;
+    Put_Line("z + x = " & y.Image);
     
 end Vulkan_Test.Math;

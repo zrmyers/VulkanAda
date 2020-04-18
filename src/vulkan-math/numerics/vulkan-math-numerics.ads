@@ -79,6 +79,7 @@ package Vulkan.Math.Numerics is
     --< Computes smooth step as follows:
     --<    t = Clamp((x - edge0) / (edge1 - edge0), 0, 1)
     --<    t = t * t * (3 - 2 * t)
+    --<    return t
     --<
     --< @param edge0 
     --< The first edge to interpolate between.
@@ -89,7 +90,7 @@ package Vulkan.Math.Numerics is
     --< @param x 
     --< The value to apply the step function to.
     --<
-    --< @returns
+    --< @return
     --< The smooth step function of x.
     ----------------------------------------------------------------------------
     generic
@@ -126,7 +127,7 @@ package Vulkan.Math.Numerics is
     --< @param x 
     --< The value to test.
     --<
-    --< @returns 
+    --< @return
     --< False, always.
     ----------------------------------------------------------------------------
     generic 
