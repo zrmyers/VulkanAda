@@ -3,157 +3,185 @@ GNATdoc.EntitiesCategory = {
   "entities": [
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L91C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L92C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L91"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L92"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L111C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L112C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L111"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L112"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L133C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L134C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L133"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L134"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L155C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L156C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L155"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L156"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L347C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L370C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L347"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L370"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L367C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L390C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L367"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L390"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L389C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L412C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L389"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L412"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L411C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L434C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L411"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L434"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L655C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L900C15",
       "declared": "Vulkan.Math.Operators",
-      "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L655"
+      "declared_qualifier": "(renaming)",
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L900"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L656C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L920C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L656"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L920"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L659C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L942C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L659"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L942"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L662C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L964C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L662"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L964"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L798C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1258C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L798"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1258"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L799C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1259C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L799"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1259"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L802C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1262C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L802"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1262"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L805C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1265C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L805"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1265"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L921C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1381C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L921"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1381"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L922C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1382C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L922"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1382"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L925C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1385C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L925"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1385"
     },
     {
       "label": "&",
-      "docHref": "docs/vulkan__math__operators___spec.html#L928C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1388C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L928"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1388"
     },
     {
       "label": "**",
-      "docHref": "docs/vulkan__math__operators___spec.html#L833C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1293C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L833"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1293"
     },
     {
       "label": "**",
-      "docHref": "docs/vulkan__math__operators___spec.html#L956C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1416C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "(renaming)",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L956"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1416"
+    },
+    {
+      "label": "/=",
+      "docHref": "docs/vulkan__math__operators___spec.html#L314C15",
+      "declared": "Vulkan.Math.Operators",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L314"
+    },
+    {
+      "label": "/=",
+      "docHref": "docs/vulkan__math__operators___spec.html#L841C15",
+      "declared": "Vulkan.Math.Operators",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L841"
+    },
+    {
+      "label": "=",
+      "docHref": "docs/vulkan__math__operators___spec.html#L293C15",
+      "declared": "Vulkan.Math.Operators",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L293"
+    },
+    {
+      "label": "=",
+      "docHref": "docs/vulkan__math__operators___spec.html#L820C15",
+      "declared": "Vulkan.Math.Operators",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L820"
     },
     {
       "label": "Absolute_Value",
@@ -192,10 +220,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "and",
-      "docHref": "docs/vulkan__math__operators___spec.html#L728C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1188C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L728"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1188"
     },
     {
       "label": "Apply_Func_IS_IS_IV_RV",
@@ -626,17 +654,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Is_All",
-      "docHref": "docs/vulkan__math__relational___spec.html#L153C14",
+      "docHref": "docs/vulkan__math__relational___spec.html#L154C14",
       "declared": "Vulkan.Math.Relational",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-relational.ads.html#L153"
+      "srcHref": "srcs/vulkan-math-relational.ads.html#L154"
     },
     {
       "label": "Is_Any",
-      "docHref": "docs/vulkan__math__relational___spec.html#L142C14",
+      "docHref": "docs/vulkan__math__relational___spec.html#L143C14",
       "declared": "Vulkan.Math.Relational",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-relational.ads.html#L142"
+      "srcHref": "srcs/vulkan-math-relational.ads.html#L143"
     },
     {
       "label": "Is_Inf",
@@ -1522,17 +1550,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "not",
-      "docHref": "docs/vulkan__math__operators___spec.html#L679C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1000C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L679"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1000"
     },
     {
       "label": "or",
-      "docHref": "docs/vulkan__math__operators___spec.html#L737C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1197C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L737"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1197"
     },
     {
       "label": "Pow",
@@ -1585,17 +1613,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "rem",
-      "docHref": "docs/vulkan__math__operators___spec.html#L855C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1315C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L855"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1315"
     },
     {
       "label": "rem",
-      "docHref": "docs/vulkan__math__operators___spec.html#L978C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1438C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L978"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1438"
     },
     {
       "label": "Round",
@@ -1858,10 +1886,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "xor",
-      "docHref": "docs/vulkan__math__operators___spec.html#L746C15",
+      "docHref": "docs/vulkan__math__operators___spec.html#L1206C15",
       "declared": "Vulkan.Math.Operators",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-operators.ads.html#L746"
+      "srcHref": "srcs/vulkan-math-operators.ads.html#L1206"
     }
   ]
 };
