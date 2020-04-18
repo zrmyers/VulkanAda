@@ -158,7 +158,7 @@ package Vulkan.Math.Operators is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Vkm_GenBType logical complement operator.
+    --< Vkm_GenBType logical "not" operator.
     --<
     --< @description
     --< Apply a logical complement component-wise on a Vkm_GenBType vector.
@@ -169,7 +169,7 @@ package Vulkan.Math.Operators is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Vkm_GenBType logical and operator.
+    --< Vkm_GenBType logical "and" operator.
     --<
     --< @description
     --< Apply a logical "and" component-wise on two Vkm_GenBType vectors.
@@ -180,7 +180,7 @@ package Vulkan.Math.Operators is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Vkm_GenBType logical and operator.
+    --< Vkm_GenBType logical "and" operator.
     --<
     --< @description
     --< Apply a logical "and" component-wise on a Vkm_GenBType vector and 
@@ -192,7 +192,7 @@ package Vulkan.Math.Operators is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Vkm_GenBType logical and operator.
+    --< Vkm_GenBType logical "and" operator.
     --<
     --< @description
     --< Apply a logical "and" component-wise on a Vkm_GenBType vector and 
@@ -201,24 +201,96 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     function "and" is new GBT.Apply_Func_IS_IV_RV("and");
 
-    ----------------------------------------------------------------------------
-    -- GenBType Bitwise OR Operator
-    ----------------------------------------------------------------------------
-    function "or" is new GBT.Apply_Func_IV_IV_RV("or"); -- vector := vector or vector
-    function "or" is new GBT.Apply_Func_IV_IS_RV("or"); -- vector := vector or scalar
-    function "or" is new GBT.Apply_Func_IS_IV_RV("or"); -- vector := scalar or vector
 
     ----------------------------------------------------------------------------
-    -- GenBType Bitwise XOR Operator
+    --< @summary
+    --< Vkm_GenBType logical "or" operator.
+    --<
+    --< @description
+    --< Apply a logical "or" component-wise on two Vkm_GenBType vectors.
+    --<     vector := vector or vector;
     ----------------------------------------------------------------------------
-    function "xor" is new GBT.Apply_Func_IV_IV_RV("xor"); -- vector := vector xor vector
-    function "xor" is new GBT.Apply_Func_IV_IS_RV("xor"); -- vector := vector xor scalar
-    function "xor" is new GBT.Apply_Func_IS_IV_RV("xor"); -- vector := scalar xor vector
+    function "or" is new GBT.Apply_Func_IV_IV_RV("or");
+
 
     ----------------------------------------------------------------------------
-    -- GenBType Relational Operators
+    --< @summary
+    --< Vkm_GenBType logical "or" operator.
+    --<
+    --< @description
+    --< Apply a logical "or" component-wise on a Vkm_GenBType vector and 
+    --< Vkm_Bool scalar.
+    --<     vector := vector or scalar;
+    ----------------------------------------------------------------------------
+    function "or" is new GBT.Apply_Func_IV_IS_RV("or");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType logical "or" operator.
+    --<
+    --< @description
+    --< Apply a logical "or" component-wise on a Vkm_GenBType vector and 
+    --< Vkm_Bool scalar.
+    --<     vector := scalar or vector;
+    ----------------------------------------------------------------------------
+    function "or" is new GBT.Apply_Func_IS_IV_RV("or");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType logical "xor" operator.
+    --<
+    --< @description
+    --< Apply a logical "xor" component-wise on two Vkm_GenBType vectors.
+    --<     vector := vector xor vector;
+    ----------------------------------------------------------------------------
+    function "xor" is new GBT.Apply_Func_IV_IV_RV("xor");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType logical "xor" operator.
+    --<
+    --< @description
+    --< Apply a logical "xor" component-wise on a Vkm_GenBType vector and 
+    --< Vkm_Bool scalar.
+    --<     vector := vector xor scalar;
+    ----------------------------------------------------------------------------
+    function "xor" is new GBT.Apply_Func_IV_IS_RV("xor");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType logical "xor" operator.
+    --<
+    --< @description
+    --< Apply a logical "xor" component-wise on a Vkm_GenBType vector and 
+    --< Vkm_Bool scalar.
+    --<     vector := scalar xor vector;
+    ----------------------------------------------------------------------------
+    function "xor" is new GBT.Apply_Func_IS_IV_RV("xor");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType equality operator.
+    --<
+    --< @description
+    --< Apply determine whether to Vkm_GenBType vectors are equal to each other.
+    --<     is_equal := vector = vector;
     ----------------------------------------------------------------------------
     function "="  is new GBT.Apply_Func_IV_IV_RV("=");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenBType inequality operator.
+    --<
+    --< @description
+    --< Apply determine whether to Vkm_GenBType vectors are not equal to each other.
+    --<     is_not_equal := vector /= vector;
+    ----------------------------------------------------------------------------
     function "/=" is new GBT.Apply_Func_IV_IV_RV("/=");
     
     
@@ -231,7 +303,6 @@ package Vulkan.Math.Operators is
     --
     -- A summary of operators that are component-wise Unary:
     --    - "+"  , Unary plus operator.
-    --    - "-"  , Unary minus operator.
     --    - "not", Bitwise complement operator
     --
     -- A summary of operators that are component-wise on two input vectors of the
@@ -257,75 +328,310 @@ package Vulkan.Math.Operators is
     --    - "/=", Non-Equality operator (Implicitly defined)
     --
     ----------------------------------------------------------------------------
-    -- GenUType Concatenation Operators
+    --< @summary
+    --< Vkm_GenUType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two Vkm_GenUType vectors.
+    --<    vector := vector & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left vector.
     ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_GenUType) return Vkm_GenUType renames GUT.Concatenate;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a scalar Vkm_Uint and a Vkm_GenUType vector.
+    --<    vector := scalar & vector;
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left scalar.
+    ----------------------------------------------------------------------------
     function "&" (left        : in     Vkm_Uint   ;
                   right       : in     Vkm_GenUType) return Vkm_GenUType is
         (GUT.Make_GenType(left).Concatenate(right)) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a scalar Vkm_Uint and a Vkm_GenUType vector.
+    --<    vector := vector & scalar;
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left vector.
+    ----------------------------------------------------------------------------
     function "&" (left        : in     Vkm_GenUType;
                   right       : in     Vkm_Uint   ) return Vkm_GenUType is
         (left.Concatenate(GUT.Make_GenType(right))) with Inline;
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a two scalars of Vkm_Uint type.
+    --<    vector := scalar & scalar;
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left scalar.
+    ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_Uint   ) return Vkm_GenUType is
         (GUT.Make_GenType(left, right)) with Inline;
 
+
     ----------------------------------------------------------------------------
-    -- GenUType Unary Plus Operator
+    --< @summary
+    --< Vkm_GenUType unary plus operator.
+    --<
+    --< @description
+    --< Return the vector unmodified.
+    --<    vector := +vector
     ----------------------------------------------------------------------------
     function "+" is new GUT.Apply_Func_IV_RV("+");
 
-    ----------------------------------------------------------------------------
-    -- GenUType Unary Minus Operator
-    ----------------------------------------------------------------------------
-    function "-" is new GUT.Apply_Func_IV_RV("-");
-
 
     ----------------------------------------------------------------------------
-    -- GenUType Unary Complement Operator
+    --< @summary
+    --< Vkm_GenUType bitwise complement operator.
+    --<
+    --< @description
+    --< Apply the bitwise complement operator to each component of the vector,
+    --< returning the resulting vector.
+    --<    vector := not vector
     ----------------------------------------------------------------------------
     function "not" is new GUT.Apply_Func_IV_RV("not");
-    
-    ----------------------------------------------------------------------------
-    -- GenUType Modulus Operator
-    ----------------------------------------------------------------------------
-    function "mod" is new GUT.Apply_Func_IV_IV_RV("mod"); -- vector := vector mod vector
-    function "mod" is new GUT.Apply_Func_IV_IS_RV("mod"); -- vector := vector mod scalar
-    function "mod" is new GUT.Apply_Func_IS_IV_RV("mod"); -- vector := scalar mod vector
+
 
     ----------------------------------------------------------------------------
-    -- GenUType Addition Operator
+    --< @summary
+    --< Vkm_GenUType modulus operator.
+    --<
+    --< @description
+    --< Apply a modulus component-wise on two Vkm_GenBType vectors.
+    --<     vector := vector mod vector;
     ----------------------------------------------------------------------------
-    function "+" is new GUT.Apply_Func_IV_IV_RV("+"); -- vector := vector + vector
-    function "+" is new GUT.Apply_Func_IV_IS_RV("+"); -- vector := vector + scalar
-    function "+" is new GUT.Apply_Func_IS_IV_RV("+"); -- vector := scalar + vector
+    function "mod" is new GUT.Apply_Func_IV_IV_RV("mod");
+
 
     ----------------------------------------------------------------------------
-    -- GenUType Subtraction Operator
+    --< @summary
+    --< Vkm_GenUType modulus operator.
+    --<
+    --< @description
+    --< Apply a scalar modulus component-wise on a Vkm_GenUType vector.
+    --<     vector := vector mod scalar;
     ----------------------------------------------------------------------------
-    function "-" is new GUT.Apply_Func_IV_IV_RV("-"); -- vector := vector - vector
-    function "-" is new GUT.Apply_Func_IV_IS_RV("-"); -- vector := vector - scalar
-    function "-" is new GUT.Apply_Func_IS_IV_RV("-"); -- vector := scalar - vector
+    function "mod" is new GUT.Apply_Func_IV_IS_RV("mod");
+
 
     ----------------------------------------------------------------------------
-    -- GenUType Remainder Operator
+    --< @summary
+    --< Vkm_GenUType modulus operator.
+    --<
+    --< @description
+    --< Apply a vector modulus component-wise on a Vkm_Uint scalar.
+    --<     vector := scalar mod vector;
     ----------------------------------------------------------------------------
-    function "rem" is new GUT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
-    function "rem" is new GUT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
-    function "rem" is new GUT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector
+    function "mod" is new GUT.Apply_Func_IS_IV_RV("mod");
+
 
     ----------------------------------------------------------------------------
-    -- GenUType Multiplication Operator
+    --< @summary
+    --< Vkm_GenUType addition operator.
+    --<
+    --< @description
+    --< Apply a addition component-wise on two Vkm_GenUType vectors.
+    --<     vector := vector + vector;
     ----------------------------------------------------------------------------
-    function "*" is new GUT.Apply_Func_IV_IV_RV("*"); -- vector := vector * vector
-    function "*" is new GUT.Apply_Func_IV_IS_RV("*"); -- vector := vector * scalar
-    function "*" is new GUT.Apply_Func_IS_IV_RV("*"); -- vector := scalar * vector
+    function "+" is new GUT.Apply_Func_IV_IV_RV("+");
+
 
     ----------------------------------------------------------------------------
-    -- GenUType Division Operator
+    --< @summary
+    --< Vkm_GenUType addition operator.
+    --<
+    --< @description
+    --< Add a scalar to each component of a vector.
+    --<     vector := vector + scalar;
     ----------------------------------------------------------------------------
-    function "/" is new GUT.Apply_Func_IV_IV_RV("/"); -- vector := vector / vector
-    function "/" is new GUT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
-    function "/" is new GUT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
+    function "+" is new GUT.Apply_Func_IV_IS_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType addition operator.
+    --<
+    --< @description
+    --< Add a scalar to each component of a vector.
+    --<     vector := scalar + vector;
+    ----------------------------------------------------------------------------
+    function "+" is new GUT.Apply_Func_IS_IV_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType subtraction operator.
+    --<
+    --< @description
+    --< Apply subtraction component-wise on two Vkm_GenUType vectors.
+    --<     vector := vector - vector;
+    ----------------------------------------------------------------------------
+    function "-" is new GUT.Apply_Func_IV_IV_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType subtraction operator.
+    --<
+    --< @description
+    --< Subtract a scalar from each component of a vector.
+    --<     vector := vector - scalar;
+    ----------------------------------------------------------------------------
+    function "-" is new GUT.Apply_Func_IV_IS_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType subtraction operator.
+    --<
+    --< @description
+    --< Subtract each component of the vector from the scalar, returning the result
+    --< for each subtraction in the corresponding component of a new vector.
+    --<     vector := scalar - vector;
+    ----------------------------------------------------------------------------
+    function "-" is new GUT.Apply_Func_IS_IV_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType remainder operator.
+    --<
+    --< @description
+    --< Return the remainder from component-wise division of two Vkm_GenUType vectors.
+    --<     vector := vector rem vector;
+    ----------------------------------------------------------------------------
+    function "rem" is new GUT.Apply_Func_IV_IV_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType remainder operator.
+    --<
+    --< @description
+    --< Return the remainder from division of each component of a vector by a scalar.
+    --<     vector := vector rem scalar;
+    ----------------------------------------------------------------------------
+    function "rem" is new GUT.Apply_Func_IV_IS_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType remainder operator.
+    --<
+    --< @description
+    --< Return the remainder from division of a scalar by each component of a vector.
+    --<     vector := scalar rem vector;
+    ----------------------------------------------------------------------------
+    function "rem" is new GUT.Apply_Func_IS_IV_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType mulitiplication operator.
+    --<
+    --< @description
+    --< Return the result of component-wise multiplication between the two vectors.
+    --<     vector := vector * vector;
+    ----------------------------------------------------------------------------
+    function "*" is new GUT.Apply_Func_IV_IV_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType mulitiplication operator.
+    --<
+    --< @description
+    --< Return the result of component-wise multiplication of a vector and a scalar.
+    --<     vector := vector * scalar;
+    ----------------------------------------------------------------------------
+    function "*" is new GUT.Apply_Func_IV_IS_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType mulitiplication operator.
+    --<
+    --< @description
+    --< Return the result of component-wise multiplication of a vector and a scalar.
+    --<     vector := scalar * vector;
+    ----------------------------------------------------------------------------
+    function "*" is new GUT.Apply_Func_IS_IV_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType division operator.
+    --<
+    --< @description
+    --< Return the result of component-wise division between the two vectors.
+    --<     vector := vector * vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GUT.Apply_Func_IV_IV_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType division operator.
+    --<
+    --< @description
+    --< Return the result of component-wise division between a vector and a scalar.
+    --<     vector := vector / scalar;
+    ----------------------------------------------------------------------------
+    function "/" is new GUT.Apply_Func_IV_IS_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenUType division operator.
+    --<
+    --< @description
+    --< Return the result of component-wise division between a vector and a scalar.
+    --<     vector := scalar / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GUT.Apply_Func_IS_IV_RV("/");
 
     ----------------------------------------------------------------------------
     -- GenUType Bitwise AND Operator
@@ -470,7 +776,7 @@ package Vulkan.Math.Operators is
     -- GenIType Bitwise AND Operator
     ----------------------------------------------------------------------------
     function "and" (left, right : in     Vkm_Int) return Vkm_Int is
-        (Vkm_Int( Vkm_Uint(left) and Vkm_Uint(right))) with Inline;
+        (To_Vkm_Int( To_Vkm_Uint(left) and To_Vkm_Uint(right))) with Inline;
     function "and" is new GIT.Apply_Func_IV_IV_RV("and"); -- vector := vector and vector
     function "and" is new GIT.Apply_Func_IV_IS_RV("and"); -- vector := vector and scalar
     function "and" is new GIT.Apply_Func_IS_IV_RV("and"); -- vector := scalar and vector
@@ -479,7 +785,7 @@ package Vulkan.Math.Operators is
     -- GenIType Bitwise OR Operator
     ----------------------------------------------------------------------------
     function "or" (left, right : in     Vkm_Int) return Vkm_Int is
-        (Vkm_Int(Vkm_Uint(left) or Vkm_Uint(right))) with Inline;
+        (To_Vkm_Int(To_Vkm_Uint(left) or To_Vkm_Uint(right))) with Inline;
     function "or" is new GIT.Apply_Func_IV_IV_RV("or"); -- vector := vector or vector
     function "or" is new GIT.Apply_Func_IV_IS_RV("or"); -- vector := vector or scalar
     function "or" is new GIT.Apply_Func_IS_IV_RV("or"); -- vector := scalar or vector
@@ -488,7 +794,7 @@ package Vulkan.Math.Operators is
     -- GenIType Bitwise XOR Operator
     ----------------------------------------------------------------------------
     function "xor" (left, right : in     Vkm_Int) return Vkm_Int is
-        (Vkm_Int(Vkm_Uint(left) xor Vkm_Uint(right))) with Inline;
+        (To_Vkm_Int(To_Vkm_Uint(left) xor To_Vkm_Uint(right))) with Inline;
     function "xor" is new GIT.Apply_Func_IV_IV_RV("xor"); -- vector := vector xor vector
     function "xor" is new GIT.Apply_Func_IV_IS_RV("xor"); -- vector := vector xor scalar
     function "xor" is new GIT.Apply_Func_IS_IV_RV("xor"); -- vector := scalar xor vector
