@@ -1474,7 +1474,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--<    return t"
         }
       ]
     },
@@ -1490,7 +1490,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param edge0 "
+          "text": "--<"
         }
       ]
     },
@@ -1506,7 +1506,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The first edge to interpolate between."
+          "text": "--< @param edge0 "
         }
       ]
     },
@@ -1522,7 +1522,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< "
+          "text": "--< The first edge to interpolate between."
         }
       ]
     },
@@ -1538,7 +1538,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param edge1 "
+          "text": "--< "
         }
       ]
     },
@@ -1554,7 +1554,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The second edge to interpolate between."
+          "text": "--< @param edge1 "
         }
       ]
     },
@@ -1570,7 +1570,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The second edge to interpolate between."
         }
       ]
     },
@@ -1586,7 +1586,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param x "
+          "text": "--<"
         }
       ]
     },
@@ -1602,7 +1602,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value to apply the step function to."
+          "text": "--< @param x "
         }
       ]
     },
@@ -1618,7 +1618,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The value to apply the step function to."
         }
       ]
     },
@@ -1634,7 +1634,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @returns"
+          "text": "--<"
         }
       ]
     },
@@ -1650,7 +1650,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The smooth step function of x."
+          "text": "--< @return"
         }
       ]
     },
@@ -1666,13 +1666,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< The smooth step function of x."
         }
       ]
     },
     {
       "kind": "line",
       "number": 95,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 96,
       "children": [
         {
           "kind": "span",
@@ -1688,7 +1704,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 96,
+      "number": 97,
       "children": [
         {
           "kind": "span",
@@ -1709,7 +1725,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C14"
         },
         {
           "kind": "span",
@@ -1750,7 +1766,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 97,
+      "number": 98,
       "children": [
         {
           "kind": "span",
@@ -1781,7 +1797,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Clamp",
-          "href": "docs/vulkan__math__numerics___spec.html#L97C23"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C23"
         },
         {
           "kind": "span",
@@ -1797,7 +1813,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge0",
-          "href": "docs/vulkan__math__numerics___spec.html#L97C30"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C30"
         },
         {
           "kind": "span",
@@ -1813,7 +1829,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge1",
-          "href": "docs/vulkan__math__numerics___spec.html#L97C37"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C37"
         },
         {
           "kind": "span",
@@ -1829,7 +1845,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L97C44"
+          "href": "docs/vulkan__math__numerics___spec.html#L98C44"
         },
         {
           "kind": "span",
@@ -1860,7 +1876,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C14"
         },
         {
           "kind": "span",
@@ -1886,7 +1902,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C14"
         },
         {
           "kind": "span",
@@ -1897,7 +1913,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 98,
+      "number": 99,
       "children": [
         {
           "kind": "span",
@@ -1918,7 +1934,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Smooth_Step",
-          "href": "docs/vulkan__math__numerics___spec.html#L98C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L99C14"
         },
         {
           "kind": "span",
@@ -1934,7 +1950,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge0",
-          "href": "docs/vulkan__math__numerics___spec.html#L98C27"
+          "href": "docs/vulkan__math__numerics___spec.html#L99C27"
         },
         {
           "kind": "span",
@@ -1950,7 +1966,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "edge1",
-          "href": "docs/vulkan__math__numerics___spec.html#L98C34"
+          "href": "docs/vulkan__math__numerics___spec.html#L99C34"
         },
         {
           "kind": "span",
@@ -1966,7 +1982,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L98C41"
+          "href": "docs/vulkan__math__numerics___spec.html#L99C41"
         },
         {
           "kind": "span",
@@ -1997,7 +2013,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C14"
         },
         {
           "kind": "span",
@@ -2023,23 +2039,12 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L96C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L97C14"
         },
         {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 99,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
         }
       ]
     },
@@ -2062,11 +2067,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2082,7 +2082,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2098,7 +2098,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Determine whether the input holds an Inf. "
+          "text": "--< @summary"
         }
       ]
     },
@@ -2114,7 +2114,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Determine whether the input holds an Inf. "
         }
       ]
     },
@@ -2130,7 +2130,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -2146,7 +2146,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Determine whether the input holds an Inf. Always returns false."
+          "text": "--< @description"
         }
       ]
     },
@@ -2162,7 +2162,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Determine whether the input holds an Inf. Always returns false."
         }
       ]
     },
@@ -2178,7 +2178,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param x "
+          "text": "--<"
         }
       ]
     },
@@ -2194,7 +2194,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value to test."
+          "text": "--< @param x "
         }
       ]
     },
@@ -2210,7 +2210,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The value to test."
         }
       ]
     },
@@ -2226,7 +2226,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return "
+          "text": "--<"
         }
       ]
     },
@@ -2242,7 +2242,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< False, always."
+          "text": "--< @return "
         }
       ]
     },
@@ -2258,13 +2258,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< False, always."
         }
       ]
     },
     {
       "kind": "line",
       "number": 114,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 115,
       "children": [
         {
           "kind": "span",
@@ -2285,7 +2301,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 115,
+      "number": 116,
       "children": [
         {
           "kind": "span",
@@ -2306,7 +2322,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L115C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L116C14"
         },
         {
           "kind": "span",
@@ -2347,7 +2363,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 116,
+      "number": 117,
       "children": [
         {
           "kind": "span",
@@ -2368,7 +2384,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Is_Inf",
-          "href": "docs/vulkan__math__numerics___spec.html#L116C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L117C14"
         },
         {
           "kind": "span",
@@ -2384,7 +2400,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L116C22"
+          "href": "docs/vulkan__math__numerics___spec.html#L117C22"
         },
         {
           "kind": "span",
@@ -2415,7 +2431,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L115C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L116C14"
         },
         {
           "kind": "span",
@@ -2447,17 +2463,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 117,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
         }
       ]
     },
@@ -2480,11 +2485,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2500,7 +2500,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2516,7 +2516,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Determine whether the input holds a NaN."
+          "text": "--< @summary"
         }
       ]
     },
@@ -2532,7 +2532,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Determine whether the input holds a NaN."
         }
       ]
     },
@@ -2548,7 +2548,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -2564,7 +2564,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Determine whether the input holds a NaN. Always returns false."
+          "text": "--< @description"
         }
       ]
     },
@@ -2580,7 +2580,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Determine whether the input holds a NaN. Always returns false."
         }
       ]
     },
@@ -2596,7 +2596,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param x "
+          "text": "--<"
         }
       ]
     },
@@ -2612,7 +2612,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value to test."
+          "text": "--< @param x "
         }
       ]
     },
@@ -2628,7 +2628,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The value to test."
         }
       ]
     },
@@ -2644,7 +2644,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @returns "
+          "text": "--<"
         }
       ]
     },
@@ -2660,7 +2660,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< False, always."
+          "text": "--< @return"
         }
       ]
     },
@@ -2676,13 +2676,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< False, always."
         }
       ]
     },
     {
       "kind": "line",
       "number": 132,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 133,
       "children": [
         {
           "kind": "span",
@@ -2703,7 +2719,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 133,
+      "number": 134,
       "children": [
         {
           "kind": "span",
@@ -2724,7 +2740,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L133C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L134C14"
         },
         {
           "kind": "span",
@@ -2765,7 +2781,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 134,
+      "number": 135,
       "children": [
         {
           "kind": "span",
@@ -2786,7 +2802,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Is_Nan",
-          "href": "docs/vulkan__math__numerics___spec.html#L134C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L135C14"
         },
         {
           "kind": "span",
@@ -2802,7 +2818,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L134C22"
+          "href": "docs/vulkan__math__numerics___spec.html#L135C22"
         },
         {
           "kind": "span",
@@ -2833,7 +2849,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L133C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L134C14"
         },
         {
           "kind": "span",
@@ -2870,17 +2886,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 135,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 136,
       "children": [
         {
@@ -2898,11 +2903,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2918,7 +2918,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -2934,7 +2934,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Break a floating point value into its significand and exponent parts."
+          "text": "--< @summary"
         }
       ]
     },
@@ -2950,7 +2950,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Break a floating point value into its significand and exponent parts."
         }
       ]
     },
@@ -2966,7 +2966,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -2982,7 +2982,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Break a floating point value into its significand and exponent parts."
+          "text": "--< @description"
         }
       ]
     },
@@ -2998,7 +2998,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Break a floating point value into its significand and exponent parts."
         }
       ]
     },
@@ -3014,7 +3014,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param x "
+          "text": "--<"
         }
       ]
     },
@@ -3030,7 +3030,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The input parameter.."
+          "text": "--< @param x "
         }
       ]
     },
@@ -3046,7 +3046,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The input parameter.."
         }
       ]
     },
@@ -3062,7 +3062,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param exponent "
+          "text": "--<"
         }
       ]
     },
@@ -3078,7 +3078,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The exponent part of x."
+          "text": "--< @param exponent "
         }
       ]
     },
@@ -3094,7 +3094,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The exponent part of x."
         }
       ]
     },
@@ -3110,7 +3110,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return "
+          "text": "--<"
         }
       ]
     },
@@ -3126,7 +3126,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The significand part of x."
+          "text": "--< @return "
         }
       ]
     },
@@ -3142,13 +3142,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< The significand part of x."
         }
       ]
     },
     {
       "kind": "line",
       "number": 153,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 154,
       "children": [
         {
           "kind": "span",
@@ -3169,7 +3185,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 154,
+      "number": 155,
       "children": [
         {
           "kind": "span",
@@ -3190,7 +3206,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L155C14"
         },
         {
           "kind": "span",
@@ -3231,7 +3247,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 155,
+      "number": 156,
       "children": [
         {
           "kind": "span",
@@ -3252,7 +3268,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Frexp",
-          "href": "docs/vulkan__math__numerics___spec.html#L155C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L156C14"
         },
         {
           "kind": "span",
@@ -3268,7 +3284,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x",
-          "href": "docs/vulkan__math__numerics___spec.html#L155C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L156C21"
         },
         {
           "kind": "span",
@@ -3299,7 +3315,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L155C14"
         },
         {
           "kind": "span",
@@ -3310,7 +3326,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 156,
+      "number": 157,
       "children": [
         {
           "kind": "span",
@@ -3321,7 +3337,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "exponent",
-          "href": "docs/vulkan__math__numerics___spec.html#L156C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L157C21"
         },
         {
           "kind": "span",
@@ -3378,7 +3394,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L154C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L155C14"
         },
         {
           "kind": "span",
@@ -3389,23 +3405,12 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 157,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "                    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
       "number": 158,
       "children": [
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "    "
+          "text": "                    "
         }
       ]
     },
@@ -3417,11 +3422,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -3437,7 +3437,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -3453,7 +3453,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Form a floating point value from a significand and exponent."
+          "text": "--< @summary"
         }
       ]
     },
@@ -3469,7 +3469,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Form a floating point value from a significand and exponent."
         }
       ]
     },
@@ -3485,7 +3485,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -3501,7 +3501,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Form a floating point value from a significand and exponent."
+          "text": "--< @description"
         }
       ]
     },
@@ -3517,7 +3517,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Form a floating point value from a significand and exponent."
         }
       ]
     },
@@ -3533,7 +3533,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param significand"
+          "text": "--<"
         }
       ]
     },
@@ -3549,7 +3549,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The significand."
+          "text": "--< @param significand"
         }
       ]
     },
@@ -3565,7 +3565,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The significand."
         }
       ]
     },
@@ -3581,7 +3581,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param exponent"
+          "text": "--<"
         }
       ]
     },
@@ -3597,7 +3597,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The exponent."
+          "text": "--< @param exponent"
         }
       ]
     },
@@ -3613,7 +3613,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The exponent."
         }
       ]
     },
@@ -3629,7 +3629,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return "
+          "text": "--<"
         }
       ]
     },
@@ -3645,7 +3645,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< x = significand * 2^exponent."
+          "text": "--< @return "
         }
       ]
     },
@@ -3661,13 +3661,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< x = significand * 2^exponent."
         }
       ]
     },
     {
       "kind": "line",
       "number": 175,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 176,
       "children": [
         {
           "kind": "span",
@@ -3688,7 +3704,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 176,
+      "number": 177,
       "children": [
         {
           "kind": "span",
@@ -3709,7 +3725,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L176C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L177C14"
         },
         {
           "kind": "span",
@@ -3750,7 +3766,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 177,
+      "number": 178,
       "children": [
         {
           "kind": "span",
@@ -3771,7 +3787,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Ldexp",
-          "href": "docs/vulkan__math__numerics___spec.html#L177C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L178C14"
         },
         {
           "kind": "span",
@@ -3787,7 +3803,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "significand",
-          "href": "docs/vulkan__math__numerics___spec.html#L177C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L178C21"
         },
         {
           "kind": "span",
@@ -3818,7 +3834,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L176C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L177C14"
         },
         {
           "kind": "span",
@@ -3829,7 +3845,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 178,
+      "number": 179,
       "children": [
         {
           "kind": "span",
@@ -3840,7 +3856,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "exponent",
-          "href": "docs/vulkan__math__numerics___spec.html#L178C21"
+          "href": "docs/vulkan__math__numerics___spec.html#L179C21"
         },
         {
           "kind": "span",
@@ -3897,7 +3913,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Floating_Point",
-          "href": "docs/vulkan__math__numerics___spec.html#L176C14"
+          "href": "docs/vulkan__math__numerics___spec.html#L177C14"
         },
         {
           "kind": "span",
@@ -3908,7 +3924,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 179,
+      "number": 180,
       "children": [
         {
           "kind": "span",
@@ -3919,7 +3935,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 180,
+      "number": 181,
       "children": [
         {
           "kind": "span",

@@ -15944,7 +15944,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Frexp",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L155C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L156C14"
           }
         },
         {
@@ -16074,7 +16074,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Frexp",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L155C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L156C14"
           }
         },
         {
@@ -16725,7 +16725,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Is_Inf",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L116C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L117C14"
           }
         },
         {
@@ -16841,7 +16841,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Is_Inf",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L116C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L117C14"
           }
         },
         {
@@ -17195,7 +17195,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Is_Nan",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L134C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L135C14"
           }
         },
         {
@@ -17311,7 +17311,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Is_Nan",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L134C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L135C14"
           }
         },
         {
@@ -17687,7 +17687,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Ldexp",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L177C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L178C14"
           }
         },
         {
@@ -17825,7 +17825,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Ldexp",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L177C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L178C14"
           }
         },
         {
@@ -21878,7 +21878,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Smooth_Step",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L98C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L99C14"
           }
         },
         {
@@ -22081,7 +22081,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.Numerics.Smooth_Step",
-            "docHref": "docs/vulkan__math__numerics___spec.html#L98C14"
+            "docHref": "docs/vulkan__math__numerics___spec.html#L99C14"
           }
         },
         {

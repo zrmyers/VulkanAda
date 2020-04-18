@@ -125,14 +125,19 @@ GNATdoc.DocumentationIndex = [
     ]
   },
   {
+    "label": "Vulkan Math Operators",
+    "items": [
+      {
+        "label": "Vulkan.Math.Operators",
+        "qualifier": "",
+        "file": "docs/vulkan__math__operators___spec.html"
+      }
+    ]
+  },
+  {
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Operators",
-    "qualifier": "",
-    "file": "docs/vulkan__math__operators___spec.html"
   },
   {
     "label": "Vulkan.Math.Relational",

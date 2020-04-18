@@ -2,6 +2,19 @@ GNATdoc.Documentation = {
   "label": "Vulkan.Math.Operators",
   "qualifier": "",
   "summary": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "This package provides operator definitions for all basic vector and matrix \n"
+        },
+        {
+          "kind": "span",
+          "text": "types.\n"
+        }
+      ]
+    }
   ],
   "description": [
   ],
@@ -11,10 +24,19 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "(renaming)",
-          "line": 71,
+          "line": 91,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -22,7 +44,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 71,
+                  "number": 91,
                   "children": [
                     {
                       "kind": "span",
@@ -57,8 +79,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L71C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L91C19"
                     },
                     {
                       "kind": "span",
@@ -73,8 +95,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L71C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L91C25"
                     },
                     {
                       "kind": "span",
@@ -161,40 +183,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate two Vkm_GenBType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector & vector"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 71,
+              "label": "left",
+              "line": 91,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
                 "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 71,
+              "label": "right",
+              "line": 91,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
                 "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right vector to left vector.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 72,
+          "line": 111,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -202,7 +287,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 72,
+                  "number": 111,
                   "children": [
                     {
                       "kind": "span",
@@ -237,8 +322,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L72C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L111C19"
                     },
                     {
                       "kind": "span",
@@ -285,7 +370,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 73,
+                  "number": 112,
                   "children": [
                     {
                       "kind": "span",
@@ -295,8 +380,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L73C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L112C19"
                     },
                     {
                       "kind": "span",
@@ -369,7 +454,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 74,
+                  "number": 113,
                   "children": [
                     {
                       "kind": "span",
@@ -394,7 +479,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -419,7 +504,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -454,40 +539,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate a scalar Vkm_Bool and a Vkm_GenBType vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar & vector"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 72,
+              "label": "left",
+              "line": 111,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 73,
+              "label": "right",
+              "line": 112,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
                 "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right vector to left scalar.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 75,
+          "line": 133,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -495,7 +643,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 75,
+                  "number": 133,
                   "children": [
                     {
                       "kind": "span",
@@ -530,8 +678,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L75C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L133C19"
                     },
                     {
                       "kind": "span",
@@ -573,7 +721,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 76,
+                  "number": 134,
                   "children": [
                     {
                       "kind": "span",
@@ -583,8 +731,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L76C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L134C19"
                     },
                     {
                       "kind": "span",
@@ -662,7 +810,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 77,
+                  "number": 135,
                   "children": [
                     {
                       "kind": "span",
@@ -677,7 +825,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left.Concatenate"
+                      "text": "left.Concatenate"
                     },
                     {
                       "kind": "span",
@@ -697,7 +845,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -737,40 +885,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate a scalar Vkm_Bool and a Vkm_GenBType vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector & scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 75,
+              "label": "left",
+              "line": 133,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
                 "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 76,
+              "label": "right",
+              "line": 134,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right scalar to left vector.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 78,
+          "line": 155,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -778,7 +989,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 78,
+                  "number": 155,
                   "children": [
                     {
                       "kind": "span",
@@ -813,8 +1024,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L78C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L155C19"
                     },
                     {
                       "kind": "span",
@@ -829,8 +1040,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L78C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L155C25"
                     },
                     {
                       "kind": "span",
@@ -908,7 +1119,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 79,
+                  "number": 156,
                   "children": [
                     {
                       "kind": "span",
@@ -933,7 +1144,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -948,7 +1159,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -983,40 +1194,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate two scalar Vkm_Bool parameters.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar & scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 78,
+              "label": "left",
+              "line": 155,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 78,
+              "label": "right",
+              "line": 155,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
                 "docHref": "docs/vulkan__math___spec.html#L49C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right scalar to left scalar.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "(renaming)",
-          "line": 152,
+          "line": 347,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1024,7 +1298,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 152,
+                  "number": 347,
                   "children": [
                     {
                       "kind": "span",
@@ -1059,8 +1333,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L152C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L347C19"
                     },
                     {
                       "kind": "span",
@@ -1075,8 +1349,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L152C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L347C25"
                     },
                     {
                       "kind": "span",
@@ -1163,40 +1437,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate two Vkm_GenUType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector & vector"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 152,
+              "label": "left",
+              "line": 347,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenUType.Vkm_GenUType",
                 "docHref": "docs/vulkan__math__genutype___spec.html#L50C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 152,
+              "label": "right",
+              "line": 347,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenUType.Vkm_GenUType",
                 "docHref": "docs/vulkan__math__genutype___spec.html#L50C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right vector to left vector.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 153,
+          "line": 367,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1204,7 +1541,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 153,
+                  "number": 367,
                   "children": [
                     {
                       "kind": "span",
@@ -1239,8 +1576,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L153C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L367C19"
                     },
                     {
                       "kind": "span",
@@ -1287,7 +1624,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 154,
+                  "number": 368,
                   "children": [
                     {
                       "kind": "span",
@@ -1297,8 +1634,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L154C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L368C19"
                     },
                     {
                       "kind": "span",
@@ -1371,7 +1708,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 155,
+                  "number": 369,
                   "children": [
                     {
                       "kind": "span",
@@ -1396,7 +1733,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -1421,7 +1758,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -1456,40 +1793,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate a scalar Vkm_Uint and a Vkm_GenUType vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar & vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 153,
+              "label": "left",
+              "line": 367,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 154,
+              "label": "right",
+              "line": 368,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenUType.Vkm_GenUType",
                 "docHref": "docs/vulkan__math__genutype___spec.html#L50C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right vector to left scalar.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 156,
+          "line": 389,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1497,7 +1897,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 156,
+                  "number": 389,
                   "children": [
                     {
                       "kind": "span",
@@ -1532,8 +1932,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L156C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L389C19"
                     },
                     {
                       "kind": "span",
@@ -1575,7 +1975,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 157,
+                  "number": 390,
                   "children": [
                     {
                       "kind": "span",
@@ -1585,8 +1985,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L157C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L390C19"
                     },
                     {
                       "kind": "span",
@@ -1664,7 +2064,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 158,
+                  "number": 391,
                   "children": [
                     {
                       "kind": "span",
@@ -1679,7 +2079,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left.Concatenate"
+                      "text": "left.Concatenate"
                     },
                     {
                       "kind": "span",
@@ -1699,7 +2099,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -1739,40 +2139,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate a scalar Vkm_Uint and a Vkm_GenUType vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector & scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 156,
+              "label": "left",
+              "line": 389,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenUType.Vkm_GenUType",
                 "docHref": "docs/vulkan__math__genutype___spec.html#L50C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 157,
+              "label": "right",
+              "line": 390,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right scalar to left vector.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 159,
+          "line": 411,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType concatenation operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1780,7 +2243,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 159,
+                  "number": 411,
                   "children": [
                     {
                       "kind": "span",
@@ -1815,8 +2278,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L159C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L411C19"
                     },
                     {
                       "kind": "span",
@@ -1831,8 +2294,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L159C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L411C25"
                     },
                     {
                       "kind": "span",
@@ -1910,7 +2373,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 160,
+                  "number": 412,
                   "children": [
                     {
                       "kind": "span",
@@ -1935,7 +2398,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -1950,7 +2413,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -1985,37 +2448,91 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatenate a two scalars of Vkm_Uint type.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar & scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 159,
+              "label": "left",
+              "line": 411,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the left of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
-              "label": "Right",
-              "line": 159,
+              "label": "right",
+              "line": 411,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Parameter to the right of the '&' symbol.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "Append right scalar to left scalar.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "&",
           "qualifier": "",
-          "line": 289,
+          "line": 655,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -2026,7 +2543,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 289,
+                  "number": 655,
                   "children": [
                     {
                       "kind": "span",
@@ -2061,8 +2578,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L289C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L655C19"
                     },
                     {
                       "kind": "span",
@@ -2077,8 +2594,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L289C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L655C25"
                     },
                     {
                       "kind": "span",
@@ -2169,8 +2686,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 289,
+              "label": "left",
+              "line": 655,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
@@ -2180,8 +2697,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 289,
+              "label": "right",
+              "line": 655,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
@@ -2195,7 +2712,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 290,
+          "line": 656,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -2206,7 +2723,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 290,
+                  "number": 656,
                   "children": [
                     {
                       "kind": "span",
@@ -2241,8 +2758,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L290C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L656C19"
                     },
                     {
                       "kind": "span",
@@ -2289,7 +2806,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 291,
+                  "number": 657,
                   "children": [
                     {
                       "kind": "span",
@@ -2299,8 +2816,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L291C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L657C19"
                     },
                     {
                       "kind": "span",
@@ -2373,7 +2890,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 292,
+                  "number": 658,
                   "children": [
                     {
                       "kind": "span",
@@ -2398,7 +2915,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -2423,7 +2940,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -2462,8 +2979,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 290,
+              "label": "left",
+              "line": 656,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -2473,8 +2990,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 291,
+              "label": "right",
+              "line": 657,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
@@ -2488,7 +3005,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 293,
+          "line": 659,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -2499,7 +3016,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 293,
+                  "number": 659,
                   "children": [
                     {
                       "kind": "span",
@@ -2534,8 +3051,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L293C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L659C19"
                     },
                     {
                       "kind": "span",
@@ -2577,7 +3094,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 294,
+                  "number": 660,
                   "children": [
                     {
                       "kind": "span",
@@ -2587,8 +3104,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L294C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L660C19"
                     },
                     {
                       "kind": "span",
@@ -2666,7 +3183,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 295,
+                  "number": 661,
                   "children": [
                     {
                       "kind": "span",
@@ -2681,7 +3198,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left.Concatenate"
+                      "text": "left.Concatenate"
                     },
                     {
                       "kind": "span",
@@ -2701,7 +3218,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -2745,8 +3262,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 293,
+              "label": "left",
+              "line": 659,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
@@ -2756,8 +3273,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 294,
+              "label": "right",
+              "line": 660,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -2771,7 +3288,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 296,
+          "line": 662,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -2782,7 +3299,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 296,
+                  "number": 662,
                   "children": [
                     {
                       "kind": "span",
@@ -2817,8 +3334,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L296C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L662C19"
                     },
                     {
                       "kind": "span",
@@ -2833,8 +3350,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L296C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L662C25"
                     },
                     {
                       "kind": "span",
@@ -2912,7 +3429,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 297,
+                  "number": 663,
                   "children": [
                     {
                       "kind": "span",
@@ -2937,7 +3454,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -2952,7 +3469,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -2991,8 +3508,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 296,
+              "label": "left",
+              "line": 662,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -3002,8 +3519,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 296,
+              "label": "right",
+              "line": 662,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -3017,7 +3534,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 432,
+          "line": 798,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -3028,7 +3545,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 432,
+                  "number": 798,
                   "children": [
                     {
                       "kind": "span",
@@ -3063,8 +3580,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L432C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L798C19"
                     },
                     {
                       "kind": "span",
@@ -3079,8 +3596,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L432C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L798C25"
                     },
                     {
                       "kind": "span",
@@ -3171,8 +3688,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 432,
+              "label": "left",
+              "line": 798,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3182,8 +3699,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 432,
+              "label": "right",
+              "line": 798,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3197,7 +3714,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 433,
+          "line": 799,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -3208,7 +3725,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 433,
+                  "number": 799,
                   "children": [
                     {
                       "kind": "span",
@@ -3243,8 +3760,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L433C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L799C19"
                     },
                     {
                       "kind": "span",
@@ -3291,7 +3808,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 434,
+                  "number": 800,
                   "children": [
                     {
                       "kind": "span",
@@ -3301,8 +3818,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L434C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L800C19"
                     },
                     {
                       "kind": "span",
@@ -3375,7 +3892,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 435,
+                  "number": 801,
                   "children": [
                     {
                       "kind": "span",
@@ -3400,7 +3917,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -3425,7 +3942,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -3464,8 +3981,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 433,
+              "label": "left",
+              "line": 799,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3475,8 +3992,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 434,
+              "label": "right",
+              "line": 800,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3490,7 +4007,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 436,
+          "line": 802,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -3501,7 +4018,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 436,
+                  "number": 802,
                   "children": [
                     {
                       "kind": "span",
@@ -3536,8 +4053,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L436C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L802C19"
                     },
                     {
                       "kind": "span",
@@ -3579,7 +4096,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 437,
+                  "number": 803,
                   "children": [
                     {
                       "kind": "span",
@@ -3589,8 +4106,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L437C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L803C19"
                     },
                     {
                       "kind": "span",
@@ -3668,7 +4185,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 438,
+                  "number": 804,
                   "children": [
                     {
                       "kind": "span",
@@ -3683,7 +4200,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left.Concatenate"
+                      "text": "left.Concatenate"
                     },
                     {
                       "kind": "span",
@@ -3703,7 +4220,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -3747,8 +4264,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 436,
+              "label": "left",
+              "line": 802,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3758,8 +4275,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 437,
+              "label": "right",
+              "line": 803,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3773,7 +4290,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 439,
+          "line": 805,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -3784,7 +4301,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 439,
+                  "number": 805,
                   "children": [
                     {
                       "kind": "span",
@@ -3819,8 +4336,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L439C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L805C19"
                     },
                     {
                       "kind": "span",
@@ -3835,8 +4352,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L439C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L805C25"
                     },
                     {
                       "kind": "span",
@@ -3914,7 +4431,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 440,
+                  "number": 806,
                   "children": [
                     {
                       "kind": "span",
@@ -3939,7 +4456,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -3954,7 +4471,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -3993,8 +4510,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 439,
+              "label": "left",
+              "line": 805,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -4004,8 +4521,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 439,
+              "label": "right",
+              "line": 805,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -4019,7 +4536,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 555,
+          "line": 921,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -4030,7 +4547,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 555,
+                  "number": 921,
                   "children": [
                     {
                       "kind": "span",
@@ -4065,8 +4582,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L555C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L921C19"
                     },
                     {
                       "kind": "span",
@@ -4081,8 +4598,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L555C25"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L921C25"
                     },
                     {
                       "kind": "span",
@@ -4173,8 +4690,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 555,
+              "label": "left",
+              "line": 921,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4184,8 +4701,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 555,
+              "label": "right",
+              "line": 921,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4199,7 +4716,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 556,
+          "line": 922,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -4210,7 +4727,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 556,
+                  "number": 922,
                   "children": [
                     {
                       "kind": "span",
@@ -4245,8 +4762,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L556C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L922C19"
                     },
                     {
                       "kind": "span",
@@ -4293,7 +4810,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 557,
+                  "number": 923,
                   "children": [
                     {
                       "kind": "span",
@@ -4303,8 +4820,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L557C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L923C19"
                     },
                     {
                       "kind": "span",
@@ -4377,7 +4894,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 558,
+                  "number": 924,
                   "children": [
                     {
                       "kind": "span",
@@ -4402,7 +4919,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left"
+                      "text": "left"
                     },
                     {
                       "kind": "span",
@@ -4427,7 +4944,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right"
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -4466,8 +4983,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 556,
+              "label": "left",
+              "line": 922,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -4477,8 +4994,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 557,
+              "label": "right",
+              "line": 923,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4492,7 +5009,7 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 559,
+          "line": 925,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -4503,7 +5020,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 559,
+                  "number": 925,
                   "children": [
                     {
                       "kind": "span",
@@ -4538,8 +5055,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L559C19"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L925C19"
                     },
                     {
                       "kind": "span",
@@ -4581,7 +5098,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 560,
+                  "number": 926,
                   "children": [
                     {
                       "kind": "span",
@@ -4591,8 +5108,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L560C19"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L926C19"
                     },
                     {
                       "kind": "span",
@@ -4670,7 +5187,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 561,
+                  "number": 927,
                   "children": [
                     {
                       "kind": "span",
@@ -4685,7 +5202,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left.Concatenate"
+                      "text": "left.Concatenate"
                     },
                     {
                       "kind": "span",
@@ -4696,892 +5213,6 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "GDT.Make_GenType"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Right"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "with"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " Inline"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "Left",
-              "line": 559,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.GenDType.Vkm_GenDType",
-                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "Right",
-              "line": 560,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Double",
-                "docHref": "docs/vulkan__math___spec.html#L64C10"
-              },
-              "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "&",
-          "qualifier": "",
-          "line": 562,
-          "column": 15,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 562,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"&\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L562C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L562C25"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L64C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenDType",
-                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 563,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Make_GenType"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Left"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Right"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "with"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " Inline"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "Left",
-              "line": 562,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Double",
-                "docHref": "docs/vulkan__math___spec.html#L64C10"
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "Right",
-              "line": 562,
-              "column": 25,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Double",
-                "docHref": "docs/vulkan__math___spec.html#L64C10"
-              },
-              "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "**",
-          "qualifier": "(renaming)",
-          "line": 467,
-          "column": 15,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 467,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"**\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L467C20"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L467C26"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L61C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L61C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "renames"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vulkan.Math.Exp.Pow"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "Left",
-              "line": 467,
-              "column": 20,
-              "type": {
-                "label": ""
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "Right",
-              "line": 467,
-              "column": 26,
-              "type": {
-                "label": ""
-              },
-              "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "**",
-          "qualifier": "(renaming)",
-          "line": 590,
-          "column": 15,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 590,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"**\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L590C20"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L590C26"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L64C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L64C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "renames"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vulkan.Math.Exp.Pow"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "Left",
-              "line": 590,
-              "column": 20,
-              "type": {
-                "label": ""
-              },
-              "description": [
-              ]
-            },
-            {
-              "label": "Right",
-              "line": 590,
-              "column": 26,
-              "type": {
-                "label": ""
-              },
-              "description": [
-              ]
-            }
-          ]
-        },
-        {
-          "label": "and",
-          "qualifier": "",
-          "line": 362,
-          "column": 15,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 362,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"and\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "left",
-                      "href": "docs/vulkan__math__operators___spec.html#L362C21"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "right",
-                      "href": "docs/vulkan__math__operators___spec.html#L362C27"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 363,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "left"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "and"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
                     },
                     {
                       "kind": "span",
@@ -5636,22 +5267,22 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 362,
-              "column": 21,
+              "line": 925,
+              "column": 19,
               "type": {
-                "label": "Vulkan.Math.Vkm_Int",
-                "docHref": "docs/vulkan__math___spec.html#L58C10"
+                "label": "Vulkan.Math.GenDType.Vkm_GenDType",
+                "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13"
               },
               "description": [
               ]
             },
             {
               "label": "right",
-              "line": 362,
-              "column": 27,
+              "line": 926,
+              "column": 19,
               "type": {
-                "label": "Vulkan.Math.Vkm_Int",
-                "docHref": "docs/vulkan__math___spec.html#L58C10"
+                "label": "Vulkan.Math.Vkm_Double",
+                "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
               "description": [
               ]
@@ -5659,9 +5290,9 @@ GNATdoc.Documentation = {
           ]
         },
         {
-          "label": "not",
+          "label": "&",
           "qualifier": "",
-          "line": 313,
+          "line": 928,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -5672,7 +5303,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 313,
+                  "number": 928,
                   "children": [
                     {
                       "kind": "span",
@@ -5692,7 +5323,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "\"not\""
+                      "text": "\"&\""
                     },
                     {
                       "kind": "span",
@@ -5707,8 +5338,626 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L928C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__operators___spec.html#L313C21"
+                      "href": "docs/vulkan__math__operators___spec.html#L928C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Double",
+                      "href": "docs/vulkan__math___spec.html#L64C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "   "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_GenDType",
+                      "href": "docs/vulkan__math__gendtype___spec.html#L53C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 929,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Make_GenType"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 928,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Double",
+                "docHref": "docs/vulkan__math___spec.html#L64C10"
+              },
+              "description": [
+              ]
+            },
+            {
+              "label": "right",
+              "line": 928,
+              "column": 25,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Double",
+                "docHref": "docs/vulkan__math___spec.html#L64C10"
+              },
+              "description": [
+              ]
+            }
+          ]
+        },
+        {
+          "label": "**",
+          "qualifier": "(renaming)",
+          "line": 833,
+          "column": 15,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 833,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"**\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L833C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L833C26"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vulkan.Math.Exp.Pow"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 833,
+              "column": 20,
+              "type": {
+                "label": ""
+              },
+              "description": [
+              ]
+            },
+            {
+              "label": "right",
+              "line": 833,
+              "column": 26,
+              "type": {
+                "label": ""
+              },
+              "description": [
+              ]
+            }
+          ]
+        },
+        {
+          "label": "**",
+          "qualifier": "(renaming)",
+          "line": 956,
+          "column": 15,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 956,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"**\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L956C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L956C26"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Double",
+                      "href": "docs/vulkan__math___spec.html#L64C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Double",
+                      "href": "docs/vulkan__math___spec.html#L64C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vulkan.Math.Exp.Pow"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 956,
+              "column": 20,
+              "type": {
+                "label": ""
+              },
+              "description": [
+              ]
+            },
+            {
+              "label": "right",
+              "line": 956,
+              "column": 26,
+              "type": {
+                "label": ""
+              },
+              "description": [
+              ]
+            }
+          ]
+        },
+        {
+          "label": "and",
+          "qualifier": "",
+          "line": 728,
+          "column": 15,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 728,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"and\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L728C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L728C27"
                     },
                     {
                       "kind": "span",
@@ -5781,7 +6030,272 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 314,
+                  "number": 729,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "To_Vkm_Int"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "To_Vkm_Uint"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "and"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "To_Vkm_Uint"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 728,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Int",
+                "docHref": "docs/vulkan__math___spec.html#L58C10"
+              },
+              "description": [
+              ]
+            },
+            {
+              "label": "right",
+              "line": 728,
+              "column": 27,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Int",
+                "docHref": "docs/vulkan__math___spec.html#L58C10"
+              },
+              "description": [
+              ]
+            }
+          ]
+        },
+        {
+          "label": "not",
+          "qualifier": "",
+          "line": 679,
+          "column": 15,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 679,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"not\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L679C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Int",
+                      "href": "docs/vulkan__math___spec.html#L58C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Int",
+                      "href": "docs/vulkan__math___spec.html#L58C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 680,
                   "children": [
                     {
                       "kind": "span",
@@ -5871,7 +6385,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "right",
-              "line": 313,
+              "line": 679,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -5885,7 +6399,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "",
-          "line": 371,
+          "line": 737,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -5896,7 +6410,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 371,
+                  "number": 737,
                   "children": [
                     {
                       "kind": "span",
@@ -5932,7 +6446,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__operators___spec.html#L371C20"
+                      "href": "docs/vulkan__math__operators___spec.html#L737C20"
                     },
                     {
                       "kind": "span",
@@ -5948,7 +6462,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__operators___spec.html#L371C26"
+                      "href": "docs/vulkan__math__operators___spec.html#L737C26"
                     },
                     {
                       "kind": "span",
@@ -6021,7 +6535,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 372,
+                  "number": 738,
                   "children": [
                     {
                       "kind": "span",
@@ -6036,8 +6550,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
+                      "text": "To_Vkm_Int"
                     },
                     {
                       "kind": "span",
@@ -6047,8 +6560,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
+                      "text": "To_Vkm_Uint"
                     },
                     {
                       "kind": "span",
@@ -6083,8 +6595,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
+                      "text": "To_Vkm_Uint"
                     },
                     {
                       "kind": "span",
@@ -6139,7 +6650,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 371,
+              "line": 737,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -6150,7 +6661,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 371,
+              "line": 737,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -6164,7 +6675,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "",
-          "line": 489,
+          "line": 855,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -6175,7 +6686,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 489,
+                  "number": 855,
                   "children": [
                     {
                       "kind": "span",
@@ -6210,8 +6721,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L489C21"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L855C21"
                     },
                     {
                       "kind": "span",
@@ -6226,8 +6737,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L489C27"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L855C27"
                     },
                     {
                       "kind": "span",
@@ -6329,8 +6840,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 489,
+              "label": "left",
+              "line": 855,
               "column": 21,
               "type": {
                 "label": ""
@@ -6339,8 +6850,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 489,
+              "label": "right",
+              "line": 855,
               "column": 27,
               "type": {
                 "label": ""
@@ -6353,7 +6864,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "",
-          "line": 612,
+          "line": 978,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -6364,7 +6875,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 612,
+                  "number": 978,
                   "children": [
                     {
                       "kind": "span",
@@ -6399,8 +6910,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Left",
-                      "href": "docs/vulkan__math__operators___spec.html#L612C21"
+                      "text": "left",
+                      "href": "docs/vulkan__math__operators___spec.html#L978C21"
                     },
                     {
                       "kind": "span",
@@ -6415,8 +6926,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Right",
-                      "href": "docs/vulkan__math__operators___spec.html#L612C27"
+                      "text": "right",
+                      "href": "docs/vulkan__math__operators___spec.html#L978C27"
                     },
                     {
                       "kind": "span",
@@ -6518,8 +7029,8 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "Left",
-              "line": 612,
+              "label": "left",
+              "line": 978,
               "column": 21,
               "type": {
                 "label": ""
@@ -6528,8 +7039,8 @@ GNATdoc.Documentation = {
               ]
             },
             {
-              "label": "Right",
-              "line": 612,
+              "label": "right",
+              "line": 978,
               "column": 27,
               "type": {
                 "label": ""
@@ -6542,7 +7053,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "",
-          "line": 380,
+          "line": 746,
           "column": 15,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -6553,7 +7064,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 380,
+                  "number": 746,
                   "children": [
                     {
                       "kind": "span",
@@ -6589,7 +7100,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__operators___spec.html#L380C21"
+                      "href": "docs/vulkan__math__operators___spec.html#L746C21"
                     },
                     {
                       "kind": "span",
@@ -6605,7 +7116,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__operators___spec.html#L380C27"
+                      "href": "docs/vulkan__math__operators___spec.html#L746C27"
                     },
                     {
                       "kind": "span",
@@ -6678,7 +7189,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 381,
+                  "number": 747,
                   "children": [
                     {
                       "kind": "span",
@@ -6693,8 +7204,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
+                      "text": "To_Vkm_Int"
                     },
                     {
                       "kind": "span",
@@ -6704,8 +7214,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
+                      "text": "To_Vkm_Uint"
                     },
                     {
                       "kind": "span",
@@ -6740,8 +7249,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
+                      "text": "To_Vkm_Uint"
                     },
                     {
                       "kind": "span",
@@ -6796,7 +7304,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 380,
+              "line": 746,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -6807,7 +7315,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 380,
+              "line": 746,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -6826,7 +7334,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 209,
+          "line": 574,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -6837,7 +7345,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 209,
+                  "number": 574,
                   "children": [
                     {
                       "kind": "span",
@@ -6858,7 +7366,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L209C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L574C14"
                     },
                     {
                       "kind": "span",
@@ -6923,7 +7431,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 210,
+          "line": 575,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -6934,7 +7442,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 210,
+                  "number": 575,
                   "children": [
                     {
                       "kind": "span",
@@ -6955,7 +7463,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L210C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L575C14"
                     },
                     {
                       "kind": "span",
@@ -7020,7 +7528,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 211,
+          "line": 576,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7031,7 +7539,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 211,
+                  "number": 576,
                   "children": [
                     {
                       "kind": "span",
@@ -7052,7 +7560,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L211C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L576C14"
                     },
                     {
                       "kind": "span",
@@ -7117,7 +7625,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 348,
+          "line": 714,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7128,7 +7636,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 348,
+                  "number": 714,
                   "children": [
                     {
                       "kind": "span",
@@ -7149,7 +7657,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L348C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L714C14"
                     },
                     {
                       "kind": "span",
@@ -7214,7 +7722,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 349,
+          "line": 715,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7225,7 +7733,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 349,
+                  "number": 715,
                   "children": [
                     {
                       "kind": "span",
@@ -7246,7 +7754,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L349C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L715C14"
                     },
                     {
                       "kind": "span",
@@ -7311,7 +7819,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 350,
+          "line": 716,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7322,7 +7830,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 350,
+                  "number": 716,
                   "children": [
                     {
                       "kind": "span",
@@ -7343,7 +7851,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L350C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L716C14"
                     },
                     {
                       "kind": "span",
@@ -7408,7 +7916,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 497,
+          "line": 863,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7419,7 +7927,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 497,
+                  "number": 863,
                   "children": [
                     {
                       "kind": "span",
@@ -7440,7 +7948,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L497C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L863C14"
                     },
                     {
                       "kind": "span",
@@ -7505,7 +8013,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 498,
+          "line": 864,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7516,7 +8024,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 498,
+                  "number": 864,
                   "children": [
                     {
                       "kind": "span",
@@ -7537,7 +8045,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L498C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L864C14"
                     },
                     {
                       "kind": "span",
@@ -7602,7 +8110,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 499,
+          "line": 865,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7613,7 +8121,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 499,
+                  "number": 865,
                   "children": [
                     {
                       "kind": "span",
@@ -7634,7 +8142,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L499C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L865C14"
                     },
                     {
                       "kind": "span",
@@ -7699,7 +8207,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 620,
+          "line": 986,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7710,7 +8218,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 620,
+                  "number": 986,
                   "children": [
                     {
                       "kind": "span",
@@ -7731,7 +8239,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L620C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L986C14"
                     },
                     {
                       "kind": "span",
@@ -7796,7 +8304,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 621,
+          "line": 987,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7807,7 +8315,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 621,
+                  "number": 987,
                   "children": [
                     {
                       "kind": "span",
@@ -7828,7 +8336,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L621C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L987C14"
                     },
                     {
                       "kind": "span",
@@ -7893,7 +8401,7 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(generic instantiation)",
-          "line": 622,
+          "line": 988,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -7904,7 +8412,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 622,
+                  "number": 988,
                   "children": [
                     {
                       "kind": "span",
@@ -7925,7 +8433,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"*\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L622C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L988C14"
                     },
                     {
                       "kind": "span",
@@ -7990,7 +8498,7 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(generic instantiation)",
-          "line": 468,
+          "line": 834,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8001,7 +8509,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 468,
+                  "number": 834,
                   "children": [
                     {
                       "kind": "span",
@@ -8022,7 +8530,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"**\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L468C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L834C14"
                     },
                     {
                       "kind": "span",
@@ -8087,7 +8595,7 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(generic instantiation)",
-          "line": 469,
+          "line": 835,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8098,7 +8606,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 469,
+                  "number": 835,
                   "children": [
                     {
                       "kind": "span",
@@ -8119,7 +8627,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"**\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L469C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L835C14"
                     },
                     {
                       "kind": "span",
@@ -8184,7 +8692,7 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(generic instantiation)",
-          "line": 470,
+          "line": 836,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8195,7 +8703,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 470,
+                  "number": 836,
                   "children": [
                     {
                       "kind": "span",
@@ -8216,7 +8724,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"**\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L470C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L836C14"
                     },
                     {
                       "kind": "span",
@@ -8281,7 +8789,7 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(generic instantiation)",
-          "line": 591,
+          "line": 957,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8292,7 +8800,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 591,
+                  "number": 957,
                   "children": [
                     {
                       "kind": "span",
@@ -8313,7 +8821,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"**\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L591C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L957C14"
                     },
                     {
                       "kind": "span",
@@ -8378,7 +8886,7 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(generic instantiation)",
-          "line": 592,
+          "line": 958,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8389,7 +8897,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 592,
+                  "number": 958,
                   "children": [
                     {
                       "kind": "span",
@@ -8410,7 +8918,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"**\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L592C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L958C14"
                     },
                     {
                       "kind": "span",
@@ -8475,7 +8983,7 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(generic instantiation)",
-          "line": 593,
+          "line": 959,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8486,7 +8994,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 593,
+                  "number": 959,
                   "children": [
                     {
                       "kind": "span",
@@ -8507,7 +9015,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"**\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L593C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L959C14"
                     },
                     {
                       "kind": "span",
@@ -8572,10 +9080,19 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 165,
+          "line": 423,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType unary plus operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -8583,7 +9100,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 165,
+                  "number": 423,
                   "children": [
                     {
                       "kind": "span",
@@ -8604,7 +9121,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L165C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L423C14"
                     },
                     {
                       "kind": "span",
@@ -8659,6 +9176,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Return the vector unmodified.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := +vector"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -8669,10 +9209,19 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 188,
+          "line": 479,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType addition operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -8680,7 +9229,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 188,
+                  "number": 479,
                   "children": [
                     {
                       "kind": "span",
@@ -8701,7 +9250,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L188C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L479C14"
                     },
                     {
                       "kind": "span",
@@ -8756,6 +9305,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a addition component-wise on two Vkm_GenUType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector + vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -8766,10 +9338,19 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 189,
+          "line": 490,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType addition operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -8777,7 +9358,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 189,
+                  "number": 490,
                   "children": [
                     {
                       "kind": "span",
@@ -8798,7 +9379,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L189C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L490C14"
                     },
                     {
                       "kind": "span",
@@ -8853,6 +9434,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Add a scalar to each component of a vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector + scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -8863,10 +9467,19 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 190,
+          "line": 501,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType addition operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -8874,7 +9487,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 190,
+                  "number": 501,
                   "children": [
                     {
                       "kind": "span",
@@ -8895,7 +9508,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L190C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L501C14"
                     },
                     {
                       "kind": "span",
@@ -8950,6 +9563,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Add a scalar to each component of a vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar + vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -8960,7 +9596,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 302,
+          "line": 668,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -8971,7 +9607,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 302,
+                  "number": 668,
                   "children": [
                     {
                       "kind": "span",
@@ -8992,7 +9628,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L302C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L668C14"
                     },
                     {
                       "kind": "span",
@@ -9057,7 +9693,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 327,
+          "line": 693,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9068,7 +9704,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 327,
+                  "number": 693,
                   "children": [
                     {
                       "kind": "span",
@@ -9089,7 +9725,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L327C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L693C14"
                     },
                     {
                       "kind": "span",
@@ -9154,7 +9790,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 328,
+          "line": 694,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9165,7 +9801,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 328,
+                  "number": 694,
                   "children": [
                     {
                       "kind": "span",
@@ -9186,7 +9822,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L328C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L694C14"
                     },
                     {
                       "kind": "span",
@@ -9251,7 +9887,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 329,
+          "line": 695,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9262,7 +9898,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 329,
+                  "number": 695,
                   "children": [
                     {
                       "kind": "span",
@@ -9283,7 +9919,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L329C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L695C14"
                     },
                     {
                       "kind": "span",
@@ -9348,7 +9984,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 445,
+          "line": 811,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9359,7 +9995,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 445,
+                  "number": 811,
                   "children": [
                     {
                       "kind": "span",
@@ -9380,7 +10016,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L445C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L811C14"
                     },
                     {
                       "kind": "span",
@@ -9445,7 +10081,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 475,
+          "line": 841,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9456,7 +10092,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 475,
+                  "number": 841,
                   "children": [
                     {
                       "kind": "span",
@@ -9477,7 +10113,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L475C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L841C14"
                     },
                     {
                       "kind": "span",
@@ -9542,7 +10178,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 476,
+          "line": 842,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9553,7 +10189,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 476,
+                  "number": 842,
                   "children": [
                     {
                       "kind": "span",
@@ -9574,7 +10210,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L476C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L842C14"
                     },
                     {
                       "kind": "span",
@@ -9639,7 +10275,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 477,
+          "line": 843,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9650,7 +10286,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 477,
+                  "number": 843,
                   "children": [
                     {
                       "kind": "span",
@@ -9671,7 +10307,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L477C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L843C14"
                     },
                     {
                       "kind": "span",
@@ -9736,7 +10372,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 568,
+          "line": 934,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9747,7 +10383,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 568,
+                  "number": 934,
                   "children": [
                     {
                       "kind": "span",
@@ -9768,7 +10404,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L568C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L934C14"
                     },
                     {
                       "kind": "span",
@@ -9833,7 +10469,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 598,
+          "line": 964,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9844,7 +10480,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 598,
+                  "number": 964,
                   "children": [
                     {
                       "kind": "span",
@@ -9865,7 +10501,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L598C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L964C14"
                     },
                     {
                       "kind": "span",
@@ -9930,7 +10566,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 599,
+          "line": 965,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -9941,7 +10577,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 599,
+                  "number": 965,
                   "children": [
                     {
                       "kind": "span",
@@ -9962,7 +10598,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L599C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L965C14"
                     },
                     {
                       "kind": "span",
@@ -10027,7 +10663,7 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(generic instantiation)",
-          "line": 600,
+          "line": 966,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -10038,7 +10674,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 600,
+                  "number": 966,
                   "children": [
                     {
                       "kind": "span",
@@ -10059,7 +10695,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"+\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L600C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L966C14"
                     },
                     {
                       "kind": "span",
@@ -10123,3416 +10759,20 @@ GNATdoc.Documentation = {
         },
         {
           "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 170,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 170,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L170C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 195,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 195,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L195C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 196,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 196,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L196C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 197,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 197,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L197C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 307,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 307,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L307C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 334,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 334,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L334C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 335,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 335,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L335C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 336,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 336,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L336C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 450,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 450,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L450C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 482,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 482,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L482C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 483,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 483,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L483C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 484,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 484,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L484C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 573,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 573,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L573C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 605,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 605,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L605C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 606,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 606,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L606C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "-",
-          "qualifier": "(generic instantiation)",
-          "line": 607,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 607,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"-\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L607C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"-\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 216,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 216,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L216C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 217,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 217,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L217C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 218,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 218,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L218C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GUT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 355,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 355,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L355C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 356,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 356,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L356C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 357,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 357,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L357C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GIT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 504,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 504,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L504C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 505,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 505,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L505C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 506,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 506,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L506C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 627,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 627,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L627C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 628,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 628,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L628C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IV_IS_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
-          }
-        },
-        {
-          "label": "/",
-          "qualifier": "(generic instantiation)",
-          "line": 629,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 629,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L629C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GDT.Apply_Func_IS_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
-          }
-        },
-        {
-          "label": "/=",
-          "qualifier": "(generic instantiation)",
-          "line": 112,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 112,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L112C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GBT.Apply_Func_IV_IV_RV"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/=\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
-            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
-          }
-        },
-        {
-          "label": "/=",
-          "qualifier": "(generic instantiation)",
-          "line": 249,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 249,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L249C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVU_IVU_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/=\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L106C14"
-          }
-        },
-        {
-          "label": "/=",
-          "qualifier": "(generic instantiation)",
-          "line": 394,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 394,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L394C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVI_IVI_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/=\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
-          }
-        },
-        {
-          "label": "/=",
-          "qualifier": "(generic instantiation)",
-          "line": 517,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 517,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L517C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVF_IVF_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/=\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenFType.Apply_Func_IVF_IVF_RVB",
-            "docHref": "docs/vulkan__math__genftype___spec.html#L277C14"
-          }
-        },
-        {
-          "label": "/=",
-          "qualifier": "(generic instantiation)",
-          "line": 640,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 640,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"/=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L640C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVD_IVD_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"/=\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenDType.Apply_Func_IVD_IVD_RVB",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L188C14"
-          }
-        },
-        {
-          "label": "<",
-          "qualifier": "(generic instantiation)",
-          "line": 244,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 244,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"<\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L244C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVU_IVU_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"<\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L106C14"
-          }
-        },
-        {
-          "label": "<",
-          "qualifier": "(generic instantiation)",
-          "line": 389,
-          "column": 14,
-          "src": "srcs/vulkan-math-operators.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 389,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"<\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L389C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVI_IVI_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"<\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
-          }
-        },
-        {
-          "label": "<",
           "qualifier": "(generic instantiation)",
           "line": 512,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType subtraction operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -13560,8 +10800,3439 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "\"<\"",
+                      "text": "\"-\"",
                       "href": "docs/vulkan__math__operators___spec.html#L512C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GUT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply subtraction component-wise on two Vkm_GenUType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector - vector;"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 523,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType subtraction operator.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 523,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L523C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GUT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Subtract a scalar from each component of a vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector - scalar;"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 535,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType subtraction operator.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 535,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L535C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GUT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Subtract each component of the vector from the scalar, returning the result\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "for each subtraction in the corresponding component of a new vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar - vector;"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 673,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 673,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L673C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 700,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 700,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L700C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 701,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 701,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L701C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 702,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 702,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L702C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 816,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 816,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L816C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 848,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 848,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L848C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 849,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 849,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L849C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 850,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 850,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L850C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 939,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 939,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L939C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 971,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 971,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L971C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 972,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 972,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L972C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(generic instantiation)",
+          "line": 973,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 973,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L973C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 582,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 582,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L582C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GUT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 583,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 583,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L583C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GUT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 584,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 584,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L584C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GUT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 721,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 721,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L721C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 722,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 722,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L722C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 723,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 723,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L723C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GIT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 870,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 870,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L870C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 871,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 871,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L871C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 872,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 872,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L872C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 993,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 993,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L993C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 994,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 994,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L994C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IV_IS_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IS_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14"
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(generic instantiation)",
+          "line": 995,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 995,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L995C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GDT.Apply_Func_IS_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IS_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14"
+          }
+        },
+        {
+          "label": "/=",
+          "qualifier": "(generic instantiation)",
+          "line": 294,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType inequality operator.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 294,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/=\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L294C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GBT.Apply_Func_IV_IV_RV"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply determine whether to Vkm_GenBType vectors are not equal to each other.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "is_not_equal := vector /= vector;"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenType.Apply_Func_IV_IV_RV",
+            "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14"
+          }
+        },
+        {
+          "label": "/=",
+          "qualifier": "(generic instantiation)",
+          "line": 615,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 615,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/=\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L615C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVU_IVU_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
+            "docHref": "docs/vulkan__math__genutype___spec.html#L106C14"
+          }
+        },
+        {
+          "label": "/=",
+          "qualifier": "(generic instantiation)",
+          "line": 760,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 760,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/=\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L760C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVI_IVI_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
+            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+          }
+        },
+        {
+          "label": "/=",
+          "qualifier": "(generic instantiation)",
+          "line": 883,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 883,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/=\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L883C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVF_IVF_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenFType.Apply_Func_IVF_IVF_RVB",
+            "docHref": "docs/vulkan__math__genftype___spec.html#L277C14"
+          }
+        },
+        {
+          "label": "/=",
+          "qualifier": "(generic instantiation)",
+          "line": 1006,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 1006,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/=\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L1006C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVD_IVD_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"/=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenDType.Apply_Func_IVD_IVD_RVB",
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L188C14"
+          }
+        },
+        {
+          "label": "<",
+          "qualifier": "(generic instantiation)",
+          "line": 610,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 610,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"<\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L610C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVU_IVU_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"<\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
+            "docHref": "docs/vulkan__math__genutype___spec.html#L106C14"
+          }
+        },
+        {
+          "label": "<",
+          "qualifier": "(generic instantiation)",
+          "line": 755,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 755,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"<\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L755C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVI_IVI_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"<\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
+            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+          }
+        },
+        {
+          "label": "<",
+          "qualifier": "(generic instantiation)",
+          "line": 878,
+          "column": 14,
+          "src": "srcs/vulkan-math-operators.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 878,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"<\"",
+                      "href": "docs/vulkan__math__operators___spec.html#L878C14"
                     },
                     {
                       "kind": "span",
@@ -13631,7 +14302,7 @@ GNATdoc.Documentation = {
         {
           "label": "<",
           "qualifier": "(generic instantiation)",
-          "line": 635,
+          "line": 1001,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -13642,7 +14313,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 635,
+                  "number": 1001,
                   "children": [
                     {
                       "kind": "span",
@@ -13663,7 +14334,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"<\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L635C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L1001C14"
                     },
                     {
                       "kind": "span",
@@ -13728,7 +14399,7 @@ GNATdoc.Documentation = {
         {
           "label": "<=",
           "qualifier": "(generic instantiation)",
-          "line": 245,
+          "line": 611,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -13739,7 +14410,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 245,
+                  "number": 611,
                   "children": [
                     {
                       "kind": "span",
@@ -13760,7 +14431,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"<=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L245C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L611C14"
                     },
                     {
                       "kind": "span",
@@ -13825,7 +14496,7 @@ GNATdoc.Documentation = {
         {
           "label": "<=",
           "qualifier": "(generic instantiation)",
-          "line": 390,
+          "line": 756,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -13836,7 +14507,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 390,
+                  "number": 756,
                   "children": [
                     {
                       "kind": "span",
@@ -13857,7 +14528,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"<=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L390C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L756C14"
                     },
                     {
                       "kind": "span",
@@ -13922,7 +14593,7 @@ GNATdoc.Documentation = {
         {
           "label": "<=",
           "qualifier": "(generic instantiation)",
-          "line": 513,
+          "line": 879,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -13933,7 +14604,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 513,
+                  "number": 879,
                   "children": [
                     {
                       "kind": "span",
@@ -13954,7 +14625,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"<=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L513C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L879C14"
                     },
                     {
                       "kind": "span",
@@ -14019,7 +14690,7 @@ GNATdoc.Documentation = {
         {
           "label": "<=",
           "qualifier": "(generic instantiation)",
-          "line": 636,
+          "line": 1002,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14030,7 +14701,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 636,
+                  "number": 1002,
                   "children": [
                     {
                       "kind": "span",
@@ -14051,7 +14722,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"<=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L636C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L1002C14"
                     },
                     {
                       "kind": "span",
@@ -14116,10 +14787,19 @@ GNATdoc.Documentation = {
         {
           "label": "=",
           "qualifier": "(generic instantiation)",
-          "line": 111,
+          "line": 283,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType equality operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -14127,7 +14807,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 111,
+                  "number": 283,
                   "children": [
                     {
                       "kind": "span",
@@ -14148,7 +14828,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L111C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L283C14"
                     },
                     {
                       "kind": "span",
@@ -14203,6 +14883,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply determine whether to Vkm_GenBType vectors are equal to each other.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "is_equal := vector = vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -14213,7 +14916,7 @@ GNATdoc.Documentation = {
         {
           "label": "=",
           "qualifier": "(generic instantiation)",
-          "line": 248,
+          "line": 614,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14224,7 +14927,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 248,
+                  "number": 614,
                   "children": [
                     {
                       "kind": "span",
@@ -14245,7 +14948,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L248C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L614C14"
                     },
                     {
                       "kind": "span",
@@ -14315,7 +15018,7 @@ GNATdoc.Documentation = {
         {
           "label": "=",
           "qualifier": "(generic instantiation)",
-          "line": 393,
+          "line": 759,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14326,7 +15029,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 393,
+                  "number": 759,
                   "children": [
                     {
                       "kind": "span",
@@ -14347,7 +15050,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L393C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L759C14"
                     },
                     {
                       "kind": "span",
@@ -14417,7 +15120,7 @@ GNATdoc.Documentation = {
         {
           "label": "=",
           "qualifier": "(generic instantiation)",
-          "line": 516,
+          "line": 882,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14428,7 +15131,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 516,
+                  "number": 882,
                   "children": [
                     {
                       "kind": "span",
@@ -14449,7 +15152,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L516C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L882C14"
                     },
                     {
                       "kind": "span",
@@ -14519,7 +15222,7 @@ GNATdoc.Documentation = {
         {
           "label": "=",
           "qualifier": "(generic instantiation)",
-          "line": 639,
+          "line": 1005,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14530,7 +15233,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 639,
+                  "number": 1005,
                   "children": [
                     {
                       "kind": "span",
@@ -14551,7 +15254,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L639C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L1005C14"
                     },
                     {
                       "kind": "span",
@@ -14616,7 +15319,7 @@ GNATdoc.Documentation = {
         {
           "label": ">",
           "qualifier": "(generic instantiation)",
-          "line": 246,
+          "line": 612,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14627,7 +15330,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 246,
+                  "number": 612,
                   "children": [
                     {
                       "kind": "span",
@@ -14648,7 +15351,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L246C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L612C14"
                     },
                     {
                       "kind": "span",
@@ -14718,7 +15421,7 @@ GNATdoc.Documentation = {
         {
           "label": ">",
           "qualifier": "(generic instantiation)",
-          "line": 391,
+          "line": 757,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14729,7 +15432,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 391,
+                  "number": 757,
                   "children": [
                     {
                       "kind": "span",
@@ -14750,7 +15453,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L391C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L757C14"
                     },
                     {
                       "kind": "span",
@@ -14820,7 +15523,7 @@ GNATdoc.Documentation = {
         {
           "label": ">",
           "qualifier": "(generic instantiation)",
-          "line": 514,
+          "line": 880,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14831,7 +15534,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 514,
+                  "number": 880,
                   "children": [
                     {
                       "kind": "span",
@@ -14852,7 +15555,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L514C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L880C14"
                     },
                     {
                       "kind": "span",
@@ -14922,7 +15625,7 @@ GNATdoc.Documentation = {
         {
           "label": ">",
           "qualifier": "(generic instantiation)",
-          "line": 637,
+          "line": 1003,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -14933,7 +15636,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 637,
+                  "number": 1003,
                   "children": [
                     {
                       "kind": "span",
@@ -14954,7 +15657,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L637C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L1003C14"
                     },
                     {
                       "kind": "span",
@@ -15019,7 +15722,7 @@ GNATdoc.Documentation = {
         {
           "label": ">=",
           "qualifier": "(generic instantiation)",
-          "line": 247,
+          "line": 613,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15030,7 +15733,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 247,
+                  "number": 613,
                   "children": [
                     {
                       "kind": "span",
@@ -15051,7 +15754,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L247C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L613C14"
                     },
                     {
                       "kind": "span",
@@ -15116,7 +15819,7 @@ GNATdoc.Documentation = {
         {
           "label": ">=",
           "qualifier": "(generic instantiation)",
-          "line": 392,
+          "line": 758,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15127,7 +15830,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 392,
+                  "number": 758,
                   "children": [
                     {
                       "kind": "span",
@@ -15148,7 +15851,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L392C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L758C14"
                     },
                     {
                       "kind": "span",
@@ -15213,7 +15916,7 @@ GNATdoc.Documentation = {
         {
           "label": ">=",
           "qualifier": "(generic instantiation)",
-          "line": 515,
+          "line": 881,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15224,7 +15927,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 515,
+                  "number": 881,
                   "children": [
                     {
                       "kind": "span",
@@ -15245,7 +15948,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L515C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L881C14"
                     },
                     {
                       "kind": "span",
@@ -15310,7 +16013,7 @@ GNATdoc.Documentation = {
         {
           "label": ">=",
           "qualifier": "(generic instantiation)",
-          "line": 638,
+          "line": 1004,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15321,7 +16024,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 638,
+                  "number": 1004,
                   "children": [
                     {
                       "kind": "span",
@@ -15342,7 +16045,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\">=\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L638C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L1004C14"
                     },
                     {
                       "kind": "span",
@@ -15407,7 +16110,7 @@ GNATdoc.Documentation = {
         {
           "label": "abs",
           "qualifier": "(generic instantiation)",
-          "line": 455,
+          "line": 821,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15418,7 +16121,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 455,
+                  "number": 821,
                   "children": [
                     {
                       "kind": "span",
@@ -15439,7 +16142,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"abs\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L455C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L821C14"
                     },
                     {
                       "kind": "span",
@@ -15504,7 +16207,7 @@ GNATdoc.Documentation = {
         {
           "label": "abs",
           "qualifier": "(generic instantiation)",
-          "line": 578,
+          "line": 944,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15515,7 +16218,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 578,
+                  "number": 944,
                   "children": [
                     {
                       "kind": "span",
@@ -15536,7 +16239,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"abs\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L578C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L944C14"
                     },
                     {
                       "kind": "span",
@@ -15601,10 +16304,19 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 90,
+          "line": 178,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"and\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15612,7 +16324,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 90,
+                  "number": 178,
                   "children": [
                     {
                       "kind": "span",
@@ -15633,7 +16345,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L90C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L178C14"
                     },
                     {
                       "kind": "span",
@@ -15688,6 +16400,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"and\" component-wise on two Vkm_GenBType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector and vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15698,10 +16433,19 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 91,
+          "line": 190,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"and\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15709,7 +16453,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 91,
+                  "number": 190,
                   "children": [
                     {
                       "kind": "span",
@@ -15730,7 +16474,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L91C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L190C14"
                     },
                     {
                       "kind": "span",
@@ -15785,6 +16529,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"and\" component-wise on a Vkm_GenBType vector and \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Bool scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector and scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15795,10 +16566,19 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 92,
+          "line": 202,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"and\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -15806,7 +16586,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 92,
+                  "number": 202,
                   "children": [
                     {
                       "kind": "span",
@@ -15827,7 +16607,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L92C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L202C14"
                     },
                     {
                       "kind": "span",
@@ -15882,6 +16662,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"and\" component-wise on a Vkm_GenBType vector and \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Bool scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar and scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -15892,7 +16699,7 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 223,
+          "line": 589,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -15903,7 +16710,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 223,
+                  "number": 589,
                   "children": [
                     {
                       "kind": "span",
@@ -15924,7 +16731,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L223C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L589C14"
                     },
                     {
                       "kind": "span",
@@ -15989,7 +16796,7 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 224,
+          "line": 590,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16000,7 +16807,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 224,
+                  "number": 590,
                   "children": [
                     {
                       "kind": "span",
@@ -16021,7 +16828,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L224C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L590C14"
                     },
                     {
                       "kind": "span",
@@ -16086,7 +16893,7 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 225,
+          "line": 591,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16097,7 +16904,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 225,
+                  "number": 591,
                   "children": [
                     {
                       "kind": "span",
@@ -16118,7 +16925,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L225C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L591C14"
                     },
                     {
                       "kind": "span",
@@ -16183,7 +16990,7 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 364,
+          "line": 730,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16194,7 +17001,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 364,
+                  "number": 730,
                   "children": [
                     {
                       "kind": "span",
@@ -16215,7 +17022,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L364C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L730C14"
                     },
                     {
                       "kind": "span",
@@ -16280,7 +17087,7 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 365,
+          "line": 731,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16291,7 +17098,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 365,
+                  "number": 731,
                   "children": [
                     {
                       "kind": "span",
@@ -16312,7 +17119,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L365C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L731C14"
                     },
                     {
                       "kind": "span",
@@ -16377,7 +17184,7 @@ GNATdoc.Documentation = {
         {
           "label": "and",
           "qualifier": "(generic instantiation)",
-          "line": 366,
+          "line": 732,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16388,7 +17195,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 366,
+                  "number": 732,
                   "children": [
                     {
                       "kind": "span",
@@ -16409,7 +17216,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"and\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L366C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L732C14"
                     },
                     {
                       "kind": "span",
@@ -16474,10 +17281,19 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 181,
+          "line": 446,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType modulus operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16485,7 +17301,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 181,
+                  "number": 446,
                   "children": [
                     {
                       "kind": "span",
@@ -16506,7 +17322,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L181C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L446C14"
                     },
                     {
                       "kind": "span",
@@ -16561,6 +17377,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a modulus component-wise on two Vkm_GenBType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector mod vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16571,10 +17410,19 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 182,
+          "line": 457,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType modulus operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16582,7 +17430,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 182,
+                  "number": 457,
                   "children": [
                     {
                       "kind": "span",
@@ -16603,7 +17451,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L182C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L457C14"
                     },
                     {
                       "kind": "span",
@@ -16658,6 +17506,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a scalar modulus component-wise on a Vkm_GenUType vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector mod scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16668,10 +17539,19 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 183,
+          "line": 468,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType modulus operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -16679,7 +17559,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 183,
+                  "number": 468,
                   "children": [
                     {
                       "kind": "span",
@@ -16700,7 +17580,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L183C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L468C14"
                     },
                     {
                       "kind": "span",
@@ -16755,6 +17635,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a vector modulus component-wise on a Vkm_Uint scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar mod vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -16765,7 +17668,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 320,
+          "line": 686,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16776,7 +17679,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 320,
+                  "number": 686,
                   "children": [
                     {
                       "kind": "span",
@@ -16797,7 +17700,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L320C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L686C14"
                     },
                     {
                       "kind": "span",
@@ -16862,7 +17765,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 321,
+          "line": 687,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16873,7 +17776,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 321,
+                  "number": 687,
                   "children": [
                     {
                       "kind": "span",
@@ -16894,7 +17797,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L321C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L687C14"
                     },
                     {
                       "kind": "span",
@@ -16959,7 +17862,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 322,
+          "line": 688,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -16970,7 +17873,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 322,
+                  "number": 688,
                   "children": [
                     {
                       "kind": "span",
@@ -16991,7 +17894,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L322C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L688C14"
                     },
                     {
                       "kind": "span",
@@ -17056,7 +17959,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 460,
+          "line": 826,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17067,7 +17970,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 460,
+                  "number": 826,
                   "children": [
                     {
                       "kind": "span",
@@ -17088,7 +17991,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L460C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L826C14"
                     },
                     {
                       "kind": "span",
@@ -17153,7 +18056,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 461,
+          "line": 827,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17164,7 +18067,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 461,
+                  "number": 827,
                   "children": [
                     {
                       "kind": "span",
@@ -17185,7 +18088,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L461C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L827C14"
                     },
                     {
                       "kind": "span",
@@ -17250,7 +18153,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 462,
+          "line": 828,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17261,7 +18164,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 462,
+                  "number": 828,
                   "children": [
                     {
                       "kind": "span",
@@ -17282,7 +18185,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L462C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L828C14"
                     },
                     {
                       "kind": "span",
@@ -17347,7 +18250,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 583,
+          "line": 949,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17358,7 +18261,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 583,
+                  "number": 949,
                   "children": [
                     {
                       "kind": "span",
@@ -17379,7 +18282,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L583C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L949C14"
                     },
                     {
                       "kind": "span",
@@ -17444,7 +18347,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 584,
+          "line": 950,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17455,7 +18358,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 584,
+                  "number": 950,
                   "children": [
                     {
                       "kind": "span",
@@ -17476,7 +18379,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L584C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L950C14"
                     },
                     {
                       "kind": "span",
@@ -17541,7 +18444,7 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(generic instantiation)",
-          "line": 585,
+          "line": 951,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17552,7 +18455,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 585,
+                  "number": 951,
                   "children": [
                     {
                       "kind": "span",
@@ -17573,7 +18476,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"mod\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L585C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L951C14"
                     },
                     {
                       "kind": "span",
@@ -17638,10 +18541,19 @@ GNATdoc.Documentation = {
         {
           "label": "not",
           "qualifier": "(generic instantiation)",
-          "line": 85,
+          "line": 167,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"not\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17649,7 +18561,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 85,
+                  "number": 167,
                   "children": [
                     {
                       "kind": "span",
@@ -17670,7 +18582,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"not\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L85C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L167C14"
                     },
                     {
                       "kind": "span",
@@ -17725,6 +18637,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical complement component-wise on a Vkm_GenBType vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := not vector"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -17735,10 +18670,19 @@ GNATdoc.Documentation = {
         {
           "label": "not",
           "qualifier": "(generic instantiation)",
-          "line": 176,
+          "line": 435,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType bitwise complement operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17746,7 +18690,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 176,
+                  "number": 435,
                   "children": [
                     {
                       "kind": "span",
@@ -17767,7 +18711,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"not\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L176C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L435C14"
                     },
                     {
                       "kind": "span",
@@ -17822,6 +18766,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply the bitwise complement operator to each component of the vector,\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "returning the resulting vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := not vector"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -17832,7 +18803,7 @@ GNATdoc.Documentation = {
         {
           "label": "not",
           "qualifier": "(generic instantiation)",
-          "line": 315,
+          "line": 681,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -17843,7 +18814,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 315,
+                  "number": 681,
                   "children": [
                     {
                       "kind": "span",
@@ -17864,7 +18835,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"not\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L315C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L681C14"
                     },
                     {
                       "kind": "span",
@@ -17929,10 +18900,19 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 97,
+          "line": 213,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"or\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -17940,7 +18920,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 97,
+                  "number": 213,
                   "children": [
                     {
                       "kind": "span",
@@ -17961,7 +18941,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L97C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L213C14"
                     },
                     {
                       "kind": "span",
@@ -18016,6 +18996,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"or\" component-wise on two Vkm_GenBType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector or vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18026,10 +19029,19 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 98,
+          "line": 225,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"or\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18037,7 +19049,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 98,
+                  "number": 225,
                   "children": [
                     {
                       "kind": "span",
@@ -18058,7 +19070,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L98C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L225C14"
                     },
                     {
                       "kind": "span",
@@ -18113,6 +19125,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"or\" component-wise on a Vkm_GenBType vector and \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Bool scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector or scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18123,10 +19162,19 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 99,
+          "line": 237,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"or\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18134,7 +19182,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 99,
+                  "number": 237,
                   "children": [
                     {
                       "kind": "span",
@@ -18155,7 +19203,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L99C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L237C14"
                     },
                     {
                       "kind": "span",
@@ -18210,6 +19258,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"or\" component-wise on a Vkm_GenBType vector and \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Bool scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar or vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18220,7 +19295,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 230,
+          "line": 596,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -18231,7 +19306,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 230,
+                  "number": 596,
                   "children": [
                     {
                       "kind": "span",
@@ -18252,7 +19327,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L230C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L596C14"
                     },
                     {
                       "kind": "span",
@@ -18317,7 +19392,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 231,
+          "line": 597,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -18328,7 +19403,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 231,
+                  "number": 597,
                   "children": [
                     {
                       "kind": "span",
@@ -18349,7 +19424,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L231C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L597C14"
                     },
                     {
                       "kind": "span",
@@ -18414,7 +19489,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 232,
+          "line": 598,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -18425,7 +19500,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 232,
+                  "number": 598,
                   "children": [
                     {
                       "kind": "span",
@@ -18446,7 +19521,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L232C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L598C14"
                     },
                     {
                       "kind": "span",
@@ -18511,7 +19586,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 373,
+          "line": 739,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -18522,7 +19597,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 373,
+                  "number": 739,
                   "children": [
                     {
                       "kind": "span",
@@ -18543,7 +19618,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L373C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L739C14"
                     },
                     {
                       "kind": "span",
@@ -18608,7 +19683,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 374,
+          "line": 740,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -18619,7 +19694,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 374,
+                  "number": 740,
                   "children": [
                     {
                       "kind": "span",
@@ -18640,7 +19715,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L374C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L740C14"
                     },
                     {
                       "kind": "span",
@@ -18705,7 +19780,7 @@ GNATdoc.Documentation = {
         {
           "label": "or",
           "qualifier": "(generic instantiation)",
-          "line": 375,
+          "line": 741,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -18716,7 +19791,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 375,
+                  "number": 741,
                   "children": [
                     {
                       "kind": "span",
@@ -18737,7 +19812,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"or\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L375C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L741C14"
                     },
                     {
                       "kind": "span",
@@ -18802,10 +19877,19 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 202,
+          "line": 546,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType remainder operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18813,7 +19897,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 202,
+                  "number": 546,
                   "children": [
                     {
                       "kind": "span",
@@ -18834,7 +19918,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L202C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L546C14"
                     },
                     {
                       "kind": "span",
@@ -18889,6 +19973,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Return the remainder from component-wise division of two Vkm_GenUType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector rem vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18899,10 +20006,19 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 203,
+          "line": 557,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType remainder operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -18910,7 +20026,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 203,
+                  "number": 557,
                   "children": [
                     {
                       "kind": "span",
@@ -18931,7 +20047,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L203C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L557C14"
                     },
                     {
                       "kind": "span",
@@ -18986,6 +20102,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Return the remainder from division of each component of a vector by a scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector rem scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -18996,10 +20135,19 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 204,
+          "line": 568,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType remainder operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -19007,7 +20155,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 204,
+                  "number": 568,
                   "children": [
                     {
                       "kind": "span",
@@ -19028,7 +20176,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L204C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L568C14"
                     },
                     {
                       "kind": "span",
@@ -19083,6 +20231,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Return the remainder from division of a scalar by each component of a vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar rem vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -19093,7 +20264,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 341,
+          "line": 707,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19104,7 +20275,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 341,
+                  "number": 707,
                   "children": [
                     {
                       "kind": "span",
@@ -19125,7 +20296,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L341C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L707C14"
                     },
                     {
                       "kind": "span",
@@ -19190,7 +20361,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 342,
+          "line": 708,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19201,7 +20372,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 342,
+                  "number": 708,
                   "children": [
                     {
                       "kind": "span",
@@ -19222,7 +20393,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L342C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L708C14"
                     },
                     {
                       "kind": "span",
@@ -19287,7 +20458,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 343,
+          "line": 709,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19298,7 +20469,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 343,
+                  "number": 709,
                   "children": [
                     {
                       "kind": "span",
@@ -19319,7 +20490,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L343C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L709C14"
                     },
                     {
                       "kind": "span",
@@ -19384,7 +20555,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 490,
+          "line": 856,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19395,7 +20566,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 490,
+                  "number": 856,
                   "children": [
                     {
                       "kind": "span",
@@ -19416,7 +20587,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L490C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L856C14"
                     },
                     {
                       "kind": "span",
@@ -19481,7 +20652,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 491,
+          "line": 857,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19492,7 +20663,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 491,
+                  "number": 857,
                   "children": [
                     {
                       "kind": "span",
@@ -19513,7 +20684,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L491C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L857C14"
                     },
                     {
                       "kind": "span",
@@ -19578,7 +20749,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 492,
+          "line": 858,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19589,7 +20760,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 492,
+                  "number": 858,
                   "children": [
                     {
                       "kind": "span",
@@ -19610,7 +20781,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L492C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L858C14"
                     },
                     {
                       "kind": "span",
@@ -19675,7 +20846,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 613,
+          "line": 979,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19686,7 +20857,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 613,
+                  "number": 979,
                   "children": [
                     {
                       "kind": "span",
@@ -19707,7 +20878,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L613C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L979C14"
                     },
                     {
                       "kind": "span",
@@ -19772,7 +20943,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 614,
+          "line": 980,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19783,7 +20954,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 614,
+                  "number": 980,
                   "children": [
                     {
                       "kind": "span",
@@ -19804,7 +20975,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L614C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L980C14"
                     },
                     {
                       "kind": "span",
@@ -19869,7 +21040,7 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(generic instantiation)",
-          "line": 615,
+          "line": 981,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -19880,7 +21051,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 615,
+                  "number": 981,
                   "children": [
                     {
                       "kind": "span",
@@ -19901,7 +21072,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"rem\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L615C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L981C14"
                     },
                     {
                       "kind": "span",
@@ -19966,10 +21137,19 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 104,
+          "line": 248,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"xor\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -19977,7 +21157,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 104,
+                  "number": 248,
                   "children": [
                     {
                       "kind": "span",
@@ -19998,7 +21178,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L104C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L248C14"
                     },
                     {
                       "kind": "span",
@@ -20053,6 +21233,29 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"xor\" component-wise on two Vkm_GenBType vectors.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector xor vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -20063,10 +21266,19 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 105,
+          "line": 260,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"xor\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -20074,7 +21286,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 105,
+                  "number": 260,
                   "children": [
                     {
                       "kind": "span",
@@ -20095,7 +21307,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L105C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L260C14"
                     },
                     {
                       "kind": "span",
@@ -20150,6 +21362,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"xor\" component-wise on a Vkm_GenBType vector and \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Bool scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := vector xor scalar;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -20160,10 +21399,19 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 106,
+          "line": 272,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType logical \"xor\" operator.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -20171,7 +21419,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 106,
+                  "number": 272,
                   "children": [
                     {
                       "kind": "span",
@@ -20192,7 +21440,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L106C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L272C14"
                     },
                     {
                       "kind": "span",
@@ -20247,6 +21495,33 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Apply a logical \"xor\" component-wise on a Vkm_GenBType vector and \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Bool scalar.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "vector := scalar xor vector;"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -20257,7 +21532,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 237,
+          "line": 603,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -20268,7 +21543,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 237,
+                  "number": 603,
                   "children": [
                     {
                       "kind": "span",
@@ -20289,7 +21564,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L237C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L603C14"
                     },
                     {
                       "kind": "span",
@@ -20354,7 +21629,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 238,
+          "line": 604,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -20365,7 +21640,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 238,
+                  "number": 604,
                   "children": [
                     {
                       "kind": "span",
@@ -20386,7 +21661,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L238C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L604C14"
                     },
                     {
                       "kind": "span",
@@ -20451,7 +21726,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 239,
+          "line": 605,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -20462,7 +21737,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 239,
+                  "number": 605,
                   "children": [
                     {
                       "kind": "span",
@@ -20483,7 +21758,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L239C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L605C14"
                     },
                     {
                       "kind": "span",
@@ -20548,7 +21823,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 382,
+          "line": 748,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -20559,7 +21834,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 382,
+                  "number": 748,
                   "children": [
                     {
                       "kind": "span",
@@ -20580,7 +21855,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L382C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L748C14"
                     },
                     {
                       "kind": "span",
@@ -20645,7 +21920,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 383,
+          "line": 749,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -20656,7 +21931,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 383,
+                  "number": 749,
                   "children": [
                     {
                       "kind": "span",
@@ -20677,7 +21952,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L383C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L749C14"
                     },
                     {
                       "kind": "span",
@@ -20742,7 +22017,7 @@ GNATdoc.Documentation = {
         {
           "label": "xor",
           "qualifier": "(generic instantiation)",
-          "line": 384,
+          "line": 750,
           "column": 14,
           "src": "srcs/vulkan-math-operators.ads.html",
           "summary": [
@@ -20753,7 +22028,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 384,
+                  "number": 750,
                   "children": [
                     {
                       "kind": "span",
@@ -20774,7 +22049,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "\"xor\"",
-                      "href": "docs/vulkan__math__operators___spec.html#L384C14"
+                      "href": "docs/vulkan__math__operators___spec.html#L750C14"
                     },
                     {
                       "kind": "span",
