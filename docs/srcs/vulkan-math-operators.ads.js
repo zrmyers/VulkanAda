@@ -6364,7 +6364,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "Is_All"
+          "text": "Is_Any"
         },
         {
           "kind": "span",
@@ -17140,7 +17140,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "Is_All"
+          "text": "Is_Any"
         },
         {
           "kind": "span",
@@ -17424,7 +17424,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--    - \"abs\", Unary absolute value operator."
         }
       ]
     },
@@ -17440,7 +17440,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- A summary of operators that are component-wise on two input vectors of the"
+          "text": "--"
         }
       ]
     },
@@ -17456,7 +17456,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- same length. Additionally, a scalar may appear instead of a vector on the"
+          "text": "-- A summary of operators that are component-wise on two input vectors of the"
         }
       ]
     },
@@ -17472,7 +17472,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- left or right hand side of these operators:"
+          "text": "-- same length. Additionally, a scalar may appear instead of a vector on the"
         }
       ]
     },
@@ -17488,7 +17488,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"mod\", Modulus operator."
+          "text": "-- left or right hand side of these operators:"
         }
       ]
     },
@@ -17504,7 +17504,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"+\",   Addition operator."
+          "text": "--    - \"mod\", Modulus operator."
         }
       ]
     },
@@ -17520,7 +17520,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"-\",   Subtraction operator."
+          "text": "--    - \"+\",   Addition operator."
         }
       ]
     },
@@ -17536,7 +17536,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"rem\", Remainder operator."
+          "text": "--    - \"-\",   Subtraction operator."
         }
       ]
     },
@@ -17552,7 +17552,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"*\",   Multiplication operator."
+          "text": "--    - \"rem\", Remainder operator."
         }
       ]
     },
@@ -17568,7 +17568,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"/\",   Division operator."
+          "text": "--    - \"*\",   Multiplication operator."
         }
       ]
     },
@@ -17584,7 +17584,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"and\", Bitwise AND operator."
+          "text": "--    - \"/\",   Division operator."
         }
       ]
     },
@@ -17600,7 +17600,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"or\" , Bitwise OR operator."
+          "text": "--    - \"and\", Bitwise AND operator."
         }
       ]
     },
@@ -17616,7 +17616,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"xor\", Bitwise XOR operator."
+          "text": "--    - \"or\" , Bitwise OR operator."
         }
       ]
     },
@@ -17632,7 +17632,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--    - \"xor\", Bitwise XOR operator."
         }
       ]
     },
@@ -17648,7 +17648,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- A summary of relational operators that are component-wise on two input vecotrs"
+          "text": "--"
         }
       ]
     },
@@ -17664,7 +17664,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- of the same length, and return a vector of booleans of the same length:"
+          "text": "-- A summary of relational operators that are component-wise on two input vecotrs"
         }
       ]
     },
@@ -17680,7 +17680,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"<\",  Less than operator"
+          "text": "-- of the same length, and return a vector of booleans of the same length:"
         }
       ]
     },
@@ -17696,7 +17696,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \">\",  Greater than operator"
+          "text": "--    - \"<\",  Less than operator"
         }
       ]
     },
@@ -17712,7 +17712,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"<=\", Less than or equal to operator"
+          "text": "--    - \">\",  Greater than operator"
         }
       ]
     },
@@ -17728,7 +17728,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \">=\", Greater than or equal to operator"
+          "text": "--    - \"<=\", Less than or equal to operator"
         }
       ]
     },
@@ -17744,7 +17744,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--    - \">=\", Greater than or equal to operator"
         }
       ]
     },
@@ -17760,7 +17760,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- A summary of relational operators which return a scalar boolean value."
+          "text": "--"
         }
       ]
     },
@@ -17776,7 +17776,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"=\",  Equality operator"
+          "text": "-- A summary of relational operators which return a scalar boolean value."
         }
       ]
     },
@@ -17792,7 +17792,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--    - \"/=\", Non-Equality operator"
+          "text": "--    - \"=\",  Equality operator"
         }
       ]
     },
@@ -17808,7 +17808,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--"
+          "text": "--    - \"/=\", Non-Equality operator"
         }
       ]
     },
@@ -17824,7 +17824,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--"
         }
       ]
     },
@@ -17840,7 +17840,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- GenIType Concatenation Operators"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -17856,7 +17856,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "-- GenIType Concatenation Operators"
         }
       ]
     },
@@ -17872,7 +17872,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -17888,7 +17888,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType concatenation operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -17904,7 +17904,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType concatenation operator."
         }
       ]
     },
@@ -17920,7 +17920,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -17936,7 +17936,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Concatenate two Vkm_GenIType vectors."
+          "text": "--< @description"
         }
       ]
     },
@@ -17952,7 +17952,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    vector := vector & vector"
+          "text": "--< Concatenate two Vkm_GenIType vectors."
         }
       ]
     },
@@ -17968,7 +17968,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--<    vector := vector & vector"
         }
       ]
     },
@@ -17984,7 +17984,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param left"
+          "text": "--<"
         }
       ]
     },
@@ -18000,7 +18000,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the left of the '&' symbol."
+          "text": "--< @param left"
         }
       ]
     },
@@ -18016,7 +18016,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the left of the '&' symbol."
         }
       ]
     },
@@ -18032,7 +18032,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param right"
+          "text": "--<"
         }
       ]
     },
@@ -18048,7 +18048,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the right of the '&' symbol."
+          "text": "--< @param right"
         }
       ]
     },
@@ -18064,7 +18064,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the right of the '&' symbol."
         }
       ]
     },
@@ -18080,7 +18080,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
+          "text": "--<"
         }
       ]
     },
@@ -18096,7 +18096,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Append right vector to left vector."
+          "text": "--< @return"
         }
       ]
     },
@@ -18112,13 +18112,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< Append right vector to left vector."
         }
       ]
     },
     {
       "kind": "line",
       "number": 900,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 901,
       "children": [
         {
           "kind": "span",
@@ -18154,7 +18170,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L900C19"
+          "href": "docs/vulkan__math__operators___spec.html#L901C19"
         },
         {
           "kind": "span",
@@ -18170,7 +18186,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L900C25"
+          "href": "docs/vulkan__math__operators___spec.html#L901C25"
         },
         {
           "kind": "span",
@@ -18258,12 +18274,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 901,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 902,
       "children": [
       ]
@@ -18272,16 +18282,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 903,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -18296,7 +18296,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -18312,7 +18312,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType concatenation operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -18328,7 +18328,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType concatenation operator."
         }
       ]
     },
@@ -18344,7 +18344,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -18360,7 +18360,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Concatenate a Vkm_GenIType vector and a Vkm_Int scalar."
+          "text": "--< @description"
         }
       ]
     },
@@ -18376,7 +18376,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    vector := scalar & vector"
+          "text": "--< Concatenate a Vkm_GenIType vector and a Vkm_Int scalar."
         }
       ]
     },
@@ -18392,7 +18392,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--<    vector := scalar & vector"
         }
       ]
     },
@@ -18408,7 +18408,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param left"
+          "text": "--<"
         }
       ]
     },
@@ -18424,7 +18424,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the left of the '&' symbol."
+          "text": "--< @param left"
         }
       ]
     },
@@ -18440,7 +18440,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the left of the '&' symbol."
         }
       ]
     },
@@ -18456,7 +18456,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param right"
+          "text": "--<"
         }
       ]
     },
@@ -18472,7 +18472,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the right of the '&' symbol."
+          "text": "--< @param right"
         }
       ]
     },
@@ -18488,7 +18488,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the right of the '&' symbol."
         }
       ]
     },
@@ -18504,7 +18504,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
+          "text": "--<"
         }
       ]
     },
@@ -18520,7 +18520,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Append right vector to left scalar."
+          "text": "--< @return"
         }
       ]
     },
@@ -18536,13 +18536,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< Append right vector to left scalar."
         }
       ]
     },
     {
       "kind": "line",
       "number": 920,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 921,
       "children": [
         {
           "kind": "span",
@@ -18578,7 +18594,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L920C19"
+          "href": "docs/vulkan__math__operators___spec.html#L921C19"
         },
         {
           "kind": "span",
@@ -18625,7 +18641,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 921,
+      "number": 922,
       "children": [
         {
           "kind": "span",
@@ -18636,7 +18652,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L921C19"
+          "href": "docs/vulkan__math__operators___spec.html#L922C19"
         },
         {
           "kind": "span",
@@ -18709,7 +18725,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 922,
+      "number": 923,
       "children": [
         {
           "kind": "span",
@@ -18795,12 +18811,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 923,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 924,
       "children": [
       ]
@@ -18809,16 +18819,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 925,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -18833,7 +18833,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -18849,7 +18849,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType concatenation operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -18865,7 +18865,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType concatenation operator."
         }
       ]
     },
@@ -18881,7 +18881,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -18897,7 +18897,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Concatenate a Vkm_GenIType vector and a Vkm_Int scalar."
+          "text": "--< @description"
         }
       ]
     },
@@ -18913,7 +18913,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    vector := vector & scalar"
+          "text": "--< Concatenate a Vkm_GenIType vector and a Vkm_Int scalar."
         }
       ]
     },
@@ -18929,7 +18929,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--<    vector := vector & scalar"
         }
       ]
     },
@@ -18945,7 +18945,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param left"
+          "text": "--<"
         }
       ]
     },
@@ -18961,7 +18961,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the left of the '&' symbol."
+          "text": "--< @param left"
         }
       ]
     },
@@ -18977,7 +18977,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the left of the '&' symbol."
         }
       ]
     },
@@ -18993,7 +18993,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param right"
+          "text": "--<"
         }
       ]
     },
@@ -19009,7 +19009,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the right of the '&' symbol."
+          "text": "--< @param right"
         }
       ]
     },
@@ -19025,7 +19025,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the right of the '&' symbol."
         }
       ]
     },
@@ -19041,7 +19041,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
+          "text": "--<"
         }
       ]
     },
@@ -19057,7 +19057,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Append right scalar to left vector."
+          "text": "--< @return"
         }
       ]
     },
@@ -19073,13 +19073,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< Append right scalar to left vector."
         }
       ]
     },
     {
       "kind": "line",
       "number": 942,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 943,
       "children": [
         {
           "kind": "span",
@@ -19115,7 +19131,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L942C19"
+          "href": "docs/vulkan__math__operators___spec.html#L943C19"
         },
         {
           "kind": "span",
@@ -19157,7 +19173,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 943,
+      "number": 944,
       "children": [
         {
           "kind": "span",
@@ -19168,7 +19184,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L943C19"
+          "href": "docs/vulkan__math__operators___spec.html#L944C19"
         },
         {
           "kind": "span",
@@ -19246,7 +19262,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 944,
+      "number": 945,
       "children": [
         {
           "kind": "span",
@@ -19322,12 +19338,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 945,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 946,
       "children": [
       ]
@@ -19336,16 +19346,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 947,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -19360,7 +19360,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -19376,7 +19376,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType concatenation operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -19392,7 +19392,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType concatenation operator."
         }
       ]
     },
@@ -19408,7 +19408,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -19424,7 +19424,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Concatenate two Vkm_Int scalars."
+          "text": "--< @description"
         }
       ]
     },
@@ -19440,7 +19440,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    vector := scalar & scalar"
+          "text": "--< Concatenate two Vkm_Int scalars."
         }
       ]
     },
@@ -19456,7 +19456,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--<    vector := scalar & scalar"
         }
       ]
     },
@@ -19472,7 +19472,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param left"
+          "text": "--<"
         }
       ]
     },
@@ -19488,7 +19488,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the left of the '&' symbol."
+          "text": "--< @param left"
         }
       ]
     },
@@ -19504,7 +19504,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the left of the '&' symbol."
         }
       ]
     },
@@ -19520,7 +19520,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param right"
+          "text": "--<"
         }
       ]
     },
@@ -19536,7 +19536,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Parameter to the right of the '&' symbol."
+          "text": "--< @param right"
         }
       ]
     },
@@ -19552,7 +19552,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Parameter to the right of the '&' symbol."
         }
       ]
     },
@@ -19568,7 +19568,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
+          "text": "--<"
         }
       ]
     },
@@ -19584,7 +19584,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Append right scalar to left scalar."
+          "text": "--< @return"
         }
       ]
     },
@@ -19600,13 +19600,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< Append right scalar to left scalar."
         }
       ]
     },
     {
       "kind": "line",
       "number": 964,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 965,
       "children": [
         {
           "kind": "span",
@@ -19642,7 +19658,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L964C19"
+          "href": "docs/vulkan__math__operators___spec.html#L965C19"
         },
         {
           "kind": "span",
@@ -19658,7 +19674,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L964C25"
+          "href": "docs/vulkan__math__operators___spec.html#L965C25"
         },
         {
           "kind": "span",
@@ -19736,7 +19752,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 965,
+      "number": 966,
       "children": [
         {
           "kind": "span",
@@ -19812,24 +19828,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 966,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 967,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -19844,7 +19844,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -19860,7 +19860,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType unary plus operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -19876,7 +19876,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType unary plus operator."
         }
       ]
     },
@@ -19892,7 +19892,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -19908,7 +19908,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Return the vector unmodified."
+          "text": "--< @description"
         }
       ]
     },
@@ -19924,7 +19924,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    vector := +vector"
+          "text": "--< Return the vector unmodified."
         }
       ]
     },
@@ -19940,13 +19940,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<    vector := +vector"
         }
       ]
     },
     {
       "kind": "line",
       "number": 975,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 976,
       "children": [
         {
           "kind": "span",
@@ -19967,7 +19983,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L975C14"
+          "href": "docs/vulkan__math__operators___spec.html#L976C14"
         },
         {
           "kind": "span",
@@ -20023,24 +20039,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 976,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 977,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -20055,7 +20055,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -20071,7 +20071,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType unary minus operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -20087,7 +20087,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType unary minus operator."
         }
       ]
     },
@@ -20103,7 +20103,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -20119,7 +20119,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Return the vector negated."
+          "text": "--< @description"
         }
       ]
     },
@@ -20135,7 +20135,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    vector := -vector"
+          "text": "--< Return the vector negated."
         }
       ]
     },
@@ -20151,13 +20151,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<    vector := -vector"
         }
       ]
     },
     {
       "kind": "line",
       "number": 985,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 986,
       "children": [
         {
           "kind": "span",
@@ -20178,7 +20194,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L985C14"
+          "href": "docs/vulkan__math__operators___spec.html#L986C14"
         },
         {
           "kind": "span",
@@ -20234,24 +20250,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 986,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 987,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -20266,7 +20266,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -20282,7 +20282,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_Int bitwise complement operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -20298,7 +20298,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_Int bitwise complement operator."
         }
       ]
     },
@@ -20314,7 +20314,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -20330,7 +20330,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Return the 1's complement for the Vkm_Int value."
+          "text": "--< @description"
         }
       ]
     },
@@ -20346,7 +20346,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< "
+          "text": "--< Return the 1's complement for the Vkm_Int value."
         }
       ]
     },
@@ -20362,7 +20362,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param value"
+          "text": "--< "
         }
       ]
     },
@@ -20378,7 +20378,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value to perform the 1's complement of."
+          "text": "--< @param value"
         }
       ]
     },
@@ -20394,7 +20394,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The value to perform the 1's complement of."
         }
       ]
     },
@@ -20410,7 +20410,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
+          "text": "--<"
         }
       ]
     },
@@ -20426,7 +20426,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The 1's complement of the value."
+          "text": "--< @return"
         }
       ]
     },
@@ -20442,13 +20442,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< The 1's complement of the value."
         }
       ]
     },
     {
       "kind": "line",
       "number": 1000,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1001,
       "children": [
         {
           "kind": "span",
@@ -20484,7 +20500,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "value",
-          "href": "docs/vulkan__math__operators___spec.html#L1000C21"
+          "href": "docs/vulkan__math__operators___spec.html#L1001C21"
         },
         {
           "kind": "span",
@@ -20557,7 +20573,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1001,
+      "number": 1002,
       "children": [
         {
           "kind": "span",
@@ -20643,24 +20659,8 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1002,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1003,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -20675,7 +20675,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -20691,7 +20691,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType bitwise complement operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -20707,7 +20707,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType bitwise complement operator."
         }
       ]
     },
@@ -20723,7 +20723,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -20739,7 +20739,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Return the 1's complement for each component of the Vkm_GenIType vector."
+          "text": "--< @description"
         }
       ]
     },
@@ -20755,13 +20755,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< Return the 1's complement for each component of the Vkm_GenIType vector."
         }
       ]
     },
     {
       "kind": "line",
       "number": 1010,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1011,
       "children": [
         {
           "kind": "span",
@@ -20782,7 +20798,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"not\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1010C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1011C14"
         },
         {
           "kind": "span",
@@ -20838,12 +20854,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1011,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1012,
       "children": [
       ]
@@ -20852,16 +20862,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 1013,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -20876,7 +20876,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -20892,7 +20892,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType modulus operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -20908,7 +20908,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType unary absolute value operator."
         }
       ]
     },
@@ -20924,7 +20924,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -20940,7 +20940,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Apply a modulus component-wise on two Vkm_GenIType vectors."
+          "text": "--< @description"
         }
       ]
     },
@@ -20956,7 +20956,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<     vector := vector mod vector;"
+          "text": "--< Return the absolute value for each component of the vector."
         }
       ]
     },
@@ -20972,13 +20972,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<     vector := abs vector"
         }
       ]
     },
     {
       "kind": "line",
       "number": 1021,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1022,
       "children": [
         {
           "kind": "span",
@@ -20998,8 +21014,8 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1021C14"
+          "text": "\"abs\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1022C14"
         },
         {
           "kind": "span",
@@ -21029,7 +21045,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IV_IV_RV"
+          "text": "GIT.Apply_Func_IV_RV"
         },
         {
           "kind": "span",
@@ -21039,7 +21055,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "string",
-          "text": "\"mod\""
+          "text": "\"abs\""
         },
         {
           "kind": "span",
@@ -21055,14 +21071,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1022,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1023,
       "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        }
       ]
     },
     {
@@ -21073,11 +21088,6 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "text",
           "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -21093,7 +21103,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -21109,7 +21119,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType modulus operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -21125,7 +21135,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType modulus operator."
         }
       ]
     },
@@ -21141,7 +21151,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -21157,7 +21167,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Apply a scalar modulus component-wise on a vector."
+          "text": "--< @description"
         }
       ]
     },
@@ -21173,7 +21183,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<     vector := vector mod scalar;"
+          "text": "--< Apply a modulus component-wise on two Vkm_GenIType vectors."
         }
       ]
     },
@@ -21189,13 +21199,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<     vector := vector mod vector;"
         }
       ]
     },
     {
       "kind": "line",
       "number": 1032,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1033,
       "children": [
         {
           "kind": "span",
@@ -21216,7 +21242,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1032C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1033C14"
         },
         {
           "kind": "span",
@@ -21246,7 +21272,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IV_IS_RV"
+          "text": "GIT.Apply_Func_IV_IV_RV"
         },
         {
           "kind": "span",
@@ -21272,12 +21298,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1033,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1034,
       "children": [
       ]
@@ -21286,16 +21306,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 1035,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -21310,7 +21320,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -21326,7 +21336,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType modulus operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -21342,7 +21352,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType modulus operator."
         }
       ]
     },
@@ -21358,7 +21368,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -21374,7 +21384,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Apply a vector modulus component-wise on a scalar."
+          "text": "--< @description"
         }
       ]
     },
@@ -21390,7 +21400,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<     vector := scalar mod vector;"
+          "text": "--< Apply a scalar modulus component-wise on a vector."
         }
       ]
     },
@@ -21406,13 +21416,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<     vector := vector mod scalar;"
         }
       ]
     },
     {
       "kind": "line",
       "number": 1043,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1044,
       "children": [
         {
           "kind": "span",
@@ -21433,7 +21459,224 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1043C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1044C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "new"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "GIT.Apply_Func_IV_IS_RV"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "string",
+          "text": "\"mod\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1045,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1046,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1047,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1048,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1049,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType modulus operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1050,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1051,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1052,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply a vector modulus component-wise on a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1053,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := scalar mod vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1054,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1055,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"mod\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1055C14"
         },
         {
           "kind": "span",
@@ -21489,19 +21732,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1044,
+      "number": 1056,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1045,
+      "number": 1057,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1046,
+      "number": 1058,
       "children": [
         {
           "kind": "span",
@@ -21517,7 +21760,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1047,
+      "number": 1059,
       "children": [
         {
           "kind": "span",
@@ -21533,7 +21776,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1048,
+      "number": 1060,
       "children": [
         {
           "kind": "span",
@@ -21549,7 +21792,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1049,
+      "number": 1061,
       "children": [
         {
           "kind": "span",
@@ -21565,7 +21808,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1050,
+      "number": 1062,
       "children": [
         {
           "kind": "span",
@@ -21581,7 +21824,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1051,
+      "number": 1063,
       "children": [
         {
           "kind": "span",
@@ -21597,7 +21840,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1052,
+      "number": 1064,
       "children": [
         {
           "kind": "span",
@@ -21613,7 +21856,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1053,
+      "number": 1065,
       "children": [
         {
           "kind": "span",
@@ -21629,7 +21872,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1054,
+      "number": 1066,
       "children": [
         {
           "kind": "span",
@@ -21650,7 +21893,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1054C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1066C14"
         },
         {
           "kind": "span",
@@ -21706,19 +21949,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1055,
+      "number": 1067,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1056,
+      "number": 1068,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1057,
+      "number": 1069,
       "children": [
         {
           "kind": "span",
@@ -21734,7 +21977,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1058,
+      "number": 1070,
       "children": [
         {
           "kind": "span",
@@ -21750,7 +21993,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1059,
+      "number": 1071,
       "children": [
         {
           "kind": "span",
@@ -21766,7 +22009,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1060,
+      "number": 1072,
       "children": [
         {
           "kind": "span",
@@ -21782,7 +22025,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1061,
+      "number": 1073,
       "children": [
         {
           "kind": "span",
@@ -21798,7 +22041,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1062,
+      "number": 1074,
       "children": [
         {
           "kind": "span",
@@ -21814,7 +22057,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1063,
+      "number": 1075,
       "children": [
         {
           "kind": "span",
@@ -21830,7 +22073,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1064,
+      "number": 1076,
       "children": [
         {
           "kind": "span",
@@ -21846,7 +22089,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1065,
+      "number": 1077,
       "children": [
         {
           "kind": "span",
@@ -21867,7 +22110,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1065C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1077C14"
         },
         {
           "kind": "span",
@@ -21923,19 +22166,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1066,
+      "number": 1078,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1067,
+      "number": 1079,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1068,
+      "number": 1080,
       "children": [
         {
           "kind": "span",
@@ -21951,7 +22194,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1069,
+      "number": 1081,
       "children": [
         {
           "kind": "span",
@@ -21967,7 +22210,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1070,
+      "number": 1082,
       "children": [
         {
           "kind": "span",
@@ -21983,7 +22226,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1071,
+      "number": 1083,
       "children": [
         {
           "kind": "span",
@@ -21999,7 +22242,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1072,
+      "number": 1084,
       "children": [
         {
           "kind": "span",
@@ -22015,7 +22258,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1073,
+      "number": 1085,
       "children": [
         {
           "kind": "span",
@@ -22031,7 +22274,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1074,
+      "number": 1086,
       "children": [
         {
           "kind": "span",
@@ -22047,7 +22290,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1075,
+      "number": 1087,
       "children": [
         {
           "kind": "span",
@@ -22063,7 +22306,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1076,
+      "number": 1088,
       "children": [
         {
           "kind": "span",
@@ -22084,7 +22327,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1076C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1088C14"
         },
         {
           "kind": "span",
@@ -22140,19 +22383,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1077,
+      "number": 1089,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1078,
+      "number": 1090,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1079,
+      "number": 1091,
       "children": [
         {
           "kind": "span",
@@ -22168,7 +22411,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1080,
+      "number": 1092,
       "children": [
         {
           "kind": "span",
@@ -22184,7 +22427,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1081,
+      "number": 1093,
       "children": [
         {
           "kind": "span",
@@ -22200,7 +22443,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1082,
+      "number": 1094,
       "children": [
         {
           "kind": "span",
@@ -22216,7 +22459,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1083,
+      "number": 1095,
       "children": [
         {
           "kind": "span",
@@ -22232,7 +22475,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1084,
+      "number": 1096,
       "children": [
         {
           "kind": "span",
@@ -22248,7 +22491,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1085,
+      "number": 1097,
       "children": [
         {
           "kind": "span",
@@ -22264,7 +22507,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1086,
+      "number": 1098,
       "children": [
         {
           "kind": "span",
@@ -22280,7 +22523,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1087,
+      "number": 1099,
       "children": [
         {
           "kind": "span",
@@ -22301,7 +22544,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1087C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1099C14"
         },
         {
           "kind": "span",
@@ -22357,229 +22600,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1088,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1089,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1090,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1091,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @summary"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1092,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Vkm_GenIType subtraction operator."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1093,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1094,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @description"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1095,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Subtract a scalar from each component of a vector."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1096,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<     vector := vector - scalar;"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1097,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1098,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1098C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IV_IS_RV"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"-\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1099,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1100,
       "children": [
       ]
@@ -22588,16 +22608,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 1101,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -22612,7 +22622,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -22628,7 +22638,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType subtraction operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -22644,7 +22654,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType subtraction operator."
         }
       ]
     },
@@ -22660,7 +22670,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -22676,7 +22686,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Subtract each component of a vector from a scalar, returning a vector of"
+          "text": "--< @description"
         }
       ]
     },
@@ -22692,7 +22702,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< the result."
+          "text": "--< Subtract a scalar from each component of a vector."
         }
       ]
     },
@@ -22708,7 +22718,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<     vector := scalar - vector;"
+          "text": "--<     vector := vector - scalar;"
         }
       ]
     },
@@ -22781,7 +22791,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IS_IV_RV"
+          "text": "GIT.Apply_Func_IV_IS_RV"
         },
         {
           "kind": "span",
@@ -22861,7 +22871,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType remainder operator."
+          "text": "--< Vkm_GenIType subtraction operator."
         }
       ]
     },
@@ -22909,7 +22919,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Return the remainder from component-wise division of two Vkm_GenIType vectors."
+          "text": "--< Subtract each component of a vector from a scalar, returning a vector of"
         }
       ]
     },
@@ -22925,7 +22935,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<     vector := vector rem vector;"
+          "text": "--< the result."
         }
       ]
     },
@@ -22941,13 +22951,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<     vector := scalar - vector;"
         }
       ]
     },
     {
       "kind": "line",
       "number": 1121,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1122,
       "children": [
         {
           "kind": "span",
@@ -22967,8 +22993,8 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1121C14"
+          "text": "\"-\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1122C14"
         },
         {
           "kind": "span",
@@ -22998,7 +23024,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IV_IV_RV"
+          "text": "GIT.Apply_Func_IS_IV_RV"
         },
         {
           "kind": "span",
@@ -23008,7 +23034,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "string",
-          "text": "\"rem\""
+          "text": "\"-\""
         },
         {
           "kind": "span",
@@ -23024,12 +23050,6 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1122,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1123,
       "children": [
       ]
@@ -23038,16 +23058,6 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 1124,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
@@ -23062,7 +23072,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @summary"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -23078,7 +23088,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Vkm_GenIType remainder operator."
+          "text": "--< @summary"
         }
       ]
     },
@@ -23094,7 +23104,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< Vkm_GenIType remainder operator."
         }
       ]
     },
@@ -23110,7 +23120,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<"
         }
       ]
     },
@@ -23126,7 +23136,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Return the remainder from division of a vector by a scalar."
+          "text": "--< @description"
         }
       ]
     },
@@ -23142,7 +23152,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<     vector := vector rem scalar;"
+          "text": "--< Return the remainder from component-wise division of two Vkm_GenIType vectors."
         }
       ]
     },
@@ -23158,13 +23168,29 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--<     vector := vector rem vector;"
         }
       ]
     },
     {
       "kind": "line",
       "number": 1132,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1133,
       "children": [
         {
           "kind": "span",
@@ -23185,7 +23211,224 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1132C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1133C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "new"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "GIT.Apply_Func_IV_IV_RV"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "string",
+          "text": "\"rem\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1134,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1135,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1136,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1137,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1138,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType remainder operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1139,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1140,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1141,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the remainder from division of a vector by a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1142,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector rem scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1143,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1144,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"rem\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1144C14"
         },
         {
           "kind": "span",
@@ -23241,19 +23484,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1133,
+      "number": 1145,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1134,
+      "number": 1146,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1135,
+      "number": 1147,
       "children": [
         {
           "kind": "span",
@@ -23269,7 +23512,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1136,
+      "number": 1148,
       "children": [
         {
           "kind": "span",
@@ -23285,7 +23528,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1137,
+      "number": 1149,
       "children": [
         {
           "kind": "span",
@@ -23301,7 +23544,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1138,
+      "number": 1150,
       "children": [
         {
           "kind": "span",
@@ -23317,7 +23560,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1139,
+      "number": 1151,
       "children": [
         {
           "kind": "span",
@@ -23333,7 +23576,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1140,
+      "number": 1152,
       "children": [
         {
           "kind": "span",
@@ -23349,7 +23592,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1141,
+      "number": 1153,
       "children": [
         {
           "kind": "span",
@@ -23365,7 +23608,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1142,
+      "number": 1154,
       "children": [
         {
           "kind": "span",
@@ -23381,7 +23624,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1143,
+      "number": 1155,
       "children": [
         {
           "kind": "span",
@@ -23402,7 +23645,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1143C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1155C14"
         },
         {
           "kind": "span",
@@ -23458,19 +23701,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1144,
+      "number": 1156,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1145,
+      "number": 1157,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1146,
+      "number": 1158,
       "children": [
         {
           "kind": "span",
@@ -23486,7 +23729,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1147,
+      "number": 1159,
       "children": [
         {
           "kind": "span",
@@ -23502,7 +23745,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1148,
+      "number": 1160,
       "children": [
         {
           "kind": "span",
@@ -23518,7 +23761,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1149,
+      "number": 1161,
       "children": [
         {
           "kind": "span",
@@ -23534,7 +23777,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1150,
+      "number": 1162,
       "children": [
         {
           "kind": "span",
@@ -23550,7 +23793,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1151,
+      "number": 1163,
       "children": [
         {
           "kind": "span",
@@ -23566,7 +23809,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1152,
+      "number": 1164,
       "children": [
         {
           "kind": "span",
@@ -23582,7 +23825,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1153,
+      "number": 1165,
       "children": [
         {
           "kind": "span",
@@ -23598,7 +23841,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1154,
+      "number": 1166,
       "children": [
         {
           "kind": "span",
@@ -23619,7 +23862,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1154C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1166C14"
         },
         {
           "kind": "span",
@@ -23675,19 +23918,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1155,
+      "number": 1167,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1156,
+      "number": 1168,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1157,
+      "number": 1169,
       "children": [
         {
           "kind": "span",
@@ -23703,7 +23946,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1158,
+      "number": 1170,
       "children": [
         {
           "kind": "span",
@@ -23719,7 +23962,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1159,
+      "number": 1171,
       "children": [
         {
           "kind": "span",
@@ -23735,7 +23978,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1160,
+      "number": 1172,
       "children": [
         {
           "kind": "span",
@@ -23751,7 +23994,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1161,
+      "number": 1173,
       "children": [
         {
           "kind": "span",
@@ -23767,7 +24010,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1162,
+      "number": 1174,
       "children": [
         {
           "kind": "span",
@@ -23783,7 +24026,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1163,
+      "number": 1175,
       "children": [
         {
           "kind": "span",
@@ -23799,7 +24042,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1164,
+      "number": 1176,
       "children": [
         {
           "kind": "span",
@@ -23815,7 +24058,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1165,
+      "number": 1177,
       "children": [
         {
           "kind": "span",
@@ -23836,7 +24079,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1165C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1177C14"
         },
         {
           "kind": "span",
@@ -23892,257 +24135,14 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1166,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1167,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1168,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1169,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @summary"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1170,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Vkm_GenIType multiplication operator."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1171,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1172,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @description"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1173,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Multiply each component of a vector by a scalar."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1174,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<     vector := scalar * vector;"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1175,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1176,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1176C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IS_IV_RV"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"*\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1177,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
       "number": 1178,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
       ]
     },
     {
       "kind": "line",
       "number": 1179,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- GenIType Division Operator"
-        }
       ]
     },
     {
@@ -24172,79 +24172,8 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1181C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IV_IV_RV"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"/\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
           "cssClass": "comment",
-          "text": "-- vector := vector / vector"
+          "text": "--< @summary"
         }
       ]
     },
@@ -24259,79 +24188,8 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1182C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IV_IS_RV"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"/\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
           "cssClass": "comment",
-          "text": "-- vector := vector / scalar"
+          "text": "--< Vkm_GenIType multiplication operator."
         }
       ]
     },
@@ -24346,79 +24204,8 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1183C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "GIT.Apply_Func_IS_IV_RV"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"/\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
           "cssClass": "comment",
-          "text": "-- vector := scalar / vector"
+          "text": "--<"
         }
       ]
     },
@@ -24426,6 +24213,16 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 1184,
       "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
       ]
     },
     {
@@ -24440,7 +24237,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
+          "text": "--< Multiply each component of a vector by a scalar."
         }
       ]
     },
@@ -24456,7 +24253,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- GenIType Bitwise AND Operator"
+          "text": "--<     vector := scalar * vector;"
         }
       ]
     },
@@ -24498,6 +24295,874 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
+          "text": "\"*\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1188C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "new"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "GIT.Apply_Func_IS_IV_RV"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "string",
+          "text": "\"*\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1189,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1190,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1191,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1192,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1193,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType division operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1194,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1195,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1196,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply division component-wise on two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1197,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector / vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1198,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1199,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"/\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1199C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "new"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "GIT.Apply_Func_IV_IV_RV"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "string",
+          "text": "\"/\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1200,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1201,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1202,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1203,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1204,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType division operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1205,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1206,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1207,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply divide components of a vector by a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1208,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector / scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1209,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1210,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"/\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1210C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "new"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "GIT.Apply_Func_IV_IS_RV"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "string",
+          "text": "\"/\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1211,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1212,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1213,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1214,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1215,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType division operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1216,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1217,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1218,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Divide a scalar by components of a vector."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1219,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := scalar / vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1220,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1221,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"/\"",
+          "href": "docs/vulkan__math__operators___spec.html#L1221C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "new"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "GIT.Apply_Func_IS_IV_RV"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "string",
+          "text": "\"/\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1222,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1223,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1224,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1225,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1226,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_Int bitwise \"and\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1227,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1228,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1229,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the bitwise \"and\" for to scalar values."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1230,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     scalar := scalar and scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1231,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1232,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
           "text": "\"and\""
         },
         {
@@ -24514,7 +25179,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1188C21"
+          "href": "docs/vulkan__math__operators___spec.html#L1232C21"
         },
         {
           "kind": "span",
@@ -24530,7 +25195,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1188C27"
+          "href": "docs/vulkan__math__operators___spec.html#L1232C27"
         },
         {
           "kind": "span",
@@ -24603,7 +25268,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1189,
+      "number": 1233,
       "children": [
         {
           "kind": "span",
@@ -24719,7 +25384,147 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1190,
+      "number": 1234,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1235,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1236,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1237,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1238,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"and\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1239,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1240,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1241,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"and\" for two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1242,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector and vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1243,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1244,
       "children": [
         {
           "kind": "span",
@@ -24740,7 +25545,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"and\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1190C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1244C14"
         },
         {
           "kind": "span",
@@ -24791,22 +25596,152 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := vector and vector"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1191,
+      "number": 1245,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1246,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1247,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1248,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1249,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"and\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1250,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1251,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1252,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"and\" for a vector and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1253,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector and scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1254,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1255,
       "children": [
         {
           "kind": "span",
@@ -24827,7 +25762,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"and\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1191C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1255C14"
         },
         {
           "kind": "span",
@@ -24878,22 +25813,152 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := vector and scalar"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1192,
+      "number": 1256,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1257,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1258,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1259,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1260,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"and\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1261,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1262,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1263,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"and\" for a vector and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1264,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := scalar and vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1265,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1266,
       "children": [
         {
           "kind": "span",
@@ -24914,7 +25979,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"and\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1192C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1266C14"
         },
         {
           "kind": "span",
@@ -24965,28 +26030,24 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := scalar and vector"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1193,
+      "number": 1267,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1194,
+      "number": 1268,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1269,
       "children": [
         {
           "kind": "span",
@@ -25002,7 +26063,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1195,
+      "number": 1270,
       "children": [
         {
           "kind": "span",
@@ -25012,13 +26073,93 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- GenIType Bitwise OR Operator"
+          "text": "--< @summary"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1196,
+      "number": 1271,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_Int bitwise \"or\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1272,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1273,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1274,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the bitwise \"or\" for to scalar values."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1275,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     scalar := scalar or scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1276,
       "children": [
         {
           "kind": "span",
@@ -25034,7 +26175,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1197,
+      "number": 1277,
       "children": [
         {
           "kind": "span",
@@ -25070,7 +26211,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1197C20"
+          "href": "docs/vulkan__math__operators___spec.html#L1277C20"
         },
         {
           "kind": "span",
@@ -25086,7 +26227,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1197C26"
+          "href": "docs/vulkan__math__operators___spec.html#L1277C26"
         },
         {
           "kind": "span",
@@ -25159,7 +26300,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1198,
+      "number": 1278,
       "children": [
         {
           "kind": "span",
@@ -25270,7 +26411,147 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1199,
+      "number": 1279,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1280,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1281,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1282,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1283,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"or\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1284,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1285,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1286,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"or\" for two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1287,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector or vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1288,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1289,
       "children": [
         {
           "kind": "span",
@@ -25291,7 +26572,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"or\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1199C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1289C14"
         },
         {
           "kind": "span",
@@ -25342,22 +26623,152 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := vector or vector"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1200,
+      "number": 1290,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1291,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1292,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1293,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1294,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"or\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1295,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1296,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1297,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"or\" for a vector and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1298,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector or scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1299,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1300,
       "children": [
         {
           "kind": "span",
@@ -25378,7 +26789,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"or\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1200C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1300C14"
         },
         {
           "kind": "span",
@@ -25429,22 +26840,152 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := vector or scalar"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1201,
+      "number": 1301,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1302,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1303,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1304,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1305,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"or\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1306,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1307,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1308,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"or\" for a vector and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1309,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := scalar or vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1310,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1311,
       "children": [
         {
           "kind": "span",
@@ -25465,7 +27006,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"or\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1201C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1311C14"
         },
         {
           "kind": "span",
@@ -25516,28 +27057,24 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := scalar or vector"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1202,
+      "number": 1312,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1203,
+      "number": 1313,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1314,
       "children": [
         {
           "kind": "span",
@@ -25553,7 +27090,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1204,
+      "number": 1315,
       "children": [
         {
           "kind": "span",
@@ -25563,13 +27100,93 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- GenIType Bitwise XOR Operator"
+          "text": "--< @summary"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1205,
+      "number": 1316,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_Int bitwise \"xor\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1317,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1318,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1319,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the bitwise \"xor\" for to scalar values."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1320,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     scalar := scalar xor scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1321,
       "children": [
         {
           "kind": "span",
@@ -25585,7 +27202,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1206,
+      "number": 1322,
       "children": [
         {
           "kind": "span",
@@ -25621,7 +27238,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1206C21"
+          "href": "docs/vulkan__math__operators___spec.html#L1322C21"
         },
         {
           "kind": "span",
@@ -25637,7 +27254,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1206C27"
+          "href": "docs/vulkan__math__operators___spec.html#L1322C27"
         },
         {
           "kind": "span",
@@ -25710,7 +27327,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1207,
+      "number": 1323,
       "children": [
         {
           "kind": "span",
@@ -25821,7 +27438,147 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1208,
+      "number": 1324,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1325,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1326,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1327,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1328,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"xor\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1329,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1330,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1331,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"xor\" for two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1332,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector xor vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1333,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1334,
       "children": [
         {
           "kind": "span",
@@ -25842,7 +27599,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"xor\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1208C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1334C14"
         },
         {
           "kind": "span",
@@ -25893,22 +27650,152 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := vector xor vector"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1209,
+      "number": 1335,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1336,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1337,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1338,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1339,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"xor\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1340,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1341,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1342,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"xor\" for a vector and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1343,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := vector xor scalar;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1344,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1345,
       "children": [
         {
           "kind": "span",
@@ -25929,7 +27816,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"xor\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1209C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1345C14"
         },
         {
           "kind": "span",
@@ -25980,22 +27867,152 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := vector xor scalar"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1210,
+      "number": 1346,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1347,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1348,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1349,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1350,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType bitwise \"xor\" operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1351,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1352,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1353,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the component-wise bitwise \"xor\" for a vector and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1354,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     vector := scalar xor vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1355,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1356,
       "children": [
         {
           "kind": "span",
@@ -26016,7 +28033,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"xor\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1210C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1356C14"
         },
         {
           "kind": "span",
@@ -26067,28 +28084,24 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "-- vector := scalar xor vector"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1211,
+      "number": 1357,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1212,
+      "number": 1358,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1359,
       "children": [
         {
           "kind": "span",
@@ -26104,7 +28117,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1213,
+      "number": 1360,
       "children": [
         {
           "kind": "span",
@@ -26114,13 +28127,93 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "-- GenIType Relational Operators"
+          "text": "--< @summary"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1214,
+      "number": 1361,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType less than operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1362,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1363,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1364,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the component-wise less than operator on two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1365,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     bool_vector := vector < vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1366,
       "children": [
         {
           "kind": "span",
@@ -26136,7 +28229,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1215,
+      "number": 1367,
       "children": [
         {
           "kind": "span",
@@ -26157,7 +28250,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"<\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1215C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1367C14"
         },
         {
           "kind": "span",
@@ -26218,7 +28311,163 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1216,
+      "number": 1368,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1369,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1370,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1371,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1372,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType less than or equal to operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1373,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1374,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1375,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the component-wise less than or equal to operator on "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1376,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1377,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     bool_vector := vector < vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1378,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1379,
       "children": [
         {
           "kind": "span",
@@ -26239,7 +28488,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"<=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1216C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1379C14"
         },
         {
           "kind": "span",
@@ -26295,7 +28544,163 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1217,
+      "number": 1380,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1381,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1382,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1383,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1384,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType greater than operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1385,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1386,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1387,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the component-wise greater than operator on "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1388,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1389,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     bool_vector := vector < vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1390,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1391,
       "children": [
         {
           "kind": "span",
@@ -26316,7 +28721,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\">\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1217C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1391C14"
         },
         {
           "kind": "span",
@@ -26377,7 +28782,163 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1218,
+      "number": 1392,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1393,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1394,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1395,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1396,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType greater than or equal operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1397,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1398,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1399,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return the result of the component-wise greater than or equal to operator "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1400,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< on two vectors."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1401,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     bool_vector := vector < vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1402,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1403,
       "children": [
         {
           "kind": "span",
@@ -26398,7 +28959,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\">=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1218C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1403C14"
         },
         {
           "kind": "span",
@@ -26454,188 +29015,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1219,
+      "number": 1404,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1219C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "  "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Apply_Func_IVI_IVI_RVB"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"=\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
       ]
     },
     {
       "kind": "line",
-      "number": 1220,
+      "number": 1405,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "\"/=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1220C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "new"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Apply_Func_IVI_IVI_RVB"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "string",
-          "text": "\"/=\""
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
       ]
     },
     {
       "kind": "line",
-      "number": 1221,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1222,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1223,
+      "number": 1406,
       "children": [
         {
           "kind": "span",
@@ -26651,7 +29043,1049 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1224,
+      "number": 1407,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1408,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType equality operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1409,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1410,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1411,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return true if each component of two vectors are equal to each other. "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1412,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Otherwise return false."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1413,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     is_equal := vector = vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1414,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1415,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param left"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1416,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The left vector in the comparison."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1417,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1418,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param right"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1419,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The right vector in the comparison."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1420,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1421,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1422,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Whether the two vectors are equal to each other."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1423,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1424,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"=\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "  "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "left",
+          "href": "docs/vulkan__math__operators___spec.html#L1424C20"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "right",
+          "href": "docs/vulkan__math__operators___spec.html#L1424C26"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenIType",
+          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_Bool",
+          "href": "docs/vulkan__math___spec.html#L49C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1425,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Is_All"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Equal"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "left"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "right"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "with"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " Inline"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1426,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1427,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1428,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1429,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1430,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Vkm_GenIType inequality operator."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1431,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1432,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1433,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Return true if any component of the two vectors are not equal to each other. "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1434,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Otherwise return false."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1435,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     is_equal := vector /= vector;"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1436,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1437,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param left"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1438,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The left vector in the comparison."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1439,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1440,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param right"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1441,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The right vector in the comparison."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1442,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1443,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1444,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Whether the two vectors are equal to each other."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1445,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1446,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "\"/=\""
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "left",
+          "href": "docs/vulkan__math__operators___spec.html#L1446C20"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "right",
+          "href": "docs/vulkan__math__operators___spec.html#L1446C26"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenIType",
+          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_Bool",
+          "href": "docs/vulkan__math___spec.html#L49C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "is"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1447,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Is_Any"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Not_Equal"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "left"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "right"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "with"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " Inline"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1448,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1449,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1450,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1451,
       "children": [
         {
           "kind": "span",
@@ -26667,7 +30101,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1225,
+      "number": 1452,
       "children": [
         {
           "kind": "span",
@@ -26683,7 +30117,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1226,
+      "number": 1453,
       "children": [
         {
           "kind": "span",
@@ -26699,7 +30133,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1227,
+      "number": 1454,
       "children": [
         {
           "kind": "span",
@@ -26715,7 +30149,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1228,
+      "number": 1455,
       "children": [
         {
           "kind": "span",
@@ -26731,7 +30165,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1229,
+      "number": 1456,
       "children": [
         {
           "kind": "span",
@@ -26747,7 +30181,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1230,
+      "number": 1457,
       "children": [
         {
           "kind": "span",
@@ -26763,7 +30197,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1231,
+      "number": 1458,
       "children": [
         {
           "kind": "span",
@@ -26779,7 +30213,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1232,
+      "number": 1459,
       "children": [
         {
           "kind": "span",
@@ -26795,7 +30229,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1233,
+      "number": 1460,
       "children": [
         {
           "kind": "span",
@@ -26811,7 +30245,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1234,
+      "number": 1461,
       "children": [
         {
           "kind": "span",
@@ -26827,7 +30261,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1235,
+      "number": 1462,
       "children": [
         {
           "kind": "span",
@@ -26843,7 +30277,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1236,
+      "number": 1463,
       "children": [
         {
           "kind": "span",
@@ -26859,7 +30293,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1237,
+      "number": 1464,
       "children": [
         {
           "kind": "span",
@@ -26875,7 +30309,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1238,
+      "number": 1465,
       "children": [
         {
           "kind": "span",
@@ -26891,7 +30325,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1239,
+      "number": 1466,
       "children": [
         {
           "kind": "span",
@@ -26907,7 +30341,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1240,
+      "number": 1467,
       "children": [
         {
           "kind": "span",
@@ -26923,7 +30357,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1241,
+      "number": 1468,
       "children": [
         {
           "kind": "span",
@@ -26939,7 +30373,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1242,
+      "number": 1469,
       "children": [
         {
           "kind": "span",
@@ -26955,7 +30389,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1243,
+      "number": 1470,
       "children": [
         {
           "kind": "span",
@@ -26971,7 +30405,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1244,
+      "number": 1471,
       "children": [
         {
           "kind": "span",
@@ -26987,7 +30421,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1245,
+      "number": 1472,
       "children": [
         {
           "kind": "span",
@@ -27003,7 +30437,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1246,
+      "number": 1473,
       "children": [
         {
           "kind": "span",
@@ -27019,7 +30453,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1247,
+      "number": 1474,
       "children": [
         {
           "kind": "span",
@@ -27035,7 +30469,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1248,
+      "number": 1475,
       "children": [
         {
           "kind": "span",
@@ -27051,7 +30485,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1249,
+      "number": 1476,
       "children": [
         {
           "kind": "span",
@@ -27067,7 +30501,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1250,
+      "number": 1477,
       "children": [
         {
           "kind": "span",
@@ -27083,7 +30517,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1251,
+      "number": 1478,
       "children": [
         {
           "kind": "span",
@@ -27099,39 +30533,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1252,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--    - \"=\",  Equality operator"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1253,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--    - \"/=\", Non-Equality operator (Implicitly defined)"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1254,
+      "number": 1479,
       "children": [
         {
           "kind": "span",
@@ -27147,7 +30549,71 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1255,
+      "number": 1480,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "-- A summary of relational operators which return a scalar boolean value."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1481,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--    - \"=\",  Equality operator"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1482,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--    - \"/=\", Non-Equality operator"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1483,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1484,
       "children": [
         {
           "kind": "span",
@@ -27163,7 +30629,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1256,
+      "number": 1485,
       "children": [
         {
           "kind": "span",
@@ -27179,7 +30645,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1257,
+      "number": 1486,
       "children": [
         {
           "kind": "span",
@@ -27195,7 +30661,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1258,
+      "number": 1487,
       "children": [
         {
           "kind": "span",
@@ -27231,7 +30697,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1258C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1487C19"
         },
         {
           "kind": "span",
@@ -27247,7 +30713,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1258C25"
+          "href": "docs/vulkan__math__operators___spec.html#L1487C25"
         },
         {
           "kind": "span",
@@ -27335,7 +30801,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1259,
+      "number": 1488,
       "children": [
         {
           "kind": "span",
@@ -27371,7 +30837,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1259C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1488C19"
         },
         {
           "kind": "span",
@@ -27418,7 +30884,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1260,
+      "number": 1489,
       "children": [
         {
           "kind": "span",
@@ -27429,7 +30895,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1260C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1489C19"
         },
         {
           "kind": "span",
@@ -27502,7 +30968,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1261,
+      "number": 1490,
       "children": [
         {
           "kind": "span",
@@ -27588,7 +31054,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1262,
+      "number": 1491,
       "children": [
         {
           "kind": "span",
@@ -27624,7 +31090,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1262C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1491C19"
         },
         {
           "kind": "span",
@@ -27666,7 +31132,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1263,
+      "number": 1492,
       "children": [
         {
           "kind": "span",
@@ -27677,7 +31143,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1263C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1492C19"
         },
         {
           "kind": "span",
@@ -27755,7 +31221,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1264,
+      "number": 1493,
       "children": [
         {
           "kind": "span",
@@ -27831,7 +31297,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1265,
+      "number": 1494,
       "children": [
         {
           "kind": "span",
@@ -27867,7 +31333,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1265C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1494C19"
         },
         {
           "kind": "span",
@@ -27883,7 +31349,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1265C25"
+          "href": "docs/vulkan__math__operators___spec.html#L1494C25"
         },
         {
           "kind": "span",
@@ -27961,7 +31427,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1266,
+      "number": 1495,
       "children": [
         {
           "kind": "span",
@@ -28037,13 +31503,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1267,
+      "number": 1496,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1268,
+      "number": 1497,
       "children": [
         {
           "kind": "span",
@@ -28059,7 +31525,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1269,
+      "number": 1498,
       "children": [
         {
           "kind": "span",
@@ -28075,7 +31541,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1270,
+      "number": 1499,
       "children": [
         {
           "kind": "span",
@@ -28091,7 +31557,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1271,
+      "number": 1500,
       "children": [
         {
           "kind": "span",
@@ -28112,7 +31578,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1271C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1500C14"
         },
         {
           "kind": "span",
@@ -28168,13 +31634,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1272,
+      "number": 1501,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1273,
+      "number": 1502,
       "children": [
         {
           "kind": "span",
@@ -28190,7 +31656,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1274,
+      "number": 1503,
       "children": [
         {
           "kind": "span",
@@ -28206,7 +31672,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1275,
+      "number": 1504,
       "children": [
         {
           "kind": "span",
@@ -28222,7 +31688,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1276,
+      "number": 1505,
       "children": [
         {
           "kind": "span",
@@ -28243,7 +31709,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1276C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1505C14"
         },
         {
           "kind": "span",
@@ -28299,13 +31765,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1277,
+      "number": 1506,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1278,
+      "number": 1507,
       "children": [
         {
           "kind": "span",
@@ -28321,7 +31787,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1279,
+      "number": 1508,
       "children": [
         {
           "kind": "span",
@@ -28337,7 +31803,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1280,
+      "number": 1509,
       "children": [
         {
           "kind": "span",
@@ -28353,7 +31819,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1281,
+      "number": 1510,
       "children": [
         {
           "kind": "span",
@@ -28374,7 +31840,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"abs\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1281C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1510C14"
         },
         {
           "kind": "span",
@@ -28440,13 +31906,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1282,
+      "number": 1511,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1283,
+      "number": 1512,
       "children": [
         {
           "kind": "span",
@@ -28462,7 +31928,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1284,
+      "number": 1513,
       "children": [
         {
           "kind": "span",
@@ -28478,7 +31944,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1285,
+      "number": 1514,
       "children": [
         {
           "kind": "span",
@@ -28494,7 +31960,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1286,
+      "number": 1515,
       "children": [
         {
           "kind": "span",
@@ -28515,7 +31981,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1286C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1515C14"
         },
         {
           "kind": "span",
@@ -28581,7 +32047,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1287,
+      "number": 1516,
       "children": [
         {
           "kind": "span",
@@ -28602,7 +32068,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1287C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1516C14"
         },
         {
           "kind": "span",
@@ -28668,7 +32134,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1288,
+      "number": 1517,
       "children": [
         {
           "kind": "span",
@@ -28689,7 +32155,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1288C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1517C14"
         },
         {
           "kind": "span",
@@ -28755,13 +32221,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1289,
+      "number": 1518,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1290,
+      "number": 1519,
       "children": [
         {
           "kind": "span",
@@ -28777,7 +32243,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1291,
+      "number": 1520,
       "children": [
         {
           "kind": "span",
@@ -28793,7 +32259,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1292,
+      "number": 1521,
       "children": [
         {
           "kind": "span",
@@ -28809,7 +32275,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1293,
+      "number": 1522,
       "children": [
         {
           "kind": "span",
@@ -28845,7 +32311,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1293C20"
+          "href": "docs/vulkan__math__operators___spec.html#L1522C20"
         },
         {
           "kind": "span",
@@ -28861,7 +32327,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1293C26"
+          "href": "docs/vulkan__math__operators___spec.html#L1522C26"
         },
         {
           "kind": "span",
@@ -28949,7 +32415,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1294,
+      "number": 1523,
       "children": [
         {
           "kind": "span",
@@ -28970,7 +32436,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"**\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1294C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1523C14"
         },
         {
           "kind": "span",
@@ -29036,7 +32502,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1295,
+      "number": 1524,
       "children": [
         {
           "kind": "span",
@@ -29057,7 +32523,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"**\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1295C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1524C14"
         },
         {
           "kind": "span",
@@ -29123,7 +32589,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1296,
+      "number": 1525,
       "children": [
         {
           "kind": "span",
@@ -29144,7 +32610,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"**\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1296C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1525C14"
         },
         {
           "kind": "span",
@@ -29210,13 +32676,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1297,
+      "number": 1526,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1298,
+      "number": 1527,
       "children": [
         {
           "kind": "span",
@@ -29232,7 +32698,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1299,
+      "number": 1528,
       "children": [
         {
           "kind": "span",
@@ -29248,7 +32714,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1300,
+      "number": 1529,
       "children": [
         {
           "kind": "span",
@@ -29264,7 +32730,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1301,
+      "number": 1530,
       "children": [
         {
           "kind": "span",
@@ -29285,7 +32751,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1301C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1530C14"
         },
         {
           "kind": "span",
@@ -29351,7 +32817,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1302,
+      "number": 1531,
       "children": [
         {
           "kind": "span",
@@ -29372,7 +32838,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1302C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1531C14"
         },
         {
           "kind": "span",
@@ -29438,7 +32904,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1303,
+      "number": 1532,
       "children": [
         {
           "kind": "span",
@@ -29459,7 +32925,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1303C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1532C14"
         },
         {
           "kind": "span",
@@ -29525,13 +32991,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1304,
+      "number": 1533,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1305,
+      "number": 1534,
       "children": [
         {
           "kind": "span",
@@ -29547,7 +33013,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1306,
+      "number": 1535,
       "children": [
         {
           "kind": "span",
@@ -29563,7 +33029,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1307,
+      "number": 1536,
       "children": [
         {
           "kind": "span",
@@ -29579,7 +33045,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1308,
+      "number": 1537,
       "children": [
         {
           "kind": "span",
@@ -29600,7 +33066,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1308C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1537C14"
         },
         {
           "kind": "span",
@@ -29666,7 +33132,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1309,
+      "number": 1538,
       "children": [
         {
           "kind": "span",
@@ -29687,7 +33153,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1309C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1538C14"
         },
         {
           "kind": "span",
@@ -29753,7 +33219,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1310,
+      "number": 1539,
       "children": [
         {
           "kind": "span",
@@ -29774,7 +33240,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1310C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1539C14"
         },
         {
           "kind": "span",
@@ -29840,13 +33306,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1311,
+      "number": 1540,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1312,
+      "number": 1541,
       "children": [
         {
           "kind": "span",
@@ -29862,7 +33328,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1313,
+      "number": 1542,
       "children": [
         {
           "kind": "span",
@@ -29878,7 +33344,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1314,
+      "number": 1543,
       "children": [
         {
           "kind": "span",
@@ -29894,7 +33360,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1315,
+      "number": 1544,
       "children": [
         {
           "kind": "span",
@@ -29930,7 +33396,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1315C21"
+          "href": "docs/vulkan__math__operators___spec.html#L1544C21"
         },
         {
           "kind": "span",
@@ -29946,7 +33412,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1315C27"
+          "href": "docs/vulkan__math__operators___spec.html#L1544C27"
         },
         {
           "kind": "span",
@@ -30045,7 +33511,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1316,
+      "number": 1545,
       "children": [
         {
           "kind": "span",
@@ -30066,7 +33532,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1316C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1545C14"
         },
         {
           "kind": "span",
@@ -30132,7 +33598,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1317,
+      "number": 1546,
       "children": [
         {
           "kind": "span",
@@ -30153,7 +33619,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1317C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1546C14"
         },
         {
           "kind": "span",
@@ -30219,7 +33685,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1318,
+      "number": 1547,
       "children": [
         {
           "kind": "span",
@@ -30240,7 +33706,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1318C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1547C14"
         },
         {
           "kind": "span",
@@ -30306,13 +33772,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1319,
+      "number": 1548,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1320,
+      "number": 1549,
       "children": [
         {
           "kind": "span",
@@ -30328,7 +33794,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1321,
+      "number": 1550,
       "children": [
         {
           "kind": "span",
@@ -30344,7 +33810,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1322,
+      "number": 1551,
       "children": [
         {
           "kind": "span",
@@ -30360,7 +33826,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1323,
+      "number": 1552,
       "children": [
         {
           "kind": "span",
@@ -30381,7 +33847,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1323C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1552C14"
         },
         {
           "kind": "span",
@@ -30447,7 +33913,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1324,
+      "number": 1553,
       "children": [
         {
           "kind": "span",
@@ -30468,7 +33934,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1324C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1553C14"
         },
         {
           "kind": "span",
@@ -30534,7 +34000,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1325,
+      "number": 1554,
       "children": [
         {
           "kind": "span",
@@ -30555,7 +34021,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1325C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1554C14"
         },
         {
           "kind": "span",
@@ -30621,13 +34087,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1326,
+      "number": 1555,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1327,
+      "number": 1556,
       "children": [
         {
           "kind": "span",
@@ -30643,7 +34109,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1328,
+      "number": 1557,
       "children": [
         {
           "kind": "span",
@@ -30659,7 +34125,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1329,
+      "number": 1558,
       "children": [
         {
           "kind": "span",
@@ -30675,7 +34141,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1330,
+      "number": 1559,
       "children": [
         {
           "kind": "span",
@@ -30696,7 +34162,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1330C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1559C14"
         },
         {
           "kind": "span",
@@ -30762,7 +34228,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1331,
+      "number": 1560,
       "children": [
         {
           "kind": "span",
@@ -30783,7 +34249,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1331C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1560C14"
         },
         {
           "kind": "span",
@@ -30849,7 +34315,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1332,
+      "number": 1561,
       "children": [
         {
           "kind": "span",
@@ -30870,7 +34336,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1332C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1561C14"
         },
         {
           "kind": "span",
@@ -30936,19 +34402,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1333,
+      "number": 1562,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1334,
+      "number": 1563,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1335,
+      "number": 1564,
       "children": [
         {
           "kind": "span",
@@ -30964,7 +34430,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1336,
+      "number": 1565,
       "children": [
         {
           "kind": "span",
@@ -30980,7 +34446,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1337,
+      "number": 1566,
       "children": [
         {
           "kind": "span",
@@ -30996,7 +34462,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1338,
+      "number": 1567,
       "children": [
         {
           "kind": "span",
@@ -31017,7 +34483,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"<\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1338C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1567C14"
         },
         {
           "kind": "span",
@@ -31078,7 +34544,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1339,
+      "number": 1568,
       "children": [
         {
           "kind": "span",
@@ -31099,7 +34565,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"<=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1339C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1568C14"
         },
         {
           "kind": "span",
@@ -31155,7 +34621,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1340,
+      "number": 1569,
       "children": [
         {
           "kind": "span",
@@ -31176,7 +34642,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\">\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1340C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1569C14"
         },
         {
           "kind": "span",
@@ -31237,7 +34703,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1341,
+      "number": 1570,
       "children": [
         {
           "kind": "span",
@@ -31258,7 +34724,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\">=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1341C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1570C14"
         },
         {
           "kind": "span",
@@ -31314,7 +34780,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1342,
+      "number": 1571,
       "children": [
         {
           "kind": "span",
@@ -31335,7 +34801,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1342C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1571C14"
         },
         {
           "kind": "span",
@@ -31396,7 +34862,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1343,
+      "number": 1572,
       "children": [
         {
           "kind": "span",
@@ -31417,7 +34883,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1343C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1572C14"
         },
         {
           "kind": "span",
@@ -31473,19 +34939,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1344,
+      "number": 1573,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1345,
+      "number": 1574,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1346,
+      "number": 1575,
       "children": [
         {
           "kind": "span",
@@ -31501,7 +34967,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1347,
+      "number": 1576,
       "children": [
         {
           "kind": "span",
@@ -31517,7 +34983,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1348,
+      "number": 1577,
       "children": [
         {
           "kind": "span",
@@ -31533,7 +34999,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1349,
+      "number": 1578,
       "children": [
         {
           "kind": "span",
@@ -31549,7 +35015,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1350,
+      "number": 1579,
       "children": [
         {
           "kind": "span",
@@ -31565,7 +35031,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1351,
+      "number": 1580,
       "children": [
         {
           "kind": "span",
@@ -31581,7 +35047,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1352,
+      "number": 1581,
       "children": [
         {
           "kind": "span",
@@ -31597,7 +35063,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1353,
+      "number": 1582,
       "children": [
         {
           "kind": "span",
@@ -31613,7 +35079,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1354,
+      "number": 1583,
       "children": [
         {
           "kind": "span",
@@ -31629,7 +35095,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1355,
+      "number": 1584,
       "children": [
         {
           "kind": "span",
@@ -31645,7 +35111,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1356,
+      "number": 1585,
       "children": [
         {
           "kind": "span",
@@ -31661,7 +35127,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1357,
+      "number": 1586,
       "children": [
         {
           "kind": "span",
@@ -31677,7 +35143,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1358,
+      "number": 1587,
       "children": [
         {
           "kind": "span",
@@ -31693,7 +35159,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1359,
+      "number": 1588,
       "children": [
         {
           "kind": "span",
@@ -31709,7 +35175,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1360,
+      "number": 1589,
       "children": [
         {
           "kind": "span",
@@ -31725,7 +35191,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1361,
+      "number": 1590,
       "children": [
         {
           "kind": "span",
@@ -31741,7 +35207,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1362,
+      "number": 1591,
       "children": [
         {
           "kind": "span",
@@ -31757,7 +35223,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1363,
+      "number": 1592,
       "children": [
         {
           "kind": "span",
@@ -31773,7 +35239,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1364,
+      "number": 1593,
       "children": [
         {
           "kind": "span",
@@ -31789,7 +35255,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1365,
+      "number": 1594,
       "children": [
         {
           "kind": "span",
@@ -31805,7 +35271,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1366,
+      "number": 1595,
       "children": [
         {
           "kind": "span",
@@ -31821,7 +35287,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1367,
+      "number": 1596,
       "children": [
         {
           "kind": "span",
@@ -31837,7 +35303,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1368,
+      "number": 1597,
       "children": [
         {
           "kind": "span",
@@ -31853,7 +35319,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1369,
+      "number": 1598,
       "children": [
         {
           "kind": "span",
@@ -31869,7 +35335,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1370,
+      "number": 1599,
       "children": [
         {
           "kind": "span",
@@ -31885,7 +35351,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1371,
+      "number": 1600,
       "children": [
         {
           "kind": "span",
@@ -31901,7 +35367,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1372,
+      "number": 1601,
       "children": [
         {
           "kind": "span",
@@ -31917,7 +35383,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1373,
+      "number": 1602,
       "children": [
         {
           "kind": "span",
@@ -31933,7 +35399,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1374,
+      "number": 1603,
       "children": [
         {
           "kind": "span",
@@ -31949,7 +35415,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1375,
+      "number": 1604,
       "children": [
         {
           "kind": "span",
@@ -31965,7 +35431,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1376,
+      "number": 1605,
       "children": [
         {
           "kind": "span",
@@ -31981,7 +35447,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1377,
+      "number": 1606,
       "children": [
         {
           "kind": "span",
@@ -31997,7 +35463,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1378,
+      "number": 1607,
       "children": [
         {
           "kind": "span",
@@ -32013,7 +35479,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1379,
+      "number": 1608,
       "children": [
         {
           "kind": "span",
@@ -32029,7 +35495,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1380,
+      "number": 1609,
       "children": [
         {
           "kind": "span",
@@ -32045,7 +35511,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1381,
+      "number": 1610,
       "children": [
         {
           "kind": "span",
@@ -32081,7 +35547,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1381C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1610C19"
         },
         {
           "kind": "span",
@@ -32097,7 +35563,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1381C25"
+          "href": "docs/vulkan__math__operators___spec.html#L1610C25"
         },
         {
           "kind": "span",
@@ -32185,7 +35651,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1382,
+      "number": 1611,
       "children": [
         {
           "kind": "span",
@@ -32221,7 +35687,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1382C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1611C19"
         },
         {
           "kind": "span",
@@ -32268,7 +35734,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1383,
+      "number": 1612,
       "children": [
         {
           "kind": "span",
@@ -32279,7 +35745,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1383C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1612C19"
         },
         {
           "kind": "span",
@@ -32352,7 +35818,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1384,
+      "number": 1613,
       "children": [
         {
           "kind": "span",
@@ -32438,7 +35904,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1385,
+      "number": 1614,
       "children": [
         {
           "kind": "span",
@@ -32474,7 +35940,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1385C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1614C19"
         },
         {
           "kind": "span",
@@ -32516,7 +35982,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1386,
+      "number": 1615,
       "children": [
         {
           "kind": "span",
@@ -32527,7 +35993,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1386C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1615C19"
         },
         {
           "kind": "span",
@@ -32605,7 +36071,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1387,
+      "number": 1616,
       "children": [
         {
           "kind": "span",
@@ -32681,7 +36147,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1388,
+      "number": 1617,
       "children": [
         {
           "kind": "span",
@@ -32717,7 +36183,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1388C19"
+          "href": "docs/vulkan__math__operators___spec.html#L1617C19"
         },
         {
           "kind": "span",
@@ -32733,7 +36199,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1388C25"
+          "href": "docs/vulkan__math__operators___spec.html#L1617C25"
         },
         {
           "kind": "span",
@@ -32811,7 +36277,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1389,
+      "number": 1618,
       "children": [
         {
           "kind": "span",
@@ -32887,13 +36353,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1390,
+      "number": 1619,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1391,
+      "number": 1620,
       "children": [
         {
           "kind": "span",
@@ -32909,7 +36375,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1392,
+      "number": 1621,
       "children": [
         {
           "kind": "span",
@@ -32925,7 +36391,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1393,
+      "number": 1622,
       "children": [
         {
           "kind": "span",
@@ -32941,7 +36407,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1394,
+      "number": 1623,
       "children": [
         {
           "kind": "span",
@@ -32962,7 +36428,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1394C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1623C14"
         },
         {
           "kind": "span",
@@ -33018,13 +36484,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1395,
+      "number": 1624,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1396,
+      "number": 1625,
       "children": [
         {
           "kind": "span",
@@ -33040,7 +36506,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1397,
+      "number": 1626,
       "children": [
         {
           "kind": "span",
@@ -33056,7 +36522,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1398,
+      "number": 1627,
       "children": [
         {
           "kind": "span",
@@ -33072,7 +36538,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1399,
+      "number": 1628,
       "children": [
         {
           "kind": "span",
@@ -33093,7 +36559,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1399C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1628C14"
         },
         {
           "kind": "span",
@@ -33149,13 +36615,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1400,
+      "number": 1629,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1401,
+      "number": 1630,
       "children": [
         {
           "kind": "span",
@@ -33171,7 +36637,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1402,
+      "number": 1631,
       "children": [
         {
           "kind": "span",
@@ -33187,7 +36653,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1403,
+      "number": 1632,
       "children": [
         {
           "kind": "span",
@@ -33203,7 +36669,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1404,
+      "number": 1633,
       "children": [
         {
           "kind": "span",
@@ -33224,7 +36690,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"abs\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1404C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1633C14"
         },
         {
           "kind": "span",
@@ -33290,13 +36756,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1405,
+      "number": 1634,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1406,
+      "number": 1635,
       "children": [
         {
           "kind": "span",
@@ -33312,7 +36778,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1407,
+      "number": 1636,
       "children": [
         {
           "kind": "span",
@@ -33328,7 +36794,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1408,
+      "number": 1637,
       "children": [
         {
           "kind": "span",
@@ -33344,7 +36810,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1409,
+      "number": 1638,
       "children": [
         {
           "kind": "span",
@@ -33365,7 +36831,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1409C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1638C14"
         },
         {
           "kind": "span",
@@ -33431,7 +36897,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1410,
+      "number": 1639,
       "children": [
         {
           "kind": "span",
@@ -33452,7 +36918,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1410C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1639C14"
         },
         {
           "kind": "span",
@@ -33518,7 +36984,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1411,
+      "number": 1640,
       "children": [
         {
           "kind": "span",
@@ -33539,7 +37005,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"mod\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1411C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1640C14"
         },
         {
           "kind": "span",
@@ -33605,13 +37071,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1412,
+      "number": 1641,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1413,
+      "number": 1642,
       "children": [
         {
           "kind": "span",
@@ -33627,7 +37093,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1414,
+      "number": 1643,
       "children": [
         {
           "kind": "span",
@@ -33643,7 +37109,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1415,
+      "number": 1644,
       "children": [
         {
           "kind": "span",
@@ -33659,7 +37125,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1416,
+      "number": 1645,
       "children": [
         {
           "kind": "span",
@@ -33695,7 +37161,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1416C20"
+          "href": "docs/vulkan__math__operators___spec.html#L1645C20"
         },
         {
           "kind": "span",
@@ -33711,7 +37177,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1416C26"
+          "href": "docs/vulkan__math__operators___spec.html#L1645C26"
         },
         {
           "kind": "span",
@@ -33799,7 +37265,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1417,
+      "number": 1646,
       "children": [
         {
           "kind": "span",
@@ -33820,7 +37286,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"**\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1417C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1646C14"
         },
         {
           "kind": "span",
@@ -33886,7 +37352,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1418,
+      "number": 1647,
       "children": [
         {
           "kind": "span",
@@ -33907,7 +37373,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"**\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1418C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1647C14"
         },
         {
           "kind": "span",
@@ -33973,7 +37439,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1419,
+      "number": 1648,
       "children": [
         {
           "kind": "span",
@@ -33994,7 +37460,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"**\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1419C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1648C14"
         },
         {
           "kind": "span",
@@ -34060,13 +37526,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1420,
+      "number": 1649,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1421,
+      "number": 1650,
       "children": [
         {
           "kind": "span",
@@ -34082,7 +37548,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1422,
+      "number": 1651,
       "children": [
         {
           "kind": "span",
@@ -34098,7 +37564,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1423,
+      "number": 1652,
       "children": [
         {
           "kind": "span",
@@ -34114,7 +37580,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1424,
+      "number": 1653,
       "children": [
         {
           "kind": "span",
@@ -34135,7 +37601,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1424C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1653C14"
         },
         {
           "kind": "span",
@@ -34201,7 +37667,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1425,
+      "number": 1654,
       "children": [
         {
           "kind": "span",
@@ -34222,7 +37688,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1425C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1654C14"
         },
         {
           "kind": "span",
@@ -34288,7 +37754,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1426,
+      "number": 1655,
       "children": [
         {
           "kind": "span",
@@ -34309,7 +37775,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"+\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1426C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1655C14"
         },
         {
           "kind": "span",
@@ -34375,13 +37841,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1427,
+      "number": 1656,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1428,
+      "number": 1657,
       "children": [
         {
           "kind": "span",
@@ -34397,7 +37863,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1429,
+      "number": 1658,
       "children": [
         {
           "kind": "span",
@@ -34413,7 +37879,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1430,
+      "number": 1659,
       "children": [
         {
           "kind": "span",
@@ -34429,7 +37895,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1431,
+      "number": 1660,
       "children": [
         {
           "kind": "span",
@@ -34450,7 +37916,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1431C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1660C14"
         },
         {
           "kind": "span",
@@ -34516,7 +37982,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1432,
+      "number": 1661,
       "children": [
         {
           "kind": "span",
@@ -34537,7 +38003,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1432C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1661C14"
         },
         {
           "kind": "span",
@@ -34603,7 +38069,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1433,
+      "number": 1662,
       "children": [
         {
           "kind": "span",
@@ -34624,7 +38090,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"-\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1433C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1662C14"
         },
         {
           "kind": "span",
@@ -34690,13 +38156,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1434,
+      "number": 1663,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1435,
+      "number": 1664,
       "children": [
         {
           "kind": "span",
@@ -34712,7 +38178,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1436,
+      "number": 1665,
       "children": [
         {
           "kind": "span",
@@ -34728,7 +38194,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1437,
+      "number": 1666,
       "children": [
         {
           "kind": "span",
@@ -34744,7 +38210,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1438,
+      "number": 1667,
       "children": [
         {
           "kind": "span",
@@ -34780,7 +38246,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "left",
-          "href": "docs/vulkan__math__operators___spec.html#L1438C21"
+          "href": "docs/vulkan__math__operators___spec.html#L1667C21"
         },
         {
           "kind": "span",
@@ -34796,7 +38262,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "right",
-          "href": "docs/vulkan__math__operators___spec.html#L1438C27"
+          "href": "docs/vulkan__math__operators___spec.html#L1667C27"
         },
         {
           "kind": "span",
@@ -34895,7 +38361,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1439,
+      "number": 1668,
       "children": [
         {
           "kind": "span",
@@ -34916,7 +38382,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1439C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1668C14"
         },
         {
           "kind": "span",
@@ -34982,7 +38448,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1440,
+      "number": 1669,
       "children": [
         {
           "kind": "span",
@@ -35003,7 +38469,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1440C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1669C14"
         },
         {
           "kind": "span",
@@ -35069,7 +38535,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1441,
+      "number": 1670,
       "children": [
         {
           "kind": "span",
@@ -35090,7 +38556,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"rem\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1441C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1670C14"
         },
         {
           "kind": "span",
@@ -35156,13 +38622,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1442,
+      "number": 1671,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1443,
+      "number": 1672,
       "children": [
         {
           "kind": "span",
@@ -35178,7 +38644,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1444,
+      "number": 1673,
       "children": [
         {
           "kind": "span",
@@ -35194,7 +38660,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1445,
+      "number": 1674,
       "children": [
         {
           "kind": "span",
@@ -35210,7 +38676,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1446,
+      "number": 1675,
       "children": [
         {
           "kind": "span",
@@ -35231,7 +38697,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1446C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1675C14"
         },
         {
           "kind": "span",
@@ -35297,7 +38763,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1447,
+      "number": 1676,
       "children": [
         {
           "kind": "span",
@@ -35318,7 +38784,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1447C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1676C14"
         },
         {
           "kind": "span",
@@ -35384,7 +38850,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1448,
+      "number": 1677,
       "children": [
         {
           "kind": "span",
@@ -35405,7 +38871,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"*\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1448C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1677C14"
         },
         {
           "kind": "span",
@@ -35471,13 +38937,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1449,
+      "number": 1678,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1450,
+      "number": 1679,
       "children": [
         {
           "kind": "span",
@@ -35493,7 +38959,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1451,
+      "number": 1680,
       "children": [
         {
           "kind": "span",
@@ -35509,7 +38975,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1452,
+      "number": 1681,
       "children": [
         {
           "kind": "span",
@@ -35525,7 +38991,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1453,
+      "number": 1682,
       "children": [
         {
           "kind": "span",
@@ -35546,7 +39012,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1453C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1682C14"
         },
         {
           "kind": "span",
@@ -35612,7 +39078,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1454,
+      "number": 1683,
       "children": [
         {
           "kind": "span",
@@ -35633,7 +39099,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1454C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1683C14"
         },
         {
           "kind": "span",
@@ -35699,7 +39165,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1455,
+      "number": 1684,
       "children": [
         {
           "kind": "span",
@@ -35720,7 +39186,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1455C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1684C14"
         },
         {
           "kind": "span",
@@ -35786,19 +39252,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1456,
+      "number": 1685,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1457,
+      "number": 1686,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1458,
+      "number": 1687,
       "children": [
         {
           "kind": "span",
@@ -35814,7 +39280,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1459,
+      "number": 1688,
       "children": [
         {
           "kind": "span",
@@ -35830,7 +39296,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1460,
+      "number": 1689,
       "children": [
         {
           "kind": "span",
@@ -35846,7 +39312,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1461,
+      "number": 1690,
       "children": [
         {
           "kind": "span",
@@ -35867,7 +39333,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"<\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1461C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1690C14"
         },
         {
           "kind": "span",
@@ -35923,7 +39389,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1462,
+      "number": 1691,
       "children": [
         {
           "kind": "span",
@@ -35944,7 +39410,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"<=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1462C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1691C14"
         },
         {
           "kind": "span",
@@ -36000,7 +39466,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1463,
+      "number": 1692,
       "children": [
         {
           "kind": "span",
@@ -36021,7 +39487,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\">\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1463C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1692C14"
         },
         {
           "kind": "span",
@@ -36077,7 +39543,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1464,
+      "number": 1693,
       "children": [
         {
           "kind": "span",
@@ -36098,7 +39564,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\">=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1464C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1693C14"
         },
         {
           "kind": "span",
@@ -36154,7 +39620,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1465,
+      "number": 1694,
       "children": [
         {
           "kind": "span",
@@ -36175,7 +39641,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1465C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1694C14"
         },
         {
           "kind": "span",
@@ -36231,7 +39697,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1466,
+      "number": 1695,
       "children": [
         {
           "kind": "span",
@@ -36252,7 +39718,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "\"/=\"",
-          "href": "docs/vulkan__math__operators___spec.html#L1466C14"
+          "href": "docs/vulkan__math__operators___spec.html#L1695C14"
         },
         {
           "kind": "span",
@@ -36308,13 +39774,13 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1467,
+      "number": 1696,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1468,
+      "number": 1697,
       "children": [
         {
           "kind": "span",
