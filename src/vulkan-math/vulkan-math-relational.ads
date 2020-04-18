@@ -110,11 +110,11 @@ package Vulkan.Math.Relational is
     --
     -- @return x == y
     ----------------------------------------------------------------------------
-    function Equal is new Apply_Func_IVF_IVF_RVB("=");
-    function Equal is new Apply_Func_IVD_IVD_RVB("=");
-    function Equal is new Apply_Func_IVI_IVI_RVB("=");
-    function Equal is new Apply_Func_IVU_IVU_RVB("=");
-
+    function Equal is new Apply_Func_IVF_IVF_RVB ("=");
+    function Equal is new Apply_Func_IVD_IVD_RVB ("=");
+    function Equal is new Apply_Func_IVI_IVI_RVB ("=");
+    function Equal is new Apply_Func_IVU_IVU_RVB ("=");
+    function Equal is new GBT.Apply_Func_IV_IV_RV("=");
 
     ----------------------------------------------------------------------------
     -- @brief
@@ -125,10 +125,11 @@ package Vulkan.Math.Relational is
     --
     -- @return x != y
     ----------------------------------------------------------------------------
-    function Not_Equal is new Apply_Func_IVF_IVF_RVB("/=");
-    function Not_Equal is new Apply_Func_IVD_IVD_RVB("/=");
-    function Not_Equal is new Apply_Func_IVI_IVI_RVB("/=");
-    function Not_Equal is new Apply_Func_IVU_IVU_RVB("/=");
+    function Not_Equal is new Apply_Func_IVF_IVF_RVB ("/=");
+    function Not_Equal is new Apply_Func_IVD_IVD_RVB ("/=");
+    function Not_Equal is new Apply_Func_IVI_IVI_RVB ("/=");
+    function Not_Equal is new Apply_Func_IVU_IVU_RVB ("/=");
+    function Not_Equal is new GBT.Apply_Func_IV_IV_RV("/=");
 
 
     ----------------------------------------------------------------------------
