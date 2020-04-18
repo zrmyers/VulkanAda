@@ -312,7 +312,7 @@ package Vulkan.Math.Operators is
     --< Whether the two vectors are not equal to each other.
     ----------------------------------------------------------------------------
     function "/=" (left, right : in     Vkm_GenBType) return Vkm_Bool is
-        (Is_All(Not_Equal(left, right))) with Inline;
+        (Is_Any(Not_Equal(left, right))) with Inline;
     
     
     ----------------------------------------------------------------------------
@@ -839,7 +839,7 @@ package Vulkan.Math.Operators is
     --< Whether the two vectors are not equal to each other.
     ----------------------------------------------------------------------------
     function "/=" (left, right : in     Vkm_GenUType) return Vkm_Bool is
-        (Is_All(Not_Equal(left, right))) with Inline;
+        (Is_Any(Not_Equal(left, right))) with Inline;
     
     
     ----------------------------------------------------------------------------
@@ -853,6 +853,7 @@ package Vulkan.Math.Operators is
     --    - "+"  , Unary plus operator.
     --    - "-"  , Unary minus operator.
     --    - "not", Bitwise complement operator
+    --    - "abs", Unary absolute value operator.
     --
     -- A summary of operators that are component-wise on two input vectors of the
     -- same length. Additionally, a scalar may appear instead of a vector on the
@@ -1010,6 +1011,17 @@ package Vulkan.Math.Operators is
     function "not" is new GIT.Apply_Func_IV_RV("not");
 
 
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType unary absolute value operator.
+    --<
+    --< @description
+    --< Return the absolute value for each component of the vector.
+    --<     vector := abs vector
+    ----------------------------------------------------------------------------
+    function "abs" is new GIT.Apply_Func_IV_RV("abs");
+    
+    
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenIType modulus operator.
@@ -1175,49 +1187,264 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     function "*" is new GIT.Apply_Func_IS_IV_RV("*");
 
-    ----------------------------------------------------------------------------
-    -- GenIType Division Operator
-    ----------------------------------------------------------------------------
-    function "/" is new GIT.Apply_Func_IV_IV_RV("/"); -- vector := vector / vector
-    function "/" is new GIT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
-    function "/" is new GIT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
 
     ----------------------------------------------------------------------------
-    -- GenIType Bitwise AND Operator
+    --< @summary
+    --< Vkm_GenIType division operator.
+    --<
+    --< @description
+    --< Apply division component-wise on two vectors.
+    --<     vector := vector / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GIT.Apply_Func_IV_IV_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType division operator.
+    --<
+    --< @description
+    --< Apply divide components of a vector by a scalar.
+    --<     vector := vector / scalar;
+    ----------------------------------------------------------------------------
+    function "/" is new GIT.Apply_Func_IV_IS_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType division operator.
+    --<
+    --< @description
+    --< Divide a scalar by components of a vector.
+    --<     vector := scalar / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GIT.Apply_Func_IS_IV_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_Int bitwise "and" operator.
+    --<
+    --< @description
+    --< Return the result of the bitwise "and" for to scalar values.
+    --<     scalar := scalar and scalar;
     ----------------------------------------------------------------------------
     function "and" (left, right : in     Vkm_Int) return Vkm_Int is
         (To_Vkm_Int( To_Vkm_Uint(left) and To_Vkm_Uint(right))) with Inline;
-    function "and" is new GIT.Apply_Func_IV_IV_RV("and"); -- vector := vector and vector
-    function "and" is new GIT.Apply_Func_IV_IS_RV("and"); -- vector := vector and scalar
-    function "and" is new GIT.Apply_Func_IS_IV_RV("and"); -- vector := scalar and vector
+
 
     ----------------------------------------------------------------------------
-    -- GenIType Bitwise OR Operator
+    --< @summary
+    --< Vkm_GenIType bitwise "and" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "and" for two vectors.
+    --<     vector := vector and vector;
+    ----------------------------------------------------------------------------
+    function "and" is new GIT.Apply_Func_IV_IV_RV("and");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType bitwise "and" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "and" for a vector and a scalar.
+    --<     vector := vector and scalar;
+    ----------------------------------------------------------------------------
+    function "and" is new GIT.Apply_Func_IV_IS_RV("and");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType bitwise "and" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "and" for a vector and a scalar.
+    --<     vector := scalar and vector;
+    ----------------------------------------------------------------------------
+    function "and" is new GIT.Apply_Func_IS_IV_RV("and");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_Int bitwise "or" operator.
+    --<
+    --< @description
+    --< Return the result of the bitwise "or" for to scalar values.
+    --<     scalar := scalar or scalar;
     ----------------------------------------------------------------------------
     function "or" (left, right : in     Vkm_Int) return Vkm_Int is
         (To_Vkm_Int(To_Vkm_Uint(left) or To_Vkm_Uint(right))) with Inline;
-    function "or" is new GIT.Apply_Func_IV_IV_RV("or"); -- vector := vector or vector
-    function "or" is new GIT.Apply_Func_IV_IS_RV("or"); -- vector := vector or scalar
-    function "or" is new GIT.Apply_Func_IS_IV_RV("or"); -- vector := scalar or vector
+
 
     ----------------------------------------------------------------------------
-    -- GenIType Bitwise XOR Operator
+    --< @summary
+    --< Vkm_GenIType bitwise "or" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "or" for two vectors.
+    --<     vector := vector or vector;
+    ----------------------------------------------------------------------------
+    function "or" is new GIT.Apply_Func_IV_IV_RV("or");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType bitwise "or" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "or" for a vector and a scalar.
+    --<     vector := vector or scalar;
+    ----------------------------------------------------------------------------
+    function "or" is new GIT.Apply_Func_IV_IS_RV("or");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType bitwise "or" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "or" for a vector and a scalar.
+    --<     vector := scalar or vector;
+    ----------------------------------------------------------------------------
+    function "or" is new GIT.Apply_Func_IS_IV_RV("or");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_Int bitwise "xor" operator.
+    --<
+    --< @description
+    --< Return the result of the bitwise "xor" for to scalar values.
+    --<     scalar := scalar xor scalar;
     ----------------------------------------------------------------------------
     function "xor" (left, right : in     Vkm_Int) return Vkm_Int is
         (To_Vkm_Int(To_Vkm_Uint(left) xor To_Vkm_Uint(right))) with Inline;
-    function "xor" is new GIT.Apply_Func_IV_IV_RV("xor"); -- vector := vector xor vector
-    function "xor" is new GIT.Apply_Func_IV_IS_RV("xor"); -- vector := vector xor scalar
-    function "xor" is new GIT.Apply_Func_IS_IV_RV("xor"); -- vector := scalar xor vector
+
 
     ----------------------------------------------------------------------------
-    -- GenIType Relational Operators
+    --< @summary
+    --< Vkm_GenIType bitwise "xor" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "xor" for two vectors.
+    --<     vector := vector xor vector;
+    ----------------------------------------------------------------------------
+    function "xor" is new GIT.Apply_Func_IV_IV_RV("xor");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType bitwise "xor" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "xor" for a vector and a scalar.
+    --<     vector := vector xor scalar;
+    ----------------------------------------------------------------------------
+    function "xor" is new GIT.Apply_Func_IV_IS_RV("xor");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType bitwise "xor" operator.
+    --<
+    --< @description
+    --< Return the component-wise bitwise "xor" for a vector and a scalar.
+    --<     vector := scalar xor vector;
+    ----------------------------------------------------------------------------
+    function "xor" is new GIT.Apply_Func_IS_IV_RV("xor");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType less than operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise less than operator on two vectors.
+    --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
     function "<"  is new Apply_Func_IVI_IVI_RVB("<" );
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType less than or equal to operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise less than or equal to operator on 
+    --< two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function "<=" is new Apply_Func_IVI_IVI_RVB("<=");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType greater than operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise greater than operator on 
+    --< two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function ">"  is new Apply_Func_IVI_IVI_RVB(">" );
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType greater than or equal operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise greater than or equal to operator 
+    --< on two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function ">=" is new Apply_Func_IVI_IVI_RVB(">=");
-    function "="  is new Apply_Func_IVI_IVI_RVB("=" );
-    function "/=" is new Apply_Func_IVI_IVI_RVB("/=");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType equality operator.
+    --<
+    --< @description
+    --< Return true if each component of two vectors are equal to each other. 
+    --< Otherwise return false.
+    --<     is_equal := vector = vector;
+    --<
+    --< @param left
+    --< The left vector in the comparison.
+    --< 
+    --< @param right
+    --< The right vector in the comparison.
+    --<
+    --< @return
+    --< Whether the two vectors are equal to each other.
+    ----------------------------------------------------------------------------
+    function "="  (left, right : in     Vkm_GenIType) return Vkm_Bool is
+        (Is_All(Equal(left, right))) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenIType inequality operator.
+    --<
+    --< @description
+    --< Return true if any component of the two vectors are not equal to each other. 
+    --< Otherwise return false.
+    --<     is_equal := vector /= vector;
+    --<
+    --< @param left
+    --< The left vector in the comparison.
+    --< 
+    --< @param right
+    --< The right vector in the comparison.
+    --<
+    --< @return
+    --< Whether the two vectors are equal to each other.
+    ----------------------------------------------------------------------------
+    function "/=" (left, right : in     Vkm_GenIType) return Vkm_Bool is
+        (Is_Any(Not_Equal(left, right))) with Inline;
     
     
     ----------------------------------------------------------------------------
@@ -1249,8 +1476,10 @@ package Vulkan.Math.Operators is
     --    - ">",  Greater than operator
     --    - "<=", Less than or equal to operator
     --    - ">=", Greater than or equal to operator
+    --
+    -- A summary of relational operators which return a scalar boolean value.
     --    - "=",  Equality operator
-    --    - "/=", Non-Equality operator (Implicitly defined)
+    --    - "/=", Non-Equality operator
     --
     ----------------------------------------------------------------------------
     -- GenFType Concatenation Operators
