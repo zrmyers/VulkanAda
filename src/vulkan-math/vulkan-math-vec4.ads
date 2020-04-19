@@ -50,6 +50,9 @@ package Vulkan.Math.Vec4 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Vec4:
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a default vector with all components set to 0.0.
     --<
@@ -61,6 +64,9 @@ package Vulkan.Math.Vec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector with all components set to the same value.
     --<
@@ -75,6 +81,9 @@ package Vulkan.Math.Vec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --<
@@ -91,6 +100,9 @@ package Vulkan.Math.Vec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --<
@@ -114,6 +126,9 @@ package Vulkan.Math.Vec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a scalar value with a vec3.
     --<
@@ -137,6 +152,9 @@ package Vulkan.Math.Vec4 is
 
 
     ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a vec3 with a scalar value.
     --<
@@ -159,7 +177,10 @@ package Vulkan.Math.Vec4 is
                    scalar_value      )) with Inline;
 
 
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating a vec2 with a vec2.
     --<
@@ -173,13 +194,16 @@ package Vulkan.Math.Vec4 is
     --<
     --< @return
     --< The instance of Vec4.
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
     function Make_Vec4 (vec2_value1, vec2_value2 : in     Vkm_Vec2) return Vkm_Vec4 is
         (Make_Vec4(vec2_value1.data(0),vec2_value1.data(1),
                    vec2_value2.data(0),vec2_value2.data(1)));
 
 
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating two scalar values with a vec2.
     --<
@@ -196,13 +220,16 @@ package Vulkan.Math.Vec4 is
     --<
     --< @return
     --< The instance of Vec4.
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
     function Make_Vec4 (scalar1, scalar2 : in     Vkm_Float;
                         vec2_value       : in     Vkm_Vec2) return Vkm_Vec4 is
         (Make_Vec4(scalar1, scalar2, vec2_value.data(0),vec2_value.data(1)));
 
 
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating two scalar values with a vec2.
     --<
@@ -219,14 +246,17 @@ package Vulkan.Math.Vec4 is
     --<
     --< @return
     --< The instance of Vec4.
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
     function Make_Vec4 (scalar1    : in     Vkm_Float;
                         vec2_value : in     Vkm_Vec2 ;
                         scalar2    : in     Vkm_Float) return Vkm_Vec4 is
         (Make_Vec4(scalar1, vec2_value.data(0),vec2_value.data(1), scalar2));
 
 
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Vec4 type.
+    --<
     --< @description
     --< Produce a vector by concatenating two scalar values with a vec2.
     --<
@@ -243,7 +273,7 @@ package Vulkan.Math.Vec4 is
     --<
     --< @return
     --< The instance of Vec4.
-    ---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
     function Make_Vec4 (vec2_value : in     Vkm_Vec2 ;
                         scalar1    : in     Vkm_Float;
                         scalar2    : in     Vkm_Float) return Vkm_Vec4 is
