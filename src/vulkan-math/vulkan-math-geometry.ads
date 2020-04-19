@@ -21,9 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
---
--- This package provides GLSL geometry operations.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
 with Vulkan.Math.Operators;
