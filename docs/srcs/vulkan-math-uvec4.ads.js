@@ -2770,7 +2770,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec3",
-          "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+          "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
         },
         {
           "kind": "span",
@@ -2796,7 +2796,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec3",
-          "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+          "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
         },
         {
           "kind": "span",
@@ -3285,7 +3285,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec3",
-          "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+          "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
         },
         {
           "kind": "span",
@@ -3874,7 +3874,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec2",
-          "href": "docs/vulkan__math__uvec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__uvec2___spec.html#L38C13"
         },
         {
           "kind": "span",
@@ -4452,7 +4452,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec2",
-          "href": "docs/vulkan__math__uvec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__uvec2___spec.html#L38C13"
         },
         {
           "kind": "span",
@@ -4983,7 +4983,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec2",
-          "href": "docs/vulkan__math__uvec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__uvec2___spec.html#L38C13"
         },
         {
           "kind": "span",
@@ -5519,7 +5519,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_Uvec2",
-          "href": "docs/vulkan__math__uvec2___spec.html#L33C13"
+          "href": "docs/vulkan__math__uvec2___spec.html#L38C13"
         },
         {
           "kind": "span",

@@ -53,9 +53,34 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__ivec4___spec.html"
       },
       {
+        "label": "Vulkan.Math.Uvec2",
+        "qualifier": "",
+        "file": "docs/vulkan__math__uvec2___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Uvec3",
+        "qualifier": "",
+        "file": "docs/vulkan__math__uvec3___spec.html"
+      },
+      {
         "label": "Vulkan.Math.Uvec4",
         "qualifier": "",
         "file": "docs/vulkan__math__uvec4___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Vec2",
+        "qualifier": "",
+        "file": "docs/vulkan__math__vec2___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Vec3",
+        "qualifier": "",
+        "file": "docs/vulkan__math__vec3___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Vec4",
+        "qualifier": "",
+        "file": "docs/vulkan__math__vec4___spec.html"
       }
     ]
   },
@@ -148,30 +173,5 @@ GNATdoc.DocumentationIndex = [
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Uvec2",
-    "qualifier": "",
-    "file": "docs/vulkan__math__uvec2___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Uvec3",
-    "qualifier": "",
-    "file": "docs/vulkan__math__uvec3___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Vec2",
-    "qualifier": "",
-    "file": "docs/vulkan__math__vec2___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Vec3",
-    "qualifier": "",
-    "file": "docs/vulkan__math__vec3___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Vec4",
-    "qualifier": "",
-    "file": "docs/vulkan__math__vec4___spec.html"
   }
 ];

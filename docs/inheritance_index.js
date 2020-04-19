@@ -45,15 +45,15 @@ GNATdoc.InheritanceIndex = [
         "inherited": [
           {
             "label": "Vkm_Vec2",
-            "docHref": "docs/vulkan__math__vec2___spec.html#L33C13"
+            "docHref": "docs/vulkan__math__vec2___spec.html#L39C13"
           },
           {
             "label": "Vkm_Vec3",
-            "docHref": "docs/vulkan__math__vec3___spec.html#L36C13"
+            "docHref": "docs/vulkan__math__vec3___spec.html#L42C13"
           },
           {
             "label": "Vkm_Vec4",
-            "docHref": "docs/vulkan__math__vec4___spec.html#L39C13"
+            "docHref": "docs/vulkan__math__vec4___spec.html#L44C13"
           }
         ]
       },
@@ -81,11 +81,11 @@ GNATdoc.InheritanceIndex = [
         "inherited": [
           {
             "label": "Vkm_Uvec2",
-            "docHref": "docs/vulkan__math__uvec2___spec.html#L33C13"
+            "docHref": "docs/vulkan__math__uvec2___spec.html#L38C13"
           },
           {
             "label": "Vkm_Uvec3",
-            "docHref": "docs/vulkan__math__uvec3___spec.html#L36C13"
+            "docHref": "docs/vulkan__math__uvec3___spec.html#L42C13"
           },
           {
             "label": "Vkm_Uvec4",

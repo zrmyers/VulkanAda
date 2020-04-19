@@ -2,6 +2,15 @@ GNATdoc.Documentation = {
   "label": "Vulkan.Math.Uvec3",
   "qualifier": "",
   "summary": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "This package provides a 32-bit unsigned integer vector type with 3 components.\n"
+        }
+      ]
+    }
   ],
   "description": [
   ],
@@ -11,7 +20,7 @@ GNATdoc.Documentation = {
         {
           "label": "Vkm_Uvec3",
           "qualifier": "",
-          "line": 36,
+          "line": 42,
           "column": 13,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
@@ -22,7 +31,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 36,
+                  "number": 42,
                   "children": [
                     {
                       "kind": "span",
@@ -43,7 +52,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -120,10 +129,19 @@ GNATdoc.Documentation = {
         {
           "label": "Make_Uvec3",
           "qualifier": "",
-          "line": 50,
+          "line": 60,
           "column": 14,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Uvec3 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -131,7 +149,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 50,
+                  "number": 60,
                   "children": [
                     {
                       "kind": "span",
@@ -152,7 +170,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L50C14"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L60C14"
                     },
                     {
                       "kind": "span",
@@ -173,7 +191,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -189,7 +207,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 51,
+                  "number": 61,
                   "children": [
                     {
                       "kind": "span",
@@ -304,16 +322,47 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Produce a default vector with all components set to 0.\n"
+                }
+              ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A Uvec3 with all components set to 0.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Make_Uvec3",
           "qualifier": "",
-          "line": 62,
+          "line": 77,
           "column": 14,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Uvec3 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -321,7 +370,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 62,
+                  "number": 77,
                   "children": [
                     {
                       "kind": "span",
@@ -342,7 +391,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L62C14"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L77C14"
                     },
                     {
                       "kind": "span",
@@ -358,7 +407,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L62C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L77C26"
                     },
                     {
                       "kind": "span",
@@ -415,7 +464,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -431,7 +480,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 63,
+                  "number": 78,
                   "children": [
                     {
                       "kind": "span",
@@ -546,29 +595,69 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Produce a vector with all components set to the same value.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 62,
+              "line": 77,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to set all components to.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A Uvec3 with all components set to scalar_value.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Make_Uvec3",
           "qualifier": "",
-          "line": 75,
+          "line": 95,
           "column": 14,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Uvec3 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -576,7 +665,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 75,
+                  "number": 95,
                   "children": [
                     {
                       "kind": "span",
@@ -597,7 +686,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L75C14"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L95C14"
                     },
                     {
                       "kind": "span",
@@ -613,7 +702,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec3_value",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L75C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L95C26"
                     },
                     {
                       "kind": "span",
@@ -644,7 +733,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -670,7 +759,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -686,7 +775,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 76,
+                  "number": 96,
                   "children": [
                     {
                       "kind": "span",
@@ -816,29 +905,73 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Produce a vector by copying components from an existing vector.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "vec3_value",
-              "line": 75,
+              "line": 95,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Uvec3.Vkm_Uvec3",
-                "docHref": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                "docHref": "docs/vulkan__math__uvec3___spec.html#L42C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The Uvec3 to copy components from.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A Uvec3 with all of its components set equal to the corresponding\n"
+                  },
+                  {
+                    "kind": "span",
+                    "text": "components of vec3_value.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Make_Uvec3",
           "qualifier": "(renaming)",
-          "line": 90,
+          "line": 117,
           "column": 14,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Uvec3 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -846,7 +979,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 90,
+                  "number": 117,
                   "children": [
                     {
                       "kind": "span",
@@ -867,7 +1000,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L90C14"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L117C14"
                     },
                     {
                       "kind": "span",
@@ -883,7 +1016,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L90C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L117C26"
                     },
                     {
                       "kind": "span",
@@ -899,7 +1032,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L90C34"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L117C34"
                     },
                     {
                       "kind": "span",
@@ -915,7 +1048,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L90C42"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L117C42"
                     },
                     {
                       "kind": "span",
@@ -972,13 +1105,13 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     }
                   ]
                 },
                 {
                   "kind": "line",
-                  "number": 91,
+                  "number": 118,
                   "children": [
                     {
                       "kind": "span",
@@ -1008,51 +1141,109 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Produce a vector by specifying the values for each of its components.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "value1",
-              "line": 90,
+              "line": 117,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Value for component 1.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "value2",
-              "line": 90,
+              "line": 117,
               "column": 34,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Value for component 2.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "value3",
-              "line": 90,
+              "line": 117,
               "column": 42,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Value for component 3.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A Uvec3 with all components set as specified.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Make_Uvec3",
           "qualifier": "",
-          "line": 105,
+          "line": 139,
           "column": 14,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Uvec3 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1060,7 +1251,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 105,
+                  "number": 139,
                   "children": [
                     {
                       "kind": "span",
@@ -1081,7 +1272,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L105C14"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L139C14"
                     },
                     {
                       "kind": "span",
@@ -1097,7 +1288,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L105C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L139C26"
                     },
                     {
                       "kind": "span",
@@ -1139,7 +1330,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 106,
+                  "number": 140,
                   "children": [
                     {
                       "kind": "span",
@@ -1150,7 +1341,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L106C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L140C26"
                     },
                     {
                       "kind": "span",
@@ -1181,7 +1372,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec2",
-                      "href": "docs/vulkan__math__uvec2___spec.html#L33C13"
+                      "href": "docs/vulkan__math__uvec2___spec.html#L38C13"
                     },
                     {
                       "kind": "span",
@@ -1212,7 +1403,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -1228,7 +1419,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 107,
+                  "number": 141,
                   "children": [
                     {
                       "kind": "span",
@@ -1318,40 +1509,103 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Produce a vector by concatenating a scalar float with a vec2.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Uvec3 = [scalar_value, vec2_value]"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "scalar_value",
-              "line": 105,
+              "line": 139,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The scalar value to concatenate with the Uvec3.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "vec2_value",
-              "line": 106,
+              "line": 140,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
-                "docHref": "docs/vulkan__math__uvec2___spec.html#L33C13"
+                "docHref": "docs/vulkan__math__uvec2___spec.html#L38C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The vec2 to concatenate to the scalar value.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The instance of Uvec3.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Make_Uvec3",
           "qualifier": "",
-          "line": 121,
+          "line": 162,
           "column": 14,
           "src": "srcs/vulkan-math-uvec3.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Uvec3 type.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1359,7 +1613,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 121,
+                  "number": 162,
                   "children": [
                     {
                       "kind": "span",
@@ -1380,7 +1634,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Make_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L121C14"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L162C14"
                     },
                     {
                       "kind": "span",
@@ -1396,7 +1650,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "vec2_value",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L121C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L162C26"
                     },
                     {
                       "kind": "span",
@@ -1427,7 +1681,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec2",
-                      "href": "docs/vulkan__math__uvec2___spec.html#L33C13"
+                      "href": "docs/vulkan__math__uvec2___spec.html#L38C13"
                     },
                     {
                       "kind": "span",
@@ -1438,7 +1692,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 122,
+                  "number": 163,
                   "children": [
                     {
                       "kind": "span",
@@ -1449,7 +1703,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "scalar_value",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L122C26"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L163C26"
                     },
                     {
                       "kind": "span",
@@ -1511,7 +1765,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_Uvec3",
-                      "href": "docs/vulkan__math__uvec3___spec.html#L36C13"
+                      "href": "docs/vulkan__math__uvec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -1527,7 +1781,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 123,
+                  "number": 164,
                   "children": [
                     {
                       "kind": "span",
@@ -1617,32 +1871,86 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Produce a vector by concatenating a scalar float with a vec2.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "Uvec3 = [vec2_value, scalar_value]"
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "vec2_value",
-              "line": 121,
+              "line": 162,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Uvec2.Vkm_Uvec2",
-                "docHref": "docs/vulkan__math__uvec2___spec.html#L33C13"
+                "docHref": "docs/vulkan__math__uvec2___spec.html#L38C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The vec2 to concatenate to the scalar value.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "scalar_value",
-              "line": 122,
+              "line": 163,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
                 "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The scalar value to concatenate with the Uvec3.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The instance of Uvec3.\n"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "label": "Subprograms"
