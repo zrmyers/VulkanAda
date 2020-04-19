@@ -24,8 +24,8 @@ The following is a roadmap for this repository:
 
 |Milestone      |  Description                         | Status                                   |
 |---------------|--------------------------------------|------------------------------------------|
-|VulkanAda 0.0.1| GLSL-like vector types and functions | Documenting, and some implementation     |
-|VulkanAda 0.0.2| GLSL-like matrix types and functions | Not Started.                             |
+|VulkanAda 0.0.1| GLSL-like vector types and functions | Todo: integer and packing functions      |
+|VulkanAda 0.0.2| GLSL-like matrix types and functions | Defined generic matrix type.              |
 |VulkanAda 0.0.3| GLSL Extension-like Matrix transforms| Not Started.                             |
 |VulkanAda 0.1.0| Vulkan Instance functions and tests. | Not Started.                             |
 |VulkanAda 0.1.1| Vulkan Device functions and tests.   | Not Started.                             |
