@@ -408,7 +408,7 @@ package Vulkan.Math.Trig is
     
     ----------------------------------------------------------------------------
     --< @summary
-    --< Calculate hyperbolic arc cos of Vkm_Float angle.
+    --< Calculate hyperbolic arc cos of Vkm_Float x.
     --<
     --< @description
     --< Calculate hyperbolic arc cos of x. Results are undefined if x < 1.
@@ -424,7 +424,7 @@ package Vulkan.Math.Trig is
     
     ----------------------------------------------------------------------------
     --< @summary
-    --< Calculate hyperbolic arc cos of Vkm_GenFType angle.
+    --< Calculate hyperbolic arc cos of Vkm_GenFType x.
     --<
     --< @description
     --< Calculate hyperbolic arc cos of x. Results are undefined if x < 1.

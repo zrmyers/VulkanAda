@@ -32,11 +32,10 @@ use Vulkan.Math.GenDType;
 --< @group Vulkan Math Functions
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a exponential functions as described by GLSL 4.60
+--< This package provides GLSL Exponential Built-in functions.
 --<
 --< @description
---< Component-wise exponential functions for Vkm_GenFType and Vkm_GenDType vectors
---< are provided.
+--< All exponential functions operate component-wise on vectors.
 --------------------------------------------------------------------------------
 package Vulkan.Math.Exp is
     pragma Preelaborate;
