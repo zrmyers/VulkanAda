@@ -45,6 +45,9 @@ samples: $(DIRS) vulkan
 docs: vulkan
 	gnatdoc -Pvulkan.gpr -l
 
+metrics:
+	gnatmetric -Pvulkan.gpr
+
 clean:
 	rm -rf $(DIRS)
 	rm -rf docs

@@ -1228,6 +1228,15 @@ package Vulkan.Math.Operators is
     --< @description
     --< Return the result of the bitwise "and" for to scalar values.
     --<     scalar := scalar and scalar;
+    --<
+    --< @param left
+    --< The parameter to the left of the "and" keyword.
+    --< 
+    --< @param right
+    --< The parameter to the right of the "and" keyword.
+    --<
+    --< @return
+    --< The bitwise and of left with right.
     ----------------------------------------------------------------------------
     function "and" (left, right : in     Vkm_Int) return Vkm_Int is
         (To_Vkm_Int( To_Vkm_Uint(left) and To_Vkm_Uint(right))) with Inline;
@@ -1273,6 +1282,15 @@ package Vulkan.Math.Operators is
     --< @description
     --< Return the result of the bitwise "or" for to scalar values.
     --<     scalar := scalar or scalar;
+    --< 
+    --< @param left
+    --< The parameter to the left of the "or" keyword.
+    --<
+    --< @param right
+    --< The parameter to the right of the "or" keyword.
+    --<
+    --< @return
+    --< The result of the bitwise "or" operation.
     ----------------------------------------------------------------------------
     function "or" (left, right : in     Vkm_Int) return Vkm_Int is
         (To_Vkm_Int(To_Vkm_Uint(left) or To_Vkm_Uint(right))) with Inline;
@@ -1318,6 +1336,15 @@ package Vulkan.Math.Operators is
     --< @description
     --< Return the result of the bitwise "xor" for to scalar values.
     --<     scalar := scalar xor scalar;
+    --<
+    --< @param left
+    --< The parameter to the left of the "xor" keyword.
+    --<
+    --< @param right
+    --< The parameter to the right of the "xor" keyword.
+    --<
+    --< @return
+    --< The result of the bitwise "xor" operation.
     ----------------------------------------------------------------------------
     function "xor" (left, right : in     Vkm_Int) return Vkm_Int is
         (To_Vkm_Int(To_Vkm_Uint(left) xor To_Vkm_Uint(right))) with Inline;
@@ -1484,59 +1511,274 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenFType Concatenation Operators
     ----------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two Vkm_GenFType vectors.
+    --<    vector := vector & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left vector.
+    ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_GenFType) return Vkm_GenFType renames GFT.Concatenate;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a Vkm_Float and a Vkm_GenFType vector.
+    --<    vector := scalar & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left scalar.
+    ----------------------------------------------------------------------------
     function "&" (left        : in     Vkm_Float   ;
                   right       : in     Vkm_GenFType) return Vkm_GenFType is
         (GFT.Make_GenType(left).Concatenate(right)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a Vkm_Float and a Vkm_GenFType vector.
+    --<    vector := vector & scalar
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left vector.
+    ----------------------------------------------------------------------------
     function "&" (left        : in     Vkm_GenFType;
                   right       : in     Vkm_Float   ) return Vkm_GenFType is
         (left.Concatenate(GFT.Make_GenType(right))) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two Vkm_Floats to form a Vkm_GenFType vector.
+    --<    vector := scalar & scalar
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left scalar.
+    ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_Float   ) return Vkm_GenFType is
         (GFT.Make_GenType(left, right)) with Inline;
 
+
     ----------------------------------------------------------------------------
-    -- GenFtype Unary Plus Operator
+    --< @summary
+    --< Vkm_GenFType unary plus operator.
+    --<
+    --< @description
+    --< Return the unmodified vector.
+    --<     vector :=  +vector;
     ----------------------------------------------------------------------------
     function "+" is new GFT.Apply_Func_IV_RV("+");
 
+
     ----------------------------------------------------------------------------
-    -- GenFType Unary Minus Operator
+    --< @summary
+    --< Vkm_GenFType unary minus operator.
+    --<
+    --< @description
+    --< Return the negation of the vector.
+    --<     vector :=  -vector;
     ----------------------------------------------------------------------------
     function "-" is new GFT.Apply_Func_IV_RV("-");
 
-    ----------------------------------------------------------------------------
-    -- GenFType Absolute Value Operator
-    ----------------------------------------------------------------------------
-    function "abs" is new GFT.Apply_Func_IV_RV(Vulkan.Math.Common.Absolute_Value); -- vector := abs vec
 
     ----------------------------------------------------------------------------
-    -- GenFType Modulus Operator
+    --< @summary
+    --< Vkm_GenFType absolute value operator.
+    --<
+    --< @description
+    --< Return the absolute value for each component of the vector.
+    --<     vector :=  abs vector;
     ----------------------------------------------------------------------------
-    function "mod" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Common.Modulo); -- vector := vector mod vector
-    function "mod" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Common.Modulo); -- vector := vector mod scalar
-    function "mod" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Common.Modulo); -- vector := scalar mod vector
+    function "abs" is new GFT.Apply_Func_IV_RV(Vulkan.Math.Common.Absolute_Value);
+
 
     ----------------------------------------------------------------------------
-    -- GenFType Power Operator
+    --< @summary
+    --< Vkm_GenFType modulo operator.
+    --<
+    --< @description
+    --< Return the component-wise modulo of the two vectors.
+    --<     vector :=  vector mod vector;
+    ----------------------------------------------------------------------------
+    function "mod" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Common.Modulo);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType modulo operator.
+    --<
+    --< @description
+    --< Return the component-wise modulo of a vector and a scalar.
+    --<     vector :=  vector mod scalar;
+    ----------------------------------------------------------------------------
+    function "mod" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Common.Modulo);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType modulo operator.
+    --<
+    --< @description
+    --< Return the component-wise modulo of a vector and a scalar.
+    --<     vector :=  scalar mod vector;
+    ----------------------------------------------------------------------------
+    function "mod" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Common.Modulo);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_Float power operator.
+    --<
+    --< @description
+    --< Take the left float to the right power.
+    --<    scalar := left ** right;
+    --<
+    --< @param left
+    --< The parameter to the left of the "**", power, operator.
+    --<
+    --< @param right
+    --< The parameter to the right of the "**", power, operator.
+    --<
+    --< @return
+    --< The left value taken to the right power.
     ----------------------------------------------------------------------------
     function "**" (left, right : in     Vkm_Float) return Vkm_Float renames Vulkan.Math.Exp.Pow;
-    function "**" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** vector
-    function "**" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** scalar
-    function "**" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow); -- vector := scalar ** vector
+
 
     ----------------------------------------------------------------------------
-    -- GenFType Addition Operator
+    --< @summary
+    --< Vkm_GenFType power operator.
+    --<
+    --< @description
+    --< Apply the power operation component-wise on two vectors.
+    --<    vector := vector ** vector;
     ----------------------------------------------------------------------------
-    function "+" is new GFT.Apply_Func_IV_IV_RV("+"); -- vector := vector + vector
-    function "+" is new GFT.Apply_Func_IV_IS_RV("+"); -- vector := vector + scalar
-    function "+" is new GFT.Apply_Func_IS_IV_RV("+"); -- vector := scalar + vector
+    function "**" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow);
+
 
     ----------------------------------------------------------------------------
-    -- GenFType Subtraction Operator
+    --< @summary
+    --< Vkm_GenFType power operator.
+    --<
+    --< @description
+    --< Apply the power operation component-wise on a vector and a scalar.
+    --<    vector := vector ** scalar;
     ----------------------------------------------------------------------------
-    function "-" is new GFT.Apply_Func_IV_IV_RV("-"); -- vector := vector - vector
-    function "-" is new GFT.Apply_Func_IV_IS_RV("-"); -- vector := vector - scalar
-    function "-" is new GFT.Apply_Func_IS_IV_RV("-"); -- vector := scalar - vector
+    function "**" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType power operator.
+    --<
+    --< @description
+    --< Apply the power operation component-wise on a vector and a scalar.
+    --<    vector := scalar ** vector;
+    ----------------------------------------------------------------------------
+    function "**" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType addition operator.
+    --<
+    --< @description
+    --< Apply the additon operation component-wise on two vectors.
+    --<    vector := vector + vector;
+    ----------------------------------------------------------------------------
+    function "+" is new GFT.Apply_Func_IV_IV_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType addition operator.
+    --<
+    --< @description
+    --< Apply the additon operation component-wise on a vector and a scalar.
+    --<    vector := vector + scalar;
+    ----------------------------------------------------------------------------
+    function "+" is new GFT.Apply_Func_IV_IS_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType addition operator.
+    --<
+    --< @description
+    --< Apply the additon operation component-wise on a vector and a scalar.
+    --<    vector := scalar + vector;
+    ----------------------------------------------------------------------------
+    function "+" is new GFT.Apply_Func_IS_IV_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType subtraction operator.
+    --<
+    --< @description
+    --< Apply the subtraction operation component-wise on two vectors.
+    --<    vector := vector - vector;
+    ----------------------------------------------------------------------------
+    function "-" is new GFT.Apply_Func_IV_IV_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType subtraction operator.
+    --<
+    --< @description
+    --< Apply the subtraction operation component-wise on a vector and a scalar.
+    --<    vector := vector - scalar;
+    ----------------------------------------------------------------------------
+    function "-" is new GFT.Apply_Func_IV_IS_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType subtraction operator.
+    --<
+    --< @description
+    --< Apply the subtraction operation component-wise on a vector and a scalar.
+    --<    vector := scalar - vector;
+    ----------------------------------------------------------------------------
+    function "-" is new GFT.Apply_Func_IS_IV_RV("-");
 
     ----------------------------------------------------------------------------
     -- GenFType Remainder Operator
@@ -1607,13 +1849,87 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     -- GenDType Concatenation Operators
     ----------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two Vkm_GenDType vectors.
+    --<    vector := vector & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left vector.
+    ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_GenDType) return Vkm_GenDType renames GDT.Concatenate;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a Vkm_Double and a Vkm_GenDType vector.
+    --<    vector := scalar & vector
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right vector to left scalar.
+    ----------------------------------------------------------------------------
     function "&" (left        : in     Vkm_Double   ;
                   right       : in     Vkm_GenDType) return Vkm_GenDType is
         (GDT.Make_GenType(left).Concatenate(right)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate a Vkm_Double and a Vkm_GenDType vector.
+    --<    vector := vector & scalar
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left vector.
+    ----------------------------------------------------------------------------
     function "&" (left        : in     Vkm_GenDType;
                   right       : in     Vkm_Double   ) return Vkm_GenDType is
         (left.Concatenate(GDT.Make_GenType(right))) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType concatenation operator.
+    --<
+    --< @description
+    --< Concatenate two Vkm_Doubles to form a Vkm_GenDType vector.
+    --<    vector := scalar & scalar
+    --<
+    --< @param left
+    --< Parameter to the left of the '&' symbol.
+    --<
+    --< @param right
+    --< Parameter to the right of the '&' symbol.
+    --<
+    --< @return
+    --< Append right scalar to left scalar.
+    ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_Double   ) return Vkm_GenDType is
         (GDT.Make_GenType(left, right)) with Inline;
 
