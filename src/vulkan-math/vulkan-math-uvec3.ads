@@ -29,6 +29,12 @@ with Vulkan.Math.Uvec2;
 use Vulkan.Math.GenUType;
 use Vulkan.Math.Uvec2;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math Basic Types
+--------------------------------------------------------------------------------
+--< @summary
+--< This package provides a 32-bit unsigned integer vector type with 3 components.
+--------------------------------------------------------------------------------
 package Vulkan.Math.Uvec3 is
     pragma Preelaborate;
     pragma Pure;
@@ -42,65 +48,93 @@ package Vulkan.Math.Uvec3 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Uvec3:
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a default vector with all components set to 0.0.
-    --
-    -- @returns a Uvec3 with all components set to 0.0.
+    --< @summary
+    --< Constructor for Vkm_Uvec3 type.
+    --<
+    --< @description
+    --< Produce a default vector with all components set to 0.
+    --<
+    --< @return 
+    --< A Uvec3 with all components set to 0.
     ----------------------------------------------------------------------------
     function Make_Uvec3 return Vkm_Uvec3 is
         (GUT.Make_GenType(Last_Index => 2, value => 0)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector with all components set to the same value.
-    --
-    -- @param[in]     scalar_value The value to set all components to.
-    --
-    -- @returns A Uvec3 with all components set to scalar_value.
+    --< @summary
+    --< Constructor for Vkm_Uvec3 type.
+    --<
+    --< @description
+    --< Produce a vector with all components set to the same value.
+    --<
+    --< @param scalar_value
+    --< The value to set all components to.
+    --<
+    --< @return 
+    --< A Uvec3 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (scalar_value : in     Vkm_Uint) return Vkm_Uvec3 is
         (GUT.Make_GenType(Last_Index => 2, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by copying components from an existing vector.
-    --
-    -- @param[in]     vec3_value The Uvec3 to copy components from.
-    --
-    -- @returns A Uvec3 with all of its components set equal to the corresponding
-    --          components of vec3_value.
+    --< @summary
+    --< Constructor for Vkm_Uvec3 type.
+    --<
+    --< @description
+    --< Produce a vector by copying components from an existing vector.
+    --<
+    --< @param vec3_value 
+    --< The Uvec3 to copy components from.
+    --<
+    --< @return 
+    --< A Uvec3 with all of its components set equal to the corresponding
+    --< components of vec3_value.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (vec3_value : in     Vkm_Uvec3) return Vkm_Uvec3 is
         (GUT.Make_GenType(vec3_value.data(0),vec3_value.data(1), vec3_value.data(2))) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by specifying the values for each of its components.
-    --
-    -- @param[in]     value1 Value for component 1.
-    -- @param[in]     value2 Value for component 2.
-    -- @param[in]     value3 Value for componetn 3.
-    -- @param[in]     Value4 value for component 4.
-    --
-    -- @return A Uvec3 with all components set as specified.
+    --< @summary
+    --< Constructor for Vkm_Uvec3 type.
+    --<
+    --< @description
+    --< Produce a vector by specifying the values for each of its components.
+    --<
+    --< @param value1
+    --< Value for component 1.
+    --<
+    --< @param value2
+    --< Value for component 2.
+    --<
+    --< @param value3
+    --< Value for component 3.
+    --<
+    --< @return A Uvec3 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (value1, value2, value3 : in    Vkm_Uint) return Vkm_Uvec3
         renames GUT.Make_GenType;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by concatenating a scalar float with a vec2.
-    --
-    -- Uvec3 = [scalar_value, vec2_value]
-    --
-    -- @param[in]     scalar_value The scalar value to concatenate with the Uvec3.
-    -- @param[in]     vec2_value   The vec2 to concatenate to the scalar value.
-    --
-    -- @returns The instance of Uvec3.
+    --< @summary
+    --< Constructor for Vkm_Uvec3 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating a scalar float with a vec2.
+    --<
+    --<     Uvec3 = [scalar_value, vec2_value]
+    --<
+    --< @param scalar_value
+    --< The scalar value to concatenate with the Uvec3.
+    --<
+    --< @param vec2_value
+    --< The vec2 to concatenate to the scalar value.
+    --<
+    --< @return 
+    --< The instance of Uvec3.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (scalar_value : in     Vkm_Uint;
                          vec2_value   : in     Vkm_Uvec2 ) return Vkm_Uvec3 is
@@ -108,20 +142,26 @@ package Vulkan.Math.Uvec3 is
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by concatenating a scalar float with a vec2.
-    --
-    -- Uvec3 = [vec2_value, scalar_value]
-    --
-    -- @param[in]     vec2_value   The vec2 to concatenate to the scalar value.
-    -- @param[in]     scalar_value The scalar value to concatenate with the Uvec3.
-    --
-    -- @returns The instance of Uvec3.
+    --< @summary
+    --< Constructor for Vkm_Uvec3 type.
+    --<
+    --< @description
+    --< Produce a vector by concatenating a scalar float with a vec2.
+    --<
+    --<     Uvec3 = [vec2_value, scalar_value]
+    --<
+    --< @param vec2_value
+    --< The vec2 to concatenate to the scalar value.
+    --<
+    --< @param scalar_value
+    --< The scalar value to concatenate with the Uvec3.
+    --<
+    --< @return 
+    --< The instance of Uvec3.
     ----------------------------------------------------------------------------
     function Make_Uvec3 (vec2_value   : in     Vkm_Uvec2;
                          scalar_value : in     Vkm_Uint ) return Vkm_Uvec3 is
         (Make_Uvec3(vec2_value.x, vec2_value.y, scalar_value)) with Inline;
-
 
 
 end Vulkan.Math.Uvec3;

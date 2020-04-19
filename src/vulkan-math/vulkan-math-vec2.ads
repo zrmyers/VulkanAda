@@ -21,15 +21,21 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a Single Precision Floating Point Vector with 2 components.
---------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
 use Vulkan.Math.GenFType;
 
+--------------------------------------------------------------------------------
+--< @group Vulkan Math Basic Types
+--------------------------------------------------------------------------------
+--< @summary
+--< This package provides a single precision floating point vector type with 
+--< 2 components.
+--------------------------------------------------------------------------------
 package Vulkan.Math.Vec2 is
     pragma Preelaborate;
     pragma Pure;
 
+    --< A 2-component single precision floating point vector.
     subtype Vkm_Vec2 is Vkm_GenFType(Last_Index => 1);
 
     ----------------------------------------------------------------------------
@@ -39,48 +45,68 @@ package Vulkan.Math.Vec2 is
     ----------------------------------------------------------------------------
     -- The following are explicit constructors for Vec4:
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a default vector with all components set to 0.0.
-    --
-    -- @returns a Vec2 with all components set to 0.0.
+    --< @summary
+    --< Constructor for Vkm_Vec2 type.
+    --<
+    --< @description
+    --< Produce a default vector with all components set to 0.0.
+    --<
+    --< @return 
+    --< A Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Vec2 return Vkm_Vec2 is
         (GFT.Make_GenType(Last_Index => 1, value => 0.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector with all components set to the same value.
-    --
-    -- @param[in]     scalar_value The value to set all components to.
-    --
-    -- @returns A Vec2 with all components set to scalar_value.
+    --< @summary
+    --< Constructor for Vkm_Vec2 type.
+    --<
+    --< @description
+    --< Produce a vector with all components set to the same value.
+    --<
+    --< @param scalar_value
+    --< The value to set all components to.
+    --<
+    --< @return
+    --< A Vec2 with all components set to scalar_value.
     ----------------------------------------------------------------------------
     function Make_Vec2 (scalar_value : in     Vkm_Float) return Vkm_Vec2 is
         (GFT.Make_GenType(Last_Index => 1, value => scalar_value)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by copying components from an existing vector.
-    --
-    -- @param[in]     vec2_value The vec2 to copy components from.
-    --
-    -- @returns A vec2 with all of its components set equal to the corresponding
-    --          components of vec2_value.
+    --< @summary
+    --< Constructor for Vkm_Vec2 type.
+    --<
+    --< @description
+    --< Produce a vector by copying components from an existing vector.
+    --<
+    --< @param vec2_value
+    --< The vec2 to copy components from.
+    --<
+    --< @return
+    --< A vec2 with all of its components set equal to the corresponding
+    --< components of vec2_value.
     ----------------------------------------------------------------------------
     function Make_Vec2 (vec2_value : in     Vkm_Vec2) return Vkm_Vec2 is
         (GFT.Make_GenType(vec2_value.x,vec2_value.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
-    -- @brief
-    -- Produce a vector by specifying the values for each of its components.
-    --
-    -- @param[in]     value1 Value for component 1.
-    -- @param[in]     value2 Value for component 2.
-    --
-    -- @return A Vec2 with all components set as specified.
+    --< @summary
+    --< Constructor for Vkm_Vec2 type.
+    --<
+    --< @description
+    --< Produce a vector by specifying the values for each of its components.
+    --<
+    --< @param value1
+    --< Value for component 1.
+    --<
+    --< @param value2
+    --< Value for component 2.
+    --<
+    --< @return A Vec2 with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Vec2 (value1, value2 : in    Vkm_Float) return Vkm_Vec2
         renames GFT.Make_GenType;
