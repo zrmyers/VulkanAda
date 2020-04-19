@@ -1780,38 +1780,215 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     function "-" is new GFT.Apply_Func_IS_IV_RV("-");
 
+
     ----------------------------------------------------------------------------
-    -- GenFType Remainder Operator
+    --< @summary
+    --< Vkm_GenFType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of left by right:
+    --<     scalar := left rem right;
+    --<
+    --< @param left
+    --< The numerator in the division for which the remainder is returned.
+    --<
+    --< @param right
+    --< The denominator in the division for which the remainder is returned.
+    --< 
+    --< @return
+    --< The remainder of left divided by right.
     ----------------------------------------------------------------------------
     function "rem" (left, right : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Remainder;
-    function "rem" is new GFT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
-    function "rem" is new GFT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
-    function "rem" is new GFT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector
-
-    ----------------------------------------------------------------------------
-    -- GenFType Multiplication Operator
-    ----------------------------------------------------------------------------
-    function "*" is new GFT.Apply_Func_IV_IV_RV("*"); -- vector := vector * vector
-    function "*" is new GFT.Apply_Func_IV_IS_RV("*"); -- vector := vector * scalar
-    function "*" is new GFT.Apply_Func_IS_IV_RV("*"); -- vector := scalar * vector
-
-    ----------------------------------------------------------------------------
-    -- GenFType Division Operator
-    ----------------------------------------------------------------------------
-    function "/" is new GFT.Apply_Func_IV_IV_RV("/"); -- vector := vector / vector
-    function "/" is new GFT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
-    function "/" is new GFT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
 
 
     ----------------------------------------------------------------------------
-    -- GenFType Relational Operators
+    --< @summary
+    --< Vkm_GenFType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of for two vectors.
+    --<     vector := vector rem vector;
+    ----------------------------------------------------------------------------
+    function "rem" is new GFT.Apply_Func_IV_IV_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of for a vector and a scalar.
+    --<     vector := vector rem scalar;
+    ----------------------------------------------------------------------------
+    function "rem" is new GFT.Apply_Func_IV_IS_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of for a vector and a scalar.
+    --<     vector := scalar rem vector;
+    ----------------------------------------------------------------------------
+    function "rem" is new GFT.Apply_Func_IS_IV_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType multiplication operator.
+    --<
+    --< @description
+    --< Apply the multiplication operation component-wise on two vectors.
+    --<    vector := vector * vector;
+    ----------------------------------------------------------------------------
+    function "*" is new GFT.Apply_Func_IV_IV_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType multiplication operator.
+    --<
+    --< @description
+    --< Apply the multiplication operation component-wise on a vector and a scalar.
+    --<    vector := vector * scalar;
+    ----------------------------------------------------------------------------
+    function "*" is new GFT.Apply_Func_IV_IS_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType multiplication operator.
+    --<
+    --< @description
+    --< Apply the multiplication operation component-wise on a vector and a scalar.
+    --<    vector := scalar * vector;
+    ----------------------------------------------------------------------------
+    function "*" is new GFT.Apply_Func_IS_IV_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType division operator.
+    --<
+    --< @description
+    --< Calculate the component-wise division of two vectors.
+    --<     vector := vector / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GFT.Apply_Func_IV_IV_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType division operator.
+    --<
+    --< @description
+    --< Calculate the component-wise division of a vector and a scalar.
+    --<     vector := vector / scalar;
+    ----------------------------------------------------------------------------
+    function "/" is new GFT.Apply_Func_IV_IS_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType division operator.
+    --<
+    --< @description
+    --< Calculate the component-wise division of a vector and a scalar.
+    --<     vector := scalar / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GFT.Apply_Func_IS_IV_RV("/");
+
+
+----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType less than operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise less than operator on two vectors.
+    --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
     function "<"  is new Apply_Func_IVF_IVF_RVB("<" );
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType less than or equal to operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise less than or equal to operator on 
+    --< two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function "<=" is new Apply_Func_IVF_IVF_RVB("<=");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType greater than operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise greater than operator on 
+    --< two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function ">"  is new Apply_Func_IVF_IVF_RVB(">" );
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType greater than or equal operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise greater than or equal to operator 
+    --< on two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function ">=" is new Apply_Func_IVF_IVF_RVB(">=");
-    function "="  is new Apply_Func_IVF_IVF_RVB("=" );
-    function "/=" is new Apply_Func_IVF_IVF_RVB("/=");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType equality operator.
+    --<
+    --< @description
+    --< Return true if each component of two vectors are equal to each other. 
+    --< Otherwise return false.
+    --<     is_equal := vector = vector;
+    --<
+    --< @param left
+    --< The left vector in the comparison.
+    --< 
+    --< @param right
+    --< The right vector in the comparison.
+    --<
+    --< @return
+    --< Whether the two vectors are equal to each other.
+    ----------------------------------------------------------------------------
+    function "="  (left, right : in     Vkm_GenFType) return Vkm_Bool is
+        (Is_All(Equal(left, right))) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenFType inequality operator.
+    --<
+    --< @description
+    --< Return true if any component of the two vectors are not equal to each other. 
+    --< Otherwise return false.
+    --<     is_equal := vector /= vector;
+    --<
+    --< @param left
+    --< The left vector in the comparison.
+    --< 
+    --< @param right
+    --< The right vector in the comparison.
+    --<
+    --< @return
+    --< Whether the two vectors are equal to each other.
+    ----------------------------------------------------------------------------
+    function "/=" (left, right : in     Vkm_GenFType) return Vkm_Bool is
+        (Is_Any(Not_Equal(left, right))) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -1843,18 +2020,20 @@ package Vulkan.Math.Operators is
     --    - ">",  Greater than operator
     --    - "<=", Less than or equal to operator
     --    - ">=", Greater than or equal to operator
+    --
+    -- A summary of relational operators which return a scalar boolean value.
     --    - "=",  Equality operator
-    --    - "/=", Non-Equality operator (Implicitly defined)
+    --    - "/=", Non-Equality operator
     --
     ----------------------------------------------------------------------------
     -- GenDType Concatenation Operators
     ----------------------------------------------------------------------------
     ----------------------------------------------------------------------------
     --< @summary
-    --< Vkm_GenDType concatenation operator.
+    --< GenDType concatenation operator.
     --<
     --< @description
-    --< Concatenate two Vkm_GenDType vectors.
+    --< Concatenate two GenDType vectors.
     --<    vector := vector & vector
     --<
     --< @param left
@@ -1933,81 +2112,399 @@ package Vulkan.Math.Operators is
     function "&" (left, right : in     Vkm_Double   ) return Vkm_GenDType is
         (GDT.Make_GenType(left, right)) with Inline;
 
+
     ----------------------------------------------------------------------------
-    -- GenDType Unary Plus Operator
+    --< @summary
+    --< Vkm_GenDType unary plus operator.
+    --<
+    --< @description
+    --< Return the unmodified vector.
+    --<     vector :=  +vector;
     ----------------------------------------------------------------------------
     function "+" is new GDT.Apply_Func_IV_RV("+");
 
+
     ----------------------------------------------------------------------------
-    -- GenDType Unary Minus Operator
+    --< @summary
+    --< Vkm_GenDType unary minus operator.
+    --<
+    --< @description
+    --< Return the negation of the vector.
+    --<     vector :=  -vector;
     ----------------------------------------------------------------------------
     function "-" is new GDT.Apply_Func_IV_RV("-");
 
-    ----------------------------------------------------------------------------
-    -- GenDType Absolute Value Operator
-    ----------------------------------------------------------------------------
-    function "abs" is new GDT.Apply_Func_IV_RV(Vulkan.Math.Common.Absolute_Value); -- vector := abs vec
 
     ----------------------------------------------------------------------------
-    -- GenDType Modulus Operator
+    --< @summary
+    --< Vkm_GenDType absolute value operator.
+    --<
+    --< @description
+    --< Return the absolute value for each component of the vector.
+    --<     vector :=  abs vector;
     ----------------------------------------------------------------------------
-    function "mod" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Common.Modulo); -- vector := vector mod vector
-    function "mod" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Common.Modulo); -- vector := vector mod scalar
-    function "mod" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Common.Modulo); -- vector := scalar mod vector
+    function "abs" is new GDT.Apply_Func_IV_RV(Vulkan.Math.Common.Absolute_Value);
+
 
     ----------------------------------------------------------------------------
-    -- GenDType Power Operator
+    --< @summary
+    --< Vkm_GenDType modulo operator.
+    --<
+    --< @description
+    --< Return the component-wise modulo of the two vectors.
+    --<     vector :=  vector mod vector;
+    ----------------------------------------------------------------------------
+    function "mod" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Common.Modulo);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType modulo operator.
+    --<
+    --< @description
+    --< Return the component-wise modulo of a vector and a scalar.
+    --<     vector :=  vector mod scalar;
+    ----------------------------------------------------------------------------
+    function "mod" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Common.Modulo);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType modulo operator.
+    --<
+    --< @description
+    --< Return the component-wise modulo of a vector and a scalar.
+    --<     vector :=  scalar mod vector;
+    ----------------------------------------------------------------------------
+    function "mod" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Common.Modulo);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_Double power operator.
+    --<
+    --< @description
+    --< Take the left float to the right power.
+    --<    scalar := left ** right;
+    --<
+    --< @param left
+    --< The parameter to the left of the "**", power, operator.
+    --<
+    --< @param right
+    --< The parameter to the right of the "**", power, operator.
+    --<
+    --< @return
+    --< The left value taken to the right power.
     ----------------------------------------------------------------------------
     function "**" (left, right : in     Vkm_Double) return Vkm_Double renames Vulkan.Math.Exp.Pow;
-    function "**" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** vector
-    function "**" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow); -- vector := vector ** scalar
-    function "**" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow); -- vector := scalar ** vector
+
 
     ----------------------------------------------------------------------------
-    -- GenDType Addition Operator
+    --< @summary
+    --< Vkm_GenDType power operator.
+    --<
+    --< @description
+    --< Apply the power operation component-wise on two vectors.
+    --<    vector := vector ** vector;
     ----------------------------------------------------------------------------
-    function "+" is new GDT.Apply_Func_IV_IV_RV("+"); -- vector := vector + vector
-    function "+" is new GDT.Apply_Func_IV_IS_RV("+"); -- vector := vector + scalar
-    function "+" is new GDT.Apply_Func_IS_IV_RV("+"); -- vector := scalar + vector
+    function "**" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow);
+
 
     ----------------------------------------------------------------------------
-    -- GenDType Subtraction Operator
+    --< @summary
+    --< Vkm_GenDType power operator.
+    --<
+    --< @description
+    --< Apply the power operation component-wise on a vector and a scalar.
+    --<    vector := vector ** scalar;
     ----------------------------------------------------------------------------
-    function "-" is new GDT.Apply_Func_IV_IV_RV("-"); -- vector := vector - vector
-    function "-" is new GDT.Apply_Func_IV_IS_RV("-"); -- vector := vector - scalar
-    function "-" is new GDT.Apply_Func_IS_IV_RV("-"); -- vector := scalar - vector
+    function "**" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow);
+
 
     ----------------------------------------------------------------------------
-    -- GenDType Remainder Operator
+    --< @summary
+    --< Vkm_GenDType power operator.
+    --<
+    --< @description
+    --< Apply the power operation component-wise on a vector and a scalar.
+    --<    vector := scalar ** vector;
+    ----------------------------------------------------------------------------
+    function "**" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType addition operator.
+    --<
+    --< @description
+    --< Apply the additon operation component-wise on two vectors.
+    --<    vector := vector + vector;
+    ----------------------------------------------------------------------------
+    function "+" is new GDT.Apply_Func_IV_IV_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType addition operator.
+    --<
+    --< @description
+    --< Apply the additon operation component-wise on a vector and a scalar.
+    --<    vector := vector + scalar;
+    ----------------------------------------------------------------------------
+    function "+" is new GDT.Apply_Func_IV_IS_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType addition operator.
+    --<
+    --< @description
+    --< Apply the additon operation component-wise on a vector and a scalar.
+    --<    vector := scalar + vector;
+    ----------------------------------------------------------------------------
+    function "+" is new GDT.Apply_Func_IS_IV_RV("+");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType subtraction operator.
+    --<
+    --< @description
+    --< Apply the subtraction operation component-wise on two vectors.
+    --<    vector := vector - vector;
+    ----------------------------------------------------------------------------
+    function "-" is new GDT.Apply_Func_IV_IV_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType subtraction operator.
+    --<
+    --< @description
+    --< Apply the subtraction operation component-wise on a vector and a scalar.
+    --<    vector := vector - scalar;
+    ----------------------------------------------------------------------------
+    function "-" is new GDT.Apply_Func_IV_IS_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType subtraction operator.
+    --<
+    --< @description
+    --< Apply the subtraction operation component-wise on a vector and a scalar.
+    --<    vector := scalar - vector;
+    ----------------------------------------------------------------------------
+    function "-" is new GDT.Apply_Func_IS_IV_RV("-");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of left by right:
+    --<     scalar := left rem right;
+    --<
+    --< @param left
+    --< The numerator in the division for which the remainder is returned.
+    --<
+    --< @param right
+    --< The denominator in the division for which the remainder is returned.
+    --< 
+    --< @return
+    --< The remainder of left divided by right.
     ----------------------------------------------------------------------------
     function "rem" (left, right : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Remainder;
-    function "rem" is new GDT.Apply_Func_IV_IV_RV("rem"); -- vector := vector rem vector
-    function "rem" is new GDT.Apply_Func_IV_IS_RV("rem"); -- vector := vector rem scalar
-    function "rem" is new GDT.Apply_Func_IS_IV_RV("rem"); -- vector := scalar rem vector
-
-    ----------------------------------------------------------------------------
-    -- GenDType Multiplication Operator
-    ----------------------------------------------------------------------------
-    function "*" is new GDT.Apply_Func_IV_IV_RV("*"); -- vector := vector * vector
-    function "*" is new GDT.Apply_Func_IV_IS_RV("*"); -- vector := vector * scalar
-    function "*" is new GDT.Apply_Func_IS_IV_RV("*"); -- vector := scalar * vector
-
-    ----------------------------------------------------------------------------
-    -- GenDType Division Operator
-    ----------------------------------------------------------------------------
-    function "/" is new GDT.Apply_Func_IV_IV_RV("/"); -- vector := vector / vector
-    function "/" is new GDT.Apply_Func_IV_IS_RV("/"); -- vector := vector / scalar
-    function "/" is new GDT.Apply_Func_IS_IV_RV("/"); -- vector := scalar / vector
 
 
     ----------------------------------------------------------------------------
-    -- GenDType Relational Operators
+    --< @summary
+    --< Vkm_GenDType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of for two vectors.
+    --<     vector := vector rem vector;
     ----------------------------------------------------------------------------
-    function "<"  is new Apply_Func_IVD_IVD_RVB("<");
+    function "rem" is new GDT.Apply_Func_IV_IV_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of for a vector and a scalar.
+    --<     vector := vector rem scalar;
+    ----------------------------------------------------------------------------
+    function "rem" is new GDT.Apply_Func_IV_IS_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType remainder operator.
+    --<
+    --< @description
+    --< Calculate the remainder of division of for a vector and a scalar.
+    --<     vector := scalar rem vector;
+    ----------------------------------------------------------------------------
+    function "rem" is new GDT.Apply_Func_IS_IV_RV("rem");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType multiplication operator.
+    --<
+    --< @description
+    --< Apply the multiplication operation component-wise on two vectors.
+    --<    vector := vector * vector;
+    ----------------------------------------------------------------------------
+    function "*" is new GDT.Apply_Func_IV_IV_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType multiplication operator.
+    --<
+    --< @description
+    --< Apply the multiplication operation component-wise on a vector and a scalar.
+    --<    vector := vector * scalar;
+    ----------------------------------------------------------------------------
+    function "*" is new GDT.Apply_Func_IV_IS_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType multiplication operator.
+    --<
+    --< @description
+    --< Apply the multiplication operation component-wise on a vector and a scalar.
+    --<    vector := scalar * vector;
+    ----------------------------------------------------------------------------
+    function "*" is new GDT.Apply_Func_IS_IV_RV("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType division operator.
+    --<
+    --< @description
+    --< Calculate the component-wise division of two vectors.
+    --<     vector := vector / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GDT.Apply_Func_IV_IV_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType division operator.
+    --<
+    --< @description
+    --< Calculate the component-wise division of a vector and a scalar.
+    --<     vector := vector / scalar;
+    ----------------------------------------------------------------------------
+    function "/" is new GDT.Apply_Func_IV_IS_RV("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType division operator.
+    --<
+    --< @description
+    --< Calculate the component-wise division of a vector and a scalar.
+    --<     vector := scalar / vector;
+    ----------------------------------------------------------------------------
+    function "/" is new GDT.Apply_Func_IS_IV_RV("/");
+
+
+----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType less than operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise less than operator on two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
+    function "<"  is new Apply_Func_IVD_IVD_RVB("<" );
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType less than or equal to operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise less than or equal to operator on 
+    --< two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function "<=" is new Apply_Func_IVD_IVD_RVB("<=");
-    function ">"  is new Apply_Func_IVD_IVD_RVB(">");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType greater than operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise greater than operator on 
+    --< two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
+    function ">"  is new Apply_Func_IVD_IVD_RVB(">" );
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType greater than or equal operator.
+    --<
+    --< @description
+    --< Return the result of the component-wise greater than or equal to operator 
+    --< on two vectors.
+    --<     bool_vector := vector < vector;
+    ----------------------------------------------------------------------------
     function ">=" is new Apply_Func_IVD_IVD_RVB(">=");
-    function "="  is new Apply_Func_IVD_IVD_RVB("=");
-    function "/=" is new Apply_Func_IVD_IVD_RVB("/=");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType equality operator.
+    --<
+    --< @description
+    --< Return true if each component of two vectors are equal to each other. 
+    --< Otherwise return false.
+    --<     is_equal := vector = vector;
+    --<
+    --< @param left
+    --< The left vector in the comparison.
+    --< 
+    --< @param right
+    --< The right vector in the comparison.
+    --<
+    --< @return
+    --< Whether the two vectors are equal to each other.
+    ----------------------------------------------------------------------------
+    function "="  (left, right : in     Vkm_GenDType) return Vkm_Bool is
+        (Is_All(Equal(left, right))) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Vkm_GenDType inequality operator.
+    --<
+    --< @description
+    --< Return true if any component of the two vectors are not equal to each other. 
+    --< Otherwise return false.
+    --<     is_equal := vector /= vector;
+    --<
+    --< @param left
+    --< The left vector in the comparison.
+    --< 
+    --< @param right
+    --< The right vector in the comparison.
+    --<
+    --< @return
+    --< Whether the two vectors are equal to each other.
+    ----------------------------------------------------------------------------
+    function "/=" (left, right : in     Vkm_GenDType) return Vkm_Bool is
+        (Is_Any(Not_Equal(left, right))) with Inline;
 
 end Vulkan.Math.Operators;
