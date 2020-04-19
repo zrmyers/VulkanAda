@@ -115,6 +115,16 @@ GNATdoc.DocumentationIndex = [
     ]
   },
   {
+    "label": "Vulkan Math GenMatrix",
+    "items": [
+      {
+        "label": "Vulkan.Math.GenMatrix",
+        "qualifier": "",
+        "file": "docs/vulkan__math__genmatrix___spec.html"
+      }
+    ]
+  },
+  {
     "label": "Vulkan Math GenType",
     "items": [
       {

@@ -269,66 +269,66 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IS_IS_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10089C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10112C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10089"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10112"
     },
     {
       "label": "Apply_Func_IS_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L9888C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L9911C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9888"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9911"
     },
     {
       "label": "Apply_Func_IV_IS_IS_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10061C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10084C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10061"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10084"
     },
     {
       "label": "Apply_Func_IV_IS_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L9912C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L9935C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9912"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9935"
     },
     {
       "label": "Apply_Func_IV_IV_IS_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10033C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10056C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10033"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10056"
     },
     {
       "label": "Apply_Func_IV_IV_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10006C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10029C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10006"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10029"
     },
     {
       "label": "Apply_Func_IV_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L9864C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L9887C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9864"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9887"
     },
     {
       "label": "Apply_Func_IV_OV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L9979C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10002C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9979"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10002"
     },
     {
       "label": "Apply_Func_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L9933C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L9956C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9933"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L9956"
     },
     {
       "label": "Apply_Func_IVD_IVD_IVB_RVD",

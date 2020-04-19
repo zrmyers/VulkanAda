@@ -48,6 +48,10 @@ GNATdoc.SourceFileIndex = [
     "srcHref": "srcs/vulkan-math-genitype.ads.html"
   },
   {
+    "label": "vulkan-math-genmatrix.ads",
+    "srcHref": "srcs/vulkan-math-genmatrix.ads.html"
+  },
+  {
     "label": "vulkan-math-gentype.ads",
     "srcHref": "srcs/vulkan-math-gentype.ads.html"
   },

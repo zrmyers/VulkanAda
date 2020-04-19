@@ -1,7 +1,11 @@
 GNATdoc.InheritanceIndex = [
   {
+    "label": "Vkm_GenMatrix",
+    "docHref": "docs/vulkan__math__genmatrix___spec.html#L72C10"
+  },
+  {
     "label": "Vkm_GenType",
-    "docHref": "docs/vulkan__math__gentype___spec.html#L91C10",
+    "docHref": "docs/vulkan__math__gentype___spec.html#L92C10",
     "inherited": [
       {
         "label": "Vkm_GenBType",
