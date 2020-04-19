@@ -29,7 +29,7 @@ GNATdoc.Documentation = {
         {
           "label": "Cross",
           "qualifier": "",
-          "line": 202,
+          "line": 199,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -49,7 +49,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 202,
+                  "number": 199,
                   "children": [
                     {
                       "kind": "span",
@@ -70,7 +70,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Cross",
-                      "href": "docs/vulkan__math__geometry___spec.html#L202C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L199C14"
                     },
                     {
                       "kind": "span",
@@ -86,7 +86,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L202C21"
+                      "href": "docs/vulkan__math__geometry___spec.html#L199C21"
                     },
                     {
                       "kind": "span",
@@ -102,7 +102,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__geometry___spec.html#L202C24"
+                      "href": "docs/vulkan__math__geometry___spec.html#L199C24"
                     },
                     {
                       "kind": "span",
@@ -229,7 +229,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 202,
+              "line": 199,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vec3.Vkm_Vec3",
@@ -249,7 +249,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "y",
-              "line": 202,
+              "line": 199,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.Vec3.Vkm_Vec3",
@@ -285,7 +285,7 @@ GNATdoc.Documentation = {
         {
           "label": "Cross",
           "qualifier": "",
-          "line": 226,
+          "line": 223,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -305,7 +305,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 226,
+                  "number": 223,
                   "children": [
                     {
                       "kind": "span",
@@ -326,7 +326,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Cross",
-                      "href": "docs/vulkan__math__geometry___spec.html#L226C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L223C14"
                     },
                     {
                       "kind": "span",
@@ -342,7 +342,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L226C21"
+                      "href": "docs/vulkan__math__geometry___spec.html#L223C21"
                     },
                     {
                       "kind": "span",
@@ -358,7 +358,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__geometry___spec.html#L226C24"
+                      "href": "docs/vulkan__math__geometry___spec.html#L223C24"
                     },
                     {
                       "kind": "span",
@@ -480,7 +480,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 226,
+              "line": 223,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Dvec3.Vkm_Dvec3",
@@ -500,7 +500,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "y",
-              "line": 226,
+              "line": 223,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.Dvec3.Vkm_Dvec3",
@@ -536,7 +536,7 @@ GNATdoc.Documentation = {
         {
           "label": "Distance",
           "qualifier": "",
-          "line": 106,
+          "line": 103,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -556,7 +556,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 106,
+                  "number": 103,
                   "children": [
                     {
                       "kind": "span",
@@ -577,7 +577,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Distance",
-                      "href": "docs/vulkan__math__geometry___spec.html#L106C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L103C14"
                     },
                     {
                       "kind": "span",
@@ -593,7 +593,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "p0",
-                      "href": "docs/vulkan__math__geometry___spec.html#L106C24"
+                      "href": "docs/vulkan__math__geometry___spec.html#L103C24"
                     },
                     {
                       "kind": "span",
@@ -609,7 +609,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "p1",
-                      "href": "docs/vulkan__math__geometry___spec.html#L106C28"
+                      "href": "docs/vulkan__math__geometry___spec.html#L103C28"
                     },
                     {
                       "kind": "span",
@@ -682,7 +682,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 107,
+                  "number": 104,
                   "children": [
                     {
                       "kind": "span",
@@ -794,7 +794,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "p0",
-              "line": 106,
+              "line": 103,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -814,7 +814,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "p1",
-              "line": 106,
+              "line": 103,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -850,7 +850,7 @@ GNATdoc.Documentation = {
         {
           "label": "Distance",
           "qualifier": "",
-          "line": 129,
+          "line": 126,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -870,7 +870,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 129,
+                  "number": 126,
                   "children": [
                     {
                       "kind": "span",
@@ -891,7 +891,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Distance",
-                      "href": "docs/vulkan__math__geometry___spec.html#L129C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L126C14"
                     },
                     {
                       "kind": "span",
@@ -907,7 +907,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "p0",
-                      "href": "docs/vulkan__math__geometry___spec.html#L129C24"
+                      "href": "docs/vulkan__math__geometry___spec.html#L126C24"
                     },
                     {
                       "kind": "span",
@@ -923,7 +923,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "p1",
-                      "href": "docs/vulkan__math__geometry___spec.html#L129C28"
+                      "href": "docs/vulkan__math__geometry___spec.html#L126C28"
                     },
                     {
                       "kind": "span",
@@ -996,7 +996,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 130,
+                  "number": 127,
                   "children": [
                     {
                       "kind": "span",
@@ -1108,7 +1108,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "p0",
-              "line": 129,
+              "line": 126,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -1128,7 +1128,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "p1",
-              "line": 129,
+              "line": 126,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -1164,7 +1164,7 @@ GNATdoc.Documentation = {
         {
           "label": "Dot",
           "qualifier": "",
-          "line": 154,
+          "line": 151,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -1184,7 +1184,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 154,
+                  "number": 151,
                   "children": [
                     {
                       "kind": "span",
@@ -1205,7 +1205,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Dot",
-                      "href": "docs/vulkan__math__geometry___spec.html#L154C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L151C14"
                     },
                     {
                       "kind": "span",
@@ -1221,7 +1221,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L154C19"
+                      "href": "docs/vulkan__math__geometry___spec.html#L151C19"
                     },
                     {
                       "kind": "span",
@@ -1237,7 +1237,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__geometry___spec.html#L154C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L151C22"
                     },
                     {
                       "kind": "span",
@@ -1359,7 +1359,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 154,
+              "line": 151,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -1379,7 +1379,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "y",
-              "line": 154,
+              "line": 151,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -1415,7 +1415,7 @@ GNATdoc.Documentation = {
         {
           "label": "Dot",
           "qualifier": "",
-          "line": 178,
+          "line": 175,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -1435,7 +1435,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 178,
+                  "number": 175,
                   "children": [
                     {
                       "kind": "span",
@@ -1456,7 +1456,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Dot",
-                      "href": "docs/vulkan__math__geometry___spec.html#L178C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L175C14"
                     },
                     {
                       "kind": "span",
@@ -1472,7 +1472,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L178C19"
+                      "href": "docs/vulkan__math__geometry___spec.html#L175C19"
                     },
                     {
                       "kind": "span",
@@ -1488,7 +1488,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__geometry___spec.html#L178C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L175C22"
                     },
                     {
                       "kind": "span",
@@ -1610,7 +1610,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 178,
+              "line": 175,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -1630,7 +1630,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "y",
-              "line": 178,
+              "line": 175,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -1666,7 +1666,7 @@ GNATdoc.Documentation = {
         {
           "label": "Face_Forward",
           "qualifier": "",
-          "line": 288,
+          "line": 285,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -1686,7 +1686,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 288,
+                  "number": 285,
                   "children": [
                     {
                       "kind": "span",
@@ -1707,7 +1707,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Face_Forward",
-                      "href": "docs/vulkan__math__geometry___spec.html#L288C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L285C14"
                     },
                     {
                       "kind": "span",
@@ -1718,7 +1718,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "n",
-                      "href": "docs/vulkan__math__geometry___spec.html#L288C27"
+                      "href": "docs/vulkan__math__geometry___spec.html#L285C27"
                     },
                     {
                       "kind": "span",
@@ -1734,7 +1734,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__geometry___spec.html#L288C30"
+                      "href": "docs/vulkan__math__geometry___spec.html#L285C30"
                     },
                     {
                       "kind": "span",
@@ -1750,7 +1750,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "nref",
-                      "href": "docs/vulkan__math__geometry___spec.html#L288C33"
+                      "href": "docs/vulkan__math__geometry___spec.html#L285C33"
                     },
                     {
                       "kind": "span",
@@ -1823,7 +1823,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 289,
+                  "number": 286,
                   "children": [
                     {
                       "kind": "span",
@@ -2022,7 +2022,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "n",
-              "line": 288,
+              "line": 285,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -2042,7 +2042,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "i",
-              "line": 288,
+              "line": 285,
               "column": 30,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -2062,7 +2062,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "nref",
-              "line": 288,
+              "line": 285,
               "column": 33,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -2098,7 +2098,7 @@ GNATdoc.Documentation = {
         {
           "label": "Face_Forward",
           "qualifier": "",
-          "line": 317,
+          "line": 314,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -2118,7 +2118,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 317,
+                  "number": 314,
                   "children": [
                     {
                       "kind": "span",
@@ -2139,7 +2139,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Face_Forward",
-                      "href": "docs/vulkan__math__geometry___spec.html#L317C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L314C14"
                     },
                     {
                       "kind": "span",
@@ -2150,7 +2150,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "n",
-                      "href": "docs/vulkan__math__geometry___spec.html#L317C27"
+                      "href": "docs/vulkan__math__geometry___spec.html#L314C27"
                     },
                     {
                       "kind": "span",
@@ -2166,7 +2166,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__geometry___spec.html#L317C30"
+                      "href": "docs/vulkan__math__geometry___spec.html#L314C30"
                     },
                     {
                       "kind": "span",
@@ -2182,7 +2182,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "nref",
-                      "href": "docs/vulkan__math__geometry___spec.html#L317C33"
+                      "href": "docs/vulkan__math__geometry___spec.html#L314C33"
                     },
                     {
                       "kind": "span",
@@ -2255,7 +2255,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 318,
+                  "number": 315,
                   "children": [
                     {
                       "kind": "span",
@@ -2454,7 +2454,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "n",
-              "line": 317,
+              "line": 314,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -2474,7 +2474,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "i",
-              "line": 317,
+              "line": 314,
               "column": 30,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -2494,7 +2494,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "nref",
-              "line": 317,
+              "line": 314,
               "column": 33,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -2530,7 +2530,7 @@ GNATdoc.Documentation = {
         {
           "label": "Mag",
           "qualifier": "",
-          "line": 67,
+          "line": 64,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -2550,7 +2550,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 67,
+                  "number": 64,
                   "children": [
                     {
                       "kind": "span",
@@ -2571,7 +2571,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mag",
-                      "href": "docs/vulkan__math__geometry___spec.html#L67C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L64C14"
                     },
                     {
                       "kind": "span",
@@ -2587,7 +2587,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L67C19"
+                      "href": "docs/vulkan__math__geometry___spec.html#L64C19"
                     },
                     {
                       "kind": "span",
@@ -2682,7 +2682,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 67,
+              "line": 64,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -2718,7 +2718,7 @@ GNATdoc.Documentation = {
         {
           "label": "Mag",
           "qualifier": "",
-          "line": 84,
+          "line": 81,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -2738,7 +2738,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 84,
+                  "number": 81,
                   "children": [
                     {
                       "kind": "span",
@@ -2759,7 +2759,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Mag",
-                      "href": "docs/vulkan__math__geometry___spec.html#L84C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L81C14"
                     },
                     {
                       "kind": "span",
@@ -2775,7 +2775,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L84C19"
+                      "href": "docs/vulkan__math__geometry___spec.html#L81C19"
                     },
                     {
                       "kind": "span",
@@ -2870,7 +2870,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 84,
+              "line": 81,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -2906,7 +2906,7 @@ GNATdoc.Documentation = {
         {
           "label": "Normalize",
           "qualifier": "",
-          "line": 242,
+          "line": 239,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -2926,7 +2926,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 242,
+                  "number": 239,
                   "children": [
                     {
                       "kind": "span",
@@ -2947,7 +2947,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Normalize",
-                      "href": "docs/vulkan__math__geometry___spec.html#L242C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L239C14"
                     },
                     {
                       "kind": "span",
@@ -2958,7 +2958,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L242C24"
+                      "href": "docs/vulkan__math__geometry___spec.html#L239C24"
                     },
                     {
                       "kind": "span",
@@ -3031,7 +3031,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 243,
+                  "number": 240,
                   "children": [
                     {
                       "kind": "span",
@@ -3125,7 +3125,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 242,
+              "line": 239,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3161,7 +3161,7 @@ GNATdoc.Documentation = {
         {
           "label": "Normalize",
           "qualifier": "",
-          "line": 259,
+          "line": 256,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -3181,7 +3181,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 259,
+                  "number": 256,
                   "children": [
                     {
                       "kind": "span",
@@ -3202,7 +3202,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Normalize",
-                      "href": "docs/vulkan__math__geometry___spec.html#L259C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L256C14"
                     },
                     {
                       "kind": "span",
@@ -3213,7 +3213,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__geometry___spec.html#L259C24"
+                      "href": "docs/vulkan__math__geometry___spec.html#L256C24"
                     },
                     {
                       "kind": "span",
@@ -3286,7 +3286,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 260,
+                  "number": 257,
                   "children": [
                     {
                       "kind": "span",
@@ -3380,7 +3380,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "x",
-              "line": 259,
+              "line": 256,
               "column": 24,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -3416,7 +3416,7 @@ GNATdoc.Documentation = {
         {
           "label": "Reflect",
           "qualifier": "",
-          "line": 340,
+          "line": 337,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -3440,7 +3440,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 340,
+                  "number": 337,
                   "children": [
                     {
                       "kind": "span",
@@ -3461,7 +3461,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Reflect",
-                      "href": "docs/vulkan__math__geometry___spec.html#L340C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L337C14"
                     },
                     {
                       "kind": "span",
@@ -3472,7 +3472,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__geometry___spec.html#L340C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L337C22"
                     },
                     {
                       "kind": "span",
@@ -3488,7 +3488,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "n",
-                      "href": "docs/vulkan__math__geometry___spec.html#L340C25"
+                      "href": "docs/vulkan__math__geometry___spec.html#L337C25"
                     },
                     {
                       "kind": "span",
@@ -3561,7 +3561,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 341,
+                  "number": 338,
                   "children": [
                     {
                       "kind": "span",
@@ -3723,7 +3723,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "i",
-              "line": 340,
+              "line": 337,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3743,7 +3743,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "n",
-              "line": 340,
+              "line": 337,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -3779,7 +3779,7 @@ GNATdoc.Documentation = {
         {
           "label": "Reflect",
           "qualifier": "",
-          "line": 363,
+          "line": 360,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -3803,7 +3803,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 363,
+                  "number": 360,
                   "children": [
                     {
                       "kind": "span",
@@ -3824,7 +3824,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Reflect",
-                      "href": "docs/vulkan__math__geometry___spec.html#L363C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L360C14"
                     },
                     {
                       "kind": "span",
@@ -3835,7 +3835,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__geometry___spec.html#L363C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L360C22"
                     },
                     {
                       "kind": "span",
@@ -3851,7 +3851,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "n",
-                      "href": "docs/vulkan__math__geometry___spec.html#L363C25"
+                      "href": "docs/vulkan__math__geometry___spec.html#L360C25"
                     },
                     {
                       "kind": "span",
@@ -3924,7 +3924,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 364,
+                  "number": 361,
                   "children": [
                     {
                       "kind": "span",
@@ -4086,7 +4086,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "i",
-              "line": 363,
+              "line": 360,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4106,7 +4106,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "n",
-              "line": 363,
+              "line": 360,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4142,7 +4142,7 @@ GNATdoc.Documentation = {
         {
           "label": "Refract",
           "qualifier": "",
-          "line": 392,
+          "line": 389,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -4166,7 +4166,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 392,
+                  "number": 389,
                   "children": [
                     {
                       "kind": "span",
@@ -4187,7 +4187,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Refract",
-                      "href": "docs/vulkan__math__geometry___spec.html#L392C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L389C14"
                     },
                     {
                       "kind": "span",
@@ -4198,7 +4198,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__geometry___spec.html#L392C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L389C22"
                     },
                     {
                       "kind": "span",
@@ -4214,7 +4214,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "n",
-                      "href": "docs/vulkan__math__geometry___spec.html#L392C25"
+                      "href": "docs/vulkan__math__geometry___spec.html#L389C25"
                     },
                     {
                       "kind": "span",
@@ -4256,7 +4256,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 393,
+                  "number": 390,
                   "children": [
                     {
                       "kind": "span",
@@ -4267,7 +4267,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "eta",
-                      "href": "docs/vulkan__math__geometry___spec.html#L393C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L390C22"
                     },
                     {
                       "kind": "span",
@@ -4389,7 +4389,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "i",
-              "line": 392,
+              "line": 389,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -4409,7 +4409,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "n",
-              "line": 392,
+              "line": 389,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -4429,7 +4429,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "eta",
-              "line": 393,
+              "line": 390,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -4465,7 +4465,7 @@ GNATdoc.Documentation = {
         {
           "label": "Refract",
           "qualifier": "",
-          "line": 421,
+          "line": 418,
           "column": 14,
           "src": "srcs/vulkan-math-geometry.ads.html",
           "summary": [
@@ -4489,7 +4489,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 421,
+                  "number": 418,
                   "children": [
                     {
                       "kind": "span",
@@ -4510,7 +4510,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Refract",
-                      "href": "docs/vulkan__math__geometry___spec.html#L421C14"
+                      "href": "docs/vulkan__math__geometry___spec.html#L418C14"
                     },
                     {
                       "kind": "span",
@@ -4521,7 +4521,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "i",
-                      "href": "docs/vulkan__math__geometry___spec.html#L421C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L418C22"
                     },
                     {
                       "kind": "span",
@@ -4537,7 +4537,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "n",
-                      "href": "docs/vulkan__math__geometry___spec.html#L421C25"
+                      "href": "docs/vulkan__math__geometry___spec.html#L418C25"
                     },
                     {
                       "kind": "span",
@@ -4579,7 +4579,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 422,
+                  "number": 419,
                   "children": [
                     {
                       "kind": "span",
@@ -4590,7 +4590,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "eta",
-                      "href": "docs/vulkan__math__geometry___spec.html#L422C22"
+                      "href": "docs/vulkan__math__geometry___spec.html#L419C22"
                     },
                     {
                       "kind": "span",
@@ -4712,7 +4712,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "i",
-              "line": 421,
+              "line": 418,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4732,7 +4732,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "n",
-              "line": 421,
+              "line": 418,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenDType.Vkm_GenDType",
@@ -4752,7 +4752,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "eta",
-              "line": 422,
+              "line": 419,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",

@@ -2,8 +2,26 @@ GNATdoc.Documentation = {
   "label": "Vulkan.Math.Trig",
   "qualifier": "",
   "summary": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "This package provides GLSL Trigonometry Built-in functions.\n"
+        }
+      ]
+    }
   ],
   "description": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "All trigonometry functions operate component-wise on vectors.\n"
+        }
+      ]
+    }
   ],
   "entities": [
     {
@@ -11,10 +29,19 @@ GNATdoc.Documentation = {
         {
           "label": "Acos",
           "qualifier": "",
-          "line": 126,
+          "line": 209,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate arc cos of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -22,7 +49,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 126,
+                  "number": 209,
                   "children": [
                     {
                       "kind": "span",
@@ -43,7 +70,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Acos",
-                      "href": "docs/vulkan__math__trig___spec.html#L126C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L209C14"
                     },
                     {
                       "kind": "span",
@@ -59,7 +86,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "angle",
-                      "href": "docs/vulkan__math__trig___spec.html#L126C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L209C20"
                     },
                     {
                       "kind": "span",
@@ -122,7 +149,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 127,
+                  "number": 210,
                   "children": [
                     {
                       "kind": "span",
@@ -152,28 +179,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate arc cos of angle.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "angle",
-              "line": 126,
+              "line": 209,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value of the angle.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The arc cos of the angle.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Acosh",
           "qualifier": "",
-          "line": 230,
+          "line": 340,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic arc cos of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -181,7 +248,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 230,
+                  "number": 340,
                   "children": [
                     {
                       "kind": "span",
@@ -202,7 +269,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Acosh",
-                      "href": "docs/vulkan__math__trig___spec.html#L230C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L340C14"
                     },
                     {
                       "kind": "span",
@@ -218,7 +285,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L230C21"
+                      "href": "docs/vulkan__math__trig___spec.html#L340C21"
                     },
                     {
                       "kind": "span",
@@ -281,7 +348,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 231,
+                  "number": 341,
                   "children": [
                     {
                       "kind": "span",
@@ -311,28 +378,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic arc cos of x. Results are undefined if x < 1.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 230,
+              "line": 340,
               "column": 21,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The non-negative inverse of cosh.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Asin",
           "qualifier": "",
-          "line": 113,
+          "line": 191,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate arc sin of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -340,7 +447,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 113,
+                  "number": 191,
                   "children": [
                     {
                       "kind": "span",
@@ -361,7 +468,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Asin",
-                      "href": "docs/vulkan__math__trig___spec.html#L113C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L191C14"
                     },
                     {
                       "kind": "span",
@@ -377,7 +484,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "angle",
-                      "href": "docs/vulkan__math__trig___spec.html#L113C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L191C20"
                     },
                     {
                       "kind": "span",
@@ -440,7 +547,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 114,
+                  "number": 192,
                   "children": [
                     {
                       "kind": "span",
@@ -470,28 +577,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate arc sin of angle.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "angle",
-              "line": 113,
+              "line": 191,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value of the angle.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The asin of the angle.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Asinh",
           "qualifier": "",
-          "line": 214,
+          "line": 323,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic arc sin of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -499,7 +646,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 214,
+                  "number": 323,
                   "children": [
                     {
                       "kind": "span",
@@ -520,7 +667,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Asinh",
-                      "href": "docs/vulkan__math__trig___spec.html#L214C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L323C14"
                     },
                     {
                       "kind": "span",
@@ -536,7 +683,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L214C21"
+                      "href": "docs/vulkan__math__trig___spec.html#L323C21"
                     },
                     {
                       "kind": "span",
@@ -599,7 +746,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 215,
+                  "number": 324,
                   "children": [
                     {
                       "kind": "span",
@@ -629,28 +776,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic arc sin of x.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 214,
+              "line": 323,
               "column": 21,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The inverse of sinh.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Atan",
           "qualifier": "",
-          "line": 144,
+          "line": 231,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Arc tangent of Vkm_Floats x and y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -658,7 +845,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 144,
+                  "number": 231,
                   "children": [
                     {
                       "kind": "span",
@@ -679,7 +866,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Atan",
-                      "href": "docs/vulkan__math__trig___spec.html#L144C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L231C14"
                     },
                     {
                       "kind": "span",
@@ -695,7 +882,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y",
-                      "href": "docs/vulkan__math__trig___spec.html#L144C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L231C20"
                     },
                     {
                       "kind": "span",
@@ -737,7 +924,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 145,
+                  "number": 232,
                   "children": [
                     {
                       "kind": "span",
@@ -748,7 +935,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L145C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L232C20"
                     },
                     {
                       "kind": "span",
@@ -831,7 +1018,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 146,
+                  "number": 233,
                   "children": [
                     {
                       "kind": "span",
@@ -861,38 +1048,95 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Arc tangent of Vkm_Floats x and y.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "y",
-              "line": 144,
+              "line": 231,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The 'y' value for the function. Sign is used to determine which quadrant \n"
+                    },
+                    {
+                      "kind": "span",
+                      "text": "the angle is in.\n"
+                    }
+                  ]
+                }
               ]
             },
             {
               "label": "x",
-              "line": 145,
+              "line": 232,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The 'x' value for the function. Sign is used to determine which quadrant \n"
+                    },
+                    {
+                      "kind": "span",
+                      "text": "the angle is in.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "An angle tangent to y/x. Range is [-PI,PI].\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Atan",
           "qualifier": "",
-          "line": 162,
+          "line": 251,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Arc tangent of Vkm_Float x over y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -900,7 +1144,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 162,
+                  "number": 251,
                   "children": [
                     {
                       "kind": "span",
@@ -921,7 +1165,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Atan",
-                      "href": "docs/vulkan__math__trig___spec.html#L162C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L251C14"
                     },
                     {
                       "kind": "span",
@@ -937,7 +1181,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "y_over_x",
-                      "href": "docs/vulkan__math__trig___spec.html#L162C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L251C20"
                     },
                     {
                       "kind": "span",
@@ -1010,7 +1254,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 163,
+                  "number": 252,
                   "children": [
                     {
                       "kind": "span",
@@ -1090,29 +1334,69 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Arc tangent of Vkm_Float x over y.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "y_over_x",
-              "line": 162,
+              "line": 251,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The ratio y/x.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "An angle tangent to y/x. Range is [-PI/2,PI/2].\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Atanh",
           "qualifier": "",
-          "line": 246,
+          "line": 357,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate Hyperbolic arc tangent.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1120,7 +1404,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 246,
+                  "number": 357,
                   "children": [
                     {
                       "kind": "span",
@@ -1141,7 +1425,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Atanh",
-                      "href": "docs/vulkan__math__trig___spec.html#L246C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L357C14"
                     },
                     {
                       "kind": "span",
@@ -1157,7 +1441,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L246C21"
+                      "href": "docs/vulkan__math__trig___spec.html#L357C21"
                     },
                     {
                       "kind": "span",
@@ -1220,7 +1504,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 247,
+                  "number": 358,
                   "children": [
                     {
                       "kind": "span",
@@ -1250,28 +1534,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Hyperbolic arc tangent. Results are undefined if x >= 0.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 246,
+              "line": 357,
               "column": 21,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "inverse of tanh(x)\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Cos",
           "qualifier": "",
-          "line": 87,
+          "line": 146,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate cos of Vkm_Float angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1279,7 +1603,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 87,
+                  "number": 146,
                   "children": [
                     {
                       "kind": "span",
@@ -1300,7 +1624,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Cos",
-                      "href": "docs/vulkan__math__trig___spec.html#L87C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L146C14"
                     },
                     {
                       "kind": "span",
@@ -1316,7 +1640,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "angle",
-                      "href": "docs/vulkan__math__trig___spec.html#L87C19"
+                      "href": "docs/vulkan__math__trig___spec.html#L146C19"
                     },
                     {
                       "kind": "span",
@@ -1384,7 +1708,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 88,
+                  "number": 147,
                   "children": [
                     {
                       "kind": "span",
@@ -1414,28 +1738,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate cos of Vkm_Float angle.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "angle",
-              "line": 87,
+              "line": 146,
               "column": 19,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value of the angle.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The cos of the angle.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Cosh",
           "qualifier": "",
-          "line": 188,
+          "line": 287,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic cos of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1443,7 +1807,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 188,
+                  "number": 287,
                   "children": [
                     {
                       "kind": "span",
@@ -1464,7 +1828,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Cosh",
-                      "href": "docs/vulkan__math__trig___spec.html#L188C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L287C14"
                     },
                     {
                       "kind": "span",
@@ -1480,7 +1844,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L188C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L287C20"
                     },
                     {
                       "kind": "span",
@@ -1543,7 +1907,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 189,
+                  "number": 288,
                   "children": [
                     {
                       "kind": "span",
@@ -1573,28 +1937,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate the hyperbolic cos function (e^x + e^-x)/2.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 188,
+              "line": 287,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The hyperbolic cos of 'x'.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Degrees",
           "qualifier": "",
-          "line": 61,
+          "line": 92,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_Float angle in radians to degrees.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1602,7 +2006,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 61,
+                  "number": 92,
                   "children": [
                     {
                       "kind": "span",
@@ -1623,7 +2027,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Degrees",
-                      "href": "docs/vulkan__math__trig___spec.html#L61C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L92C14"
                     },
                     {
                       "kind": "span",
@@ -1639,7 +2043,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "radians",
-                      "href": "docs/vulkan__math__trig___spec.html#L61C23"
+                      "href": "docs/vulkan__math__trig___spec.html#L92C23"
                     },
                     {
                       "kind": "span",
@@ -1712,7 +2116,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 62,
+                  "number": 93,
                   "children": [
                     {
                       "kind": "span",
@@ -1777,29 +2181,69 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_Float angle in radians to degrees.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "radians",
-              "line": 61,
+              "line": 92,
               "column": 23,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to convert to degrees.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result in degrees.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Radians",
           "qualifier": "",
-          "line": 48,
+          "line": 65,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_Float angle in degrees to radians.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1807,7 +2251,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 48,
+                  "number": 65,
                   "children": [
                     {
                       "kind": "span",
@@ -1828,7 +2272,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Radians",
-                      "href": "docs/vulkan__math__trig___spec.html#L48C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L65C14"
                     },
                     {
                       "kind": "span",
@@ -1844,7 +2288,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "degrees",
-                      "href": "docs/vulkan__math__trig___spec.html#L48C23"
+                      "href": "docs/vulkan__math__trig___spec.html#L65C23"
                     },
                     {
                       "kind": "span",
@@ -1917,7 +2361,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 49,
+                  "number": 66,
                   "children": [
                     {
                       "kind": "span",
@@ -1982,29 +2426,69 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert a Vkm_Float angle in degrees to radians.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "degrees",
-              "line": 48,
+              "line": 65,
               "column": 23,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
                 "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to convert to radians.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result in radians.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Sin",
           "qualifier": "",
-          "line": 74,
+          "line": 119,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate sin of Vkm_Float angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2012,7 +2496,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 74,
+                  "number": 119,
                   "children": [
                     {
                       "kind": "span",
@@ -2033,7 +2517,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sin",
-                      "href": "docs/vulkan__math__trig___spec.html#L74C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L119C14"
                     },
                     {
                       "kind": "span",
@@ -2049,7 +2533,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "angle",
-                      "href": "docs/vulkan__math__trig___spec.html#L74C19"
+                      "href": "docs/vulkan__math__trig___spec.html#L119C19"
                     },
                     {
                       "kind": "span",
@@ -2117,7 +2601,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 75,
+                  "number": 120,
                   "children": [
                     {
                       "kind": "span",
@@ -2147,28 +2631,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate sin of Vkm_Float angle.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "angle",
-              "line": 74,
+              "line": 119,
               "column": 19,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value of the angle.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The sin of the angle.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Sinh",
           "qualifier": "",
-          "line": 175,
+          "line": 269,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic sin of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2176,7 +2700,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 175,
+                  "number": 269,
                   "children": [
                     {
                       "kind": "span",
@@ -2197,7 +2721,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sinh",
-                      "href": "docs/vulkan__math__trig___spec.html#L175C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L269C14"
                     },
                     {
                       "kind": "span",
@@ -2213,7 +2737,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L175C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L269C20"
                     },
                     {
                       "kind": "span",
@@ -2276,7 +2800,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 176,
+                  "number": 270,
                   "children": [
                     {
                       "kind": "span",
@@ -2306,28 +2830,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate the hyperbolic sin function (e^x - e^-x)/2\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 175,
+              "line": 269,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value of 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The hyperbolic sin of 'x'.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Tan",
           "qualifier": "",
-          "line": 100,
+          "line": 173,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate tan of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2335,7 +2899,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 100,
+                  "number": 173,
                   "children": [
                     {
                       "kind": "span",
@@ -2356,7 +2920,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Tan",
-                      "href": "docs/vulkan__math__trig___spec.html#L100C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L173C14"
                     },
                     {
                       "kind": "span",
@@ -2372,7 +2936,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "angle",
-                      "href": "docs/vulkan__math__trig___spec.html#L100C19"
+                      "href": "docs/vulkan__math__trig___spec.html#L173C19"
                     },
                     {
                       "kind": "span",
@@ -2440,7 +3004,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 101,
+                  "number": 174,
                   "children": [
                     {
                       "kind": "span",
@@ -2470,28 +3034,68 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate tan of angle.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "angle",
-              "line": 100,
+              "line": 173,
               "column": 19,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value of the angle.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The tan of the angle.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Tanh",
           "qualifier": "",
-          "line": 201,
+          "line": 305,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic tan of angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2499,7 +3103,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 201,
+                  "number": 305,
                   "children": [
                     {
                       "kind": "span",
@@ -2520,7 +3124,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Tanh",
-                      "href": "docs/vulkan__math__trig___spec.html#L201C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L305C14"
                     },
                     {
                       "kind": "span",
@@ -2536,7 +3140,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__trig___spec.html#L201C20"
+                      "href": "docs/vulkan__math__trig___spec.html#L305C20"
                     },
                     {
                       "kind": "span",
@@ -2599,7 +3203,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 202,
+                  "number": 306,
                   "children": [
                     {
                       "kind": "span",
@@ -2629,20 +3233,51 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate hyperbolic tan function sinh(x)/cosh(x).\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 201,
+              "line": 305,
               "column": 20,
               "type": {
                 "label": ""
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The hyperboic tan of 'x'.\n"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "label": "Subprograms"
@@ -2652,7 +3287,7 @@ GNATdoc.Documentation = {
         {
           "label": "Acos",
           "qualifier": "(generic instantiation)",
-          "line": 128,
+          "line": 211,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -2663,7 +3298,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 128,
+                  "number": 211,
                   "children": [
                     {
                       "kind": "span",
@@ -2684,7 +3319,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Acos",
-                      "href": "docs/vulkan__math__trig___spec.html#L128C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L211C14"
                     },
                     {
                       "kind": "span",
@@ -2749,7 +3384,7 @@ GNATdoc.Documentation = {
         {
           "label": "Acosh",
           "qualifier": "(generic instantiation)",
-          "line": 232,
+          "line": 342,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -2760,7 +3395,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 232,
+                  "number": 342,
                   "children": [
                     {
                       "kind": "span",
@@ -2781,7 +3416,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Acosh",
-                      "href": "docs/vulkan__math__trig___spec.html#L232C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L342C14"
                     },
                     {
                       "kind": "span",
@@ -2846,7 +3481,7 @@ GNATdoc.Documentation = {
         {
           "label": "Asin",
           "qualifier": "(generic instantiation)",
-          "line": 115,
+          "line": 193,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -2857,7 +3492,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 115,
+                  "number": 193,
                   "children": [
                     {
                       "kind": "span",
@@ -2878,7 +3513,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Asin",
-                      "href": "docs/vulkan__math__trig___spec.html#L115C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L193C14"
                     },
                     {
                       "kind": "span",
@@ -2943,7 +3578,7 @@ GNATdoc.Documentation = {
         {
           "label": "Asinh",
           "qualifier": "(generic instantiation)",
-          "line": 216,
+          "line": 325,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -2954,7 +3589,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 216,
+                  "number": 325,
                   "children": [
                     {
                       "kind": "span",
@@ -2975,7 +3610,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Asinh",
-                      "href": "docs/vulkan__math__trig___spec.html#L216C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L325C14"
                     },
                     {
                       "kind": "span",
@@ -3040,7 +3675,7 @@ GNATdoc.Documentation = {
         {
           "label": "Atan",
           "qualifier": "(generic instantiation)",
-          "line": 147,
+          "line": 234,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -3051,7 +3686,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 147,
+                  "number": 234,
                   "children": [
                     {
                       "kind": "span",
@@ -3072,7 +3707,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Atan",
-                      "href": "docs/vulkan__math__trig___spec.html#L147C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L234C14"
                     },
                     {
                       "kind": "span",
@@ -3137,7 +3772,7 @@ GNATdoc.Documentation = {
         {
           "label": "Atan",
           "qualifier": "(generic instantiation)",
-          "line": 164,
+          "line": 253,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -3148,7 +3783,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 164,
+                  "number": 253,
                   "children": [
                     {
                       "kind": "span",
@@ -3169,7 +3804,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Atan",
-                      "href": "docs/vulkan__math__trig___spec.html#L164C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L253C14"
                     },
                     {
                       "kind": "span",
@@ -3234,7 +3869,7 @@ GNATdoc.Documentation = {
         {
           "label": "Atanh",
           "qualifier": "(generic instantiation)",
-          "line": 248,
+          "line": 359,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -3245,7 +3880,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 248,
+                  "number": 359,
                   "children": [
                     {
                       "kind": "span",
@@ -3266,7 +3901,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Atanh",
-                      "href": "docs/vulkan__math__trig___spec.html#L248C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L359C14"
                     },
                     {
                       "kind": "span",
@@ -3331,10 +3966,19 @@ GNATdoc.Documentation = {
         {
           "label": "Cos",
           "qualifier": "(generic instantiation)",
-          "line": 89,
+          "line": 157,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate cos of Vkm_GenFType angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3342,7 +3986,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 89,
+                  "number": 157,
                   "children": [
                     {
                       "kind": "span",
@@ -3363,7 +4007,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Cos",
-                      "href": "docs/vulkan__math__trig___spec.html#L89C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L157C14"
                     },
                     {
                       "kind": "span",
@@ -3418,6 +4062,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate cos of Vkm_GenFType angle.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -3428,7 +4081,7 @@ GNATdoc.Documentation = {
         {
           "label": "Cosh",
           "qualifier": "(generic instantiation)",
-          "line": 190,
+          "line": 289,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -3439,7 +4092,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 190,
+                  "number": 289,
                   "children": [
                     {
                       "kind": "span",
@@ -3460,7 +4113,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Cosh",
-                      "href": "docs/vulkan__math__trig___spec.html#L190C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L289C14"
                     },
                     {
                       "kind": "span",
@@ -3525,10 +4178,19 @@ GNATdoc.Documentation = {
         {
           "label": "Degrees",
           "qualifier": "(generic instantiation)",
-          "line": 63,
+          "line": 103,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_GenFType angle in radians to degrees.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3536,7 +4198,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 63,
+                  "number": 103,
                   "children": [
                     {
                       "kind": "span",
@@ -3557,7 +4219,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Degrees",
-                      "href": "docs/vulkan__math__trig___spec.html#L63C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L103C14"
                     },
                     {
                       "kind": "span",
@@ -3612,6 +4274,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_GenFType angle in radians to degrees.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -3622,10 +4293,19 @@ GNATdoc.Documentation = {
         {
           "label": "Radians",
           "qualifier": "(generic instantiation)",
-          "line": 50,
+          "line": 76,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_GenFType angle from degrees to radians.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3633,7 +4313,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 50,
+                  "number": 76,
                   "children": [
                     {
                       "kind": "span",
@@ -3654,7 +4334,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Radians",
-                      "href": "docs/vulkan__math__trig___spec.html#L50C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L76C14"
                     },
                     {
                       "kind": "span",
@@ -3709,6 +4389,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert Vkm_GenFType angle from degrees to radians.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -3719,10 +4408,19 @@ GNATdoc.Documentation = {
         {
           "label": "Sin",
           "qualifier": "(generic instantiation)",
-          "line": 76,
+          "line": 130,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate sin of Vkm_GenFType angle.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -3730,7 +4428,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 76,
+                  "number": 130,
                   "children": [
                     {
                       "kind": "span",
@@ -3751,7 +4449,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sin",
-                      "href": "docs/vulkan__math__trig___spec.html#L76C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L130C14"
                     },
                     {
                       "kind": "span",
@@ -3806,6 +4504,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Calculate sin of Vkm_GenFType angle.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -3816,7 +4523,7 @@ GNATdoc.Documentation = {
         {
           "label": "Sinh",
           "qualifier": "(generic instantiation)",
-          "line": 177,
+          "line": 271,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -3827,7 +4534,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 177,
+                  "number": 271,
                   "children": [
                     {
                       "kind": "span",
@@ -3848,7 +4555,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Sinh",
-                      "href": "docs/vulkan__math__trig___spec.html#L177C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L271C14"
                     },
                     {
                       "kind": "span",
@@ -3913,7 +4620,7 @@ GNATdoc.Documentation = {
         {
           "label": "Tan",
           "qualifier": "(generic instantiation)",
-          "line": 102,
+          "line": 175,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -3924,7 +4631,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 102,
+                  "number": 175,
                   "children": [
                     {
                       "kind": "span",
@@ -3945,7 +4652,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Tan",
-                      "href": "docs/vulkan__math__trig___spec.html#L102C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L175C14"
                     },
                     {
                       "kind": "span",
@@ -4010,7 +4717,7 @@ GNATdoc.Documentation = {
         {
           "label": "Tanh",
           "qualifier": "(generic instantiation)",
-          "line": 203,
+          "line": 307,
           "column": 14,
           "src": "srcs/vulkan-math-trig.ads.html",
           "summary": [
@@ -4021,7 +4728,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 203,
+                  "number": 307,
                   "children": [
                     {
                       "kind": "span",
@@ -4042,7 +4749,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Tanh",
-                      "href": "docs/vulkan__math__trig___spec.html#L203C14"
+                      "href": "docs/vulkan__math__trig___spec.html#L307C14"
                     },
                     {
                       "kind": "span",

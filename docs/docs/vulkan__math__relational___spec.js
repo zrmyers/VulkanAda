@@ -2,8 +2,26 @@ GNATdoc.Documentation = {
   "label": "Vulkan.Math.Relational",
   "qualifier": "",
   "summary": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "This package provides GLSL Relational Built-in functions.\n"
+        }
+      ]
+    }
   ],
   "description": [
+    {
+      "kind": "paragraph",
+      "children": [
+        {
+          "kind": "span",
+          "text": "All relational functions operate component-wise on vectors.\n"
+        }
+      ]
+    }
   ],
   "entities": [
     {
@@ -11,10 +29,19 @@ GNATdoc.Documentation = {
         {
           "label": "Is_All",
           "qualifier": "",
-          "line": 154,
+          "line": 364,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType all components true.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -22,7 +49,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 154,
+                  "number": 364,
                   "children": [
                     {
                       "kind": "span",
@@ -43,7 +70,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_All",
-                      "href": "docs/vulkan__math__relational___spec.html#L154C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L364C14"
                     },
                     {
                       "kind": "span",
@@ -59,7 +86,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__relational___spec.html#L154C22"
+                      "href": "docs/vulkan__math__relational___spec.html#L364C22"
                     },
                     {
                       "kind": "span",
@@ -126,29 +153,69 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Returns true if all of the components of x are true.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 154,
+              "line": 364,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
                 "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The parameter 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "True if all components of 'x' are true. Otherwise false.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "label": "Is_Any",
           "qualifier": "",
-          "line": 143,
+          "line": 348,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType any components true.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -156,7 +223,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 143,
+                  "number": 348,
                   "children": [
                     {
                       "kind": "span",
@@ -177,7 +244,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Is_Any",
-                      "href": "docs/vulkan__math__relational___spec.html#L143C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L348C14"
                     },
                     {
                       "kind": "span",
@@ -193,7 +260,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "x",
-                      "href": "docs/vulkan__math__relational___spec.html#L143C22"
+                      "href": "docs/vulkan__math__relational___spec.html#L348C22"
                     },
                     {
                       "kind": "span",
@@ -260,21 +327,52 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Returns true if any component of x is true.\n"
+                }
+              ]
             }
           ],
           "parameters": [
             {
               "label": "x",
-              "line": 143,
+              "line": 348,
               "column": 22,
               "type": {
                 "label": "Vulkan.Math.GenBType.Vkm_GenBType",
                 "docHref": "docs/vulkan__math__genbtype___spec.html#L48C13"
               },
               "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The parameter 'x'.\n"
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "True if any component of x is true. Otherwise false.\n"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "label": "Subprograms"
@@ -284,10 +382,19 @@ GNATdoc.Documentation = {
         {
           "label": "Complement",
           "qualifier": "(generic instantiation)",
-          "line": 165,
+          "line": 374,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType component-wise complement.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -295,7 +402,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 165,
+                  "number": 374,
                   "children": [
                     {
                       "kind": "span",
@@ -316,7 +423,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Complement",
-                      "href": "docs/vulkan__math__relational___spec.html#L165C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L374C14"
                     },
                     {
                       "kind": "span",
@@ -371,6 +478,15 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Returns the component-wise complement of vector x.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -381,10 +497,19 @@ GNATdoc.Documentation = {
         {
           "label": "Equal",
           "qualifier": "(generic instantiation)",
-          "line": 113,
+          "line": 234,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x = y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -392,7 +517,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 113,
+                  "number": 234,
                   "children": [
                     {
                       "kind": "span",
@@ -413,7 +538,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L113C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L234C14"
                     },
                     {
                       "kind": "span",
@@ -473,6 +598,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x = y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -483,10 +621,19 @@ GNATdoc.Documentation = {
         {
           "label": "Equal",
           "qualifier": "(generic instantiation)",
-          "line": 114,
+          "line": 245,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x = y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -494,7 +641,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 114,
+                  "number": 245,
                   "children": [
                     {
                       "kind": "span",
@@ -515,7 +662,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L114C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L245C14"
                     },
                     {
                       "kind": "span",
@@ -575,6 +722,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x = y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -585,10 +745,19 @@ GNATdoc.Documentation = {
         {
           "label": "Equal",
           "qualifier": "(generic instantiation)",
-          "line": 115,
+          "line": 256,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x = y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -596,7 +765,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 115,
+                  "number": 256,
                   "children": [
                     {
                       "kind": "span",
@@ -617,7 +786,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L115C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L256C14"
                     },
                     {
                       "kind": "span",
@@ -677,6 +846,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x = y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -687,10 +869,19 @@ GNATdoc.Documentation = {
         {
           "label": "Equal",
           "qualifier": "(generic instantiation)",
-          "line": 116,
+          "line": 267,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x = y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -698,7 +889,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 116,
+                  "number": 267,
                   "children": [
                     {
                       "kind": "span",
@@ -719,7 +910,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L116C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L267C14"
                     },
                     {
                       "kind": "span",
@@ -779,6 +970,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x = y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -789,10 +993,19 @@ GNATdoc.Documentation = {
         {
           "label": "Equal",
           "qualifier": "(generic instantiation)",
-          "line": 117,
+          "line": 278,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType component-wise compare of x = y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -800,7 +1013,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 117,
+                  "number": 278,
                   "children": [
                     {
                       "kind": "span",
@@ -821,7 +1034,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L117C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L278C14"
                     },
                     {
                       "kind": "span",
@@ -876,6 +1089,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType component-wise compare of x = y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -886,10 +1112,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than",
           "qualifier": "(generic instantiation)",
-          "line": 83,
+          "line": 146,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x > y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -897,7 +1132,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 83,
+                  "number": 146,
                   "children": [
                     {
                       "kind": "span",
@@ -918,7 +1153,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L83C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L146C14"
                     },
                     {
                       "kind": "span",
@@ -973,6 +1208,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x > y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -983,10 +1231,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than",
           "qualifier": "(generic instantiation)",
-          "line": 84,
+          "line": 157,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x > y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -994,7 +1251,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 84,
+                  "number": 157,
                   "children": [
                     {
                       "kind": "span",
@@ -1015,7 +1272,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L84C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L157C14"
                     },
                     {
                       "kind": "span",
@@ -1070,6 +1327,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x > y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1080,10 +1350,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than",
           "qualifier": "(generic instantiation)",
-          "line": 85,
+          "line": 168,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x > y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1091,7 +1370,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 85,
+                  "number": 168,
                   "children": [
                     {
                       "kind": "span",
@@ -1112,7 +1391,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L85C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L168C14"
                     },
                     {
                       "kind": "span",
@@ -1167,6 +1446,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x > y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1177,10 +1469,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than",
           "qualifier": "(generic instantiation)",
-          "line": 86,
+          "line": 179,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x > y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1188,7 +1489,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 86,
+                  "number": 179,
                   "children": [
                     {
                       "kind": "span",
@@ -1209,7 +1510,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L86C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L179C14"
                     },
                     {
                       "kind": "span",
@@ -1264,6 +1565,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x > y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1274,10 +1588,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 98,
+          "line": 190,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x >= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1285,7 +1608,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 98,
+                  "number": 190,
                   "children": [
                     {
                       "kind": "span",
@@ -1306,7 +1629,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L98C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L190C14"
                     },
                     {
                       "kind": "span",
@@ -1361,6 +1684,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x >= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1371,10 +1707,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 99,
+          "line": 201,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x >= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1382,7 +1727,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 99,
+                  "number": 201,
                   "children": [
                     {
                       "kind": "span",
@@ -1403,7 +1748,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L99C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L201C14"
                     },
                     {
                       "kind": "span",
@@ -1458,6 +1803,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x >= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1468,10 +1826,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 100,
+          "line": 212,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x >= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1479,7 +1846,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 100,
+                  "number": 212,
                   "children": [
                     {
                       "kind": "span",
@@ -1500,7 +1867,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L100C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L212C14"
                     },
                     {
                       "kind": "span",
@@ -1555,6 +1922,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x >= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1565,10 +1945,19 @@ GNATdoc.Documentation = {
         {
           "label": "Greater_Than_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 101,
+          "line": 223,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x >= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1576,7 +1965,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 101,
+                  "number": 223,
                   "children": [
                     {
                       "kind": "span",
@@ -1597,7 +1986,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Greater_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L101C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L223C14"
                     },
                     {
                       "kind": "span",
@@ -1652,6 +2041,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x >= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -1662,10 +2064,19 @@ GNATdoc.Documentation = {
         {
           "label": "Less_Than",
           "qualifier": "(generic instantiation)",
-          "line": 53,
+          "line": 58,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x < y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -1673,7 +2084,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 53,
+                  "number": 58,
                   "children": [
                     {
                       "kind": "span",
@@ -1694,7 +2105,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Less_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L53C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L58C14"
                     },
                     {
                       "kind": "span",
@@ -1749,392 +2160,17 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenFType.Apply_Func_IVF_IVF_RVB",
-            "docHref": "docs/vulkan__math__genftype___spec.html#L277C14"
-          }
-        },
-        {
-          "label": "Less_Than",
-          "qualifier": "(generic instantiation)",
-          "line": 54,
-          "column": 14,
-          "src": "srcs/vulkan-math-relational.ads.html",
-          "summary": [
-          ],
-          "description": [
+            },
             {
-              "kind": "code",
+              "kind": "paragraph",
               "children": [
                 {
-                  "kind": "line",
-                  "number": 54,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Less_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L54C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVD_IVD_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"<\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenDType.Apply_Func_IVD_IVD_RVB",
-            "docHref": "docs/vulkan__math__gendtype___spec.html#L188C14"
-          }
-        },
-        {
-          "label": "Less_Than",
-          "qualifier": "(generic instantiation)",
-          "line": 55,
-          "column": 14,
-          "src": "srcs/vulkan-math-relational.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x < y. Result is a Vkm_GenBType \n"
+                },
                 {
-                  "kind": "line",
-                  "number": 55,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Less_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L55C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVI_IVI_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"<\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
-          }
-        },
-        {
-          "label": "Less_Than",
-          "qualifier": "(generic instantiation)",
-          "line": 56,
-          "column": 14,
-          "src": "srcs/vulkan-math-relational.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 56,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Less_Than",
-                      "href": "docs/vulkan__math__relational___spec.html#L56C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVU_IVU_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"<\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "instantiation": {
-            "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
-            "docHref": "docs/vulkan__math__genutype___spec.html#L106C14"
-          }
-        },
-        {
-          "label": "Less_Than_Equal",
-          "qualifier": "(generic instantiation)",
-          "line": 68,
-          "column": 14,
-          "src": "srcs/vulkan-math-relational.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 68,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Less_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L68C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "new"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IVF_IVF_RVB"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "string",
-                      "text": "\"<=\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
+                  "kind": "span",
+                  "text": "vector.\n"
                 }
               ]
             }
@@ -2145,12 +2181,21 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Less_Than_Equal",
+          "label": "Less_Than",
           "qualifier": "(generic instantiation)",
           "line": 69,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x < y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2178,7 +2223,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Less_Than_Equal",
+                      "text": "Less_Than",
                       "href": "docs/vulkan__math__relational___spec.html#L69C14"
                     },
                     {
@@ -2219,7 +2264,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "string",
-                      "text": "\"<=\""
+                      "text": "\"<\""
                     },
                     {
                       "kind": "span",
@@ -2234,6 +2279,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x < y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2242,12 +2300,21 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Less_Than_Equal",
+          "label": "Less_Than",
           "qualifier": "(generic instantiation)",
-          "line": 70,
+          "line": 80,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x < y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2255,7 +2322,245 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 70,
+                  "number": 80,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Less_Than",
+                      "href": "docs/vulkan__math__relational___spec.html#L80C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVI_IVI_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"<\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x < y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
+            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+          }
+        },
+        {
+          "label": "Less_Than",
+          "qualifier": "(generic instantiation)",
+          "line": 91,
+          "column": 14,
+          "src": "srcs/vulkan-math-relational.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x < y.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 91,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Less_Than",
+                      "href": "docs/vulkan__math__relational___spec.html#L91C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVU_IVU_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"<\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x < y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenUType.Apply_Func_IVU_IVU_RVB",
+            "docHref": "docs/vulkan__math__genutype___spec.html#L106C14"
+          }
+        },
+        {
+          "label": "Less_Than_Equal",
+          "qualifier": "(generic instantiation)",
+          "line": 102,
+          "column": 14,
+          "src": "srcs/vulkan-math-relational.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x <= y.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 102,
                   "children": [
                     {
                       "kind": "span",
@@ -2276,7 +2581,245 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Less_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L70C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L102C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVF_IVF_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"<=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x <= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenFType.Apply_Func_IVF_IVF_RVB",
+            "docHref": "docs/vulkan__math__genftype___spec.html#L277C14"
+          }
+        },
+        {
+          "label": "Less_Than_Equal",
+          "qualifier": "(generic instantiation)",
+          "line": 113,
+          "column": 14,
+          "src": "srcs/vulkan-math-relational.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x <= y.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 113,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Less_Than_Equal",
+                      "href": "docs/vulkan__math__relational___spec.html#L113C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "new"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Apply_Func_IVD_IVD_RVB"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "string",
+                      "text": "\"<=\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x <= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
+            }
+          ],
+          "instantiation": {
+            "label": "Vulkan.Math.GenDType.Apply_Func_IVD_IVD_RVB",
+            "docHref": "docs/vulkan__math__gendtype___spec.html#L188C14"
+          }
+        },
+        {
+          "label": "Less_Than_Equal",
+          "qualifier": "(generic instantiation)",
+          "line": 124,
+          "column": 14,
+          "src": "srcs/vulkan-math-relational.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x <= y.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 124,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Less_Than_Equal",
+                      "href": "docs/vulkan__math__relational___spec.html#L124C14"
                     },
                     {
                       "kind": "span",
@@ -2331,6 +2874,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x <= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2341,10 +2897,19 @@ GNATdoc.Documentation = {
         {
           "label": "Less_Than_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 71,
+          "line": 135,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x <= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2352,7 +2917,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 71,
+                  "number": 135,
                   "children": [
                     {
                       "kind": "span",
@@ -2373,7 +2938,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Less_Than_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L71C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L135C14"
                     },
                     {
                       "kind": "span",
@@ -2428,6 +2993,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x <= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2438,10 +3016,19 @@ GNATdoc.Documentation = {
         {
           "label": "Not_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 128,
+          "line": 289,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x /= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2449,7 +3036,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 128,
+                  "number": 289,
                   "children": [
                     {
                       "kind": "span",
@@ -2470,7 +3057,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Not_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L128C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L289C14"
                     },
                     {
                       "kind": "span",
@@ -2530,6 +3117,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenFType component-wise compare of x /= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2540,10 +3140,19 @@ GNATdoc.Documentation = {
         {
           "label": "Not_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 129,
+          "line": 300,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x /= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2551,7 +3160,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 129,
+                  "number": 300,
                   "children": [
                     {
                       "kind": "span",
@@ -2572,7 +3181,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Not_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L129C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L300C14"
                     },
                     {
                       "kind": "span",
@@ -2632,6 +3241,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenDType component-wise compare of x /= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2642,10 +3264,19 @@ GNATdoc.Documentation = {
         {
           "label": "Not_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 130,
+          "line": 311,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x /= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2653,7 +3284,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 130,
+                  "number": 311,
                   "children": [
                     {
                       "kind": "span",
@@ -2674,7 +3305,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Not_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L130C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L311C14"
                     },
                     {
                       "kind": "span",
@@ -2734,6 +3365,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenIType component-wise compare of x /= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2744,10 +3388,19 @@ GNATdoc.Documentation = {
         {
           "label": "Not_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 131,
+          "line": 322,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x /= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2755,7 +3408,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 131,
+                  "number": 322,
                   "children": [
                     {
                       "kind": "span",
@@ -2776,7 +3429,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Not_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L131C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L322C14"
                     },
                     {
                       "kind": "span",
@@ -2836,6 +3489,19 @@ GNATdoc.Documentation = {
                   ]
                 }
               ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenUType component-wise compare of x /= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
+                }
+              ]
             }
           ],
           "instantiation": {
@@ -2846,10 +3512,19 @@ GNATdoc.Documentation = {
         {
           "label": "Not_Equal",
           "qualifier": "(generic instantiation)",
-          "line": 132,
+          "line": 333,
           "column": 14,
           "src": "srcs/vulkan-math-relational.ads.html",
           "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType component-wise compare of x /= y.\n"
+                }
+              ]
+            }
           ],
           "description": [
             {
@@ -2857,7 +3532,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 132,
+                  "number": 333,
                   "children": [
                     {
                       "kind": "span",
@@ -2878,7 +3553,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Not_Equal",
-                      "href": "docs/vulkan__math__relational___spec.html#L132C14"
+                      "href": "docs/vulkan__math__relational___spec.html#L333C14"
                     },
                     {
                       "kind": "span",
@@ -2931,6 +3606,19 @@ GNATdoc.Documentation = {
                       "text": ";"
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Vkm_GenBType component-wise compare of x /= y. Result is a Vkm_GenBType \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "vector.\n"
                 }
               ]
             }

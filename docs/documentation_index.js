@@ -76,6 +76,16 @@ GNATdoc.DocumentationIndex = [
         "label": "Vulkan.Math.Geometry",
         "qualifier": "",
         "file": "docs/vulkan__math__geometry___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Relational",
+        "qualifier": "",
+        "file": "docs/vulkan__math__relational___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Trig",
+        "qualifier": "",
+        "file": "docs/vulkan__math__trig___spec.html"
       }
     ]
   },
@@ -138,16 +148,6 @@ GNATdoc.DocumentationIndex = [
     "label": "Vulkan",
     "qualifier": "",
     "file": "docs/vulkan___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Relational",
-    "qualifier": "",
-    "file": "docs/vulkan__math__relational___spec.html"
-  },
-  {
-    "label": "Vulkan.Math.Trig",
-    "qualifier": "",
-    "file": "docs/vulkan__math__trig___spec.html"
   },
   {
     "label": "Vulkan.Math.Uvec2",
