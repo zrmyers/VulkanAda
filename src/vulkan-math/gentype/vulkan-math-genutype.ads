@@ -43,7 +43,7 @@ package Vulkan.Math.GenUType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Uint as the Base_Type.
     package GUT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Uint, Image => Vkm_Uint'Image);
+        Base_Type => Vkm_Uint, Default_Value => 0, Image => Vkm_Uint'Image);
 
     --< A subtype of the instantiated Vkm_GenType that represents the GenUType 
     --< described in the GLSL specification.

@@ -62,6 +62,7 @@
 --------------------------------------------------------------------------------
 generic
     type Base_Type is private;
+    Default_Value : in Base_Type;
     with function Image (Instance : in     Base_Type) return String;
 package Vulkan.Math.GenType is
     pragma Preelaborate;
@@ -317,6 +318,28 @@ package Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
+    --< @private
+    --< @summary
+    --< Read access to a vector component.
+    --<
+    --< @description
+    --< Access the indicated element of the vector. If the element is out of 
+    --< bounds for the vector, the Base_Type's default value is returned instead.
+    --<
+    --< @param vec
+    --< The vector to retrieve the component from.
+    --< 
+    --< @param index
+    --< The index of the component to retrieve.
+    --<
+    --< @return 
+    --< The value of the indicated component.
+    ----------------------------------------------------------------------------
+    function Component (vec   : in     Vkm_GenType;
+                        index : in     Vkm_Indices) return Base_Type;
+    
+    
+    ----------------------------------------------------------------------------
     -- Vector Swizzlers 
     ----------------------------------------------------------------------------
     -- 1 D
@@ -336,7 +359,7 @@ package Vulkan.Math.GenType is
     --< The value of the indicated component.
     ----------------------------------------------------------------------------
     function x (vec : in     Vkm_GenType) return Base_Type is
-        (vec.data(0)) with Inline;
+        (vec.Component(0)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -354,7 +377,7 @@ package Vulkan.Math.GenType is
     --< The value of the indicated component.
     ----------------------------------------------------------------------------
     function y (vec : in     Vkm_GenType) return Base_Type is
-        (vec.data(1)) with Inline;
+        (vec.Component(1)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -372,7 +395,7 @@ package Vulkan.Math.GenType is
     --< The value of the indicated component.
     ----------------------------------------------------------------------------
     function z (vec : in     Vkm_GenType) return Base_Type is
-        (vec.data(2)) with Inline;
+        (vec.Component(2)) with Inline;
         
         
     ----------------------------------------------------------------------------
@@ -390,7 +413,7 @@ package Vulkan.Math.GenType is
     --< The value of the indicated component.
     ----------------------------------------------------------------------------
     function w (vec : in     Vkm_GenType) return Base_Type is
-        (vec.data(3)) with Inline;
+        (vec.Component(3)) with Inline;
         
     ----------------------------------------------------------------------------
     --< @private

@@ -44,7 +44,7 @@ package Vulkan.Math.GenIType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Int as the Base_Type.
     package GIT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Int, Image => Vkm_Int'Image);
+        Base_Type => Vkm_Int, Default_Value => 0, Image => Vkm_Int'Image);
 
     --< A subtype of the instantiated Vkm_GenType that represents the GenIType 
     --< described in the GLSL specification.

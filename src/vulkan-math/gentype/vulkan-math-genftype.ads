@@ -48,7 +48,7 @@ package Vulkan.Math.GenFType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Float as the Base_Type.
     package GFT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Float, Image => Vkm_Float'Image);
+        Base_Type => Vkm_Float, Default_Value => 0.0, Image => Vkm_Float'Image);
         
     --< A subtype of the instantiated Vkm_GenType that represents the GenFType 
     --< described in the GLSL specification.

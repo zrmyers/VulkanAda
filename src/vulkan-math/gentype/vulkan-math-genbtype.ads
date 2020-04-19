@@ -41,7 +41,7 @@ package Vulkan.Math.GenBType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Bool as the Base_Type.
     package GBT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Bool, Image => Vkm_Bool'Image);
+        Base_Type => Vkm_Bool, Default_Value => false, Image => Vkm_Bool'Image);
 
     --< A subtype of the instantiated Vkm_GenType that represents the GenBType 
     --< described in the GLSL specification.

@@ -129,8 +129,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     procedure Copy (Destination : in out Vkm_GenType;
                     Source      : in     Vkm_GenType;
                     Num_Copy    : in     Vkm_Length;
@@ -142,6 +142,20 @@ package body Vulkan.Math.GenType is
     end Copy;
 
 
+    ----------------------------------------------------------------------------
+
+
+    function Component (vec   : in     Vkm_GenType;
+                        index : in     Vkm_Indices) return Base_Type is
+        value : Base_Type := Default_Value;
+    begin
+        if index <= vec.Last_Index then
+            value := vec.data(index);
+        end if;
+        return value;
+    end Component;
+    
+    
     ----------------------------------------------------------------
 
 
