@@ -217,6 +217,42 @@ package Vulkan.Math.GenType is
     --< Constructor of type Vkm_GenType.
     --<
     --< @description
+    --< This operation creates an instance of Vkm_GenType with four components set
+    --< to the indicated values.
+    --<
+    --< @param size
+    --< The size of the vector to create.
+    --<
+    --< @param value1
+    --< The value that the first component of the Vkm_GenType vector is set to.
+    --<
+    --< @param value2
+    --< The value that the second component of the Vkm_GenType vector is set to.
+    --<
+    --< @param value3
+    --< The value that the third component of the Vkm_GenType vector is set to.
+    --<
+    --< @param value4
+    --< The value that the fourth component of the Vkm_GenType vector is set to.
+    --<
+    --< @return
+    --< A new instance of Vkm_GenType.
+    ----------------------------------------------------------------------------
+    function Make_GenType (
+        size                           : in Vkm_Length;
+        value1, value2, value3, value4 : in Base_Type := Default_Value) return Vkm_GenType is
+        (case size is
+            when 1 => Make_GenType(value1),
+            when 2 => Make_GenType(value1, value2),
+            when 3 => Make_GenType(value1, value2, value3),
+            when 4 => Make_GenType(value1, value2, value3, value4)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor of type Vkm_GenType.
+    --<
+    --< @description
     --< This operation creates an instance of Vkm_GenType by copying an existing
     --< instance of Vkm_GenType. The new instance is of the same dimmension and
     --< value as the instance used for construction.

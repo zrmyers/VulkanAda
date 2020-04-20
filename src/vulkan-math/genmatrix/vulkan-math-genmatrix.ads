@@ -40,6 +40,10 @@ generic
     with function y (vec : in     Base_Vector_Type) return Base_Type;
     with function z (vec : in     Base_Vector_Type) return Base_Type;
     with function w (vec : in     Base_Vector_Type) return Base_Type;
+    with function Make_GenType (
+        size                           : in Vkm_Length;
+        value1, value2, value3, value4 : in Base_Type := 0.0) return Base_Vector_Type;
+        
 package Vulkan.Math.GenMatrix is
     pragma Preelaborate;
     pragma Pure;
@@ -340,7 +344,8 @@ package Vulkan.Math.GenMatrix is
     procedure c3r3( 
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenMatrix element accessor.
@@ -496,6 +501,115 @@ package Vulkan.Math.GenMatrix is
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
         (Element(instance, 3, 3, value)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    -- Column Accessors
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Get the indicated column of the matrix as a vector.
+    --<
+    --< @description
+    --< Retrieve the indicated column of the matrix as a vector:
+    --<
+    --<    cI := [ instance.cIr0 instance.cIr1 ... instance.cIrN ]
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which the column is retrieved.
+    --<
+    --< @param col_index
+    --< The index of the column to retrieve from the matrix.
+    --<
+    --< @return
+    --< The vector that contains all elements in the indicated column.
+    ----------------------------------------------------------------------------
+    function Column (
+        instance  : in     Vkm_GenMatrix;
+        col_index : in     Vkm_Indices) return Base_Vector_Type is
+        (Make_GenType(
+             To_Vkm_Length(instance.last_row_index),
+             instance.Element(col_index, 0),
+             instance.Element(col_index, 1),
+             instance.Element(col_index, 2),
+             instance.Element(col_index, 3))) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c0 (
+        instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Column(instance, 0)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c1 (
+        instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Column(instance, 1)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c2 (
+        instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Column(instance, 2)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c3 (
+        instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Column(instance, 3)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Set the indicated column of the matrix given a vector.
+    --<
+    --< @description
+    --< Sets the indicated column of the matrix to the specified value.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which the column is retrieved.
+    --<
+    --< @param col_index
+    --< The index of the column to retrieve from the matrix.
+    --<
+    --< @return
+    --< The vector that contains all elements in the indicated column.
+    ----------------------------------------------------------------------------
+    procedure Column (
+        instance  : in out Vkm_GenMatrix;
+        col_index : in     Vkm_Indices;
+        col       : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    procedure c0 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    procedure c1 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    procedure c2 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    procedure c3 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type);
 
 
     ----------------------------------------------------------------------------
@@ -838,4 +952,31 @@ package Vulkan.Math.GenMatrix is
             c3r0_val => x(c3_val), c3r1_val => y(c3_val), c3r2_val => z(c3_val), c3r3_val => w(c3_val))) with Inline;
 
 
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Apply function component-wise on two matrices.
+    --<
+    --< @description
+    --< Applies function component-wise on two matrices, yielding the following
+    --< matrix:
+    --<
+    --<     | Func(im1.c0r0, im2.c0r0) ... Func(im1.cNr0, im2.cNr0) |
+    --<     |        ...                           ...              |
+    --<     | Func(im1.c0rN, im2.c0rN) ... Func(im1.cNrN, im2.cNrN) |
+    --<
+    --< @param im1
+    --< The first input Vkm_GenMatrix parameter.
+    --<
+    --< @param im2
+    --< The second input Vkm_GenMatrix parameter.
+    --<
+    --< @return
+    --< The result from applying the generic function Func component-wise on both
+    --< matrices.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func (is1, is2 : in     Base_Type) return Base_Type;
+    function Apply_Func_IM_IM_RM (im1, im2 : in     Vkm_GenMatrix) return Vkm_GenMatrix;
+    
+    
 end Vulkan.Math.GenMatrix;

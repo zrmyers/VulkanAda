@@ -259,8 +259,66 @@ package body Vulkan.Math.GenMatrix is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
+    procedure Column (
+        instance  : in out Vkm_GenMatrix;
+        col_index : in     Vkm_Indices;
+        col       : in     Base_Vector_Type) is
+    begin
+        instance.Element(col_index, 0, x(col))
+                .Element(col_index, 1, y(col))
+                .Element(col_index, 2, z(col))
+                .Element(col_index, 3, w(col));
+    end Column;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure c0 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type) is
+    begin
+        Column(instance, 0, col);
+    end c0;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure c1 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type) is
+    begin
+        Column(instance, 1, col);
+    end c1;
+
+
+    ----------------------------------------------------------------------------
+
+    procedure c2 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type) is
+    begin
+        Column(instance, 2, col);
+    end c2;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure c3 (
+        instance : in out Vkm_GenMatrix;
+        col      : in     Base_Vector_Type) is
+    begin
+        Column(instance, 3, col);
+    end c3;
+
+
+    ----------------------------------------------------------------------------
+
+
     function Make_GenMatrix(
         cN, rN                                 : in     Vkm_Indices;
         c0r0_val, c0r1_val, c0r2_val, c0r3_val,
@@ -270,68 +328,112 @@ package body Vulkan.Math.GenMatrix is
         
         instance : Vkm_GenMatrix(last_column_index => cN, last_row_index => rN);
     begin
-        if cN = 0 and rN = 0 then
-            instance.data := (0 => (0 => c0r0_val));
-        elsif cN = 0 and rN = 1 then
-            instance.data := (0 => (c0r0_val, c0r1_val));
-        elsif cN = 0 and rN = 2 then
-            instance.data := (0 => (c0r0_val, c0r1_val, c0r2_val));
-        elsif cN = 0 and rN = 3 then
-            instance.data := (0 => (c0r0_val, c0r1_val, c0r2_val, c0r3_val));
-        elsif cN = 1 and rN = 0 then
-            instance.data := ((0 => c0r0_val),
-                              (0 => c1r0_val));
-        elsif cN = 1 and rN = 1 then
-            instance.data := ((c0r0_val, c0r1_val),
-                              (c1r0_val, c1r1_val));
-        elsif cN = 1 and rN = 2 then
-            instance.data := ((c0r0_val, c0r1_val, c0r2_val),
-                              (c1r0_val, c1r1_val, c1r2_val));
-        elsif cN = 1 and rN = 3 then
-            instance.data := ((c0r0_val, c0r1_val, c0r2_val, c0r3_val),
-                              (c1r0_val, c1r1_val, c1r2_val, c1r3_val));
-        elsif cN = 2 and rN = 0 then
-            instance.data := ((0 => c0r0_val),
-                              (0 => c1r0_val),
-                              (0 => c2r0_val));
-        elsif cN = 2 and rN = 1 then 
-            instance.data := ((c0r0_val, c0r1_val),
-                              (c1r0_val, c1r1_val),
-                              (c2r0_val, c2r1_val));
-        elsif cN = 2 and rN = 2 then
-            instance.data := ((c0r0_val, c0r1_val, c0r2_val),
-                              (c1r0_val, c1r1_val, c1r2_val),
-                              (c2r0_val, c2r1_val, c2r2_val));
-        elsif cN = 2 and rN = 3 then
-            instance.data := ((c0r0_val, c0r1_val, c0r2_val, c0r3_val),
-                              (c1r0_val, c1r1_val, c1r2_val, c1r3_val),
-                              (c2r0_val, c2r1_val, c2r2_val, c2r3_val));
-        elsif cN = 3 and rN = 0 then
-            instance.data := ((0 => c0r0_val),
-                              (0 => c1r0_val),
-                              (0 => c2r0_val),
-                              (0 => c2r0_val));
-        elsif cN = 3 and rN = 1 then 
-            instance.data := ((c0r0_val, c0r1_val),
-                              (c1r0_val, c1r1_val),
-                              (c2r0_val, c2r1_val),
-                              (c3r0_val, c3r1_val));
-        elsif cN = 3 and rN = 2 then
-            instance.data := ((c0r0_val, c0r1_val, c0r2_val),
-                              (c1r0_val, c1r1_val, c1r2_val),
-                              (c2r0_val, c2r1_val, c2r2_val),
-                              (c3r0_val, c3r1_val, c3r2_val));
-        elsif cN = 3 and rN = 3 then
-            instance.data := ((c0r0_val, c0r1_val, c0r2_val, c0r3_val),
-                              (c1r0_val, c1r1_val, c1r2_val, c1r3_val),
-                              (c2r0_val, c2r1_val, c2r2_val, c2r3_val),
-                              (c3r0_val, c3r1_val, c3r2_val, c3r3_val));
-        end if;
+        case cN is
+        
+            --------------------------------------------------------------------
+            -- 1 Column
+            --------------------------------------------------------------------
+            when 0 =>
+                case rN is
+                    when 0 => instance.data := (0 => (0 => c0r0_val));
+                    
+                    when 1 => instance.data := (0 => (c0r0_val, c0r1_val));
+                    
+                    when 2 => instance.data := (0 => (c0r0_val, c0r1_val, c0r2_val));
+                    
+                    when 3 => instance.data := (0 => (c0r0_val, c0r1_val, c0r2_val, c0r3_val));
+                end case;
+                
+            --------------------------------------------------------------------
+            -- 2 Columns
+            --------------------------------------------------------------------
+            when 1 =>
+                case rN is 
+                    when 0 => instance.data := ((0 => c0r0_val),
+                                                (0 => c1r0_val));
+                                                
+                    when 1 => instance.data := ((c0r0_val, c0r1_val),
+                                                (c1r0_val, c1r1_val));
+                                                
+                    when 2 => instance.data := ((c0r0_val, c0r1_val, c0r2_val),
+                                                (c1r0_val, c1r1_val, c1r2_val));
+                                                
+                    when 3 => instance.data := ((c0r0_val, c0r1_val, c0r2_val, c0r3_val),
+                                                (c1r0_val, c1r1_val, c1r2_val, c1r3_val));
+                end case;
+
+            --------------------------------------------------------------------
+            -- 3 Columns
+            --------------------------------------------------------------------
+            when 2 =>
+                case rN is
+                    when 0 => instance.data := ((0 => c0r0_val),
+                                                (0 => c1r0_val),
+                                                (0 => c2r0_val));
+                                                
+                    when 1 => instance.data := ((c0r0_val, c0r1_val),
+                                                (c1r0_val, c1r1_val),
+                                                (c2r0_val, c2r1_val));
+                                                
+                    when 2 => instance.data := ((c0r0_val, c0r1_val, c0r2_val),
+                                                (c1r0_val, c1r1_val, c1r2_val),
+                                                (c2r0_val, c2r1_val, c2r2_val));
+                                                
+                    when 3 => instance.data := ((c0r0_val, c0r1_val, c0r2_val, c0r3_val),
+                                                (c1r0_val, c1r1_val, c1r2_val, c1r3_val),
+                                                (c2r0_val, c2r1_val, c2r2_val, c2r3_val));
+                end case;
+
+            --------------------------------------------------------------------
+            -- 4 Columns
+            --------------------------------------------------------------------
+            when 3 =>
+                case rN is
+                    when 0 => instance.data := ((0 => c0r0_val),
+                                                (0 => c1r0_val),
+                                                (0 => c2r0_val),
+                                                (0 => c2r0_val));
+
+                    when 1 => instance.data := ((c0r0_val, c0r1_val),
+                                                (c1r0_val, c1r1_val),
+                                                (c2r0_val, c2r1_val),
+                                                (c3r0_val, c3r1_val));
+
+                    when 2 => instance.data := ((c0r0_val, c0r1_val, c0r2_val),
+                                                (c1r0_val, c1r1_val, c1r2_val),
+                                                (c2r0_val, c2r1_val, c2r2_val),
+                                                (c3r0_val, c3r1_val, c3r2_val));
+
+                    when 3 => instance.data := ((c0r0_val, c0r1_val, c0r2_val, c0r3_val),
+                                                (c1r0_val, c1r1_val, c1r2_val, c1r3_val),
+                                                (c2r0_val, c2r1_val, c2r2_val, c2r3_val),
+                                                (c3r0_val, c3r1_val, c3r2_val, c3r3_val));
+                end case;
+            end case;
+            
         return instance;
     end Make_GenMatrix;
 
 
     ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IM_IM_RM (im1, im2 : in     Vkm_GenMatrix) return Vkm_GenMatrix is
+        
+        result : Vkm_GenMatrix(
+            last_column_index => im1.last_column_index,
+            last_row_index    => im1.last_row_index);
+    
+    begin
+        for col_index in Vkm_Indices'First .. result.last_column_index loop
+            for row_index in Vkm_Indices'First .. result.last_row_index loop
+                result.data(col_index, row_index) 
+                    := Func(im1.data(col_index, row_index),
+                            im2.data(col_index, row_index));
+            end loop;
+        end loop;
+        return result;
+    end Apply_Func_IM_IM_RM;
     
     
 end Vulkan.Math.GenMatrix;

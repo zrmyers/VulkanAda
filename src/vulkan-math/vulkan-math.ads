@@ -88,6 +88,23 @@ package Vulkan.Math is
     
     ----------------------------------------------------------------------------
     --< @summary
+    --< Convert to Vkm_Length.
+    --<
+    --< @description
+    --< Convert a value of type Vkm_Indices to a value of type Vkm_Length.
+    --<
+    --< @param last_index
+    --< The index value to convert to a vector length.
+    --<
+    --< @return
+    --< The result of the conversion.
+    ----------------------------------------------------------------------------
+    function To_Vkm_Length (last_index : in Vkm_Indices) return Vkm_Length is
+        (Vkm_Length(Vkm_Indices'Base(last_index) + 1)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
     --< Convert to Vkm_Bool.
     --<
     --< @description
