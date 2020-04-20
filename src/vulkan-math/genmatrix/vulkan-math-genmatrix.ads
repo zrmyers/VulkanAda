@@ -570,13 +570,13 @@ package Vulkan.Math.GenMatrix is
     --< Sets the indicated column of the matrix to the specified value.
     --<
     --< @param instance
-    --< The instance of Vkm_GenMatrix from which the column is retrieved.
+    --< The instance of Vkm_GenMatrix for which the column is set.
     --<
     --< @param col_index
-    --< The index of the column to retrieve from the matrix.
+    --< The index of the column to set for the matrix.
     --<
-    --< @return
-    --< The vector that contains all elements in the indicated column.
+    --< @param col
+    --< The vector value to set the column to.
     ----------------------------------------------------------------------------
     procedure Column (
         instance  : in out Vkm_GenMatrix;
