@@ -73,10 +73,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenMatrix_Reference",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L82C10",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L86C10",
       "declared": "Vulkan.Math.GenMatrix",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L82"
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L86"
     },
     {
       "label": "Vkm_GenType_Reference",

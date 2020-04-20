@@ -45,10 +45,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_Matrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L54C10",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L58C10",
       "declared": "Vulkan.Math.GenMatrix",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L54"
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L58"
     },
     {
       "label": "Vkm_Uint",

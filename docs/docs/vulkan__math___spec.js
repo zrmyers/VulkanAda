@@ -709,276 +709,6 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Bool",
           "qualifier": "",
-          "line": 102,
-          "column": 14,
-          "src": "srcs/vulkan-math.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Convert to Vkm_Bool.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 102,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "To_Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L102C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L102C27"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L55C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L49C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 103,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L49C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "value"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "/="
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "number",
-                      "text": "0"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "with"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " Inline"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Convert a vulkan math type to the Vkm_Bool type.\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "If the value is not equal to zero, returns true; Otherwise returns false.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "value",
-              "line": 102,
-              "column": 27,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Uint",
-                "docHref": "docs/vulkan__math___spec.html#L55C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to convert to Vkm_Bool.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The conversion to Vkm_Bool.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "To_Vkm_Bool",
-          "qualifier": "",
           "line": 119,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
@@ -1066,13 +796,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L58C10"
+                      "text": "Vkm_Uint",
+                      "href": "docs/vulkan__math___spec.html#L55C10"
                     },
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "   "
+                      "text": "  "
                     },
                     {
                       "kind": "span",
@@ -1216,8 +946,8 @@ GNATdoc.Documentation = {
               "line": 119,
               "column": 27,
               "type": {
-                "label": "Vulkan.Math.Vkm_Int",
-                "docHref": "docs/vulkan__math___spec.html#L58C10"
+                "label": "Vulkan.Math.Vkm_Uint",
+                "docHref": "docs/vulkan__math___spec.html#L55C10"
               },
               "description": [
                 {
@@ -1336,13 +1066,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L61C10"
+                      "text": "Vkm_Int",
+                      "href": "docs/vulkan__math___spec.html#L58C10"
                     },
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": " "
+                      "text": "   "
                     },
                     {
                       "kind": "span",
@@ -1430,7 +1160,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "0.0"
+                      "text": "0"
                     },
                     {
                       "kind": "span",
@@ -1486,8 +1216,8 @@ GNATdoc.Documentation = {
               "line": 136,
               "column": 27,
               "type": {
-                "label": "Vulkan.Math.Vkm_Float",
-                "docHref": "docs/vulkan__math___spec.html#L61C10"
+                "label": "Vulkan.Math.Vkm_Int",
+                "docHref": "docs/vulkan__math___spec.html#L58C10"
               },
               "description": [
                 {
@@ -1606,8 +1336,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L64C10"
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -1751,6 +1486,271 @@ GNATdoc.Documentation = {
               "line": 153,
               "column": 27,
               "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to convert to Vkm_Bool.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The conversion to Vkm_Bool.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "To_Vkm_Bool",
+          "qualifier": "",
+          "line": 170,
+          "column": 14,
+          "src": "srcs/vulkan-math.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert to Vkm_Bool.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 170,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "To_Vkm_Bool",
+                      "href": "docs/vulkan__math___spec.html#L170C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value",
+                      "href": "docs/vulkan__math___spec.html#L170C27"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Double",
+                      "href": "docs/vulkan__math___spec.html#L64C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Bool",
+                      "href": "docs/vulkan__math___spec.html#L49C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 171,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Bool",
+                      "href": "docs/vulkan__math___spec.html#L49C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "/="
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "0.0"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert a vulkan math type to the Vkm_Bool type.\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "If the value is not equal to zero, returns true; Otherwise returns false.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "value",
+              "line": 170,
+              "column": 27,
+              "type": {
                 "label": "Vulkan.Math.Vkm_Double",
                 "docHref": "docs/vulkan__math___spec.html#L64C10"
               },
@@ -1784,7 +1784,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Double",
           "qualifier": "",
-          "line": 357,
+          "line": 374,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -1804,7 +1804,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 357,
+                  "number": 374,
                   "children": [
                     {
                       "kind": "span",
@@ -1825,7 +1825,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L357C14"
+                      "href": "docs/vulkan__math___spec.html#L374C14"
                     },
                     {
                       "kind": "span",
@@ -1841,7 +1841,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L357C29"
+                      "href": "docs/vulkan__math___spec.html#L374C29"
                     },
                     {
                       "kind": "span",
@@ -1919,7 +1919,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 358,
+                  "number": 375,
                   "children": [
                     {
                       "kind": "span",
@@ -2032,7 +2032,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 357,
+              "line": 374,
               "column": 29,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -2068,7 +2068,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Double",
           "qualifier": "",
-          "line": 373,
+          "line": 390,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -2088,7 +2088,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 373,
+                  "number": 390,
                   "children": [
                     {
                       "kind": "span",
@@ -2109,7 +2109,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L373C14"
+                      "href": "docs/vulkan__math___spec.html#L390C14"
                     },
                     {
                       "kind": "span",
@@ -2125,7 +2125,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L373C29"
+                      "href": "docs/vulkan__math___spec.html#L390C29"
                     },
                     {
                       "kind": "span",
@@ -2203,7 +2203,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 374,
+                  "number": 391,
                   "children": [
                     {
                       "kind": "span",
@@ -2308,7 +2308,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 373,
+              "line": 390,
               "column": 29,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -2344,7 +2344,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Double",
           "qualifier": "",
-          "line": 389,
+          "line": 406,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -2364,7 +2364,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 389,
+                  "number": 406,
                   "children": [
                     {
                       "kind": "span",
@@ -2385,7 +2385,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L389C14"
+                      "href": "docs/vulkan__math___spec.html#L406C14"
                     },
                     {
                       "kind": "span",
@@ -2401,7 +2401,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L389C29"
+                      "href": "docs/vulkan__math___spec.html#L406C29"
                     },
                     {
                       "kind": "span",
@@ -2479,7 +2479,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 390,
+                  "number": 407,
                   "children": [
                     {
                       "kind": "span",
@@ -2584,7 +2584,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 389,
+              "line": 406,
               "column": 29,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -2620,7 +2620,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Double",
           "qualifier": "",
-          "line": 405,
+          "line": 422,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -2640,7 +2640,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 405,
+                  "number": 422,
                   "children": [
                     {
                       "kind": "span",
@@ -2661,7 +2661,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Double",
-                      "href": "docs/vulkan__math___spec.html#L405C14"
+                      "href": "docs/vulkan__math___spec.html#L422C14"
                     },
                     {
                       "kind": "span",
@@ -2677,7 +2677,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L405C29"
+                      "href": "docs/vulkan__math___spec.html#L422C29"
                     },
                     {
                       "kind": "span",
@@ -2750,7 +2750,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 406,
+                  "number": 423,
                   "children": [
                     {
                       "kind": "span",
@@ -2855,7 +2855,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 405,
+              "line": 422,
               "column": 29,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -2891,7 +2891,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Float",
           "qualifier": "",
-          "line": 293,
+          "line": 310,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -2911,7 +2911,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 293,
+                  "number": 310,
                   "children": [
                     {
                       "kind": "span",
@@ -2932,7 +2932,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L293C14"
+                      "href": "docs/vulkan__math___spec.html#L310C14"
                     },
                     {
                       "kind": "span",
@@ -2948,7 +2948,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L293C28"
+                      "href": "docs/vulkan__math___spec.html#L310C28"
                     },
                     {
                       "kind": "span",
@@ -3026,7 +3026,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 294,
+                  "number": 311,
                   "children": [
                     {
                       "kind": "span",
@@ -3139,7 +3139,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 293,
+              "line": 310,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -3175,7 +3175,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Float",
           "qualifier": "",
-          "line": 309,
+          "line": 326,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -3195,7 +3195,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 309,
+                  "number": 326,
                   "children": [
                     {
                       "kind": "span",
@@ -3216,7 +3216,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L309C14"
+                      "href": "docs/vulkan__math___spec.html#L326C14"
                     },
                     {
                       "kind": "span",
@@ -3232,7 +3232,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L309C28"
+                      "href": "docs/vulkan__math___spec.html#L326C28"
                     },
                     {
                       "kind": "span",
@@ -3310,7 +3310,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 310,
+                  "number": 327,
                   "children": [
                     {
                       "kind": "span",
@@ -3415,7 +3415,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 309,
+              "line": 326,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.Vkm_Uint",
@@ -3451,7 +3451,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Float",
           "qualifier": "",
-          "line": 325,
+          "line": 342,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -3471,7 +3471,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 325,
+                  "number": 342,
                   "children": [
                     {
                       "kind": "span",
@@ -3492,7 +3492,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L325C14"
+                      "href": "docs/vulkan__math___spec.html#L342C14"
                     },
                     {
                       "kind": "span",
@@ -3508,7 +3508,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L325C28"
+                      "href": "docs/vulkan__math___spec.html#L342C28"
                     },
                     {
                       "kind": "span",
@@ -3586,7 +3586,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 326,
+                  "number": 343,
                   "children": [
                     {
                       "kind": "span",
@@ -3691,7 +3691,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 325,
+              "line": 342,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.Vkm_Int",
@@ -3727,7 +3727,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Float",
           "qualifier": "",
-          "line": 341,
+          "line": 358,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -3747,7 +3747,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 341,
+                  "number": 358,
                   "children": [
                     {
                       "kind": "span",
@@ -3768,7 +3768,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Float",
-                      "href": "docs/vulkan__math___spec.html#L341C14"
+                      "href": "docs/vulkan__math___spec.html#L358C14"
                     },
                     {
                       "kind": "span",
@@ -3784,7 +3784,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L341C28"
+                      "href": "docs/vulkan__math___spec.html#L358C28"
                     },
                     {
                       "kind": "span",
@@ -3857,7 +3857,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 342,
+                  "number": 359,
                   "children": [
                     {
                       "kind": "span",
@@ -3962,7 +3962,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 341,
+              "line": 358,
               "column": 28,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -4285,7 +4285,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Int",
           "qualifier": "",
-          "line": 230,
+          "line": 247,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -4305,7 +4305,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 230,
+                  "number": 247,
                   "children": [
                     {
                       "kind": "span",
@@ -4326,7 +4326,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L230C14"
+                      "href": "docs/vulkan__math___spec.html#L247C14"
                     },
                     {
                       "kind": "span",
@@ -4342,7 +4342,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L230C26"
+                      "href": "docs/vulkan__math___spec.html#L247C26"
                     },
                     {
                       "kind": "span",
@@ -4420,7 +4420,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 231,
+                  "number": 248,
                   "children": [
                     {
                       "kind": "span",
@@ -4529,7 +4529,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 230,
+              "line": 247,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -4565,7 +4565,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Int",
           "qualifier": "",
-          "line": 262,
+          "line": 279,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -4585,7 +4585,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 262,
+                  "number": 279,
                   "children": [
                     {
                       "kind": "span",
@@ -4606,7 +4606,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L262C14"
+                      "href": "docs/vulkan__math___spec.html#L279C14"
                     },
                     {
                       "kind": "span",
@@ -4622,7 +4622,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L262C26"
+                      "href": "docs/vulkan__math___spec.html#L279C26"
                     },
                     {
                       "kind": "span",
@@ -4700,7 +4700,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 263,
+                  "number": 280,
                   "children": [
                     {
                       "kind": "span",
@@ -4801,7 +4801,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 262,
+              "line": 279,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -4837,7 +4837,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Int",
           "qualifier": "",
-          "line": 277,
+          "line": 294,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -4857,7 +4857,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 277,
+                  "number": 294,
                   "children": [
                     {
                       "kind": "span",
@@ -4878,7 +4878,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L277C14"
+                      "href": "docs/vulkan__math___spec.html#L294C14"
                     },
                     {
                       "kind": "span",
@@ -4894,7 +4894,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L277C26"
+                      "href": "docs/vulkan__math___spec.html#L294C26"
                     },
                     {
                       "kind": "span",
@@ -4967,7 +4967,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 278,
+                  "number": 295,
                   "children": [
                     {
                       "kind": "span",
@@ -5068,7 +5068,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 277,
+              "line": 294,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -5102,9 +5102,296 @@ GNATdoc.Documentation = {
           }
         },
         {
+          "label": "To_Vkm_Length",
+          "qualifier": "",
+          "line": 102,
+          "column": 14,
+          "src": "srcs/vulkan-math.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert to Vkm_Length.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 102,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "To_Vkm_Length",
+                      "href": "docs/vulkan__math___spec.html#L102C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "last_index",
+                      "href": "docs/vulkan__math___spec.html#L102C29"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Indices",
+                      "href": "docs/vulkan__math___spec.html#L70C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Length",
+                      "href": "docs/vulkan__math___spec.html#L67C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 103,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Length",
+                      "href": "docs/vulkan__math___spec.html#L67C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Indices",
+                      "href": "docs/vulkan__math___spec.html#L70C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "'"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Base"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "last_index"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "+"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "1"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Convert a value of type Vkm_Indices to a value of type Vkm_Length.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "last_index",
+              "line": 102,
+              "column": 29,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Indices",
+                "docHref": "docs/vulkan__math___spec.html#L70C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The index value to convert to a vector length.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the conversion.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
           "label": "To_Vkm_Uint",
           "qualifier": "",
-          "line": 170,
+          "line": 187,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -5124,7 +5411,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 170,
+                  "number": 187,
                   "children": [
                     {
                       "kind": "span",
@@ -5145,7 +5432,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L170C14"
+                      "href": "docs/vulkan__math___spec.html#L187C14"
                     },
                     {
                       "kind": "span",
@@ -5161,7 +5448,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L170C27"
+                      "href": "docs/vulkan__math___spec.html#L187C27"
                     },
                     {
                       "kind": "span",
@@ -5239,7 +5526,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 171,
+                  "number": 188,
                   "children": [
                     {
                       "kind": "span",
@@ -5352,7 +5639,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 170,
+              "line": 187,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Bool",
@@ -5388,7 +5675,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Uint",
           "qualifier": "",
-          "line": 200,
+          "line": 217,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -5408,7 +5695,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 200,
+                  "number": 217,
                   "children": [
                     {
                       "kind": "span",
@@ -5429,7 +5716,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L200C14"
+                      "href": "docs/vulkan__math___spec.html#L217C14"
                     },
                     {
                       "kind": "span",
@@ -5445,7 +5732,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L200C27"
+                      "href": "docs/vulkan__math___spec.html#L217C27"
                     },
                     {
                       "kind": "span",
@@ -5523,7 +5810,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 201,
+                  "number": 218,
                   "children": [
                     {
                       "kind": "span",
@@ -5624,7 +5911,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 200,
+              "line": 217,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -5660,7 +5947,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Uint",
           "qualifier": "",
-          "line": 215,
+          "line": 232,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -5680,7 +5967,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 215,
+                  "number": 232,
                   "children": [
                     {
                       "kind": "span",
@@ -5701,7 +5988,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L215C14"
+                      "href": "docs/vulkan__math___spec.html#L232C14"
                     },
                     {
                       "kind": "span",
@@ -5717,7 +6004,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value",
-                      "href": "docs/vulkan__math___spec.html#L215C27"
+                      "href": "docs/vulkan__math___spec.html#L232C27"
                     },
                     {
                       "kind": "span",
@@ -5790,7 +6077,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 216,
+                  "number": 233,
                   "children": [
                     {
                       "kind": "span",
@@ -5891,7 +6178,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value",
-              "line": 215,
+              "line": 232,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.Vkm_Double",
@@ -5932,7 +6219,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Int",
           "qualifier": "(generic instantiation)",
-          "line": 248,
+          "line": 265,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -5952,7 +6239,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 248,
+                  "number": 265,
                   "children": [
                     {
                       "kind": "span",
@@ -5973,7 +6260,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Int",
-                      "href": "docs/vulkan__math___spec.html#L248C14"
+                      "href": "docs/vulkan__math___spec.html#L265C14"
                     },
                     {
                       "kind": "span",
@@ -6116,7 +6403,7 @@ GNATdoc.Documentation = {
         {
           "label": "To_Vkm_Uint",
           "qualifier": "(generic instantiation)",
-          "line": 186,
+          "line": 203,
           "column": 14,
           "src": "srcs/vulkan-math.ads.html",
           "summary": [
@@ -6136,7 +6423,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 186,
+                  "number": 203,
                   "children": [
                     {
                       "kind": "span",
@@ -6157,7 +6444,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "To_Vkm_Uint",
-                      "href": "docs/vulkan__math___spec.html#L186C14"
+                      "href": "docs/vulkan__math___spec.html#L203C14"
                     },
                     {
                       "kind": "span",
