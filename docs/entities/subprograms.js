@@ -269,10 +269,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IM_IM_RM",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L979C14",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1198C14",
       "declared": "Vulkan.Math.GenMatrix",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L979"
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1198"
     },
     {
       "label": "Apply_Func_IS_IS_IV_RV",
