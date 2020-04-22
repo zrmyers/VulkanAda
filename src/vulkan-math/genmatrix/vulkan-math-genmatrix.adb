@@ -264,12 +264,12 @@ package body Vulkan.Math.GenMatrix is
     procedure Column (
         instance  : in out Vkm_GenMatrix;
         col_index : in     Vkm_Indices;
-        col       : in     Base_Vector_Type) is
+        col_val   : in     Base_Vector_Type) is
     begin
-        instance.Element(col_index, 0, x(col))
-                .Element(col_index, 1, y(col))
-                .Element(col_index, 2, z(col))
-                .Element(col_index, 3, w(col));
+        instance.Element(col_index, 0, x(col_val))
+                .Element(col_index, 1, y(col_val))
+                .Element(col_index, 2, z(col_val))
+                .Element(col_index, 3, w(col_val));
     end Column;
 
 
@@ -278,9 +278,9 @@ package body Vulkan.Math.GenMatrix is
 
     procedure c0 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type) is
+        col_val  : in     Base_Vector_Type) is
     begin
-        Column(instance, 0, col);
+        Column(instance, 0, col_val);
     end c0;
 
 
@@ -289,9 +289,9 @@ package body Vulkan.Math.GenMatrix is
 
     procedure c1 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type) is
+        col_val  : in     Base_Vector_Type) is
     begin
-        Column(instance, 1, col);
+        Column(instance, 1, col_val);
     end c1;
 
 
@@ -299,9 +299,9 @@ package body Vulkan.Math.GenMatrix is
 
     procedure c2 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type) is
+        col_val  : in     Base_Vector_Type) is
     begin
-        Column(instance, 2, col);
+        Column(instance, 2, col_val);
     end c2;
 
 
@@ -310,10 +310,98 @@ package body Vulkan.Math.GenMatrix is
 
     procedure c3 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type) is
+        col_val  : in     Base_Vector_Type) is
     begin
-        Column(instance, 3, col);
+        Column(instance, 3, col_val);
     end c3;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function  Column(
+        instance  : in out Vkm_GenMatrix;
+        col_index : in     Vkm_Indices  ;
+        col_val   : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        
+        instance_ref : constant Vkm_GenMatrix_Reference := (instance => instance'Unrestricted_Access);
+    begin
+        Column(instance, col_index, col_val);
+        return instance_ref;
+    end Column;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure Row (
+        instance  : in out Vkm_GenMatrix;
+        row_index : in     Vkm_Indices;
+        row_val   : in     Base_Vector_Type) is
+    begin
+        instance.Element(0, row_index, x(row_val))
+                .Element(1, row_index, y(row_val))
+                .Element(2, row_index, z(row_val))
+                .Element(3, row_index, w(row_val));
+    end Row;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure r0 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) is
+    begin
+        Row(instance, 0, row_val);
+    end r0;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure r1 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) is
+    begin
+        Row(instance, 1, row_val);
+    end r1;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure r2 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) is
+    begin
+        Row(instance, 2, row_val);
+    end r2;
+
+    ----------------------------------------------------------------------------
+
+
+    procedure r3 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) is
+    begin
+        Row(instance, 3, row_val);
+    end r3;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Row (
+        instance  : in out Vkm_GenMatrix;
+        row_index : in     Vkm_Indices;
+        row_val   : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        
+        instance_ref : constant Vkm_GenMatrix_Reference := (instance => instance'Unrestricted_Access);
+    begin
+        Row(instance, row_index, row_val);
+        return instance_ref;
+    end Row;
 
 
     ----------------------------------------------------------------------------

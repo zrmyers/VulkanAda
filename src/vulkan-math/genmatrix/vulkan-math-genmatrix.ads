@@ -575,41 +575,260 @@ package Vulkan.Math.GenMatrix is
     --< @param col_index
     --< The index of the column to set for the matrix.
     --<
-    --< @param col
+    --< @param col_val
     --< The vector value to set the column to.
     ----------------------------------------------------------------------------
     procedure Column (
         instance  : in out Vkm_GenMatrix;
         col_index : in     Vkm_Indices;
-        col       : in     Base_Vector_Type);
+        col_val   : in     Base_Vector_Type);
 
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
     procedure c0 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type);
+        col_val  : in     Base_Vector_Type);
 
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
     procedure c1 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type);
+        col_val  : in     Base_Vector_Type);
 
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
     procedure c2 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type);
+        col_val  : in     Base_Vector_Type);
 
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
     procedure c3 (
         instance : in out Vkm_GenMatrix;
-        col      : in     Base_Vector_Type);
+        col_val  : in     Base_Vector_Type);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Set the indicated column of the matrix given a vector.
+    --<
+    --< @description
+    --< Sets the indicated column of the matrix to the specified value.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which the column is set.
+    --<
+    --< @param col_index
+    --< The index of the column to set for the matrix.
+    --<
+    --< @param col_val
+    --< The vector value to set the column to.
+    --<
+    --< @return 
+    --< A reference to the Vkm_GenMatrix instance.
+    ----------------------------------------------------------------------------
+    function  Column(
+        instance  : in out Vkm_GenMatrix;
+        col_index : in     Vkm_Indices  ;
+        col_val   : in     Base_Vector_Type) return Vkm_GenMatrix_Reference;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c0 (
+        instance : in out Vkm_GenMatrix;
+        col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Column(instance, 0, col_val)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c1 (
+        instance : in out Vkm_GenMatrix;
+        col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Column(instance, 1, col_val)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c2 (
+        instance : in out Vkm_GenMatrix;
+        col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Column(instance, 2, col_val)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    function c3 (
+        instance : in out Vkm_GenMatrix;
+        col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Column(instance, 3, col_val)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    -- Row Accessors
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Get the indicated row of the matrix as a vector.
+    --<
+    --< @description
+    --< Retrieve the indicated row of the matrix as a vector:
+    --<
+    --<    rI := [ instance.c0rI instance.c1rI ... instance.cNrI ]
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which the row is retrieved.
+    --<
+    --< @param row_index
+    --< The index of the row to retrieve from the matrix.
+    --<
+    --< @return
+    --< The vector that contains all elements in the indicated row.
+    ----------------------------------------------------------------------------
+    function Row (
+        instance  : in     Vkm_GenMatrix;
+        row_index : in     Vkm_Indices) return Base_Vector_Type is
+        (Make_GenType(
+             To_Vkm_Length(instance.last_row_index),
+             instance.Element(0, row_index),
+             instance.Element(1, row_index),
+             instance.Element(2, row_index),
+             instance.Element(3, row_index))) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r0 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Row(instance, 0)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r1 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Row(instance, 1)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r2 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Row(instance, 2)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r3 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
+        (Row(instance, 3)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Set the indicated row of the matrix given a vector.
+    --<
+    --< @description
+    --< Sets the indicated row of the matrix to the specified value.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which the row is set.
+    --<
+    --< @param row_index
+    --< The index of the row to set for the matrix.
+    --<
+    --< @param row_val
+    --< The vector value to set the row to.
+    ----------------------------------------------------------------------------
+    procedure Row (
+        instance  : in out Vkm_GenMatrix;
+        row_index : in     Vkm_Indices;
+        row_val   : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    procedure r0 (
+        instance : in out Vkm_GenMatrix;
+        row_val      : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    procedure r1 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    procedure r2 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type);
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    procedure r3 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Set the indicated row of the matrix given a vector.
+    --<
+    --< @description
+    --< Sets the indicated row of the matrix to the specified value.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which the row is set.
+    --<
+    --< @param row_index
+    --< The index of the row to set for the matrix.
+    --<
+    --< @param row_val
+    --< The vector value to set the row to.
+    --<
+    --< @return
+    --< A reference to the Vkm_GenMatrix instance.
+    ----------------------------------------------------------------------------
+    function Row (
+        instance  : in out Vkm_GenMatrix;
+        row_index : in     Vkm_Indices;
+        row_val   : in     Base_Vector_Type) return Vkm_GenMatrix_Reference;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r0 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Row(instance, 0, row_val)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r1 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Row(instance, 1, row_val)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r2 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Row(instance, 2, row_val)) with Inline;
+
+
+    --< @private
+    --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    function r3 (
+        instance : in out Vkm_GenMatrix;
+        row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
+        (Row(instance, 3, row_val)) with Inline;
 
 
     ----------------------------------------------------------------------------
