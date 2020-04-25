@@ -35,7 +35,7 @@
 --------------------------------------------------------------------------------
 generic
     type Base_Type is digits <>;
-    type Base_Vector_Type is tagged private;
+    type Base_Vector_Type (<>) is tagged private;
     with function x (vec : in     Base_Vector_Type) return Base_Type;
     with function y (vec : in     Base_Vector_Type) return Base_Type;
     with function z (vec : in     Base_Vector_Type) return Base_Type;
