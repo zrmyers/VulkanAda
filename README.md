@@ -22,11 +22,10 @@ GLFWAda was obtained and installed from another git repository, linked to above.
 ## Roadmap
 The following is a roadmap for this repository:
 
-|Milestone      |  Description                         | Status                                   |
-|---------------|--------------------------------------|------------------------------------------|
-|VulkanAda 0.0.1| GLSL-like vector types and functions | Todo: integer and packing functions      |
-|VulkanAda 0.0.2| GLSL-like matrix types and functions | Defined generic matrix type.              |
-|VulkanAda 0.0.3| GLSL Extension-like Matrix transforms| Not Started.                             |
-|VulkanAda 0.1.0| Vulkan Instance functions and tests. | Not Started.                             |
-|VulkanAda 0.1.1| Vulkan Device functions and tests.   | Not Started.                             |
-|VulkanAda 0.1.2| TBD                                  | TBD                                      |
+|Milestone                                                          |  Description                         | Status     |
+|-------------------------------------------------------------------|--------------------------------------|------------|
+|[VulkanAda 0.0.1](https://github.com/zrmyers/VulkanAda/milestone/1)| GLSL-like vector types and functions |WIP         |
+|[VulkanAda 0.0.2](https://github.com/zrmyers/VulkanAda/milestone/2)| GLSL-like matrix types and functions |WIP         |
+|[VulkanAda 0.0.3](https://github.com/zrmyers/VulkanAda/milestone/3)| GLSL Extension-like Matrix transforms|Not Started |
+|[VulkanAda 0.1.0](https://github.com/zrmyers/VulkanAda/milestone/4)| Vulkan Instance functions and tests. |Not Started |
+|[VulkanAda 0.1.1](https://github.com/zrmyers/VulkanAda/milestone/5)| Vulkan Device functions and tests.   |Not Started |
