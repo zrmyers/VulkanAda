@@ -1043,4 +1043,50 @@ package body Vulkan.Math.GenType is
     end Apply_Func_IS_IS_IV_RV;
 
 
+    ----------------------------------------------------------------------------
+    
+    
+    function Apply_Func_IV_IV_OV_RV(IV1, IV2 : in     Vkm_GenType;
+                                    OV1      :    out Vkm_GenType) return Vkm_GenType is
+        result : Vkm_GenType(last_index => IV1.last_index);
+    begin
+        for index in result.data'Range loop
+            result.data(index) := Func(IV1.data(index), IV2.data(index), OV1.data(index));
+        end loop;
+        return result;
+    end Apply_Func_IV_IV_OV_RV;
+    
+    
+    ---------------------------------------------------------------------------- 
+    
+    
+    procedure Apply_Func_IV_IV_OV_OV(IV1, IV2 : in     Vkm_GenType;
+                                     OV1, OV2 :    out Vkm_GenType) is
+    begin
+        for index in IV1.data'Range loop
+            Func(IV1.data(index), IV2.data(index),
+                 OV1.data(index), OV2.data(index));
+        end loop;
+    end Apply_Func_IV_IV_OV_OV; 
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IV_IV_IS_IS_RV(
+        IV1, IV2 : in     Vkm_GenType;
+        IS1, IS2 : in     Base_Type  ) return Vkm_GenType is
+        
+        result : Vkm_GenType(last_index => IV1.last_index);
+    begin
+        for index in IV1.data'Range loop
+            result.data(index) := Func(IV1.data(index),
+                                       IV2.data(index),
+                                       IS1,
+                                       IS2);
+        end loop;
+        return result;
+    end Apply_Func_IV_IV_IS_IS_RV;
+
+
 end Vulkan.Math.GenType;

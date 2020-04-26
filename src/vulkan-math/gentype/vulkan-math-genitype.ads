@@ -23,8 +23,10 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenType;
 with Vulkan.Math.GenBType;
+with Vulkan.Math.GenUType;
 
 use Vulkan.Math.GenBType;
+use Vulkan.Math.GenUType;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Math GenType
@@ -107,5 +109,27 @@ package Vulkan.Math.GenIType is
     generic
         with function Func(ISI1, ISI2 : in     Vkm_Int) return Vkm_Bool;
     function Apply_Func_IVI_IVI_RVB(IVI1, IVI2 : in     Vkm_GenIType) return Vkm_GenBType;
+
+
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function on a Vkm_Uint input that returns a Vkm_Int component-wise
+    --< on a Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies a supplied function component wise on a GenUType vectors, 
+    --< returning a GenIType vector.
+    --<
+    --<    RVU := [Func(IVI1.x) ... Func(IVI1.w)]
+    --<
+    --< @param IVU1
+    --< The first input GenIType parameter.
+    --<
+    --< @return
+    --< The resulting GenIType vector, RVI.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(ISU1 : in     Vkm_Uint) return Vkm_Int;
+    function Apply_Func_IVU_RVI(IVU1 : in     Vkm_GenUType) return Vkm_GenIType;
 
 end Vulkan.Math.GenIType;

@@ -68,6 +68,16 @@ package Vulkan.Math.Integers is
 
     ----------------------------------------------------------------------------
     --< @summary
+    --< Adds two unsigned integers modulo 32, returning the result and a carry.
+    --<
+    --< @description
+    --< Applies Unsigned_Add_Carry() component-wise on three Vkm_GenUType vectors,
+    --< returning the result of addition as a Vkm_GenUType vector.
+    ----------------------------------------------------------------------------
+    function Unsigned_Add_Carry is new GUT.Apply_Func_IV_IV_OV_RV(Unsigned_Add_Carry);
+    
+    ----------------------------------------------------------------------------
+    --< @summary
     --< Subtracts two unsigned integers modulo 32, returning the result and a borrow.
     --<
     --< @description
@@ -93,6 +103,17 @@ package Vulkan.Math.Integers is
 
     ----------------------------------------------------------------------------
     --< @summary
+    --< Subtracts two unsigned integers modulo 32, returning the result and a borrow.
+    --<
+    --< @description
+    --< Applies Unsigned_Sub_Borrow() component-wise on three Vkm_GenUType vectors,
+    --< returning the result of addition as a Vkm_GenUType vector.
+    ----------------------------------------------------------------------------
+    function Unsigned_Sub_Borrow is new GUT.Apply_Func_IV_IV_OV_RV(Unsigned_Sub_Borrow);
+    
+    
+    ----------------------------------------------------------------------------
+    --< @summary
     --< This operation performs extended multiplication of two 32-bit unsigned
     --< integers.
     --<
@@ -115,6 +136,17 @@ package Vulkan.Math.Integers is
     ----------------------------------------------------------------------------
     procedure Unsigned_Mul_Extended(x, y     : in     Vkm_Uint;
                                     msb, lsb :    out Vkm_Uint);
+
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation performs extended multiplication of two Vkm_GenUType vectors.
+    --<
+    --< @description
+    --< Applies Unsigned_Mul_Extended() component-wise on two input Vkm_GenUType
+    --< vectors and two output Vkm_GenUType vectors.
+    ----------------------------------------------------------------------------
+    procedure Unsigned_Mul_Extended is new GUT.Apply_Func_IV_IV_OV_OV(Unsigned_Mul_Extended);
 
 
     ----------------------------------------------------------------------------
@@ -141,6 +173,17 @@ package Vulkan.Math.Integers is
     ----------------------------------------------------------------------------
     procedure Signed_Mul_Extended(x, y     : in     Vkm_Int;
                                   msb, lsb :    out Vkm_Int);
+
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Subtracts two Vkm_GenIType vectors modulo 32, returning the result and a borrow.
+    --<
+    --< @description
+    --< Applies Unsigned_Mul_Extended() component-wise on two input Vkm_GenIType
+    --< vectors and two output Vkm_GenIType vectors.
+    ----------------------------------------------------------------------------
+    procedure Signed_Mul_Extended is new GIT.Apply_Func_IV_IV_OV_OV(Signed_Mul_Extended);
 
 
     ----------------------------------------------------------------------------
@@ -178,6 +221,18 @@ package Vulkan.Math.Integers is
     --< to the signed bit of the bitfield.
     ----------------------------------------------------------------------------
     function Bitfield_Extract(value, offset, bits : in     Vkm_Int) return Vkm_Int;
+
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation extracts a bitfield vector from a Vkm_GenIType vector.
+    --<
+    --< @description
+    --< Applies Bitfield_Extract() component-wise on an input Vkm_GenIType
+    --< vector and two Vkm_Int scalars, returning a Vkm_GenIType vector of the
+    --< extracted bitfields.
+    ----------------------------------------------------------------------------
+    function Bitfield_Extract is new GIT.Apply_Func_IV_IS_IS_RV(Bitfield_Extract);
 
 
     ----------------------------------------------------------------------------
@@ -217,7 +272,17 @@ package Vulkan.Math.Integers is
     function Bitfield_Extract(value        : in     Vkm_Uint;
                               offset, bits : in     Vkm_Int) return Vkm_Uint;
 
-
+    
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation extracts a bitfield vector from a Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies Bitfield_Extract() component-wise on an input Vkm_GenUType
+    --< vector and two Vkm_Int scalars, returning a Vkm_GenUType vector of the
+    --< extracted bitfields.
+    ----------------------------------------------------------------------------
+    function Bitfield_Extract is new Apply_Func_IVU_ISI_ISI_RVU(Bitfield_Extract);
 
 
     ----------------------------------------------------------------------------
@@ -253,6 +318,18 @@ package Vulkan.Math.Integers is
     --< The value of base with the bitfield inserted.
     ----------------------------------------------------------------------------
     function Bitfield_Insert(base, insert, offset, bits : in     Vkm_Int) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation inserts a bitfield vector into a Vkm_GenIType vector.
+    --<
+    --< @description
+    --< Applies Bitfield_Insert() component-wise on two input Vkm_GenIType
+    --< vectors and two Vkm_Int scalars, returning a Vkm_GenIType vector of the
+    --< base vector with inserted bitfields.
+    ----------------------------------------------------------------------------
+    function Bitfield_Insert is new GIT.Apply_Func_IV_IV_IS_IS_RV(Bitfield_Insert);
 
 
     ----------------------------------------------------------------------------
@@ -293,6 +370,18 @@ package Vulkan.Math.Integers is
 
     ----------------------------------------------------------------------------
     --< @summary
+    --< This operation inserts a bitfield vector into a Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies Bitfield_Insert() component-wise on two input Vkm_GenUType
+    --< vectors and two Vkm_Int scalars, returning a Vkm_GenUType vector of the
+    --< base vector with inserted bitfields.
+    ----------------------------------------------------------------------------
+    function Bitfield_Insert is new Apply_Func_IVU_IVU_ISI_ISI_RVU(Bitfield_Insert);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
     --< This operation reverses the bits of a 32-bit signed integer.
     --<
     --< @description
@@ -315,6 +404,18 @@ package Vulkan.Math.Integers is
 
     ----------------------------------------------------------------------------
     --< @summary
+    --< This operation reverses the binary representation of the components of a
+    --< Vkm_GenIType vector.
+    --<
+    --< @description
+    --< Applies Bitfield_Reverse() component-wise on input Vkm_GenIType, 
+    --< returning a Vkm_GenIType vector of the reversed components.
+    ----------------------------------------------------------------------------
+    function Bitfield_Reverse is new GIT.Apply_Func_IV_RV(Bitfield_Reverse);
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
     --< This operation reverses the bits of a 32-bit unsigned integer.
     --<
     --< @description
@@ -333,11 +434,23 @@ package Vulkan.Math.Integers is
     --< The reversed value.
     ----------------------------------------------------------------------------
     function Bitfield_Reverse(value : in     Vkm_Uint) return Vkm_Uint;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation reverses the binary representation of the components of a
+    --< Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies Bitfield_Reverse() component-wise on input Vkm_GenUType, 
+    --< returning a Vkm_GenUType vector of the reversed components.
+    ----------------------------------------------------------------------------
+    function Bitfield_Reverse is new GUT.Apply_Func_IV_RV(Bitfield_Reverse);
     
     
     ----------------------------------------------------------------------------
     --< @summary
-    --< This operation counts the number of 1'bits in a 32-bit signed value.
+    --< This operation counts the number of 1-bits in a 32-bit signed value.
     --<
     --< @description
     --< Count the 1's bits of a 32-bit signed integer.
@@ -349,11 +462,23 @@ package Vulkan.Math.Integers is
     --< The number of 1's in value.
     ----------------------------------------------------------------------------
     function Bit_Count(value : in     Vkm_Int) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation counts the number of 1-bits for each component of a 
+    --< Vkm_GenIType vector.
+    --<
+    --< @description
+    --< Applies Bit_Count() component-wise on input Vkm_GenIType, 
+    --< returning a Vkm_GenIType vector of counts for each component.
+    ----------------------------------------------------------------------------
+    function Bit_Count is new GIT.Apply_Func_IV_RV(Bit_Count);
     
     
     ----------------------------------------------------------------------------
     --< @summary
-    --< This operation counts the number of 1'bits in a 32-bit unsigned value.
+    --< This operation counts the number of 1-bits in a 32-bit unsigned value.
     --<
     --< @description
     --< Count the 1's bits of a 32-bit unsigned integer.
@@ -365,6 +490,18 @@ package Vulkan.Math.Integers is
     --< The number of 1's in value.
     ----------------------------------------------------------------------------
     function Bit_Count(value : in     Vkm_Uint) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation counts the number of 1-bits for each component of a 
+    --< Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies Bit_Count() component-wise on input Vkm_GenUType, 
+    --< returning a Vkm_GenIType vector of counts for each component.
+    ----------------------------------------------------------------------------
+    function Bit_Count is new Apply_Func_IVU_RVI(Bit_Count);
     
     
     ----------------------------------------------------------------------------
@@ -383,6 +520,19 @@ package Vulkan.Math.Integers is
     --< are no 1-bits.
     ----------------------------------------------------------------------------
     function Find_Lsb(value : in     Vkm_Int) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation finds the least significant 1-bit for each component of a
+    --< Vkm_GenIType vector.
+    --<
+    --< @description
+    --< Applies Find_Lsb() component-wise on input Vkm_GenIType, returning a 
+    --< Vkm_GenIType vector of the bit positions for the least significant 1-bit 
+    --< in each component.
+    ----------------------------------------------------------------------------
+    function Find_Lsb is new GIT.Apply_Func_IV_RV(Find_Lsb);
     
     
     ----------------------------------------------------------------------------
@@ -401,24 +551,50 @@ package Vulkan.Math.Integers is
     --< are no 1-bits.
     ----------------------------------------------------------------------------
     function Find_Lsb(value : in     Vkm_Uint) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation finds the least significant 1-bit for each component of a
+    --< Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies Find_Lsb() component-wise on input Vkm_GenUType, returning a 
+    --< Vkm_GenIType vector of the bit positions for the least significant 1-bit 
+    --< in each component.
+    ----------------------------------------------------------------------------
+    function Find_Lsb is new Apply_Func_IVU_RVI(Find_Lsb);
     
     
     ----------------------------------------------------------------------------
     --< @summary
-    --< This operation finds the most significant 1-bit in the 32-bit signed
+    --< This operation finds the most significant 0-bit in the 32-bit signed
     --< integer.
     --<
     --< @description
-    --< Find the most significant bit in a 32-bit signed integer with a value of 1.
+    --< Find the most significant bit in a 32-bit signed integer with a value of 0.
     --<
     --< @param value
-    --< The value to find the most significant 1-bit for.
+    --< The value to find the most significant 0-bit for.
     --<
     --< @return
-    --< The bit position of the most significant 1-bit. -1 is returned if there
-    --< are no 1-bits.
+    --< The bit position of the most significant 0-bit. -1 is returned if there
+    --< are no 0-bits.
     ----------------------------------------------------------------------------
     function Find_Msb(value : in     Vkm_Int) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation finds the most significant 0-bit for each component of a
+    --< Vkm_GenIType vector.
+    --<
+    --< @description
+    --< Applies Find_Msb() component-wise on input Vkm_GenIType, returning a 
+    --< Vkm_GenIType vector of the bit positions for the most significant 0-bit 
+    --< in each component.
+    ----------------------------------------------------------------------------
+    function Find_Msb is new GIT.Apply_Func_IV_RV(Find_Msb);
     
     
     ----------------------------------------------------------------------------
@@ -437,6 +613,19 @@ package Vulkan.Math.Integers is
     --< are no 1-bits.
     ----------------------------------------------------------------------------
     function Find_Msb(value : in     Vkm_Uint) return Vkm_Int;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< This operation finds the most significant 1-bit for each component of a
+    --< Vkm_GenUType vector.
+    --<
+    --< @description
+    --< Applies Find_Msb() component-wise on input Vkm_GenUType, returning a 
+    --< Vkm_GenIType vector of the bit positions for the most significant 0-bit 
+    --< in each component.
+    ----------------------------------------------------------------------------
+    function Find_Msb is new Apply_Func_IVU_RVI(Find_Msb);
     
     
     

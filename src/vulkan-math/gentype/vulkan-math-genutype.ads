@@ -106,4 +106,67 @@ package Vulkan.Math.GenUType is
     function Apply_Func_IVU_IVU_RVB(IVU1, IVU2 : in     Vkm_GenUType) return Vkm_GenBType;
 
 
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Vkm_Uint and Vkm_Int type to vectors.
+    --<
+    --< @description
+    --< Applies a supplied function component wise on an GenUType vector and
+    --< two Vkm_Int scalars, returning a Vkm_GenUType vector.
+    --<
+    --<    RVU := [Func(IVU1.x, ISI1, ISI2) ... Func(IVU1.w, ISI1, ISI2)]
+    --<
+    --< @param IVU1
+    --< The input GenUType parameter.
+    --<
+    --< @param ISI1
+    --< The first input Vkm_Int parameter.
+    --<
+    --< @param ISI2
+    --< The second input Vkm_Int parameter.
+    --<
+    --< @return
+    --< The result GenBType vector, RVB.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(ISU1       : in     Vkm_Uint;
+                           ISI1, ISI2 : in     Vkm_Int) return Vkm_Uint;
+    function Apply_Func_IVU_ISI_ISI_RVU(
+        IVU1       : in     Vkm_GenUType;
+        ISI1, ISI2 : in     Vkm_Int     ) return Vkm_GenUType;
+
+
+    ---------------------------------------------------------------------------- 
+    --< @summary
+    --< Apply function for parameters of Vkm_Uint and Vkm_Int type to vectors.
+    --<
+    --< @description
+    --< Applies a supplied function component wise on two GenUType vectors and
+    --< two Vkm_Int scalars, returning a Vkm_GenUType vector.
+    --<
+    --<    RVU := [Func(IVU1.x, IVU2.x , ISI1, ISI2) ... Func(IVU1.w, IVU2.w, ISI1, ISI2)]
+    --<
+    --< @param IVU1
+    --< The first input GenUType parameter.
+    --<
+    --< @param IVU2
+    --< The second input GenUType parameter.
+    --<
+    --< @param ISI1
+    --< The first input Vkm_Int parameter.
+    --<
+    --< @param ISI2
+    --< The second input Vkm_Int parameter.
+    --<
+    --< @return
+    --< The result GenBType vector, RVB.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func(ISU1, ISU2 : in     Vkm_Uint;
+                           ISI1, ISI2 : in     Vkm_Int) return Vkm_Uint;
+    function Apply_Func_IVU_IVU_ISI_ISI_RVU(
+        IVU1, IVU2 : in     Vkm_GenUType;
+        ISI1, ISI2 : in     Vkm_Int     ) return Vkm_GenUType;
+
+
 end Vulkan.Math.GenUType;

@@ -21,29 +21,54 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
--- This package describes a generic Unsigned Integer Vulkan Math type.
---------------------------------------------------------------------------------
+
+
 package body Vulkan.Math.GenIType is
 
-    function Apply_Func_IVI_IVI_IVB_RVI(IVI1, IVI2 : in     Vkm_GenIType;
-                                        IVB1       : in     Vkm_GenBType) return Vkm_GenIType is
-        Result : Vkm_GenIType := IVI1;
+
+    function Apply_Func_IVI_IVI_IVB_RVI(
+        IVI1, IVI2 : in     Vkm_GenIType;
+        IVB1       : in     Vkm_GenBType) return Vkm_GenIType is
+        
+        result : Vkm_GenIType := (last_index => IVI1.last_index, others => <>);
     begin
-        for I in Vkm_Indices'First .. Result.Last_Index loop
-            Result.data(I) := Func(IVI1.data(I), IVI2.data(I), IVB1.data(I));
+        for index in result.data'Range loop
+            result.data(index) := Func(IVI1.data(index), 
+                                       IVI2.data(index), 
+                                       IVB1.data(index));
         end loop;
-        return Result;
+        return result;
     end Apply_Func_IVI_IVI_IVB_RVI;
 
 
-    function Apply_Func_IVI_IVI_RVB(IVI1, IVI2 : in     Vkm_GenIType) return Vkm_GenBType is
-        Result : Vkm_GenBType := (Last_Index => IVI1.Last_Index, others => <>);
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IVI_IVI_RVB(
+        IVI1, IVI2 : in     Vkm_GenIType) return Vkm_GenBType is
+        
+        result : Vkm_GenBType := (last_index => IVI1.last_index, others => <>);
     begin
-        for I in Vkm_Indices'First .. IVI1.Last_Index loop
-            Result.data(I) := Func(IVI1.data(I),IVI2.data(I));
+        for index in result.data'Range loop
+            result.data(index) := Func(IVI1.data(index),IVI2.data(index));
         end loop;
-        return Result;
+        return result;
     end Apply_Func_IVI_IVI_RVB;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IVU_RVI(
+        IVU1 : in     Vkm_GenUType) return Vkm_GenIType is
+        
+        result : Vkm_GenIType := (last_index => IVU1.last_index, others => <>);
+    begin
+        for index in result.data'Range loop
+            result.data(index) := Func(IVU1.data(index));
+        end loop;
+        return result;
+    end Apply_Func_IVU_RVI;
 
 
 end Vulkan.Math.GenIType;

@@ -33,21 +33,64 @@ package body Vulkan.Math.GenUType is
 
     function Apply_Func_IVU_IVU_IVB_RVU(IVU1, IVU2 : in     Vkm_GenUType;
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenUType is
-        Result : Vkm_GenUType := IVU1;
+        result : Vkm_GenUType := (last_index => IVU1.last_index, others => <>);
     begin
-        for I in Vkm_Indices'First .. To_Vkm_Indices(Result.Length) loop
-            Result.data(I) := Func(IVU1.data(I), IVU2.data(I), IVB1.data(I));
+        for index in result.data'Range loop
+            result.data(index) := Func(IVU1.data(index),
+                                       IVU2.data(index),
+                                       IVB1.data(index));
         end loop;
         return Result;
     end Apply_Func_IVU_IVU_IVB_RVU;
 
-    function Apply_Func_IVU_IVU_RVB(IVU1, IVU2 : in     Vkm_GenUType) return Vkm_GenBType is
-        Result : Vkm_GenBType := (Last_Index => IVU1.Last_Index, others => <>);
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IVU_IVU_RVB(
+        IVU1, IVU2 : in     Vkm_GenUType) return Vkm_GenBType is
+
+        result : Vkm_GenBType := (last_index => IVU1.last_index, others => <>);
     begin
-        for I in Vkm_Indices'First .. IVU1.Last_Index loop
-            Result.data(I) := Func(IVU1.data(I), IVU2.data(I));
+        for index in result.data'Range loop
+            result.data(index) := Func(IVU1.data(index), IVU2.data(index));
         end loop;
-        return Result;
+        return result;
     end Apply_Func_IVU_IVU_RVB;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IVU_ISI_ISI_RVU(
+        IVU1       : in     Vkm_GenUType;
+        ISI1, ISI2 : in     Vkm_Int     ) return Vkm_GenUType is
+
+        result : Vkm_GenUType := (last_index => IVU1.last_index, others => <>);
+    begin
+        for index in result.data'Range loop
+            result.data(index) := Func(IVU1.data(index), ISI1, ISI2);
+        end loop;
+        return result;
+    end Apply_Func_IVU_ISI_ISI_RVU;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IVU_IVU_ISI_ISI_RVU(
+        IVU1, IVU2 : in     Vkm_GenUType;
+        ISI1, ISI2 : in     Vkm_Int     ) return Vkm_GenUType is
+        
+        result : Vkm_GenUType := (last_index => IVU1.last_index, others => <>);
+    begin
+        for index in result.data'Range loop
+            result.data(index) := Func(IVU1.data(index),
+                                       IVU2.data(index),
+                                       ISI1, ISI2);
+        end loop;
+        return result;
+    end Apply_Func_IVU_IVU_ISI_ISI_RVU;
+
 
 end Vulkan.Math.GenUType;

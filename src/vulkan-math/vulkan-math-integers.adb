@@ -281,7 +281,7 @@ package body Vulkan.Math.Integers is
         result : Vkm_Int := -1;
     begin
         for bit_index in reverse 0 .. 31 loop
-            if value_bits(bit_index) then
+            if not value_bits(bit_index) then
                 result := Vkm_Int(bit_index);
             end if;
             exit when result /= -1;
