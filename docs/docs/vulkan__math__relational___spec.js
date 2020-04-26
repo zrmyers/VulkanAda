@@ -863,7 +863,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -1463,7 +1463,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -1939,7 +1939,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -2415,7 +2415,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -2891,7 +2891,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -3382,7 +3382,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {

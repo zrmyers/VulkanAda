@@ -2803,7 +2803,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenIType",
-          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+          "href": "docs/vulkan__math__genitype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -3297,7 +3297,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenIType",
-          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+          "href": "docs/vulkan__math__genitype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -5006,7 +5006,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenIType",
-          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+          "href": "docs/vulkan__math__genitype___spec.html#L53C13"
         },
         {
           "kind": "span",
@@ -5675,7 +5675,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Vkm_GenIType",
-          "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+          "href": "docs/vulkan__math__genitype___spec.html#L53C13"
         },
         {
           "kind": "span",

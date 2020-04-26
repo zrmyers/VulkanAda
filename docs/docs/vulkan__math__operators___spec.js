@@ -2635,7 +2635,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2661,7 +2661,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2723,7 +2723,7 @@ GNATdoc.Documentation = {
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -2743,7 +2743,7 @@ GNATdoc.Documentation = {
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -2920,7 +2920,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -2946,7 +2946,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -3099,7 +3099,7 @@ GNATdoc.Documentation = {
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -3218,7 +3218,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -3302,7 +3302,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -3425,7 +3425,7 @@ GNATdoc.Documentation = {
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -3611,7 +3611,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -7517,7 +7517,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -7685,7 +7685,7 @@ GNATdoc.Documentation = {
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -7705,7 +7705,7 @@ GNATdoc.Documentation = {
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -9114,7 +9114,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "Vkm_GenIType",
-                      "href": "docs/vulkan__math__genitype___spec.html#L51C13"
+                      "href": "docs/vulkan__math__genitype___spec.html#L53C13"
                     },
                     {
                       "kind": "span",
@@ -9282,7 +9282,7 @@ GNATdoc.Documentation = {
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -9302,7 +9302,7 @@ GNATdoc.Documentation = {
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.GenIType.Vkm_GenIType",
-                "docHref": "docs/vulkan__math__genitype___spec.html#L51C13"
+                "docHref": "docs/vulkan__math__genitype___spec.html#L53C13"
               },
               "description": [
                 {
@@ -19923,7 +19923,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -20453,7 +20453,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -20991,7 +20991,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {
@@ -21529,7 +21529,7 @@ GNATdoc.Documentation = {
           ],
           "instantiation": {
             "label": "Vulkan.Math.GenIType.Apply_Func_IVI_IVI_RVB",
-            "docHref": "docs/vulkan__math__genitype___spec.html#L109C14"
+            "docHref": "docs/vulkan__math__genitype___spec.html#L111C14"
           }
         },
         {

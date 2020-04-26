@@ -276,10 +276,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IS_IS_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10148C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10127C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10148"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10127"
     },
     {
       "label": "Apply_Func_IS_IV_RV",
@@ -290,10 +290,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IV_IS_IS_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10120C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10099C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10120"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10099"
     },
     {
       "label": "Apply_Func_IV_IS_RV",
@@ -303,18 +303,39 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L9971"
     },
     {
-      "label": "Apply_Func_IV_IV_IS_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10092C14",
+      "label": "Apply_Func_IV_IV_IS_IS_RV",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10212C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10092"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10212"
+    },
+    {
+      "label": "Apply_Func_IV_IV_IS_RV",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10071C14",
+      "declared": "Vulkan.Math.GenType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10071"
     },
     {
       "label": "Apply_Func_IV_IV_IV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10065C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10044C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10065"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10044"
+    },
+    {
+      "label": "Apply_Func_IV_IV_OV_OV",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10184C15",
+      "declared": "Vulkan.Math.GenType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10184"
+    },
+    {
+      "label": "Apply_Func_IV_IV_OV_RV",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10155C14",
+      "declared": "Vulkan.Math.GenType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10155"
     },
     {
       "label": "Apply_Func_IV_IV_RV",
@@ -325,10 +346,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IV_OV_RV",
-      "docHref": "docs/vulkan__math__gentype___spec.html#L10038C14",
+      "docHref": "docs/vulkan__math__gentype___spec.html#L10017C14",
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10038"
+      "srcHref": "srcs/vulkan-math-gentype.ads.html#L10017"
     },
     {
       "label": "Apply_Func_IV_RV",
@@ -423,17 +444,17 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Apply_Func_IVI_IVI_IVB_RVI",
-      "docHref": "docs/vulkan__math__genitype___spec.html#L83C14",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L85C14",
       "declared": "Vulkan.Math.GenIType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genitype.ads.html#L83"
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L85"
     },
     {
       "label": "Apply_Func_IVI_IVI_RVB",
-      "docHref": "docs/vulkan__math__genitype___spec.html#L109C14",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L111C14",
       "declared": "Vulkan.Math.GenIType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genitype.ads.html#L109"
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L111"
     },
     {
       "label": "Apply_Func_IVI_RVF",
@@ -441,6 +462,20 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-genftype.ads.html#L153"
+    },
+    {
+      "label": "Apply_Func_IVU_ISI_ISI_RVU",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L134C14",
+      "declared": "Vulkan.Math.GenUType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L134"
+    },
+    {
+      "label": "Apply_Func_IVU_IVU_ISI_ISI_RVU",
+      "docHref": "docs/vulkan__math__genutype___spec.html#L167C14",
+      "declared": "Vulkan.Math.GenUType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genutype.ads.html#L167"
     },
     {
       "label": "Apply_Func_IVU_IVU_IVB_RVU",
@@ -462,6 +497,13 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.GenFType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-genftype.ads.html#L197"
+    },
+    {
+      "label": "Apply_Func_IVU_RVI",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L133C14",
+      "declared": "Vulkan.Math.GenIType",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L133"
     },
     {
       "label": "Asin",
@@ -497,6 +539,62 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.Trig",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-trig.ads.html#L447"
+    },
+    {
+      "label": "Bit_Count",
+      "docHref": "docs/vulkan__math__integers___spec.html#L465C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L465"
+    },
+    {
+      "label": "Bit_Count",
+      "docHref": "docs/vulkan__math__integers___spec.html#L493C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L493"
+    },
+    {
+      "label": "Bitfield_Extract",
+      "docHref": "docs/vulkan__math__integers___spec.html#L224C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L224"
+    },
+    {
+      "label": "Bitfield_Extract",
+      "docHref": "docs/vulkan__math__integers___spec.html#L273C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L273"
+    },
+    {
+      "label": "Bitfield_Insert",
+      "docHref": "docs/vulkan__math__integers___spec.html#L321C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L321"
+    },
+    {
+      "label": "Bitfield_Insert",
+      "docHref": "docs/vulkan__math__integers___spec.html#L368C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L368"
+    },
+    {
+      "label": "Bitfield_Reverse",
+      "docHref": "docs/vulkan__math__integers___spec.html#L403C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L403"
+    },
+    {
+      "label": "Bitfield_Reverse",
+      "docHref": "docs/vulkan__math__integers___spec.html#L437C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L437"
     },
     {
       "label": "Ceil",
@@ -637,6 +735,34 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.Geometry",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-geometry.ads.html#L314"
+    },
+    {
+      "label": "Find_Lsb",
+      "docHref": "docs/vulkan__math__integers___spec.html#L523C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L523"
+    },
+    {
+      "label": "Find_Lsb",
+      "docHref": "docs/vulkan__math__integers___spec.html#L554C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L554"
+    },
+    {
+      "label": "Find_Msb",
+      "docHref": "docs/vulkan__math__integers___spec.html#L585C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L585"
+    },
+    {
+      "label": "Find_Msb",
+      "docHref": "docs/vulkan__math__integers___spec.html#L616C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L616"
     },
     {
       "label": "Floor",
@@ -1724,6 +1850,13 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-common.ads.html#L193"
     },
     {
+      "label": "Signed_Mul_Extended",
+      "docHref": "docs/vulkan__math__integers___spec.html#L174C15",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L174"
+    },
+    {
       "label": "Sin",
       "docHref": "docs/vulkan__math__trig___spec.html#L119C14",
       "declared": "Vulkan.Math.Trig",
@@ -1939,6 +2072,27 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-common.ads.html#L314"
+    },
+    {
+      "label": "Unsigned_Add_Carry",
+      "docHref": "docs/vulkan__math__integers___spec.html#L65C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L65"
+    },
+    {
+      "label": "Unsigned_Mul_Extended",
+      "docHref": "docs/vulkan__math__integers___spec.html#L137C15",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L137"
+    },
+    {
+      "label": "Unsigned_Sub_Borrow",
+      "docHref": "docs/vulkan__math__integers___spec.html#L100C14",
+      "declared": "Vulkan.Math.Integers",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-integers.ads.html#L100"
     },
     {
       "label": "xor",

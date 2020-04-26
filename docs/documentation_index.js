@@ -103,6 +103,16 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__geometry___spec.html"
       },
       {
+        "label": "Vulkan.Math.Integers",
+        "qualifier": "",
+        "file": "docs/vulkan__math__integers___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.Matrix",
+        "qualifier": "",
+        "file": "docs/vulkan__math__matrix___spec.html"
+      },
+      {
         "label": "Vulkan.Math.Relational",
         "qualifier": "",
         "file": "docs/vulkan__math__relational___spec.html"
@@ -117,6 +127,16 @@ GNATdoc.DocumentationIndex = [
   {
     "label": "Vulkan Math GenMatrix",
     "items": [
+      {
+        "label": "Vulkan.Math.GenDMatrix",
+        "qualifier": "",
+        "file": "docs/vulkan__math__gendmatrix___spec.html"
+      },
+      {
+        "label": "Vulkan.Math.GenFMatrix",
+        "qualifier": "",
+        "file": "docs/vulkan__math__genfmatrix___spec.html"
+      },
       {
         "label": "Vulkan.Math.GenMatrix",
         "qualifier": "",

@@ -51,11 +51,25 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-genbtype.ads.html#L48"
     },
     {
+      "label": "Vkm_GenDMatrix",
+      "docHref": "docs/vulkan__math__gendmatrix___spec.html#L56C13",
+      "declared": "Vulkan.Math.GenDMatrix",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-gendmatrix.ads.html#L56"
+    },
+    {
       "label": "Vkm_GenDType",
       "docHref": "docs/vulkan__math__gendtype___spec.html#L53C13",
       "declared": "Vulkan.Math.GenDType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gendtype.ads.html#L53"
+    },
+    {
+      "label": "Vkm_GenFMatrix",
+      "docHref": "docs/vulkan__math__genfmatrix___spec.html#L57C13",
+      "declared": "Vulkan.Math.GenFMatrix",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genfmatrix.ads.html#L57"
     },
     {
       "label": "Vkm_GenFType",
@@ -66,10 +80,10 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Vkm_GenIType",
-      "docHref": "docs/vulkan__math__genitype___spec.html#L51C13",
+      "docHref": "docs/vulkan__math__genitype___spec.html#L53C13",
       "declared": "Vulkan.Math.GenIType",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genitype.ads.html#L51"
+      "srcHref": "srcs/vulkan-math-genitype.ads.html#L53"
     },
     {
       "label": "Vkm_GenMatrix_Reference",

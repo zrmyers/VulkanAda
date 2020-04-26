@@ -36,8 +36,16 @@ GNATdoc.SourceFileIndex = [
     "srcHref": "srcs/vulkan-math-genbtype.ads.html"
   },
   {
+    "label": "vulkan-math-gendmatrix.ads",
+    "srcHref": "srcs/vulkan-math-gendmatrix.ads.html"
+  },
+  {
     "label": "vulkan-math-gendtype.ads",
     "srcHref": "srcs/vulkan-math-gendtype.ads.html"
+  },
+  {
+    "label": "vulkan-math-genfmatrix.ads",
+    "srcHref": "srcs/vulkan-math-genfmatrix.ads.html"
   },
   {
     "label": "vulkan-math-genftype.ads",
@@ -64,6 +72,10 @@ GNATdoc.SourceFileIndex = [
     "srcHref": "srcs/vulkan-math-geometry.ads.html"
   },
   {
+    "label": "vulkan-math-integers.ads",
+    "srcHref": "srcs/vulkan-math-integers.ads.html"
+  },
+  {
     "label": "vulkan-math-ivec2.ads",
     "srcHref": "srcs/vulkan-math-ivec2.ads.html"
   },
@@ -74,6 +86,10 @@ GNATdoc.SourceFileIndex = [
   {
     "label": "vulkan-math-ivec4.ads",
     "srcHref": "srcs/vulkan-math-ivec4.ads.html"
+  },
+  {
+    "label": "vulkan-math-matrix.ads",
+    "srcHref": "srcs/vulkan-math-matrix.ads.html"
   },
   {
     "label": "vulkan-math-numerics.ads",

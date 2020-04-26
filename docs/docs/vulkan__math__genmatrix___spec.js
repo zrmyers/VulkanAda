@@ -758,6 +758,16 @@ GNATdoc.Documentation = {
               ]
             }
           ],
+          "inherited": [
+            {
+              "label": "Vkm_GenDMatrix",
+              "docHref": "docs/vulkan__math__gendmatrix___spec.html#L56C13"
+            },
+            {
+              "label": "Vkm_GenFMatrix",
+              "docHref": "docs/vulkan__math__genfmatrix___spec.html#L57C13"
+            }
+          ],
           "fields": [
             {
               "label": "last_column_index",
