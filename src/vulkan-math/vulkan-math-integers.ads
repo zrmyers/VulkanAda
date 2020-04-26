@@ -177,7 +177,8 @@ package Vulkan.Math.Integers is
     
     ----------------------------------------------------------------------------
     --< @summary
-    --< Subtracts two Vkm_GenIType vectors modulo 32, returning the result and a borrow.
+    --< This operation performs extended multiplication of two 32-bit signed
+    --< integers.
     --<
     --< @description
     --< Applies Unsigned_Mul_Extended() component-wise on two input Vkm_GenIType
