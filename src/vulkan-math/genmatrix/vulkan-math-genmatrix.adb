@@ -506,6 +506,73 @@ package body Vulkan.Math.GenMatrix is
     ----------------------------------------------------------------------------
 
 
+    function Op_Is_Equal(
+        left, right : in     Vkm_GenMatrix) return Vkm_Bool is
+
+        is_equal : Vkm_Bool := true;
+
+    begin
+        for col_index in Vkm_Indices'First .. left.last_column_index loop
+            for row_index in Vkm_Indices'First .. right.last_column_index loop
+                if left.data(col_index, row_index) /= right.data(col_index, row_index) then
+                    is_equal := false;
+                end if;
+                exit when is_equal = false;
+            end loop;
+            exit when is_equal = false;
+        end loop;
+        return is_equal;
+    end Op_Is_Equal;
+
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Op_Matrix_Mult_Matrix (left, right : in     Vkm_GenMatrix) return Vkm_GenMatrix is
+    
+        result : Vkm_GenMatrix := Make_GenMatrix(cN => right.last_column_index,
+                                                 rN => left.last_row_index);
+                               
+        -- It is assumed that the last_column_index of the left matrix is equal
+        -- to the last_row_index of the right matrix.
+        last_dot_index : constant Vkm_Indices := left.last_column_index;
+    begin
+        for col_index in Vkm_Indices'First .. result.last_column_index loop
+            for row_index in Vkm_Indices'First .. result.last_row_index loop
+                
+                -- Perform Dot Product of left.rI with right.cI
+                for dot_index in Vkm_Indices'First ..last_dot_index loop
+                    result.data(col_index, row_index) := result.data(col_index, row_index) + 
+                        (left.data(dot_index, row_index) * right.data(col_index, dot_index));
+                end loop;
+            end loop;
+        end loop;
+        return result;
+    end Op_Matrix_Mult_Matrix;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IM_RM (im1 : in     Vkm_GenMatrix) return Vkm_GenMatrix is
+    
+        result : Vkm_GenMatrix(last_column_index => im1.last_column_index,
+                               last_row_index    => im1.last_row_index);
+                                   
+    begin
+        for col_index in Vkm_Indices'First .. result.last_column_index loop
+            for row_index in Vkm_Indices'First .. result.last_row_index loop
+                result.data(col_index, row_index) := Func(im1.data(col_index, row_index));
+            end loop;
+        end loop;
+        return result;
+    end Apply_Func_IM_RM;
+
+
+    ----------------------------------------------------------------------------
+
+
     function Apply_Func_IM_IM_RM (im1, im2 : in     Vkm_GenMatrix) return Vkm_GenMatrix is
         
         result : Vkm_GenMatrix(
@@ -522,6 +589,49 @@ package body Vulkan.Math.GenMatrix is
         end loop;
         return result;
     end Apply_Func_IM_IM_RM;
-    
-    
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IM_IS_RM (
+        im1 : in     Vkm_GenMatrix;
+        is1 : in     Base_Type    ) return Vkm_GenMatrix is
+
+        result : Vkm_GenMatrix(last_column_index => im1.last_column_index,
+                               last_row_index    => im1.last_row_index);
+                               
+    begin
+        for col_index in Vkm_Indices'First .. result.last_column_index loop
+            for row_index in Vkm_Indices'First .. result.last_row_index loop
+                result.data(col_index, row_index)
+                    := Func(im1.data(col_index, row_index), is1);
+            end loop;
+        end loop;
+        return result;
+    end Apply_Func_IM_IS_RM;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Apply_Func_IS_IM_RM (
+        is1 : in     Base_Type;
+        im1 : in     Vkm_GenMatrix) return Vkm_GenMatrix is
+
+        result : Vkm_GenMatrix(last_column_index => im1.last_column_index,
+                               last_row_index    => im1.last_row_index);
+                               
+    begin
+        for col_index in Vkm_Indices'First .. result.last_column_index loop
+            for row_index in Vkm_Indices'First .. result.last_row_index loop
+                result.data(col_index, row_index)
+                    := Func(is1, im1.data(col_index, row_index));
+            end loop;
+        end loop;
+        return result;
+    end Apply_Func_IS_IM_RM;
+
+
+
 end Vulkan.Math.GenMatrix;

@@ -939,16 +939,14 @@ package Vulkan.Math.GenMatrix is
     --< The last index that can be used for accessing rows in the matrix.
     --<
     --< @param diag
-    --< The value to set on the diagonal. If no value is supplied, this value's
-    --< default value is 1.0, and the new matrix is initialized with values of
-    --< the identity matrix.
+    --< The value to set on the diagonal.
     --<
     --< @return
     --< The new Vkm_GenMatrix instance.
     ----------------------------------------------------------------------------
     function Make_GenMatrix(
-        cN, rN : in     Vkm_Indices      ;
-        diag   : in     Base_Type  := 1.0) return Vkm_GenMatrix is
+        cN, rN : in     Vkm_Indices;
+        diag   : in     Base_Type) return Vkm_GenMatrix is
         (Make_GenMatrix(
              cN => cN, rN => rN,
              c0r0_val => diag,
@@ -1038,137 +1036,66 @@ package Vulkan.Math.GenMatrix is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_GenMatrix type.
+    --< Determine whether two matrices are equal to each other.
     --<
     --< @description
-    --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
-    --< and columns. Each element is initialized as specified:
-    --< 
-    --<    \      c0       c1       c2       c3      cN 
-    --<    r0 | c0_val.x c1_val.x   0.0      0.0    |
-    --<    r1 | c0_val.y c1_val.y   0.0      0.0    |
-    --<    r2 | c0_val.z c1_val.z   0.0      0.0    |
-    --<    r3 | c0_val.w c1_val.w   0.0      0.0    |
-    --<    rN
+    --< Determines whether every element of the two matrices are equal to each 
+    --< other.
     --<
-    --< If an index is out of bounds for a vector, the default value of 0.0 is 
-    --< used for the corresponding matrix element.
+    --< @param left
+    --< The variable that is to the left of the equality operator.
     --<
-    --< @param cN
-    --< The last index that can be used for accessing columns in the matrix.
-    --<
-    --< @param rN
-    --< The last index that can be used for accessing rows in the matrix.
-    --<
-    --< @param c0_val
-    --< The value used to initialize column 0 of the matrix.
-    --<
-    --< @param c1_val
-    --< The value used to initialize column 1 of the matrix.
+    --< @param right
+    --< The variable that is to the right of the equality operator.
     --<
     --< @return
-    --< The new Vkm_GenMatrix instance.
+    --< True if the matrices are equal to each other. Otherwise, false.
     ----------------------------------------------------------------------------
-    function Make_GenMatrix(
-        cN, rN         : in     Vkm_Indices;
-        c0_val, c1_val : in     Base_Vector_Type) return Vkm_GenMatrix is
-        (Make_GenMatrix(
-            cN => cN, rN => rN,
-            c0r0_val => x(c0_val), c0r1_val => y(c0_val), c0r2_val => z(c0_val), c0r3_val => w(c0_val),
-            c1r0_val => x(c1_val), c1r1_val => y(c1_val), c1r2_val => z(c1_val), c1r3_val => w(c1_val))) with Inline;
+    function Op_Is_Equal(
+        left, right : in     Vkm_GenMatrix) return Vkm_Bool;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_GenMatrix type.
+    --< Linear algebraic matrix multiplication
     --<
     --< @description
-    --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
-    --< and columns. Each element is initialized as specified:
+    --< Perform linear algebraic matrix multiplication for the two matrices.
     --< 
-    --<    \      c0       c1       c2       c3      cN 
-    --<    r0 | c0_val.x c1_val.x c2_val.x   0.0    |
-    --<    r1 | c0_val.y c1_val.y c2_val.y   0.0    |
-    --<    r2 | c0_val.z c1_val.z c2_val.z   0.0    |
-    --<    r3 | c0_val.w c1_val.w c2_val.w   0.0    |
-    --<    rN
+    --< @param left
+    --< The left matrix in the computation.
     --<
-    --< If an index is out of bounds for a vector, the default value of 0.0 is 
-    --< used for the corresponding matrix element.
+    --< @param right
+    --< The right matrix in the computation.
     --<
-    --< @param cN
-    --< The last index that can be used for accessing columns in the matrix.
-    --<
-    --< @param rN
-    --< The last index that can be used for accessing rows in the matrix.
-    --<
-    --< @param c0_val
-    --< The value used to initialize column 0 of the matrix.
-    --<
-    --< @param c1_val
-    --< The value used to initialize column 1 of the matrix.
-    --<
-    --< @param c2_val
-    --< The value used to initialize column 2 of the matrix.
-    --<
-    --< @return
-    --< The new Vkm_GenMatrix instance.
+    --< The result of linear algebraic multiplication for the two matrices.
     ----------------------------------------------------------------------------
-    function Make_GenMatrix(
-        cN, rN                 : in     Vkm_Indices;
-        c0_val, c1_val, c2_val : in     Base_Vector_Type) return Vkm_GenMatrix is
-        (Make_GenMatrix(
-            cN => cN, rN => rN,
-            c0r0_val => x(c0_val), c0r1_val => y(c0_val), c0r2_val => z(c0_val), c0r3_val => w(c0_val),
-            c1r0_val => x(c1_val), c1r1_val => y(c1_val), c1r2_val => z(c1_val), c1r3_val => w(c1_val),
-            c2r0_val => x(c2_val), c2r1_val => y(c2_val), c2r2_val => z(c2_val), c2r3_val => w(c2_val))) with Inline;
+    function Op_Matrix_Mult_Matrix (
+        left, right : in     Vkm_GenMatrix) return Vkm_GenMatrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_GenMatrix type.
+    --< Apply function component-wise on a matrix
     --<
     --< @description
-    --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
-    --< and columns. Each element is initialized as specified:
-    --< 
-    --<    \      c0       c1       c2       c3      cN 
-    --<    r0 | c0_val.x c1_val.x c2_val.x c3_val.x |
-    --<    r1 | c0_val.y c1_val.y c2_val.y c3_val.y |
-    --<    r2 | c0_val.z c1_val.z c2_val.z c3_val.z |
-    --<    r3 | c0_val.w c1_val.w c2_val.w c3_val.w |
-    --<    rN
+    --< Applies function component-wise on a matrix, yielding the following
+    --< matrix:
     --<
-    --< If an index is out of bounds for a vector, the default value of 0.0 is 
-    --< used for the corresponding matrix element.
+    --<     | Func(im1.c0r0) ... Func(im1.cNr0) |
+    --<     |        ...           ...          |
+    --<     | Func(im1.c0rN) ... Func(im1.cNrN) |
     --<
-    --< @param cN
-    --< The last index that can be used for accessing columns in the matrix.
-    --<
-    --< @param rN
-    --< The last index that can be used for accessing rows in the matrix.
-    --<
-    --< @param c0_val
-    --< The value used to initialize column 0 of the matrix.
-    --<
-    --< @param c1_val
-    --< The value used to initialize column 1 of the matrix.
-    --<
-    --< @param c2_val
-    --< The value used to initialize column 2 of the matrix.
+    --< @param im1
+    --< The input Vkm_GenMatrix parameter.
     --<
     --< @return
-    --< The new Vkm_GenMatrix instance.
+    --< The result from applying the generic function Func component-wise on a
+    --< matrix.
     ----------------------------------------------------------------------------
-    function Make_GenMatrix(
-        cN, rN                         : in     Vkm_Indices;
-        c0_val, c1_val, c2_val, c3_val : in     Base_Vector_Type) return Vkm_GenMatrix is
-        (Make_GenMatrix(
-            cN => cN, rN => rN,
-            c0r0_val => x(c0_val), c0r1_val => y(c0_val), c0r2_val => z(c0_val), c0r3_val => w(c0_val),
-            c1r0_val => x(c1_val), c1r1_val => y(c1_val), c1r2_val => z(c1_val), c1r3_val => w(c1_val),
-            c2r0_val => x(c2_val), c2r1_val => y(c2_val), c2r2_val => z(c2_val), c2r3_val => w(c2_val),
-            c3r0_val => x(c3_val), c3r1_val => y(c3_val), c3r2_val => z(c3_val), c3r3_val => w(c3_val))) with Inline;
+    generic
+        with function Func (is1 : in     Base_Type) return Base_Type;
+    function Apply_Func_IM_RM (im1 : in     Vkm_GenMatrix) return Vkm_GenMatrix;
 
 
     ----------------------------------------------------------------------------
@@ -1196,6 +1123,64 @@ package Vulkan.Math.GenMatrix is
     generic
         with function Func (is1, is2 : in     Base_Type) return Base_Type;
     function Apply_Func_IM_IM_RM (im1, im2 : in     Vkm_GenMatrix) return Vkm_GenMatrix;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Apply function component-wise on a matrix and a scalar.
+    --<
+    --< @description
+    --< Applies function component-wise on a matrix and a scalar, yielding the 
+    --< following matrix:
+    --<
+    --<     | Func(im1.c0r0, is1) ... Func(im1.cNr0, is1) |
+    --<     |        ...                    ...           |
+    --<     | Func(im1.c0rN, is1) ... Func(im1.cNrN, is1) |
+    --<
+    --< @param im1
+    --< The first input Vkm_GenMatrix parameter.
+    --<
+    --< @param is1
+    --< The second input Vkm_GenMatrix parameter.
+    --<
+    --< @return
+    --< The result from applying the generic function Func component-wise on both
+    --< matrices.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func (is1, is2 : in     Base_Type) return Base_Type;
+    function Apply_Func_IM_IS_RM (
+        im1 : in     Vkm_GenMatrix;
+        is1 : in     Base_Type    ) return Vkm_GenMatrix;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Apply function component-wise on a matrix and a scalar.
+    --<
+    --< @description
+    --< Applies function component-wise on a matrix and a scalar, yielding the 
+    --< following matrix:
+    --<
+    --<     | Func(is1, im1.c0r0) ... Func(is1, im1.cNr0) |
+    --<     |        ...                     ...          |
+    --<     | Func(is1, im1.c0rN) ... Func(is1, im1.cNrN) |
+    --<
+    --< @param is1
+    --< The first input Vkm_GenMatrix parameter.
+    --<
+    --< @param im1
+    --< The second input Vkm_GenMatrix parameter.
+    --<
+    --< @return
+    --< The result from applying the generic function Func component-wise on both
+    --< matrices.
+    ----------------------------------------------------------------------------
+    generic
+        with function Func (is1, is2 : in     Base_Type) return Base_Type;
+    function Apply_Func_IS_IM_RM (
+        is1 : in     Base_Type;
+        im1 : in     Vkm_GenMatrix) return Vkm_GenMatrix;
     
     
 end Vulkan.Math.GenMatrix;
