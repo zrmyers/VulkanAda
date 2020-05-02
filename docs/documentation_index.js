@@ -53,6 +53,11 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__ivec4___spec.html"
       },
       {
+        "label": "Vulkan.Math.Mat2x2",
+        "qualifier": "",
+        "file": "docs/vulkan__math__mat2x2___spec.html"
+      },
+      {
         "label": "Vulkan.Math.Uvec2",
         "qualifier": "",
         "file": "docs/vulkan__math__uvec2___spec.html"

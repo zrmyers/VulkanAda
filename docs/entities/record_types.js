@@ -65,13 +65,6 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-gendtype.ads.html#L53"
     },
     {
-      "label": "Vkm_GenFMatrix",
-      "docHref": "docs/vulkan__math__genfmatrix___spec.html#L57C13",
-      "declared": "Vulkan.Math.GenFMatrix",
-      "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genfmatrix.ads.html#L57"
-    },
-    {
       "label": "Vkm_GenFType",
       "docHref": "docs/vulkan__math__genftype___spec.html#L55C13",
       "declared": "Vulkan.Math.GenFType",
@@ -126,6 +119,27 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.Ivec4",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-ivec4.ads.html#L43"
+    },
+    {
+      "label": "Vkm_Mat",
+      "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13",
+      "declared": "Vulkan.Math.GenFMatrix",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genfmatrix.ads.html#L59"
+    },
+    {
+      "label": "Vkm_Mat2",
+      "docHref": "docs/vulkan__math__mat2x2___spec.html#L46C13",
+      "declared": "Vulkan.Math.Mat2x2",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-mat2x2.ads.html#L46"
+    },
+    {
+      "label": "Vkm_Mat2x2",
+      "docHref": "docs/vulkan__math__mat2x2___spec.html#L42C13",
+      "declared": "Vulkan.Math.Mat2x2",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-mat2x2.ads.html#L42"
     },
     {
       "label": "Vkm_Uvec2",

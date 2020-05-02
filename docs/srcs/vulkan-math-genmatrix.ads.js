@@ -28315,7 +28315,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value to set on the diagonal. If no value is supplied, this value's"
+          "text": "--< The value to set on the diagonal."
         }
       ]
     },
@@ -28331,7 +28331,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< default value is 1.0, and the new matrix is initialized with values of"
+          "text": "--<"
         }
       ]
     },
@@ -28347,7 +28347,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< the identity matrix."
+          "text": "--< @return"
         }
       ]
     },
@@ -28363,7 +28363,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< The new Vkm_GenMatrix instance."
         }
       ]
     },
@@ -28379,45 +28379,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 947,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The new Vkm_GenMatrix instance."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 948,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
           "text": "----------------------------------------------------------------------------"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 949,
+      "number": 947,
       "children": [
         {
           "kind": "span",
@@ -28438,7 +28406,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L949C14"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L947C14"
         },
         {
           "kind": "span",
@@ -28449,7 +28417,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 950,
+      "number": 948,
       "children": [
         {
           "kind": "span",
@@ -28460,7 +28428,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "cN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L950C9"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L948C9"
         },
         {
           "kind": "span",
@@ -28476,7 +28444,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "rN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L950C13"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L948C13"
         },
         {
           "kind": "span",
@@ -28511,11 +28479,6 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "text",
-          "text": "      "
-        },
-        {
-          "kind": "span",
           "cssClass": "identifier",
           "text": ";"
         }
@@ -28523,7 +28486,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 951,
+      "number": 949,
       "children": [
         {
           "kind": "span",
@@ -28534,7 +28497,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "diag",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L951C9"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L949C9"
         },
         {
           "kind": "span",
@@ -28566,26 +28529,6 @@ GNATdoc.SourceFile = {
           "cssClass": "identifier",
           "text": "Base_Type",
           "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "  "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":="
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "number",
-          "text": "1.0"
         },
         {
           "kind": "span",
@@ -28627,7 +28570,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 952,
+      "number": 950,
       "children": [
         {
           "kind": "span",
@@ -28653,7 +28596,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 953,
+      "number": 951,
       "children": [
         {
           "kind": "span",
@@ -28729,7 +28672,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 954,
+      "number": 952,
       "children": [
         {
           "kind": "span",
@@ -28770,7 +28713,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 955,
+      "number": 953,
       "children": [
         {
           "kind": "span",
@@ -28811,7 +28754,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 956,
+      "number": 954,
       "children": [
         {
           "kind": "span",
@@ -28852,7 +28795,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 957,
+      "number": 955,
       "children": [
         {
           "kind": "span",
@@ -28918,19 +28861,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 956,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 957,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
       "number": 958,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 959,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 960,
       "children": [
         {
           "kind": "span",
@@ -28946,7 +28889,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 961,
+      "number": 959,
       "children": [
         {
           "kind": "span",
@@ -28962,7 +28905,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 962,
+      "number": 960,
       "children": [
         {
           "kind": "span",
@@ -28978,7 +28921,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 963,
+      "number": 961,
       "children": [
         {
           "kind": "span",
@@ -28994,7 +28937,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 964,
+      "number": 962,
       "children": [
         {
           "kind": "span",
@@ -29010,7 +28953,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 965,
+      "number": 963,
       "children": [
         {
           "kind": "span",
@@ -29026,7 +28969,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 966,
+      "number": 964,
       "children": [
         {
           "kind": "span",
@@ -29042,7 +28985,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 967,
+      "number": 965,
       "children": [
         {
           "kind": "span",
@@ -29058,7 +29001,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 968,
+      "number": 966,
       "children": [
         {
           "kind": "span",
@@ -29074,7 +29017,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 969,
+      "number": 967,
       "children": [
         {
           "kind": "span",
@@ -29090,7 +29033,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 970,
+      "number": 968,
       "children": [
         {
           "kind": "span",
@@ -29106,7 +29049,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 971,
+      "number": 969,
       "children": [
         {
           "kind": "span",
@@ -29122,7 +29065,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 972,
+      "number": 970,
       "children": [
         {
           "kind": "span",
@@ -29138,7 +29081,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 973,
+      "number": 971,
       "children": [
         {
           "kind": "span",
@@ -29154,39 +29097,39 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 972,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 973,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
       "number": 974,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 975,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 976,
       "children": [
         {
           "kind": "span",
@@ -29202,7 +29145,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 977,
+      "number": 975,
       "children": [
         {
           "kind": "span",
@@ -29218,7 +29161,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 978,
+      "number": 976,
       "children": [
         {
           "kind": "span",
@@ -29234,7 +29177,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 979,
+      "number": 977,
       "children": [
         {
           "kind": "span",
@@ -29250,7 +29193,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 980,
+      "number": 978,
       "children": [
         {
           "kind": "span",
@@ -29266,7 +29209,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 981,
+      "number": 979,
       "children": [
         {
           "kind": "span",
@@ -29282,7 +29225,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 982,
+      "number": 980,
       "children": [
         {
           "kind": "span",
@@ -29298,7 +29241,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 983,
+      "number": 981,
       "children": [
         {
           "kind": "span",
@@ -29314,7 +29257,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 984,
+      "number": 982,
       "children": [
         {
           "kind": "span",
@@ -29330,7 +29273,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 985,
+      "number": 983,
       "children": [
         {
           "kind": "span",
@@ -29346,7 +29289,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 986,
+      "number": 984,
       "children": [
         {
           "kind": "span",
@@ -29362,7 +29305,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 987,
+      "number": 985,
       "children": [
         {
           "kind": "span",
@@ -29378,7 +29321,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 988,
+      "number": 986,
       "children": [
         {
           "kind": "span",
@@ -29394,7 +29337,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 989,
+      "number": 987,
       "children": [
         {
           "kind": "span",
@@ -29410,7 +29353,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 990,
+      "number": 988,
       "children": [
         {
           "kind": "span",
@@ -29431,7 +29374,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L990C14"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L988C14"
         },
         {
           "kind": "span",
@@ -29442,7 +29385,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 991,
+      "number": 989,
       "children": [
         {
           "kind": "span",
@@ -29453,7 +29396,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "cN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L991C9"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L989C9"
         },
         {
           "kind": "span",
@@ -29469,7 +29412,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "rN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L991C13"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L989C13"
         },
         {
           "kind": "span",
@@ -29511,7 +29454,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 992,
+      "number": 990,
       "children": [
         {
           "kind": "span",
@@ -29522,7 +29465,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "sub",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L992C9"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L990C9"
         },
         {
           "kind": "span",
@@ -29595,7 +29538,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 993,
+      "number": 991,
       "children": [
         {
           "kind": "span",
@@ -29621,7 +29564,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 994,
+      "number": 992,
       "children": [
         {
           "kind": "span",
@@ -29697,7 +29640,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 995,
+      "number": 993,
       "children": [
         {
           "kind": "span",
@@ -29843,7 +29786,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 996,
+      "number": 994,
       "children": [
         {
           "kind": "span",
@@ -29989,7 +29932,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 997,
+      "number": 995,
       "children": [
         {
           "kind": "span",
@@ -30135,7 +30078,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 998,
+      "number": 996,
       "children": [
         {
           "kind": "span",
@@ -30306,19 +30249,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 997,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 998,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
       "number": 999,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1000,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1001,
       "children": [
         {
           "kind": "span",
@@ -30334,7 +30277,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1002,
+      "number": 1000,
       "children": [
         {
           "kind": "span",
@@ -30350,7 +30293,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1003,
+      "number": 1001,
       "children": [
         {
           "kind": "span",
@@ -30366,7 +30309,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1004,
+      "number": 1002,
       "children": [
         {
           "kind": "span",
@@ -30382,7 +30325,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1005,
+      "number": 1003,
       "children": [
         {
           "kind": "span",
@@ -30398,7 +30341,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1006,
+      "number": 1004,
       "children": [
         {
           "kind": "span",
@@ -30414,7 +30357,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1007,
+      "number": 1005,
       "children": [
         {
           "kind": "span",
@@ -30430,7 +30373,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1008,
+      "number": 1006,
       "children": [
         {
           "kind": "span",
@@ -30446,7 +30389,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1009,
+      "number": 1007,
       "children": [
         {
           "kind": "span",
@@ -30462,7 +30405,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1010,
+      "number": 1008,
       "children": [
         {
           "kind": "span",
@@ -30478,7 +30421,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1011,
+      "number": 1009,
       "children": [
         {
           "kind": "span",
@@ -30494,7 +30437,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1012,
+      "number": 1010,
       "children": [
         {
           "kind": "span",
@@ -30510,7 +30453,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1013,
+      "number": 1011,
       "children": [
         {
           "kind": "span",
@@ -30526,7 +30469,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1014,
+      "number": 1012,
       "children": [
         {
           "kind": "span",
@@ -30542,7 +30485,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1015,
+      "number": 1013,
       "children": [
         {
           "kind": "span",
@@ -30558,7 +30501,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1016,
+      "number": 1014,
       "children": [
         {
           "kind": "span",
@@ -30574,7 +30517,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1017,
+      "number": 1015,
       "children": [
         {
           "kind": "span",
@@ -30590,7 +30533,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1018,
+      "number": 1016,
       "children": [
         {
           "kind": "span",
@@ -30606,7 +30549,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1019,
+      "number": 1017,
       "children": [
         {
           "kind": "span",
@@ -30622,7 +30565,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1020,
+      "number": 1018,
       "children": [
         {
           "kind": "span",
@@ -30638,7 +30581,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1021,
+      "number": 1019,
       "children": [
         {
           "kind": "span",
@@ -30654,7 +30597,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1022,
+      "number": 1020,
       "children": [
         {
           "kind": "span",
@@ -30670,7 +30613,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1023,
+      "number": 1021,
       "children": [
         {
           "kind": "span",
@@ -30686,7 +30629,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1024,
+      "number": 1022,
       "children": [
         {
           "kind": "span",
@@ -30702,7 +30645,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1025,
+      "number": 1023,
       "children": [
         {
           "kind": "span",
@@ -30718,7 +30661,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1026,
+      "number": 1024,
       "children": [
         {
           "kind": "span",
@@ -30734,7 +30677,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1027,
+      "number": 1025,
       "children": [
         {
           "kind": "span",
@@ -30750,7 +30693,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1028,
+      "number": 1026,
       "children": [
         {
           "kind": "span",
@@ -30771,7 +30714,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Make_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1028C14"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1026C14"
         },
         {
           "kind": "span",
@@ -30782,7 +30725,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1029,
+      "number": 1027,
       "children": [
         {
           "kind": "span",
@@ -30793,7 +30736,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "cN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1029C9"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1027C9"
         },
         {
           "kind": "span",
@@ -30809,7 +30752,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "rN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1029C13"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1027C13"
         },
         {
           "kind": "span",
@@ -30851,7 +30794,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1030,
+      "number": 1028,
       "children": [
         {
           "kind": "span",
@@ -30862,7 +30805,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "diag",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1030C9"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1028C9"
         },
         {
           "kind": "span",
@@ -30935,7 +30878,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1031,
+      "number": 1029,
       "children": [
         {
           "kind": "span",
@@ -30961,7 +30904,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1032,
+      "number": 1030,
       "children": [
         {
           "kind": "span",
@@ -31037,7 +30980,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1033,
+      "number": 1031,
       "children": [
         {
           "kind": "span",
@@ -31068,6 +31011,118 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "x"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "diag"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1032,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "            "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "c1r1_val"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "=>"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "y"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "diag"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1033,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "            "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "c2r2_val"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "=>"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "z"
         },
         {
           "kind": "span",
@@ -31103,118 +31158,6 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "c1r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "diag"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1035,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "diag"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1036,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
           "text": "c3r3_val"
         },
         {
@@ -31286,19 +31229,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 1035,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1036,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
       "number": 1037,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1038,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1039,
       "children": [
         {
           "kind": "span",
@@ -31314,7 +31257,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1040,
+      "number": 1038,
       "children": [
         {
           "kind": "span",
@@ -31330,7 +31273,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1041,
+      "number": 1039,
       "children": [
         {
           "kind": "span",
@@ -31340,13 +31283,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Constructor for Vkm_GenMatrix type."
+          "text": "--< Determine whether two matrices are equal to each other."
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1042,
+      "number": 1040,
       "children": [
         {
           "kind": "span",
@@ -31362,7 +31305,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1043,
+      "number": 1041,
       "children": [
         {
           "kind": "span",
@@ -31378,6 +31321,38 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 1042,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Determines whether every element of the two matrices are equal to each "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1043,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< other."
+        }
+      ]
+    },
+    {
+      "kind": "line",
       "number": 1044,
       "children": [
         {
@@ -31388,7 +31363,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Creates a new instance of Vkm_GenMatrix with the indicated number of rows"
+          "text": "--<"
         }
       ]
     },
@@ -31404,7 +31379,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< and columns. Each element is initialized as specified:"
+          "text": "--< @param left"
         }
       ]
     },
@@ -31420,7 +31395,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< "
+          "text": "--< The variable that is to the left of the equality operator."
         }
       ]
     },
@@ -31436,7 +31411,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    \\      c0       c1       c2       c3      cN "
+          "text": "--<"
         }
       ]
     },
@@ -31452,7 +31427,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r0 | c0_val.x c1_val.x   0.0      0.0    |"
+          "text": "--< @param right"
         }
       ]
     },
@@ -31468,7 +31443,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r1 | c0_val.y c1_val.y   0.0      0.0    |"
+          "text": "--< The variable that is to the right of the equality operator."
         }
       ]
     },
@@ -31484,7 +31459,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r2 | c0_val.z c1_val.z   0.0      0.0    |"
+          "text": "--<"
         }
       ]
     },
@@ -31500,7 +31475,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r3 | c0_val.w c1_val.w   0.0      0.0    |"
+          "text": "--< @return"
         }
       ]
     },
@@ -31516,7 +31491,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    rN"
+          "text": "--< True if the matrices are equal to each other. Otherwise, false."
         }
       ]
     },
@@ -31532,301 +31507,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1054,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< If an index is out of bounds for a vector, the default value of 0.0 is "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1055,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< used for the corresponding matrix element."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1056,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1057,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param cN"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1058,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The last index that can be used for accessing columns in the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1059,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1060,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param rN"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1061,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The last index that can be used for accessing rows in the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1062,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1063,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param c0_val"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1064,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The value used to initialize column 0 of the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1065,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1066,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param c1_val"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1067,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The value used to initialize column 1 of the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1068,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1069,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @return"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1070,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The new Vkm_GenMatrix instance."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1071,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
           "text": "----------------------------------------------------------------------------"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1072,
+      "number": 1054,
       "children": [
         {
           "kind": "span",
@@ -31846,8 +31533,8 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "Make_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1072C14"
+          "text": "Op_Is_Equal",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1054C14"
         },
         {
           "kind": "span",
@@ -31858,7 +31545,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1073,
+      "number": 1055,
       "children": [
         {
           "kind": "span",
@@ -31868,8 +31555,8 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "cN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1073C9"
+          "text": "left",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1055C9"
         },
         {
           "kind": "span",
@@ -31884,13 +31571,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "rN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1073C13"
+          "text": "right",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1055C15"
         },
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "         "
+          "text": " "
         },
         {
           "kind": "span",
@@ -31915,13 +31602,328 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "Vkm_Indices",
-          "href": "docs/vulkan__math___spec.html#L70C10"
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_Bool",
+          "href": "docs/vulkan__math___spec.html#L49C10"
         },
         {
           "kind": "span",
           "cssClass": "identifier",
           "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1056,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1057,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1058,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1059,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1060,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Linear algebraic matrix multiplication"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1061,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1062,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1063,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Perform linear algebraic matrix multiplication for the two matrices."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1064,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1065,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param left"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1066,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The left matrix in the computation."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1067,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1068,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param right"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1069,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The right matrix in the computation."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1070,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1071,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The result of linear algebraic multiplication for the two matrices."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1072,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1073,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Op_Matrix_Mult_Matrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1073C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
         }
       ]
     },
@@ -31937,7 +31939,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "c0_val",
+          "text": "left",
           "href": "docs/vulkan__math__genmatrix___spec.html#L1074C9"
         },
         {
@@ -31953,8 +31955,8 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "c1_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1074C17"
+          "text": "right",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1074C15"
         },
         {
           "kind": "span",
@@ -31984,8 +31986,8 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "identifier",
-          "text": "Base_Vector_Type",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
         },
         {
           "kind": "span",
@@ -32015,550 +32017,6 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1075,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Make_GenMatrix"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1076,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1077,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1078,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "with"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " Inline"
-        },
-        {
-          "kind": "span",
           "cssClass": "identifier",
           "text": ";"
         }
@@ -32566,19 +32024,19 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1079,
+      "number": 1075,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1080,
+      "number": 1076,
       "children": [
       ]
     },
     {
       "kind": "line",
-      "number": 1081,
+      "number": 1077,
       "children": [
         {
           "kind": "span",
@@ -32594,7 +32052,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1082,
+      "number": 1078,
       "children": [
         {
           "kind": "span",
@@ -32610,6 +32068,70 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
+      "number": 1079,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function component-wise on a matrix"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1080,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1081,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1082,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies function component-wise on a matrix, yielding the following"
+        }
+      ]
+    },
+    {
+      "kind": "line",
       "number": 1083,
       "children": [
         {
@@ -32620,7 +32142,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Constructor for Vkm_GenMatrix type."
+          "text": "--< matrix:"
         }
       ]
     },
@@ -32652,7 +32174,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @description"
+          "text": "--<     | Func(im1.c0r0) ... Func(im1.cNr0) |"
         }
       ]
     },
@@ -32668,7 +32190,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< Creates a new instance of Vkm_GenMatrix with the indicated number of rows"
+          "text": "--<     |        ...           ...          |"
         }
       ]
     },
@@ -32684,7 +32206,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< and columns. Each element is initialized as specified:"
+          "text": "--<     | Func(im1.c0rN) ... Func(im1.cNrN) |"
         }
       ]
     },
@@ -32700,7 +32222,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< "
+          "text": "--<"
         }
       ]
     },
@@ -32716,7 +32238,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    \\      c0       c1       c2       c3      cN "
+          "text": "--< @param im1"
         }
       ]
     },
@@ -32732,7 +32254,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r0 | c0_val.x c1_val.x c2_val.x   0.0    |"
+          "text": "--< The input Vkm_GenMatrix parameter."
         }
       ]
     },
@@ -32748,7 +32270,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r1 | c0_val.y c1_val.y c2_val.y   0.0    |"
+          "text": "--<"
         }
       ]
     },
@@ -32764,7 +32286,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r2 | c0_val.z c1_val.z c2_val.z   0.0    |"
+          "text": "--< @return"
         }
       ]
     },
@@ -32780,7 +32302,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    r3 | c0_val.w c1_val.w c2_val.w   0.0    |"
+          "text": "--< The result from applying the generic function Func component-wise on a"
         }
       ]
     },
@@ -32796,7 +32318,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<    rN"
+          "text": "--< matrix."
         }
       ]
     },
@@ -32812,7 +32334,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -32827,8 +32349,8 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "comment",
-          "text": "--< If an index is out of bounds for a vector, the default value of 0.0 is "
+          "cssClass": "keyword",
+          "text": "generic"
         }
       ]
     },
@@ -32839,12 +32361,111 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "text",
-          "text": "    "
+          "text": "        "
         },
         {
           "kind": "span",
-          "cssClass": "comment",
-          "text": "--< used for the corresponding matrix element."
+          "cssClass": "keyword",
+          "text": "with"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Func",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1097C23"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1097C29"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
         }
       ]
     },
@@ -32859,8 +32480,97 @@ GNATdoc.SourceFile = {
         },
         {
           "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Apply_Func_IM_RM",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1098C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "im1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1098C32"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
         }
       ]
     },
@@ -32868,32 +32578,12 @@ GNATdoc.SourceFile = {
       "kind": "line",
       "number": 1099,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param cN"
-        }
       ]
     },
     {
       "kind": "line",
       "number": 1100,
       "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The last index that can be used for accessing columns in the matrix."
-        }
       ]
     },
     {
@@ -32908,7 +32598,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "----------------------------------------------------------------------------"
         }
       ]
     },
@@ -32924,7 +32614,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param rN"
+          "text": "--< @summary"
         }
       ]
     },
@@ -32940,7 +32630,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The last index that can be used for accessing rows in the matrix."
+          "text": "--< Apply function component-wise on two matrices."
         }
       ]
     },
@@ -32972,7 +32662,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param c0_val"
+          "text": "--< @description"
         }
       ]
     },
@@ -32988,7 +32678,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value used to initialize column 0 of the matrix."
+          "text": "--< Applies function component-wise on two matrices, yielding the following"
         }
       ]
     },
@@ -33004,7 +32694,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< matrix:"
         }
       ]
     },
@@ -33020,7 +32710,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param c1_val"
+          "text": "--<"
         }
       ]
     },
@@ -33036,7 +32726,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value used to initialize column 1 of the matrix."
+          "text": "--<     | Func(im1.c0r0, im2.c0r0) ... Func(im1.cNr0, im2.cNr0) |"
         }
       ]
     },
@@ -33052,7 +32742,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--<     |        ...                           ...              |"
         }
       ]
     },
@@ -33068,7 +32758,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @param c2_val"
+          "text": "--<     | Func(im1.c0rN, im2.c0rN) ... Func(im1.cNrN, im2.cNrN) |"
         }
       ]
     },
@@ -33084,7 +32774,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The value used to initialize column 2 of the matrix."
+          "text": "--<"
         }
       ]
     },
@@ -33100,7 +32790,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--<"
+          "text": "--< @param im1"
         }
       ]
     },
@@ -33116,7 +32806,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< @return"
+          "text": "--< The first input Vkm_GenMatrix parameter."
         }
       ]
     },
@@ -33132,7 +32822,7 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "--< The new Vkm_GenMatrix instance."
+          "text": "--<"
         }
       ]
     },
@@ -33148,3015 +32838,13 @@ GNATdoc.SourceFile = {
         {
           "kind": "span",
           "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1117,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Make_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1117C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1118,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1118C9"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1118C13"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "                 "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_Indices",
-          "href": "docs/vulkan__math___spec.html#L70C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1119,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1119C9"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1119C17"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1119C25"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Base_Vector_Type",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "return"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1120,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Make_GenMatrix"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1121,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1122,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1123,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1124,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "with"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " Inline"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1125,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1126,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1127,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1128,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @summary"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1129,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Constructor for Vkm_GenMatrix type."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1130,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1131,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @description"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1132,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Creates a new instance of Vkm_GenMatrix with the indicated number of rows"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1133,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< and columns. Each element is initialized as specified:"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1134,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1135,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<    \\      c0       c1       c2       c3      cN "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1136,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<    r0 | c0_val.x c1_val.x c2_val.x c3_val.x |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1137,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<    r1 | c0_val.y c1_val.y c2_val.y c3_val.y |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1138,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<    r2 | c0_val.z c1_val.z c2_val.z c3_val.z |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1139,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<    r3 | c0_val.w c1_val.w c2_val.w c3_val.w |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1140,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<    rN"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1141,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1142,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< If an index is out of bounds for a vector, the default value of 0.0 is "
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1143,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< used for the corresponding matrix element."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1144,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1145,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param cN"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1146,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The last index that can be used for accessing columns in the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1147,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1148,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param rN"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1149,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The last index that can be used for accessing rows in the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1150,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1151,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param c0_val"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1152,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The value used to initialize column 0 of the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1153,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1154,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param c1_val"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1155,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The value used to initialize column 1 of the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1156,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1157,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param c2_val"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1158,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The value used to initialize column 2 of the matrix."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1159,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1160,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @return"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1161,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The new Vkm_GenMatrix instance."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1162,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1163,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "function"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Make_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1163C14"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1164,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1164C9"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1164C13"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "                         "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_Indices",
-          "href": "docs/vulkan__math___spec.html#L70C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1165,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1165C9"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1165C17"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1165C25"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3_val",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1165C33"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ":"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "in"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "     "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Base_Vector_Type",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "return"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Vkm_GenMatrix",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "is"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1166,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "        "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "Make_GenMatrix"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1167,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "cN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "rN"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1168,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1169,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1170,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1171,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "            "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3r0_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "x"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3r1_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "y"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3r2_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "z"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ","
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3r3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "=>"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "w"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "("
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": "c3_val"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ")"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " "
-        },
-        {
-          "kind": "span",
-          "cssClass": "keyword",
-          "text": "with"
-        },
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": " Inline"
-        },
-        {
-          "kind": "span",
-          "cssClass": "identifier",
-          "text": ";"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1172,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1173,
-      "children": [
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1174,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "----------------------------------------------------------------------------"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1175,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @summary"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1176,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Apply function component-wise on two matrices."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1177,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1178,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @description"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1179,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< Applies function component-wise on two matrices, yielding the following"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1180,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< matrix:"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1181,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1182,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<     | Func(im1.c0r0, im2.c0r0) ... Func(im1.cNr0, im2.cNr0) |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1183,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<     |        ...                           ...              |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1184,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<     | Func(im1.c0rN, im2.c0rN) ... Func(im1.cNrN, im2.cNrN) |"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1185,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1186,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< @param im1"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1187,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--< The first input Vkm_GenMatrix parameter."
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1188,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
-          "text": "--<"
-        }
-      ]
-    },
-    {
-      "kind": "line",
-      "number": 1189,
-      "children": [
-        {
-          "kind": "span",
-          "cssClass": "text",
-          "text": "    "
-        },
-        {
-          "kind": "span",
-          "cssClass": "comment",
           "text": "--< @param im2"
         }
       ]
     },
     {
       "kind": "line",
-      "number": 1190,
+      "number": 1117,
       "children": [
         {
           "kind": "span",
@@ -36172,7 +32860,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1191,
+      "number": 1118,
       "children": [
         {
           "kind": "span",
@@ -36188,7 +32876,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1192,
+      "number": 1119,
       "children": [
         {
           "kind": "span",
@@ -36204,7 +32892,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1193,
+      "number": 1120,
       "children": [
         {
           "kind": "span",
@@ -36220,7 +32908,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1194,
+      "number": 1121,
       "children": [
         {
           "kind": "span",
@@ -36236,7 +32924,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1195,
+      "number": 1122,
       "children": [
         {
           "kind": "span",
@@ -36252,7 +32940,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1196,
+      "number": 1123,
       "children": [
         {
           "kind": "span",
@@ -36268,7 +32956,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1197,
+      "number": 1124,
       "children": [
         {
           "kind": "span",
@@ -36299,7 +32987,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Func",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1197C23"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1124C23"
         },
         {
           "kind": "span",
@@ -36315,7 +33003,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "is1",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1197C29"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1124C29"
         },
         {
           "kind": "span",
@@ -36331,7 +33019,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "is2",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1197C34"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1124C34"
         },
         {
           "kind": "span",
@@ -36399,7 +33087,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1198,
+      "number": 1125,
       "children": [
         {
           "kind": "span",
@@ -36420,7 +33108,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "Apply_Func_IM_IM_RM",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1198C14"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1125C14"
         },
         {
           "kind": "span",
@@ -36436,7 +33124,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "im1",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1198C35"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1125C35"
         },
         {
           "kind": "span",
@@ -36452,7 +33140,7 @@ GNATdoc.SourceFile = {
           "kind": "span",
           "cssClass": "identifier",
           "text": "im2",
-          "href": "docs/vulkan__math__genmatrix___spec.html#L1198C40"
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1125C40"
         },
         {
           "kind": "span",
@@ -36520,7 +33208,1372 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1199,
+      "number": 1126,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1127,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1128,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1129,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1130,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function component-wise on a matrix and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1131,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1132,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1133,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies function component-wise on a matrix and a scalar, yielding the "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1134,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< following matrix:"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1135,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1136,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     | Func(im1.c0r0, is1) ... Func(im1.cNr0, is1) |"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1137,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     |        ...                    ...           |"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1138,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     | Func(im1.c0rN, is1) ... Func(im1.cNrN, is1) |"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1139,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1140,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param im1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1141,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The first input Vkm_GenMatrix parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1142,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1143,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param is1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1144,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The second input Vkm_GenMatrix parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1145,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1146,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1147,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The result from applying the generic function Func component-wise on both"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1148,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< matrices."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1149,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1150,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "generic"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1151,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "with"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Func",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1151C23"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1151C29"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is2",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1151C34"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1152,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Apply_Func_IM_IS_RM",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1152C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1153,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "im1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1153C9"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1154,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1154C9"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1155,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1156,
+      "children": [
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1157,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1158,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @summary"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1159,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Apply function component-wise on a matrix and a scalar."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1160,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1161,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @description"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1162,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< Applies function component-wise on a matrix and a scalar, yielding the "
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1163,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< following matrix:"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1164,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1165,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     | Func(is1, im1.c0r0) ... Func(is1, im1.cNr0) |"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1166,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     |        ...                     ...          |"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1167,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<     | Func(is1, im1.c0rN) ... Func(is1, im1.cNrN) |"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1168,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1169,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param is1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1170,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The first input Vkm_GenMatrix parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1171,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1172,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @param im1"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1173,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The second input Vkm_GenMatrix parameter."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1174,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--<"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1175,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< @return"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1176,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< The result from applying the generic function Func component-wise on both"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1177,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "--< matrices."
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1178,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "comment",
+          "text": "----------------------------------------------------------------------------"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1179,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "generic"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1180,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "with"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Func",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1180C23"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1180C29"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ","
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is2",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1180C34"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1181,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "    "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "function"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Apply_Func_IS_IM_RM",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1181C14"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "("
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1182,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "is1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1182C9"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Base_Type",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1183,
+      "children": [
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "        "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "im1",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L1183C9"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ":"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "in"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": "     "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ")"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "keyword",
+          "text": "return"
+        },
+        {
+          "kind": "span",
+          "cssClass": "text",
+          "text": " "
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": "Vkm_GenMatrix",
+          "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+        },
+        {
+          "kind": "span",
+          "cssClass": "identifier",
+          "text": ";"
+        }
+      ]
+    },
+    {
+      "kind": "line",
+      "number": 1184,
       "children": [
         {
           "kind": "span",
@@ -36531,7 +34584,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1200,
+      "number": 1185,
       "children": [
         {
           "kind": "span",
@@ -36542,7 +34595,7 @@ GNATdoc.SourceFile = {
     },
     {
       "kind": "line",
-      "number": 1201,
+      "number": 1186,
       "children": [
         {
           "kind": "span",

@@ -8,8 +8,20 @@ GNATdoc.InheritanceIndex = [
         "docHref": "docs/vulkan__math__gendmatrix___spec.html#L56C13"
       },
       {
-        "label": "Vkm_GenFMatrix",
-        "docHref": "docs/vulkan__math__genfmatrix___spec.html#L57C13"
+        "label": "Vkm_Mat",
+        "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13",
+        "inherited": [
+          {
+            "label": "Vkm_Mat2x2",
+            "docHref": "docs/vulkan__math__mat2x2___spec.html#L42C13",
+            "inherited": [
+              {
+                "label": "Vkm_Mat2",
+                "docHref": "docs/vulkan__math__mat2x2___spec.html#L46C13"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

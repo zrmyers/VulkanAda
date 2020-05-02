@@ -1,5 +1,5 @@
 GNATdoc.Documentation = {
-  "label": "Vulkan.Math.GenMatrix",
+  "label": "Vulkan.Math.Mat2x2",
   "qualifier": "",
   "summary": [
     {
@@ -7,39 +7,26 @@ GNATdoc.Documentation = {
       "children": [
         {
           "kind": "span",
-          "text": "This generic package provides constructors, getters, and setters for generic\n"
+          "text": "This package provides a single precision floating point matrix with 2 rows\n"
         },
         {
           "kind": "span",
-          "text": "matrix types.\n"
+          "text": "and 2 columns.\n"
         }
       ]
     }
   ],
   "description": [
-    {
-      "kind": "paragraph",
-      "children": [
-        {
-          "kind": "span",
-          "text": "The Vkm_Matrix type is a generic floating point matrix that can contain up to\n"
-        },
-        {
-          "kind": "span",
-          "text": "4 rows and 4 columns.\n"
-        }
-      ]
-    }
   ],
   "entities": [
     {
       "entities": [
         {
-          "label": "Vkm_Matrix",
+          "label": "Vkm_Mat2",
           "qualifier": "",
-          "line": 58,
-          "column": 10,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "line": 46,
+          "column": 13,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
           ],
           "description": [
@@ -48,7 +35,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 58,
+                  "number": 46,
                   "children": [
                     {
                       "kind": "span",
@@ -58,7 +45,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "keyword",
-                      "text": "type"
+                      "text": "subtype"
                     },
                     {
                       "kind": "span",
@@ -68,8 +55,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Matrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L58C10"
+                      "text": "Vkm_Mat2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -88,19 +75,108 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "An alternative name for a 2x2 single-precision floating point matrix\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Vkm_Mat2x2",
+          "qualifier": "",
+          "line": 42,
+          "column": 13,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 42,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
                       "cssClass": "keyword",
-                      "text": "array"
+                      "text": "subtype"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat",
+                      "href": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "("
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 43,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
+                      "text": "last_row_index"
                     },
                     {
                       "kind": "span",
@@ -109,8 +185,8 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "range"
+                      "cssClass": "identifier",
+                      "text": "=>"
                     },
                     {
                       "kind": "span",
@@ -119,518 +195,13 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "<>"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "range"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "<>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "of"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "aliased"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "The matrix type is a 2D array with indices in the range of the Vkm_Indices\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "type [0 .. 3]. Because of this, the number of columns is 1-4 and the \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "number of rows is 1-4.\n"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "label": "Simple types"
-    },
-    {
-      "entities": [
-        {
-          "label": "Vkm_GenMatrix_Reference",
-          "qualifier": "",
-          "line": 86,
-          "column": 10,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 86,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "type"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix_Reference",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L86C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "not"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "null"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "access"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "null"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "record"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 87,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "with"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " Implicit_Dereference => instance"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "A reference to a generic matrix type. The Vkm_GenMatrix instance is \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "automatically dereferenced on use.\n"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "label": "Record types"
-    },
-    {
-      "entities": [
-        {
-          "label": "Vkm_GenMatrix",
-          "qualifier": "",
-          "line": 76,
-          "column": 10,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 76,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "type"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "last_column_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C24"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 77,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                       "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "last_row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L77C24"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "tagged"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 78,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "record"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 79,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "            "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "data",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L79C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Matrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L58C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "'"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "First"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ".."
                     },
                     {
                       "kind": "span",
@@ -644,1663 +215,13 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 80,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                              "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "'"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "First"
-                    },
-                    {
-                      "kind": "span",
                       "cssClass": "text",
                       "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": ".."
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "last_row_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 81,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "end"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "record"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "The matrix is a discriminant tagged record which encapsulates the \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "Vkm_Matrix type. This allows use of \".\" to perform functions on an \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "instance of matrix. \n"
-                }
-              ]
-            }
-          ],
-          "inherited": [
-            {
-              "label": "Vkm_GenDMatrix",
-              "docHref": "docs/vulkan__math__gendmatrix___spec.html#L56C13"
-            },
-            {
-              "label": "Vkm_Mat",
-              "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
-            }
-          ],
-          "fields": [
-            {
-              "label": "last_column_index",
-              "line": 76,
-              "column": 24,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The discriminant, last_column_index, determines the number of columns in the\n"
-                    },
-                    {
-                      "kind": "span",
-                      "text": "matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "last_row_index",
-              "line": 77,
-              "column": 24,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The discriminant, last_row_index, determines the number of rows in the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "data",
-              "line": 79,
-              "column": 13,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_Matrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L58C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The matrix data for the record. This information is able to be\n"
-                    },
-                    {
-                      "kind": "span",
-                      "text": "passed to a C/C++ context.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "label": "Tagged types"
-    },
-    {
-      "entities": [
-        {
-          "label": "Apply_Func_IM_IM_RM",
-          "qualifier": "",
-          "line": 1125,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Apply function component-wise on two matrices.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 1125,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IM_IM_RM",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1125C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "im1",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1125C35"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "im2",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1125C40"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Applies function component-wise on two matrices, yielding the following\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "matrix:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(im1.c0r0, im2.c0r0) ... Func(im1.cNr0, im2.cNr0) |"
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "|        ...                           ...              |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(im1.c0rN, im2.c0rN) ... Func(im1.cNrN, im2.cNrN) |"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "im1",
-              "line": 1125,
-              "column": 35,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The first input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "im2",
-              "line": 1125,
-              "column": 40,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The second input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The result from applying the generic function Func component-wise on both\n"
-                  },
-                  {
-                    "kind": "span",
-                    "text": "matrices.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "Apply_Func_IM_IS_RM",
-          "qualifier": "",
-          "line": 1152,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Apply function component-wise on a matrix and a scalar.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 1152,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IM_IS_RM",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1152C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1153,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "im1",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1153C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1154,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "is1",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1154C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Applies function component-wise on a matrix and a scalar, yielding the \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "following matrix:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(im1.c0r0, is1) ... Func(im1.cNr0, is1) |"
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "|        ...                    ...           |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(im1.c0rN, is1) ... Func(im1.cNrN, is1) |"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "im1",
-              "line": 1153,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The first input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "is1",
-              "line": 1154,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The second input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The result from applying the generic function Func component-wise on both\n"
-                  },
-                  {
-                    "kind": "span",
-                    "text": "matrices.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "Apply_Func_IM_RM",
-          "qualifier": "",
-          "line": 1098,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Apply function component-wise on a matrix\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 1098,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IM_RM",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1098C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "im1",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1098C32"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Applies function component-wise on a matrix, yielding the following\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "matrix:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(im1.c0r0) ... Func(im1.cNr0) |"
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "|        ...           ...          |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(im1.c0rN) ... Func(im1.cNrN) |"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "im1",
-              "line": 1098,
-              "column": 32,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The result from applying the generic function Func component-wise on a\n"
-                  },
-                  {
-                    "kind": "span",
-                    "text": "matrix.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "Apply_Func_IS_IM_RM",
-          "qualifier": "",
-          "line": 1181,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Apply function component-wise on a matrix and a scalar.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 1181,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Apply_Func_IS_IM_RM",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1181C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1182,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "is1",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1182C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1183,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "im1",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1183C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Applies function component-wise on a matrix and a scalar, yielding the \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "following matrix:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(is1, im1.c0r0) ... Func(is1, im1.cNr0) |"
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "|        ...                     ...          |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "| Func(is1, im1.c0rN) ... Func(is1, im1.cNrN) |"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "is1",
-              "line": 1182,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The first input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "im1",
-              "line": 1183,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The second input Vkm_GenMatrix parameter.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The result from applying the generic function Func component-wise on both\n"
-                  },
-                  {
-                    "kind": "span",
-                    "text": "matrices.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "label": "Subprograms"
-    },
-    {
-      "entities": [
-        {
-          "label": "Column",
-          "qualifier": "",
-          "line": 526,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Get the indicated column of the matrix as a vector.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 526,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Column",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L526C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 527,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L527C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 528,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L528C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 529,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Make_GenType"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 530,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "To_Vkm_Length"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.last_row_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 531,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.Element"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "number",
-                      "text": "0"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 532,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.Element"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "number",
-                      "text": "1"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 533,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.Element"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
+                      "text": "=>"
                     },
                     {
                       "kind": "span",
@@ -2320,23 +241,77 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": ","
+                      "text": ";"
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "A 2x2 matrix of single-precision floating point numbers.\n"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "label": "Record types"
+    },
+    {
+      "entities": [
+        {
+          "label": "&",
+          "qualifier": "",
+          "line": 212,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Concatentation operator for two Vkm_Vec2 which produces a Vkm_Mat2x2.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
                 {
                   "kind": "line",
-                  "number": 534,
+                  "number": 212,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "             "
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "instance.Element"
+                      "text": "\"&\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -2346,7 +321,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "col_index"
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L212C19"
                     },
                     {
                       "kind": "span",
@@ -2360,13 +336,122 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "number",
-                      "text": "3"
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L212C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 213,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Make_Mat2x2"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right"
                     },
                     {
                       "kind": "span",
@@ -2407,33 +492,19 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Retrieve the indicated column of the matrix as a vector:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "cI := [ instance.cIr0 instance.cIr1 ... instance.cIrN ]"
-                    }
-                  ]
+                  "text": "Create a 2x2 matrix by concatentating two 2D column vectors.\n"
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "label": "instance",
-              "line": 527,
-              "column": 9,
+              "label": "left",
+              "line": 212,
+              "column": 19,
               "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                "label": "Vulkan.Math.Vec2.Vkm_Vec2",
+                "docHref": "docs/vulkan__math__vec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -2441,30 +512,21 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The instance of Vkm_GenMatrix from which the column is retrieved.\n"
+                      "text": "The vector to the left of the concatenation symbol.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "col_index",
-              "line": 528,
-              "column": 9,
+              "label": "right",
+              "line": 212,
+              "column": 25,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.Vec2.Vkm_Vec2",
+                "docHref": "docs/vulkan__math__vec2___spec.html#L39C13"
               },
               "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the column to retrieve from the matrix.\n"
-                    }
-                  ]
-                }
               ]
             }
           ],
@@ -2475,7 +537,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "The vector that contains all elements in the indicated column.\n"
+                    "text": "A 2x2 matrix.\n"
                   }
                 ]
               }
@@ -2483,18 +545,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Column",
-          "qualifier": "",
-          "line": 581,
+          "label": "*",
+          "qualifier": "(renaming)",
+          "line": 659,
           "column": 15,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Set the indicated column of the matrix given a vector.\n"
+                  "text": "Linear Algebraic Multiplication for two Vkm_Mat2x2 matrices.\n"
                 }
               ]
             }
@@ -2505,314 +567,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 581,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "procedure"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Column",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L581C15"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 582,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L582C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 583,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L583C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 584,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L584C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Sets the indicated column of the matrix to the specified value.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "instance",
-              "line": 582,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The instance of Vkm_GenMatrix for which the column is set.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "col_index",
-              "line": 583,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the column to set for the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "col_val",
-              "line": 584,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Vector_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The vector value to set the column to.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Column",
-          "qualifier": "",
-          "line": 634,
-          "column": 15,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Set the indicated column of the matrix given a vector.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 634,
+                  "number": 659,
                   "children": [
                     {
                       "kind": "span",
@@ -2827,35 +582,284 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "  "
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Column",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L634C15"
+                      "text": "\"*\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 635,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L635C9"
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L659C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L659C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFM.Op_Matrix_Mult_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 by the right\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Mat2x2 matrix.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| Dot(left.r0, right.c0) Dot(left.r0, right.c1) |"
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| Dot(left.r1, right.c0) Dot(left.r1, right.c0) |"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 659,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 659,
+              "column": 25,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "*",
+          "qualifier": "(renaming)",
+          "line": 682,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Linear Algebraic Multiplication for a Vkm_Mat2x2 with a 2D vector.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 682,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"*\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L682C19"
                     },
                     {
                       "kind": "span",
@@ -2880,12 +884,35 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": " "
+                      "text": "     "
                     },
                     {
                       "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 683,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L683C19"
                     },
                     {
                       "kind": "span",
@@ -2895,8 +922,3774 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Mult_Vector"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 by the right\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Vec2 vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| Dot(left.r0, right) |"
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| Dot(left.r1, right) |"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 682,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
+                "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 683,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenFType.Vkm_GenFType",
+                "docHref": "docs/vulkan__math__genftype___spec.html#L55C13"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "*",
+          "qualifier": "(renaming)",
+          "line": 706,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Linear Algebraic Multiplication for a Vkm_Mat2x2 with a 2D vector.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 706,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"*\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L706C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 707,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L707C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Vector_Mult_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 by the right\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Vec2 vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| Dot(left, right.c0) |"
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| Dot(left, right.c1) |"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 706,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenFType.Vkm_GenFType",
+                "docHref": "docs/vulkan__math__genftype___spec.html#L55C13"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 707,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
+                "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "**",
+          "qualifier": "(renaming)",
+          "line": 360,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Power operator for two Vkm_Mat2x2 matrices.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 360,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"**\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L360C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L360C26"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Pow_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Power operation component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 360,
+              "column": 20,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 360,
+              "column": 26,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "**",
+          "qualifier": "(renaming)",
+          "line": 379,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Power operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 379,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"**\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L379C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 380,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                   "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L380C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Pow_Scalar"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform power component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 379,
+              "column": 20,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 380,
+              "column": 20,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "**",
+          "qualifier": "(renaming)",
+          "line": 399,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Power operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 399,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"**\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L399C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 400,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                   "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L400C20"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Scalar_Pow_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform power component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 399,
+              "column": 20,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 400,
+              "column": 20,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "+",
+          "qualifier": "(renaming)",
+          "line": 248,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unary Plus operator on a Vkm_Mat2x2.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 248,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"+\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L248C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Plus_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Unary Plus operation on the matrix, returning the matrix unchanged.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "right",
+              "line": 248,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
+                "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The matrix, unchanged.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "+",
+          "qualifier": "(renaming)",
+          "line": 419,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Addition operator for two Vkm_Mat2x2 matrices.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 419,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"+\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L419C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L419C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Plus_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Addition between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 419,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 419,
+              "column": 25,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The left argument added to the right argument.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "+",
+          "qualifier": "(renaming)",
+          "line": 438,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Addition operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 438,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"+\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L438C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 439,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L439C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Plus_Scalar"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Addition component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 438,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 439,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "+",
+          "qualifier": "(renaming)",
+          "line": 458,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Addition operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 458,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"+\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L458C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 459,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L459C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Scalar_Plus_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Addition component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 458,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 459,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(renaming)",
+          "line": 265,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Unary Minus operator on a Vkm_Mat2x2.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 265,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L265C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Minus_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Unary Minus operation on the matrix, returning the matrix with \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "each element negated.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "right",
+              "line": 265,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The matrix, negated.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(renaming)",
+          "line": 478,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Subtraction operator for two Vkm_Mat2x2 matrices.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 478,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L478C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L478C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Minus_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Subtraction between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 478,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 478,
+              "column": 25,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(renaming)",
+          "line": 497,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Subtraction operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 497,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L497C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 498,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L498C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Minus_Scalar"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Subtraction component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 497,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 498,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "-",
+          "qualifier": "(renaming)",
+          "line": 517,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Subtraction operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 517,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"-\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L517C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 518,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L518C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Scalar_Minus_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Subtraction component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 517,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 518,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(renaming)",
+          "line": 596,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Division operator for two Vkm_Mat2x2 matrices.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 596,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L596C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L596C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Div_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Division between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 596,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 596,
+              "column": 25,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(renaming)",
+          "line": 615,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Division operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 615,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L615C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 616,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L616C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Div_Scalar"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Division component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 615,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 616,
+              "column": 19,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "/",
+          "qualifier": "(renaming)",
+          "line": 635,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Division operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 635,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"/\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L635C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
                     },
                     {
                       "kind": "span",
@@ -2912,13 +4705,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "        "
+                      "text": "                  "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "col_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L636C9"
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L636C19"
                     },
                     {
                       "kind": "span",
@@ -2948,66 +4741,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 637,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L637C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
                       "cssClass": "text",
                       "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
                     },
                     {
                       "kind": "span",
@@ -3032,8 +4772,28 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix_Reference",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L86C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Scalar_Div_Matrix"
                     },
                     {
                       "kind": "span",
@@ -3049,19 +4809,19 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Sets the indicated column of the matrix to the specified value.\n"
+                  "text": "Perform Division component-wise between the left and right input arguments.\n"
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "label": "instance",
+              "label": "left",
               "line": 635,
-              "column": 9,
+              "column": 19,
               "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
                 {
@@ -3069,274 +4829,16 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The instance of Vkm_GenMatrix for which the column is set.\n"
+                      "text": "The left operator argument.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "col_index",
+              "label": "right",
               "line": 636,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the column to set for the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "col_val",
-              "line": 637,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Vector_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The vector value to set the column to.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "A reference to the Vkm_GenMatrix instance.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "Element",
-          "qualifier": "",
-          "line": 111,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Vkm_GenMatrix element accessor.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 111,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Element",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L111C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L111C22"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 112,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L112C22"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L112C33"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Gets the value of an element at the specified column and row index.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "instance",
-              "line": 111,
-              "column": 22,
+              "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
                 "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
@@ -3347,47 +4849,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The Vkm_GenMatrix instance to get the element value of.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "col_index",
-              "line": 112,
-              "column": 22,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the column at which to get an element.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "row_index",
-              "line": 112,
-              "column": 33,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the row at which to get an element.\n"
+                      "text": "The right operator argument.\n"
                     }
                   ]
                 }
@@ -3401,7 +4863,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "The value of the specified element.\n"
+                    "text": "The result of the component-wise operator on the arguments.\n"
                   }
                 ]
               }
@@ -3409,18 +4871,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Element",
-          "qualifier": "",
-          "line": 231,
+          "label": "=",
+          "qualifier": "(renaming)",
+          "line": 232,
           "column": 15,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Vkm_GenMatrix element accessor.\n"
+                  "text": "Equality operator for two Vkm_Mat2x2 matrices.\n"
                 }
               ]
             }
@@ -3429,38 +4891,6 @@ GNATdoc.Documentation = {
             {
               "kind": "code",
               "children": [
-                {
-                  "kind": "line",
-                  "number": 231,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "procedure"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Element",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L231C15"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
                 {
                   "kind": "line",
                   "number": 232,
@@ -3468,43 +4898,12 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L232C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
+                      "text": "    "
                     },
                     {
                       "kind": "span",
                       "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
+                      "text": "function"
                     },
                     {
                       "kind": "span",
@@ -3514,30 +4913,23 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": "\"=\""
                     },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 233,
-                  "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "        "
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "col_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L233C9"
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L232C19"
                     },
                     {
                       "kind": "span",
@@ -3552,8 +4944,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L233C20"
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L232C25"
                     },
                     {
                       "kind": "span",
@@ -3583,66 +4975,54 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 234,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "value",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L234C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Bool",
+                      "href": "docs/vulkan__math___spec.html#L49C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFM.Op_Is_Equal"
                     },
                     {
                       "kind": "span",
@@ -3658,16 +5038,16 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Sets the element at the specified column and row index to a value.\n"
+                  "text": "Determine whether two matrices are equal.\n"
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "label": "instance",
+              "label": "left",
               "line": 232,
-              "column": 9,
+              "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
                 "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
@@ -3678,19 +5058,19 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The Vkm_GenMatrix instance to set the element of.\n"
+                      "text": "The left operator argument.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "col_index",
-              "line": 233,
-              "column": 9,
+              "label": "right",
+              "line": 232,
+              "column": 25,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
               },
               "description": [
                 {
@@ -3698,67 +5078,40 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The index of the column at which to set an element.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "row_index",
-              "line": 233,
-              "column": 20,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the row at which to set an element.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "value",
-              "line": 234,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set the specified element.\n"
+                      "text": "The right operator argument.\n"
                     }
                   ]
                 }
               ]
             }
-          ]
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "True if the two matrices are equal. Otherwise false.\n"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
-          "label": "Element",
-          "qualifier": "",
-          "line": 372,
+          "label": "abs",
+          "qualifier": "(renaming)",
+          "line": 282,
           "column": 15,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Vkm_GenMatrix element accessor.\n"
+                  "text": "Absolute Value operator on a Vkm_Mat2x2.\n"
                 }
               ]
             }
@@ -3769,7 +5122,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 372,
+                  "number": 282,
                   "children": [
                     {
                       "kind": "span",
@@ -3784,114 +5137,28 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "  "
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Element",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L372C15"
+                      "text": "\"abs\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 373,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L373C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 374,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "col_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L374C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L374C20"
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L282C21"
                     },
                     {
                       "kind": "span",
@@ -3921,71 +5188,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 375,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "value",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L375C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -4010,8 +5214,28 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix_Reference",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L86C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Abs_Matrix"
                     },
                     {
                       "kind": "span",
@@ -4027,20 +5251,20 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Sets the element at the specified column and row index to a value. A \n"
+                  "text": "Perform the Absolute Value operation on the matrix, returning the matrix with \n"
                 },
                 {
                   "kind": "span",
-                  "text": "reference to the matrix is returned upon completion.\n"
+                  "text": "each each negative element negated.\n"
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "label": "instance",
-              "line": 373,
-              "column": 9,
+              "label": "right",
+              "line": 282,
+              "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
                 "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
@@ -4051,67 +5275,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The Vkm_GenMatrix instance to set the element of.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "col_index",
-              "line": 374,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the column at which to set an element.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "row_index",
-              "line": 374,
-              "column": 20,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the row at which to set an element.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "value",
-              "line": 375,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set the specified element.\n"
+                      "text": "The right operator argument.\n"
                     }
                   ]
                 }
@@ -4125,7 +5289,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A reference to the Vkm_GenMatrix instance.\n"
+                    "text": "The matrix, with all positive elements.\n"
                   }
                 ]
               }
@@ -4133,18 +5297,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_GenMatrix",
+          "label": "Make_Mat2x2",
           "qualifier": "",
-          "line": 912,
+          "line": 62,
           "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_GenMatrix type.\n"
+                  "text": "Constructor for Vkm_Mat2x2 type.\n"
                 }
               ]
             }
@@ -4155,7 +5319,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 912,
+                  "number": 62,
                   "children": [
                     {
                       "kind": "span",
@@ -4175,413 +5339,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L912C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 913,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "cN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L913C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "rN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L913C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "                                 "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 914,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r0_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L914C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r1_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L914C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r2_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L914C29"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r3_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L914C39"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 915,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r0_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L915C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r1_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L915C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r2_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L915C29"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r3_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L915C39"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 916,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r0_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L916C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r1_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L916C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r2_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L916C29"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r3_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L916C39"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 917,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r0_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L917C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r1_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L917C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r2_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L917C29"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r3_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L917C39"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":="
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "number",
-                      "text": "0.0"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
+                      "text": "Make_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L62C14"
                     },
                     {
                       "kind": "span",
@@ -4601,686 +5360,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Creates a new instance of Vkm_GenMatrix with the indicated number of rows\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "and columns. Each element is initialized as specified:\n"
-                }
-              ]
-            },
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "number": 1,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "\\      c0        c1       c2       c3      cN "
-                    }
-                  ]
-                },
-                {
-                  "number": 2,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r0 | c0r0_val c1r0_val c2r0_val c3r0_val |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r1 | c0r1_val c1r1_val c2r1_val c3r1_val |"
-                    }
-                  ]
-                },
-                {
-                  "number": 4,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r2 | c0r2_val c1r2_val c2r2_val c3r2_val |"
-                    }
-                  ]
-                },
-                {
-                  "number": 5,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r3 | c0r3_val c1r3_val c2r3_val c3r3_val |"
-                    }
-                  ]
-                },
-                {
-                  "number": 6,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "rN"
-                    }
-                  ]
-                },
-                {
-                  "number": 7,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "If no value is supplied for an element a default value of 0.0 is used. \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "If the indices in the element name are not within matrix bounds, value \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "specifiedis ignored.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "cN",
-              "line": 913,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The last index that can be used for accessing columns in the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "rN",
-              "line": 913,
-              "column": 13,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The last index that can be used for accessing rows in the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c0r0_val",
-              "line": 914,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 0 and row 0.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c0r1_val",
-              "line": 914,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 0 and row 1.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c0r2_val",
-              "line": 914,
-              "column": 29,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 0 and row 2.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c0r3_val",
-              "line": 914,
-              "column": 39,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 0 and row 3.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c1r0_val",
-              "line": 915,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 1 and row 0.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c1r1_val",
-              "line": 915,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 1 and row 1.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c1r2_val",
-              "line": 915,
-              "column": 29,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 1 and row 2.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c1r3_val",
-              "line": 915,
-              "column": 39,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 1 and row 3.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c2r0_val",
-              "line": 916,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 2 and row 0.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c2r1_val",
-              "line": 916,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 2 and row 1.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c2r2_val",
-              "line": 916,
-              "column": 29,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 2 and row 2.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c2r3_val",
-              "line": 916,
-              "column": 39,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 2 and row 3.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c3r0_val",
-              "line": 917,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 3 and row 0. \n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c3r1_val",
-              "line": 917,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 3 and row 1.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c3r2_val",
-              "line": 917,
-              "column": 29,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 3 and row 2.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "c3r3_val",
-              "line": 917,
-              "column": 39,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set for the element at column 3 and row 3.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The new Vkm_GenMatrix instance.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "Make_GenMatrix",
-          "qualifier": "",
-          "line": 947,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Constructor for Vkm_GenMatrix type.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 947,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Make_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L947C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 948,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "cN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L948C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "rN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L948C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 949,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L949C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L37C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -5296,7 +5377,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 950,
+                  "number": 63,
                   "children": [
                     {
                       "kind": "span",
@@ -5311,7 +5392,243 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenMatrix"
+                      "text": "GFM.Make_GenMatrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "cN"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "2"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "rN"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "2"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "diag"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "1.0"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Construct a 2x2 matrix with each component set to the corresponding\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "component in the identity matrix.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| 1 0 |"
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| 0 1 \\"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A 2x2 matrix.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Make_Mat2x2",
+          "qualifier": "",
+          "line": 83,
+          "column": 14,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 83,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Make_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L83C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -5322,12 +5639,111 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 951,
+                  "number": 84,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "             "
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "diag",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L84C9"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 85,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFM.Make_GenMatrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
                     },
                     {
                       "kind": "span",
@@ -5351,8 +5767,8 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "cN"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -5386,39 +5802,13 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "rN"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 952,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r0_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
                     },
                     {
                       "kind": "span",
@@ -5429,109 +5819,6 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "diag"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 953,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r1_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 954,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r2_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 955,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r3_val"
                     },
                     {
                       "kind": "span",
@@ -5592,11 +5879,11 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Creates a new instance of Vkm_GenMatrix with the indicated number of rows\n"
+                  "text": "Construct a 2x2 matrix with each component on the diagonal set to a\n"
                 },
                 {
                   "kind": "span",
-                  "text": "and columns. Each element is initialized as specified:\n"
+                  "text": "particular value.\n"
                 }
               ]
             },
@@ -5608,7 +5895,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "\\      c0        c1       c2       c3      cN "
+                      "text": "| diag  0   |"
                     }
                   ]
                 },
@@ -5617,43 +5904,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "r0 |  diag      0.0      0.0      0.0    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r1 |   0.0     diag      0.0      0.0    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 4,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r2 |   0.0      0.0     diag      0.0    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 5,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r3 |   0.0      0.0      0.0     diag    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 6,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "rN"
+                      "text": "|  0   diag \\"
                     }
                   ]
                 }
@@ -5662,52 +5913,12 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "cN",
-              "line": 948,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The last index that can be used for accessing columns in the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "rN",
-              "line": 948,
-              "column": 13,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The last index that can be used for accessing rows in the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "label": "diag",
-              "line": 949,
+              "line": 84,
               "column": 9,
               "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L37C10"
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
                 {
@@ -5715,7 +5926,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The value to set on the diagonal.\n"
+                      "text": "The value to set along the diagonal.\n"
                     }
                   ]
                 }
@@ -5729,7 +5940,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "The new Vkm_GenMatrix instance.\n"
+                    "text": "A 2x2 matrix.\n"
                   }
                 ]
               }
@@ -5737,18 +5948,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_GenMatrix",
+          "label": "Make_Mat2x2",
           "qualifier": "",
-          "line": 988,
+          "line": 105,
           "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_GenMatrix type.\n"
+                  "text": "Constructor for Vkm_Mat2x2 type.\n"
                 }
               ]
             }
@@ -5759,7 +5970,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 988,
+                  "number": 105,
                   "children": [
                     {
                       "kind": "span",
@@ -5779,8 +5990,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L988C14"
+                      "text": "Make_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L105C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -5791,7 +6007,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 989,
+                  "number": 106,
                   "children": [
                     {
                       "kind": "span",
@@ -5801,24 +6017,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "cN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L989C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "rN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L989C13"
+                      "text": "diag",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L106C9"
                     },
                     {
                       "kind": "span",
@@ -5848,61 +6048,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 990,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L990C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
@@ -5927,8 +6074,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -5944,7 +6091,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 991,
+                  "number": 107,
                   "children": [
                     {
                       "kind": "span",
@@ -5959,7 +6106,265 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenMatrix"
+                      "text": "GFM.Make_GenMatrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "cN"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "2"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "rN"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "2"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "diag"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "diag"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "with"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " Inline"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Construct a 2x2 matrix with each component on the diagonal set to a\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "particular value from a 2 dimmensional vector.\n"
+                }
+              ]
+            },
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "number": 1,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "| diag.x    0   |"
+                    }
+                  ]
+                },
+                {
+                  "number": 2,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "|  0     diag.y \\"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "diag",
+              "line": 106,
+              "column": 9,
+              "type": {
+                "label": "Vulkan.Math.Vec2.Vkm_Vec2",
+                "docHref": "docs/vulkan__math__vec2___spec.html#L39C13"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The value to set along the diagonal.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "A 2x2 matrix.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Make_Mat2x2",
+          "qualifier": "",
+          "line": 135,
+          "column": 14,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 135,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Make_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L135C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -5970,7 +6375,165 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 992,
+                  "number": 136,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value1",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C9"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C17"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value3",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C25"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value4",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C33"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "is"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 137,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "        "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFM.Make_GenMatrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 138,
                   "children": [
                     {
                       "kind": "span",
@@ -5999,8 +6562,8 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "cN"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -6034,8 +6597,8 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "rN"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -6046,7 +6609,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 993,
+                  "number": 139,
                   "children": [
                     {
                       "kind": "span",
@@ -6076,7 +6639,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "sub.c0r0"
+                      "text": "value1"
                     },
                     {
                       "kind": "span",
@@ -6111,77 +6674,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "sub.c0r1"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r2_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c0r2"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c0r3_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c0r3"
+                      "text": "value2"
                     },
                     {
                       "kind": "span",
@@ -6192,7 +6685,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 994,
+                  "number": 140,
                   "children": [
                     {
                       "kind": "span",
@@ -6222,7 +6715,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "sub.c1r0"
+                      "text": "value3"
                     },
                     {
                       "kind": "span",
@@ -6257,369 +6750,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "sub.c1r1"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r2_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c1r2"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c1r3_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c1r3"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 995,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r0_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c2r0"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r1_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c2r1"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r2_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c2r2"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r3_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c2r3"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 996,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r0_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c3r0"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r1_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c3r1"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r2_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c3r2"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r3_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "sub.c3r3"
+                      "text": "value4"
                     },
                     {
                       "kind": "span",
@@ -6660,11 +6791,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Creates a new instance of Vkm_GenMatrix with the indicated number of rows\n"
-                },
-                {
-                  "kind": "span",
-                  "text": "and columns. Each element is initialized as specified:\n"
+                  "text": "Construct a 2x2 matrix with each component set to a different value.\n"
                 }
               ]
             },
@@ -6676,7 +6803,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "\\      c0       c1       c2       c3      cN "
+                      "text": "| value1 value3 |"
                     }
                   ]
                 },
@@ -6685,43 +6812,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "r0 | sub.c0r0 sub.c1r0 sub.c2r0 sub.c3r0 |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r1 | sub.c0r1 sub.c1r1 sub.c2r1 sub.c3r1 |"
-                    }
-                  ]
-                },
-                {
-                  "number": 4,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r2 | sub.c0r2 sub.c1r2 sub.c2r2 sub.c3r2 |"
-                    }
-                  ]
-                },
-                {
-                  "number": 5,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r3 | sub.c0r3 sub.c1r3 sub.c2r3 sub.c3r3 |"
-                    }
-                  ]
-                },
-                {
-                  "number": 6,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "rN"
+                      "text": "| value2 value4 \\"
                     }
                   ]
                 }
@@ -6730,12 +6821,12 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "cN",
-              "line": 989,
+              "label": "value1",
+              "line": 136,
               "column": 9,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
                 {
@@ -6743,19 +6834,19 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The last index that can be used for accessing columns in the matrix.\n"
+                      "text": "The first value to set for the matrix.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "rN",
-              "line": 989,
-              "column": 13,
+              "label": "value2",
+              "line": 136,
+              "column": 17,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
                 {
@@ -6763,19 +6854,19 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The last index that can be used for accessing rows in the matrix.\n"
+                      "text": "The second value to set for the matrix.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "sub",
-              "line": 990,
-              "column": 9,
+              "label": "value3",
+              "line": 136,
+              "column": 25,
               "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
               },
               "description": [
                 {
@@ -6783,15 +6874,27 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The submatrix used to initialize elements of the new instance of matrix.\n"
-                    },
+                      "text": "The third value to set for the matrix.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "value4",
+              "line": 136,
+              "column": 33,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
                     {
                       "kind": "span",
-                      "text": "If an element is out of bounds for the submatrix, the corresponding value\n"
-                    },
-                    {
-                      "kind": "span",
-                      "text": "of the identity matrix is used instead.\n"
+                      "text": "The fourth value to set for the matrix.\n"
                     }
                   ]
                 }
@@ -6805,7 +6908,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "The new Vkm_GenMatrix instance.\n"
+                    "text": "A 2x2 matrix.\n"
                   }
                 ]
               }
@@ -6813,18 +6916,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_GenMatrix",
+          "label": "Make_Mat2x2",
           "qualifier": "",
-          "line": 1026,
+          "line": 163,
           "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_GenMatrix type.\n"
+                  "text": "Constructor for Vkm_Mat2x2 type.\n"
                 }
               ]
             }
@@ -6835,7 +6938,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1026,
+                  "number": 163,
                   "children": [
                     {
                       "kind": "span",
@@ -6855,8 +6958,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1026C14"
+                      "text": "Make_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L163C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -6867,7 +6975,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1027,
+                  "number": 164,
                   "children": [
                     {
                       "kind": "span",
@@ -6877,8 +6985,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "cN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1027C9"
+                      "text": "value1",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L164C9"
                     },
                     {
                       "kind": "span",
@@ -6893,8 +7001,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "rN",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1027C13"
+                      "text": "value2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L164C17"
                     },
                     {
                       "kind": "span",
@@ -6924,61 +7032,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1028,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1028C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
+                      "text": "Vkm_Vec2",
+                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
                     },
                     {
                       "kind": "span",
@@ -7003,8 +7058,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -7020,7 +7075,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1029,
+                  "number": 165,
                   "children": [
                     {
                       "kind": "span",
@@ -7035,7 +7090,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenMatrix"
+                      "text": "GFM.Make_GenMatrix"
                     },
                     {
                       "kind": "span",
@@ -7046,12 +7101,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1030,
+                  "number": 166,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "            "
+                      "text": "             "
                     },
                     {
                       "kind": "span",
@@ -7075,8 +7130,8 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "cN"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -7110,8 +7165,8 @@ GNATdoc.Documentation = {
                     },
                     {
                       "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "rN"
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -7122,12 +7177,12 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1031,
+                  "number": 167,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "            "
+                      "text": "             "
                     },
                     {
                       "kind": "span",
@@ -7152,22 +7207,42 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "x"
+                      "text": "value1.x"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "("
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "diag"
+                      "text": "c0r1_val"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": ")"
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value1.y"
                     },
                     {
                       "kind": "span",
@@ -7178,12 +7253,47 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1032,
+                  "number": 168,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "            "
+                      "text": "             "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "c1r0_val"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value2.x"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -7208,134 +7318,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "y"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1033,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "            "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c2r2_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "z"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1034,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "            "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "c3r3_val"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "=>"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "w"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "diag"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
+                      "text": "value2.y"
                     },
                     {
                       "kind": "span",
@@ -7376,11 +7359,11 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Creates a new instance of Vkm_GenMatrix with the indicated number of rows\n"
+                  "text": "Construct a 2x2 matrix with each column set to the value of a 2 dimmensional\n"
                 },
                 {
                   "kind": "span",
-                  "text": "and columns. Each element is initialized as specified:\n"
+                  "text": "vector.\n"
                 }
               ]
             },
@@ -7392,7 +7375,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "\\      c0        c1       c2       c3      cN "
+                      "text": "| value1.x value2.x |"
                     }
                   ]
                 },
@@ -7401,43 +7384,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "r0 |  diag.x    0.0      0.0      0.0    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 3,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r1 |   0.0     diag.y    0.0      0.0    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 4,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r2 |   0.0      0.0     diag.z    0.0    |"
-                    }
-                  ]
-                },
-                {
-                  "number": 5,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "r3 |   0.0      0.0      0.0     diag.w  |"
-                    }
-                  ]
-                },
-                {
-                  "number": 6,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "rN"
+                      "text": "| value1.y value2.y \\"
                     }
                   ]
                 }
@@ -7446,12 +7393,12 @@ GNATdoc.Documentation = {
           ],
           "parameters": [
             {
-              "label": "cN",
-              "line": 1027,
+              "label": "value1",
+              "line": 164,
               "column": 9,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.Vec2.Vkm_Vec2",
+                "docHref": "docs/vulkan__math__vec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -7459,19 +7406,19 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The last index that can be used for accessing columns in the matrix.\n"
+                      "text": "The first value to set for the matrix.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "rN",
-              "line": 1027,
-              "column": 13,
+              "label": "value2",
+              "line": 164,
+              "column": 17,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.Vec2.Vkm_Vec2",
+                "docHref": "docs/vulkan__math__vec2___spec.html#L39C13"
               },
               "description": [
                 {
@@ -7479,27 +7426,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The last index that can be used for accessing rows in the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "diag",
-              "line": 1028,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Vector_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The value to set on the diagonal.\n"
+                      "text": "The second value to set for the matrix.\n"
                     }
                   ]
                 }
@@ -7513,7 +7440,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "The new Vkm_GenMatrix instance.\n"
+                    "text": "A 2x2 matrix.\n"
                   }
                 ]
               }
@@ -7521,18 +7448,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Op_Is_Equal",
+          "label": "Make_Mat2x2",
           "qualifier": "",
-          "line": 1054,
+          "line": 191,
           "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Determine whether two matrices are equal to each other.\n"
+                  "text": "Constructor for Vkm_Mat2x2 type.\n"
                 }
               ]
             }
@@ -7543,7 +7470,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 1054,
+                  "number": 191,
                   "children": [
                     {
                       "kind": "span",
@@ -7563,8 +7490,13 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Op_Is_Equal",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1054C14"
+                      "text": "Make_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L191C14"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
@@ -7575,7 +7507,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 1055,
+                  "number": 192,
                   "children": [
                     {
                       "kind": "span",
@@ -7585,24 +7517,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "left",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1055C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "right",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1055C15"
+                      "text": "value1",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L192C9"
                     },
                     {
                       "kind": "span",
@@ -7632,8 +7548,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+                      "text": "Vkm_Mat",
+                      "href": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
                     },
                     {
                       "kind": "span",
@@ -7658,487 +7574,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Bool",
-                      "href": "docs/vulkan__math___spec.html#L49C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Determines whether every element of the two matrices are equal to each \n"
-                },
-                {
-                  "kind": "span",
-                  "text": "other.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "left",
-              "line": 1055,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The variable that is to the left of the equality operator.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "right",
-              "line": 1055,
-              "column": 15,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The variable that is to the right of the equality operator.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "True if the matrices are equal to each other. Otherwise, false.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "Op_Matrix_Mult_Matrix",
-          "qualifier": "",
-          "line": 1073,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Linear algebraic matrix multiplication\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 1073,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Op_Matrix_Mult_Matrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1073C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 1074,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "left",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1074C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "right",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L1074C15"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Perform linear algebraic matrix multiplication for the two matrices.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "left",
-              "line": 1074,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The left matrix in the computation.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "right",
-              "line": 1074,
-              "column": 15,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The right matrix in the computation.\n"
-                    }
-                  ]
-                },
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The result of linear algebraic multiplication for the two matrices.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Row",
-          "qualifier": "",
-          "line": 692,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Get the indicated row of the matrix as a vector.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 692,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Row",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L692C14"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 693,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L693C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 694,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L694C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -8154,7 +7591,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 695,
+                  "number": 193,
                   "children": [
                     {
                       "kind": "span",
@@ -8169,7 +7606,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_GenType"
+                      "text": "GFM.Make_GenMatrix"
                     },
                     {
                       "kind": "span",
@@ -8180,7 +7617,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 696,
+                  "number": 194,
                   "children": [
                     {
                       "kind": "span",
@@ -8190,58 +7627,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "To_Vkm_Length"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.last_row_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 697,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.Element"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "number",
-                      "text": "0"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
+                      "text": "cN"
                     },
                     {
                       "kind": "span",
@@ -8251,89 +7637,12 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "row_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 698,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.Element"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "number",
-                      "text": "1"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
+                      "text": "=>"
                     },
                     {
                       "kind": "span",
                       "cssClass": "text",
                       "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_index"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 699,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "             "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance.Element"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
                     },
                     {
                       "kind": "span",
@@ -8353,12 +7662,27 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "row_index"
+                      "text": "rN"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": ")"
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "number",
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -8369,7 +7693,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 700,
+                  "number": 195,
                   "children": [
                     {
                       "kind": "span",
@@ -8379,17 +7703,27 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "instance.Element"
+                      "text": "c0r0_val"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "("
+                      "text": "=>"
                     },
                     {
                       "kind": "span",
-                      "cssClass": "number",
-                      "text": "3"
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value1.c0r0"
                     },
                     {
                       "kind": "span",
@@ -8404,12 +7738,103 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "row_index"
+                      "text": "c0r1_val"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": ")"
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value1.c0r1"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 196,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "             "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "c1r0_val"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value1.c1r0"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "c1r1_val"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "=>"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "value1.c1r1"
                     },
                     {
                       "kind": "span",
@@ -8450,7 +7875,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Retrieve the indicated row of the matrix as a vector:\n"
+                  "text": "Construct a 2x2 matrix using values from an existing matrix.\n"
                 }
               ]
             },
@@ -8462,41 +7887,56 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "rI := [ instance.c0rI instance.c1rI ... instance.cNrI ]"
+                      "text": "| value1.c0r0 value1.c1r0 |"
                     }
                   ]
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "instance",
-              "line": 693,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
+                },
                 {
-                  "kind": "paragraph",
+                  "number": 2,
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The instance of Vkm_GenMatrix from which the row is retrieved.\n"
+                      "text": "| value1.c0r1 value1.c1r1 \\"
+                    }
+                  ]
+                },
+                {
+                  "number": 3,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": ""
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "row_index",
-              "line": 694,
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "If the provided matrix has dimmensions that are not the same as this \n"
+                },
+                {
+                  "kind": "span",
+                  "text": "matrix, the corresponding element in the 4x4 identity matrix is used for\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "out of bounds accesses.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "value1",
+              "line": 192,
               "column": 9,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
+                "docHref": "docs/vulkan__math__genfmatrix___spec.html#L59C13"
               },
               "description": [
                 {
@@ -8504,7 +7944,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The index of the row to retrieve from the matrix.\n"
+                      "text": "The submatrix to extract values from.\n"
                     }
                   ]
                 }
@@ -8518,7 +7958,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "The vector that contains all elements in the indicated row.\n"
+                    "text": "A 2x2 matrix.\n"
                   }
                 ]
               }
@@ -8526,18 +7966,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Row",
-          "qualifier": "",
-          "line": 743,
+          "label": "mod",
+          "qualifier": "(renaming)",
+          "line": 301,
           "column": 15,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Set the indicated row of the matrix given a vector.\n"
+                  "text": "Modulo operator for two Vkm_Mat2x2 matrices.\n"
                 }
               ]
             }
@@ -8548,314 +7988,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 743,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "procedure"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Row",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L743C15"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 744,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L744C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 745,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L745C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 746,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L746C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Sets the indicated row of the matrix to the specified value.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "instance",
-              "line": 744,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The instance of Vkm_GenMatrix for which the row is set.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "row_index",
-              "line": 745,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The index of the row to set for the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "row_val",
-              "line": 746,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Vector_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The vector value to set the row to.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Row",
-          "qualifier": "",
-          "line": 796,
-          "column": 14,
-          "src": "srcs/vulkan-math-genmatrix.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Set the indicated row of the matrix given a vector.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 796,
+                  "number": 301,
                   "children": [
                     {
                       "kind": "span",
@@ -8875,8 +8008,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Row",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L796C14"
+                      "text": "\"mod\""
                     },
                     {
                       "kind": "span",
@@ -8887,53 +8019,17 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "("
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 797,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "instance",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L797C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "  "
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L301C21"
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "out"
+                      "text": ","
                     },
                     {
                       "kind": "span",
@@ -8943,30 +8039,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 798,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_index",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L798C9"
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L301C27"
                     },
                     {
                       "kind": "span",
@@ -8996,61 +8070,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Indices",
-                      "href": "docs/vulkan__math___spec.html#L70C10"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                },
-                {
-                  "kind": "line",
-                  "number": 799,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "        "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "row_val",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L799C9"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "   "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Base_Vector_Type",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L38C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -9075,8 +8096,28 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_GenMatrix_Reference",
-                      "href": "docs/vulkan__math__genmatrix___spec.html#L86C10"
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Mod_Matrix"
                     },
                     {
                       "kind": "span",
@@ -9092,16 +8133,16 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Sets the indicated row of the matrix to the specified value.\n"
+                  "text": "Perform Modulo between the left and right input arguments.\n"
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "label": "instance",
-              "line": 797,
-              "column": 9,
+              "label": "left",
+              "line": 301,
+              "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
                 "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
@@ -9112,19 +8153,19 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The instance of Vkm_GenMatrix for which the row is set.\n"
+                      "text": "The left operator argument.\n"
                     }
                   ]
                 }
               ]
             },
             {
-              "label": "row_index",
-              "line": 798,
-              "column": 9,
+              "label": "right",
+              "line": 301,
+              "column": 27,
               "type": {
-                "label": "Vulkan.Math.Vkm_Indices",
-                "docHref": "docs/vulkan__math___spec.html#L70C10"
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
               },
               "description": [
                 {
@@ -9132,27 +8173,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "The index of the row to set for the matrix.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "row_val",
-              "line": 799,
-              "column": 9,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Base_Vector_Type",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L38C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The vector value to set the row to.\n"
+                      "text": "The right operator argument.\n"
                     }
                   ]
                 }
@@ -9166,7 +8187,1320 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A reference to the Vkm_GenMatrix instance.\n"
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "mod",
+          "qualifier": "(renaming)",
+          "line": 320,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Modulo operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 320,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"mod\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L320C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 321,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L321C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Mod_Scalar"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Modulo component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 320,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 321,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "mod",
+          "qualifier": "(renaming)",
+          "line": 340,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Modulo operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 340,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"mod\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L340C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 341,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L341C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Scalar_Mod_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Modulo component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 340,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 341,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "rem",
+          "qualifier": "(renaming)",
+          "line": 537,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Remainder operator for two Vkm_Mat2x2 matrices.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 537,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"rem\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L537C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ","
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L537C27"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Rem_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Remainder between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 537,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 537,
+              "column": 27,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "rem",
+          "qualifier": "(renaming)",
+          "line": 556,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Remainder operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 556,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"rem\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L556C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 557,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L557C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Matrix_Rem_Scalar"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Remainder component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 556,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 557,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "rem",
+          "qualifier": "(renaming)",
+          "line": 576,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Remainder operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 576,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"rem\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L576C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Float",
+                      "href": "docs/vulkan__math___spec.html#L61C10"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 577,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L577C21"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x2",
+                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Op_Scalar_Rem_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Remainder component-wise between the left and right input arguments.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 576,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.Vkm_Float",
+                "docHref": "docs/vulkan__math___spec.html#L61C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 577,
+              "column": 21,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
                   }
                 ]
               }
@@ -9174,7 +9508,7 @@ GNATdoc.Documentation = {
           }
         }
       ],
-      "label": "Dispatching subprograms"
+      "label": "Subprograms"
     }
   ]
 };

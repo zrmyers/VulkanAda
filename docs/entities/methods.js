@@ -80,45 +80,24 @@ GNATdoc.EntitiesCategory = {
     },
     {
       "label": "Make_GenMatrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L949C14",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L947C14",
       "declared": "Vulkan.Math.GenMatrix",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L949"
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L947"
     },
     {
       "label": "Make_GenMatrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L990C14",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L988C14",
       "declared": "Vulkan.Math.GenMatrix",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L990"
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L988"
     },
     {
       "label": "Make_GenMatrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1028C14",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1026C14",
       "declared": "Vulkan.Math.GenMatrix",
       "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1028"
-    },
-    {
-      "label": "Make_GenMatrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1072C14",
-      "declared": "Vulkan.Math.GenMatrix",
-      "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1072"
-    },
-    {
-      "label": "Make_GenMatrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1117C14",
-      "declared": "Vulkan.Math.GenMatrix",
-      "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1117"
-    },
-    {
-      "label": "Make_GenMatrix",
-      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1163C14",
-      "declared": "Vulkan.Math.GenMatrix",
-      "declared_qualifier": "",
-      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1163"
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1026"
     },
     {
       "label": "Make_GenType",
@@ -168,6 +147,20 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.GenType",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-gentype.ads.html#L266"
+    },
+    {
+      "label": "Op_Is_Equal",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1054C14",
+      "declared": "Vulkan.Math.GenMatrix",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1054"
+    },
+    {
+      "label": "Op_Matrix_Mult_Matrix",
+      "docHref": "docs/vulkan__math__genmatrix___spec.html#L1073C14",
+      "declared": "Vulkan.Math.GenMatrix",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-genmatrix.ads.html#L1073"
     },
     {
       "label": "Row",
