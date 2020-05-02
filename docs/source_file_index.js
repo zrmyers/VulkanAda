@@ -100,6 +100,10 @@ GNATdoc.SourceFileIndex = [
     "srcHref": "srcs/vulkan-math-operators.ads.html"
   },
   {
+    "label": "vulkan-math-packing.ads",
+    "srcHref": "srcs/vulkan-math-packing.ads.html"
+  },
+  {
     "label": "vulkan-math-relational.ads",
     "srcHref": "srcs/vulkan-math-relational.ads.html"
   },

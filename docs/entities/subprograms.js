@@ -1738,6 +1738,48 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-operators.ads.html#L1295"
     },
     {
+      "label": "Pack_Double_2x32",
+      "docHref": "docs/vulkan__math__packing___spec.html#L363C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L363"
+    },
+    {
+      "label": "Pack_Half_2x16",
+      "docHref": "docs/vulkan__math__packing___spec.html#L307C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L307"
+    },
+    {
+      "label": "Pack_Signed_Normalized_2x16",
+      "docHref": "docs/vulkan__math__packing___spec.html#L100C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L100"
+    },
+    {
+      "label": "Pack_Signed_Normalized_4x8",
+      "docHref": "docs/vulkan__math__packing___spec.html#L156C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L156"
+    },
+    {
+      "label": "Pack_Unsigned_Normalized_2x16",
+      "docHref": "docs/vulkan__math__packing___spec.html#L72C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L72"
+    },
+    {
+      "label": "Pack_Unsigned_Normalized_4x8",
+      "docHref": "docs/vulkan__math__packing___spec.html#L128C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L128"
+    },
+    {
       "label": "Pow",
       "docHref": "docs/vulkan__math__exp___spec.html#L66C14",
       "declared": "Vulkan.Math.Exp",
@@ -2072,6 +2114,48 @@ GNATdoc.EntitiesCategory = {
       "declared": "Vulkan.Math.Common",
       "declared_qualifier": "",
       "srcHref": "srcs/vulkan-math-common.ads.html#L314"
+    },
+    {
+      "label": "Unpack_Double_2x32",
+      "docHref": "docs/vulkan__math__packing___spec.html#L385C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L385"
+    },
+    {
+      "label": "Unpack_Half_2x16",
+      "docHref": "docs/vulkan__math__packing___spec.html#L339C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L339"
+    },
+    {
+      "label": "Unpack_Signed_Normalized_2x16",
+      "docHref": "docs/vulkan__math__packing___spec.html#L214C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L214"
+    },
+    {
+      "label": "Unpack_Signed_Normalized_4x8",
+      "docHref": "docs/vulkan__math__packing___spec.html#L272C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L272"
+    },
+    {
+      "label": "Unpack_Unsigned_Normalized_2x16",
+      "docHref": "docs/vulkan__math__packing___spec.html#L185C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L185"
+    },
+    {
+      "label": "Unpack_Unsigned_Normalized_4x8",
+      "docHref": "docs/vulkan__math__packing___spec.html#L243C14",
+      "declared": "Vulkan.Math.Packing",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-packing.ads.html#L243"
     },
     {
       "label": "Unsigned_Add_Carry",

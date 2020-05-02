@@ -113,6 +113,11 @@ GNATdoc.DocumentationIndex = [
         "file": "docs/vulkan__math__matrix___spec.html"
       },
       {
+        "label": "Vulkan.Math.Packing",
+        "qualifier": "",
+        "file": "docs/vulkan__math__packing___spec.html"
+      },
+      {
         "label": "Vulkan.Math.Relational",
         "qualifier": "",
         "file": "docs/vulkan__math__relational___spec.html"
