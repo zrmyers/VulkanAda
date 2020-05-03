@@ -44,7 +44,7 @@ package Vulkan.Math.Mat2x4 is
 
     --< A 2x3 matrix of single-precision floating point numbers.
     subtype Vkm_Mat2x4 is Vkm_Mat(
-        last_row_index => 1, last_column_index => 4);
+        last_row_index => 1, last_column_index => 3);
 
 
     ----------------------------------------------------------------------------
