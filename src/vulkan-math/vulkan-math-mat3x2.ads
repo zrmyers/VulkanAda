@@ -35,77 +35,76 @@ use Vulkan.Math.Vec3;
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a single precision floating point matrix with 2 rows
---< and 3 columns.
+--< This package provides a single precision floating point matrix with 3 rows
+--< and 2 columns.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Mat2x3 is
+package Vulkan.Math.Mat3x2 is
     pragma Preelaborate;
     pragma Pure;
 
-    --< A 2x3 matrix of single-precision floating point numbers.
-    subtype Vkm_Mat2x3 is Vkm_Mat(
-        last_row_index => 1, last_column_index => 2);
-
+    --< A 3x2 matrix of single-precision floating point numbers.
+    subtype Vkm_Mat3x2 is Vkm_Mat(
+        last_row_index => 2, last_column_index => 1);
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat2x3 type.
+    --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each component set to the corresponding
+    --< Construct a 3x2 matrix with each component set to the corresponding
     --< component in the identity matrix.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x3 return Vkm_Mat2x3 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 2, diag => 1.0)) with Inline;
+    function Make_Mat3x2 return Vkm_Mat3x2 is
+        (GFM.Make_GenMatrix(cN => 2, rN => 1, diag => 1.0)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat2x3 type.
+    --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each component on the diagonal set to a
+    --< Construct a 3x2 matrix with each component on the diagonal set to a
     --< particular value.
     --<
     --< @param diag
     --< The value to set along the diagonal.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x3 (
-        diag : in     Vkm_Float) return Vkm_Mat2x3 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 2, diag => diag)) with Inline;
+    function Make_Mat3x2 (
+        diag : in     Vkm_Float) return Vkm_Mat3x2 is
+        (GFM.Make_GenMatrix(cN => 2, rN => 1, diag => diag)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat2x3 type.
+    --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each component on the diagonal set to a
+    --< Construct a 3x2 matrix with each component on the diagonal set to a
     --< particular value from a 2 dimmensional vector.
     --<
     --< @param diag
     --< The value to set along the diagonal.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x3 (
-        diag : in     Vkm_Vec2) return Vkm_Mat2x3 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 2, diag => diag)) with Inline;
+    function Make_Mat3x2 (
+        diag : in     Vkm_Vec2) return Vkm_Mat3x2 is
+        (GFM.Make_GenMatrix(cN => 2, rN => 1, diag => diag)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat2x3 type.
+    --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each component set to a different value.
+    --< Construct a 3x2 matrix with each component set to a different value.
     --<
     --< @param value1
     --< The first value to set for the matrix.
@@ -120,22 +119,22 @@ package Vulkan.Math.Mat2x3 is
     --< The fourth value to set for the matrix.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x3 (
-        value1, value2, value3, value4 : in     Vkm_Float) return Vkm_Mat2x3 is
+    function Make_Mat3x2 (
+        value1, value2, value3, value4 : in     Vkm_Float) return Vkm_Mat3x2 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
+             cN => 2, rN => 1,
              c0r0_val => value1, c0r1_val => value2,
              c1r0_val => value3, c1r1_val => value4)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat2x3 type.
+    --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each column set to the value of a 2 dimmensional
+    --< Construct a 3x2 matrix with each column set to the value of a 2 dimmensional
     --< vector.
     --<
     --< @param value1
@@ -145,22 +144,22 @@ package Vulkan.Math.Mat2x3 is
     --< The second value to set for the matrix.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x3 (
-        value1, value2 : in     Vkm_Vec2) return Vkm_Mat2x3 is
+    function Make_Mat3x2 (
+        value1, value2 : in     Vkm_Vec2) return Vkm_Mat3x2 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
+             cN => 2, rN => 1,
              c0r0_val => value1.x, c0r1_val => value1.y,
              c1r0_val => value2.x, c1r1_val => value2.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat2x3 type.
+    --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix using values from an existing matrix.
+    --< Construct a 3x2 matrix using values from an existing matrix.
     --<
     --< If the provided matrix has dimmensions that are not the same as this
     --< matrix, the corresponding element in the 4x4 identity matrix is used for
@@ -170,19 +169,19 @@ package Vulkan.Math.Mat2x3 is
     --< The submatrix to extract values from.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x3 (
-        value1 : in     Vkm_Mat) return Vkm_Mat2x3 is
+    function Make_Mat3x2 (
+        value1 : in     Vkm_Mat) return Vkm_Mat3x2 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
+             cN => 2, rN => 1,
              c0r0_val => value1.c0r0, c0r1_val => value1.c0r1,
              c1r0_val => value1.c1r0, c1r1_val => value1.c1r1)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Equality operator for two Vkm_Mat2x3 matrices.
+    --< Equality operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Determine whether two matrices are equal.
@@ -196,12 +195,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< True if the two matrices are equal. Otherwise false.
     ----------------------------------------------------------------------------
-    function "=" (left, right : in     Vkm_Mat2x3) return Vkm_Bool renames GFM.Op_Is_Equal;
+    function "=" (left, right : in     Vkm_Mat3x2) return Vkm_Bool renames GFM.Op_Is_Equal;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Unary Plus operator on a Vkm_Mat2x3.
+    --< Unary Plus operator on a Vkm_Mat3x2.
     --<
     --< @description
     --< Perform Unary Plus operation on the matrix, returning the matrix unchanged.
@@ -212,12 +211,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The matrix, unchanged.
     ----------------------------------------------------------------------------
-    function "+" (right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Plus_Matrix;
+    function "+" (right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Plus_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Unary Minus operator on a Vkm_Mat2x3.
+    --< Unary Minus operator on a Vkm_Mat3x2.
     --<
     --< @description
     --< Perform Unary Minus operation on the matrix, returning the matrix with
@@ -229,12 +228,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The matrix, negated.
     ----------------------------------------------------------------------------
-    function "-" (right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Minus_Matrix;
+    function "-" (right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Minus_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Absolute Value operator on a Vkm_Mat2x3.
+    --< Absolute Value operator on a Vkm_Mat3x2.
     --<
     --< @description
     --< Perform the Absolute Value operation on the matrix, returning the matrix with
@@ -246,12 +245,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The matrix, with all positive elements.
     ----------------------------------------------------------------------------
-    function "abs" (right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Abs_Matrix;
+    function "abs" (right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Abs_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Modulo operator for two Vkm_Mat2x3 matrices.
+    --< Modulo operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Perform Modulo between the left and right input arguments.
@@ -265,12 +264,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "mod" (left, right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Matrix_Mod_Matrix;
+    function "mod" (left, right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Matrix_Mod_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Modulo operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Modulo operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Modulo component-wise between the left and right input arguments.
@@ -284,13 +283,13 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "mod" (left  : in     Vkm_Mat2x3;
-                    right : in     Vkm_Float ) return Vkm_Mat2x3 renames Op_Matrix_Mod_Scalar;
+    function "mod" (left  : in     Vkm_Mat3x2;
+                    right : in     Vkm_Float ) return Vkm_Mat3x2 renames Op_Matrix_Mod_Scalar;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Modulo operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Modulo operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Modulo component-wise between the left and right input arguments.
@@ -305,12 +304,12 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "mod" (left  : in     Vkm_Float;
-                    right : in     Vkm_Mat2x3 ) return Vkm_Mat2x3 renames Op_Scalar_Mod_Matrix;
+                    right : in     Vkm_Mat3x2 ) return Vkm_Mat3x2 renames Op_Scalar_Mod_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Power operator for two Vkm_Mat2x3 matrices.
+    --< Power operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Perform Power operation component-wise between the left and right input arguments.
@@ -324,12 +323,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "**" (left, right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Matrix_Pow_Matrix;
+    function "**" (left, right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Matrix_Pow_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Power operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Power operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform power component-wise between the left and right input arguments.
@@ -343,13 +342,13 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "**" (left  : in     Vkm_Mat2x3;
-                   right : in     Vkm_Float ) return Vkm_Mat2x3 renames Op_Matrix_Pow_Scalar;
+    function "**" (left  : in     Vkm_Mat3x2;
+                   right : in     Vkm_Float ) return Vkm_Mat3x2 renames Op_Matrix_Pow_Scalar;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Power operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Power operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform power component-wise between the left and right input arguments.
@@ -364,12 +363,12 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "**" (left  : in     Vkm_Float;
-                   right : in     Vkm_Mat2x3 ) return Vkm_Mat2x3 renames Op_Scalar_Pow_Matrix;
+                   right : in     Vkm_Mat3x2 ) return Vkm_Mat3x2 renames Op_Scalar_Pow_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Addition operator for two Vkm_Mat2x3 matrices.
+    --< Addition operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Perform Addition between the left and right input arguments.
@@ -383,12 +382,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The left argument added to the right argument.
     ----------------------------------------------------------------------------
-    function "+" (left, right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Matrix_Plus_Matrix;
+    function "+" (left, right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Matrix_Plus_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Addition operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Addition operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Addition component-wise between the left and right input arguments.
@@ -402,13 +401,13 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "+" (left  : in     Vkm_Mat2x3;
-                  right : in     Vkm_Float ) return Vkm_Mat2x3 renames Op_Matrix_Plus_Scalar;
+    function "+" (left  : in     Vkm_Mat3x2;
+                  right : in     Vkm_Float ) return Vkm_Mat3x2 renames Op_Matrix_Plus_Scalar;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Addition operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Addition operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Addition component-wise between the left and right input arguments.
@@ -423,12 +422,12 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "+" (left  : in     Vkm_Float;
-                  right : in     Vkm_Mat2x3 ) return Vkm_Mat2x3 renames Op_Scalar_Plus_Matrix;
+                  right : in     Vkm_Mat3x2 ) return Vkm_Mat3x2 renames Op_Scalar_Plus_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Subtraction operator for two Vkm_Mat2x3 matrices.
+    --< Subtraction operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Perform Subtraction between the left and right input arguments.
@@ -442,12 +441,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "-" (left, right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Matrix_Minus_Matrix;
+    function "-" (left, right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Matrix_Minus_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Subtraction operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Subtraction operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Subtraction component-wise between the left and right input arguments.
@@ -461,13 +460,13 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "-" (left  : in     Vkm_Mat2x3;
-                  right : in     Vkm_Float ) return Vkm_Mat2x3 renames Op_Matrix_Minus_Scalar;
+    function "-" (left  : in     Vkm_Mat3x2;
+                  right : in     Vkm_Float ) return Vkm_Mat3x2 renames Op_Matrix_Minus_Scalar;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Subtraction operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Subtraction operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Subtraction component-wise between the left and right input arguments.
@@ -482,12 +481,12 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "-" (left  : in     Vkm_Float;
-                  right : in     Vkm_Mat2x3 ) return Vkm_Mat2x3 renames Op_Scalar_Minus_Matrix;
+                  right : in     Vkm_Mat3x2 ) return Vkm_Mat3x2 renames Op_Scalar_Minus_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Remainder operator for two Vkm_Mat2x3 matrices.
+    --< Remainder operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Perform Remainder between the left and right input arguments.
@@ -501,12 +500,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "rem" (left, right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Matrix_Rem_Matrix;
+    function "rem" (left, right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Matrix_Rem_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Remainder operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Remainder operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Remainder component-wise between the left and right input arguments.
@@ -520,13 +519,13 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "rem" (left  : in     Vkm_Mat2x3;
-                    right : in     Vkm_Float ) return Vkm_Mat2x3 renames Op_Matrix_Rem_Scalar;
+    function "rem" (left  : in     Vkm_Mat3x2;
+                    right : in     Vkm_Float ) return Vkm_Mat3x2 renames Op_Matrix_Rem_Scalar;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Remainder operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Remainder operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Remainder component-wise between the left and right input arguments.
@@ -541,12 +540,12 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "rem" (left  : in     Vkm_Float;
-                    right : in     Vkm_Mat2x3 ) return Vkm_Mat2x3 renames Op_Scalar_Rem_Matrix;
+                    right : in     Vkm_Mat3x2 ) return Vkm_Mat3x2 renames Op_Scalar_Rem_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Division operator for two Vkm_Mat2x3 matrices.
+    --< Division operator for two Vkm_Mat3x2 matrices.
     --<
     --< @description
     --< Perform Division between the left and right input arguments.
@@ -560,12 +559,12 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "/" (left, right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames Op_Matrix_Div_Matrix;
+    function "/" (left, right : in     Vkm_Mat3x2) return Vkm_Mat3x2 renames Op_Matrix_Div_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Division operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Division operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Division component-wise between the left and right input arguments.
@@ -579,13 +578,13 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "/" (left  : in     Vkm_Mat2x3;
-                  right : in     Vkm_Float ) return Vkm_Mat2x3 renames Op_Matrix_Div_Scalar;
+    function "/" (left  : in     Vkm_Mat3x2;
+                  right : in     Vkm_Float ) return Vkm_Mat3x2 renames Op_Matrix_Div_Scalar;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Division operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.
+    --< Division operator for a Vkm_Mat3x2 matrix and a Vkm_Float scalar.
     --<
     --< @description
     --< Perform Division component-wise between the left and right input arguments.
@@ -600,16 +599,17 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "/" (left  : in     Vkm_Float;
-                  right : in     Vkm_Mat2x3 ) return Vkm_Mat2x3 renames Op_Scalar_Div_Matrix;
+                  right : in     Vkm_Mat3x2 ) return Vkm_Mat3x2 renames Op_Scalar_Div_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Linear Algebraic Multiplication for a Vkm_Mat2x2 and a Vkm_Mat2x3 matrix.
+    --< Linear Algebraic Multiplication for a Vkm_Mat2x2 matrix with a Vkm_Mat2x2
+    --< matrix.
     --<
     --< @description
-    --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 and the right
-    --< Vkm_Mat2x3 matrix.
+    --< Perform Linear Algebraic Multiplication of the left Vkm_Mat3x2 by the right
+    --< Vkm_Mat2x2 matrix.
     --<
     --< @param left
     --< The left operator argument.
@@ -621,37 +621,16 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "*" (
-        left  : in     Vkm_Mat2x2;
-        right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames GFM.Op_Matrix_Mult_Matrix;
+        left  : in     Vkm_Mat3x2;
+        right : in     Vkm_Mat2x2) return Vkm_Mat3x2 renames GFM.Op_Matrix_Mult_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Linear Algebraic Multiplication for a Vkm_Mat2x3 with a vector.
+    --< Linear Algebraic Multiplication for a Vkm_Mat3x2 with a vector.
     --<
     --< @description
-    --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right
-    --< Vkm_Vec3 vector.
-    --<
-    --< @param left
-    --< The left operator argument.
-    --<
-    --< @param right
-    --< The right operator argument.
-    --<
-    --< @return
-    --< The result of the component-wise operator on the arguments.
-    ----------------------------------------------------------------------------
-    function "*" (left  : in     Vkm_Mat2x3;
-                  right : in     Vkm_Vec3  ) return Vkm_Vec2 renames Op_Matrix_Mult_Vector;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Linear Algebraic Multiplication for a Vkm_Mat2x3 with a vector.
-    --<
-    --< @description
-    --< Perform Linear Algebraic Multiplication of the right Vkm_Mat2x3 by the left
+    --< Perform Linear Algebraic Multiplication of the left Vkm_Mat3x2 by the right
     --< Vkm_Vec2 vector.
     --<
     --< @param left
@@ -663,8 +642,29 @@ package Vulkan.Math.Mat2x3 is
     --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
-    function "*" (left  : in     Vkm_Vec2;
-                  right : in     Vkm_Mat2x3  ) return Vkm_Vec3 renames Op_Vector_Mult_Matrix;
+    function "*" (left  : in     Vkm_Mat3x2;
+                  right : in     Vkm_Vec2  ) return Vkm_Vec3 renames Op_Matrix_Mult_Vector;
 
 
-end Vulkan.Math.Mat2x3;
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Linear Algebraic Multiplication for a Vkm_Mat3x2 with a vector.
+    --<
+    --< @description
+    --< Perform Linear Algebraic Multiplication of the left Vkm_Vec3 by the right
+    --< Vkm_Mat3x2.
+    --<
+    --< @param left
+    --< The left operator argument.
+    --<
+    --< @param right
+    --< The right operator argument.
+    --<
+    --< @return
+    --< The result of the component-wise operator on the arguments.
+    ----------------------------------------------------------------------------
+    function "*" (left  : in     Vkm_Vec3;
+                  right : in     Vkm_Mat3x2  ) return Vkm_Vec2 renames Op_Vector_Mult_Matrix;
+
+
+end Vulkan.Math.Mat3x2;

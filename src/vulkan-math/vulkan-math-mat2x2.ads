@@ -53,9 +53,6 @@ package Vulkan.Math.Mat2x2 is
     --< Construct a 2x2 matrix with each component set to the corresponding
     --< component in the identity matrix.
     --<
-    --<     | 1 0 |
-    --<     | 0 1 |
-    --<
     --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
@@ -70,9 +67,6 @@ package Vulkan.Math.Mat2x2 is
     --< @description
     --< Construct a 2x2 matrix with each component on the diagonal set to a
     --< particular value.
-    --<
-    --<     | diag  0   |
-    --<     |  0   diag |
     --<
     --< @param diag
     --< The value to set along the diagonal.
@@ -93,9 +87,6 @@ package Vulkan.Math.Mat2x2 is
     --< Construct a 2x2 matrix with each component on the diagonal set to a
     --< particular value from a 2 dimmensional vector.
     --<
-    --<     | diag.x    0   |
-    --<     |  0     diag.y |
-    --<
     --< @param diag
     --< The value to set along the diagonal.
     --<
@@ -113,9 +104,6 @@ package Vulkan.Math.Mat2x2 is
     --<
     --< @description
     --< Construct a 2x2 matrix with each component set to a different value.
-    --<
-    --<     | value1 value3 |
-    --<     | value2 value4 |
     --<
     --< @param value1
     --< The first value to set for the matrix.
@@ -148,9 +136,6 @@ package Vulkan.Math.Mat2x2 is
     --< Construct a 2x2 matrix with each column set to the value of a 2 dimmensional
     --< vector.
     --<
-    --<     | value1.x value2.x |
-    --<     | value1.y value2.y |
-    --<
     --< @param value1
     --< The first value to set for the matrix.
     --<
@@ -175,9 +160,6 @@ package Vulkan.Math.Mat2x2 is
     --< @description
     --< Construct a 2x2 matrix using values from an existing matrix.
     --<
-    --<     | value1.c0r0 value1.c1r0 |
-    --<     | value1.c0r1 value1.c1r1 |
-    --<
     --< If the provided matrix has dimmensions that are not the same as this
     --< matrix, the corresponding element in the 4x4 identity matrix is used for
     --< out of bounds accesses.
@@ -194,23 +176,6 @@ package Vulkan.Math.Mat2x2 is
              cN => 1, rN => 1,
              c0r0_val => value1.c0r0, c0r1_val => value1.c0r1,
              c1r0_val => value1.c1r0, c1r1_val => value1.c1r1)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Concatentation operator for two Vkm_Vec2 which produces a Vkm_Mat2x2.
-    --<
-    --< @description
-    --< Create a 2x2 matrix by concatentating two 2D column vectors.
-    --<
-    --< @param left
-    --< The vector to the left of the concatenation symbol.
-    --<
-    --< @return
-    --< A 2x2 matrix.
-    ----------------------------------------------------------------------------
-    function "&" (left, right : in     Vkm_Vec2) return Vkm_Mat2x2 is
-        (Make_Mat2x2(left, right)) with Inline;
 
 
     ----------------------------------------------------------------------------
