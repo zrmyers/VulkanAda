@@ -36,14 +36,101 @@
 generic
     type Base_Type is digits <>;
     type Base_Vector_Type (<>) is tagged private;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Retrieve the x-component of the vector.
+    --<
+    --< @description
+    --< Retrieve the x-component of the vector.
+    --<
+    --< @param vec
+    --< The vector to retrieve the x-component from.
+    --<
+    --< @return
+    --< The x-component of the vector.
+    ----------------------------------------------------------------------------
     with function x (vec : in     Base_Vector_Type) return Base_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Retrieve the y-component of the vector.
+    --<
+    --< @description
+    --< Retrieve the y-component of the vector.
+    --<
+    --< @param vec
+    --< The vector to retrieve the y-component from.
+    --<
+    --< @return
+    --< The y-component of the vector.
+    ----------------------------------------------------------------------------
     with function y (vec : in     Base_Vector_Type) return Base_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Retrieve the z-component of the vector.
+    --<
+    --< @description
+    --< Retrieve the z-component of the vector.
+    --<
+    --< @param vec
+    --< The vector to retrieve the z-component from.
+    --<
+    --< @return
+    --< The z-component of the vector.
+    ----------------------------------------------------------------------------
     with function z (vec : in     Base_Vector_Type) return Base_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Retrieve the w-component of the vector.
+    --<
+    --< @description
+    --< Retrieve the w-component of the vector.
+    --<
+    --< @param vec
+    --< The vector to retrieve the w-component from.
+    --<
+    --< @return
+    --< The w-component of the vector.
+    ----------------------------------------------------------------------------
     with function w (vec : in     Base_Vector_Type) return Base_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Construct a Base_Vector_Type.
+    --<
+    --< @description
+    --< Construct a Base_Vector_Type.
+    --<
+    --< @param size
+    --< The number of components in the Base_Vector_Type.
+    --<
+    --< @param value1
+    --< The value to set for the x-component of the Base_Vector_Type.
+    --<
+    --< @param value2
+    --< The value to set for the y-component of the Base_Vector_Type.
+    --<
+    --< @param value3
+    --< The value to set for the z-component of the Base_Vector_Type.
+    --<
+    --< @param value4
+    --< The value to set for the w-component of the Base_Vector_Type.
+    --<
+    --< @return
+    --< The w-component of the vector.
+    ----------------------------------------------------------------------------
     with function Make_GenType (
         size                           : in Vkm_Length;
         value1, value2, value3, value4 : in Base_Type := 0.0) return Base_Vector_Type;
-        
+
 package Vulkan.Math.GenMatrix is
     pragma Preelaborate;
     pragma Pure;
@@ -53,16 +140,16 @@ package Vulkan.Math.GenMatrix is
     -- Types
     ----------------------------------------------------------------------------
     --< The matrix type is a 2D array with indices in the range of the Vkm_Indices
-    --< type [0 .. 3]. Because of this, the number of columns is 1-4 and the 
+    --< type [0 .. 3]. Because of this, the number of columns is 1-4 and the
     --< number of rows is 1-4.
     type Vkm_Matrix is array(Vkm_Indices range <>, Vkm_Indices range <>) of aliased Base_Type;
     pragma Convention(C,Vkm_Matrix);
 
 
-    --< The matrix is a discriminant tagged record which encapsulates the 
-    --< Vkm_Matrix type. This allows use of "." to perform functions on an 
-    --< instance of matrix. 
-    --< 
+    --< The matrix is a discriminant tagged record which encapsulates the
+    --< Vkm_Matrix type. This allows use of "." to perform functions on an
+    --< instance of matrix.
+    --<
     --< @field last_column_index
     --< The discriminant, last_column_index, determines the number of columns in the
     --< matrix.
@@ -81,12 +168,12 @@ package Vulkan.Math.GenMatrix is
         end record;
 
 
-   --< A reference to a generic matrix type. The Vkm_GenMatrix instance is 
+   --< A reference to a generic matrix type. The Vkm_GenMatrix instance is
    --< automatically dereferenced on use.
     type Vkm_GenMatrix_Reference(instance : not null access Vkm_GenMatrix) is null record
         with Implicit_Dereference => instance;
-        
-        
+
+
     ----------------------------------------------------------------------------
     -- Element Getters
     ----------------------------------------------------------------------------
@@ -113,96 +200,192 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c0r0 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 0, 0)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c0r1 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 0, 1)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c0r2 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 0, 2)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c0r3 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 0, 3)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c1r0 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 1, 0)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c1r1 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 1, 1)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c1r2 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 1, 2)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c1r3 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 1, 3)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c2r0 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 2, 0)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c2r1 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 2, 1)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c2r2 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 2, 2)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c2r3 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 2, 3)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c3r0 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 3, 0)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c3r1 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 3, 1)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c3r2 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 3, 2)) with Inline;
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to retrieve the element from.
+    --<
+    --< @return
+    --< The element from the matrix.
     function c3r3 (instance : in     Vkm_GenMatrix) return Base_Type is
         (Element(instance, 3, 3)) with Inline;
 
@@ -236,112 +419,208 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c0r0( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c0r0(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c0r1( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c0r1(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c0r2( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c0r2(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c0r3( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c0r3(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c1r0( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c1r0(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c1r1( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c1r1(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c1r2( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c1r2(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c1r3( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c1r3(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c2r0( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c2r0(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c2r1( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c2r1(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c2r2( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c2r2(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c2r3( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c2r3(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c3r0( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c3r0(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c3r1( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c3r1(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c3r2( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c3r2(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
-    procedure c3r3( 
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    procedure c3r3(
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type);
 
@@ -351,7 +630,7 @@ package Vulkan.Math.GenMatrix is
     --< Vkm_GenMatrix element accessor.
     --<
     --< @description
-    --< Sets the element at the specified column and row index to a value. A 
+    --< Sets the element at the specified column and row index to a value. A
     --< reference to the matrix is returned upon completion.
     --<
     --< @param instance
@@ -377,6 +656,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c0r0 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -385,6 +673,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c0r1 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -393,6 +690,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c0r2 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -401,6 +707,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c0r3 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -409,6 +724,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c1r0 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -417,6 +741,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c1r1 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -425,6 +758,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c1r2 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -433,6 +775,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c1r3 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -441,6 +792,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c2r0 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -449,6 +809,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c2r1 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -457,6 +826,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c2r2 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -465,6 +843,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c2r3 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -473,6 +860,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c3r0 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -481,6 +877,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c3r1 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -489,6 +894,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c3r2 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -497,6 +911,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for an element of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The Instance of Vkm_GenMatrix to set the element for.
+    --<
+    --< @param value
+    --< The value to set for the matrix element.
+    --<
+    --< @return
+    --< A reference to the modified matrix instance.
     function c3r3 (
         instance : in out Vkm_GenMatrix;
         value    : in     Base_Type    ) return Vkm_GenMatrix_Reference is
@@ -536,6 +959,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a column.
+    --<
+    --< @return
+    --< The indicated column from the matrix.
     function c0 (
         instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Column(instance, 0)) with Inline;
@@ -543,6 +972,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a column.
+    --<
+    --< @return
+    --< The indicated column from the matrix.
     function c1 (
         instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Column(instance, 1)) with Inline;
@@ -550,6 +985,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a column.
+    --<
+    --< @return
+    --< The indicated column from the matrix.
     function c2 (
         instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Column(instance, 2)) with Inline;
@@ -557,6 +998,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a column.
+    --<
+    --< @return
+    --< The indicated column from the matrix.
     function c3 (
         instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Column(instance, 3)) with Inline;
@@ -586,6 +1033,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
     procedure c0 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type);
@@ -593,6 +1046,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
     procedure c1 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type);
@@ -600,6 +1059,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
     procedure c2 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type);
@@ -607,6 +1072,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
     procedure c3 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type);
@@ -628,7 +1099,7 @@ package Vulkan.Math.GenMatrix is
     --< @param col_val
     --< The vector value to set the column to.
     --<
-    --< @return 
+    --< @return
     --< A reference to the Vkm_GenMatrix instance.
     ----------------------------------------------------------------------------
     function  Column(
@@ -639,6 +1110,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
+    --<
+    --< @return
+    --< A reference to the instance of Vkm_GenMatrix.
     function c0 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -647,6 +1127,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
+    --<
+    --< @return
+    --< A reference to the instance of Vkm_GenMatrix.
     function c1 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -655,6 +1144,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
+    --<
+    --< @return
+    --< A reference to the instance of Vkm_GenMatrix.
     function c2 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -663,6 +1161,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a column of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a column.
+    --<
+    --< @param col_val
+    --< The vector to set the column equal to.
+    --<
+    --< @return
+    --< A reference to the instance of Vkm_GenMatrix.
     function c3 (
         instance : in out Vkm_GenMatrix;
         col_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -702,24 +1209,48 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a row.
+    --<
+    --< @return
+    --< The indicated row from the matrix.
     function r0 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Row(instance, 0)) with Inline;
 
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a row.
+    --<
+    --< @return
+    --< The indicated row from the matrix.
     function r1 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Row(instance, 1)) with Inline;
 
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a row.
+    --<
+    --< @return
+    --< The indicated row from the matrix.
     function r2 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Row(instance, 2)) with Inline;
 
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix from which to retrieve a row.
+    --<
+    --< @return
+    --< The indicated row from the matrix.
     function r3 (instance : in     Vkm_GenMatrix) return Base_Vector_Type is
         (Row(instance, 3)) with Inline;
 
@@ -748,6 +1279,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
     procedure r0 (
         instance : in out Vkm_GenMatrix;
         row_val      : in     Base_Vector_Type);
@@ -755,6 +1292,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
     procedure r1 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type);
@@ -762,6 +1305,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
     procedure r2 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type);
@@ -769,6 +1318,12 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
     procedure r3 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type);
@@ -801,6 +1356,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
+    --<
+    --< @return
+    --< A reference to the modified matrix.
     function r0 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -809,6 +1373,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
+    --<
+    --< @return
+    --< A reference to the modified matrix.
     function r1 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -817,6 +1390,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
+    --<
+    --< @return
+    --< A reference to the modified matrix.
     function r2 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -825,6 +1407,15 @@ package Vulkan.Math.GenMatrix is
 
     --< @private
     --< This is a named accessor for a row of an instance of Vkm_GenMatrix.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix for which to set a row.
+    --<
+    --< @param row_val
+    --< The the value to set a row of the matrix to.
+    --<
+    --< @return
+    --< A reference to the modified matrix.
     function r3 (
         instance : in out Vkm_GenMatrix;
         row_val  : in     Base_Vector_Type) return Vkm_GenMatrix_Reference is
@@ -840,16 +1431,16 @@ package Vulkan.Math.GenMatrix is
     --< @description
     --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
     --< and columns. Each element is initialized as specified:
-    --< 
-    --<    \      c0        c1       c2       c3      cN 
+    --<
+    --<    \      c0        c1       c2       c3      cN
     --<    r0 | c0r0_val c1r0_val c2r0_val c3r0_val |
     --<    r1 | c0r1_val c1r1_val c2r1_val c3r1_val |
     --<    r2 | c0r2_val c1r2_val c2r2_val c3r2_val |
     --<    r3 | c0r3_val c1r3_val c2r3_val c3r3_val |
     --<    rN
     --<
-    --< If no value is supplied for an element a default value of 0.0 is used. 
-    --< If the indices in the element name are not within matrix bounds, value 
+    --< If no value is supplied for an element a default value of 0.0 is used.
+    --< If the indices in the element name are not within matrix bounds, value
     --< specifiedis ignored.
     --<
     --< @param cN
@@ -895,7 +1486,7 @@ package Vulkan.Math.GenMatrix is
     --< The value to set for the element at column 2 and row 3.
     --<
     --< @param c3r0_val
-    --< The value to set for the element at column 3 and row 0. 
+    --< The value to set for the element at column 3 and row 0.
     --<
     --< @param c3r1_val
     --< The value to set for the element at column 3 and row 1.
@@ -924,8 +1515,8 @@ package Vulkan.Math.GenMatrix is
     --< @description
     --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
     --< and columns. Each element is initialized as specified:
-    --< 
-    --<    \      c0        c1       c2       c3      cN 
+    --<
+    --<    \      c0        c1       c2       c3      cN
     --<    r0 |  diag      0.0      0.0      0.0    |
     --<    r1 |   0.0     diag      0.0      0.0    |
     --<    r2 |   0.0      0.0     diag      0.0    |
@@ -962,8 +1553,8 @@ package Vulkan.Math.GenMatrix is
     --< @description
     --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
     --< and columns. Each element is initialized as specified:
-    --< 
-    --<    \      c0       c1       c2       c3      cN 
+    --<
+    --<    \      c0       c1       c2       c3      cN
     --<    r0 | sub.c0r0 sub.c1r0 sub.c2r0 sub.c3r0 |
     --<    r1 | sub.c0r1 sub.c1r1 sub.c2r1 sub.c3r1 |
     --<    r2 | sub.c0r2 sub.c1r2 sub.c2r2 sub.c3r2 |
@@ -1003,8 +1594,8 @@ package Vulkan.Math.GenMatrix is
     --< @description
     --< Creates a new instance of Vkm_GenMatrix with the indicated number of rows
     --< and columns. Each element is initialized as specified:
-    --< 
-    --<    \      c0        c1       c2       c3      cN 
+    --<
+    --<    \      c0        c1       c2       c3      cN
     --<    r0 |  diag.x    0.0      0.0      0.0    |
     --<    r1 |   0.0     diag.y    0.0      0.0    |
     --<    r2 |   0.0      0.0     diag.z    0.0    |
@@ -1039,7 +1630,7 @@ package Vulkan.Math.GenMatrix is
     --< Determine whether two matrices are equal to each other.
     --<
     --< @description
-    --< Determines whether every element of the two matrices are equal to each 
+    --< Determines whether every element of the two matrices are equal to each
     --< other.
     --<
     --< @param left
@@ -1061,7 +1652,7 @@ package Vulkan.Math.GenMatrix is
     --<
     --< @description
     --< Perform linear algebraic matrix multiplication for the two matrices.
-    --< 
+    --<
     --< @param left
     --< The left matrix in the computation.
     --<
@@ -1130,7 +1721,7 @@ package Vulkan.Math.GenMatrix is
     --< Apply function component-wise on a matrix and a scalar.
     --<
     --< @description
-    --< Applies function component-wise on a matrix and a scalar, yielding the 
+    --< Applies function component-wise on a matrix and a scalar, yielding the
     --< following matrix:
     --<
     --<     | Func(im1.c0r0, is1) ... Func(im1.cNr0, is1) |
@@ -1159,7 +1750,7 @@ package Vulkan.Math.GenMatrix is
     --< Apply function component-wise on a matrix and a scalar.
     --<
     --< @description
-    --< Applies function component-wise on a matrix and a scalar, yielding the 
+    --< Applies function component-wise on a matrix and a scalar, yielding the
     --< following matrix:
     --<
     --<     | Func(is1, im1.c0r0) ... Func(is1, im1.cNr0) |
@@ -1181,6 +1772,6 @@ package Vulkan.Math.GenMatrix is
     function Apply_Func_IS_IM_RM (
         is1 : in     Base_Type;
         im1 : in     Vkm_GenMatrix) return Vkm_GenMatrix;
-    
-    
+
+
 end Vulkan.Math.GenMatrix;

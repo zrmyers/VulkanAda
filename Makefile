@@ -31,7 +31,7 @@ default: samples vulkan
 
 DIRS = obj bin lib
 
-$(DIRS): 
+$(DIRS):
 	@echo "Making Directory $@"
 	mkdir -p $@
 
@@ -43,7 +43,7 @@ samples: $(DIRS) vulkan
 	gprbuild -p vulkan-test.gpr
 
 docs: vulkan
-	gnatdoc -Pvulkan.gpr -l
+	gnatdoc -Pvulkan.gpr -l -w
 
 metrics:
 	gnatmetric -Pvulkan.gpr
@@ -51,4 +51,3 @@ metrics:
 clean:
 	rm -rf $(DIRS)
 	rm -rf docs
-

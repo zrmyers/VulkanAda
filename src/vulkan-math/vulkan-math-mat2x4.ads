@@ -52,61 +52,13 @@ package Vulkan.Math.Mat2x4 is
     --< Constructor for Vkm_Mat2x4 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each component set to the corresponding
-    --< component in the identity matrix.
-    --<
-    --<     | 1 0 |
-    --<     | 0 1 |
+    --< Construct a 2x3 matrix with each component set to zero.
     --<
     --< @return
     --< A 2x3 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x4 return Vkm_Mat2x4 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 3, diag => 1.0)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Constructor for Vkm_Mat2x4 type.
-    --<
-    --< @description
-    --< Construct a 2x3 matrix with each component on the diagonal set to a
-    --< particular value.
-    --<
-    --<     | diag  0   |
-    --<     |  0   diag |
-    --<
-    --< @param diag
-    --< The value to set along the diagonal.
-    --<
-    --< @return
-    --< A 2x3 matrix.
-    ----------------------------------------------------------------------------
-    function Make_Mat2x4 (
-        diag : in     Vkm_Float) return Vkm_Mat2x4 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 3, diag => diag)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Constructor for Vkm_Mat2x4 type.
-    --<
-    --< @description
-    --< Construct a 2x3 matrix with each component on the diagonal set to a
-    --< particular value from a 2 dimmensional vector.
-    --<
-    --<     | diag.x    0   |
-    --<     |  0     diag.y |
-    --<
-    --< @param diag
-    --< The value to set along the diagonal.
-    --<
-    --< @return
-    --< A 2x3 matrix.
-    ----------------------------------------------------------------------------
-    function Make_Mat2x4 (
-        diag : in     Vkm_Vec2) return Vkm_Mat2x4 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 3, diag => diag)) with Inline;
+        (GFM.Make_GenMatrix(cN => 1, rN => 3)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -116,8 +68,59 @@ package Vulkan.Math.Mat2x4 is
     --< @description
     --< Construct a 2x3 matrix with each component set to a different value.
     --<
-    --<     | value1 value3 |
-    --<     | value2 value4 |
+    --<     | value1 value3 value5 value7 |
+    --<     | value2 value4 value6 value8 |
+    --<
+    --< @param value1
+    --< The first value to set for the matrix.
+    --<
+    --< @param value2
+    --< The second value to set for the matrix.
+    --<
+    --< @param value3
+    --< The third value to set for the matrix.
+    --<
+    --< @param value4
+    --< The fourth value to set for the matrix.
+    --<
+    --< @param value5
+    --< The fifth value to set for the matrix.
+    --<
+    --< @param value6
+    --< The sixth value to set for the matrix.
+    --<
+    --< @param value7
+    --< The seventh value to set for the matrix.
+    --<
+    --< @param value8
+    --< The eighth value to set for the matrix.
+    --<
+    --< @return
+    --< A 2x4 matrix.
+    ----------------------------------------------------------------------------
+    function Make_Mat2x4 (
+        value1, value2,
+        value3, value4,
+        value5, value6,
+        value7, value8 : in     Vkm_Float) return Vkm_Mat2x4 is
+        (GFM.Make_GenMatrix(
+             cN => 1, rN => 3,
+             c0r0_val => value1, c0r1_val => value2,
+             c1r0_val => value3, c1r1_val => value4,
+             c2r0_val => value5, c2r1_val => value6,
+             c3r0_val => value7, c3r1_val => value8)) with Inline;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Constructor for Vkm_Mat2x4 type.
+    --<
+    --< @description
+    --< Construct a 2x4 matrix with each column set to the value of a 2 dimmensional
+    --< vector.
+    --<
+    --<     | value1.x value2.x |
+    --<     | value1.y value2.y |
     --<
     --< @param value1
     --< The first value to set for the matrix.
@@ -132,42 +135,16 @@ package Vulkan.Math.Mat2x4 is
     --< The fourth value to set for the matrix.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 2x4 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x4 (
-        value1, value2, value3, value4 : in     Vkm_Float) return Vkm_Mat2x4 is
-        (GFM.Make_GenMatrix(
-             cN => 1, rN => 3,
-             c0r0_val => value1, c0r1_val => value2,
-             c1r0_val => value3, c1r1_val => value4)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Constructor for Vkm_Mat2x4 type.
-    --<
-    --< @description
-    --< Construct a 2x3 matrix with each column set to the value of a 2 dimmensional
-    --< vector.
-    --<
-    --<     | value1.x value2.x |
-    --<     | value1.y value2.y |
-    --<
-    --< @param value1
-    --< The first value to set for the matrix.
-    --<
-    --< @param value2
-    --< The second value to set for the matrix.
-    --<
-    --< @return
-    --< A 2x3 matrix.
-    ----------------------------------------------------------------------------
-    function Make_Mat2x4 (
-        value1, value2 : in     Vkm_Vec2) return Vkm_Mat2x4 is
+        value1, value2, value3, value4 : in     Vkm_Vec2) return Vkm_Mat2x4 is
         (GFM.Make_GenMatrix(
              cN => 1, rN => 3,
              c0r0_val => value1.x, c0r1_val => value1.y,
-             c1r0_val => value2.x, c1r1_val => value2.y)) with Inline;
+             c1r0_val => value2.x, c1r1_val => value2.y,
+             c2r0_val => value3.x, c2r1_val => value3.y,
+             c3r0_val => value4.x, c3r1_val => value4.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -177,9 +154,6 @@ package Vulkan.Math.Mat2x4 is
     --< @description
     --< Construct a 2x3 matrix using values from an existing matrix.
     --<
-    --<     | value1.c0r0 value1.c1r0 |
-    --<     | value1.c0r1 value1.c1r1 \
-    --<
     --< If the provided matrix has dimmensions that are not the same as this
     --< matrix, the corresponding element in the 4x4 identity matrix is used for
     --< out of bounds accesses.
@@ -188,14 +162,16 @@ package Vulkan.Math.Mat2x4 is
     --< The submatrix to extract values from.
     --<
     --< @return
-    --< A 2x3 matrix.
+    --< A 2x4 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x4 (
         value1 : in     Vkm_Mat) return Vkm_Mat2x4 is
         (GFM.Make_GenMatrix(
              cN => 1, rN => 3,
              c0r0_val => value1.c0r0, c0r1_val => value1.c0r1,
-             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1)) with Inline;
+             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1,
+             c2r0_val => value1.c2r0, c2r1_val => value1.c2r1,
+             c3r0_val => value1.c3r0, c3r1_val => value1.c3r1)) with Inline;
 
 
     ----------------------------------------------------------------------------

@@ -53,7 +53,7 @@ package Vulkan.Math.GenFMatrix is
         z                => GFT.z,
         w                => GFT.w,
         Make_GenType     => GFT.Make_GenType);
-        
+
     --< The Vkm_GenFMatrix is a subtype of Vkm_GenMatrix from the instantiated GFM
     --< package.
     subtype Vkm_Mat is GFM.Vkm_GenMatrix;
@@ -65,6 +65,12 @@ package Vulkan.Math.GenFMatrix is
     --<
     --< @description
     --< Return the matrix unchanged.
+    --<
+    --< @param right
+    --< The value to apply the unary operator to.
+    --<
+    --< @return
+    --< The result of the operator on the matrix.
     ----------------------------------------------------------------------------
     function Op_Plus_Matrix (right : in     Vkm_Mat) return Vkm_Mat is
         (right) with Inline;
@@ -272,10 +278,19 @@ package Vulkan.Math.GenFMatrix is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Remainder operator for a Vkm_GenMatrix matrix and a Vkm_Float value.
+    --< Multiplication operator for a Vkm_GenMatrix matrix and a Vkm_GenFType value.
     --<
     --< @description
-    --< Perform Remainder component-wise on the matrix and scalar.
+    --< Perform Multiplication component-wise on the matrix and vector.
+    --<
+    --< @param left
+    --< The matrix that is multiplied with the vector.
+    --<
+    --< @param right
+    --< The vector that is multiplied by the matrix.
+    --<
+    --< @return
+    --< The product of the matrix with the vector.
     ----------------------------------------------------------------------------
     function Op_Matrix_Mult_Vector (
         left  : in     Vkm_Mat;
@@ -284,10 +299,19 @@ package Vulkan.Math.GenFMatrix is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Remainder operator for a Vkm_GenMatrix matrix and a Vkm_Float value.
+    --< Multiplication operator for a Vkm_GenMatrix matrix and a Vkm_GenFType value.
     --<
     --< @description
-    --< Perform Remainder component-wise on the matrix and scalar.
+    --< Perform Multiplication component-wise on the matrix and vector.
+    --<
+    --< @param left
+    --< The vector that is multiplied with the matrix.
+    --<
+    --< @param right
+    --< The matrix that is multiplied by the vector.
+    --<
+    --< @return
+    --< The product of the vector with the matrix.
     ----------------------------------------------------------------------------
     function Op_Vector_Mult_Matrix (
         left  : in     Vkm_GenFType;
@@ -295,4 +319,3 @@ package Vulkan.Math.GenFMatrix is
 
 
 end Vulkan.Math.GenFMatrix;
-

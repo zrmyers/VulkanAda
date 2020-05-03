@@ -57,7 +57,7 @@ package Vulkan.Math.Bvec4 is
     --< @description
     --< Produce a default vector with all components set to false.
     --<
-    --< @return 
+    --< @return
     --< A 4D boolean vector with all components set to false.
     ----------------------------------------------------------------------------
     function Make_Bvec4 return Vkm_Bvec4 is
@@ -71,7 +71,7 @@ package Vulkan.Math.Bvec4 is
     --< @description
     --< Produce a vector with all components set to the same value.
     --<
-    --< @param scalar_value 
+    --< @param scalar_value
     --< The value to set all components to.
     --<
     --< @return
@@ -88,7 +88,8 @@ package Vulkan.Math.Bvec4 is
     --< @description
     --< Produce a vector by copying components from an existing vector.
     --<
-    --< @param[in]     vec4_value The Bvec4 to copy components from.
+    --< @param vec4_value
+    --< The Bvec4 to copy components from.
     --<
     --< @return
     --< A 4D boolean vector with all of its components set equal to the corresponding
@@ -106,19 +107,19 @@ package Vulkan.Math.Bvec4 is
     --< @description
     --< Produce a vector by specifying the values for each of its components.
     --<
-    --< @param value1 
+    --< @param value1
     --< Value for component 1.
     --<
-    --< @param value2 
+    --< @param value2
     --< Value for component 2.
     --<
-    --< @param value3 
+    --< @param value3
     --< Value for component 3.
     --<
-    --< @param value4 
+    --< @param value4
     --< Value for component 4.
     --<
-    --< @return 
+    --< @return
     --< A 4D boolean vector with all components set as specified.
     ----------------------------------------------------------------------------
     function Make_Bvec4 (value1, value2, value3, value4 : in    Vkm_Bool) return Vkm_Bvec4
@@ -133,10 +134,10 @@ package Vulkan.Math.Bvec4 is
     --<
     --<     Bvec4 = [scalar_value, vec3_value  ]
     --<
-    --< @param scalar_value 
+    --< @param scalar_value
     --< The scalar value to concatenate with the Bvec3.
     --<
-    --< @param vec3_value   
+    --< @param vec3_value
     --< The Bvec3 to concatenate to the scalar value.
     --<
     --< @return The instance of Bvec4.
@@ -158,10 +159,10 @@ package Vulkan.Math.Bvec4 is
     --<
     --<     Bvec4 = [vec3_value, scalar_value]
     --<
-    --< @param vec3_value   
+    --< @param vec3_value
     --< The Bvec3 to concatenate to the scalar value.
     --<
-    --< @param scalar_value 
+    --< @param scalar_value
     --< The scalar value to concatenate to the Bvec3.
     --<
     --< @return
@@ -184,13 +185,13 @@ package Vulkan.Math.Bvec4 is
     --<
     --<     Bvec4 = [vec2_value1, vec2_value2]
     --<
-    --< @param vec2_value1 
+    --< @param vec2_value1
     --< The first Bvec2.
     --<
-    --< @param vec2_value2 
+    --< @param vec2_value2
     --< The second Bvec2.
     --<
-    --< @return 
+    --< @return
     --< The instance of Bvec4.
     ---------------------------------------------------------------------------
     function Make_Bvec4 (vec2_value1, vec2_value2 : in     Vkm_Bvec2) return Vkm_Bvec4 is
@@ -207,16 +208,16 @@ package Vulkan.Math.Bvec4 is
     --<
     --<     Bvec4 = [scalar1, scalar2, vec2_value]
     --<
-    --< @param scalar1    
+    --< @param scalar1
     --< First scalar value.
     --<
     --< @param scalar2
     --< Second scalar value.
     --<
-    --< @param vec2_value 
+    --< @param vec2_value
     --< The Bvec2 value.
     --<
-    --< @return 
+    --< @return
     --< The instance of Bvec4.
     ---------------------------------------------------------------------------
     function Make_Bvec4 (scalar1, scalar2 : in     Vkm_Bool;
@@ -236,7 +237,7 @@ package Vulkan.Math.Bvec4 is
     --< @param scalar1
     --< First scalar value.
     --<
-    --< @param vec2_value 
+    --< @param vec2_value
     --< The Bvec2 value.
     --<
     --< @param scalar2
@@ -260,13 +261,13 @@ package Vulkan.Math.Bvec4 is
     --<
     --< Bvec4 = [vec2_value, scalar1, scalar2]
     --<
-    --< @param vec2_value 
+    --< @param vec2_value
     --< The Bvec2 value.
     --<
     --< @param scalar1
     --< First scalar value.
     --<
-    --< @param scalar2 
+    --< @param scalar2
     --< Second scalar value.
     --<
     --< @return
