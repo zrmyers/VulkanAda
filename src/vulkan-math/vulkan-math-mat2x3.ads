@@ -646,9 +646,6 @@ package Vulkan.Math.Mat2x3 is
     --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right
     --< Vkm_Mat2x3 matrix.
     --<
-    --<     | Dot(left.r0, right.c0) Dot(left.r0, right.c1) |
-    --<     | Dot(left.r1, right.c0) Dot(left.r1, right.c0) |
-    --<
     --< @param left
     --< The left operator argument.
     --<
@@ -671,9 +668,6 @@ package Vulkan.Math.Mat2x3 is
     --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right
     --< Vkm_Vec2 vector.
     --<
-    --<     | Dot(left.r0, right) |
-    --<     | Dot(left.r1, right) |
-    --<
     --< @param left
     --< The left operator argument.
     --<
@@ -694,9 +688,6 @@ package Vulkan.Math.Mat2x3 is
     --< @description
     --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right
     --< Vkm_Vec2 vector.
-    --<
-    --<     | Dot(left, right.c0) |
-    --<     | Dot(left, right.c1) |
     --<
     --< @param left
     --< The left operator argument.
