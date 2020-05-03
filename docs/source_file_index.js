@@ -92,6 +92,10 @@ GNATdoc.SourceFileIndex = [
     "srcHref": "srcs/vulkan-math-mat2x2.ads.html"
   },
   {
+    "label": "vulkan-math-mat2x3.ads",
+    "srcHref": "srcs/vulkan-math-mat2x3.ads.html"
+  },
+  {
     "label": "vulkan-math-matrix.ads",
     "srcHref": "srcs/vulkan-math-matrix.ads.html"
   },

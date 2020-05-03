@@ -142,6 +142,13 @@ GNATdoc.EntitiesCategory = {
       "srcHref": "srcs/vulkan-math-mat2x2.ads.html#L42"
     },
     {
+      "label": "Vkm_Mat2x3",
+      "docHref": "docs/vulkan__math__mat2x3___spec.html#L46C13",
+      "declared": "Vulkan.Math.Mat2x3",
+      "declared_qualifier": "",
+      "srcHref": "srcs/vulkan-math-mat2x3.ads.html#L46"
+    },
+    {
       "label": "Vkm_Uvec2",
       "docHref": "docs/vulkan__math__uvec2___spec.html#L38C13",
       "declared": "Vulkan.Math.Uvec2",

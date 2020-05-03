@@ -20,6 +20,10 @@ GNATdoc.InheritanceIndex = [
                 "docHref": "docs/vulkan__math__mat2x2___spec.html#L46C13"
               }
             ]
+          },
+          {
+            "label": "Vkm_Mat2x3",
+            "docHref": "docs/vulkan__math__mat2x3___spec.html#L46C13"
           }
         ]
       }

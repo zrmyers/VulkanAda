@@ -1,5 +1,5 @@
 GNATdoc.Documentation = {
-  "label": "Vulkan.Math.Mat2x2",
+  "label": "Vulkan.Math.Mat2x3",
   "qualifier": "",
   "summary": [
     {
@@ -11,7 +11,7 @@ GNATdoc.Documentation = {
         },
         {
           "kind": "span",
-          "text": "and 2 columns.\n"
+          "text": "and 3 columns.\n"
         }
       ]
     }
@@ -22,11 +22,11 @@ GNATdoc.Documentation = {
     {
       "entities": [
         {
-          "label": "Vkm_Mat2",
+          "label": "Vkm_Mat2x3",
           "qualifier": "",
           "line": 46,
           "column": 13,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
           ],
           "description": [
@@ -55,86 +55,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L46C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "is"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "An alternative name for a 2x2 single-precision floating point matrix\n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "label": "Vkm_Mat2x2",
-          "qualifier": "",
-          "line": 42,
-          "column": 13,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
-          "summary": [
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
-                  "kind": "line",
-                  "number": 42,
-                  "children": [
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "subtype"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -166,7 +88,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 43,
+                  "number": 47,
                   "children": [
                     {
                       "kind": "span",
@@ -231,7 +153,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -252,7 +174,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "A 2x2 matrix of single-precision floating point numbers.\n"
+                  "text": "A 2x3 matrix of single-precision floating point numbers.\n"
                 }
               ]
             }
@@ -266,16 +188,16 @@ GNATdoc.Documentation = {
         {
           "label": "&",
           "qualifier": "",
-          "line": 212,
+          "line": 214,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Concatentation operator for two Vkm_Vec2 which produces a Vkm_Mat2x2.\n"
+                  "text": "Concatentation operator for two Vkm_Vec2 which produces a Vkm_Mat2x3.\n"
                 }
               ]
             }
@@ -286,7 +208,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 212,
+                  "number": 214,
                   "children": [
                     {
                       "kind": "span",
@@ -322,7 +244,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L212C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L214C19"
                     },
                     {
                       "kind": "span",
@@ -338,7 +260,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L212C25"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L214C25"
                     },
                     {
                       "kind": "span",
@@ -394,8 +316,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -411,7 +333,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 213,
+                  "number": 215,
                   "children": [
                     {
                       "kind": "span",
@@ -426,7 +348,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2"
+                      "text": "Make_Mat2x3"
                     },
                     {
                       "kind": "span",
@@ -492,7 +414,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Create a 2x2 matrix by concatentating two 2D column vectors.\n"
+                  "text": "Create a 2x3 matrix by concatentating two 2D column vectors.\n"
                 }
               ]
             }
@@ -500,7 +422,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 212,
+              "line": 214,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vec2.Vkm_Vec2",
@@ -520,7 +442,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 212,
+              "line": 214,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vec2.Vkm_Vec2",
@@ -537,7 +459,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -547,16 +469,16 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(renaming)",
-          "line": 656,
+          "line": 658,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Linear Algebraic Multiplication for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Linear Algebraic Multiplication for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -567,7 +489,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 656,
+                  "number": 658,
                   "children": [
                     {
                       "kind": "span",
@@ -598,245 +520,23 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "("
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L656C19"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ","
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L656C25"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ":"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "in"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": "     "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ")"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "return"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "renames"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "GFM.Op_Matrix_Mult_Matrix"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": ";"
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 by the right\n"
                 },
                 {
-                  "kind": "span",
-                  "text": "Vkm_Mat2x2 matrix.\n"
-                }
-              ]
-            }
-          ],
-          "parameters": [
-            {
-              "label": "left",
-              "line": 656,
-              "column": 19,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The left operator argument.\n"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "label": "right",
-              "line": 656,
-              "column": 25,
-              "type": {
-                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
-                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
-              },
-              "description": [
-                {
-                  "kind": "paragraph",
-                  "children": [
-                    {
-                      "kind": "span",
-                      "text": "The right operator argument.\n"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "returns": {
-            "description": [
-              {
-                "kind": "paragraph",
-                "children": [
-                  {
-                    "kind": "span",
-                    "text": "The result of the component-wise operator on the arguments.\n"
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "label": "*",
-          "qualifier": "(renaming)",
-          "line": 676,
-          "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
-          "summary": [
-            {
-              "kind": "paragraph",
-              "children": [
-                {
-                  "kind": "span",
-                  "text": "Linear Algebraic Multiplication for a Vkm_Mat2x2 with a 2D vector.\n"
-                }
-              ]
-            }
-          ],
-          "description": [
-            {
-              "kind": "code",
-              "children": [
-                {
                   "kind": "line",
-                  "number": 676,
+                  "number": 659,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "    "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "keyword",
-                      "text": "function"
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "\"*\""
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "text",
-                      "text": " "
-                    },
-                    {
-                      "kind": "span",
-                      "cssClass": "identifier",
-                      "text": "("
+                      "text": "        "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L676C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L659C9"
                     },
                     {
                       "kind": "span",
@@ -878,18 +578,18 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 677,
+                  "number": 660,
                   "children": [
                     {
                       "kind": "span",
                       "cssClass": "text",
-                      "text": "                  "
+                      "text": "        "
                     },
                     {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L677C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L660C9"
                     },
                     {
                       "kind": "span",
@@ -919,8 +619,278 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Vec2",
-                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ")"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "return"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "renames"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "GFM.Op_Matrix_Mult_Matrix"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right\n"
+                },
+                {
+                  "kind": "span",
+                  "text": "Vkm_Mat2x3 matrix.\n"
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "label": "left",
+              "line": 659,
+              "column": 9,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The left operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "right",
+              "line": 660,
+              "column": 9,
+              "type": {
+                "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
+                "docHref": "docs/vulkan__math__genmatrix___spec.html#L76C10"
+              },
+              "description": [
+                {
+                  "kind": "paragraph",
+                  "children": [
+                    {
+                      "kind": "span",
+                      "text": "The right operator argument.\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "returns": {
+            "description": [
+              {
+                "kind": "paragraph",
+                "children": [
+                  {
+                    "kind": "span",
+                    "text": "The result of the component-wise operator on the arguments.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "*",
+          "qualifier": "(renaming)",
+          "line": 680,
+          "column": 15,
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
+          "summary": [
+            {
+              "kind": "paragraph",
+              "children": [
+                {
+                  "kind": "span",
+                  "text": "Linear Algebraic Multiplication for a Vkm_Mat2x3 with a vector.\n"
+                }
+              ]
+            }
+          ],
+          "description": [
+            {
+              "kind": "code",
+              "children": [
+                {
+                  "kind": "line",
+                  "number": 680,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "    "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "function"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "\"*\""
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "("
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "left",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L680C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ";"
+                    }
+                  ]
+                },
+                {
+                  "kind": "line",
+                  "number": 681,
+                  "children": [
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "                  "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "right",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L681C19"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": ":"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": " "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "keyword",
+                      "text": "in"
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "text",
+                      "text": "     "
+                    },
+                    {
+                      "kind": "span",
+                      "cssClass": "identifier",
+                      "text": "Vkm_Vec3",
+                      "href": "docs/vulkan__math__vec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -987,11 +957,11 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 by the right\n"
+                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right\n"
                 },
                 {
                   "kind": "span",
-                  "text": "Vkm_Vec2 vector.\n"
+                  "text": "Vkm_Vec3 vector.\n"
                 }
               ]
             }
@@ -999,7 +969,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 676,
+              "line": 680,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
@@ -1019,7 +989,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 677,
+              "line": 681,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -1055,16 +1025,16 @@ GNATdoc.Documentation = {
         {
           "label": "*",
           "qualifier": "(renaming)",
-          "line": 697,
+          "line": 701,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Linear Algebraic Multiplication for a Vkm_Mat2x2 with a 2D vector.\n"
+                  "text": "Linear Algebraic Multiplication for a Vkm_Mat2x3 with a vector.\n"
                 }
               ]
             }
@@ -1075,7 +1045,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 697,
+                  "number": 701,
                   "children": [
                     {
                       "kind": "span",
@@ -1111,7 +1081,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L697C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L701C19"
                     },
                     {
                       "kind": "span",
@@ -1153,7 +1123,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 698,
+                  "number": 702,
                   "children": [
                     {
                       "kind": "span",
@@ -1164,7 +1134,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L698C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L702C19"
                     },
                     {
                       "kind": "span",
@@ -1194,8 +1164,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -1225,8 +1195,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Vec2",
-                      "href": "docs/vulkan__math__vec2___spec.html#L39C13"
+                      "text": "Vkm_Vec3",
+                      "href": "docs/vulkan__math__vec3___spec.html#L42C13"
                     },
                     {
                       "kind": "span",
@@ -1262,7 +1232,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Perform Linear Algebraic Multiplication of the left Vkm_Mat2x2 by the right\n"
+                  "text": "Perform Linear Algebraic Multiplication of the right Vkm_Mat2x3 by the left\n"
                 },
                 {
                   "kind": "span",
@@ -1274,7 +1244,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 697,
+              "line": 701,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFType.Vkm_GenFType",
@@ -1294,7 +1264,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 698,
+              "line": 702,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
@@ -1330,16 +1300,16 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(renaming)",
-          "line": 360,
+          "line": 362,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Power operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Power operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -1350,7 +1320,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 360,
+                  "number": 362,
                   "children": [
                     {
                       "kind": "span",
@@ -1386,7 +1356,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L360C20"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L362C20"
                     },
                     {
                       "kind": "span",
@@ -1402,7 +1372,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L360C26"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L362C26"
                     },
                     {
                       "kind": "span",
@@ -1432,8 +1402,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -1458,8 +1428,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -1503,7 +1473,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 360,
+              "line": 362,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -1523,7 +1493,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 360,
+              "line": 362,
               "column": 26,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -1559,16 +1529,16 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(renaming)",
-          "line": 379,
+          "line": 381,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Power operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Power operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -1579,7 +1549,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 379,
+                  "number": 381,
                   "children": [
                     {
                       "kind": "span",
@@ -1615,7 +1585,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L379C20"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L381C20"
                     },
                     {
                       "kind": "span",
@@ -1645,8 +1615,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -1657,7 +1627,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 380,
+                  "number": 382,
                   "children": [
                     {
                       "kind": "span",
@@ -1668,7 +1638,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L380C20"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L382C20"
                     },
                     {
                       "kind": "span",
@@ -1729,8 +1699,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -1774,7 +1744,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 379,
+              "line": 381,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -1794,7 +1764,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 380,
+              "line": 382,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -1830,16 +1800,16 @@ GNATdoc.Documentation = {
         {
           "label": "**",
           "qualifier": "(renaming)",
-          "line": 399,
+          "line": 401,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Power operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Power operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -1850,7 +1820,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 399,
+                  "number": 401,
                   "children": [
                     {
                       "kind": "span",
@@ -1886,7 +1856,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L399C20"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L401C20"
                     },
                     {
                       "kind": "span",
@@ -1928,7 +1898,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 400,
+                  "number": 402,
                   "children": [
                     {
                       "kind": "span",
@@ -1939,7 +1909,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L400C20"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L402C20"
                     },
                     {
                       "kind": "span",
@@ -1969,8 +1939,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2000,8 +1970,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2045,7 +2015,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 399,
+              "line": 401,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -2065,7 +2035,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 400,
+              "line": 402,
               "column": 20,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -2101,16 +2071,16 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(renaming)",
-          "line": 248,
+          "line": 250,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Unary Plus operator on a Vkm_Mat2x2.\n"
+                  "text": "Unary Plus operator on a Vkm_Mat2x3.\n"
                 }
               ]
             }
@@ -2121,7 +2091,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 248,
+                  "number": 250,
                   "children": [
                     {
                       "kind": "span",
@@ -2157,7 +2127,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L248C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L250C19"
                     },
                     {
                       "kind": "span",
@@ -2187,8 +2157,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2213,8 +2183,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2258,7 +2228,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "right",
-              "line": 248,
+              "line": 250,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
@@ -2294,16 +2264,16 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(renaming)",
-          "line": 419,
+          "line": 421,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Addition operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Addition operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -2314,7 +2284,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 419,
+                  "number": 421,
                   "children": [
                     {
                       "kind": "span",
@@ -2350,7 +2320,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L419C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L421C19"
                     },
                     {
                       "kind": "span",
@@ -2366,7 +2336,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L419C25"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L421C25"
                     },
                     {
                       "kind": "span",
@@ -2396,8 +2366,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2422,8 +2392,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2467,7 +2437,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 419,
+              "line": 421,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -2487,7 +2457,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 419,
+              "line": 421,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -2523,16 +2493,16 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(renaming)",
-          "line": 438,
+          "line": 440,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Addition operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Addition operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -2543,7 +2513,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 438,
+                  "number": 440,
                   "children": [
                     {
                       "kind": "span",
@@ -2579,7 +2549,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L438C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L440C19"
                     },
                     {
                       "kind": "span",
@@ -2609,8 +2579,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2621,7 +2591,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 439,
+                  "number": 441,
                   "children": [
                     {
                       "kind": "span",
@@ -2632,7 +2602,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L439C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L441C19"
                     },
                     {
                       "kind": "span",
@@ -2693,8 +2663,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2738,7 +2708,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 438,
+              "line": 440,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -2758,7 +2728,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 439,
+              "line": 441,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -2794,16 +2764,16 @@ GNATdoc.Documentation = {
         {
           "label": "+",
           "qualifier": "(renaming)",
-          "line": 458,
+          "line": 460,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Addition operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Addition operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -2814,7 +2784,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 458,
+                  "number": 460,
                   "children": [
                     {
                       "kind": "span",
@@ -2850,7 +2820,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L458C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L460C19"
                     },
                     {
                       "kind": "span",
@@ -2892,7 +2862,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 459,
+                  "number": 461,
                   "children": [
                     {
                       "kind": "span",
@@ -2903,7 +2873,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L459C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L461C19"
                     },
                     {
                       "kind": "span",
@@ -2933,8 +2903,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -2964,8 +2934,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3009,7 +2979,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 458,
+              "line": 460,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3029,7 +2999,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 459,
+              "line": 461,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -3065,16 +3035,16 @@ GNATdoc.Documentation = {
         {
           "label": "-",
           "qualifier": "(renaming)",
-          "line": 265,
+          "line": 267,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Unary Minus operator on a Vkm_Mat2x2.\n"
+                  "text": "Unary Minus operator on a Vkm_Mat2x3.\n"
                 }
               ]
             }
@@ -3085,7 +3055,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 265,
+                  "number": 267,
                   "children": [
                     {
                       "kind": "span",
@@ -3121,7 +3091,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L265C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L267C19"
                     },
                     {
                       "kind": "span",
@@ -3151,8 +3121,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3177,8 +3147,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3226,7 +3196,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "right",
-              "line": 265,
+              "line": 267,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -3262,16 +3232,16 @@ GNATdoc.Documentation = {
         {
           "label": "-",
           "qualifier": "(renaming)",
-          "line": 478,
+          "line": 480,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Subtraction operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Subtraction operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -3282,7 +3252,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 478,
+                  "number": 480,
                   "children": [
                     {
                       "kind": "span",
@@ -3318,7 +3288,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L478C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L480C19"
                     },
                     {
                       "kind": "span",
@@ -3334,7 +3304,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L478C25"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L480C25"
                     },
                     {
                       "kind": "span",
@@ -3364,8 +3334,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3390,8 +3360,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3435,7 +3405,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 478,
+              "line": 480,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -3455,7 +3425,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 478,
+              "line": 480,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -3491,16 +3461,16 @@ GNATdoc.Documentation = {
         {
           "label": "-",
           "qualifier": "(renaming)",
-          "line": 497,
+          "line": 499,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Subtraction operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Subtraction operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -3511,7 +3481,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 497,
+                  "number": 499,
                   "children": [
                     {
                       "kind": "span",
@@ -3547,7 +3517,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L497C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L499C19"
                     },
                     {
                       "kind": "span",
@@ -3577,8 +3547,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3589,7 +3559,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 498,
+                  "number": 500,
                   "children": [
                     {
                       "kind": "span",
@@ -3600,7 +3570,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L498C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L500C19"
                     },
                     {
                       "kind": "span",
@@ -3661,8 +3631,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3706,7 +3676,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 497,
+              "line": 499,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -3726,7 +3696,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 498,
+              "line": 500,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3762,16 +3732,16 @@ GNATdoc.Documentation = {
         {
           "label": "-",
           "qualifier": "(renaming)",
-          "line": 517,
+          "line": 519,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Subtraction operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Subtraction operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -3782,7 +3752,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 517,
+                  "number": 519,
                   "children": [
                     {
                       "kind": "span",
@@ -3818,7 +3788,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L517C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L519C19"
                     },
                     {
                       "kind": "span",
@@ -3860,7 +3830,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 518,
+                  "number": 520,
                   "children": [
                     {
                       "kind": "span",
@@ -3871,7 +3841,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L518C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L520C19"
                     },
                     {
                       "kind": "span",
@@ -3901,8 +3871,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3932,8 +3902,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -3977,7 +3947,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 517,
+              "line": 519,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -3997,7 +3967,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 518,
+              "line": 520,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -4033,16 +4003,16 @@ GNATdoc.Documentation = {
         {
           "label": "/",
           "qualifier": "(renaming)",
-          "line": 596,
+          "line": 598,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Division operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Division operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -4053,7 +4023,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 596,
+                  "number": 598,
                   "children": [
                     {
                       "kind": "span",
@@ -4089,7 +4059,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L596C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L598C19"
                     },
                     {
                       "kind": "span",
@@ -4105,7 +4075,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L596C25"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L598C25"
                     },
                     {
                       "kind": "span",
@@ -4135,8 +4105,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4161,8 +4131,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4206,7 +4176,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 596,
+              "line": 598,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -4226,7 +4196,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 596,
+              "line": 598,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -4262,16 +4232,16 @@ GNATdoc.Documentation = {
         {
           "label": "/",
           "qualifier": "(renaming)",
-          "line": 615,
+          "line": 617,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Division operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Division operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -4282,7 +4252,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 615,
+                  "number": 617,
                   "children": [
                     {
                       "kind": "span",
@@ -4318,7 +4288,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L615C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L617C19"
                     },
                     {
                       "kind": "span",
@@ -4348,8 +4318,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4360,7 +4330,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 616,
+                  "number": 618,
                   "children": [
                     {
                       "kind": "span",
@@ -4371,7 +4341,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L616C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L618C19"
                     },
                     {
                       "kind": "span",
@@ -4432,8 +4402,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4477,7 +4447,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 615,
+              "line": 617,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -4497,7 +4467,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 616,
+              "line": 618,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -4533,16 +4503,16 @@ GNATdoc.Documentation = {
         {
           "label": "/",
           "qualifier": "(renaming)",
-          "line": 635,
+          "line": 637,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Division operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Division operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -4553,7 +4523,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 635,
+                  "number": 637,
                   "children": [
                     {
                       "kind": "span",
@@ -4589,7 +4559,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L635C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L637C19"
                     },
                     {
                       "kind": "span",
@@ -4631,7 +4601,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 636,
+                  "number": 638,
                   "children": [
                     {
                       "kind": "span",
@@ -4642,7 +4612,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L636C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L638C19"
                     },
                     {
                       "kind": "span",
@@ -4672,8 +4642,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4703,8 +4673,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4748,7 +4718,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 635,
+              "line": 637,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -4768,7 +4738,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 636,
+              "line": 638,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -4804,16 +4774,16 @@ GNATdoc.Documentation = {
         {
           "label": "=",
           "qualifier": "(renaming)",
-          "line": 232,
+          "line": 234,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Equality operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Equality operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -4824,7 +4794,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 232,
+                  "number": 234,
                   "children": [
                     {
                       "kind": "span",
@@ -4860,7 +4830,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L232C19"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L234C19"
                     },
                     {
                       "kind": "span",
@@ -4876,7 +4846,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L232C25"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L234C25"
                     },
                     {
                       "kind": "span",
@@ -4906,8 +4876,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -4977,7 +4947,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 232,
+              "line": 234,
               "column": 19,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -4997,7 +4967,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 232,
+              "line": 234,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -5033,16 +5003,16 @@ GNATdoc.Documentation = {
         {
           "label": "abs",
           "qualifier": "(renaming)",
-          "line": 282,
+          "line": 284,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Absolute Value operator on a Vkm_Mat2x2.\n"
+                  "text": "Absolute Value operator on a Vkm_Mat2x3.\n"
                 }
               ]
             }
@@ -5053,7 +5023,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 282,
+                  "number": 284,
                   "children": [
                     {
                       "kind": "span",
@@ -5089,7 +5059,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L282C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L284C21"
                     },
                     {
                       "kind": "span",
@@ -5119,8 +5089,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -5145,8 +5115,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -5194,7 +5164,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "right",
-              "line": 282,
+              "line": 284,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -5228,18 +5198,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_Mat2x2",
+          "label": "Make_Mat2x3",
           "qualifier": "",
-          "line": 62,
+          "line": 64,
           "column": 14,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                  "text": "Constructor for Vkm_Mat2x3 type.\n"
                 }
               ]
             }
@@ -5250,7 +5220,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 62,
+                  "number": 64,
                   "children": [
                     {
                       "kind": "span",
@@ -5270,8 +5240,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L62C14"
+                      "text": "Make_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L64C14"
                     },
                     {
                       "kind": "span",
@@ -5291,8 +5261,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -5308,7 +5278,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 63,
+                  "number": 65,
                   "children": [
                     {
                       "kind": "span",
@@ -5388,7 +5358,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -5464,7 +5434,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Construct a 2x2 matrix with each component set to the corresponding\n"
+                  "text": "Construct a 2x3 matrix with each component set to the corresponding\n"
                 },
                 {
                   "kind": "span",
@@ -5503,7 +5473,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -5511,18 +5481,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_Mat2x2",
+          "label": "Make_Mat2x3",
           "qualifier": "",
-          "line": 83,
+          "line": 85,
           "column": 14,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                  "text": "Constructor for Vkm_Mat2x3 type.\n"
                 }
               ]
             }
@@ -5533,7 +5503,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 83,
+                  "number": 85,
                   "children": [
                     {
                       "kind": "span",
@@ -5553,8 +5523,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L83C14"
+                      "text": "Make_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L85C14"
                     },
                     {
                       "kind": "span",
@@ -5570,7 +5540,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 84,
+                  "number": 86,
                   "children": [
                     {
                       "kind": "span",
@@ -5581,7 +5551,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "diag",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L84C9"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L86C9"
                     },
                     {
                       "kind": "span",
@@ -5637,8 +5607,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -5654,7 +5624,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 85,
+                  "number": 87,
                   "children": [
                     {
                       "kind": "span",
@@ -5734,7 +5704,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -5810,7 +5780,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Construct a 2x2 matrix with each component on the diagonal set to a\n"
+                  "text": "Construct a 2x3 matrix with each component on the diagonal set to a\n"
                 },
                 {
                   "kind": "span",
@@ -5845,7 +5815,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "diag",
-              "line": 84,
+              "line": 86,
               "column": 9,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -5871,7 +5841,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -5879,18 +5849,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_Mat2x2",
+          "label": "Make_Mat2x3",
           "qualifier": "",
-          "line": 105,
+          "line": 107,
           "column": 14,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                  "text": "Constructor for Vkm_Mat2x3 type.\n"
                 }
               ]
             }
@@ -5901,7 +5871,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 105,
+                  "number": 107,
                   "children": [
                     {
                       "kind": "span",
@@ -5921,8 +5891,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L105C14"
+                      "text": "Make_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L107C14"
                     },
                     {
                       "kind": "span",
@@ -5938,7 +5908,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 106,
+                  "number": 108,
                   "children": [
                     {
                       "kind": "span",
@@ -5949,7 +5919,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "diag",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L106C9"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L108C9"
                     },
                     {
                       "kind": "span",
@@ -6005,8 +5975,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -6022,7 +5992,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 107,
+                  "number": 109,
                   "children": [
                     {
                       "kind": "span",
@@ -6102,7 +6072,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -6178,7 +6148,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Construct a 2x2 matrix with each component on the diagonal set to a\n"
+                  "text": "Construct a 2x3 matrix with each component on the diagonal set to a\n"
                 },
                 {
                   "kind": "span",
@@ -6213,7 +6183,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "diag",
-              "line": 106,
+              "line": 108,
               "column": 9,
               "type": {
                 "label": "Vulkan.Math.Vec2.Vkm_Vec2",
@@ -6239,7 +6209,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -6247,18 +6217,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_Mat2x2",
+          "label": "Make_Mat2x3",
           "qualifier": "",
-          "line": 135,
+          "line": 137,
           "column": 14,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                  "text": "Constructor for Vkm_Mat2x3 type.\n"
                 }
               ]
             }
@@ -6269,7 +6239,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 135,
+                  "number": 137,
                   "children": [
                     {
                       "kind": "span",
@@ -6289,8 +6259,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L135C14"
+                      "text": "Make_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L137C14"
                     },
                     {
                       "kind": "span",
@@ -6306,7 +6276,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 136,
+                  "number": 138,
                   "children": [
                     {
                       "kind": "span",
@@ -6317,7 +6287,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C9"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L138C9"
                     },
                     {
                       "kind": "span",
@@ -6333,7 +6303,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C17"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L138C17"
                     },
                     {
                       "kind": "span",
@@ -6349,7 +6319,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value3",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C25"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L138C25"
                     },
                     {
                       "kind": "span",
@@ -6365,7 +6335,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value4",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L136C33"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L138C33"
                     },
                     {
                       "kind": "span",
@@ -6421,8 +6391,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -6438,7 +6408,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 137,
+                  "number": 139,
                   "children": [
                     {
                       "kind": "span",
@@ -6464,7 +6434,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 138,
+                  "number": 140,
                   "children": [
                     {
                       "kind": "span",
@@ -6529,7 +6499,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -6540,7 +6510,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 139,
+                  "number": 141,
                   "children": [
                     {
                       "kind": "span",
@@ -6616,7 +6586,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 140,
+                  "number": 142,
                   "children": [
                     {
                       "kind": "span",
@@ -6722,7 +6692,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Construct a 2x2 matrix with each component set to a different value.\n"
+                  "text": "Construct a 2x3 matrix with each component set to a different value.\n"
                 }
               ]
             },
@@ -6753,7 +6723,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 136,
+              "line": 138,
               "column": 9,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -6773,7 +6743,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value2",
-              "line": 136,
+              "line": 138,
               "column": 17,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -6793,7 +6763,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value3",
-              "line": 136,
+              "line": 138,
               "column": 25,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -6813,7 +6783,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value4",
-              "line": 136,
+              "line": 138,
               "column": 33,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -6839,7 +6809,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -6847,18 +6817,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_Mat2x2",
+          "label": "Make_Mat2x3",
           "qualifier": "",
-          "line": 163,
+          "line": 165,
           "column": 14,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                  "text": "Constructor for Vkm_Mat2x3 type.\n"
                 }
               ]
             }
@@ -6869,7 +6839,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 163,
+                  "number": 165,
                   "children": [
                     {
                       "kind": "span",
@@ -6889,8 +6859,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L163C14"
+                      "text": "Make_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L165C14"
                     },
                     {
                       "kind": "span",
@@ -6906,7 +6876,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 164,
+                  "number": 166,
                   "children": [
                     {
                       "kind": "span",
@@ -6917,7 +6887,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L164C9"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L166C9"
                     },
                     {
                       "kind": "span",
@@ -6933,7 +6903,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L164C17"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L166C17"
                     },
                     {
                       "kind": "span",
@@ -6989,8 +6959,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -7006,7 +6976,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 165,
+                  "number": 167,
                   "children": [
                     {
                       "kind": "span",
@@ -7032,7 +7002,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 166,
+                  "number": 168,
                   "children": [
                     {
                       "kind": "span",
@@ -7097,7 +7067,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -7108,7 +7078,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 167,
+                  "number": 169,
                   "children": [
                     {
                       "kind": "span",
@@ -7184,7 +7154,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 168,
+                  "number": 170,
                   "children": [
                     {
                       "kind": "span",
@@ -7290,7 +7260,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Construct a 2x2 matrix with each column set to the value of a 2 dimmensional\n"
+                  "text": "Construct a 2x3 matrix with each column set to the value of a 2 dimmensional\n"
                 },
                 {
                   "kind": "span",
@@ -7325,7 +7295,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 164,
+              "line": 166,
               "column": 9,
               "type": {
                 "label": "Vulkan.Math.Vec2.Vkm_Vec2",
@@ -7345,7 +7315,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "value2",
-              "line": 164,
+              "line": 166,
               "column": 17,
               "type": {
                 "label": "Vulkan.Math.Vec2.Vkm_Vec2",
@@ -7371,7 +7341,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -7379,18 +7349,18 @@ GNATdoc.Documentation = {
           }
         },
         {
-          "label": "Make_Mat2x2",
+          "label": "Make_Mat2x3",
           "qualifier": "",
-          "line": 191,
+          "line": 193,
           "column": 14,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Constructor for Vkm_Mat2x2 type.\n"
+                  "text": "Constructor for Vkm_Mat2x3 type.\n"
                 }
               ]
             }
@@ -7401,7 +7371,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 191,
+                  "number": 193,
                   "children": [
                     {
                       "kind": "span",
@@ -7421,8 +7391,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Make_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L191C14"
+                      "text": "Make_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L193C14"
                     },
                     {
                       "kind": "span",
@@ -7438,7 +7408,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 192,
+                  "number": 194,
                   "children": [
                     {
                       "kind": "span",
@@ -7449,7 +7419,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "value1",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L192C9"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L194C9"
                     },
                     {
                       "kind": "span",
@@ -7505,8 +7475,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -7522,7 +7492,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 193,
+                  "number": 195,
                   "children": [
                     {
                       "kind": "span",
@@ -7548,7 +7518,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 194,
+                  "number": 196,
                   "children": [
                     {
                       "kind": "span",
@@ -7613,7 +7583,7 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "number",
-                      "text": "1"
+                      "text": "2"
                     },
                     {
                       "kind": "span",
@@ -7624,7 +7594,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 195,
+                  "number": 197,
                   "children": [
                     {
                       "kind": "span",
@@ -7700,7 +7670,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 196,
+                  "number": 198,
                   "children": [
                     {
                       "kind": "span",
@@ -7806,7 +7776,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "span",
-                  "text": "Construct a 2x2 matrix using values from an existing matrix.\n"
+                  "text": "Construct a 2x3 matrix using values from an existing matrix.\n"
                 }
               ]
             },
@@ -7827,7 +7797,7 @@ GNATdoc.Documentation = {
                   "children": [
                     {
                       "kind": "span",
-                      "text": "| value1.c0r1 value1.c1r1 |"
+                      "text": "| value1.c0r1 value1.c1r1 \\"
                     }
                   ]
                 },
@@ -7863,7 +7833,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "value1",
-              "line": 192,
+              "line": 194,
               "column": 9,
               "type": {
                 "label": "Vulkan.Math.GenFMatrix.Vkm_Mat",
@@ -7889,7 +7859,7 @@ GNATdoc.Documentation = {
                 "children": [
                   {
                     "kind": "span",
-                    "text": "A 2x2 matrix.\n"
+                    "text": "A 2x3 matrix.\n"
                   }
                 ]
               }
@@ -7899,16 +7869,16 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(renaming)",
-          "line": 301,
+          "line": 303,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Modulo operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Modulo operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -7919,7 +7889,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 301,
+                  "number": 303,
                   "children": [
                     {
                       "kind": "span",
@@ -7955,7 +7925,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L301C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L303C21"
                     },
                     {
                       "kind": "span",
@@ -7971,7 +7941,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L301C27"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L303C27"
                     },
                     {
                       "kind": "span",
@@ -8001,8 +7971,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8027,8 +7997,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8072,7 +8042,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 301,
+              "line": 303,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -8092,7 +8062,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 301,
+              "line": 303,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -8128,16 +8098,16 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(renaming)",
-          "line": 320,
+          "line": 322,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Modulo operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Modulo operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -8148,7 +8118,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 320,
+                  "number": 322,
                   "children": [
                     {
                       "kind": "span",
@@ -8184,7 +8154,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L320C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L322C21"
                     },
                     {
                       "kind": "span",
@@ -8214,8 +8184,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8226,7 +8196,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 321,
+                  "number": 323,
                   "children": [
                     {
                       "kind": "span",
@@ -8237,7 +8207,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L321C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L323C21"
                     },
                     {
                       "kind": "span",
@@ -8298,8 +8268,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8343,7 +8313,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 320,
+              "line": 322,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -8363,7 +8333,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 321,
+              "line": 323,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -8399,16 +8369,16 @@ GNATdoc.Documentation = {
         {
           "label": "mod",
           "qualifier": "(renaming)",
-          "line": 340,
+          "line": 342,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Modulo operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Modulo operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -8419,7 +8389,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 340,
+                  "number": 342,
                   "children": [
                     {
                       "kind": "span",
@@ -8455,7 +8425,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L340C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L342C21"
                     },
                     {
                       "kind": "span",
@@ -8497,7 +8467,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 341,
+                  "number": 343,
                   "children": [
                     {
                       "kind": "span",
@@ -8508,7 +8478,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L341C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L343C21"
                     },
                     {
                       "kind": "span",
@@ -8538,8 +8508,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8569,8 +8539,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8614,7 +8584,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 340,
+              "line": 342,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -8634,7 +8604,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 341,
+              "line": 343,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -8670,16 +8640,16 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(renaming)",
-          "line": 537,
+          "line": 539,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Remainder operator for two Vkm_Mat2x2 matrices.\n"
+                  "text": "Remainder operator for two Vkm_Mat2x3 matrices.\n"
                 }
               ]
             }
@@ -8690,7 +8660,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 537,
+                  "number": 539,
                   "children": [
                     {
                       "kind": "span",
@@ -8726,7 +8696,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L537C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L539C21"
                     },
                     {
                       "kind": "span",
@@ -8742,7 +8712,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L537C27"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L539C27"
                     },
                     {
                       "kind": "span",
@@ -8772,8 +8742,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8798,8 +8768,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8843,7 +8813,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 537,
+              "line": 539,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -8863,7 +8833,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 537,
+              "line": 539,
               "column": 27,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -8899,16 +8869,16 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(renaming)",
-          "line": 556,
+          "line": 558,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Remainder operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Remainder operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -8919,7 +8889,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 556,
+                  "number": 558,
                   "children": [
                     {
                       "kind": "span",
@@ -8955,7 +8925,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L556C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L558C21"
                     },
                     {
                       "kind": "span",
@@ -8985,8 +8955,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -8997,7 +8967,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 557,
+                  "number": 559,
                   "children": [
                     {
                       "kind": "span",
@@ -9008,7 +8978,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L557C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L559C21"
                     },
                     {
                       "kind": "span",
@@ -9069,8 +9039,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -9114,7 +9084,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 556,
+              "line": 558,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
@@ -9134,7 +9104,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 557,
+              "line": 559,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -9170,16 +9140,16 @@ GNATdoc.Documentation = {
         {
           "label": "rem",
           "qualifier": "(renaming)",
-          "line": 576,
+          "line": 578,
           "column": 15,
-          "src": "srcs/vulkan-math-mat2x2.ads.html",
+          "src": "srcs/vulkan-math-mat2x3.ads.html",
           "summary": [
             {
               "kind": "paragraph",
               "children": [
                 {
                   "kind": "span",
-                  "text": "Remainder operator for a Vkm_Mat2x2 matrix and a Vkm_Float scalar.\n"
+                  "text": "Remainder operator for a Vkm_Mat2x3 matrix and a Vkm_Float scalar.\n"
                 }
               ]
             }
@@ -9190,7 +9160,7 @@ GNATdoc.Documentation = {
               "children": [
                 {
                   "kind": "line",
-                  "number": 576,
+                  "number": 578,
                   "children": [
                     {
                       "kind": "span",
@@ -9226,7 +9196,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "left",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L576C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L578C21"
                     },
                     {
                       "kind": "span",
@@ -9268,7 +9238,7 @@ GNATdoc.Documentation = {
                 },
                 {
                   "kind": "line",
-                  "number": 577,
+                  "number": 579,
                   "children": [
                     {
                       "kind": "span",
@@ -9279,7 +9249,7 @@ GNATdoc.Documentation = {
                       "kind": "span",
                       "cssClass": "identifier",
                       "text": "right",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L577C21"
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L579C21"
                     },
                     {
                       "kind": "span",
@@ -9309,8 +9279,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -9340,8 +9310,8 @@ GNATdoc.Documentation = {
                     {
                       "kind": "span",
                       "cssClass": "identifier",
-                      "text": "Vkm_Mat2x2",
-                      "href": "docs/vulkan__math__mat2x2___spec.html#L42C13"
+                      "text": "Vkm_Mat2x3",
+                      "href": "docs/vulkan__math__mat2x3___spec.html#L46C13"
                     },
                     {
                       "kind": "span",
@@ -9385,7 +9355,7 @@ GNATdoc.Documentation = {
           "parameters": [
             {
               "label": "left",
-              "line": 576,
+              "line": 578,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.Vkm_Float",
@@ -9405,7 +9375,7 @@ GNATdoc.Documentation = {
             },
             {
               "label": "right",
-              "line": 577,
+              "line": 579,
               "column": 21,
               "type": {
                 "label": "Vulkan.Math.GenMatrix.Vkm_GenMatrix",
