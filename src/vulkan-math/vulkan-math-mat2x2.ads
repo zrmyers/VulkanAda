@@ -44,7 +44,7 @@ package Vulkan.Math.Mat2x2 is
 
     --< An alternative name for a 2x2 single-precision floating point matrix
     subtype Vkm_Mat2 is Vkm_Mat2x2;
-    
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Constructor for Vkm_Mat2x2 type.
@@ -54,9 +54,9 @@ package Vulkan.Math.Mat2x2 is
     --< component in the identity matrix.
     --<
     --<     | 1 0 |
-    --<     | 0 1 \
+    --<     | 0 1 |
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x2 return Vkm_Mat2x2 is
@@ -77,7 +77,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param diag
     --< The value to set along the diagonal.
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x2 (
@@ -94,12 +94,12 @@ package Vulkan.Math.Mat2x2 is
     --< particular value from a 2 dimmensional vector.
     --<
     --<     | diag.x    0   |
-    --<     |  0     diag.y \
+    --<     |  0     diag.y |
     --<
     --< @param diag
     --< The value to set along the diagonal.
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x2 (
@@ -122,14 +122,14 @@ package Vulkan.Math.Mat2x2 is
     --<
     --< @param value2
     --< The second value to set for the matrix.
-    --< 
+    --<
     --< @param value3
     --< The third value to set for the matrix.
     --<
     --< @param value4
     --< The fourth value to set for the matrix.
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x2 (
@@ -157,7 +157,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param value2
     --< The second value to set for the matrix.
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x2 (
@@ -178,14 +178,14 @@ package Vulkan.Math.Mat2x2 is
     --<     | value1.c0r0 value1.c1r0 |
     --<     | value1.c0r1 value1.c1r1 \
     --<
-    --< If the provided matrix has dimmensions that are not the same as this 
+    --< If the provided matrix has dimmensions that are not the same as this
     --< matrix, the corresponding element in the 4x4 identity matrix is used for
     --< out of bounds accesses.
     --<
     --< @param value1
     --< The submatrix to extract values from.
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x2 (
@@ -206,7 +206,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param left
     --< The vector to the left of the concatenation symbol.
     --<
-    --< @return 
+    --< @return
     --< A 2x2 matrix.
     ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_Vec2) return Vkm_Mat2x2 is
@@ -226,7 +226,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< True if the two matrices are equal. Otherwise false.
     ----------------------------------------------------------------------------
     function "=" (left, right : in     Vkm_Mat2x2) return Vkm_Bool renames GFM.Op_Is_Equal;
@@ -242,7 +242,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The matrix, unchanged.
     ----------------------------------------------------------------------------
     function "+" (right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Plus_Matrix;
@@ -253,13 +253,13 @@ package Vulkan.Math.Mat2x2 is
     --< Unary Minus operator on a Vkm_Mat2x2.
     --<
     --< @description
-    --< Perform Unary Minus operation on the matrix, returning the matrix with 
+    --< Perform Unary Minus operation on the matrix, returning the matrix with
     --< each element negated.
     --<
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The matrix, negated.
     ----------------------------------------------------------------------------
     function "-" (right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Minus_Matrix;
@@ -270,13 +270,13 @@ package Vulkan.Math.Mat2x2 is
     --< Absolute Value operator on a Vkm_Mat2x2.
     --<
     --< @description
-    --< Perform the Absolute Value operation on the matrix, returning the matrix with 
+    --< Perform the Absolute Value operation on the matrix, returning the matrix with
     --< each each negative element negated.
     --<
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The matrix, with all positive elements.
     ----------------------------------------------------------------------------
     function "abs" (right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Abs_Matrix;
@@ -295,7 +295,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "mod" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Matrix_Mod_Matrix;
@@ -314,7 +314,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "mod" (left  : in     Vkm_Mat2x2;
@@ -334,7 +334,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "mod" (left  : in     Vkm_Float;
@@ -354,7 +354,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "**" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Matrix_Pow_Matrix;
@@ -373,7 +373,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "**" (left  : in     Vkm_Mat2x2;
@@ -393,7 +393,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "**" (left  : in     Vkm_Float;
@@ -413,7 +413,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The left argument added to the right argument.
     ----------------------------------------------------------------------------
     function "+" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Matrix_Plus_Matrix;
@@ -432,7 +432,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "+" (left  : in     Vkm_Mat2x2;
@@ -452,7 +452,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "+" (left  : in     Vkm_Float;
@@ -472,7 +472,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "-" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Matrix_Minus_Matrix;
@@ -491,7 +491,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "-" (left  : in     Vkm_Mat2x2;
@@ -511,7 +511,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "-" (left  : in     Vkm_Float;
@@ -531,7 +531,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "rem" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Matrix_Rem_Matrix;
@@ -550,7 +550,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "rem" (left  : in     Vkm_Mat2x2;
@@ -570,7 +570,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "rem" (left  : in     Vkm_Float;
@@ -590,7 +590,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "/" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames Op_Matrix_Div_Matrix;
@@ -609,7 +609,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "/" (left  : in     Vkm_Mat2x2;
@@ -629,7 +629,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "/" (left  : in     Vkm_Float;
@@ -653,7 +653,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "*" (left, right : in     Vkm_Mat2x2) return Vkm_Mat2x2 renames GFM.Op_Matrix_Mult_Matrix;
@@ -676,7 +676,7 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "*" (left  : in     Vkm_Mat2x2;
@@ -700,11 +700,11 @@ package Vulkan.Math.Mat2x2 is
     --< @param right
     --< The right operator argument.
     --<
-    --< @return 
+    --< @return
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "*" (left  : in     Vkm_Vec2;
                   right : in     Vkm_Mat2x2  ) return Vkm_Vec2 renames Op_Vector_Mult_Matrix;
-    
-    
+
+
 end Vulkan.Math.Mat2x2;
