@@ -656,17 +656,17 @@ package Vulkan.Math.Mat2x3 is
     --< The result of the component-wise operator on the arguments.
     ----------------------------------------------------------------------------
     function "*" (
-        left  : in     Vkm_Mat2x2,
+        left  : in     Vkm_Mat2x2;
         right : in     Vkm_Mat2x3) return Vkm_Mat2x3 renames GFM.Op_Matrix_Mult_Matrix;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Linear Algebraic Multiplication for a Vkm_Mat2x3 with a 2D vector.
+    --< Linear Algebraic Multiplication for a Vkm_Mat2x3 with a vector.
     --<
     --< @description
     --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right
-    --< Vkm_Vec2 vector.
+    --< Vkm_Vec3 vector.
     --<
     --< @param left
     --< The left operator argument.
@@ -683,10 +683,10 @@ package Vulkan.Math.Mat2x3 is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Linear Algebraic Multiplication for a Vkm_Mat2x3 with a 2D vector.
+    --< Linear Algebraic Multiplication for a Vkm_Mat2x3 with a vector.
     --<
     --< @description
-    --< Perform Linear Algebraic Multiplication of the left Vkm_Mat2x3 by the right
+    --< Perform Linear Algebraic Multiplication of the right Vkm_Mat2x3 by the left
     --< Vkm_Vec2 vector.
     --<
     --< @param left
