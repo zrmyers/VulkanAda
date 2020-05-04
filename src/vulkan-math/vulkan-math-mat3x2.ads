@@ -51,52 +51,13 @@ package Vulkan.Math.Mat3x2 is
     --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 3x2 matrix with each component set to the corresponding
-    --< component in the identity matrix.
+    --< Construct a 3x2 matrix with each component set to 0.0
     --<
     --< @return
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat3x2 return Vkm_Mat3x2 is
-        (GFM.Make_GenMatrix(cN => 2, rN => 1, diag => 1.0)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Constructor for Vkm_Mat3x2 type.
-    --<
-    --< @description
-    --< Construct a 3x2 matrix with each component on the diagonal set to a
-    --< particular value.
-    --<
-    --< @param diag
-    --< The value to set along the diagonal.
-    --<
-    --< @return
-    --< A 3x2 matrix.
-    ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
-        diag : in     Vkm_Float) return Vkm_Mat3x2 is
-        (GFM.Make_GenMatrix(cN => 2, rN => 1, diag => diag)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Constructor for Vkm_Mat3x2 type.
-    --<
-    --< @description
-    --< Construct a 3x2 matrix with each component on the diagonal set to a
-    --< particular value from a 2 dimmensional vector.
-    --<
-    --< @param diag
-    --< The value to set along the diagonal.
-    --<
-    --< @return
-    --< A 3x2 matrix.
-    ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
-        diag : in     Vkm_Vec2) return Vkm_Mat3x2 is
-        (GFM.Make_GenMatrix(cN => 2, rN => 1, diag => diag)) with Inline;
+        (GFM.Make_GenMatrix(cN => 2, rN => 1)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -105,6 +66,10 @@ package Vulkan.Math.Mat3x2 is
     --<
     --< @description
     --< Construct a 3x2 matrix with each component set to a different value.
+    --<
+    --<     | value1 value4 |
+    --<     | value2 value5 |
+    --<     | value3 value6 |
     --<
     --< @param value1
     --< The first value to set for the matrix.
@@ -118,15 +83,22 @@ package Vulkan.Math.Mat3x2 is
     --< @param value4
     --< The fourth value to set for the matrix.
     --<
+    --< @param value5
+    --< The fifth value to set for the matrix.
+    --<
+    --< @param value6
+    --< The sixth value to set for the matrix.
+    --<
     --< @return
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat3x2 (
-        value1, value2, value3, value4 : in     Vkm_Float) return Vkm_Mat3x2 is
+        value1, value2, value3,
+        value4, value5, value6 : in     Vkm_Float) return Vkm_Mat3x2 is
         (GFM.Make_GenMatrix(
              cN => 2, rN => 1,
-             c0r0_val => value1, c0r1_val => value2,
-             c1r0_val => value3, c1r1_val => value4)) with Inline;
+             c0r0_val => value1, c0r1_val => value2, c0r2_val => value3,
+             c1r0_val => value4, c1r1_val => value5, c1r2_val => value6)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -134,7 +106,7 @@ package Vulkan.Math.Mat3x2 is
     --< Constructor for Vkm_Mat3x2 type.
     --<
     --< @description
-    --< Construct a 3x2 matrix with each column set to the value of a 2 dimmensional
+    --< Construct a 3x2 matrix with each column set to the value of a 3 dimmensional
     --< vector.
     --<
     --< @param value1
@@ -147,11 +119,11 @@ package Vulkan.Math.Mat3x2 is
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat3x2 (
-        value1, value2 : in     Vkm_Vec2) return Vkm_Mat3x2 is
+        value1, value2 : in     Vkm_Vec3) return Vkm_Mat3x2 is
         (GFM.Make_GenMatrix(
              cN => 2, rN => 1,
-             c0r0_val => value1.x, c0r1_val => value1.y,
-             c1r0_val => value2.x, c1r1_val => value2.y)) with Inline;
+             c0r0_val => value1.x, c0r1_val => value1.y, c0r2_val => value1.z,
+             c1r0_val => value2.x, c1r1_val => value2.y, c1r2_val => value1.z)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -175,8 +147,8 @@ package Vulkan.Math.Mat3x2 is
         value1 : in     Vkm_Mat) return Vkm_Mat3x2 is
         (GFM.Make_GenMatrix(
              cN => 2, rN => 1,
-             c0r0_val => value1.c0r0, c0r1_val => value1.c0r1,
-             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1)) with Inline;
+             c0r0_val => value1.c0r0, c0r1_val => value1.c0r1, c0r2_val => value1.c0r2,
+             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1, c1r2_val => value1.c1r2)) with Inline;
 
 
     ----------------------------------------------------------------------------
