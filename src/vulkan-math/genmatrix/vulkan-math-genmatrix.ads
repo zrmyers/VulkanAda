@@ -37,6 +37,7 @@ generic
     type Base_Type is digits <>;
     type Base_Vector_Type (<>) is tagged private;
 
+    with function Image (instance : Base_Vector_Type) return String;
 
     ----------------------------------------------------------------------------
     --< @summary
@@ -173,6 +174,27 @@ package Vulkan.Math.GenMatrix is
     type Vkm_GenMatrix_Reference(instance : not null access Vkm_GenMatrix) is null record
         with Implicit_Dereference => instance;
 
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< The image of the matrix
+    --<
+    --< @description
+    --< Generates a human readable string which contains the contents of the
+    --< instance of Vkm_GenMatrix. For a 2x2 matrix, this appears as a list of
+    --< the row vectors
+    --<
+    --<     "[ " & Image(mat.r0) & ", " & Image(mat.r1) & " ]"
+    --<
+    --< The Image() subprogram that is supplied during generic instantiation is used
+    --< to print the component of Base_Vector_Type.
+    --<
+    --< @param instance
+    --< The instance of Vkm_GenMatrix.
+    --<
+    --< @return
+    --< The human readable image of the matrix
+    ----------------------------------------------------------------------------
+    function Image (instance : in     Vkm_GenMatrix) return String;
 
     ----------------------------------------------------------------------------
     -- Element Getters
@@ -1200,7 +1222,7 @@ package Vulkan.Math.GenMatrix is
         instance  : in     Vkm_GenMatrix;
         row_index : in     Vkm_Indices) return Base_Vector_Type is
         (Make_GenType(
-             To_Vkm_Length(instance.last_row_index),
+             To_Vkm_Length(instance.last_column_index),
              instance.Element(0, row_index),
              instance.Element(1, row_index),
              instance.Element(2, row_index),

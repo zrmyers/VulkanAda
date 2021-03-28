@@ -21,40 +21,20 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Math.GenMatrix;
-with Vulkan.Math.GenDType;
+with Vulkan.Math.Mat2x2;
 
-use Vulkan.Math.GenDType;
+use Vulkan.Math.Mat2x2;
 
 --------------------------------------------------------------------------------
---< @group Vulkan Math GenMatrix
+--< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides an instantiation of a matrix for the Vkm_Double type.
---<
---< @description
---< The Vkm_GenDMatrix type is a matrix of double precision floating point numbers
---< that can have up to 4 rows and 4 columns.
+--< This package provides a single precision floating point matrix with 2 rows
+--< and 2 columns.
 --------------------------------------------------------------------------------
-package Vulkan.Math.GenDMatrix is
-    pragma Preelaborate;
-    pragma Pure;
+package Vulkan.Math.Mat2x2.Test is
 
-    --< @private
-    --< GDM is an instantiation of the GenMatrix package for the Vkm_Double type.
-    package GDM is new Vulkan.Math.GenMatrix(
-        Base_Type        => Vkm_Double,
-        Base_Vector_Type => Vkm_GenDType,
-        x                => GDT.x,
-        y                => GDT.y,
-        z                => GDT.z,
-        w                => GDT.w,
-        Make_GenType     => GDT.Make_GenType,
-        Image            => GDT.Image);
+-- Test Harness for Mat2x2 regression tests
+procedure Test_Mat2x2;
 
-    --< The Vkm_GenDMatrix is a subtype of Vkm_GenMatrix for the instantiated GDM
-    --< package.
-    subtype Vkm_GenDMatrix is GDM.Vkm_GenMatrix;
-
-
-end Vulkan.Math.GenDMatrix;
+end Vulkan.Math.Mat2x2.Test;

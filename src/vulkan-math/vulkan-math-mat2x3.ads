@@ -58,7 +58,7 @@ package Vulkan.Math.Mat2x3 is
     --< A 2x3 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x3 return Vkm_Mat2x3 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 2)) with Inline;
+        (GFM.Make_GenMatrix(cN => 2, rN => 1)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -97,10 +97,10 @@ package Vulkan.Math.Mat2x3 is
         value3, value4,
         value5, value6 : in     Vkm_Float) return Vkm_Mat2x3 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
-             c0r0_val => value1, c0r1_val => value2,
-             c1r0_val => value3, c1r1_val => value4,
-             c2r0_val => value5, c2r1_val => value6)) with Inline;
+             cN => 2, rN => 1,
+             c0r0_val => value1, c0r1_val => value4,
+             c1r0_val => value2, c1r1_val => value5,
+             c2r0_val => value3, c2r1_val => value6)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -108,7 +108,7 @@ package Vulkan.Math.Mat2x3 is
     --< Constructor for Vkm_Mat2x3 type.
     --<
     --< @description
-    --< Construct a 2x3 matrix with each column set to the value of a 2 dimmensional
+    --< Construct a 2x3 matrix with each row set to the value of a 3 dimmensional
     --< vector.
     --<
     --< @param value1
@@ -124,12 +124,12 @@ package Vulkan.Math.Mat2x3 is
     --< A 2x3 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat2x3 (
-        value1, value2, value3 : in     Vkm_Vec2) return Vkm_Mat2x3 is
+        value1, value2 : in     Vkm_Vec3) return Vkm_Mat2x3 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
-             c0r0_val => value1.x, c0r1_val => value1.y,
-             c1r0_val => value2.x, c1r1_val => value2.y,
-             c2r0_val => value3.x, c2r1_val => value3.y)) with Inline;
+             cN => 2, rN => 1,
+             c0r0_val => value1.x, c0r1_val => value2.x,
+             c1r0_val => value1.y, c1r1_val => value2.y,
+             c2r0_val => value1.z, c2r1_val => value2.z)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -152,7 +152,7 @@ package Vulkan.Math.Mat2x3 is
     function Make_Mat2x3 (
         value1 : in     Vkm_Mat) return Vkm_Mat2x3 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
+             cN => 2, rN => 1,
              c0r0_val => value1.c0r0, c0r1_val => value1.c0r1,
              c1r0_val => value1.c1r0, c1r1_val => value1.c1r1,
              c2r0_val => value1.c2r0, c2r1_val => value1.c2r1)) with Inline;

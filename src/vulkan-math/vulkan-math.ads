@@ -31,16 +31,16 @@ with Ada.Unchecked_Conversion;
 package Vulkan.Math is
     pragma Preelaborate;
     pragma Pure;
-    
+
     ----------------------------------------------------------------------------
     -- Math Constants
     ----------------------------------------------------------------------------
     --< A constant value representing PI.
     PI : constant := Ada.Numerics.Pi;
-    
+
     --< A constant value representing Euler's number e.
     E  : constant := Ada.Numerics.e;
-    
+
     ----------------------------------------------------------------------------
     -- Math Scalar Types
     ----------------------------------------------------------------------------
@@ -50,25 +50,25 @@ package Vulkan.Math is
     for Vkm_Bool use (False => 0,
                       True  => 1);
     for Vkm_Bool'Size use Interfaces.C.unsigned_char'Size;
-    
+
     --< A 32-bit unsigned integer type.
     type Vkm_Uint is new Interfaces.C.unsigned;
-    
+
     --< A 32-bit 2's complement signed integer type.
     type Vkm_Int is new Interfaces.C.int;
-    
+
     --< A 32-bit single precision signed floating point number.
     type Vkm_Float is new Interfaces.C.C_Float;
-    
+
     --< A 64-bit double precision signed floating point number.
     type Vkm_Double is new Interfaces.C.double;
-    
+
     --< The maximum dmmension for a vector or a row or column of a matrix.
     type Vkm_Length is new Integer range 1 .. 4;
-    
+
     --< The set of indices allowed for use with any vector or matrix.
     type Vkm_Indices is new Integer range 0 .. 3;
-    
+
     ----------------------------------------------------------------------------
     -- Conversion Functions
     ----------------------------------------------------------------------------
@@ -84,8 +84,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Indices (length : in Vkm_Length) return Vkm_Indices is
         (Vkm_Indices(Vkm_Length'Base(length) - 1)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Length.
@@ -118,8 +118,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Bool (value : in     Vkm_Uint  ) return Vkm_Bool is
         (Vkm_Bool(value /= 0)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Bool.
@@ -135,8 +135,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Bool (value : in     Vkm_Int   ) return Vkm_Bool is
         (Vkm_Bool(value /= 0)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Bool.
@@ -152,8 +152,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Bool (value : in     Vkm_Float ) return Vkm_Bool is
         (Vkm_Bool(value /= 0.0)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Bool.
@@ -169,8 +169,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Bool (value : in     Vkm_Double) return Vkm_Bool is
         (Vkm_Bool(value /= 0.0)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Uint.
@@ -186,8 +186,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Uint (value : in     Vkm_Bool  ) return Vkm_Uint is
         (if value then 1 else 0) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Uint.
@@ -201,8 +201,8 @@ package Vulkan.Math is
     --< @return The conversion to Vkm_Uint.
     ----------------------------------------------------------------------------
     function To_Vkm_Uint is new Ada.Unchecked_Conversion(Source => Vkm_Int, Target => Vkm_Uint);
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Uint.
@@ -216,8 +216,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Uint (value : in     Vkm_Float ) return Vkm_Uint is
         (Vkm_Uint(Vkm_Float'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Uint.
@@ -231,8 +231,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Uint (value : in     Vkm_Double) return Vkm_Uint is
         (Vkm_Uint(Vkm_Double'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Int.
@@ -246,8 +246,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Int (value : in     Vkm_Bool  ) return Vkm_Int is
         (if value then 1 else 0) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Int.
@@ -256,15 +256,15 @@ package Vulkan.Math is
     --< The following operations convert various VKM Math types to Vkm_Int
     --< math types.
     --
-    --< Conversion from Vkm_Uint preserves the bit pattern of the argument, 
+    --< Conversion from Vkm_Uint preserves the bit pattern of the argument,
     --< causing the values of very large unsigned integer to change due to the
     --< sign bit being set.
     --
     --< @return The conversion to Vkm_Int.
     ----------------------------------------------------------------------------
     function To_Vkm_Int is new Ada.Unchecked_Conversion(Source => Vkm_Uint, Target => Vkm_Int);
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Int.
@@ -278,8 +278,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Int (value : in     Vkm_Float ) return Vkm_Int is
         (Vkm_Int(Vkm_Float'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Int.
@@ -293,8 +293,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Int (value : in     Vkm_Double) return Vkm_Int is
         (Vkm_Int(Vkm_Double'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Float.
@@ -309,8 +309,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Float (value : in     Vkm_Bool  ) return Vkm_Float is
         (if value then 1.0 else 0.0) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Float.
@@ -325,8 +325,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Float (value : in     Vkm_Uint  ) return Vkm_Float is
         (Vkm_Float(Vkm_Uint'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Float.
@@ -341,8 +341,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Float (value : in     Vkm_Int   ) return Vkm_Float is
         (Vkm_Float(Vkm_Int'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Float.
@@ -357,8 +357,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Float (value : in     Vkm_Double) return Vkm_Float is
         (Vkm_Float(Vkm_Double'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Float.
@@ -373,8 +373,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Double (value : in     Vkm_Bool ) return Vkm_Double is
         (if value then 1.0 else 0.0) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Double.
@@ -389,8 +389,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Double (value : in     Vkm_Uint ) return Vkm_Double is
         (Vkm_Double(Vkm_Uint'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Double.
@@ -405,8 +405,8 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Double (value : in     Vkm_Int  ) return Vkm_Double is
         (Vkm_Double(Vkm_Int'Base(value))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Convert to Vkm_Double.
@@ -421,6 +421,6 @@ package Vulkan.Math is
     ----------------------------------------------------------------------------
     function To_Vkm_Double (value : in     Vkm_Float) return Vkm_Double is
         (Vkm_Double(Vkm_Float'Base(value))) with Inline;
-        
- 
+
+
 end Vulkan.Math;

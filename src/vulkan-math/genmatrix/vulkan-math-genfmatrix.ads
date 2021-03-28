@@ -52,11 +52,26 @@ package Vulkan.Math.GenFMatrix is
         y                => GFT.y,
         z                => GFT.z,
         w                => GFT.w,
-        Make_GenType     => GFT.Make_GenType);
+        Make_GenType     => GFT.Make_GenType,
+        Image            => GFT.Image);
 
     --< The Vkm_GenFMatrix is a subtype of Vkm_GenMatrix from the instantiated GFM
     --< package.
     subtype Vkm_Mat is GFM.Vkm_GenMatrix;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Get the image of the Vkm_Mat matrix.
+    --<
+    --< @param instance
+    --< The instance of matrix to get the image of.
+    --<
+    --< @return
+    --< The image of the matrix.
+    ----------------------------------------------------------------------------
+    function Image (instance : in     Vkm_Mat) return String is
+        (GFM.Image(instance)) with inline;
 
 
     ----------------------------------------------------------------------------

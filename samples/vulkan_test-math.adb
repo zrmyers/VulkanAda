@@ -36,15 +36,20 @@ use Vulkan.Math.Vec4;
 With Vulkan.Math.Vec2;
 use Vulkan.Math.vec2;
 
+with Vulkan.Math.Mat2x2.Test;
+use Vulkan.Math.Mat2x2.Test;
 
-procedure Vulkan_Test.Math is 
-    
-    
+with Vulkan.Math.Mat2x3.Test;
+use Vulkan.Math.Mat2x3.Test;
+
+procedure Vulkan_Test.Math is
+
+
     x, y, z : Vkm_Vec4 := Make_Vec4(scalar_value => 1.0);
 
     l,m : Vkm_Vec2 := Make_Vec2(scalar_value => 2.0);
 
-    
+
 begin
 
     Put_Line("Hello World!");
@@ -53,10 +58,10 @@ begin
     Put_Line("x.x: " & Vkm_Float'Image(x.x));
     Put_Line("y.z: " & Vkm_Float'Image(y.z));
     z.y(x.x + y.z);
-    Put_Line("z.y := x.x + y.z" & Vkm_Float'Image(z.y));    
+    Put_Line("z.y := x.x + y.z" & Vkm_Float'Image(z.y));
     Put_Line(Vkm_Length'Image(z.Length));
     Put_Line("m : " & m.Image);
-    m.x(m.x * 2.0);               
+    m.x(m.x * 2.0);
     Put_Line("m: " & m.Image);
     Put_Line("x : " & x.Image);
     x := m & m;
@@ -65,5 +70,9 @@ begin
     Put_Line("z = " & z.Image);
     y := z + x;
     Put_Line("z + x = " & y.Image);
+
+    Test_Mat2x2;
+
+    Test_Mat2x3;
     
 end Vulkan_Test.Math;

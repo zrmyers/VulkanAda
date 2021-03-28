@@ -124,8 +124,8 @@ package Vulkan.Math.Mat2x2 is
         value1, value2, value3, value4 : in     Vkm_Float) return Vkm_Mat2x2 is
         (GFM.Make_GenMatrix(
              cN => 1, rN => 1,
-             c0r0_val => value1, c0r1_val => value2,
-             c1r0_val => value3, c1r1_val => value4)) with Inline;
+             c0r0_val => value1, c0r1_val => value3,
+             c1r0_val => value2, c1r1_val => value4)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -133,7 +133,7 @@ package Vulkan.Math.Mat2x2 is
     --< Constructor for Vkm_Mat2x2 type.
     --<
     --< @description
-    --< Construct a 2x2 matrix with each column set to the value of a 2 dimmensional
+    --< Construct a 2x2 matrix with each row set to the value of a 2 dimmensional
     --< vector.
     --<
     --< @param value1
@@ -149,8 +149,8 @@ package Vulkan.Math.Mat2x2 is
         value1, value2 : in     Vkm_Vec2) return Vkm_Mat2x2 is
         (GFM.Make_GenMatrix(
              cN => 1, rN => 1,
-             c0r0_val => value1.x, c0r1_val => value1.y,
-             c1r0_val => value2.x, c1r1_val => value2.y)) with Inline;
+             c0r0_val => value1.x, c0r1_val => value2.x,
+             c1r0_val => value1.y, c1r1_val => value2.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
