@@ -39,6 +39,9 @@ use Vulkan.Math.Vec3;
 with Vulkan.Math.Operators;
 use Vulkan.Math.Operators;
 
+with Vulkan.Test.Framework;
+use Vulkan.Test.Framework;
+
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
@@ -46,47 +49,6 @@ use Vulkan.Math.Operators;
 --< This package provides tests for single precision floating point mat2x3.
 --------------------------------------------------------------------------------
 package body Vulkan.Math.Mat2x3.Test is
-
-procedure Assert_Vkm_Bool_Equals(
-    actual : in Vkm_Bool;
-    expected : in Vkm_Bool) is
-
-    is_failure : Boolean := True;
-begin
-    is_failure := not( actual = expected);
-
-    if is_failure then
-        Put_Line("Assertion FAIL!");
-        Put_Line("    actual = " & actual'Image);
-        Put_Line("    expected = " & expected'Image);
-    else
-        Put_Line("Assertion PASS!");
-    end if;
-end Assert_Vkm_Bool_Equals;
-
-procedure Assert_Mat2x3_Equals(
-    mat : in Vkm_Mat2x3;
-    value1, value2, value3, value4, value5, value6 : in Vkm_Float) is
-
-    is_failure : Boolean := True;
-begin
-    is_failure := not (mat.c0r0 = value1 and
-                       mat.c1r0 = value2 and
-                       mat.c2r0 = value3 and
-                       mat.c0r1 = value4 and
-                       mat.c1r1 = value5 and
-                       mat.c2r1 = value6);
-
-    if is_failure = True then
-        Put_Line("Assertion FAIL!");
-        Put_Line("    Actual mat = " & mat.Image);
-        Put_Line("    Expected mat = " &
-                 "[[ " & value1'Image & ", " & value2'Image & ", " & value3'Image & " ], " &
-                  "[ " & value4'Image & ", " & value5'Image & ", " & value6'Image & " ]]");
-    else
-        Put_Line("Assertion PASS!");
-    end if;
-end Assert_Mat2x3_Equals;
 
 -- Test Mat2x3
 procedure Test_Mat2x3 is

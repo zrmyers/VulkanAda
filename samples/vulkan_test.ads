@@ -22,5 +22,6 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 package Vulkan_Test is
-
+    pragma Preelaborate;
+    pragma Pure;
 end Vulkan_Test;

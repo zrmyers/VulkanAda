@@ -21,63 +21,44 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Ada.Text_IO;
-use Ada.Text_IO;
-
 with Vulkan.Math;
+with Vulkan.Math.Mat2x2;
+with Vulkan.Math.Mat2x3;
+with Vulkan.Math.Mat2x4;
+
 use Vulkan.Math;
+use Vulkan.Math.Mat2x2;
+use Vulkan.Math.Mat2x3;
+use Vulkan.Math.Mat2x4;
 
-with Vulkan.Math.Operators;
-use Vulkan.Math.Operators;
+--------------------------------------------------------------------------------
+--< @group Vulkan Test Framwork
+--------------------------------------------------------------------------------
+--< @summary
+--< This package provides a simple framework for validating the VulkanAda library.
+--------------------------------------------------------------------------------
+package Vulkan.Test.Framework is
 
-with Vulkan.Math.Vec4;
-use Vulkan.Math.Vec4;
+-- An exception that is raised when a failure is observed.
+VULKAN_TEST_ASSERTION_FAIL : exception;
 
-With Vulkan.Math.Vec2;
-use Vulkan.Math.vec2;
+procedure Assert_Vkm_Bool_Equals(
+    actual : in Vkm_Bool;
+    expected : in Vkm_Bool);
 
-with Vulkan.Math.Mat2x2.Test;
-use Vulkan.Math.Mat2x2.Test;
+procedure Assert_Mat2x2_Equals(
+    mat : in Vkm_Mat2;
+    value1, value2,
+    value3, value4 : in Vkm_Float);
 
-with Vulkan.Math.Mat2x3.Test;
-use Vulkan.Math.Mat2x3.Test;
+procedure Assert_Mat2x3_Equals(
+    mat : in Vkm_Mat2x3;
+    value1, value2, value3,
+    value4, value5, value6 : in Vkm_Float);
 
-with Vulkan.Math.Mat2x4.Test;
-use Vulkan.Math.Mat2x4.Test;
+procedure Assert_Mat2x4_Equals(
+    mat : in Vkm_Mat2x4;
+    value1, value2, value3, value4,
+    value5, value6, value7, value8 : in Vkm_Float);
 
-procedure Vulkan_Test.Math is
-
-
-    x, y, z : Vkm_Vec4 := Make_Vec4(scalar_value => 1.0);
-
-    l,m : Vkm_Vec2 := Make_Vec2(scalar_value => 2.0);
-
-
-begin
-
-    Put_Line("Hello World!");
-    Put_Line("z.y: " & Vkm_Float'Image(z.y));
-    Put_Line("x.x + y.Z: " & Vkm_Float'Image(x.X + y.z));
-    Put_Line("x.x: " & Vkm_Float'Image(x.x));
-    Put_Line("y.z: " & Vkm_Float'Image(y.z));
-    z.y(x.x + y.z);
-    Put_Line("z.y := x.x + y.z" & Vkm_Float'Image(z.y));
-    Put_Line(Vkm_Length'Image(z.Length));
-    Put_Line("m : " & m.Image);
-    m.x(m.x * 2.0);
-    Put_Line("m: " & m.Image);
-    Put_Line("x : " & x.Image);
-    x := m & m;
-    Put_Line("x:= m & m " & x.Image);
-    z := 1.0 & 2.0 & 3.0 & 4.0;
-    Put_Line("z = " & z.Image);
-    y := z + x;
-    Put_Line("z + x = " & y.Image);
-
-    Test_Mat2x2;
-
-    Test_Mat2x3;
-
-    Test_Mat2x4;
-
-end Vulkan_Test.Math;
+end Vulkan.Test.Framework;
