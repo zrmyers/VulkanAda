@@ -21,52 +21,17 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Math;
-with Vulkan.Math.Mat2x2;
-with Vulkan.Math.Mat2x3;
-with Vulkan.Math.Mat2x4;
-with Vulkan.Math.Mat3x2;
-
-use Vulkan.Math;
-use Vulkan.Math.Mat2x2;
-use Vulkan.Math.Mat2x3;
-use Vulkan.Math.Mat2x4;
-use Vulkan.Math.Mat3x2;
 
 --------------------------------------------------------------------------------
---< @group Vulkan Test Framwork
+--< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a simple framework for validating the VulkanAda library.
+--< This package provides a single precision floating point matrix with 2 rows
+--< and 2 columns.
 --------------------------------------------------------------------------------
-package Vulkan.Test.Framework is
+package Vulkan.Math.Mat3x2.Test is
 
--- An exception that is raised when a failure is observed.
-VULKAN_TEST_ASSERTION_FAIL : exception;
+-- Test Harness for Mat3x2 regression tests
+procedure Test_Mat3x2;
 
-procedure Assert_Vkm_Bool_Equals(
-    actual : in Vkm_Bool;
-    expected : in Vkm_Bool);
-
-procedure Assert_Mat2x2_Equals(
-    mat : in Vkm_Mat2;
-    value1, value2,
-    value3, value4 : in Vkm_Float);
-
-procedure Assert_Mat2x3_Equals(
-    mat : in Vkm_Mat2x3;
-    value1, value2, value3,
-    value4, value5, value6 : in Vkm_Float);
-
-procedure Assert_Mat2x4_Equals(
-    mat : in Vkm_Mat2x4;
-    value1, value2, value3, value4,
-    value5, value6, value7, value8 : in Vkm_Float);
-
-procedure Assert_Mat3x2_Equals(
-    mat : in Vkm_Mat3x2;
-    value1, value2,
-    value3, value4,
-    value5, value6 : in Vkm_Float);
-
-end Vulkan.Test.Framework;
+end Vulkan.Math.Mat3x2.Test;

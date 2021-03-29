@@ -144,4 +144,37 @@ begin
     end if;
 end Assert_Mat2x4_Equals;
 
+
+--------------------------------------------------------------------------------
+
+
+procedure Assert_Mat3x2_Equals(
+    mat : in Vkm_Mat3x2;
+    value1, value2,
+    value3, value4,
+    value5, value6 : in Vkm_Float) is
+
+    is_failure : Boolean := True;
+begin
+    is_failure := not (mat.c0r0 = value1 and
+                       mat.c1r0 = value2 and
+                       mat.c0r1 = value3 and
+                       mat.c1r1 = value4 and
+                       mat.c0r2 = value5 and
+                       mat.c1r2 = value6);
+
+    if is_failure = True then
+        Put_Line("Assertion FAIL!");
+        Put_Line("    Actual mat = " & mat.Image);
+        Put_Line("    Expected mat = " &
+                 "[[ " & value1'Image & ", " & value2'Image & " ], " &
+                  "[ " & value3'Image & ", " & value4'Image & " ], " &
+                  "[ " & value5'Image & ", " & value6'Image & " ]]");
+        raise VULKAN_TEST_ASSERTION_FAIL;
+    else
+        Put_Line("Assertion PASS!");
+    end if;
+end Assert_Mat3x2_Equals;
+
+
 end Vulkan.Test.Framework;

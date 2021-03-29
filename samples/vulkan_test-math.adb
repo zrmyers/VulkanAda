@@ -37,13 +37,14 @@ With Vulkan.Math.Vec2;
 use Vulkan.Math.vec2;
 
 with Vulkan.Math.Mat2x2.Test;
-use Vulkan.Math.Mat2x2.Test;
-
 with Vulkan.Math.Mat2x3.Test;
-use Vulkan.Math.Mat2x3.Test;
-
 with Vulkan.Math.Mat2x4.Test;
+with Vulkan.Math.Mat3x2.Test;
+
+use Vulkan.Math.Mat2x2.Test;
+use Vulkan.Math.Mat2x3.Test;
 use Vulkan.Math.Mat2x4.Test;
+use Vulkan.Math.Mat3x2.Test;
 
 procedure Vulkan_Test.Math is
 
@@ -80,4 +81,6 @@ begin
 
     Test_Mat2x4;
 
+    Test_Mat3x2;
+    
 end Vulkan_Test.Math;
