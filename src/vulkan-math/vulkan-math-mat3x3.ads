@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -117,15 +117,33 @@ package Vulkan.Math.Mat3x3 is
     --< @param value4
     --< The fourth value to set for the matrix.
     --<
+    --< @param value5
+    --< The fifth value to set for the matrix.
+    --<
+    --< @param value6
+    --< The sixth value to set for the matrix.
+    --<
+    --< @param value7
+    --< The seventh value to set for the matrix.
+    --<
+    --< @param value8
+    --< The eighth value to set  for the matrix.
+    --<
+    --< @param value9
+    --< The ninth value to set for the matrix.
+    --<
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat3x3 (
-        value1, value2, value3, value4 : in     Vkm_Float) return Vkm_Mat3x3 is
+        value1, value2, value3,
+        value4, value5, value6,
+        value7, value8, value9 : in     Vkm_Float) return Vkm_Mat3x3 is
         (GFM.Make_GenMatrix(
              cN => 2, rN => 2,
-             c0r0_val => value1, c0r1_val => value2,
-             c1r0_val => value3, c1r1_val => value4)) with Inline;
+             c0r0_val => value1, c0r1_val => value4, c0r2_val => value7,
+             c1r0_val => value2, c1r1_val => value5, c1r2_val => value8,
+             c2r0_val => value3, c2r1_val => value6, c2r2_val => value9)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -146,11 +164,12 @@ package Vulkan.Math.Mat3x3 is
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
     function Make_Mat3x3 (
-        value1, value2 : in     Vkm_Vec3) return Vkm_Mat3x3 is
+        value1, value2, value3 : in     Vkm_Vec3) return Vkm_Mat3x3 is
         (GFM.Make_GenMatrix(
              cN => 2, rN => 2,
-             c0r0_val => value1.x, c0r1_val => value1.y,
-             c1r0_val => value2.x, c1r1_val => value2.y)) with Inline;
+             c0r0_val => value1.x, c0r1_val => value2.x, c0r2_val => value3.x,
+             c1r0_val => value1.y, c1r1_val => value2.y, c1r2_val => value3.y,
+             c2r0_val => value1.z, c2r1_val => value2.z, c2r2_val => value3.z)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -174,8 +193,9 @@ package Vulkan.Math.Mat3x3 is
         value1 : in     Vkm_Mat) return Vkm_Mat3x3 is
         (GFM.Make_GenMatrix(
              cN => 2, rN => 2,
-             c0r0_val => value1.c0r0, c0r1_val => value1.c0r1,
-             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1)) with Inline;
+             c0r0_val => value1.c0r0, c0r1_val => value1.c0r1, c0r2_val => value1.c0r2,
+             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1, c1r2_val => value1.c1r2,
+             c2r0_val => value1.c2r0, c2r1_val => value1.c2r1, c2r2_val => value1.c2r2)) with Inline;
 
 
     ----------------------------------------------------------------------------

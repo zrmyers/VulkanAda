@@ -27,9 +27,9 @@ with Ada.Numerics.Generic_Elementary_Functions;
 --< @group Vulkan Math Numerics
 --------------------------------------------------------------------------------
 --< @summary
---< This package instantiates Ada generic numerical operations for use by the 
+--< This package instantiates Ada generic numerical operations for use by the
 --< Vulkan Math Library.
---< 
+--<
 --< @description
 --< The Ada Numerics Generic Elementary Functions are instantiated for the Vkm_Double
 --< and Vkm_Float types. Additional generic algorithms for Ada floating point types
@@ -40,30 +40,25 @@ package Vulkan.Math.Numerics is
     pragma Pure;
     
     --< @private
-    --< Instantiation of Generic Elementary Functions for Float.
-    package VKM_FLT_NEF is new 
-        Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Float);
-    
-    --< @private
     --< Instantiation of Generic Elemantry Functions for Double.
     package VKM_DBL_NEF is new
         Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Double);
-        
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Algorithm for computing the "modf" for a floating point type.
     --<
     --< @description
-    --< This operation separates the floating point into its integer part and its 
+    --< This operation separates the floating point into its integer part and its
     --< fraction part.
     --<
-    --< @param x 
+    --< @param x
     --< Mixed integer and fraction number.
     --<
-    --< @param i 
+    --< @param i
     --< The integer part of 'x'.
     --<
-    --< @return 
+    --< @return
     --< The fraction part of 'x'
     ----------------------------------------------------------------------------
     generic
@@ -81,13 +76,13 @@ package Vulkan.Math.Numerics is
     --<    t = t * t * (3 - 2 * t)
     --<    return t
     --<
-    --< @param edge0 
+    --< @param edge0
     --< The first edge to interpolate between.
-    --< 
-    --< @param edge1 
+    --<
+    --< @param edge1
     --< The second edge to interpolate between.
     --<
-    --< @param x 
+    --< @param x
     --< The value to apply the step function to.
     --<
     --< @return
@@ -97,26 +92,26 @@ package Vulkan.Math.Numerics is
         type Floating_Point is digits <>;
         with function Clamp (edge0, edge1, x : in     Floating_Point) return Floating_Point;
     function Smooth_Step (edge0, edge1, x : in     Floating_Point) return Floating_Point;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
-    --< Determine whether the input holds an Inf. 
+    --< Determine whether the input holds an Inf.
     --<
     --< @description
     --< Determine whether the input holds an Inf. Always returns false.
     --<
-    --< @param x 
+    --< @param x
     --< The value to test.
     --<
-    --< @return 
+    --< @return
     --< False, always.
     ----------------------------------------------------------------------------
-    generic 
+    generic
         type Floating_Point is digits <>;
     function Is_Inf (x : in     Floating_Point) return Vkm_Bool;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Determine whether the input holds a NaN.
@@ -124,17 +119,17 @@ package Vulkan.Math.Numerics is
     --< @description
     --< Determine whether the input holds a NaN. Always returns false.
     --<
-    --< @param x 
+    --< @param x
     --< The value to test.
     --<
     --< @return
     --< False, always.
     ----------------------------------------------------------------------------
-    generic 
+    generic
         type Floating_Point is digits <>;
     function Is_Nan (x : in     Floating_Point) return Vkm_Bool;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Break a floating point value into its significand and exponent parts.
@@ -142,21 +137,21 @@ package Vulkan.Math.Numerics is
     --< @description
     --< Break a floating point value into its significand and exponent parts.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter..
     --<
-    --< @param exponent 
+    --< @param exponent
     --< The exponent part of x.
     --<
-    --< @return 
+    --< @return
     --< The significand part of x.
     ----------------------------------------------------------------------------
-    generic 
+    generic
         type Floating_Point is digits <>;
     function Frexp (x        : in     Floating_Point;
                     exponent :    out Vkm_Int) return Floating_Point;
-                    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Form a floating point value from a significand and exponent.
@@ -170,12 +165,12 @@ package Vulkan.Math.Numerics is
     --< @param exponent
     --< The exponent.
     --<
-    --< @return 
+    --< @return
     --< x = significand * 2^exponent.
     ----------------------------------------------------------------------------
-    generic 
+    generic
         type Floating_Point is digits <>;
     function Ldexp (significand : in     Floating_Point;
                     exponent    : in     Vkm_Int) return Floating_Point;
-                    
+
 end Vulkan.Math.Numerics;

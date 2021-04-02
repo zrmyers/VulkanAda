@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -22,16 +22,20 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Vulkan.Math;
+with Vulkan.Math.Vec2;
 with Vulkan.Math.Mat2x2;
 with Vulkan.Math.Mat2x3;
 with Vulkan.Math.Mat2x4;
 with Vulkan.Math.Mat3x2;
+with Vulkan.Math.Mat3x3;
 
 use Vulkan.Math;
+use Vulkan.Math.Vec2;
 use Vulkan.Math.Mat2x2;
 use Vulkan.Math.Mat2x3;
 use Vulkan.Math.Mat2x4;
 use Vulkan.Math.Mat3x2;
+use Vulkan.Math.Mat3x3;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Test Framwork
@@ -47,6 +51,10 @@ VULKAN_TEST_ASSERTION_FAIL : exception;
 procedure Assert_Vkm_Bool_Equals(
     actual : in Vkm_Bool;
     expected : in Vkm_Bool);
+
+procedure Assert_Vec2_Equals(
+    vec : in Vkm_Vec2;
+    value1, value2 : in Vkm_Float);
 
 procedure Assert_Mat2x2_Equals(
     mat : in Vkm_Mat2;
@@ -68,5 +76,11 @@ procedure Assert_Mat3x2_Equals(
     value1, value2,
     value3, value4,
     value5, value6 : in Vkm_Float);
+
+procedure Assert_Mat3x3_Equals(
+    mat : in Vkm_Mat3;
+    value1, value2, value3,
+    value4, value5, value6,
+    value7, value8, value9 : in Vkm_Float);
 
 end Vulkan.Test.Framework;

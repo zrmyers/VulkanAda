@@ -32,8 +32,8 @@ use Vulkan.Math.GenBType;
 --< This package describes any length vector of Vkm_Uint type.
 --<
 --< @description
---< Provides an instantiation of the generic GenType  package with a Base_Type of 
---< Vkm_Uint. This is used to provide the GenUType subtype for the Vulkan Math 
+--< Provides an instantiation of the generic GenType  package with a Base_Type of
+--< Vkm_Uint. This is used to provide the GenUType subtype for the Vulkan Math
 --< library.
 --------------------------------------------------------------------------------
 package Vulkan.Math.GenUType is
@@ -43,16 +43,20 @@ package Vulkan.Math.GenUType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Uint as the Base_Type.
     package GUT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Uint, Default_Value => 0, Image => Vkm_Uint'Image);
+        Base_Type => Vkm_Uint,
+        Default_Value => 0,
+        Image => Vkm_Uint'Image,
+        Unary_Minus => "-",
+        Multiply => "*");
 
-    --< A subtype of the instantiated Vkm_GenType that represents the GenUType 
+    --< A subtype of the instantiated Vkm_GenType that represents the GenUType
     --< described in the GLSL specification.
     subtype Vkm_GenUType is GUT.Vkm_GenType;
 
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function for parameters of Vkm_Uint and Vkm_Bool type to vectors.
     --<
@@ -82,7 +86,7 @@ package Vulkan.Math.GenUType is
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenUType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function for parameters of Vkm_Uint and Vkm_Bool type to vectors.
     --<
@@ -106,7 +110,7 @@ package Vulkan.Math.GenUType is
     function Apply_Func_IVU_IVU_RVB(IVU1, IVU2 : in     Vkm_GenUType) return Vkm_GenBType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function for parameters of Vkm_Uint and Vkm_Int type to vectors.
     --<
@@ -136,7 +140,7 @@ package Vulkan.Math.GenUType is
         ISI1, ISI2 : in     Vkm_Int     ) return Vkm_GenUType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function for parameters of Vkm_Uint and Vkm_Int type to vectors.
     --<

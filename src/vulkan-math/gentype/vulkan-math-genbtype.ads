@@ -30,8 +30,8 @@ with Vulkan.Math.GenType;
 --< This package describes any length vector of Vkm_Bool type.
 --<
 --< @description
---< Provides an instantiation of the generic GenType  package with a Base_Type of 
---< Vkm_Bool. This is used to provide the Vkm_GenBType subtype for the Vulkan Math 
+--< Provides an instantiation of the generic GenType  package with a Base_Type of
+--< Vkm_Bool. This is used to provide the Vkm_GenBType subtype for the Vulkan Math
 --< library.
 --------------------------------------------------------------------------------
 package Vulkan.Math.GenBType is
@@ -41,9 +41,13 @@ package Vulkan.Math.GenBType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Bool as the Base_Type.
     package GBT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Bool, Default_Value => false, Image => Vkm_Bool'Image);
+        Base_Type => Vkm_Bool,
+        Default_Value => false,
+        Image => Vkm_Bool'Image,
+        Unary_Minus => "-",
+        Multiply => "*");
 
-    --< A subtype of the instantiated Vkm_GenType that represents the GenBType 
+    --< A subtype of the instantiated Vkm_GenType that represents the GenBType
     --< described in the GLSL specification.
     subtype Vkm_GenBType is GBT.Vkm_GenType;
 

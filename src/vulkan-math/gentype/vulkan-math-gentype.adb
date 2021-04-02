@@ -52,8 +52,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Make_GenType (Last_Index : in     Vkm_Indices;
                            value      : in     Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => Last_Index);
@@ -66,8 +66,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Make_GenType (value1 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 0);
     begin
@@ -77,8 +77,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Make_GenType (value1, value2 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 1);
     begin
@@ -89,8 +89,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Make_GenType (value1, value2, value3 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 2);
     begin
@@ -102,8 +102,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Make_GenType (value1, value2, value3, value4 : in Base_Type) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => 3);
     begin
@@ -116,8 +116,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Make_GenType (value : in     Vkm_GenType) return Vkm_GenType is
         Instance : Vkm_GenType(Last_Index => value.Last_Index);
     begin
@@ -154,8 +154,8 @@ package body Vulkan.Math.GenType is
         end if;
         return value;
     end Component;
-    
-    
+
+
     ----------------------------------------------------------------
 
 
@@ -165,8 +165,8 @@ package body Vulkan.Math.GenType is
     begin
         x(vec1,value);
         return vec1_access;
-    end x; 
-            
+    end x;
+
     procedure x (vec1 : in out Vkm_GenType;
                  value : in    Base_Type  ) is
     begin
@@ -188,7 +188,7 @@ package body Vulkan.Math.GenType is
     begin
         y(vec1, value);
         return vec1_access;
-    end y; 
+    end y;
 
 
     ----------------------------------------------------------------
@@ -204,8 +204,8 @@ package body Vulkan.Math.GenType is
             when 0 => null;
         end case;
     end y;
-            
-            
+
+
     function z (vec1  : in out Vkm_GenType;
                 value : in     Base_Type  ) return Vkm_GenType_Reference is
         vec1_access : constant Vkm_GenType_Reference := (Vector => vec1'Unrestricted_Access);
@@ -218,7 +218,7 @@ package body Vulkan.Math.GenType is
     ----------------------------------------------------------------
 
 
-    
+
     procedure z (vec1 : in out Vkm_GenType;
                  value : in    Base_Type  ) is
     begin
@@ -229,21 +229,21 @@ package body Vulkan.Math.GenType is
             when 0 => null;
         end case;
     end z;
-            
-            
+
+
     function w (vec1  : in out Vkm_GenType;
                 value : in     Base_Type  ) return Vkm_GenType_Reference is
         vec1_access : constant Vkm_GenType_Reference := (Vector => vec1'Unrestricted_Access);
     begin
         w(vec1, value);
         return vec1_access;
-    end w; 
+    end w;
 
 
     ----------------------------------------------------------------
 
 
-    
+
     procedure w (vec1 : in out Vkm_GenType;
                  value : in    Base_Type  ) is
     begin
@@ -252,14 +252,14 @@ package body Vulkan.Math.GenType is
             when 2 => null;
             when 1 => null;
             when 0 => null;
-        end case;    
+        end case;
     end w;
 
 
     ----------------------------------------------------------------
 
 
-    
+
     procedure xy (vec1 : in out Vkm_GenType;
                   vec2 : in     Vkm_GenType) is
     begin
@@ -663,11 +663,11 @@ package body Vulkan.Math.GenType is
             .z(vec2.y)
             .y(vec2.z);
     end wzy;
-    
-    
+
+
     ----------------------------------------------------------------------------
-    
-    
+
+
     procedure xyzw (vec1 : in out Vkm_GenType;
                     vec2 : in     Vkm_GenType) is
     begin
@@ -903,8 +903,8 @@ package body Vulkan.Math.GenType is
     begin
         vec1.w(vec2.x).z(vec2.y).y(vec2.z).x(vec2.w);
     end wzyx;
-    
-    
+
+
     ----------------------------------------------------------------------------
 
 
@@ -915,6 +915,60 @@ package body Vulkan.Math.GenType is
         Result.Copy(Right,Right.Length,To_Vkm_Indices(Left.Length + 1));
         return Result;
     end Concatenate;
+
+
+    ----------------------------------------------------------------------------
+
+    function Equals(left, right : in     Vkm_GenType) return Vkm_Bool is
+        are_equal : Vkm_Bool := True;
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            if not (left.data(index) = right.data(index)) then
+                are_equal := False;
+            end if;
+        end loop;
+        return are_equal;
+    end Equals;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Unary_Minus(instance : in     Vkm_GenType) return Vkm_GenType is
+        result : Vkm_GenType(Last_Index => instance.last_index);
+    begin
+        for index in Vkm_Indices'First .. instance.last_index loop
+            result.data(index) := Unary_Minus(instance.data(index));
+        end loop;
+        return result;
+    end Unary_Minus;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Componentwise_Multiply(left, right : in     Vkm_GenType) return Vkm_GenType is
+        result : Vkm_GenType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Multiply(left.data(index), right.data(index));
+        end loop;
+        return result;
+    end Componentwise_Multiply;
+
+
+--------------------------------------------------------------------------------
+
+
+    function Vector_By_Scalar_Multiply(left : in Vkm_GenType;
+                                       right : in Base_Type) return Vkm_GenType is
+        result : Vkm_GenType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Multiply(left.data(index), right);
+        end loop;
+        return result;
+    end Vector_By_Scalar_Multiply;
 
 
     ----------------------------------------------------------------------------
@@ -1033,7 +1087,7 @@ package body Vulkan.Math.GenType is
 
     function Apply_Func_IS_IS_IV_RV(IS1, IS2 : in     Base_Type;
                                     IV1      : in     Vkm_GenType) return Vkm_GenType is
-                                    
+
         Result : Vkm_GenType(Last_Index => To_Vkm_Indices(IV1.Length));
     begin
         for I in Result.data'Range loop
@@ -1044,8 +1098,8 @@ package body Vulkan.Math.GenType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Apply_Func_IV_IV_OV_RV(IV1, IV2 : in     Vkm_GenType;
                                     OV1      :    out Vkm_GenType) return Vkm_GenType is
         result : Vkm_GenType(last_index => IV1.last_index);
@@ -1055,11 +1109,11 @@ package body Vulkan.Math.GenType is
         end loop;
         return result;
     end Apply_Func_IV_IV_OV_RV;
-    
-    
-    ---------------------------------------------------------------------------- 
-    
-    
+
+
+    ----------------------------------------------------------------------------
+
+
     procedure Apply_Func_IV_IV_OV_OV(IV1, IV2 : in     Vkm_GenType;
                                      OV1, OV2 :    out Vkm_GenType) is
     begin
@@ -1067,7 +1121,7 @@ package body Vulkan.Math.GenType is
             Func(IV1.data(index), IV2.data(index),
                  OV1.data(index), OV2.data(index));
         end loop;
-    end Apply_Func_IV_IV_OV_OV; 
+    end Apply_Func_IV_IV_OV_OV;
 
 
     ----------------------------------------------------------------------------
@@ -1076,7 +1130,7 @@ package body Vulkan.Math.GenType is
     function Apply_Func_IV_IV_IS_IS_RV(
         IV1, IV2 : in     Vkm_GenType;
         IS1, IS2 : in     Base_Type  ) return Vkm_GenType is
-        
+
         result : Vkm_GenType(last_index => IV1.last_index);
     begin
         for index in IV1.data'Range loop

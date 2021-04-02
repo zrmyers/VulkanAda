@@ -24,9 +24,9 @@
 --
 -- This package provides GLSL geometry operations.
 --------------------------------------------------------------------------------
-with Vulkan.Math.Exp;
+with Vulkan.Math.Exponential;
 
-use Vulkan.Math.Exp;
+use Vulkan.Math.Exponential;
 
 package body Vulkan.Math.Geometry is
 
@@ -86,7 +86,7 @@ package body Vulkan.Math.Geometry is
     function Cross (x, y : in     Vkm_Vec3 ) return Vkm_Vec3 is
         cross_product : Vkm_Vec3 := Make_Vec3(0.0);
     begin
-    
+
         cross_product.x(x.y*y.z - x.z * y.y)
                      .y(x.z*y.x - x.x * y.z)
                      .z(x.x*y.y - x.y * y.x);
@@ -121,8 +121,8 @@ package body Vulkan.Math.Geometry is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Refract(i, n : in     Vkm_GenDType;
                      eta  : in     Vkm_Double  ) return Vkm_GenDType is
         dot_n_i : constant Vkm_Double := Dot(n, i);

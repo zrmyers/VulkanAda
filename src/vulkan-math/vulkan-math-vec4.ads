@@ -33,7 +33,7 @@ use Vulkan.Math.Vec2;
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a single precision floating point vector type with 
+--< This package provides a single precision floating point vector type with
 --< 4 components.
 --------------------------------------------------------------------------------
 package Vulkan.Math.Vec4 is

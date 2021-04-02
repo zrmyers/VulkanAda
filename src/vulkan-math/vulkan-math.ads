@@ -24,6 +24,7 @@
 with Interfaces.C;
 with Ada.Numerics;
 with Ada.Unchecked_Conversion;
+with Ada.Numerics.Generic_Elementary_Functions;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
@@ -31,6 +32,7 @@ with Ada.Unchecked_Conversion;
 package Vulkan.Math is
     pragma Preelaborate;
     pragma Pure;
+
 
     ----------------------------------------------------------------------------
     -- Math Constants
@@ -41,6 +43,10 @@ package Vulkan.Math is
     --< A constant value representing Euler's number e.
     E  : constant := Ada.Numerics.e;
 
+    --< The constant natural logarithm of 2 value. This constant is used in the
+    --< implementation of Exp2().
+    LN2 : constant := 0.69314_71805_59945_30941_72321_21458_18;
+    
     ----------------------------------------------------------------------------
     -- Math Scalar Types
     ----------------------------------------------------------------------------
@@ -68,6 +74,12 @@ package Vulkan.Math is
 
     --< The set of indices allowed for use with any vector or matrix.
     type Vkm_Indices is new Integer range 0 .. 3;
+
+
+    --< @private
+    --< Instantiation of Generic Elementary Functions for Float.
+    package VKM_FLT_NEF is new
+        Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Float);
 
     ----------------------------------------------------------------------------
     -- Conversion Functions
@@ -422,5 +434,29 @@ package Vulkan.Math is
     function To_Vkm_Double (value : in     Vkm_Float) return Vkm_Double is
         (Vkm_Double(Vkm_Float'Base(value))) with Inline;
 
+    ----------------------------------------------------------------------------
+    -- Operator override definitions
+    ----------------------------------------------------------------------------
+    function "-" (instance : in     Vkm_Bool) return Vkm_Bool is
+        (not instance) with inline;
+    function "+" (left, right : in     Vkm_Bool) return Vkm_Bool is
+        (left xor right) with inline;
+    function "-" (left, right : in     Vkm_Bool) return Vkm_Bool is
+        (left xor right) with inline;
+    function "*" (left, right : in     Vkm_Bool) return Vkm_Bool is
+        (left and right) with inline;
+
+
+    ----------------------------------------------------------------------------
+
+    function "abs" (x : in     Vkm_Float ) return Vkm_Float is
+        (if x >= 0.0 then x else -x) with Inline;
+    function Floor (x : in     Vkm_Float)  return Vkm_Float renames Vkm_Float'Floor;
+    function "mod" (x, y : in     Vkm_Float) return Vkm_Float is
+        (x - y * Floor(x / y)) with Inline;
+    function Exp (x : in     Vkm_Float) return Vkm_Float
+        renames VKM_FLT_NEF.Exp;
+    function "**" (x, y : in     Vkm_Float) return Vkm_Float
+        renames VKM_FLT_NEF."**";
 
 end Vulkan.Math;

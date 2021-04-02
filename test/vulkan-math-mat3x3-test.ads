@@ -21,6 +21,9 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
+with Vulkan.Math.Mat3x3;
+
+use Vulkan.Math.Mat3x3;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
@@ -29,9 +32,9 @@
 --< This package provides a single precision floating point matrix with 2 rows
 --< and 2 columns.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Mat2x3.Test is
+package Vulkan.Math.Mat3x3.Test is
 
--- Test Harness for Mat2x3 regression tests
-procedure Test_Mat2x3;
+-- Test Harness for Mat3x3 regression tests
+procedure Test_Mat3x3;
 
-end Vulkan.Math.Mat2x3.Test;
+end Vulkan.Math.Mat3x3.Test;

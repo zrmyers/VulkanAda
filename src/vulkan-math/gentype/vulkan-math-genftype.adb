@@ -26,6 +26,55 @@
 package body Vulkan.Math.GenFType is
 
 
+    function "<"  (left, right : in     Vkm_GenFType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) < right.data(index));
+        end loop;
+        return result;
+    end "<";
+
+
+    ----------------------------------------------------------------------------
+
+
+    function "<=" (left, right : in     Vkm_GenFType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) <= right.data(index));
+        end loop;
+        return result;
+    end "<=";
+
+
+    ----------------------------------------------------------------------------
+
+
+    function ">" (left, right : in     Vkm_GenFType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) > right.data(index));
+        end loop;
+        return result;
+    end ">";
+
+
+    ----------------------------------------------------------------------------
+
+
+    function ">=" (left, right : in     Vkm_GenFType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) >= right.data(index));
+        end loop;
+        return result;
+    end ">=";
+
+
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------

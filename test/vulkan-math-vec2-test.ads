@@ -21,17 +21,19 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
+with Vulkan.Math.Mat2x2;
+
+use Vulkan.Math.Mat2x2;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a single precision floating point matrix with 2 rows
---< and 2 columns.
+--< This package provides a single precision floating point vector with 2 components.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Mat2x3.Test is
+package Vulkan.Math.Vec2.Test is
 
--- Test Harness for Mat2x3 regression tests
-procedure Test_Mat2x3;
+-- Test Harness for Mat2x2 regression tests
+procedure Test_Vec2;
 
-end Vulkan.Math.Mat2x3.Test;
+end Vulkan.Math.Vec2.Test;

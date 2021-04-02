@@ -26,7 +26,7 @@ with Vulkan.Math.GenDType;
 with Vulkan.Math.GenUType;
 with Vulkan.Math.GenIType;
 with Vulkan.Math.GenBType;
-with Vulkan.Math.Exp;
+with Vulkan.Math.Exponential;
 with Vulkan.Math.Common;
 with Vulkan.Math.Relational;
 
@@ -41,7 +41,7 @@ use Vulkan.Math.Relational;
 --< @group Vulkan Math Operators
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides operator definitions for all basic vector and matrix 
+--< This package provides operator definitions for all basic vector and matrix
 --< types.
 --------------------------------------------------------------------------------
 package Vulkan.Math.Operators is
@@ -90,8 +90,8 @@ package Vulkan.Math.Operators is
     --< Append right vector to left vector.
     ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_GenBType) return Vkm_GenBType renames GBT.Concatenate;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenBType concatenation operator.
@@ -112,8 +112,8 @@ package Vulkan.Math.Operators is
     function "&" (left        : in     Vkm_Bool   ;
                   right       : in     Vkm_GenBType) return Vkm_GenBType is
         (GBT.Make_GenType(left).Concatenate(right)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenBType concatenation operator.
@@ -134,8 +134,8 @@ package Vulkan.Math.Operators is
     function "&" (left        : in     Vkm_GenBType;
                   right       : in     Vkm_Bool   ) return Vkm_GenBType is
         (left.Concatenate(GBT.Make_GenType(right))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenBType concatenation operator.
@@ -184,7 +184,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenBType logical "and" operator.
     --<
     --< @description
-    --< Apply a logical "and" component-wise on a Vkm_GenBType vector and 
+    --< Apply a logical "and" component-wise on a Vkm_GenBType vector and
     --< Vkm_Bool scalar.
     --<     vector := vector and scalar;
     ----------------------------------------------------------------------------
@@ -196,7 +196,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenBType logical "and" operator.
     --<
     --< @description
-    --< Apply a logical "and" component-wise on a Vkm_GenBType vector and 
+    --< Apply a logical "and" component-wise on a Vkm_GenBType vector and
     --< Vkm_Bool scalar.
     --<     vector := scalar and scalar;
     ----------------------------------------------------------------------------
@@ -219,7 +219,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenBType logical "or" operator.
     --<
     --< @description
-    --< Apply a logical "or" component-wise on a Vkm_GenBType vector and 
+    --< Apply a logical "or" component-wise on a Vkm_GenBType vector and
     --< Vkm_Bool scalar.
     --<     vector := vector or scalar;
     ----------------------------------------------------------------------------
@@ -231,7 +231,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenBType logical "or" operator.
     --<
     --< @description
-    --< Apply a logical "or" component-wise on a Vkm_GenBType vector and 
+    --< Apply a logical "or" component-wise on a Vkm_GenBType vector and
     --< Vkm_Bool scalar.
     --<     vector := scalar or vector;
     ----------------------------------------------------------------------------
@@ -254,7 +254,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenBType logical "xor" operator.
     --<
     --< @description
-    --< Apply a logical "xor" component-wise on a Vkm_GenBType vector and 
+    --< Apply a logical "xor" component-wise on a Vkm_GenBType vector and
     --< Vkm_Bool scalar.
     --<     vector := vector xor scalar;
     ----------------------------------------------------------------------------
@@ -266,7 +266,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenBType logical "xor" operator.
     --<
     --< @description
-    --< Apply a logical "xor" component-wise on a Vkm_GenBType vector and 
+    --< Apply a logical "xor" component-wise on a Vkm_GenBType vector and
     --< Vkm_Bool scalar.
     --<     vector := scalar xor vector;
     ----------------------------------------------------------------------------
@@ -313,8 +313,8 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     function "/=" (left, right : in     Vkm_GenBType) return Vkm_Bool is
         (Is_Any(Not_Equal(left, right))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     -- The Operators for unsigned integer vectors are defined here.
     --
@@ -368,8 +368,8 @@ package Vulkan.Math.Operators is
     --< Append right vector to left vector.
     ----------------------------------------------------------------------------
     function "&" (left, right : in     Vkm_GenUType) return Vkm_GenUType renames GUT.Concatenate;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenUType concatenation operator.
@@ -390,8 +390,8 @@ package Vulkan.Math.Operators is
     function "&" (left        : in     Vkm_Uint   ;
                   right       : in     Vkm_GenUType) return Vkm_GenUType is
         (GUT.Make_GenType(left).Concatenate(right)) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenUType concatenation operator.
@@ -412,8 +412,8 @@ package Vulkan.Math.Operators is
     function "&" (left        : in     Vkm_GenUType;
                   right       : in     Vkm_Uint   ) return Vkm_GenUType is
         (left.Concatenate(GUT.Make_GenType(right))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenUType concatenation operator.
@@ -840,8 +840,8 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     function "/=" (left, right : in     Vkm_GenUType) return Vkm_Bool is
         (Is_Any(Not_Equal(left, right))) with Inline;
-    
-    
+
+
     ----------------------------------------------------------------------------
     -- The Operators for integer vectors are defined here.
     --
@@ -991,7 +991,7 @@ package Vulkan.Math.Operators is
     --<
     --< @description
     --< Return the 1's complement for the Vkm_Int value.
-    --< 
+    --<
     --< @param value
     --< The value to perform the 1's complement of.
     --<
@@ -1020,8 +1020,8 @@ package Vulkan.Math.Operators is
     --<     vector := abs vector
     ----------------------------------------------------------------------------
     function "abs" is new GIT.Apply_Func_IV_RV("abs");
-    
-    
+
+
     ----------------------------------------------------------------------------
     --< @summary
     --< Vkm_GenIType modulus operator.
@@ -1231,7 +1231,7 @@ package Vulkan.Math.Operators is
     --<
     --< @param left
     --< The parameter to the left of the "and" keyword.
-    --< 
+    --<
     --< @param right
     --< The parameter to the right of the "and" keyword.
     --<
@@ -1282,7 +1282,7 @@ package Vulkan.Math.Operators is
     --< @description
     --< Return the result of the bitwise "or" for to scalar values.
     --<     scalar := scalar or scalar;
-    --< 
+    --<
     --< @param left
     --< The parameter to the left of the "or" keyword.
     --<
@@ -1399,7 +1399,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenIType less than or equal to operator.
     --<
     --< @description
-    --< Return the result of the component-wise less than or equal to operator on 
+    --< Return the result of the component-wise less than or equal to operator on
     --< two vectors.
     --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
@@ -1411,7 +1411,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenIType greater than operator.
     --<
     --< @description
-    --< Return the result of the component-wise greater than operator on 
+    --< Return the result of the component-wise greater than operator on
     --< two vectors.
     --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
@@ -1423,7 +1423,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenIType greater than or equal operator.
     --<
     --< @description
-    --< Return the result of the component-wise greater than or equal to operator 
+    --< Return the result of the component-wise greater than or equal to operator
     --< on two vectors.
     --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
@@ -1435,13 +1435,13 @@ package Vulkan.Math.Operators is
     --< Vkm_GenIType equality operator.
     --<
     --< @description
-    --< Return true if each component of two vectors are equal to each other. 
+    --< Return true if each component of two vectors are equal to each other.
     --< Otherwise return false.
     --<     is_equal := vector = vector;
     --<
     --< @param left
     --< The left vector in the comparison.
-    --< 
+    --<
     --< @param right
     --< The right vector in the comparison.
     --<
@@ -1457,13 +1457,13 @@ package Vulkan.Math.Operators is
     --< Vkm_GenIType inequality operator.
     --<
     --< @description
-    --< Return true if any component of the two vectors are not equal to each other. 
+    --< Return true if any component of the two vectors are not equal to each other.
     --< Otherwise return false.
     --<     is_equal := vector /= vector;
     --<
     --< @param left
     --< The left vector in the comparison.
-    --< 
+    --<
     --< @param right
     --< The right vector in the comparison.
     --<
@@ -1472,524 +1472,6 @@ package Vulkan.Math.Operators is
     ----------------------------------------------------------------------------
     function "/=" (left, right : in     Vkm_GenIType) return Vkm_Bool is
         (Is_Any(Not_Equal(left, right))) with Inline;
-    
-    
-    ----------------------------------------------------------------------------
-    -- The Operators for single precision floating point vectors are defined here.
-    --
-    -- A summary of operators that can be used with GenFType values of different
-    -- size:
-    --    - "&", Concatenation
-    --
-    -- A summary of operators that are component-wise Unary:
-    --    - "+"  , Unary plus operator.
-    --    - "-"  , Unary minus operator.
-    --    - "abs", Absolute value operator.
-    --
-    -- A summary of operators that are component-wise on two input vectors of the
-    -- same length. Additionally, a scalar may appear instead of a vector on the
-    -- left or right hand side of these operators:
-    --    - "mod", Modulus operator.
-    --    - "**",  Power operator.
-    --    - "+",   Addition operator.
-    --    - "-",   Subtraction operator.
-    --    - "rem", Remainder operator.
-    --    - "*",   Multiplication operator.
-    --    - "/",   Division operator.
-    --
-    -- A summary of relational operators that are component-wise on two input vecotrs
-    -- of the same length, and return a vector of booleans of the same length:
-    --    - "<",  Less than operator
-    --    - ">",  Greater than operator
-    --    - "<=", Less than or equal to operator
-    --    - ">=", Greater than or equal to operator
-    --
-    -- A summary of relational operators which return a scalar boolean value.
-    --    - "=",  Equality operator
-    --    - "/=", Non-Equality operator
-    --
-    ----------------------------------------------------------------------------
-    -- GenFType Concatenation Operators
-    ----------------------------------------------------------------------------
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType concatenation operator.
-    --<
-    --< @description
-    --< Concatenate two Vkm_GenFType vectors.
-    --<    vector := vector & vector
-    --<
-    --< @param left
-    --< Parameter to the left of the '&' symbol.
-    --<
-    --< @param right
-    --< Parameter to the right of the '&' symbol.
-    --<
-    --< @return
-    --< Append right vector to left vector.
-    ----------------------------------------------------------------------------
-    function "&" (left, right : in     Vkm_GenFType) return Vkm_GenFType renames GFT.Concatenate;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType concatenation operator.
-    --<
-    --< @description
-    --< Concatenate a Vkm_Float and a Vkm_GenFType vector.
-    --<    vector := scalar & vector
-    --<
-    --< @param left
-    --< Parameter to the left of the '&' symbol.
-    --<
-    --< @param right
-    --< Parameter to the right of the '&' symbol.
-    --<
-    --< @return
-    --< Append right vector to left scalar.
-    ----------------------------------------------------------------------------
-    function "&" (left        : in     Vkm_Float   ;
-                  right       : in     Vkm_GenFType) return Vkm_GenFType is
-        (GFT.Make_GenType(left).Concatenate(right)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType concatenation operator.
-    --<
-    --< @description
-    --< Concatenate a Vkm_Float and a Vkm_GenFType vector.
-    --<    vector := vector & scalar
-    --<
-    --< @param left
-    --< Parameter to the left of the '&' symbol.
-    --<
-    --< @param right
-    --< Parameter to the right of the '&' symbol.
-    --<
-    --< @return
-    --< Append right scalar to left vector.
-    ----------------------------------------------------------------------------
-    function "&" (left        : in     Vkm_GenFType;
-                  right       : in     Vkm_Float   ) return Vkm_GenFType is
-        (left.Concatenate(GFT.Make_GenType(right))) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType concatenation operator.
-    --<
-    --< @description
-    --< Concatenate two Vkm_Floats to form a Vkm_GenFType vector.
-    --<    vector := scalar & scalar
-    --<
-    --< @param left
-    --< Parameter to the left of the '&' symbol.
-    --<
-    --< @param right
-    --< Parameter to the right of the '&' symbol.
-    --<
-    --< @return
-    --< Append right scalar to left scalar.
-    ----------------------------------------------------------------------------
-    function "&" (left, right : in     Vkm_Float   ) return Vkm_GenFType is
-        (GFT.Make_GenType(left, right)) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType unary plus operator.
-    --<
-    --< @description
-    --< Return the unmodified vector.
-    --<     vector :=  +vector;
-    ----------------------------------------------------------------------------
-    function "+" is new GFT.Apply_Func_IV_RV("+");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType unary minus operator.
-    --<
-    --< @description
-    --< Return the negation of the vector.
-    --<     vector :=  -vector;
-    ----------------------------------------------------------------------------
-    function "-" is new GFT.Apply_Func_IV_RV("-");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType absolute value operator.
-    --<
-    --< @description
-    --< Return the absolute value for each component of the vector.
-    --<     vector :=  abs vector;
-    ----------------------------------------------------------------------------
-    function "abs" is new GFT.Apply_Func_IV_RV(Vulkan.Math.Common.Absolute_Value);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType modulo operator.
-    --<
-    --< @description
-    --< Return the component-wise modulo of the two vectors.
-    --<     vector :=  vector mod vector;
-    ----------------------------------------------------------------------------
-    function "mod" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Common.Modulo);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType modulo operator.
-    --<
-    --< @description
-    --< Return the component-wise modulo of a vector and a scalar.
-    --<     vector :=  vector mod scalar;
-    ----------------------------------------------------------------------------
-    function "mod" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Common.Modulo);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType modulo operator.
-    --<
-    --< @description
-    --< Return the component-wise modulo of a vector and a scalar.
-    --<     vector :=  scalar mod vector;
-    ----------------------------------------------------------------------------
-    function "mod" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Common.Modulo);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_Float power operator.
-    --<
-    --< @description
-    --< Take the left float to the right power.
-    --<    scalar := left ** right;
-    --<
-    --< @param left
-    --< The parameter to the left of the "**", power, operator.
-    --<
-    --< @param right
-    --< The parameter to the right of the "**", power, operator.
-    --<
-    --< @return
-    --< The left value taken to the right power.
-    ----------------------------------------------------------------------------
-    function "**" (left, right : in     Vkm_Float) return Vkm_Float renames Vulkan.Math.Exp.Pow;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType power operator.
-    --<
-    --< @description
-    --< Apply the power operation component-wise on two vectors.
-    --<    vector := vector ** vector;
-    ----------------------------------------------------------------------------
-    function "**" is new GFT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType power operator.
-    --<
-    --< @description
-    --< Apply the power operation component-wise on a vector and a scalar.
-    --<    vector := vector ** scalar;
-    ----------------------------------------------------------------------------
-    function "**" is new GFT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType power operator.
-    --<
-    --< @description
-    --< Apply the power operation component-wise on a vector and a scalar.
-    --<    vector := scalar ** vector;
-    ----------------------------------------------------------------------------
-    function "**" is new GFT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow);
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType addition operator.
-    --<
-    --< @description
-    --< Apply the additon operation component-wise on two vectors.
-    --<    vector := vector + vector;
-    ----------------------------------------------------------------------------
-    function "+" is new GFT.Apply_Func_IV_IV_RV("+");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType addition operator.
-    --<
-    --< @description
-    --< Apply the additon operation component-wise on a vector and a scalar.
-    --<    vector := vector + scalar;
-    ----------------------------------------------------------------------------
-    function "+" is new GFT.Apply_Func_IV_IS_RV("+");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType addition operator.
-    --<
-    --< @description
-    --< Apply the additon operation component-wise on a vector and a scalar.
-    --<    vector := scalar + vector;
-    ----------------------------------------------------------------------------
-    function "+" is new GFT.Apply_Func_IS_IV_RV("+");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType subtraction operator.
-    --<
-    --< @description
-    --< Apply the subtraction operation component-wise on two vectors.
-    --<    vector := vector - vector;
-    ----------------------------------------------------------------------------
-    function "-" is new GFT.Apply_Func_IV_IV_RV("-");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType subtraction operator.
-    --<
-    --< @description
-    --< Apply the subtraction operation component-wise on a vector and a scalar.
-    --<    vector := vector - scalar;
-    ----------------------------------------------------------------------------
-    function "-" is new GFT.Apply_Func_IV_IS_RV("-");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType subtraction operator.
-    --<
-    --< @description
-    --< Apply the subtraction operation component-wise on a vector and a scalar.
-    --<    vector := scalar - vector;
-    ----------------------------------------------------------------------------
-    function "-" is new GFT.Apply_Func_IS_IV_RV("-");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType remainder operator.
-    --<
-    --< @description
-    --< Calculate the remainder of division of left by right:
-    --<     scalar := left rem right;
-    --<
-    --< @param left
-    --< The numerator in the division for which the remainder is returned.
-    --<
-    --< @param right
-    --< The denominator in the division for which the remainder is returned.
-    --< 
-    --< @return
-    --< The remainder of left divided by right.
-    ----------------------------------------------------------------------------
-    function "rem" (left, right : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Remainder;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType remainder operator.
-    --<
-    --< @description
-    --< Calculate the remainder of division of for two vectors.
-    --<     vector := vector rem vector;
-    ----------------------------------------------------------------------------
-    function "rem" is new GFT.Apply_Func_IV_IV_RV("rem");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType remainder operator.
-    --<
-    --< @description
-    --< Calculate the remainder of division of for a vector and a scalar.
-    --<     vector := vector rem scalar;
-    ----------------------------------------------------------------------------
-    function "rem" is new GFT.Apply_Func_IV_IS_RV("rem");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType remainder operator.
-    --<
-    --< @description
-    --< Calculate the remainder of division of for a vector and a scalar.
-    --<     vector := scalar rem vector;
-    ----------------------------------------------------------------------------
-    function "rem" is new GFT.Apply_Func_IS_IV_RV("rem");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType multiplication operator.
-    --<
-    --< @description
-    --< Apply the multiplication operation component-wise on two vectors.
-    --<    vector := vector * vector;
-    ----------------------------------------------------------------------------
-    function "*" is new GFT.Apply_Func_IV_IV_RV("*");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType multiplication operator.
-    --<
-    --< @description
-    --< Apply the multiplication operation component-wise on a vector and a scalar.
-    --<    vector := vector * scalar;
-    ----------------------------------------------------------------------------
-    function "*" is new GFT.Apply_Func_IV_IS_RV("*");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType multiplication operator.
-    --<
-    --< @description
-    --< Apply the multiplication operation component-wise on a vector and a scalar.
-    --<    vector := scalar * vector;
-    ----------------------------------------------------------------------------
-    function "*" is new GFT.Apply_Func_IS_IV_RV("*");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType division operator.
-    --<
-    --< @description
-    --< Calculate the component-wise division of two vectors.
-    --<     vector := vector / vector;
-    ----------------------------------------------------------------------------
-    function "/" is new GFT.Apply_Func_IV_IV_RV("/");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType division operator.
-    --<
-    --< @description
-    --< Calculate the component-wise division of a vector and a scalar.
-    --<     vector := vector / scalar;
-    ----------------------------------------------------------------------------
-    function "/" is new GFT.Apply_Func_IV_IS_RV("/");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType division operator.
-    --<
-    --< @description
-    --< Calculate the component-wise division of a vector and a scalar.
-    --<     vector := scalar / vector;
-    ----------------------------------------------------------------------------
-    function "/" is new GFT.Apply_Func_IS_IV_RV("/");
-
-
-----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType less than operator.
-    --<
-    --< @description
-    --< Return the result of the component-wise less than operator on two vectors.
-    --<     bool_vector := vector < vector;
-    ----------------------------------------------------------------------------
-    function "<"  is new Apply_Func_IVF_IVF_RVB("<" );
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType less than or equal to operator.
-    --<
-    --< @description
-    --< Return the result of the component-wise less than or equal to operator on 
-    --< two vectors.
-    --<     bool_vector := vector < vector;
-    ----------------------------------------------------------------------------
-    function "<=" is new Apply_Func_IVF_IVF_RVB("<=");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType greater than operator.
-    --<
-    --< @description
-    --< Return the result of the component-wise greater than operator on 
-    --< two vectors.
-    --<     bool_vector := vector < vector;
-    ----------------------------------------------------------------------------
-    function ">"  is new Apply_Func_IVF_IVF_RVB(">" );
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType greater than or equal operator.
-    --<
-    --< @description
-    --< Return the result of the component-wise greater than or equal to operator 
-    --< on two vectors.
-    --<     bool_vector := vector < vector;
-    ----------------------------------------------------------------------------
-    function ">=" is new Apply_Func_IVF_IVF_RVB(">=");
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType equality operator.
-    --<
-    --< @description
-    --< Return true if each component of two vectors are equal to each other. 
-    --< Otherwise return false.
-    --<     is_equal := vector = vector;
-    --<
-    --< @param left
-    --< The left vector in the comparison.
-    --< 
-    --< @param right
-    --< The right vector in the comparison.
-    --<
-    --< @return
-    --< Whether the two vectors are equal to each other.
-    ----------------------------------------------------------------------------
-    function "="  (left, right : in     Vkm_GenFType) return Vkm_Bool is
-        (Is_All(Equal(left, right))) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Vkm_GenFType inequality operator.
-    --<
-    --< @description
-    --< Return true if any component of the two vectors are not equal to each other. 
-    --< Otherwise return false.
-    --<     is_equal := vector /= vector;
-    --<
-    --< @param left
-    --< The left vector in the comparison.
-    --< 
-    --< @param right
-    --< The right vector in the comparison.
-    --<
-    --< @return
-    --< Whether the two vectors are equal to each other.
-    ----------------------------------------------------------------------------
-    function "/=" (left, right : in     Vkm_GenFType) return Vkm_Bool is
-        (Is_Any(Not_Equal(left, right))) with Inline;
-
 
     ----------------------------------------------------------------------------
     -- The Operators for double precision floating point vectors are defined here.
@@ -2196,7 +1678,7 @@ package Vulkan.Math.Operators is
     --< @return
     --< The left value taken to the right power.
     ----------------------------------------------------------------------------
-    function "**" (left, right : in     Vkm_Double) return Vkm_Double renames Vulkan.Math.Exp.Pow;
+    function "**" (left, right : in     Vkm_Double) return Vkm_Double renames Vulkan.Math.Exponential.Pow;
 
 
     ----------------------------------------------------------------------------
@@ -2207,7 +1689,7 @@ package Vulkan.Math.Operators is
     --< Apply the power operation component-wise on two vectors.
     --<    vector := vector ** vector;
     ----------------------------------------------------------------------------
-    function "**" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Exp.Pow);
+    function "**" is new GDT.Apply_Func_IV_IV_RV(Vulkan.Math.Exponential.Pow);
 
 
     ----------------------------------------------------------------------------
@@ -2218,7 +1700,7 @@ package Vulkan.Math.Operators is
     --< Apply the power operation component-wise on a vector and a scalar.
     --<    vector := vector ** scalar;
     ----------------------------------------------------------------------------
-    function "**" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Exp.Pow);
+    function "**" is new GDT.Apply_Func_IV_IS_RV(Vulkan.Math.Exponential.Pow);
 
 
     ----------------------------------------------------------------------------
@@ -2229,7 +1711,7 @@ package Vulkan.Math.Operators is
     --< Apply the power operation component-wise on a vector and a scalar.
     --<    vector := scalar ** vector;
     ----------------------------------------------------------------------------
-    function "**" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Exp.Pow);
+    function "**" is new GDT.Apply_Func_IS_IV_RV(Vulkan.Math.Exponential.Pow);
 
 
     ----------------------------------------------------------------------------
@@ -2311,7 +1793,7 @@ package Vulkan.Math.Operators is
     --<
     --< @param right
     --< The denominator in the division for which the remainder is returned.
-    --< 
+    --<
     --< @return
     --< The remainder of left divided by right.
     ----------------------------------------------------------------------------
@@ -2433,7 +1915,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenDType less than or equal to operator.
     --<
     --< @description
-    --< Return the result of the component-wise less than or equal to operator on 
+    --< Return the result of the component-wise less than or equal to operator on
     --< two vectors.
     --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
@@ -2445,7 +1927,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenDType greater than operator.
     --<
     --< @description
-    --< Return the result of the component-wise greater than operator on 
+    --< Return the result of the component-wise greater than operator on
     --< two vectors.
     --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
@@ -2457,7 +1939,7 @@ package Vulkan.Math.Operators is
     --< Vkm_GenDType greater than or equal operator.
     --<
     --< @description
-    --< Return the result of the component-wise greater than or equal to operator 
+    --< Return the result of the component-wise greater than or equal to operator
     --< on two vectors.
     --<     bool_vector := vector < vector;
     ----------------------------------------------------------------------------
@@ -2469,13 +1951,13 @@ package Vulkan.Math.Operators is
     --< Vkm_GenDType equality operator.
     --<
     --< @description
-    --< Return true if each component of two vectors are equal to each other. 
+    --< Return true if each component of two vectors are equal to each other.
     --< Otherwise return false.
     --<     is_equal := vector = vector;
     --<
     --< @param left
     --< The left vector in the comparison.
-    --< 
+    --<
     --< @param right
     --< The right vector in the comparison.
     --<
@@ -2491,13 +1973,13 @@ package Vulkan.Math.Operators is
     --< Vkm_GenDType inequality operator.
     --<
     --< @description
-    --< Return true if any component of the two vectors are not equal to each other. 
+    --< Return true if any component of the two vectors are not equal to each other.
     --< Otherwise return false.
     --<     is_equal := vector /= vector;
     --<
     --< @param left
     --< The left vector in the comparison.
-    --< 
+    --<
     --< @param right
     --< The right vector in the comparison.
     --<

@@ -76,6 +76,34 @@ generic
     ----------------------------------------------------------------------------
     with function Image (Instance : in     Base_Type) return String;
 
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Unary minus operator for instance of Base_Type.
+    --<
+    --< @param
+    --< The instance of Base_Type
+    --<
+    --< @return
+    --< The complement of the instance of Base_Type.
+    ----------------------------------------------------------------------------
+    with function Unary_Minus(instance : in     Base_Type) return Base_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply operator for two instances of Base_Type.
+    --<
+    --< @param
+    --< The left instance of Base_Type
+    --<
+    --< @param
+    --< The right instance of Base_Type
+    --<
+    --< @return
+    --< The product of two instances of Base_Type.
+    ----------------------------------------------------------------------------
+    with function Multiply(left, right : in     Base_Type) return Base_Type;
+
 package Vulkan.Math.GenType is
     pragma Preelaborate;
     pragma Pure;
@@ -364,6 +392,17 @@ package Vulkan.Math.GenType is
     ----------------------------------------------------------------------------
     function Concatenate (left, right : in     Vkm_GenType) return Vkm_GenType;
 
+
+    ----------------------------------------------------------------------------
+    -- Basic Operations
+    ----------------------------------------------------------------------------
+    function Equals(left, right : in     Vkm_GenType) return Vkm_Bool;
+    function Unary_Plus(instance : in     Vkm_GenType) return Vkm_GenType is
+        (instance) with inline;
+    function Unary_Minus(instance : in     Vkm_GenType) return Vkm_GenType;
+    function Componentwise_Multiply(left, right : in     Vkm_GenType) return Vkm_GenType;
+    function Vector_By_Scalar_Multiply(left : in Vkm_GenType;
+                                       right : in Base_Type) return Vkm_GenType;
 
     ----------------------------------------------------------------------------
     --< @private

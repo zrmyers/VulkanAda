@@ -28,7 +28,7 @@ use Vulkan.Math.GenFType;
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a single precision floating point vector type with 
+--< This package provides a single precision floating point vector type with
 --< 2 components.
 --------------------------------------------------------------------------------
 package Vulkan.Math.Vec2 is
@@ -51,7 +51,7 @@ package Vulkan.Math.Vec2 is
     --< @description
     --< Produce a default vector with all components set to 0.0.
     --<
-    --< @return 
+    --< @return
     --< A Vec2 with all components set to 0.0.
     ----------------------------------------------------------------------------
     function Make_Vec2 return Vkm_Vec2 is

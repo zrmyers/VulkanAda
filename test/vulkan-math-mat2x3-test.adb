@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -22,24 +22,19 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
-use Ada.Text_IO;
-
 with Ada.Characters.Latin_1;
-use Ada.Characters.Latin_1;
-
-with Vulkan.Math.Mat2x3;
-use Vulkan.Math.Mat2x3;
-
-with Vulkan.Math.Vec2;
-use Vulkan.Math.Vec2;
-
-with Vulkan.Math.Vec3;
-use Vulkan.Math.Vec3;
-
-with Vulkan.Math.Operators;
-use Vulkan.Math.Operators;
-
 with Vulkan.Test.Framework;
+with Vulkan.Math.Mat2x3;
+with Vulkan.Math.GenFType;
+with Vulkan.Math.Vec2;
+with Vulkan.Math.Vec3;
+
+use Ada.Text_IO;
+use Ada.Characters.Latin_1;
+use Vulkan.Math.Mat2x3;
+use Vulkan.Math.GenFType;
+use Vulkan.Math.Vec2;
+use Vulkan.Math.Vec3;
 use Vulkan.Test.Framework;
 
 --------------------------------------------------------------------------------

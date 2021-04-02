@@ -35,8 +35,8 @@ use Vulkan.Math.GenUType;
 --< This package describes any length vector of Vkm_Int type.
 --<
 --< @description
---< Provides an instantiation of the generic GenType  package with a Base_Type of 
---< Vkm_Int. This is used to provide the Vkm_GenIType subtype for the Vulkan Math 
+--< Provides an instantiation of the generic GenType  package with a Base_Type of
+--< Vkm_Int. This is used to provide the Vkm_GenIType subtype for the Vulkan Math
 --< library.
 --------------------------------------------------------------------------------
 package Vulkan.Math.GenIType is
@@ -46,16 +46,20 @@ package Vulkan.Math.GenIType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Int as the Base_Type.
     package GIT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Int, Default_Value => 0, Image => Vkm_Int'Image);
+        Base_Type => Vkm_Int,
+        Default_Value => 0,
+        Image => Vkm_Int'Image,
+        Unary_Minus => "-",
+        Multiply => "*");
 
-    --< A subtype of the instantiated Vkm_GenType that represents the GenIType 
+    --< A subtype of the instantiated Vkm_GenType that represents the GenIType
     --< described in the GLSL specification.
     subtype Vkm_GenIType is GIT.Vkm_GenType;
 
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function for parameters of Vkm_Int and Vkm_Bool type to GenIType
     --< and GenBType vectors.
@@ -86,13 +90,13 @@ package Vulkan.Math.GenIType is
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenIType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function on two Vkm_Int inputs that returns a Vkm_Bool component-wise
     --< to two Vkm_GenIType vectors.
     --<
     --< @description
-    --< Applies a supplied function component wise on two GenIType vectors, 
+    --< Applies a supplied function component wise on two GenIType vectors,
     --< returning a GenBType vector.
     --<
     --<    RVB := [Func(IVI1.x,IVI2.x) ... Func(IVI1.w,IVI2.w)]
@@ -111,13 +115,13 @@ package Vulkan.Math.GenIType is
     function Apply_Func_IVI_IVI_RVB(IVI1, IVI2 : in     Vkm_GenIType) return Vkm_GenBType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function on a Vkm_Uint input that returns a Vkm_Int component-wise
     --< on a Vkm_GenUType vector.
     --<
     --< @description
-    --< Applies a supplied function component wise on a GenUType vectors, 
+    --< Applies a supplied function component wise on a GenUType vectors,
     --< returning a GenIType vector.
     --<
     --<    RVU := [Func(IVI1.x) ... Func(IVI1.w)]

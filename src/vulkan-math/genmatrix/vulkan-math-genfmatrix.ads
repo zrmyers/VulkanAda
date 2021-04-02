@@ -23,8 +23,6 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenMatrix;
 with Vulkan.Math.GenFType;
-with Vulkan.Math.Common;
-with Vulkan.Math.Exp;
 
 use Vulkan.Math.GenFType;
 
@@ -118,7 +116,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Modulo component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Mod_Matrix is new GFM.Apply_Func_IM_IM_RM(Vulkan.Math.Common.Modulo);
+    function Op_Matrix_Mod_Matrix is new GFM.Apply_Func_IM_IM_RM("mod");
 
 
     ----------------------------------------------------------------------------
@@ -128,7 +126,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Modulo component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Mod_Scalar is new GFM.Apply_Func_IM_IS_RM(Vulkan.Math.Common.Modulo);
+    function Op_Matrix_Mod_Scalar is new GFM.Apply_Func_IM_IS_RM("mod");
 
 
     ----------------------------------------------------------------------------
@@ -138,7 +136,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Modulo component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Mod_Matrix is new GFM.Apply_Func_IS_IM_RM(Vulkan.Math.Common.Modulo);
+    function Op_Scalar_Mod_Matrix is new GFM.Apply_Func_IS_IM_RM("mod");
 
 
     ----------------------------------------------------------------------------
@@ -148,7 +146,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Power component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Pow_Matrix is new GFM.Apply_Func_IM_IM_RM(Vulkan.Math.Exp.Pow);
+    function Op_Matrix_Pow_Matrix is new GFM.Apply_Func_IM_IM_RM("**");
 
 
     ----------------------------------------------------------------------------
@@ -158,7 +156,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Power component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Pow_Scalar is new GFM.Apply_Func_IM_IS_RM(Vulkan.Math.Exp.Pow);
+    function Op_Matrix_Pow_Scalar is new GFM.Apply_Func_IM_IS_RM("**");
 
 
     ----------------------------------------------------------------------------
@@ -168,7 +166,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Power component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Pow_Matrix is new GFM.Apply_Func_IS_IM_RM(Vulkan.Math.Exp.Pow);
+    function Op_Scalar_Pow_Matrix is new GFM.Apply_Func_IS_IM_RM("**");
 
 
     ----------------------------------------------------------------------------

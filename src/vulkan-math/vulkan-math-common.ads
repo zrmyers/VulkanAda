@@ -55,29 +55,12 @@ package Vulkan.Math.Common is
     --< Computes the absolute value of x.
     --<
     --< @description
-    --< Computes the absolute value of scalar Vkm_Float x.
-    --<
-    --< @param x 
-    --< The input parameter
-    --<
-    --< @return 
-    --< Returns x if x >= 0.0; otherwise it returns -x.
-    ----------------------------------------------------------------------------
-    function Absolute_Value (x : in     Vkm_Float ) return Vkm_Float is
-        (if x >= 0.0 then x else -x) with Inline;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Computes the absolute value of x.
-    --<
-    --< @description
     --< Computes the absolute value of scalar Vkm_Double x.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter
     --<
-    --< @return 
+    --< @return
     --< Returns x if x >= 0.0; otherwise it returns -x.
     ----------------------------------------------------------------------------
     function Absolute_Value (x : in     Vkm_Double) return Vkm_Double is
@@ -91,10 +74,10 @@ package Vulkan.Math.Common is
     --< @description
     --< Computes the absolute value of scalar Vkm_Int x.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter
     --<
-    --< @return 
+    --< @return
     --< Returns x if x >= 0; otherwise it returns -x.
     ----------------------------------------------------------------------------
     function Absolute_Value (x : in     Vkm_Int) return Vkm_Int is
@@ -109,7 +92,7 @@ package Vulkan.Math.Common is
     --< Applies Absolute_Value() component-wise on a GenFType vector, returning
     --< a GenFType vector with the result.
     ----------------------------------------------------------------------------
-    function Absolute_Value is new GFT.Apply_Func_IV_RV(Absolute_Value);
+    function Absolute_Value is new GFT.Apply_Func_IV_RV("abs");
 
 
     ----------------------------------------------------------------------------
@@ -141,10 +124,10 @@ package Vulkan.Math.Common is
     --< @description
     --< Determines the sign of a scalar Vkm_Float.
     --<
-    --< @param x 
+    --< @param x
     --< The scalar input parameter
     --<
-    --< @return 
+    --< @return
     --< Returns one of the following:
     --< -  1 if X > 0
     --< -  0 if X = 0
@@ -161,10 +144,10 @@ package Vulkan.Math.Common is
     --< @description
     --< Determines the sign of a scalar Vkm_Double.
     --<
-    --< @param x 
+    --< @param x
     --< The scalar input parameter
     --<
-    --< @return 
+    --< @return
     --< Returns one of the following:
     --< -  1 if X > 0
     --< -  0 if X = 0
@@ -181,10 +164,10 @@ package Vulkan.Math.Common is
     --< @description
     --< Determines the sign of a scalar Vkm_Int.
     --<
-    --< @param x 
+    --< @param x
     --< The scalar input parameter
     --<
-    --< @return 
+    --< @return
     --< Returns one of the following:
     --< -  1 if X > 0
     --< -  0 if X = 0
@@ -230,29 +213,12 @@ package Vulkan.Math.Common is
     --<
     --< @description
     --< Computes the floor, y, as the nearest integer that is less than or equal
-    --< to scalar Vkm_Float x.
-    --<
-    --< @param x 
-    --< The value for which the floor is computed.
-    --<
-    --< @return 
-    --< Returns the floor, y.
-    ----------------------------------------------------------------------------
-    function Floor (x : in     Vkm_Float)  return Vkm_Float renames Vkm_Float'Floor;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Computes the floor of x.
-    --<
-    --< @description
-    --< Computes the floor, y, as the nearest integer that is less than or equal
     --< to scalar Vkm_Double x.
     --<
-    --< @param x 
+    --< @param x
     --< The value for which the floor is computed.
     --<
-    --< @return 
+    --< @return
     --< Returns the floor, y.
     ----------------------------------------------------------------------------
     function Floor (x : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Floor;
@@ -291,7 +257,7 @@ package Vulkan.Math.Common is
     --< @param x
     --< The value on which truncation is performed.
     --<
-    --< @return 
+    --< @return
     --< The truncation of x, y.
     ----------------------------------------------------------------------------
     function Trunc (x : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Truncation;
@@ -308,7 +274,7 @@ package Vulkan.Math.Common is
     --< @param x
     --< The value on which truncation is performed.
     --<
-    --< @return 
+    --< @return
     --< The truncation of x, y.
     ----------------------------------------------------------------------------
     function Trunc (x : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Truncation;
@@ -338,16 +304,16 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
-    --< 
+    --< Rounds x to the nearest integer.
+    --<
     --< @description
     --< Rounds the value x to the nearest integer, rounding away from 0 if the
     --< fraction part of x is equal to 0.5.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --< The rounded integer.
     ----------------------------------------------------------------------------
     function Round (x : in     Vkm_Float   ) return Vkm_Float renames Vkm_Float'Rounding;
@@ -355,16 +321,16 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
-    --< 
+    --< Rounds x to the nearest integer.
+    --<
     --< @description
     --< Rounds the value x to the nearest integer, rounding away from 0 if the
     --< fraction part of x is equal to 0.5.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --< The rounded integer.
     ----------------------------------------------------------------------------
     function Round (x : in     Vkm_Double  ) return Vkm_Double renames Vkm_Double'Rounding;
@@ -372,8 +338,8 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
-    --< 
+    --< Rounds x to the nearest integer.
+    --<
     --< @description
     --< Apply the Round() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -383,8 +349,8 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
-    --< 
+    --< Rounds x to the nearest integer.
+    --<
     --< @description
     --< Apply the Round() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -394,16 +360,16 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
+    --< Rounds x to the nearest integer.
     --<
     --< @description
     --< Rounds x to the nearest integer, rounding to the nearest even integer if
     --< the fraction part of x is equal to 0.5.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --<The rounded integer.
     ----------------------------------------------------------------------------
     function RoundEven (x : in     Vkm_Float) return Vkm_Float renames Vkm_Float'Unbiased_Rounding;
@@ -411,16 +377,16 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
+    --< Rounds x to the nearest integer.
     --<
     --< @description
     --< Rounds x to the nearest integer, rounding to the nearest even integer if
     --< the fraction part of x is equal to 0.5.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --<The rounded integer.
     ----------------------------------------------------------------------------
     function RoundEven (x : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Unbiased_Rounding;
@@ -428,8 +394,8 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
-    --< 
+    --< Rounds x to the nearest integer.
+    --<
     --< @description
     --< Apply the Round_Even() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -439,8 +405,8 @@ package Vulkan.Math.Common is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Rounds x to the nearest integer. 
-    --< 
+    --< Rounds x to the nearest integer.
+    --<
     --< @description
     --< Apply the Round_Even() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -455,10 +421,10 @@ package Vulkan.Math.Common is
     --< @description
     --< Determines the nearest integer greater than or equal to x.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --< The ceiling of x.
     ----------------------------------------------------------------------------
     function Ceil (x : in     Vkm_Float   ) return Vkm_Float renames Vkm_Float'Ceiling;
@@ -471,10 +437,10 @@ package Vulkan.Math.Common is
     --< @description
     --< Determines the nearest integer greater than or equal to x.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --< The ceiling of x.
     ----------------------------------------------------------------------------
     function Ceil (x : in     Vkm_Double  ) return Vkm_Double renames Vkm_Double'Ceiling;
@@ -483,7 +449,7 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Computes the ceil of x.
-    --< 
+    --<
     --< @description
     --< Apply the Ceil() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -494,7 +460,7 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Computes the ceil of x.
-    --< 
+    --<
     --< @description
     --< Apply the Ceil() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -511,10 +477,10 @@ package Vulkan.Math.Common is
     --<
     --<     fraction := x - floor(x);
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --< The fraction part of x.
     ----------------------------------------------------------------------------
     function Fract (x : in     Vkm_Float   ) return Vkm_Float is
@@ -530,10 +496,10 @@ package Vulkan.Math.Common is
     --<
     --<     fraction := x - floor(x);
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter.
     --<
-    --< @return 
+    --< @return
     --< The fraction part of x.
     ----------------------------------------------------------------------------
     function Fract (x : in     Vkm_Double  ) return Vkm_Double is
@@ -543,7 +509,7 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Get the fraction part of x.
-    --< 
+    --<
     --< @description
     --< Apply the Fract() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -554,7 +520,7 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Get the fraction part of x.
-    --< 
+    --<
     --< @description
     --< Apply the Fract() function to each compoent of input vector x, returning
     --< a vector with the component-wise result.
@@ -562,26 +528,7 @@ package Vulkan.Math.Common is
     function Fract is new GDT.Apply_Func_IV_RV(Fract);
 
 
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Compute the modulo of x and y.
-    --<
-    --< @description
-    --< Compute the modulo of x and y:
-    --<
-    --<     x mod y = x - y * floor(x / y)
-    --<
-    --< @param x
-    --< The value to which the modulus is applied.
-    --<
-    --< @param y
-    --< The modulus.
-    --<
-    --< @return 
-    --< The modulus of x in y.
-    ----------------------------------------------------------------------------
-    function Modulo (x, y : in     Vkm_Float) return Vkm_Float is
-        (x - y * Floor(x / y)) with Inline;
+
 
 
     ----------------------------------------------------------------------------
@@ -599,7 +546,7 @@ package Vulkan.Math.Common is
     --< @param y
     --< The modulus.
     --<
-    --< @return 
+    --< @return
     --< The modulus of x in y.
     ----------------------------------------------------------------------------
     function Modulo (x, y : in     Vkm_Double) return Vkm_Double is
@@ -609,20 +556,20 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Compute the modulo of x in y.
-    --< 
+    --<
     --< @description
-    --< Apply the Modulo() function to each compoent of input vectors x and y, 
+    --< Apply the Modulo() function to each compoent of input vectors x and y,
     --< returning a vector with the component-wise result.
     ----------------------------------------------------------------------------
-    function Modulo is new GFT.Apply_Func_IV_IV_RV(Modulo);
+    function Modulo is new GFT.Apply_Func_IV_IV_RV("mod");
 
 
     ----------------------------------------------------------------------------
     --< @summary
     --< Compute the modulo of x in y.
-    --< 
+    --<
     --< @description
-    --< Apply the Modulo() function to each compoent of input vectors x and y, 
+    --< Apply the Modulo() function to each compoent of input vectors x and y,
     --< returning a vector with the component-wise result.
     ----------------------------------------------------------------------------
     function Modulo is new GDT.Apply_Func_IV_IV_RV(Modulo);
@@ -655,7 +602,7 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Compute the modf of x.
-    --< 
+    --<
     --< @description
     --< Apply the Modulo() function to each compoent of input vector x, setting
     --< an output vector parameter to the integer parts of components, and returning
@@ -667,7 +614,7 @@ package Vulkan.Math.Common is
     ----------------------------------------------------------------------------
     --< @summary
     --< Compute the modf of x.
-    --< 
+    --<
     --< @description
     --< Apply the Modulo() function to each compoent of input vector x, setting
     --< an output vector parameter to the integer parts of components, and returning
@@ -683,13 +630,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the min of x and y, which is the smallest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The minimum of x and y.
     ----------------------------------------------------------------------------
     function Min (x, y : in     Vkm_Float ) return Vkm_Float  renames Vkm_Float'Min;
@@ -702,13 +649,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the min of x and y, which is the smallest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The minimum of x and y.
     ----------------------------------------------------------------------------
     function Min (x, y : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Min;
@@ -721,13 +668,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the min of x and y, which is the smallest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The minimum of x and y.
     ----------------------------------------------------------------------------
     function Min (x, y : in     Vkm_Uint  ) return Vkm_Uint   renames Vkm_Uint'Min;
@@ -740,13 +687,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the min of x and y, which is the smallest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The minimum of x and y.
     ----------------------------------------------------------------------------
     function Min (x, y : in     Vkm_Int   ) return Vkm_Int    renames Vkm_Int'Min;
@@ -803,13 +750,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the max of x and y, which is the greatest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The maximum of x and y.
     ----------------------------------------------------------------------------
     function Max (x, y : in     Vkm_Float ) return Vkm_Float  renames Vkm_Float'Max;
@@ -822,13 +769,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the max of x and y, which is the greatest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The maximum of x and y.
     ----------------------------------------------------------------------------
     function Max (x, y : in     Vkm_Double) return Vkm_Double renames Vkm_Double'Max;
@@ -841,13 +788,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the max of x and y, which is the greatest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The maximum of x and y.
     ----------------------------------------------------------------------------
     function Max (x, y : in     Vkm_Uint  ) return Vkm_Uint   renames Vkm_Uint'Max;
@@ -860,13 +807,13 @@ package Vulkan.Math.Common is
     --< @description
     --< Compute the max of x and y, which is the greatest of the two numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y'.
     --<
-    --< @return 
+    --< @return
     --< The maximum of x and y.
     ----------------------------------------------------------------------------
     function Max (x, y : in     Vkm_Int   ) return Vkm_Int    renames Vkm_Int'Max;
@@ -930,10 +877,10 @@ package Vulkan.Math.Common is
     --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param minVal 
+    --< @param minVal
     --< The minimum value in range.
     --<
-    --< @param maxVal 
+    --< @param maxVal
     --< The maximum value in range.
     --<
     --< @return Returns:
@@ -957,10 +904,10 @@ package Vulkan.Math.Common is
     --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param minVal 
+    --< @param minVal
     --< The minimum value in range.
     --<
-    --< @param maxVal 
+    --< @param maxVal
     --< The maximum value in range.
     --<
     --< @return Returns:
@@ -984,10 +931,10 @@ package Vulkan.Math.Common is
     --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param minVal 
+    --< @param minVal
     --< The minimum value in range.
     --<
-    --< @param maxVal 
+    --< @param maxVal
     --< The maximum value in range.
     --<
     --< @return Returns:
@@ -1011,10 +958,10 @@ package Vulkan.Math.Common is
     --< @param x
     --< The input parameter 'x'.
     --<
-    --< @param minVal 
+    --< @param minVal
     --< The minimum value in range.
     --<
-    --< @param maxVal 
+    --< @param maxVal
     --< The maximum value in range.
     --<
     --< @return Returns:
@@ -1101,13 +1048,13 @@ package Vulkan.Math.Common is
     --<
     --<     blend := 'x * (1 - a) + y * a'
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input paramter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is a coefficient in the linear blend function.
     --<
     --< @return X mixed with y.
@@ -1125,13 +1072,13 @@ package Vulkan.Math.Common is
     --<
     --<     blend := 'x * (1 - a) + y * a'
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input paramter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is a coefficient in the linear blend function.
     --<
     --< @return X mixed with y.
@@ -1195,16 +1142,16 @@ package Vulkan.Math.Common is
     --< - x if a is true
     --< - y if a is false
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is the boolean mixing coefficient.
     --<
-    --< @return 
+    --< @return
     --< The mixture of x with y.
     ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Float;
@@ -1221,16 +1168,16 @@ package Vulkan.Math.Common is
     --< - x if a is true
     --< - y if a is false
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is the boolean mixing coefficient.
     --<
-    --< @return 
+    --< @return
     --< The mixture of x with y.
     ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Double;
@@ -1247,16 +1194,16 @@ package Vulkan.Math.Common is
     --< - x if a is true
     --< - y if a is false
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is the boolean mixing coefficient.
     --<
-    --< @return 
+    --< @return
     --< The mixture of x with y.
     ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Uint;
@@ -1273,16 +1220,16 @@ package Vulkan.Math.Common is
     --< - x if a is true
     --< - y if a is false
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is the boolean mixing coefficient.
     --<
-    --< @return 
+    --< @return
     --< The mixture of x with y.
     ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Int;
@@ -1299,16 +1246,16 @@ package Vulkan.Math.Common is
     --< - x if a is true
     --< - y if a is false
     --<
-    --< @param x 
+    --< @param x
     --< The input parameter 'x' that is mixed with 'y'
     --<
-    --< @param y 
+    --< @param y
     --< The input parameter 'y' that is mixed with 'x'
     --<
-    --< @param a 
+    --< @param a
     --< The input parameter 'a' which is the boolean mixing coefficient.
     --<
-    --< @return 
+    --< @return
     --< The mixture of x with y.
     ----------------------------------------------------------------------------
     function Mix (x, y : in     Vkm_Bool;
@@ -1321,7 +1268,7 @@ package Vulkan.Math.Common is
     --< Mix the values 'x' and 'y' together using a boolean blend function.
     --<
     --< @description
-    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< Applies the boolean Mix() function component wise to input vectors x, y
     --< and a, where components of a are used as the mixing coefficent. The resulting
     --< vector is returned.
     ----------------------------------------------------------------------------
@@ -1333,7 +1280,7 @@ package Vulkan.Math.Common is
     --< Mix the values 'x' and 'y' together using a boolean blend function.
     --<
     --< @description
-    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< Applies the boolean Mix() function component wise to input vectors x, y
     --< and a, where components of a are used as the mixing coefficent. The resulting
     --< vector is returned.
     ----------------------------------------------------------------------------
@@ -1345,7 +1292,7 @@ package Vulkan.Math.Common is
     --< Mix the values 'x' and 'y' together using a boolean blend function.
     --<
     --< @description
-    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< Applies the boolean Mix() function component wise to input vectors x, y
     --< and a, where components of a are used as the mixing coefficent. The resulting
     --< vector is returned.
     ----------------------------------------------------------------------------
@@ -1357,7 +1304,7 @@ package Vulkan.Math.Common is
     --< Mix the values 'x' and 'y' together using a boolean blend function.
     --<
     --< @description
-    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< Applies the boolean Mix() function component wise to input vectors x, y
     --< and a, where components of a are used as the mixing coefficent. The resulting
     --< vector is returned.
     ----------------------------------------------------------------------------
@@ -1369,7 +1316,7 @@ package Vulkan.Math.Common is
     --< Mix the values 'x' and 'y' together using a boolean blend function.
     --<
     --< @description
-    --< Applies the boolean Mix() function component wise to input vectors x, y 
+    --< Applies the boolean Mix() function component wise to input vectors x, y
     --< and a, where components of a are used as the mixing coefficent. The resulting
     --< vector is returned.
     ----------------------------------------------------------------------------
@@ -1470,7 +1417,7 @@ package Vulkan.Math.Common is
     --<
     --< @description
     --< Compute the smooth step function of x between edge0 and edge1:
-    --< - If x is less than edge0, the step is 0. 
+    --< - If x is less than edge0, the step is 0.
     --< - If x is greater than edge1 the step is 1.
     --< - If x is between edge0 and edge1, the step is range [0.0 .. 1.0].
     --<
@@ -1489,7 +1436,7 @@ package Vulkan.Math.Common is
     --<
     --< @description
     --< Compute the smooth step function of x between edge0 and edge1:
-    --< - If x is less than edge0, the step is 0. 
+    --< - If x is less than edge0, the step is 0.
     --< - If x is greater than edge1 the step is 1.
     --< - If x is between edge0 and edge1, the step is range [0.0 .. 1.0].
     --<
@@ -1734,7 +1681,7 @@ package Vulkan.Math.Common is
     --<
     --< @param a
     --< The left multiply operand.
-    --< 
+    --<
     --< @param b
     --< The right multiply operand.
     --<
@@ -1758,7 +1705,7 @@ package Vulkan.Math.Common is
     --<
     --< @param a
     --< The left multiply operand.
-    --< 
+    --<
     --< @param b
     --< The right multiply operand.
     --<
@@ -1871,7 +1818,7 @@ package Vulkan.Math.Common is
     --<
     --< @description
     --< Apply the Ldexp() function to two input vectors, one of significands and
-    --< the other of exponents, returning a vector of composed floating point numbers. 
+    --< the other of exponents, returning a vector of composed floating point numbers.
     ----------------------------------------------------------------------------
     function Ldexp is new Apply_Func_IVF_IVI_RVF(Ldexp);
 
@@ -1883,7 +1830,7 @@ package Vulkan.Math.Common is
     --<
     --< @description
     --< Apply the Ldexp() function to two input vectors, one of significands and
-    --< the other of exponents, returning a vector of composed floating point numbers. 
+    --< the other of exponents, returning a vector of composed floating point numbers.
     ----------------------------------------------------------------------------
     function Ldexp is new Apply_Func_IVD_IVI_RVD(Ldexp);
 

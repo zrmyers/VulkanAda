@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -118,6 +118,12 @@ begin
     Put_Line("Testing '-' operator...");
     Put_Line(" mat4 - mat5 = " & Image(mat4 -mat5));
     Assert_Mat2x2_Equals(mat4 - mat5, -1.0, -1.0, 1.0, 1.0);
+
+    Put_Line("Testing '*' operator...");
+    Put_Line(" mat4 * mat5 = " & Image(mat4 * mat5));
+    Assert_Mat2x2_Equals(mat4 * mat5, 1.0, 2.0, 5.0, 10.0);
+
+    --Put_Line(" mat4 * vec1 = " & Image(mat4 * vec1));
 
 end Test_Mat2x2;
 

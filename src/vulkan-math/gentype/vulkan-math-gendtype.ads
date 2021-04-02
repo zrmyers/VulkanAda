@@ -35,8 +35,8 @@ use Vulkan.Math.GenIType;
 --< This package describes any length vector of Vkm_Double type.
 --<
 --< @description
---< Provides an instantiation of the generic GenType  package with a Base_Type of 
---< Vkm_Double. This is used to provide the Vkm_GenDType subtype for the Vulkan Math 
+--< Provides an instantiation of the generic GenType  package with a Base_Type of
+--< Vkm_Double. This is used to provide the Vkm_GenDType subtype for the Vulkan Math
 --< library.
 --------------------------------------------------------------------------------
 package Vulkan.Math.GenDType is
@@ -46,9 +46,13 @@ package Vulkan.Math.GenDType is
     --< @private
     --< An instance of the generic GenType package, with Vkm_Double as the Base_Type.
     package GDT is new Vulkan.Math.GenType(
-        Base_Type => Vkm_Double, Default_Value => 0.0, Image => Vkm_Double'Image);
+        Base_Type => Vkm_Double,
+        Default_Value => 0.0,
+        Image => Vkm_Double'Image,
+        Unary_Minus => "-",
+        Multiply => "*");
 
-    --< A subtype of the instantiated Vkm_GenType that represents the GenDType 
+    --< A subtype of the instantiated Vkm_GenType that represents the GenDType
     --< described in the GLSL specification.
     subtype Vkm_GenDType is GDT.Vkm_GenType;
 
@@ -56,7 +60,7 @@ package Vulkan.Math.GenDType is
     ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function for parameters of Vkm_Double and Vkm_Bool type to GenDType
     --< and GenBType vectors.
@@ -86,13 +90,13 @@ package Vulkan.Math.GenDType is
                                         IVB1       : in     Vkm_GenBType) return Vkm_GenDType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function on a Vkm_Double input that returns a VKm_Bool component-wise
     --< to a GenDType vector.
     --<
     --< @description
-    --< Applies a supplied function component wise on a GenDType vector returning 
+    --< Applies a supplied function component wise on a GenDType vector returning
     --< a GenBType vector.
     --<
     --<    RVB := [Func(IVD1.x) ... Func(IVD1.w)]
@@ -108,7 +112,7 @@ package Vulkan.Math.GenDType is
     function Apply_Func_IVD_RVB(IVD1 : in     Vkm_GenDType) return Vkm_GenBType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function on a Vkm_Double input and a Vkm_Int outut that returns a Vkm_Double
     --< component-wise to the corresponding vector types.
@@ -135,9 +139,9 @@ package Vulkan.Math.GenDType is
                                     OVI :    out Vkm_GenIType) return Vkm_GenDType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
-    --< Apply function on a Vkm_Double and a Vkm_Int input that returns a Vkm_Double 
+    --< Apply function on a Vkm_Double and a Vkm_Int input that returns a Vkm_Double
     --< component-wise to the corresponding vector types.
     --<
     --< @description
@@ -162,13 +166,13 @@ package Vulkan.Math.GenDType is
                                     IVI : in     Vkm_GenIType) return Vkm_GenDType;
 
 
-    ---------------------------------------------------------------------------- 
+    ----------------------------------------------------------------------------
     --< @summary
     --< Apply function on two Vkm_Double inputs that returns a Vkm_Bool component-wise
     --< to two Vkm_GenDType vectors.
     --<
     --< @description
-    --< Applies a supplied function component wise on two GenDType vectors, 
+    --< Applies a supplied function component wise on two GenDType vectors,
     --< returning a GenBType vector.
     --<
     --<    RVB := [Func(IVD1.x,IVD2.x) ... Func(IVD1.w,IVD2.w)]

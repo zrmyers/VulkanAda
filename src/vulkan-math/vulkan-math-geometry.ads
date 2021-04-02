@@ -55,7 +55,7 @@ package Vulkan.Math.Geometry is
     --<
     --<    Magnitude = sqrt(sum(x0^2, ..., xn^2))
     --<
-    --< @param x 
+    --< @param x
     --< The vector to determine the magnitude for.
     --<
     --< @return
@@ -72,7 +72,7 @@ package Vulkan.Math.Geometry is
     --<
     --<    Magnitude = sqrt(sum(x0^2, ..., xn^2))
     --<
-    --< @param x 
+    --< @param x
     --< The vector to determine the magnitude for.
     --<
     --< @return
@@ -86,18 +86,18 @@ package Vulkan.Math.Geometry is
     --< Calculate the distance between two points, p0 and p1.
     --<
     --< @description
-    --< Calculate the distance between two GenFType vectors representing points p0 
+    --< Calculate the distance between two GenFType vectors representing points p0
     --< and p1, using the formula:
     --<
     --<    Distance = Magnitude(p0 - p1)
     --<
-    --< @param p0 
+    --< @param p0
     --< A vector which represents the first point.
-    --< 
-    --< @param p1 
+    --<
+    --< @param p1
     --< A vector which represents the seconds point.
     --<
-    --< @return 
+    --< @return
     --< The distance between the two points.
     ----------------------------------------------------------------------------
     function Distance (p0, p1 : in     Vkm_GenFType) return Vkm_Float is
@@ -109,18 +109,18 @@ package Vulkan.Math.Geometry is
     --< Calculate the distance between two points, p0 and p1.
     --<
     --< @description
-    --< Calculate the distance between two GenDType vectors representing points p0 
+    --< Calculate the distance between two GenDType vectors representing points p0
     --< and p1, using the formula:
     --<
     --<    Distance = Magnitude(p0 - p1)
     --<
-    --< @param p0 
+    --< @param p0
     --< A vector which represents the first point.
-    --< 
-    --< @param p1 
+    --<
+    --< @param p1
     --< A vector which represents the seconds point.
     --<
-    --< @return 
+    --< @return
     --< The distance between the two points.
     ----------------------------------------------------------------------------
     function Distance (p0, p1 : in     Vkm_GenDType) return Vkm_Double is
@@ -134,15 +134,15 @@ package Vulkan.Math.Geometry is
     --< @description
     --< Calculate the dot product between two GenFType vectors.
     --<
-    --<    x dot y = 
+    --<    x dot y =
     --<    \         [x1 ... xN] . | y1  | = x1*y1 + ... xN * yN
     --<    \                       | ... |
     --<    \                       | yN  |
     --<
-    --< @param x 
+    --< @param x
     --< The left vector in the dot product operation.
     --<
-    --< @param y 
+    --< @param y
     --< The right vector in the dot product operation.
     --<
     --<
@@ -158,18 +158,18 @@ package Vulkan.Math.Geometry is
     --< @description
     --< Calculate the dot product between the two GenDType vectors.
     --<
-    --<    x dot y = 
+    --<    x dot y =
     --<    \         [x1 ... xN] . | y1  | = x1*y1 + ... xN * yN
     --<    \                       | ... |
     --<    \                       | yN  |
     --<
-    --< @param x 
+    --< @param x
     --< The left vector in the dot product operation.
     --<
-    --< @param y 
+    --< @param y
     --< The right vector in the dot product operation.
     --<
-    --< @return 
+    --< @return
     --< The dot product of the two vectors.
     ----------------------------------------------------------------------------
     function Dot (x, y : in     Vkm_GenDType) return Vkm_Double;
@@ -182,18 +182,18 @@ package Vulkan.Math.Geometry is
     --< @description
     --< Calculate the cross product between two 3 dimmensional GenFType vectors.
     --<
-    --<     x cross y = 
+    --<     x cross y =
     --<     \           | i  j  k  | = i | x1 x2 | -j | x0 x2 | +k | x0 x1 | = | +(x1*y2 - x2*y1) |
     --<     \           | x0 x1 x2 |     | y1 y2 |    | y0 y2 |    | y0 y1 |   | -(x0*y2 - x2*y1) |
     --<     \           | y0 y1 y2 |                                           | +(x0*y1 - x1*y0) |
     --<
-    --< @param x 
+    --< @param x
     --< The left vector in the cross product operation.
     --<
-    --< @param y 
+    --< @param y
     --< The right vector in the cross product operation.
     --<
-    --< @return 
+    --< @return
     --< The cross product of the two vectors.
     ----------------------------------------------------------------------------
     function Cross (x, y : in     Vkm_Vec3 ) return Vkm_Vec3;
@@ -206,18 +206,18 @@ package Vulkan.Math.Geometry is
     --< @description
     --< Calculate the cross product between two 3 dimmensional GenDType vectors.
     --<
-    --<     x cross y = 
+    --<     x cross y =
     --<     \           | i  j  k  | = i | x1 x2 | -j | x0 x2 | +k | x0 x1 | = | +(x1*y2 - x2*y1) |
     --<     \           | x0 x1 x2 |     | y1 y2 |    | y0 y2 |    | y0 y1 |   | -(x0*y2 - x2*y1) |
     --<     \           | y0 y1 y2 |                                           | +(x0*y1 - x1*y0) |
     --<
-    --< @param x 
+    --< @param x
     --< The left vector in the cross product operation.
     --<
-    --< @param y 
+    --< @param y
     --< The right vector in the cross product operation.
     --<
-    --< @return 
+    --< @return
     --< The cross product of the two vectors.
     ----------------------------------------------------------------------------
     function Cross (x, y : in     Vkm_Dvec3) return Vkm_Dvec3;
@@ -230,10 +230,10 @@ package Vulkan.Math.Geometry is
     --< @description
     --< Normalize the GenFType vector so that it has a magnitude of 1.
     --<
-    --< @param x 
+    --< @param x
     --< The vector to normalize.
     --<
-    --< @return 
+    --< @return
     --< The normalized vector.
     ----------------------------------------------------------------------------
     function Normalize(x : in     Vkm_GenFType) return Vkm_GenFType is
@@ -247,10 +247,10 @@ package Vulkan.Math.Geometry is
     --< @description
     --< Normalize the GenDType vector so that it has a magnitude of 1.
     --<
-    --< @param x 
+    --< @param x
     --< The vector to normalize.
     --<
-    --< @return 
+    --< @return
     --< The normalized vector.
     ----------------------------------------------------------------------------
     function Normalize(x : in     Vkm_GenDType) return Vkm_GenDType is
@@ -273,17 +273,17 @@ package Vulkan.Math.Geometry is
     --< @param n
     --< The normal vector N
     --<
-    --< @param i    
+    --< @param i
     --< The incident vector I
     --<
-    --< @param nref 
+    --< @param nref
     --< The reference normal vector Nref
     --<
-    --< @return 
+    --< @return
     --< If I dot Nref < 0, return N. Otherwise return -N.
     ----------------------------------------------------------------------------
     function Face_Forward(n, i, nref : in     Vkm_GenFType) return Vkm_GenFType is
-        (if Dot(nref,i) < 0.0 then n else -n) with Inline;
+    (if Dot(nref,i) < 0.0 then n else GFT.Unary_Minus(n)) with Inline;
 
 
     ----------------------------------------------------------------------------
@@ -302,13 +302,13 @@ package Vulkan.Math.Geometry is
     --< @param n
     --< The normal vector N
     --<
-    --< @param i    
+    --< @param i
     --< The incident vector I
     --<
-    --< @param nref 
+    --< @param nref
     --< The reference normal vector Nref
     --<
-    --< @return 
+    --< @return
     --< If I dot Nref < 0, return N. Otherwise return -N.
     ----------------------------------------------------------------------------
     function Face_Forward(n, i, nref : in     Vkm_GenDType) return Vkm_GenDType is
@@ -326,10 +326,10 @@ package Vulkan.Math.Geometry is
     --<
     --< I - 2 * ( N dot I ) * N.
     --<
-    --< @param i 
+    --< @param i
     --< The incident vector I.
     --<
-    --< @param n 
+    --< @param n
     --< The normal vector N. N should already be normalized.
     --<
     --< @return The reflection direction.
@@ -349,10 +349,10 @@ package Vulkan.Math.Geometry is
     --<
     --< I - 2 * ( N dot I ) * N.
     --<
-    --< @param i 
+    --< @param i
     --< The incident vector I.
     --<
-    --< @param n 
+    --< @param n
     --< The normal vector N. N should already be normalized.
     --<
     --< @return The reflection direction.
@@ -363,7 +363,7 @@ package Vulkan.Math.Geometry is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Calculate the refraction vector for the incident vector I travelling 
+    --< Calculate the refraction vector for the incident vector I travelling
     --< through the surface with normal N and a ratio of refraction eta.
     --<
     --< @description
@@ -374,16 +374,16 @@ package Vulkan.Math.Geometry is
     --<     If k < 0, the result is a vector of all zeros.
     --<     Else    , the result is: eta*I - (eta*dot(N,I) + sqrt(k))*N
     --<
-    --< @param i   
+    --< @param i
     --< The incident vector I.
     --<
-    --< @param n   
+    --< @param n
     --< The surface normal vector N.
     --<
-    --< @param eta 
+    --< @param eta
     --< The indices of refraction.
     --<
-    --< @return 
+    --< @return
     --< The refraction vector.
     ----------------------------------------------------------------------------
     function Refract(i, n : in     Vkm_GenFType;
@@ -392,7 +392,7 @@ package Vulkan.Math.Geometry is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Calculate the refraction vector for the incident vector I travelling 
+    --< Calculate the refraction vector for the incident vector I travelling
     --< through the surface with normal N and a ratio of refraction eta.
     --<
     --< @description
@@ -403,16 +403,16 @@ package Vulkan.Math.Geometry is
     --<     If k < 0, the result is a vector of all zeros.
     --<     Else    , the result is: eta*I - (eta*dot(N,I) + sqrt(k))*N
     --<
-    --< @param i   
+    --< @param i
     --< The incident vector I.
     --<
-    --< @param n   
+    --< @param n
     --< The surface normal vector N.
     --<
-    --< @param eta 
+    --< @param eta
     --< The indices of refraction.
     --<
-    --< @return 
+    --< @return
     --< The refraction vector.
     ----------------------------------------------------------------------------
     function Refract(i, n : in     Vkm_GenDType;

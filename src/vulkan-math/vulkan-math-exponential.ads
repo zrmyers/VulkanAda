@@ -37,51 +37,26 @@ use Vulkan.Math.GenDType;
 --< @description
 --< All exponential functions operate component-wise on vectors.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Exp is
+package Vulkan.Math.Exponential is
     pragma Preelaborate;
     pragma Pure;
 
-    --< The constant natural logarithm of 2 value. This constant is used in the
-    --< implementation of Exp2().
-    LN2 : constant := 0.69314_71805_59945_30941_72321_21458_18;
-
 
     ----------------------------------------------------------------------------
     --< @summary
     --< Compute x raised to the y power.
     --<
     --< @description
-    --< Compute x raised to the y power for single precision floating point 
+    --< Compute x raised to the y power for double precision floating point
     --< numbers.
     --<
-    --< @param x 
+    --< @param x
     --< The value that is raised to a power
     --<
-    --< @param y 
+    --< @param y
     --< The power that 'x' is raised to.
     --<
-    --< @return 
-    --< The result of (x ** y).
-    ----------------------------------------------------------------------------
-    function Pow (x, y : in     Vkm_Float) return Vkm_Float
-        renames Vulkan.Math.Numerics.VKM_FLT_NEF."**";
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
-    --< Compute x raised to the y power.
-    --<
-    --< @description
-    --< Compute x raised to the y power for double precision floating point 
-    --< numbers.
-    --<
-    --< @param x 
-    --< The value that is raised to a power
-    --<
-    --< @param y 
-    --< The power that 'x' is raised to.
-    --<
-    --< @return 
+    --< @return
     --< The result of (x ** y).
     ----------------------------------------------------------------------------
     function Pow (x, y : in     Vkm_Double) return Vkm_Double
@@ -96,7 +71,7 @@ package Vulkan.Math.Exp is
     --< Compute x raised to the y power component-wise for two GenFType vectors
     --< of the same length.
     ----------------------------------------------------------------------------
-    function Pow is new GFT.Apply_Func_IV_IV_RV(Pow);
+    function Pow is new GFT.Apply_Func_IV_IV_RV("**");
 
 
     ----------------------------------------------------------------------------
@@ -112,28 +87,10 @@ package Vulkan.Math.Exp is
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Computes the natural exponentiation of x, e^x.
-    --<
-    --< @description
-    --< Computes the natural exponentiation of x, e^x for a single precision
-    --< floating point number.
-    --< 
-    --< @param x 
-    --< The value 'x'
-    --< 
-    --< @return 
-    --< The result of e^x.
-    ----------------------------------------------------------------------------
-    function Exp (x : in     Vkm_Float) return Vkm_Float
-        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Exp;
-
-
-    ----------------------------------------------------------------------------
-    --< @summary
     --< Computes the natural exponentiation of x, component-wise.
     --<
     --< @description
-    --< Computes the component-wise natural exponentiation of x, e^x for a 
+    --< Computes the component-wise natural exponentiation of x, e^x for a
     --< GenFType vector.
     ----------------------------------------------------------------------------
     function Exp is new GFT.Apply_Func_IV_RV(Exp);
@@ -147,14 +104,14 @@ package Vulkan.Math.Exp is
     --< Computes the natural logarithm of x, which satisfies equation x=e^y, for
     --< a single precision floating point number.
     --<
-    --< @param x 
+    --< @param x
     --< The value 'x'.
     --<
-    --< @return 
+    --< @return
     --< The result of ln(x).
     ----------------------------------------------------------------------------
     function Log (x : in     Vkm_Float) return Vkm_Float
-        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Log;
+        renames VKM_FLT_NEF.Log;
 
 
     ----------------------------------------------------------------------------
@@ -204,7 +161,7 @@ package Vulkan.Math.Exp is
     --< Computes log base 2 of x, finding the value y which satisfies y = 2^x, for
     --< a single precision floating point number.
     --<
-    --< @param x 
+    --< @param x
     --< The value 'x'.
     --<
     --< @returns y = 2^x.
@@ -221,7 +178,7 @@ package Vulkan.Math.Exp is
     --< Computes log base 2 of x, component-wise.
     --<
     --< @description
-    --< Computes the component-wise log base 2 of x, finding the value y which 
+    --< Computes the component-wise log base 2 of x, finding the value y which
     --< satisfies y = 2^x, for a GenFType vector.
     ----------------------------------------------------------------------------
     function Log2 is new GFT.Apply_Func_IV_RV(Log2);
@@ -232,17 +189,17 @@ package Vulkan.Math.Exp is
     --< Computes the square root of x.
     --<
     --< @description
-    --< Computes the square root of x for a single-precision floating point 
+    --< Computes the square root of x for a single-precision floating point
     --< number.
     --<
-    --< @param x 
+    --< @param x
     --< The value 'x'
     --<
-    --< @return 
+    --< @return
     --< The result of sqrt(x)
     ----------------------------------------------------------------------------
     function Sqrt (x : in     Vkm_Float ) return Vkm_Float
-        renames Vulkan.Math.Numerics.VKM_FLT_NEF.Sqrt;
+        renames VKM_FLT_NEF.Sqrt;
 
 
     ----------------------------------------------------------------------------
@@ -250,13 +207,13 @@ package Vulkan.Math.Exp is
     --< Computes the square root of x.
     --<
     --< @description
-    --< Computes the square root of x for a double-precision floating point 
+    --< Computes the square root of x for a double-precision floating point
     --< number.
     --<
-    --< @param x 
+    --< @param x
     --< The value 'x'
     --<
-    --< @return 
+    --< @return
     --< The result of sqrt(x)
     ----------------------------------------------------------------------------
     function Sqrt (x : in     Vkm_Double) return Vkm_Double
@@ -292,7 +249,7 @@ package Vulkan.Math.Exp is
     --< number:
     --<     y = 1/sqrt(x)
     --<
-    --< @param x 
+    --< @param x
     --< The value 'x'
     --<
     --< @return
@@ -311,7 +268,7 @@ package Vulkan.Math.Exp is
     --< number:
     --<     y = 1/sqrt(x)
     --<
-    --< @param x 
+    --< @param x
     --< The value 'x'
     --<
     --< @return
@@ -341,4 +298,4 @@ package Vulkan.Math.Exp is
     function Inverse_Sqrt is new GDT.Apply_Func_IV_RV(Inverse_Sqrt);
 
 
-end Vulkan.Math.Exp;
+end Vulkan.Math.Exponential;

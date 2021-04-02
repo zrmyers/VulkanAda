@@ -31,7 +31,7 @@ use Vulkan.Math.Vec2;
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a single precision floating point vector type with 
+--< This package provides a single precision floating point vector type with
 --< 3 components.
 --------------------------------------------------------------------------------
 package Vulkan.Math.Vec3 is
@@ -162,7 +162,6 @@ package Vulkan.Math.Vec3 is
     function Make_Vec3 (vec2_value   : in     Vkm_Vec2;
                         scalar_value : in     Vkm_Float ) return Vkm_Vec3 is
         (Make_Vec3(vec2_value.x, vec2_value.y, scalar_value)) with Inline;
-
 
 
 end Vulkan.Math.Vec3;
