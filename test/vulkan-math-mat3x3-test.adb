@@ -23,6 +23,7 @@
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
 with Vulkan.Test.Framework;
+with Vulkan.Math.GenFMatrix;
 with Vulkan.Math.Mat3x3;
 with Vulkan.Math.Mat2x3;
 with Vulkan.Math.Mat3x2;

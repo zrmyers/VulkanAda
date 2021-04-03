@@ -22,12 +22,14 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
+with Vulkan.Math.GenFMatrix;
 with Vulkan.Math.Mat2x2;
 with Vulkan.Math.GenFType;
 with Vulkan.Math.Vec2;
 with Vulkan.Test.Framework;
 
 use Ada.Text_IO;
+use Vulkan.Math.GenFMatrix;
 use Vulkan.Math.Mat2x2;
 use Vulkan.Math.GenFType;
 use Vulkan.Math.Vec2;

@@ -23,6 +23,8 @@
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
 with Ada.Characters.Latin_1;
+with Vulkan.Math.GenFMatrix;
+with Vulkan.Math.Mat2x2;
 with Vulkan.Math.Mat3x2;
 with Vulkan.Math.GenFType;
 with Vulkan.Math.Vec2;
@@ -31,6 +33,7 @@ with Vulkan.Test.Framework;
 
 use Ada.Text_IO;
 use Ada.Characters.Latin_1;
+use Vulkan.Math.Mat2x2;
 use Vulkan.Math.Mat3x2;
 use Vulkan.Math.GenFType;
 use Vulkan.Math.Vec2;
