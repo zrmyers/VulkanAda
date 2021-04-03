@@ -26,10 +26,11 @@ jobs:
     - name: Fetch GLFWAda
       uses: actions/checkout@master
       with:
-        name: zrmyers/GLFWAda
+        repository: zrmyers/GLFWAda
         ref: master
+        path: ./
 
-    - run: find -name GLFWAda 
+    - run: find -name GLFWAda
     - run: cd GLFWAda
     - run: make install
     - run: cd ../VulkanAda
