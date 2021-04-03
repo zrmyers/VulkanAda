@@ -84,6 +84,30 @@ end Assert_Vec2_Equals;
 --------------------------------------------------------------------------------
 
 
+procedure Assert_Vec3_Equals(
+    vec            : in     Vkm_Vec3;
+    value1, value2, value3 : in     Vkm_Float) is
+
+    is_failure : Boolean := True;
+begin
+    is_failure := not (vec.x = value1 and
+                       vec.y = value2 and
+                       vec.z = value3);
+
+    if is_failure = True then
+        Put_Line("Assertion FAIL!");
+        Put_Line("    actual = " & vec.Image);
+        Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & ", " & value3'Image & " ]");
+        raise VULKAN_TEST_ASSERTION_FAIL;
+    else
+        Put_Line("Assertion PASS!");
+    end if;
+end Assert_Vec3_Equals;
+
+
+--------------------------------------------------------------------------------
+
+
 procedure Assert_Mat2x2_Equals(
     mat : in Vkm_Mat2;
     value1, value2, value3, value4 : in Vkm_Float) is

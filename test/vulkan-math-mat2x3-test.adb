@@ -25,12 +25,14 @@ with Ada.Text_IO;
 with Ada.Characters.Latin_1;
 with Vulkan.Test.Framework;
 with Vulkan.Math.Mat2x3;
+with Vulkan.Math.Mat2x2;
 with Vulkan.Math.GenFType;
 with Vulkan.Math.Vec2;
 with Vulkan.Math.Vec3;
 
 use Ada.Text_IO;
 use Ada.Characters.Latin_1;
+use Vulkan.Math.Mat2x2;
 use Vulkan.Math.Mat2x3;
 use Vulkan.Math.GenFType;
 use Vulkan.Math.Vec2;
@@ -58,7 +60,8 @@ procedure Test_Mat2x3 is
         Make_Mat2x3;
 
     mat2 : Vkm_Mat2x3 :=
-        Make_Mat2x3(0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
+        Make_Mat2x3(0.0, 1.0, 2.0,
+                    3.0, 4.0, 5.0);
 
     mat3 : Vkm_Mat2x3 :=
         Make_Mat2x3(vec2, - vec2);
@@ -72,6 +75,9 @@ procedure Test_Mat2x3 is
     mat6 : Vkm_Mat2x3 :=
         Make_Mat2x3(mat5);
 
+    mat7 : Vkm_Mat2x2 :=
+        Make_Mat2x2( 1.0, -1.0,
+                    -1.0,  2.0);
 begin
 
     Put_Line(LF & "Testing Mat2x3 Constructors...");
@@ -121,7 +127,19 @@ begin
 
     Put_Line("Testing '-' operator...");
     Put_Line(" mat4 - mat3 = " & Image(mat4 -mat3));
-    Assert_Mat2x3_Equals(mat4 - mat3, -1.0, -1.0, -1.0, 4.0, 6.0, 8.0);
+    Assert_Mat2x3_Equals(mat4 - mat3, -1.0, -1.0, -1.0,
+                                       4.0,  6.0,  8.0);
+
+    Put_Line("Testing '*' operator...");
+    Put_Line(" mat7 * mat4 = " & Image(mat7 * mat4));
+    Assert_Mat2x3_Equals(mat7 * mat4, -3.0, -3.0, -3.0,
+                                       6.0,  7.0,  8.0);
+
+    Put_Line(" mat4 * vec2 = " & Image(mat4 * vec2));
+    Assert_Vec2_Equals(mat4 * vec2, 8.0, 26.0);
+
+    Put_Line(" vec1 * mat4 = " & Image(vec1 * mat4));
+    Assert_Vec3_Equals(vec1 * mat4, 6.0, 9.0, 12.0);
 
 end Test_Mat2x3;
 

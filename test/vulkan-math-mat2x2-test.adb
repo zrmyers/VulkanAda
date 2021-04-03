@@ -22,15 +22,15 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
-use Ada.Text_IO;
-
 with Vulkan.Math.Mat2x2;
-use Vulkan.Math.Mat2x2;
-
+with Vulkan.Math.GenFType;
 with Vulkan.Math.Vec2;
-use Vulkan.Math.Vec2;
-
 with Vulkan.Test.Framework;
+
+use Ada.Text_IO;
+use Vulkan.Math.Mat2x2;
+use Vulkan.Math.GenFType;
+use Vulkan.Math.Vec2;
 use Vulkan.Test.Framework;
 
 --------------------------------------------------------------------------------
@@ -123,7 +123,12 @@ begin
     Put_Line(" mat4 * mat5 = " & Image(mat4 * mat5));
     Assert_Mat2x2_Equals(mat4 * mat5, 1.0, 2.0, 5.0, 10.0);
 
-    --Put_Line(" mat4 * vec1 = " & Image(mat4 * vec1));
+    Put_Line(" mat4 * vec1 = " & Image(mat4 * vec1));
+    Assert_Vec2_Equals(mat4 * vec1, 2.0, 8.0);
+
+    Put_Line(" vec1 * mat4 = " & Image(vec1 * mat4));
+    Assert_Vec2_Equals(vec1 * mat4, 4.0, 7.0);
+
 
 end Test_Mat2x2;
 

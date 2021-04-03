@@ -23,6 +23,7 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math;
 with Vulkan.Math.Vec2;
+with Vulkan.Math.Vec3;
 with Vulkan.Math.Mat2x2;
 with Vulkan.Math.Mat2x3;
 with Vulkan.Math.Mat2x4;
@@ -31,6 +32,7 @@ with Vulkan.Math.Mat3x3;
 
 use Vulkan.Math;
 use Vulkan.Math.Vec2;
+use Vulkan.Math.Vec3;
 use Vulkan.Math.Mat2x2;
 use Vulkan.Math.Mat2x3;
 use Vulkan.Math.Mat2x4;
@@ -55,6 +57,10 @@ procedure Assert_Vkm_Bool_Equals(
 procedure Assert_Vec2_Equals(
     vec : in Vkm_Vec2;
     value1, value2 : in Vkm_Float);
+
+procedure Assert_Vec3_Equals(
+    vec : in Vkm_Vec3;
+    value1, value2, value3 : in Vkm_Float);
 
 procedure Assert_Mat2x2_Equals(
     mat : in Vkm_Mat2;
