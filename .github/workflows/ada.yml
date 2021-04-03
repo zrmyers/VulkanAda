@@ -40,6 +40,6 @@ jobs:
     - name: Build
       run: make
 
-    - test: Test Vulkan Math Package
+    - name: Test Vulkan Math Package
       run: >
         ./bin/vulkan_test-math
