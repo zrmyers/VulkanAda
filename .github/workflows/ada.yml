@@ -22,9 +22,9 @@ jobs:
 
     - name: Set up GLFW dependency
       run: >
-        git clone git@github.com:zrmyers/GLFWAda.git
-        cd GLFWAda
+        git clone git@github.com:zrmyers/GLFWAda.git &&
+        cd GLFWAda &&
         make install
-        
+
     - name: Build
       run: make
