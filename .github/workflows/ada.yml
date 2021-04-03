@@ -28,11 +28,11 @@ jobs:
         ref: master
 
     - name: Install GLFWAda
-      run:
-        - pwd
-        - ls
-        - cd GLFWAda
-        - make install
+      run: >
+         pwd &&
+         ls &&
+         cd GLFWAda &&
+         make install
 
     - name: Build
       run: make
