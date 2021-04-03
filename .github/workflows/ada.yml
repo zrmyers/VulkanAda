@@ -17,8 +17,14 @@ jobs:
 
     - name: Set up GNAT toolchain
       run: >
-        sudo apt-get update && 
+        sudo apt-get update &&
         sudo apt-get install gnat gprbuild
 
+    - name: Set up GLFW dependency
+      run: >
+        git clone git@github.com:zrmyers/GLFWAda.git
+        cd GLFWAda
+        make install
+        
     - name: Build
       run: make
