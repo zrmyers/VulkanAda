@@ -21,19 +21,17 @@ jobs:
         sudo apt-get update &&
         sudo apt-get install gnat gprbuild
 
+    - run: cd ../
+    
     - name: Fetch GLFWAda
       uses: actions/checkout@master
       with:
         name: zrmyers/GLFWAda
         ref: master
 
-    - name: Install GLFWAda
-      run: >
-         cd .. &&
-         pwd &&
-         ls &&
-         cd GLFWAda &&
-         make install
+    - run: cd GLFWAda
+    - run: make install
+    - run: cd ../VulkanAda
 
     - name: Build
       run: make
