@@ -21,6 +21,10 @@ jobs:
         sudo apt-get update &&
         sudo apt-get install gnat gprbuild
 
+    - name: Obtain GLFW dependency
+      run: >
+        sudo apt-get install libglfw3-dev
+        
     - name: Fetch GLFWAda
       uses: actions/checkout@master
       with:
