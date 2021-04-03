@@ -21,18 +21,25 @@ jobs:
         sudo apt-get update &&
         sudo apt-get install gnat gprbuild
 
+    - name: Obtain GLFW dependency
+      run: >
+        sudo apt-get install libglfw3-dev
+
     - name: Fetch GLFWAda
       uses: actions/checkout@master
       with:
-        name: zrmyers/GLFWAda
+        repository: zrmyers/GLFWAda
         ref: master
+        path: GLFWAda
 
-    - name: Install GLFWAda
-      run:
-        - pwd
-        - ls
-        - cd GLFWAda
-        - make install
+    - name: Build GLFWAda
+      working-directory: GLFWAda
+      run: >
+        make install
 
     - name: Build
       run: make
+
+    - name: Test Vulkan Math Package
+      run: >
+        ./bin/vulkan_test-math

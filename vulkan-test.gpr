@@ -26,10 +26,10 @@ limited with "glfw";
 
 project Vulkan.Test is
 
-    for Languages use ("ada");     
+    for Languages use ("ada");
     for Object_Dir use "obj";
     for Exec_Dir use "bin";
-    for Source_Dirs use ("samples/");
+    for Source_Dirs use ("samples/","test/");
     for Main use ("vulkan_test-environment.adb","vulkan_test-math.adb");
-    
+
 end Vulkan.Test;
