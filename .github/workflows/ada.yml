@@ -29,6 +29,7 @@ jobs:
 
     - name: Install GLFWAda
       run: >
+         cd .. &&
          pwd &&
          ls &&
          cd GLFWAda &&
