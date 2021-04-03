@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
     - name: Checkout
       uses: actions/checkout@v2
 
@@ -20,9 +21,12 @@ jobs:
         sudo apt-get update &&
         sudo apt-get install gnat gprbuild
 
-    - name: Set up GLFW dependency
+    - name: Install GLFWAda
+      uses: actions/checkout@master
+      with:
+        name: zrmyers/GLFWAda
+        ref: master
       run: >
-        git clone git@github.com:zrmyers/GLFWAda.git &&
         cd GLFWAda &&
         make install
 
