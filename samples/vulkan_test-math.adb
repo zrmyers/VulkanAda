@@ -23,6 +23,7 @@
 --------------------------------------------------------------------------------
 
 with Vulkan.Math.Vec2.Test;
+with Vulkan.Math.Vec3.Test;
 with Vulkan.Math.Mat2x2.Test;
 with Vulkan.Math.Mat2x3.Test;
 with Vulkan.Math.Mat2x4.Test;
@@ -30,6 +31,7 @@ with Vulkan.Math.Mat3x2.Test;
 with Vulkan.Math.Mat3x3.Test;
 
 use Vulkan.Math.Vec2.Test;
+use Vulkan.Math.Vec3.Test;
 use Vulkan.Math.Mat2x2.Test;
 use Vulkan.Math.Mat2x3.Test;
 use Vulkan.Math.Mat2x4.Test;
@@ -39,6 +41,8 @@ use Vulkan.Math.Mat3x3.Test;
 procedure Vulkan_Test.Math is begin
 
     Test_Vec2;
+
+    Test_Vec3;
     
     Test_Mat2x2;
 
