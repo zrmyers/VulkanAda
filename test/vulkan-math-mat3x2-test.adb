@@ -137,6 +137,18 @@ begin
                                        3.0,  5.0,
                                        2.0,  1.0);
 
+    Put_Line("Testing '*' operator...");
+    Put_Line(" mat4 * mat5 = " & Image(mat4 * mat5));
+    Assert_Mat3x2_Equals(mat4 * mat5, 0.0 , 5.0 ,
+                                      10.0, 15.0,
+                                      20.0, 25.0);
+
+   Put_Line(" mat4 * vec1 = " & Image(mat4 * vec1));
+   Assert_Vec3_Equals(mat4 * vec1, 2.0 , 8.0 , 14.0);
+
+   Put_Line(" vec2 * mat4 = " & Image(vec2 * mat4));
+   Assert_Vec2_Equals(vec2 * mat4, 16.0 , 22.0 );
+
 end Test_Mat3x2;
 
 end Vulkan.Math.Mat3x2.Test;

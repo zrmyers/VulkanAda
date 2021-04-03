@@ -283,7 +283,7 @@ package Vulkan.Math.Geometry is
     --< If I dot Nref < 0, return N. Otherwise return -N.
     ----------------------------------------------------------------------------
     function Face_Forward(n, i, nref : in     Vkm_GenFType) return Vkm_GenFType is
-    (if Dot(nref,i) < 0.0 then n else GFT.Unary_Minus(n)) with Inline;
+    (if Dot(nref,i) < 0.0 then n else -n) with Inline;
 
 
     ----------------------------------------------------------------------------
