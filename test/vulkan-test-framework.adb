@@ -313,14 +313,90 @@ begin
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
-                 "[[ " & value1'Image & ", " & value2'Image  & ", " & value3'Image  & value4'Image  & " ], " &
-                  "[ " & value5'Image & ", " & value6'Image  & ", " & value7'Image  & value8'Image  & " ], " &
-                  "[ " & value9'Image & ", " & value10'Image & ", " & value11'Image & value12'Image & " ]]");
+                 "[[ " & value1'Image & ", " & value2'Image  & ", " & value3'Image  & ", " & value4'Image  & " ], " &
+                  "[ " & value5'Image & ", " & value6'Image  & ", " & value7'Image  & ", " & value8'Image  & " ], " &
+                  "[ " & value9'Image & ", " & value10'Image & ", " & value11'Image & ", " & value12'Image & " ]]");
         raise VULKAN_TEST_ASSERTION_FAIL;
     else
         Put_Line("Assertion PASS!");
     end if;
 end Assert_Mat3x4_Equals;
+
+
+--------------------------------------------------------------------------------
+
+
+procedure Assert_Mat4x2_Equals(
+    mat : in Vkm_Mat4x2;
+    value1, value2,
+    value3, value4,
+    value5, value6,
+    value7, value8 : in Vkm_Float) is
+
+    is_failure : Boolean := True;
+begin
+    is_failure := not (mat.c0r0 = value1 and
+                       mat.c1r0 = value2 and
+                       mat.c0r1 = value3 and
+                       mat.c1r1 = value4 and
+                       mat.c0r2 = value5 and
+                       mat.c1r2 = value6 and
+                       mat.c0r3 = value7 and
+                       mat.c1r3 = value8);
+
+    if is_failure = True then
+        Put_Line("Assertion FAIL!");
+        Put_Line("    Actual mat = " & mat.Image);
+        Put_Line("    Expected mat = " &
+                 "[[ " & value1'Image & ", " & value2'Image & " ], " &
+                  "[ " & value3'Image & ", " & value4'Image & " ], " &
+                  "[ " & value5'Image & ", " & value6'Image & " ], " &
+                  "[ " & value7'Image & ", " & value8'Image & " ]]");
+        raise VULKAN_TEST_ASSERTION_FAIL;
+    else
+        Put_Line("Assertion PASS!");
+    end if;
+end Assert_Mat4x2_Equals;
+
+
+--------------------------------------------------------------------------------
+
+
+procedure Assert_Mat4x3_Equals(
+    mat : in Vkm_Mat4x3;
+    value1,  value2,  value3,
+    value4,  value5,  value6,
+    value7,  value8,  value9,
+    value10, value11, value12 : in Vkm_Float) is
+
+    is_failure : Boolean := True;
+begin
+    is_failure := not (mat.c0r0 = value1 and
+                       mat.c1r0 = value2 and
+                       mat.c2r0 = value3 and
+                       mat.c0r1 = value4 and
+                       mat.c1r1 = value5 and
+                       mat.c2r1 = value6 and
+                       mat.c0r2 = value7 and
+                       mat.c1r2 = value8 and
+                       mat.c2r2 = value9 and
+                       mat.c0r3 = value10 and
+                       mat.c1r3 = value11 and
+                       mat.c2r3 = value12);
+
+    if is_failure = True then
+        Put_Line("Assertion FAIL!");
+        Put_Line("    Actual mat = " & mat.Image);
+        Put_Line("    Expected mat = " &
+                 "[[ " & value1'Image  & ", " & value2'Image  & ", " & value3'Image  & " ], " &
+                  "[ " & value4'Image  & ", " & value5'Image  & ", " & value6'Image  & " ], " &
+                  "[ " & value7'Image  & ", " & value8'Image  & ", " & value9'Image  & " ], " &
+                  "[ " & value10'Image & ", " & value11'Image & ", " & value12'Image & " ]]");
+        raise VULKAN_TEST_ASSERTION_FAIL;
+    else
+        Put_Line("Assertion PASS!");
+    end if;
+end Assert_Mat4x3_Equals;
 
 
 end Vulkan.Test.Framework;

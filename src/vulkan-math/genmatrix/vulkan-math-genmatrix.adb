@@ -24,15 +24,6 @@
 
 package body Vulkan.Math.GenMatrix is
 
-    --< Used to look up identity matrix values when initializing a matrix.
-    IDENTITY_LOOKUP : constant Vkm_Matrix(0 .. 3, 0 .. 3) :=
-        (
-            (1.0, 0.0, 0.0, 0.0),
-            (0.0, 1.0, 0.0, 0.0),
-            (0.0, 0.0, 1.0, 0.0),
-            (0.0, 0.0, 0.0, 1.0)
-        );
-
     ----------------------------------------------------------------------------
     -- Operations
     ----------------------------------------------------------------------------
@@ -64,7 +55,7 @@ package body Vulkan.Math.GenMatrix is
 
     function Element(instance             : in     Vkm_GenMatrix;
                      col_index, row_index : in     Vkm_Indices) return Base_Type is
-        value : Base_Type := IDENTITY_LOOKUP(col_index, row_index);
+        value : Base_Type := 0.0;
     begin
         if col_index <= instance.last_column_index and
            row_index <= instance.last_row_index then
@@ -561,11 +552,14 @@ package body Vulkan.Math.GenMatrix is
         -- to the last_row_index of the right matrix.
         last_dot_index : constant Vkm_Indices := left.last_column_index;
     begin
+        if left.last_column_index /= right.last_row_index then
+            raise INCOMPATIBLE_MATRICES;
+        end if;
         for col_index in Vkm_Indices'First .. result.last_column_index loop
             for row_index in Vkm_Indices'First .. result.last_row_index loop
 
                 -- Perform Dot Product of left.rI with right.cI
-                for dot_index in Vkm_Indices'First ..last_dot_index loop
+                for dot_index in Vkm_Indices'First .. last_dot_index loop
                     result.data(col_index, row_index) := result.data(col_index, row_index) +
                         (left.data(dot_index, row_index) * right.data(col_index, dot_index));
                 end loop;

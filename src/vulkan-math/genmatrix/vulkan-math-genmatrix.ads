@@ -136,6 +136,7 @@ package Vulkan.Math.GenMatrix is
     pragma Preelaborate;
     pragma Pure;
 
+    INCOMPATIBLE_MATRICES : exception;
 
     ----------------------------------------------------------------------------
     -- Types
