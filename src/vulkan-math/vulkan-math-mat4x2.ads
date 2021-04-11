@@ -34,34 +34,34 @@ use Vulkan.Math.Vec2;
 --< This package provides a single precision floating point matrix with 3 rows
 --< and 2 columns.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Mat3x2 is
+package Vulkan.Math.Mat4x2 is
     pragma Preelaborate;
     pragma Pure;
 
-    --< A 3x2 matrix of single-precision floating point numbers.
-    subtype Vkm_Mat3x2 is Vkm_Mat(
-        last_row_index => 2, last_column_index => 1);
+    --< A 4x2 matrix of single-precision floating point numbers.
+    subtype Vkm_Mat4x2 is Vkm_Mat(
+        last_row_index => 3, last_column_index => 1);
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat3x2 type.
+    --< Constructor for Vkm_Mat4x2 type.
     --<
     --< @description
-    --< Construct a 3x2 matrix with each component set to 0.0
+    --< Construct a 4x2 matrix with each component set to 0.0
     --<
     --< @return
-    --< A 3x2 matrix.
+    --< A 4x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 return Vkm_Mat3x2 is
-        (GFM.Make_GenMatrix(cN => 1, rN => 2)) with Inline;
+    function Make_Mat4x2 return Vkm_Mat4x2 is
+        (GFM.Make_GenMatrix(cN => 1, rN => 3)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat3x2 type.
+    --< Constructor for Vkm_Mat4x2 type.
     --<
     --< @description
-    --< Construct a 3x2 matrix with each component set to a different value.
+    --< Construct a 4x2 matrix with each component set to a different value.
     --<
     --<     | value1 value4 |
     --<     | value2 value5 |
@@ -86,23 +86,25 @@ package Vulkan.Math.Mat3x2 is
     --< The sixth value to set for the matrix.
     --<
     --< @return
-    --< A 3x2 matrix.
+    --< A 4x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
-        value1, value2, value3,
-        value4, value5, value6 : in     Vkm_Float) return Vkm_Mat3x2 is
+    function Make_Mat4x2 (
+        value1, value2,
+        value3, value4,
+        value5, value6,
+        value7, value8 : in     Vkm_Float) return Vkm_Mat4x2 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
-             c0r0_val => value1, c0r1_val => value3, c0r2_val => value5,
-             c1r0_val => value2, c1r1_val => value4, c1r2_val => value6)) with Inline;
+             cN => 1, rN => 3,
+             c0r0_val => value1, c0r1_val => value3, c0r2_val => value5, c0r3_val => value7,
+             c1r0_val => value2, c1r1_val => value4, c1r2_val => value6, c1r3_val => value8)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat3x2 type.
+    --< Constructor for Vkm_Mat4x2 type.
     --<
     --< @description
-    --< Construct a 3x2 matrix with each row set to the value of a 2 dimmensional
+    --< Construct a 4x2 matrix with each row set to the value of a 2 dimmensional
     --< vector.
     --<
     --< @param value1
@@ -115,22 +117,22 @@ package Vulkan.Math.Mat3x2 is
     --< The third value to set for the matrix.
     --<
     --< @return
-    --< A 3x2 matrix.
+    --< A 4x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
-        value1, value2, value3 : in     Vkm_Vec2) return Vkm_Mat3x2 is
+    function Make_Mat4x2 (
+        value1, value2, value3, value4 : in     Vkm_Vec2) return Vkm_Mat4x2 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
-             c0r0_val => value1.x, c0r1_val => value2.x, c0r2_val => value3.x,
-             c1r0_val => value1.y, c1r1_val => value2.y, c1r2_val => value3.y)) with Inline;
+             cN => 1, rN => 3,
+             c0r0_val => value1.x, c0r1_val => value2.x, c0r2_val => value3.x, c0r3_val => value4.x,
+             c1r0_val => value1.y, c1r1_val => value2.y, c1r2_val => value3.y, c1r3_val => value4.y)) with Inline;
 
 
     ----------------------------------------------------------------------------
     --< @summary
-    --< Constructor for Vkm_Mat3x2 type.
+    --< Constructor for Vkm_Mat4x2 type.
     --<
     --< @description
-    --< Construct a 3x2 matrix using values from an existing matrix.
+    --< Construct a 4x2 matrix using values from an existing matrix.
     --<
     --< If the provided matrix has dimmensions that are not the same as this
     --< matrix, the corresponding element in the 4x4 identity matrix is used for
@@ -140,14 +142,14 @@ package Vulkan.Math.Mat3x2 is
     --< The submatrix to extract values from.
     --<
     --< @return
-    --< A 3x2 matrix.
+    --< A 4x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
-        value1 : in     Vkm_Mat) return Vkm_Mat3x2 is
+    function Make_Mat4x2 (
+        value1 : in     Vkm_Mat) return Vkm_Mat4x2 is
         (GFM.Make_GenMatrix(
-             cN => 1, rN => 2,
-             c0r0_val => value1.c0r0, c0r1_val => value1.c0r1, c0r2_val => value1.c0r2,
-             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1, c1r2_val => value1.c1r2)) with Inline;
+             cN => 1, rN => 3,
+             c0r0_val => value1.c0r0, c0r1_val => value1.c0r1, c0r2_val => value1.c0r2,  c0r3_val => value1.c0r3,
+             c1r0_val => value1.c1r0, c1r1_val => value1.c1r1, c1r2_val => value1.c1r2,  c1r3_val => value1.c1r3)) with Inline;
 
 
-end Vulkan.Math.Mat3x2;
+end Vulkan.Math.Mat4x2;

@@ -28,15 +28,15 @@ package body Vulkan.Math.GenFMatrix is
     ----------------------------------------------------------------------------
 
 
-    function Op_Matrix_Mult_Vector (
+    function "*" (
         left  : in     Vkm_Mat;
         right : in     Vkm_GenFType ) return Vkm_GenFType is
-        
+
         result : Vkm_GenFType := GFT.Make_GenType(
             last_index => left.last_row_index,
             value      => 0.0);
-        
-    begin 
+
+    begin
         for row_index in Vkm_Indices'First .. left.last_row_index loop
             for dot_index in Vkm_Indices'First .. left.last_column_index loop
                 result.data(row_index) := result.data(row_index) +
@@ -44,21 +44,21 @@ package body Vulkan.Math.GenFMatrix is
             end loop;
         end loop;
         return result;
-    end Op_Matrix_Mult_Vector;
+    end "*";
 
 
     ----------------------------------------------------------------------------
 
 
-    function Op_Vector_Mult_Matrix (
+    function "*" (
         left  : in     Vkm_GenFType;
         right : in     Vkm_Mat     ) return Vkm_GenFType is
-        
+
         result : Vkm_GenFType := GFT.Make_GenType(
             last_index => right.last_column_index,
             value      => 0.0);
-        
-    begin 
+
+    begin
         for col_index in Vkm_Indices'First .. right.last_column_index loop
             for dot_index in Vkm_Indices'First .. right.last_row_index loop
                 result.data(col_index) := result.data(col_index) +
@@ -66,8 +66,7 @@ package body Vulkan.Math.GenFMatrix is
             end loop;
         end loop;
         return result;
-    end Op_Vector_Mult_Matrix;
+    end "*";
 
 
 end Vulkan.Math.GenFMatrix;
-

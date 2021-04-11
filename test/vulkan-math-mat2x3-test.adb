@@ -24,6 +24,7 @@
 with Ada.Text_IO;
 with Ada.Characters.Latin_1;
 with Vulkan.Test.Framework;
+with Vulkan.Math.GenFMatrix;
 with Vulkan.Math.Mat2x3;
 with Vulkan.Math.Mat2x2;
 with Vulkan.Math.GenFType;

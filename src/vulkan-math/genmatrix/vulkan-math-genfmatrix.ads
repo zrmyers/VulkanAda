@@ -74,6 +74,25 @@ package Vulkan.Math.GenFMatrix is
 
     ----------------------------------------------------------------------------
     --< @summary
+    --< Equality operator for two Vkm_Mat2x2 matrices.
+    --<
+    --< @description
+    --< Determine whether two matrices are equal.
+    --<
+    --< @param left
+    --< The left operator argument.
+    --<
+    --< @param right
+    --< The right operator argument.
+    --<
+    --< @return
+    --< True if the two matrices are equal. Otherwise false.
+    ----------------------------------------------------------------------------
+    function "=" (left, right : in     Vkm_Mat) return Vkm_Bool renames GFM.Op_Is_Equal;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
     --< Unary plus operator for a Vkm_Mat matrix.
     --<
     --< @description
@@ -85,7 +104,7 @@ package Vulkan.Math.GenFMatrix is
     --< @return
     --< The result of the operator on the matrix.
     ----------------------------------------------------------------------------
-    function Op_Plus_Matrix (right : in     Vkm_Mat) return Vkm_Mat is
+    function "+" (right : in     Vkm_Mat) return Vkm_Mat is
         (right) with Inline;
 
 
@@ -96,7 +115,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Return the matrix negated.
     ----------------------------------------------------------------------------
-    function Op_Minus_Matrix is new GFM.Apply_Func_IM_RM("-");
+    function "-" is new GFM.Apply_Func_IM_RM("-");
 
 
     ----------------------------------------------------------------------------
@@ -106,7 +125,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Return a matrix of the absolute values of each element of the input matrix.
     ----------------------------------------------------------------------------
-    function Op_Abs_Matrix is new GFM.Apply_Func_IM_RM("abs");
+    function "abs" is new GFM.Apply_Func_IM_RM("abs");
 
 
     ----------------------------------------------------------------------------
@@ -116,7 +135,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Modulo component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Mod_Matrix is new GFM.Apply_Func_IM_IM_RM("mod");
+    function "mod" is new GFM.Apply_Func_IM_IM_RM("mod");
 
 
     ----------------------------------------------------------------------------
@@ -126,7 +145,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Modulo component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Mod_Scalar is new GFM.Apply_Func_IM_IS_RM("mod");
+    function "mod" is new GFM.Apply_Func_IM_IS_RM("mod");
 
 
     ----------------------------------------------------------------------------
@@ -136,7 +155,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Modulo component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Mod_Matrix is new GFM.Apply_Func_IS_IM_RM("mod");
+    function "mod" is new GFM.Apply_Func_IS_IM_RM("mod");
 
 
     ----------------------------------------------------------------------------
@@ -146,7 +165,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Power component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Pow_Matrix is new GFM.Apply_Func_IM_IM_RM("**");
+    function "**" is new GFM.Apply_Func_IM_IM_RM("**");
 
 
     ----------------------------------------------------------------------------
@@ -156,7 +175,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Power component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Pow_Scalar is new GFM.Apply_Func_IM_IS_RM("**");
+    function "**" is new GFM.Apply_Func_IM_IS_RM("**");
 
 
     ----------------------------------------------------------------------------
@@ -166,7 +185,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Power component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Pow_Matrix is new GFM.Apply_Func_IS_IM_RM("**");
+    function "**" is new GFM.Apply_Func_IS_IM_RM("**");
 
 
     ----------------------------------------------------------------------------
@@ -176,7 +195,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Addition component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Plus_Matrix is new GFM.Apply_Func_IM_IM_RM("+");
+    function "+" is new GFM.Apply_Func_IM_IM_RM("+");
 
 
     ----------------------------------------------------------------------------
@@ -186,7 +205,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Addition component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Plus_Scalar is new GFM.Apply_Func_IM_IS_RM("+");
+    function "+" is new GFM.Apply_Func_IM_IS_RM("+");
 
 
     ----------------------------------------------------------------------------
@@ -196,7 +215,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Addition component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Plus_Matrix is new GFM.Apply_Func_IS_IM_RM("+");
+    function "+" is new GFM.Apply_Func_IS_IM_RM("+");
 
 
     ----------------------------------------------------------------------------
@@ -206,7 +225,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Subtraction component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Minus_Matrix is new GFM.Apply_Func_IM_IM_RM("-");
+    function "-" is new GFM.Apply_Func_IM_IM_RM("-");
 
 
     ----------------------------------------------------------------------------
@@ -216,7 +235,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Subtraction component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Minus_Scalar is new GFM.Apply_Func_IM_IS_RM("-");
+    function "-" is new GFM.Apply_Func_IM_IS_RM("-");
 
 
     ----------------------------------------------------------------------------
@@ -226,7 +245,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Subtraction component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Minus_Matrix is new GFM.Apply_Func_IS_IM_RM("-");
+    function "-" is new GFM.Apply_Func_IS_IM_RM("-");
 
 
     ----------------------------------------------------------------------------
@@ -236,7 +255,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Remainder component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Rem_Matrix is new GFM.Apply_Func_IM_IM_RM(Vkm_Float'Remainder);
+    function "rem" is new GFM.Apply_Func_IM_IM_RM(Vkm_Float'Remainder);
 
 
     ----------------------------------------------------------------------------
@@ -246,7 +265,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Remainder component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Rem_Scalar is new GFM.Apply_Func_IM_IS_RM(Vkm_Float'Remainder);
+    function "rem" is new GFM.Apply_Func_IM_IS_RM(Vkm_Float'Remainder);
 
 
     ----------------------------------------------------------------------------
@@ -256,7 +275,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Remainder component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Rem_Matrix is new GFM.Apply_Func_IS_IM_RM(Vkm_Float'Remainder);
+    function "rem" is new GFM.Apply_Func_IS_IM_RM(Vkm_Float'Remainder);
 
 
     ----------------------------------------------------------------------------
@@ -266,7 +285,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Division component-wise on two Vkm_Mat matrices.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Div_Matrix is new GFM.Apply_Func_IM_IM_RM("/");
+    function "/" is new GFM.Apply_Func_IM_IM_RM("/");
 
 
     ----------------------------------------------------------------------------
@@ -276,7 +295,7 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Division component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Div_Scalar is new GFM.Apply_Func_IM_IS_RM("/");
+    function "/" is new GFM.Apply_Func_IM_IS_RM("/");
 
 
     ----------------------------------------------------------------------------
@@ -286,7 +305,27 @@ package Vulkan.Math.GenFMatrix is
     --< @description
     --< Perform Division component-wise on the matrix and scalar.
     ----------------------------------------------------------------------------
-    function Op_Scalar_Div_Matrix is new GFM.Apply_Func_IS_IM_RM("/");
+    function "/" is new GFM.Apply_Func_IS_IM_RM("/");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Linear Algebraic Multiplication for two Vkm_Mat matrices.
+    --<
+    --< @description
+    --< Perform Linear Algebraic Multiplication of the left Vkm_Mat by the right
+    --< Vkm_Mat matrix.
+    --<
+    --< @param left
+    --< The left operator argument.
+    --<
+    --< @param right
+    --< The right operator argument.
+    --<
+    --< @return
+    --< The result of the component-wise operator on the arguments.
+    ----------------------------------------------------------------------------
+    function "*" (left, right : in     Vkm_Mat) return Vkm_Mat renames GFM.Op_Matrix_Mult_Matrix;
 
 
     ----------------------------------------------------------------------------
@@ -305,7 +344,7 @@ package Vulkan.Math.GenFMatrix is
     --< @return
     --< The product of the matrix with the vector.
     ----------------------------------------------------------------------------
-    function Op_Matrix_Mult_Vector (
+    function "*" (
         left  : in     Vkm_Mat;
         right : in     Vkm_GenFType ) return Vkm_GenFType;
 
@@ -326,7 +365,7 @@ package Vulkan.Math.GenFMatrix is
     --< @return
     --< The product of the vector with the matrix.
     ----------------------------------------------------------------------------
-    function Op_Vector_Mult_Matrix (
+    function "*" (
         left  : in     Vkm_GenFType;
         right : in     Vkm_Mat     ) return Vkm_GenFType;
 
