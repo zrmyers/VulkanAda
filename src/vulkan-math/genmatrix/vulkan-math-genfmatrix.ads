@@ -51,7 +51,9 @@ package Vulkan.Math.GenFMatrix is
         z                => GFT.z,
         w                => GFT.w,
         Make_GenType     => GFT.Make_GenType,
-        Image            => GFT.Image);
+        Image            => GFT.Image,
+        Set              => GFT.Component,
+        Get              => GFT.Component);
 
     --< The Vkm_GenFMatrix is a subtype of Vkm_GenMatrix from the instantiated GFM
     --< package.
@@ -346,7 +348,7 @@ package Vulkan.Math.GenFMatrix is
     ----------------------------------------------------------------------------
     function "*" (
         left  : in     Vkm_Mat;
-        right : in     Vkm_GenFType ) return Vkm_GenFType;
+        right : in     Vkm_GenFType ) return Vkm_GenFType renames GFM.Op_Matrix_Mult_Vector;
 
 
     ----------------------------------------------------------------------------
@@ -367,7 +369,7 @@ package Vulkan.Math.GenFMatrix is
     ----------------------------------------------------------------------------
     function "*" (
         left  : in     Vkm_GenFType;
-        right : in     Vkm_Mat     ) return Vkm_GenFType;
+        right : in     Vkm_Mat     ) return Vkm_GenFType renames GFM.Op_Vector_Mult_Matrix;
 
 
 end Vulkan.Math.GenFMatrix;

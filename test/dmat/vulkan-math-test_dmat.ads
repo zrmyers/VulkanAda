@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -21,15 +21,9 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with "vulkan";
-limited with "glfw";
+package Vulkan.Math.Test_Dmat is
 
-project Vulkan.Test is
+-- Test Harness for double precision floating point matrices.
+procedure Test_Dmat;
 
-    for Languages use ("ada");
-    for Object_Dir use "obj";
-    for Exec_Dir use "bin";
-    for Source_Dirs use ("samples/","test/**");
-    for Main use ("vulkan_test-environment.adb","vulkan_test-math.adb");
-
-end Vulkan.Test;
+end Vulkan.Math.Test_Dmat;

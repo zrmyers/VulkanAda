@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -21,15 +21,17 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with "vulkan";
-limited with "glfw";
 
-project Vulkan.Test is
+--------------------------------------------------------------------------------
+--< @group Vulkan Math Basic Types
+--------------------------------------------------------------------------------
+--< @summary
+--< This package provides a single precision floating point matrix with 2 rows
+--< and 2 columns.
+--------------------------------------------------------------------------------
+package Vulkan.Math.Dmat4x2.Test is
 
-    for Languages use ("ada");
-    for Object_Dir use "obj";
-    for Exec_Dir use "bin";
-    for Source_Dirs use ("samples/","test/**");
-    for Main use ("vulkan_test-environment.adb","vulkan_test-math.adb");
+-- Test Harness for Mat4x2 regression tests
+procedure Test_Dmat4x2;
 
-end Vulkan.Test;
+end Vulkan.Math.Dmat4x2.Test;

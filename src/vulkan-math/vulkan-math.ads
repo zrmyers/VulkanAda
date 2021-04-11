@@ -46,7 +46,7 @@ package Vulkan.Math is
     --< The constant natural logarithm of 2 value. This constant is used in the
     --< implementation of Exp2().
     LN2 : constant := 0.69314_71805_59945_30941_72321_21458_18;
-    
+
     ----------------------------------------------------------------------------
     -- Math Scalar Types
     ----------------------------------------------------------------------------
@@ -80,6 +80,11 @@ package Vulkan.Math is
     --< Instantiation of Generic Elementary Functions for Float.
     package VKM_FLT_NEF is new
         Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Float);
+
+    --< @private
+    --< Instantiation of Generic Elemantry Functions for Double.
+    package VKM_DBL_NEF is new
+        Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Double);
 
     ----------------------------------------------------------------------------
     -- Conversion Functions
@@ -458,5 +463,18 @@ package Vulkan.Math is
         renames VKM_FLT_NEF.Exp;
     function "**" (x, y : in     Vkm_Float) return Vkm_Float
         renames VKM_FLT_NEF."**";
+
+
+    ----------------------------------------------------------------------------
+
+    function "abs" (x : in     Vkm_Double ) return Vkm_Double is
+        (if x >= 0.0 then x else -x) with Inline;
+    function Floor (x : in     Vkm_Double)  return Vkm_Double renames Vkm_Double'Floor;
+    function "mod" (x, y : in     Vkm_Double) return Vkm_Double is
+        (x - y * Floor(x / y)) with Inline;
+    function Exp (x : in     Vkm_Double) return Vkm_Double
+        renames VKM_DBL_NEF.Exp;
+    function "**" (x, y : in     Vkm_Double) return Vkm_Double
+        renames VKM_DBL_NEF."**";
 
 end Vulkan.Math;

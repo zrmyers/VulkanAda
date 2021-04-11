@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -21,15 +21,50 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with "vulkan";
-limited with "glfw";
+with Vulkan.Math.Dmat2x2.Test;
+with Vulkan.Math.Dmat2x3.Test;
+with Vulkan.Math.Dmat2x4.Test;
+with Vulkan.Math.Dmat3x2.Test;
+with Vulkan.Math.Dmat3x3.Test;
+with Vulkan.Math.Dmat3x4.Test;
+with Vulkan.Math.Dmat4x2.Test;
+with Vulkan.Math.Dmat4x3.Test;
+with Vulkan.Math.Dmat4x4.Test;
 
-project Vulkan.Test is
+use Vulkan.Math.Dmat2x2.Test;
+use Vulkan.Math.Dmat2x3.Test;
+use Vulkan.Math.Dmat2x4.Test;
+use Vulkan.Math.Dmat3x2.Test;
+use Vulkan.Math.Dmat3x3.Test;
+use Vulkan.Math.Dmat3x4.Test;
+use Vulkan.Math.Dmat4x2.Test;
+use Vulkan.Math.Dmat4x3.Test;
+use Vulkan.Math.Dmat4x4.Test;
 
-    for Languages use ("ada");
-    for Object_Dir use "obj";
-    for Exec_Dir use "bin";
-    for Source_Dirs use ("samples/","test/**");
-    for Main use ("vulkan_test-environment.adb","vulkan_test-math.adb");
+package body Vulkan.Math.Test_Dmat is
 
-end Vulkan.Test;
+-- Test Harness for double precision floating point matrices.
+procedure Test_Dmat is
+begin
+
+    Test_Dmat2x2;
+
+    Test_Dmat2x3;
+
+    Test_Dmat2x4;
+
+    Test_Dmat3x2;
+
+    Test_Dmat3x3;
+
+    Test_Dmat3x4;
+
+    Test_Dmat4x2;
+
+    Test_Dmat4x3;
+
+    Test_Dmat4x4;
+
+end Test_Dmat;
+
+end Vulkan.Math.Test_Dmat;

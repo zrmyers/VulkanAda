@@ -156,6 +156,17 @@ package body Vulkan.Math.GenType is
     end Component;
 
 
+    ----------------------------------------------------------------------------
+
+
+    procedure Component (vec   : in out Vkm_GenType;
+                         index : in     Vkm_Indices;
+                         value : in     Base_Type) is
+    begin
+        vec.data (index) := value;
+    end Component;
+
+
     ----------------------------------------------------------------
 
 

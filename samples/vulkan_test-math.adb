@@ -24,27 +24,13 @@
 
 with Vulkan.Math.Vec2.Test;
 with Vulkan.Math.Vec3.Test;
-with Vulkan.Math.Mat2x2.Test;
-with Vulkan.Math.Mat2x3.Test;
-with Vulkan.Math.Mat2x4.Test;
-with Vulkan.Math.Mat3x2.Test;
-with Vulkan.Math.Mat3x3.Test;
-with Vulkan.Math.Mat3x4.Test;
-with Vulkan.Math.Mat4x2.Test;
-with Vulkan.Math.Mat4x3.Test;
-with Vulkan.Math.Mat4x4.Test;
+with Vulkan.Math.Test_Mat;
+with Vulkan.Math.Test_Dmat;
 
 use Vulkan.Math.Vec2.Test;
 use Vulkan.Math.Vec3.Test;
-use Vulkan.Math.Mat2x2.Test;
-use Vulkan.Math.Mat2x3.Test;
-use Vulkan.Math.Mat2x4.Test;
-use Vulkan.Math.Mat3x2.Test;
-use Vulkan.Math.Mat3x3.Test;
-use Vulkan.Math.Mat3x4.Test;
-use Vulkan.Math.Mat4x2.Test;
-use Vulkan.Math.Mat4x3.Test;
-use Vulkan.Math.Mat4x4.Test;
+use Vulkan.Math.Test_Mat;
+use Vulkan.Math.Test_Dmat;
 
 procedure Vulkan_Test.Math is begin
 
@@ -52,21 +38,8 @@ procedure Vulkan_Test.Math is begin
 
     Test_Vec3;
 
-    Test_Mat2x2;
+    Test_Mat;
 
-    Test_Mat2x3;
+    Test_Dmat;
 
-    Test_Mat2x4;
-
-    Test_Mat3x2;
-
-    Test_Mat3x3;
-
-    Test_Mat3x4;
-
-    Test_Mat4x2;
-
-    Test_Mat4x3;
-
-    Test_Mat4x4;
 end Vulkan_Test.Math;

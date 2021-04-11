@@ -425,6 +425,9 @@ package Vulkan.Math.GenType is
     function Component (vec   : in     Vkm_GenType;
                         index : in     Vkm_Indices) return Base_Type;
 
+    procedure Component (vec   : in out Vkm_GenType;
+                         index : in     Vkm_Indices;
+                         value : in     Base_Type);
 
     ----------------------------------------------------------------------------
     -- Vector Swizzlers

@@ -105,6 +105,24 @@ generic
 
     ----------------------------------------------------------------------------
     --< @summary
+    --< Set the component of the vector.
+    --<
+    --< @description
+    --< Set the component of the vector.
+    --<
+    --< @param vec
+    --< The vector to set the component for.
+    --<
+    ----------------------------------------------------------------------------
+    with procedure Set(vec   : in out Base_Vector_Type;
+                       index : in     Vkm_Indices;
+                       value : in     Base_Type);
+
+    with function Get(vec    : in     Base_Vector_Type;
+                      index  : in     Vkm_Indices) return Base_Type;
+
+    ----------------------------------------------------------------------------
+    --< @summary
     --< Construct a Base_Vector_Type.
     --<
     --< @description
@@ -1686,6 +1704,47 @@ package Vulkan.Math.GenMatrix is
     ----------------------------------------------------------------------------
     function Op_Matrix_Mult_Matrix (
         left, right : in     Vkm_GenMatrix) return Vkm_GenMatrix;
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiplication operator for a Vkm_GenMatrix matrix and a Vkm_GenFType value.
+    --<
+    --< @description
+    --< Perform Multiplication component-wise on the matrix and vector.
+    --<
+    --< @param left
+    --< The matrix that is multiplied with the vector.
+    --<
+    --< @param right
+    --< The vector that is multiplied by the matrix.
+    --<
+    --< @return
+    --< The product of the matrix with the vector.
+    ----------------------------------------------------------------------------
+    function Op_Matrix_Mult_Vector (
+        left  : in     Vkm_GenMatrix;
+        right : in     Base_Vector_Type ) return Base_Vector_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiplication operator for a Vkm_GenMatrix matrix and a Vkm_GenFType value.
+    --<
+    --< @description
+    --< Perform Multiplication component-wise on the matrix and vector.
+    --<
+    --< @param left
+    --< The vector that is multiplied with the matrix.
+    --<
+    --< @param right
+    --< The matrix that is multiplied by the vector.
+    --<
+    --< @return
+    --< The product of the vector with the matrix.
+    ----------------------------------------------------------------------------
+    function Op_Vector_Mult_Matrix (
+        left  : in     Base_Vector_Type;
+        right : in     Vkm_GenMatrix) return Base_Vector_Type;
 
 
     ----------------------------------------------------------------------------
