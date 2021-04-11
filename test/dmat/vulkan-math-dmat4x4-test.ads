@@ -29,9 +29,9 @@
 --< This package provides a single precision floating point matrix with 4 rows
 --< and 4 columns.
 --------------------------------------------------------------------------------
-package Vulkan.Math.Mat4x4.Test is
+package Vulkan.Math.Dmat4x4.Test is
 
 -- Test Harness for Mat4x3 regression tests
-procedure Test_Mat4x4;
+procedure Test_Dmat4x4;
 
-end Vulkan.Math.Mat4x4.Test;
+end Vulkan.Math.Dmat4x4.Test;

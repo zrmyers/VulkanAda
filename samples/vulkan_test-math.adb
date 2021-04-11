@@ -25,12 +25,12 @@
 with Vulkan.Math.Vec2.Test;
 with Vulkan.Math.Vec3.Test;
 with Vulkan.Math.Test_Mat;
-with Vulkan.Math.Dmat2x2.Test;
+with Vulkan.Math.Test_Dmat;
 
 use Vulkan.Math.Vec2.Test;
 use Vulkan.Math.Vec3.Test;
 use Vulkan.Math.Test_Mat;
-use Vulkan.Math.Dmat2x2.Test;
+use Vulkan.Math.Test_Dmat;
 
 procedure Vulkan_Test.Math is begin
 
@@ -40,6 +40,6 @@ procedure Vulkan_Test.Math is begin
 
     Test_Mat;
 
-    Test_Dmat2x2;
+    Test_Dmat;
 
 end Vulkan_Test.Math;

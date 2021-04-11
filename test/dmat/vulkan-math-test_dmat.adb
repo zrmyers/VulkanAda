@@ -21,17 +21,50 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
+with Vulkan.Math.Dmat2x2.Test;
+with Vulkan.Math.Dmat2x3.Test;
+with Vulkan.Math.Dmat2x4.Test;
+with Vulkan.Math.Dmat3x2.Test;
+with Vulkan.Math.Dmat3x3.Test;
+with Vulkan.Math.Dmat3x4.Test;
+with Vulkan.Math.Dmat4x2.Test;
+with Vulkan.Math.Dmat4x3.Test;
+with Vulkan.Math.Dmat4x4.Test;
 
---------------------------------------------------------------------------------
---< @group Vulkan Math Basic Types
---------------------------------------------------------------------------------
---< @summary
---< This package provides a single precision floating point matrix with 2 rows
---< and 2 columns.
---------------------------------------------------------------------------------
-package Vulkan.Math.Dmat2x3.Test is
+use Vulkan.Math.Dmat2x2.Test;
+use Vulkan.Math.Dmat2x3.Test;
+use Vulkan.Math.Dmat2x4.Test;
+use Vulkan.Math.Dmat3x2.Test;
+use Vulkan.Math.Dmat3x3.Test;
+use Vulkan.Math.Dmat3x4.Test;
+use Vulkan.Math.Dmat4x2.Test;
+use Vulkan.Math.Dmat4x3.Test;
+use Vulkan.Math.Dmat4x4.Test;
 
--- Test Harness for Mat2x3 regression tests
-procedure Test_Dmat2x3;
+package body Vulkan.Math.Test_Dmat is
 
-end Vulkan.Math.Dmat2x3.Test;
+-- Test Harness for double precision floating point matrices.
+procedure Test_Dmat is
+begin
+
+    Test_Dmat2x2;
+
+    Test_Dmat2x3;
+
+    Test_Dmat2x4;
+
+    Test_Dmat3x2;
+
+    Test_Dmat3x3;
+
+    Test_Dmat3x4;
+
+    Test_Dmat4x2;
+
+    Test_Dmat4x3;
+
+    Test_Dmat4x4;
+
+end Test_Dmat;
+
+end Vulkan.Math.Test_Dmat;

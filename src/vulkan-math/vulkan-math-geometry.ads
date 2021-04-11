@@ -23,13 +23,11 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
-with Vulkan.Math.Operators;
 with Vulkan.Math.Vec3;
 with Vulkan.Math.Dvec3;
 
 use Vulkan.Math.GenFType;
 use Vulkan.Math.GenDType;
-use Vulkan.Math.Operators;
 use Vulkan.Math.Vec3;
 use Vulkan.Math.Dvec3;
 

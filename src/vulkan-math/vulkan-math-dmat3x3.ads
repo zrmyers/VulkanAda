@@ -56,7 +56,7 @@ package Vulkan.Math.Dmat3x3 is
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x3 return Vkm_Dmat3x3 is
+    function Make_Dmat3x3 return Vkm_Dmat3x3 is
         (GDM.Make_GenMatrix(cN => 2, rN => 2, diag => 1.0)) with Inline;
 
 
@@ -74,7 +74,7 @@ package Vulkan.Math.Dmat3x3 is
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x3 (
+    function Make_Dmat3x3 (
         diag : in     Vkm_Double) return Vkm_Dmat3x3 is
         (GDM.Make_GenMatrix(cN => 2, rN => 2, diag => diag)) with Inline;
 
@@ -93,7 +93,7 @@ package Vulkan.Math.Dmat3x3 is
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x3 (
+    function Make_Dmat3x3 (
         diag : in     Vkm_Dvec3) return Vkm_Dmat3x3 is
         (GDM.Make_GenMatrix(cN => 2, rN => 2, diag => diag)) with Inline;
 
@@ -135,7 +135,7 @@ package Vulkan.Math.Dmat3x3 is
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x3 (
+    function Make_Dmat3x3 (
         value1, value2, value3,
         value4, value5, value6,
         value7, value8, value9 : in     Vkm_Double) return Vkm_Dmat3x3 is
@@ -163,7 +163,7 @@ package Vulkan.Math.Dmat3x3 is
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x3 (
+    function Make_Dmat3x3 (
         value1, value2, value3 : in     Vkm_Dvec3) return Vkm_Dmat3x3 is
         (GDM.Make_GenMatrix(
              cN => 2, rN => 2,
@@ -189,7 +189,7 @@ package Vulkan.Math.Dmat3x3 is
     --< @return
     --< A 3x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x3 (
+    function Make_Dmat3x3 (
         value1 : in     Vkm_Dmat) return Vkm_Dmat3x3 is
         (GDM.Make_GenMatrix(
              cN => 2, rN => 2,

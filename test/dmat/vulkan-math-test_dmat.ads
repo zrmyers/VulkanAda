@@ -21,17 +21,9 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
+package Vulkan.Math.Test_Dmat is
 
---------------------------------------------------------------------------------
---< @group Vulkan Math Basic Types
---------------------------------------------------------------------------------
---< @summary
---< This package provides a single precision floating point matrix with 2 rows
---< and 2 columns.
---------------------------------------------------------------------------------
-package Vulkan.Math.Dmat2x3.Test is
+-- Test Harness for double precision floating point matrices.
+procedure Test_Dmat;
 
--- Test Harness for Mat2x3 regression tests
-procedure Test_Dmat2x3;
-
-end Vulkan.Math.Dmat2x3.Test;
+end Vulkan.Math.Test_Dmat;

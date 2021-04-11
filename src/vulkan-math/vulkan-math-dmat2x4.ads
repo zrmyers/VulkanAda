@@ -53,7 +53,7 @@ package Vulkan.Math.Dmat2x4 is
     --< @return
     --< A 2x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x4 return Vkm_Dmat2x4 is
+    function Make_Dmat2x4 return Vkm_Dmat2x4 is
         (GDM.Make_GenMatrix(cN => 3, rN => 1)) with Inline;
 
 
@@ -94,7 +94,7 @@ package Vulkan.Math.Dmat2x4 is
     --< @return
     --< A 2x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x4 (
+    function Make_Dmat2x4 (
         value1, value2, value3, value4,
         value5, value6, value7, value8 : in     Vkm_Double) return Vkm_Dmat2x4 is
         (GDM.Make_GenMatrix(
@@ -125,7 +125,7 @@ package Vulkan.Math.Dmat2x4 is
     --< @return
     --< A 2x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x4 (
+    function Make_Dmat2x4 (
         value1, value2 : in     Vkm_Dvec4) return Vkm_Dmat2x4 is
         (GDM.Make_GenMatrix(
              cN => 3, rN => 1,
@@ -152,7 +152,7 @@ package Vulkan.Math.Dmat2x4 is
     --< @return
     --< A 2x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat2x4 (
+    function Make_Dmat2x4 (
         value1 : in     Vkm_Dmat) return Vkm_Dmat2x4 is
         (GDM.Make_GenMatrix(
              cN => 3, rN => 1,

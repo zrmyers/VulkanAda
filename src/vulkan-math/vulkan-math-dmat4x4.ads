@@ -56,7 +56,7 @@ package Vulkan.Math.Dmat4x4 is
     --< @return
     --< A 4x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x4 return Vkm_Dmat4x4 is
+    function Make_Dmat4x4 return Vkm_Dmat4x4 is
         (GDM.Make_GenMatrix(cN => 3, rN => 3, diag => 1.0)) with Inline;
 
 
@@ -74,7 +74,7 @@ package Vulkan.Math.Dmat4x4 is
     --< @return
     --< A 4x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x4 (
+    function Make_Dmat4x4 (
         diag : in     Vkm_Double) return Vkm_Dmat4x4 is
         (GDM.Make_GenMatrix(cN => 3, rN => 3, diag => diag)) with Inline;
 
@@ -93,7 +93,7 @@ package Vulkan.Math.Dmat4x4 is
     --< @return
     --< A 4x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x4 (
+    function Make_Dmat4x4 (
         diag : in     Vkm_Dvec4) return Vkm_Dmat4x4 is
         (GDM.Make_GenMatrix(cN => 3, rN => 3, diag => diag)) with Inline;
 
@@ -135,7 +135,7 @@ package Vulkan.Math.Dmat4x4 is
     --< @return
     --< A 4x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x4 (
+    function Make_Dmat4x4 (
         value1 , value2 , value3 , value4 ,
         value5 , value6 , value7 , value8 ,
         value9 , value10, value11, value12,
@@ -165,7 +165,7 @@ package Vulkan.Math.Dmat4x4 is
     --< @return
     --< A 4x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x4 (
+    function Make_Dmat4x4 (
         value1, value2, value3, value4 : in     Vkm_Dvec4) return Vkm_Dmat4x4 is
         (GDM.Make_GenMatrix(
              cN => 3, rN => 3,
@@ -192,7 +192,7 @@ package Vulkan.Math.Dmat4x4 is
     --< @return
     --< A 4x4 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x4 (
+    function Make_Dmat4x4 (
         value1 : in     Vkm_Dmat) return Vkm_Dmat4x4 is
         (GDM.Make_GenMatrix(
              cN => 3, rN => 3,

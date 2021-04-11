@@ -53,7 +53,7 @@ package Vulkan.Math.Dmat4x3 is
     --< @return
     --< A 4x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x3 return Vkm_Dmat4x3 is
+    function Make_Dmat4x3 return Vkm_Dmat4x3 is
         (GDM.Make_GenMatrix(cN => 2, rN => 3)) with Inline;
 
 
@@ -94,7 +94,7 @@ package Vulkan.Math.Dmat4x3 is
     --< @return
     --< A 4x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x3 (
+    function Make_Dmat4x3 (
         value1 , value2 , value3 ,
         value4 , value5 , value6 ,
         value7 , value8 , value9 ,
@@ -123,7 +123,7 @@ package Vulkan.Math.Dmat4x3 is
     --< @return
     --< A 4x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x3 (
+    function Make_Dmat4x3 (
         value1, value2, value3, value4 : in     Vkm_Dvec3) return Vkm_Dmat4x3 is
         (GDM.Make_GenMatrix(
              cN => 2, rN => 3,
@@ -149,7 +149,7 @@ package Vulkan.Math.Dmat4x3 is
     --< @return
     --< A 4x3 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat4x3 (
+    function Make_Dmat4x3 (
         value1 : in     Vkm_Dmat) return Vkm_Dmat4x3 is
         (GDM.Make_GenMatrix(
              cN => 2, rN => 3,

@@ -24,20 +24,20 @@
 with Ada.Text_IO;
 with Ada.Characters.Latin_1;
 with Vulkan.Test.Framework;
-with Vulkan.Math.GenFMatrix;
-with Vulkan.Math.Mat2x3;
-with Vulkan.Math.Mat2x2;
-with Vulkan.Math.GenFType;
-with Vulkan.Math.Vec2;
-with Vulkan.Math.Vec3;
+with Vulkan.Math.GenDMatrix;
+with Vulkan.Math.Dmat2x3;
+with Vulkan.Math.Dmat2x2;
+with Vulkan.Math.GenDType;
+with Vulkan.Math.Dvec2;
+with Vulkan.Math.Dvec3;
 
 use Ada.Text_IO;
 use Ada.Characters.Latin_1;
-use Vulkan.Math.Mat2x2;
-use Vulkan.Math.Mat2x3;
-use Vulkan.Math.GenFType;
-use Vulkan.Math.Vec2;
-use Vulkan.Math.Vec3;
+use Vulkan.Math.Dmat2x2;
+use Vulkan.Math.Dmat2x3;
+use Vulkan.Math.GenDType;
+use Vulkan.Math.Dvec2;
+use Vulkan.Math.Dvec3;
 use Vulkan.Test.Framework;
 
 --------------------------------------------------------------------------------
@@ -46,57 +46,57 @@ use Vulkan.Test.Framework;
 --< @summary
 --< This package provides tests for single precision floating point mat2x3.
 --------------------------------------------------------------------------------
-package body Vulkan.Math.Mat2x3.Test is
+package body Vulkan.Math.Dmat2x3.Test is
 
 -- Test Mat2x3
-procedure Test_Mat2x3 is
+procedure Test_Dmat2x3 is
 
-    vec1 : Vkm_Vec2 :=
-        Make_Vec2(1.0, 2.0);
+    vec1 : Vkm_Dvec2 :=
+        Make_Dvec2(1.0, 2.0);
 
-    vec2 : Vkm_Vec3 :=
-        Make_Vec3(1.0, 2.0, 3.0);
+    vec2 : Vkm_Dvec3 :=
+        Make_Dvec3(1.0, 2.0, 3.0);
 
-    mat1 : Vkm_Mat2x3 :=
-        Make_Mat2x3;
+    mat1 : Vkm_Dmat2x3 :=
+        Make_Dmat2x3;
 
-    mat2 : Vkm_Mat2x3 :=
-        Make_Mat2x3(0.0, 1.0, 2.0,
+    mat2 : Vkm_Dmat2x3 :=
+        Make_Dmat2x3(0.0, 1.0, 2.0,
                     3.0, 4.0, 5.0);
 
-    mat3 : Vkm_Mat2x3 :=
-        Make_Mat2x3(vec2, - vec2);
+    mat3 : Vkm_Dmat2x3 :=
+        Make_Dmat2x3(vec2, - vec2);
 
-    mat4 : Vkm_Mat2x3 :=
-        Make_Mat2x3(mat2);
+    mat4 : Vkm_Dmat2x3 :=
+        Make_Dmat2x3(mat2);
 
-    mat5 : Vkm_Mat2x2 :=
-        Make_Mat2x2(5.0);
+    mat5 : Vkm_Dmat2x2 :=
+        Make_Dmat2x2(5.0);
 
-    mat6 : Vkm_Mat2x3 :=
-        Make_Mat2x3(mat5);
+    mat6 : Vkm_Dmat2x3 :=
+        Make_Dmat2x3(mat5);
 
-    mat7 : Vkm_Mat2x2 :=
-        Make_Mat2x2( 1.0, -1.0,
+    mat7 : Vkm_Dmat2x2 :=
+        Make_Dmat2x2( 1.0, -1.0,
                     -1.0,  2.0);
 begin
 
     Put_Line(LF & "Testing Mat2x3 Constructors...");
 
     Put_Line("mat1 " & mat1.Image);
-    Assert_Mat2x3_Equals(mat1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+    Assert_Dmat2x3_Equals(mat1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
 
     Put_Line("mat2 " & mat2.Image);
-    Assert_Mat2x3_Equals(mat2, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
+    Assert_Dmat2x3_Equals(mat2, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
 
     Put_Line("mat3 " & mat3.Image);
-    Assert_Mat2x3_Equals(mat3, 1.0, 2.0, 3.0, -1.0, -2.0, -3.0);
+    Assert_Dmat2x3_Equals(mat3, 1.0, 2.0, 3.0, -1.0, -2.0, -3.0);
 
     Put_Line("mat4 " & mat4.Image);
-    Assert_Mat2x3_Equals(mat4, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
+    Assert_Dmat2x3_Equals(mat4, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
 
     Put_Line("mat6 " & mat6.Image);
-    Assert_Mat2x3_Equals(mat6, 5.0, 0.0, 0.0, 0.0, 5.0, 0.0);
+    Assert_Dmat2x3_Equals(mat6, 5.0, 0.0, 0.0, 0.0, 5.0, 0.0);
 
     Put_Line("Testing '=' operator...");
     Put_Line(" mat2 != mat3");
@@ -110,38 +110,38 @@ begin
 
     Put_Line(" Testing unary '+/-' operator");
     Put_Line(" + mat4 = " & Image(+ mat4));
-    Assert_Mat2x3_Equals(+mat4, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
+    Assert_Dmat2x3_Equals(+mat4, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
 
     Put_Line(" - mat4 = " & Image(- mat4));
-    Assert_Mat2x3_Equals(-mat4, -0.0, -1.0, -2.0, -3.0, -4.0, -5.0);
+    Assert_Dmat2x3_Equals(-mat4, -0.0, -1.0, -2.0, -3.0, -4.0, -5.0);
 
     Put_Line("+(- mat4) = " & Image(+(- mat4)));
-    Assert_Mat2x3_Equals(-mat4, -0.0, -1.0, -2.0, -3.0, -4.0, -5.0);
+    Assert_Dmat2x3_Equals(-mat4, -0.0, -1.0, -2.0, -3.0, -4.0, -5.0);
 
     Put_Line("Testing 'abs' operator...");
     Put_Line(" abs(- mat4) = " & Image(abs(-mat4)));
-    Assert_Mat2x3_Equals(abs(-mat4), 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
+    Assert_Dmat2x3_Equals(abs(-mat4), 0.0, 1.0, 2.0, 3.0, 4.0, 5.0);
 
     Put_Line("Testing '+' operator...");
     Put_Line(" mat4 + mat3 = " & Image(mat4 + mat3));
-    Assert_Mat2x3_Equals(mat4 + mat3, 1.0, 3.0, 5.0, 2.0, 2.0, 2.0);
+    Assert_Dmat2x3_Equals(mat4 + mat3, 1.0, 3.0, 5.0, 2.0, 2.0, 2.0);
 
     Put_Line("Testing '-' operator...");
     Put_Line(" mat4 - mat3 = " & Image(mat4 -mat3));
-    Assert_Mat2x3_Equals(mat4 - mat3, -1.0, -1.0, -1.0,
+    Assert_Dmat2x3_Equals(mat4 - mat3, -1.0, -1.0, -1.0,
                                        4.0,  6.0,  8.0);
 
     Put_Line("Testing '*' operator...");
     Put_Line(" mat7 * mat4 = " & Image(mat7 * mat4));
-    Assert_Mat2x3_Equals(mat7 * mat4, -3.0, -3.0, -3.0,
+    Assert_Dmat2x3_Equals(mat7 * mat4, -3.0, -3.0, -3.0,
                                        6.0,  7.0,  8.0);
 
     Put_Line(" mat4 * vec2 = " & Image(mat4 * vec2));
-    Assert_Vec2_Equals(mat4 * vec2, 8.0, 26.0);
+    Assert_Dvec2_Equals(mat4 * vec2, 8.0, 26.0);
 
     Put_Line(" vec1 * mat4 = " & Image(vec1 * mat4));
-    Assert_Vec3_Equals(vec1 * mat4, 6.0, 9.0, 12.0);
+    Assert_Dvec3_Equals(vec1 * mat4, 6.0, 9.0, 12.0);
 
-end Test_Mat2x3;
+end Test_Dmat2x3;
 
-end Vulkan.Math.Mat2x3.Test;
+end Vulkan.Math.Dmat2x3.Test;

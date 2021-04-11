@@ -52,7 +52,7 @@ package Vulkan.Math.Dmat3x2 is
     --< @return
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 return Vkm_Dmat3x2 is
+    function Make_Dmat3x2 return Vkm_Dmat3x2 is
         (GDM.Make_GenMatrix(cN => 1, rN => 2)) with Inline;
 
 
@@ -88,7 +88,7 @@ package Vulkan.Math.Dmat3x2 is
     --< @return
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
+    function Make_Dmat3x2 (
         value1, value2, value3,
         value4, value5, value6 : in     Vkm_Double) return Vkm_Dmat3x2 is
         (GDM.Make_GenMatrix(
@@ -117,7 +117,7 @@ package Vulkan.Math.Dmat3x2 is
     --< @return
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
+    function Make_Dmat3x2 (
         value1, value2, value3 : in     Vkm_Dvec2) return Vkm_Dmat3x2 is
         (GDM.Make_GenMatrix(
              cN => 1, rN => 2,
@@ -142,7 +142,7 @@ package Vulkan.Math.Dmat3x2 is
     --< @return
     --< A 3x2 matrix.
     ----------------------------------------------------------------------------
-    function Make_Mat3x2 (
+    function Make_Dmat3x2 (
         value1 : in     Vkm_Dmat) return Vkm_Dmat3x2 is
         (GDM.Make_GenMatrix(
              cN => 1, rN => 2,

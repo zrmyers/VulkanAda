@@ -27,6 +27,59 @@ package body Vulkan.Math.GenDType is
 
 
     ----------------------------------------------------------------------------
+    -- operators
+    ----------------------------------------------------------------------------
+
+
+    function "<"  (left, right : in     Vkm_GenDType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) < right.data(index));
+        end loop;
+        return result;
+    end "<";
+
+
+    ----------------------------------------------------------------------------
+
+
+    function "<=" (left, right : in     Vkm_GenDType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) <= right.data(index));
+        end loop;
+        return result;
+    end "<=";
+
+
+    ----------------------------------------------------------------------------
+
+
+    function ">" (left, right : in     Vkm_GenDType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) > right.data(index));
+        end loop;
+        return result;
+    end ">";
+
+
+    ----------------------------------------------------------------------------
+
+
+    function ">=" (left, right : in     Vkm_GenDType) return Vkm_GenBType is
+        result : Vkm_GenBType(last_index => left.last_index);
+    begin
+        for index in Vkm_Indices'First .. left.last_index loop
+            result.data(index) := Vkm_Bool(left.data(index) >= right.data(index));
+        end loop;
+        return result;
+    end ">=";
+
+    ----------------------------------------------------------------------------
     -- Generic Operations
     ----------------------------------------------------------------------------
 
@@ -44,8 +97,8 @@ package body Vulkan.Math.GenDType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Apply_Func_IVD_RVB(IVD1 : in     Vkm_GenDType) return Vkm_GenBType is
 
         Result : Vkm_GenBType := (Last_Index => IVD1.Last_Index, others => <>);
@@ -58,8 +111,8 @@ package body Vulkan.Math.GenDType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Apply_Func_IVD_OVI_RVD(IVD : in     Vkm_GenDType;
                                     OVI :    out Vkm_GenIType) return Vkm_GenDType is
 
@@ -73,8 +126,8 @@ package body Vulkan.Math.GenDType is
 
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Apply_Func_IVD_IVI_RVD(IVD : in     Vkm_GenDType;
                                     IVI : in     Vkm_GenIType) return Vkm_GenDType is
 
@@ -87,8 +140,8 @@ package body Vulkan.Math.GenDType is
     end Apply_Func_IVD_IVI_RVD;
 
     ----------------------------------------------------------------------------
-    
-    
+
+
     function Apply_Func_IVD_IVD_RVB(IVD1, IVD2 : in     Vkm_GenDType) return Vkm_GenBType is
         Result : Vkm_GenBType := (Last_Index => IVD1.Last_Index, others => <>);
     begin
