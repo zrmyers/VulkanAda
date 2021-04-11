@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- MIT License
 --
--- Copyright (c) 2020 Zane Myers
+-- Copyright (c) 2021 Zane Myers
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -21,15 +21,54 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with "vulkan";
-limited with "glfw";
+with Vulkan.Math.Vec2.Test;
+with Vulkan.Math.Vec3.Test;
+with Vulkan.Math.Mat2x2.Test;
+with Vulkan.Math.Mat2x3.Test;
+with Vulkan.Math.Mat2x4.Test;
+with Vulkan.Math.Mat3x2.Test;
+with Vulkan.Math.Mat3x3.Test;
+with Vulkan.Math.Mat3x4.Test;
+with Vulkan.Math.Mat4x2.Test;
+with Vulkan.Math.Mat4x3.Test;
+with Vulkan.Math.Mat4x4.Test;
 
-project Vulkan.Test is
+use Vulkan.Math.Vec2.Test;
+use Vulkan.Math.Vec3.Test;
+use Vulkan.Math.Mat2x2.Test;
+use Vulkan.Math.Mat2x3.Test;
+use Vulkan.Math.Mat2x4.Test;
+use Vulkan.Math.Mat3x2.Test;
+use Vulkan.Math.Mat3x3.Test;
+use Vulkan.Math.Mat3x4.Test;
+use Vulkan.Math.Mat4x2.Test;
+use Vulkan.Math.Mat4x3.Test;
+use Vulkan.Math.Mat4x4.Test;
 
-    for Languages use ("ada");
-    for Object_Dir use "obj";
-    for Exec_Dir use "bin";
-    for Source_Dirs use ("samples/","test/**");
-    for Main use ("vulkan_test-environment.adb","vulkan_test-math.adb");
+package body Vulkan.Math.Test_Mat is
 
-end Vulkan.Test;
+-- Test Harness for single precision floating point matrices.
+procedure Test_Mat is
+begin
+
+    Test_Mat2x2;
+
+    Test_Mat2x3;
+
+    Test_Mat2x4;
+
+    Test_Mat3x2;
+
+    Test_Mat3x3;
+
+    Test_Mat3x4;
+
+    Test_Mat4x2;
+
+    Test_Mat4x3;
+
+    Test_Mat4x4;
+
+end Test_Mat;
+
+end Vulkan.Math.Test_Mat;
