@@ -118,8 +118,22 @@ generic
                        index : in     Vkm_Indices;
                        value : in     Base_Type);
 
+                   
+   ----------------------------------------------------------------------------
+   --< @summary
+   --< Get the component of the vector.
+   --<
+   --< @description
+   --< Get the component of the vector.
+   --<
+   --< @param vec
+   --< The vector to Get the component for.
+   --<
+   ----------------------------------------------------------------------------
     with function Get(vec    : in     Base_Vector_Type;
                       index  : in     Vkm_Indices) return Base_Type;
+
+    with function Length(vec : in     Base_Vector_Type) return Vkm_Length;
 
     ----------------------------------------------------------------------------
     --< @summary
@@ -1745,6 +1759,31 @@ package Vulkan.Math.GenMatrix is
     function Op_Vector_Mult_Matrix (
         left  : in     Base_Vector_Type;
         right : in     Vkm_GenMatrix) return Base_Vector_Type;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Perform the outer product of two vectors, generating a matrix.
+    --<
+    --< @description
+    --< Treats the first parameter c as a column vector (matrix with one column)
+    --< and the second parameter as a row vector (matrix with one row) and does
+    --< a linear algebraic matrix multiply c * r, yielding a matrix whose number
+    --< of rows is the number of components in c and whose number of columns is
+    --< the number of components in r.
+    --<
+    --< @param c
+    --< Column vector, left.
+    --<
+    --< @param r
+    --< Row vector, right.
+    --<
+    --< @return
+    --< Matrix resulting from outer product of left and right vectors.
+    ----------------------------------------------------------------------------
+    function Op_Outer_Product(
+        c : in     Base_Vector_Type;
+        r : in     Base_Vector_Type) return Vkm_GenMatrix;
 
 
     ----------------------------------------------------------------------------

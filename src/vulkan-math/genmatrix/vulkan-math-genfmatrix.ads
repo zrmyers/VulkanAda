@@ -53,7 +53,8 @@ package Vulkan.Math.GenFMatrix is
         Make_GenType     => GFT.Make_GenType,
         Image            => GFT.Image,
         Set              => GFT.Component,
-        Get              => GFT.Component);
+        Get              => GFT.Component,
+        Length           => GFT.Length);
 
     --< The Vkm_GenFMatrix is a subtype of Vkm_GenMatrix from the instantiated GFM
     --< package.
@@ -370,6 +371,50 @@ package Vulkan.Math.GenFMatrix is
     function "*" (
         left  : in     Vkm_GenFType;
         right : in     Vkm_Mat     ) return Vkm_GenFType renames GFM.Op_Vector_Mult_Matrix;
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply a matrix and a scalar.
+    --<
+    --< @description
+    --< Multiplies a left scalar and a right matrix.
+    ----------------------------------------------------------------------------
+    function "*" is new GFM.Apply_Func_IS_IM_RM("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply a matrix and a scalar.
+    --<
+    --< @description
+    --< Multiplies a right scalar and a left matrix.
+    ----------------------------------------------------------------------------
+    function "*" is new GFM.Apply_Func_IM_IS_RM("*");
+
+
+    ----------------------------------------------------------------------------
+    -- GLSL Matrix Functions
+    ----------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply two matrices component-wise.
+    --<
+    --< @description
+    --< Multiply matrix x by matrix y component-wise, ie, result[i][j] is the
+    --< scalar product of x[i][j] and y[i][j].
+    --<
+    --< @x
+    --< Matrix x, must have same dimmensions as y.
+    --<
+    --< @y
+    --< Matrix y, must have same dimmensions as z
+    --<
+    --< @return
+    --< The component-wise product of two matrices.
+    ----------------------------------------------------------------------------
+    function Matrix_Comp_Mult is new GFM.Apply_Func_IM_IM_RM("*");
+
 
 
 end Vulkan.Math.GenFMatrix;

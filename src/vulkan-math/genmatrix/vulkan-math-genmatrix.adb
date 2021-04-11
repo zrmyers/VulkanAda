@@ -613,6 +613,28 @@ package body Vulkan.Math.GenMatrix is
     end Op_Vector_Mult_Matrix;
 
 
+
+    ----------------------------------------------------------------------------
+
+
+    function Op_Outer_Product(
+        c : in     Base_Vector_Type;
+        r : in     Base_Vector_Type) return Vkm_GenMatrix is
+
+        result : Vkm_GenMatrix := Make_GenMatrix(
+            cN => To_Vkm_Indices(Length(r)),
+            rN => To_Vkm_Indices(Length(c)));
+
+    begin
+        for c_iter in Vkm_Indices'First .. result.last_row_index loop
+            for r_iter in Vkm_Indices'First .. result.last_column_index loop
+                result.data(c_iter, r_iter) := Get(c, c_iter) * Get(r, r_iter);
+            end loop;
+        end loop;
+        return result;
+    end Op_Outer_Product;
+
+
     ----------------------------------------------------------------------------
 
 
