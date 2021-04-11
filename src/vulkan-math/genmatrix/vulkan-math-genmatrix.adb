@@ -572,6 +572,50 @@ package body Vulkan.Math.GenMatrix is
     ----------------------------------------------------------------------------
 
 
+    function Op_Matrix_Mult_Vector (
+        left  : in     Vkm_GenMatrix;
+        right : in     Base_Vector_Type ) return Base_Vector_Type is
+
+        result : Base_Vector_Type := Make_GenType(
+            size => To_Vkm_Length(left.last_row_index));
+
+    begin
+        for row_index in Vkm_Indices'First .. left.last_row_index loop
+            for dot_index in Vkm_Indices'First .. left.last_column_index loop
+                Set(
+                    result,
+                    row_index,
+                    Get(result, row_index) + (left.data(dot_index, row_index) * Get(right,dot_index)));
+            end loop;
+        end loop;
+        return result;
+    end Op_Matrix_Mult_Vector;
+
+
+    ----------------------------------------------------------------------------
+
+
+    function Op_Vector_Mult_Matrix (
+        left  : in     Base_Vector_Type;
+        right : in     Vkm_GenMatrix     ) return Base_Vector_Type is
+
+        result : Base_Vector_Type := Make_GenType(
+            size => To_Vkm_Length(right.last_column_index));
+
+    begin
+        for col_index in Vkm_Indices'First .. right.last_column_index loop
+            for dot_index in Vkm_Indices'First .. right.last_row_index loop
+                Set(result, col_index,
+                   Get(result, col_index) + (Get(left, dot_index) * right.data(col_index, dot_index)));
+            end loop;
+        end loop;
+        return result;
+    end Op_Vector_Mult_Matrix;
+
+
+    ----------------------------------------------------------------------------
+
+
     function Apply_Func_IM_RM (im1 : in     Vkm_GenMatrix) return Vkm_GenMatrix is
 
         result : Vkm_GenMatrix(last_column_index => im1.last_column_index,

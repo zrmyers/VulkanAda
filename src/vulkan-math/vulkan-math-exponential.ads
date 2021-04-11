@@ -23,7 +23,6 @@
 --------------------------------------------------------------------------------
 with Vulkan.Math.GenFType;
 with Vulkan.Math.GenDType;
-with Vulkan.Math.Numerics;
 
 use Vulkan.Math.GenFType;
 use Vulkan.Math.GenDType;
@@ -60,7 +59,7 @@ package Vulkan.Math.Exponential is
     --< The result of (x ** y).
     ----------------------------------------------------------------------------
     function Pow (x, y : in     Vkm_Double) return Vkm_Double
-        renames Vulkan.Math.Numerics.VKM_DBL_NEF."**";
+        renames VKM_DBL_NEF."**";
 
 
     ----------------------------------------------------------------------------
@@ -217,7 +216,7 @@ package Vulkan.Math.Exponential is
     --< The result of sqrt(x)
     ----------------------------------------------------------------------------
     function Sqrt (x : in     Vkm_Double) return Vkm_Double
-        renames Vulkan.Math.Numerics.VKM_DBL_NEF.Sqrt;
+        renames VKM_DBL_NEF.Sqrt;
 
 
     ----------------------------------------------------------------------------

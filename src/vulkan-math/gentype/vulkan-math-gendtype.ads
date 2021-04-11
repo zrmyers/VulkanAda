@@ -56,6 +56,12 @@ package Vulkan.Math.GenDType is
     --< described in the GLSL specification.
     subtype Vkm_GenDType is GDT.Vkm_GenType;
 
+    ----------------------------------------------------------------------------
+    -- Functions
+    ----------------------------------------------------------------------------
+    function Image(instance : in     Vkm_GenDType) return String is
+        (GDT.Image(GDT.Vkm_GenType(instance))) with inline;
+
 
     ----------------------------------------------------------------------------
     -- Generic Operations

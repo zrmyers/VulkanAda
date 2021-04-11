@@ -21,8 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Ada.Numerics.Generic_Elementary_Functions;
-
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Numerics
 --------------------------------------------------------------------------------
@@ -38,11 +36,6 @@ with Ada.Numerics.Generic_Elementary_Functions;
 package Vulkan.Math.Numerics is
     pragma Preelaborate;
     pragma Pure;
-    
-    --< @private
-    --< Instantiation of Generic Elemantry Functions for Double.
-    package VKM_DBL_NEF is new
-        Ada.Numerics.Generic_Elementary_Functions(Float_Type => Vkm_Double);
 
     ----------------------------------------------------------------------------
     --< @summary

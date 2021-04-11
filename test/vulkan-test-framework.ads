@@ -34,6 +34,10 @@ with Vulkan.Math.Mat3x4;
 with Vulkan.Math.Mat4x2;
 with Vulkan.Math.Mat4x3;
 with Vulkan.Math.Mat4x4;
+with Vulkan.Math.Dvec2;
+with Vulkan.Math.Dvec3;
+with Vulkan.Math.Dvec4;
+with Vulkan.Math.Dmat2x2;
 
 use Vulkan.Math;
 use Vulkan.Math.Vec2;
@@ -48,6 +52,10 @@ use Vulkan.Math.Mat3x4;
 use Vulkan.Math.Mat4x2;
 use Vulkan.Math.Mat4x3;
 use Vulkan.Math.Mat4x4;
+use Vulkan.Math.Dvec2;
+use Vulkan.Math.Dvec3;
+use Vulkan.Math.Dvec4;
+use Vulkan.Math.Dmat2x2;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Test Framwork
@@ -129,5 +137,26 @@ procedure Assert_Mat4x4_Equals(
     value5 , value6 , value7 , value8 ,
     value9 , value10, value11, value12,
     value13, value14, value15, value16 : in Vkm_Float);
+
+
+-- Double precision
+procedure Assert_Dvec2_Equals(
+    vec : in Vkm_Dvec2;
+    value1, value2 : in Vkm_Double);
+
+procedure Assert_Dvec3_Equals(
+    vec : in Vkm_Dvec3;
+    value1, value2, value3 : in Vkm_Double);
+
+procedure Assert_Dvec4_Equals(
+    vec : in Vkm_Dvec4;
+    value1, value2, value3, value4 : in Vkm_Double);
+
+
+procedure Assert_Dmat2x2_Equals(
+    mat : in Vkm_Dmat2;
+    value1, value2,
+    value3, value4 : in Vkm_Double);
+
 
 end Vulkan.Test.Framework;
