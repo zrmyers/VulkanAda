@@ -26,11 +26,13 @@ with Vulkan.Math.Vec2.Test;
 with Vulkan.Math.Vec3.Test;
 with Vulkan.Math.Test_Mat;
 with Vulkan.Math.Test_Dmat;
+With Vulkan.Math.Matrix.Test;
 
 use Vulkan.Math.Vec2.Test;
 use Vulkan.Math.Vec3.Test;
 use Vulkan.Math.Test_Mat;
 use Vulkan.Math.Test_Dmat;
+use Vulkan.Math.Matrix.Test;
 
 procedure Vulkan_Test.Math is begin
 
@@ -42,4 +44,5 @@ procedure Vulkan_Test.Math is begin
 
     Test_Dmat;
 
+    Test_Matrix_Functions;
 end Vulkan_Test.Math;

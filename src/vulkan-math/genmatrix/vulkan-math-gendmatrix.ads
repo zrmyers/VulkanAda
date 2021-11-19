@@ -52,8 +52,7 @@ package Vulkan.Math.GenDMatrix is
         Make_GenType     => GDT.Make_GenType,
         Image            => GDT.Image,
         Set              => GDT.Component,
-        Get              => GDT.Component,
-        Length           => GDT.Length);
+        Get              => GDT.Component);
 
     --< The Vkm_GenFMatrix is a subtype of Vkm_GenMatrix from the instantiated GDM
     --< package.

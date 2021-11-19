@@ -37,13 +37,15 @@ library project Vulkan is
 
     package Compiler is
         for Switches ("Ada") use (
-            "-gnatwae" -- Turn on warnings as errors
+            "-gnatwae", -- Turn on warnings as errors
+            "-O2",
+            "-gnatn"
         );
     end Compiler;
 
     package Linker is
         for Linker_Options use
-            ("-lvulkan");
+            ("-Ldependencies/windows","-lvulkan-1");
     end Linker;
 
 end Vulkan;
