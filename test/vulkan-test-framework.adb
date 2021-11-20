@@ -646,15 +646,15 @@ procedure Assert_Dmat3x3_Equals(
 
     is_failure : Boolean := True;
 begin
-    is_failure := not (mat.c0r0 = value1 and
-                       mat.c1r0 = value2 and
-                       mat.c2r0 = value3 and
-                       mat.c0r1 = value4 and
-                       mat.c1r1 = value5 and
-                       mat.c2r1 = value6 and
-                       mat.c0r2 = value7 and
-                       mat.c1r2 = value8 and
-                       mat.c2r2 = value9);
+    is_failure := not (abs(mat.c0r0 - value1) < 0.000000000000001 and
+                       abs(mat.c1r0 - value2) < 0.000000000000001 and
+                       abs(mat.c2r0 - value3) < 0.000000000000001 and
+                       abs(mat.c0r1 - value4) < 0.000000000000001 and
+                       abs(mat.c1r1 - value5) < 0.000000000000001 and
+                       abs(mat.c2r1 - value6) < 0.000000000000001 and
+                       abs(mat.c0r2 - value7) < 0.000000000000001 and
+                       abs(mat.c1r2 - value8) < 0.000000000000001 and
+                       abs(mat.c2r2 - value9) < 0.000000000000001);
 
     if is_failure = True then
         Put_Line("Assertion FAIL!");
@@ -796,22 +796,22 @@ procedure Assert_Dmat4x4_Equals(
 
     is_failure : Boolean := True;
 begin
-    is_failure := not (mat.c0r0 = value1 and
-                       mat.c1r0 = value2 and
-                       mat.c2r0 = value3 and
-                       mat.c3r0 = value4 and
-                       mat.c0r1 = value5 and
-                       mat.c1r1 = value6 and
-                       mat.c2r1 = value7 and
-                       mat.c3r1 = value8 and
-                       mat.c0r2 = value9 and
-                       mat.c1r2 = value10 and
-                       mat.c2r2 = value11 and
-                       mat.c3r2 = value12 and
-                       mat.c0r3 = value13 and
-                       mat.c1r3 = value14 and
-                       mat.c2r3 = value15 and
-                       mat.c3r3 = value16);
+    is_failure := not (abs(mat.c0r0 - value1)  < 0.000000000000001 and
+                       abs(mat.c1r0 - value2)  < 0.000000000000001 and
+                       abs(mat.c2r0 - value3)  < 0.000000000000001 and
+                       abs(mat.c3r0 - value4)  < 0.000000000000001 and
+                       abs(mat.c0r1 - value5)  < 0.000000000000001 and
+                       abs(mat.c1r1 - value6)  < 0.000000000000001 and
+                       abs(mat.c2r1 - value7)  < 0.000000000000001 and
+                       abs(mat.c3r1 - value8)  < 0.000000000000001 and
+                       abs(mat.c0r2 - value9)  < 0.000000000000001 and
+                       abs(mat.c1r2 - value10) < 0.000000000000001 and
+                       abs(mat.c2r2 - value11) < 0.000000000000001 and
+                       abs(mat.c3r2 - value12) < 0.000000000000001 and
+                       abs(mat.c0r3 - value13) < 0.000000000000001 and
+                       abs(mat.c1r3 - value14) < 0.000000000000001 and
+                       abs(mat.c2r3 - value15) < 0.000000000000001 and
+                       abs(mat.c3r3 - value16) < 0.000000000000001);
 
     if is_failure = True then
         Put_Line("Assertion FAIL!");

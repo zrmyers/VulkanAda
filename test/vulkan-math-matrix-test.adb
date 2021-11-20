@@ -30,17 +30,31 @@
 with Ada.Text_IO;
 with Vulkan.Math.GenFMatrix;
 with Vulkan.Math.Mat2x2;
+with Vulkan.Math.Dmat2x2;
+with Vulkan.Math.Dmat3x3;
 with Vulkan.Math.Mat4x3;
+with Vulkan.Math.Dmat4x4;
+with Vulkan.Math.Dmat4x3;
 with Vulkan.Test.Framework;
 with Vulkan.Math.Vec2;
 with Vulkan.Math.Vec3;
 with Vulkan.Math.Vec4;
+with Vulkan.Math.Dvec2;
+with Vulkan.Math.Dvec3;
+with Vulkan.Math.Dvec4;
 
 use Vulkan.Math.Mat2x2;
+use Vulkan.Math.Dmat2x2;
+use Vulkan.Math.Dmat3x3;
 use Vulkan.Math.Mat4x3;
+use Vulkan.Math.Dmat4x3;
+use Vulkan.Math.Dmat4x4;
 use Vulkan.Math.Vec2;
 use Vulkan.Math.Vec3;
 use Vulkan.Math.Vec4;
+use Vulkan.Math.Dvec2;
+use Vulkan.Math.Dvec3;
+use Vulkan.Math.Dvec4;
 use Vulkan.Math.GenFMatrix;
 use Vulkan.Test.Framework;
 
@@ -76,15 +90,25 @@ end Test_Matrix_Functions;
 
 procedure Test_Matrix_Comp_Mult is
     left : Vkm_Mat2x2 := Make_Mat2x2(1.0, 2.0,
-                                         3.0, 4.0);
+                                     3.0, 4.0);
 
     right : Vkm_Mat2x2 := Make_Mat2x2(2.0, 0.5,
                                       2.5, -0.5);
+
+    left1 : Vkm_Dmat2x2 := Make_Dmat2x2(1.0, 2.0,
+                                      3.0, 4.0);
+
+    right1 : Vkm_Dmat2x2 := Make_Dmat2x2(2.0, 0.5,
+                                       2.5, -0.5);
 begin
 
     Ada.Text_IO.Put_Line("Matrix_Comp_Mult(left, right) = " &Image( Matrix_Comp_Mult(left, right)));
 
     Assert_Mat2x2_Equals(Matrix_Comp_Mult(left, right), 2.0, 1.0, 7.5, -2.0);
+
+    Ada.Text_IO.Put_Line("Matrix_Comp_Mult(left, right) = " &Image( Matrix_Comp_Mult(left1, right1)));
+
+    Assert_DMat2x2_Equals(Matrix_Comp_Mult(left1, right1), 2.0, 1.0, 7.5, -2.0);
 end Test_Matrix_Comp_Mult;
 
 
@@ -101,6 +125,14 @@ procedure Test_Matrix_Outer_Product is
 
     right1 : Vkm_Vec4 := Make_Vec4(7.0, 8.0, 9.0, 10.0);
 
+    left_d : Vkm_Dvec2 := Make_Dvec2(1.0, 2.0);
+
+    right_d : Vkm_Dvec2 := Make_Dvec2(3.0, 4.0);
+
+    left1_d : Vkm_Dvec3 := Make_Dvec3(6.0, 5.0, 6.0);
+
+    right1_d : Vkm_Dvec4 := Make_Dvec4(7.0, 8.0, 9.0, 10.0);
+
 begin
 
     Ada.Text_IO.Put_Line("Outer_Prduct(left, right) = " & Image( Outer_Product(left, right)));
@@ -112,6 +144,17 @@ begin
     Assert_Mat3x4_Equals(Outer_Product(left1, right1), 42.0, 48.0, 54.0, 60.0,
                                                        35.0, 40.0, 45.0, 50.0,
                                                        42.0, 48.0, 54.0, 60.0);
+
+    Ada.Text_IO.Put_Line("Outer_Prduct(left_d, right_d) = " & Image( Outer_Product(left_d, right_d)));
+
+    Assert_Dmat2x2_Equals(Outer_Product(left_d, right_d), 3.0, 4.0, 6.0, 8.0);
+
+    Ada.Text_IO.Put_Line("Outer_Prduct(left1_d, right1_d) = " & Image( Outer_Product(left1_d, right1_d)));
+
+    Assert_Dmat3x4_Equals(Outer_Product(left1_d, right1_d), 42.0, 48.0, 54.0, 60.0,
+                                                       35.0, 40.0, 45.0, 50.0,
+                                                       42.0, 48.0, 54.0, 60.0);
+
 
 end Test_Matrix_Outer_Product;
 
@@ -125,6 +168,14 @@ procedure Test_Matrix_Transpose is
                                     2.0, 3.0);
 
     mat1 : Vkm_Mat4x3 := Make_Mat4x3(0.0, 1.0, 2.0,
+                                     3.0, 4.0, 5.0,
+                                     6.0, 7.0, 8.0,
+                                     9.0, 10.0, 11.0);
+
+    mat_d : Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
+                                    2.0, 3.0);
+
+    mat1_d : Vkm_Dmat4x3 := Make_Dmat4x3(0.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0,
                                      9.0, 10.0, 11.0);
@@ -148,6 +199,23 @@ begin
                             6.0, 7.0, 8.0,
                             9.0, 10.0, 11.0);
 
+    Ada.Text_IO.Put_Line("Transpose(mat_d) = " & Image( Transpose(mat_d)));
+
+    Assert_Dmat2x2_Equals(Transpose(mat_d), 0.0, 2.0, 1.0, 3.0);
+
+    Ada.Text_IO.Put_Line("Transpose(mat1_d) = " & Image( Transpose(mat1_d)));
+
+    Assert_Dmat3x4_Equals(Transpose(mat1_d), 0.0, 3.0, 6.0, 9.0,
+                                         1.0, 4.0, 7.0, 10.0,
+                                         2.0, 5.0, 8.0, 11.0);
+
+    Ada.Text_IO.Put_Line("Transpose(Transpose(mat1_d)) = " & Image( Transpose(Transpose(mat1_d))));
+
+    Assert_Dmat4x3_Equals(Transpose(Transpose(mat1_d)),
+                            0.0, 1.0, 2.0,
+                            3.0, 4.0, 5.0,
+                            6.0, 7.0, 8.0,
+                            9.0, 10.0, 11.0);
 end Test_Matrix_Transpose;
 
 
@@ -164,6 +232,18 @@ procedure Test_Matrix_Determinant is
                                      3.0, 4.0, 5.0, 4.0,
                                      6.0, 7.0, 8.0, 5.0,
                                      9.0, 8.0, 7.0, 6.0);
+
+    mat_d : Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
+                                    2.0, 3.0);
+
+    mat1_d : Vkm_Dmat3x3 := Make_Dmat3x3(1.0, 1.0, 2.0,
+                                     3.0, 4.0, 5.0,
+                                     6.0, 7.0, 8.0);
+
+    mat2_d : Vkm_Dmat4x4 := Make_Dmat4x4(2.0, 1.0, 2.0, 3.0,
+                                     3.0, 4.0, 5.0, 4.0,
+                                     6.0, 7.0, 8.0, 5.0,
+                                     9.0, 8.0, 7.0, 6.0);
 begin
 
     Ada.Text_IO.Put_Line("Determinant(mat)  = " & Determinant2x2(mat)'Image);
@@ -172,6 +252,13 @@ begin
     Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant3x3(mat1) = -3.0), True);
     Ada.Text_IO.Put_Line("Determinant(mat2) = " & Determinant4x4(mat2)'Image);
     Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant4x4(mat2) = -36.0), True);
+
+    Ada.Text_IO.Put_Line("Determinant(mat_d)  = " & Determinant2x2(mat_d)'Image);
+    Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant2x2(mat_d) = -2.0), True);
+    Ada.Text_IO.Put_Line("Determinant(mat1) = " & Determinant3x3(mat1_d)'Image);
+    Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant3x3(mat1_d) = -3.0), True);
+    Ada.Text_IO.Put_Line("Determinant(mat2) = " & Determinant4x4(mat2_d)'Image);
+    Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant4x4(mat2_d) = -36.0), True);
 
 end Test_Matrix_Determinant;
 
@@ -189,6 +276,18 @@ procedure Test_Matrix_Inversion is
                                      3.0, 4.0, 5.0, 4.0,
                                      6.0, 7.0, 8.0, 5.0,
                                      9.0, 8.0, 7.0, 6.0);
+
+    mat_d : Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
+                                    2.0, 3.0);
+
+    mat1_d : Vkm_Dmat3x3 := Make_Dmat3x3(1.0, 1.0, 2.0,
+                                     3.0, 4.0, 5.0,
+                                     6.0, 7.0, 8.0);
+
+    mat2_d : Vkm_Dmat4x4 := Make_Dmat4x4(2.0, 1.0, 2.0, 3.0,
+                                     3.0, 4.0, 5.0, 4.0,
+                                     6.0, 7.0, 8.0, 5.0,
+                                     9.0, 8.0, 7.0, 6.0);
 begin
 
     -- Verify that the inverse multiplied by original matrix is the identity matrix.
@@ -200,6 +299,20 @@ begin
 
     Ada.Text_IO.Put_Line("Inverse(mat2)*mat2  = " & Image(Inverse4x4(mat2)*mat2));
     Assert_Mat4x4_Equals(Inverse4x4(mat2)*mat2,
+                         1.0, 0.0, 0.0, 0.0,
+                         0.0, 1.0, 0.0, 0.0,
+                         0.0, 0.0, 1.0, 0.0,
+                         0.0, 0.0, 0.0, 1.0);
+
+    -- Verify that the inverse multiplied by original matrix is the identity matrix.
+    Ada.Text_IO.Put_Line("Inverse(mat_d)*mat_d  = " & Image(Inverse2x2(mat_d)*mat_d));
+    Assert_Dmat2x2_Equals(Inverse2x2(mat_d)*mat_d, 1.0, 0.0, 0.0, 1.0);
+
+    Ada.Text_IO.Put_Line("Inverse(mat1_d)*mat1_d  = " & Image(Inverse3x3(mat1_d)*mat1_d));
+    Assert_Dmat3x3_Equals(Inverse3x3(mat1_d)*mat1_d, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0);
+
+    Ada.Text_IO.Put_Line("Inverse(mat2_d)*mat2_d  = " & Image(Inverse4x4(mat2_d)*mat2_d));
+    Assert_Dmat4x4_Equals(Inverse4x4(mat2_d)*mat2_d,
                          1.0, 0.0, 0.0, 0.0,
                          0.0, 1.0, 0.0, 0.0,
                          0.0, 0.0, 1.0, 0.0,
