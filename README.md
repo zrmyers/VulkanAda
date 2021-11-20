@@ -15,6 +15,12 @@ This project depends on the following:
 - [Vulkan](https://www.khronos.org/vulkan/)
 - [GLFWAda](https://github.com/zrmyers/GLFWAda)
 
+When building on linux, set the following environment variable to use the linux
+build settings in the .gpr:
+```
+export platform=linux
+```
+
 On the Arch Linux operating system, the AdaCore GNAT toolset was obtained through the Arch User Repository (AUR), and GLFW and Vulkan were installed through the Arch Linux package manager.
 
 GLFWAda was obtained and installed from another git repository, linked to above.
@@ -24,8 +30,7 @@ The following is a roadmap for this repository:
 
 |Milestone                                                          |  Description                         | Status     |
 |-------------------------------------------------------------------|--------------------------------------|------------|
-|[VulkanAda 0.0.2](https://github.com/zrmyers/VulkanAda/milestone/2)| GLSL-like matrix types and functions |WIP         |
-|[VulkanAda 0.0.3](https://github.com/zrmyers/VulkanAda/milestone/3)| GLSL Extension-like Matrix transforms|Not Started |
+|[VulkanAda 0.0.3](https://github.com/zrmyers/VulkanAda/milestone/3)| GLSL Extension-like Matrix transforms|WIP         |
 |[VulkanAda 0.1.0](https://github.com/zrmyers/VulkanAda/milestone/4)| Vulkan Instance functions and tests. |Not Started |
 |[VulkanAda 0.1.1](https://github.com/zrmyers/VulkanAda/milestone/5)| Vulkan Device functions and tests.   |Not Started |
 
@@ -34,3 +39,4 @@ The following milestones have been completed:
 |Milestone                                                          |  Description                         |
 |-------------------------------------------------------------------|--------------------------------------|
 |[VulkanAda 0.0.1](https://github.com/zrmyers/VulkanAda/milestone/1)| GLSL-like vector types and functions |
+|[VulkanAda 0.0.2](https://github.com/zrmyers/VulkanAda/milestone/2)| GLSL-like matrix types and functions |
