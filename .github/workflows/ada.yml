@@ -38,7 +38,9 @@ jobs:
         make install
 
     - name: Build
-      run: make
+      run: >
+        export platform=linux
+        make
 
     - name: Test Vulkan Math Package
       run: >
