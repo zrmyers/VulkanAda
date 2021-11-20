@@ -50,7 +50,7 @@ library project Vulkan is
             when "windows" =>
                 for Linker_Options use ("-Ldependencies/windows","-lvulkan-1");
             when "linux" =>
-                for Linker_Options use ("-lvulkan-1");
+                for Linker_Options use ("-lvulkan");
             when others =>
                 null;
             end case;
