@@ -49,6 +49,8 @@ package body Vulkan.Math.Matrix.Test is
 procedure Test_Matrix_Comp_Mult;
 procedure Test_Matrix_Outer_Product;
 procedure Test_Matrix_Transpose;
+procedure Test_Matrix_Determinant;
+procedure Test_Matrix_Inversion;
 
 --------------------------------------------------------------------------------
 -- Public Operations
@@ -62,6 +64,10 @@ begin
     Test_Matrix_Outer_Product;
 
     Test_Matrix_Transpose;
+
+    Test_Matrix_Determinant;
+
+    Test_Matrix_Inversion;
 end Test_Matrix_Functions;
 
 
@@ -106,6 +112,7 @@ begin
     Assert_Mat3x4_Equals(Outer_Product(left1, right1), 42.0, 48.0, 54.0, 60.0,
                                                        35.0, 40.0, 45.0, 50.0,
                                                        42.0, 48.0, 54.0, 60.0);
+
 end Test_Matrix_Outer_Product;
 
 
@@ -133,7 +140,71 @@ begin
                                          1.0, 4.0, 7.0, 10.0,
                                          2.0, 5.0, 8.0, 11.0);
 
+    Ada.Text_IO.Put_Line("Transpose(Transpose(mat1)) = " & Image( Transpose(Transpose(mat1))));
+
+    Assert_Mat4x3_Equals(Transpose(Transpose(mat1)),
+                            0.0, 1.0, 2.0,
+                            3.0, 4.0, 5.0,
+                            6.0, 7.0, 8.0,
+                            9.0, 10.0, 11.0);
+
 end Test_Matrix_Transpose;
 
+
+procedure Test_Matrix_Determinant is
+
+    mat : Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
+                                    2.0, 3.0);
+
+    mat1 : Vkm_Mat3x3 := Make_Mat3x3(1.0, 1.0, 2.0,
+                                     3.0, 4.0, 5.0,
+                                     6.0, 7.0, 8.0);
+
+    mat2 : Vkm_Mat4x4 := Make_Mat4x4(2.0, 1.0, 2.0, 3.0,
+                                     3.0, 4.0, 5.0, 4.0,
+                                     6.0, 7.0, 8.0, 5.0,
+                                     9.0, 8.0, 7.0, 6.0);
+begin
+
+    Ada.Text_IO.Put_Line("Determinant(mat)  = " & Determinant2x2(mat)'Image);
+    Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant2x2(mat) = -2.0), True);
+    Ada.Text_IO.Put_Line("Determinant(mat1) = " & Determinant3x3(mat1)'Image);
+    Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant3x3(mat1) = -3.0), True);
+    Ada.Text_IO.Put_Line("Determinant(mat2) = " & Determinant4x4(mat2)'Image);
+    Assert_Vkm_Bool_Equals(Vkm_Bool(Determinant4x4(mat2) = -36.0), True);
+
+end Test_Matrix_Determinant;
+
+
+procedure Test_Matrix_Inversion is
+
+    mat : Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
+                                    2.0, 3.0);
+
+    mat1 : Vkm_Mat3x3 := Make_Mat3x3(1.0, 1.0, 2.0,
+                                     3.0, 4.0, 5.0,
+                                     6.0, 7.0, 8.0);
+
+    mat2 : Vkm_Mat4x4 := Make_Mat4x4(2.0, 1.0, 2.0, 3.0,
+                                     3.0, 4.0, 5.0, 4.0,
+                                     6.0, 7.0, 8.0, 5.0,
+                                     9.0, 8.0, 7.0, 6.0);
+begin
+
+    -- Verify that the inverse multiplied by original matrix is the identity matrix.
+    Ada.Text_IO.Put_Line("Inverse(mat)*mat  = " & Image(Inverse2x2(mat)*mat));
+    Assert_Mat2x2_Equals(Inverse2x2(mat)*mat, 1.0, 0.0, 0.0, 1.0);
+
+    Ada.Text_IO.Put_Line("Inverse(mat1)*mat1  = " & Image(Inverse3x3(mat1)*mat1));
+    Assert_Mat3x3_Equals(Inverse3x3(mat1)*mat1, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0);
+
+    Ada.Text_IO.Put_Line("Inverse(mat2)*mat2  = " & Image(Inverse4x4(mat2)*mat2));
+    Assert_Mat4x4_Equals(Inverse4x4(mat2)*mat2,
+                         1.0, 0.0, 0.0, 0.0,
+                         0.0, 1.0, 0.0, 0.0,
+                         0.0, 0.0, 1.0, 0.0,
+                         0.0, 0.0, 0.0, 1.0);
+
+end Test_Matrix_Inversion;
 
 end Vulkan.Math.Matrix.Test;

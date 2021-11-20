@@ -94,7 +94,7 @@ function Determinant4x4(
     detcof3 : constant Vkm_Float := -( m.c1r0 * subfactor02 - m.c1r1 * subfactor04 + m.c1r2 * subfactor05);
 begin
 
-    -- Laplactian expansion on c0
+    -- Laplacian expansion on c0
     return (m.c0r0 * detcof0 + m.c0r1 * detcof1 + m.c0r2 * detcof2 + m.c0r3 * detcof3);
 end Determinant4x4;
 
@@ -108,9 +108,9 @@ function Inverse2x2(
     one_over_determinant : constant Vkm_Float := 1.0 / (m.c0r0 * m.c1r1 - m.c0r1 * m.c1r0);
 begin
     return Make_Mat2x2( m.c1r1 * one_over_determinant,
+                       -m.c1r0 * one_over_determinant,
                        -m.c0r1 * one_over_determinant,
-                        m.c1r0 * one_over_determinant,
-                       -m.c0r0 * one_over_determinant);
+                        m.c0r0 * one_over_determinant);
 end Inverse2x2;
 
 
@@ -136,7 +136,7 @@ begin
                         (m.c0r1 * m.c1r2 - m.c0r2 * m.c1r1) * one_over_determinant,
                        -(m.c0r0 * m.c1r2 - m.c0r2 * m.c1r0) * one_over_determinant,
                         (m.c0r0 * m.c1r1 - m.c0r1 * m.c1r0) * one_over_determinant);
-end
+end Inverse3x3;
 
 
 --------------------------------------------------------------------------------
@@ -145,8 +145,48 @@ end
 function Inverse4x4(
     m : in     Vkm_Mat4x4) return Vkm_Mat4x4 is
 
+    -- Using Laplace Expansion Theorem as described here:
+    -- https://www.geometrictools.com/Documentation/LaplaceExpansionTheorem.pdf
+    --
+    -- Matrix element naming convention is posted here for reference
+    -- |  c0r0  c1r0  c2r0  c3r0  |
+    -- |  c0r1  c1r1  c2r1  c3r1  |
+    -- |  c0r2  c1r2  c2r2  c3r2  |
+    -- |  c0r3  c1r3  c2r3  c3r3  |
+    --
+    s0 : constant Vkm_Float := m.c0r0 * m.c1r1 - m.c0r1 * m.c1r0;
+    s1 : constant Vkm_Float := m.c0r0 * m.c2r1 - m.c0r1 * m.c2r0;
+    s2 : constant Vkm_Float := m.c0r0 * m.c3r1 - m.c0r1 * m.c3r0;
+    s3 : constant Vkm_Float := m.c1r0 * m.c2r1 - m.c1r1 * m.c2r0;
+    s4 : constant Vkm_Float := m.c1r0 * m.c3r1 - m.c1r1 * m.c3r0;
+    s5 : constant Vkm_Float := m.c2r0 * m.c3r1 - m.c2r1 * m.c3r0;
+    c5 : constant Vkm_Float := m.c2r2 * m.c3r3 - m.c2r3 * m.c3r2;
+    c4 : constant Vkm_Float := m.c1r2 * m.c3r3 - m.c1r3 * m.c3r2;
+    c3 : constant Vkm_Float := m.c1r2 * m.c2r3 - m.c1r3 * m.c2r2;
+    c2 : constant Vkm_Float := m.c0r2 * m.c3r3 - m.c0r3 * m.c3r2;
+    c1 : constant Vkm_Float := m.c0r2 * m.c2r3 - m.c0r3 * m.c2r2;
+    c0 : constant Vkm_Float := m.c0r2 * m.c1r3 - m.c0r3 * m.c1r2;
 
+    -- Will throw 'divide by 0 exception' if determinant is zero.
+    one_over_determinant : constant Vkm_Float := 1.0 / (s0*c5 - s1*c4 + s2*c3 + s3*c2 - s4*c1 + s5*c0);
 begin
+
+    return Make_Mat4x4( (m.c1r1 * c5 - m.c2r1 * c4 + m.c3r1 * c3) * one_over_determinant, -- row 0
+                       -(m.c1r0 * c5 - m.c2r0 * c4 + m.c3r0 * c3) * one_over_determinant,
+                        (m.c1r3 * s5 - m.c2r3 * s4 + m.c3r3 * s3) * one_over_determinant,
+                       -(m.c1r2 * s5 - m.c2r2 * s4 + m.c3r2 * s3) * one_over_determinant,
+                       -(m.c0r1 * c5 - m.c2r1 * c2 + m.c3r1 * c1) * one_over_determinant, -- row 1
+                        (m.c0r0 * c5 - m.c2r0 * c2 + m.c3r0 * c1) * one_over_determinant,
+                       -(m.c0r3 * s5 - m.c2r3 * s2 + m.c3r3 * s1) * one_over_determinant,
+                        (m.c0r2 * s5 - m.c2r2 * s2 + m.c3r2 * s1) * one_over_determinant,
+                        (m.c0r1 * c4 - m.c1r1 * c2 + m.c3r1 * c0) * one_over_determinant, -- row 2
+                       -(m.c0r0 * c4 - m.c1r0 * c2 + m.c3r0 * c0) * one_over_determinant,
+                        (m.c0r3 * s4 - m.c1r3 * s2 + m.c3r3 * s0) * one_over_determinant,
+                       -(m.c0r2 * s4 - m.c1r2 * s2 + m.c3r2 * s0) * one_over_determinant,
+                       -(m.c0r1 * c3 - m.c1r1 * c1 + m.c2r1 * c0) * one_over_determinant, -- row 3
+                        (m.c0r0 * c3 - m.c1r0 * c1 + m.c2r0 * c0) * one_over_determinant,
+                       -(m.c0r3 * s3 - m.c1r3 * s1 + m.c2r3 * s0) * one_over_determinant,
+                        (m.c0r2 * s3 - m.c1r2 * s1 + m.c2r2 * s0) * one_over_determinant);
 
 end Inverse4x4;
 
