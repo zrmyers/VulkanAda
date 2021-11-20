@@ -369,4 +369,47 @@ package Vulkan.Math.GenDMatrix is
         left  : in     Vkm_GenDType;
         right : in     Vkm_Dmat     ) return Vkm_GenDType renames GDM.Op_Vector_Mult_Matrix;
 
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply a matrix and a scalar.
+    --<
+    --< @description
+    --< Multiplies a left scalar and a right matrix.
+    ----------------------------------------------------------------------------
+    function "*" is new GDM.Apply_Func_IS_IM_RM("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply a matrix and a scalar.
+    --<
+    --< @description
+    --< Multiplies a right scalar and a left matrix.
+    ----------------------------------------------------------------------------
+    function "*" is new GDM.Apply_Func_IM_IS_RM("*");
+
+
+    ----------------------------------------------------------------------------
+    -- GLSL Matrix Functions
+    ----------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply two matrices component-wise.
+    --<
+    --< @description
+    --< Multiply matrix x by matrix y component-wise, ie, result[i][j] is the
+    --< scalar product of x[i][j] and y[i][j].
+    --<
+    --< @x
+    --< Matrix x, must have same dimmensions as y.
+    --<
+    --< @y
+    --< Matrix y, must have same dimmensions as z
+    --<
+    --< @return
+    --< The component-wise product of two matrices.
+    ----------------------------------------------------------------------------
+    function Matrix_Comp_Mut is new GDM.Apply_Func_IM_IM_RM("*");
+
 end Vulkan.Math.GenDMatrix;

@@ -32,4 +32,11 @@ project Vulkan.Test is
     for Source_Dirs use ("samples/","test/**");
     for Main use ("vulkan_test-environment.adb","vulkan_test-math.adb");
 
+    package Compiler is
+        for Switches ("Ada") use (
+            --"-gnatwae",  Turn on warnings as errors
+            "-O2",
+            "-gnatn"
+        );
+    end Compiler;
 end Vulkan.Test;

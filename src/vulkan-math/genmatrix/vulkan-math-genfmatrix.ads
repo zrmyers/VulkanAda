@@ -372,4 +372,25 @@ package Vulkan.Math.GenFMatrix is
         right : in     Vkm_Mat     ) return Vkm_GenFType renames GFM.Op_Vector_Mult_Matrix;
 
 
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply a matrix and a scalar.
+    --<
+    --< @description
+    --< Multiplies a left scalar and a right matrix.
+    ----------------------------------------------------------------------------
+    function "*" is new GFM.Apply_Func_IS_IM_RM("*");
+
+
+    ----------------------------------------------------------------------------
+    --< @summary
+    --< Multiply a matrix and a scalar.
+    --<
+    --< @description
+    --< Multiplies a right scalar and a left matrix.
+    ----------------------------------------------------------------------------
+    function "*" is new GFM.Apply_Func_IM_IS_RM("*");
+
+
+
 end Vulkan.Math.GenFMatrix;

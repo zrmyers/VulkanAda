@@ -464,7 +464,6 @@ package Vulkan.Math is
     function "**" (x, y : in     Vkm_Float) return Vkm_Float
         renames VKM_FLT_NEF."**";
 
-
     ----------------------------------------------------------------------------
 
     function "abs" (x : in     Vkm_Double ) return Vkm_Double is

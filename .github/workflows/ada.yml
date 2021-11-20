@@ -23,7 +23,7 @@ jobs:
 
     - name: Obtain GLFW dependency
       run: >
-        sudo apt-get install libglfw3-dev
+        sudo apt-get install libglfw3-dev vulkan-tools libvulkan-dev
 
     - name: Fetch GLFWAda
       uses: actions/checkout@master
@@ -38,7 +38,9 @@ jobs:
         make install
 
     - name: Build
-      run: make
+      run: >
+        export platform="linux" &&
+        make
 
     - name: Test Vulkan Math Package
       run: >

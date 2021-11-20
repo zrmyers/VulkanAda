@@ -33,7 +33,7 @@ DIRS = obj bin lib
 
 $(DIRS):
 	@echo "Making Directory $@"
-	mkdir -p $@
+	mkdir $@
 
 vulkan: $(DIRS)
 	@echo "Building VulkanAda Library"
@@ -41,6 +41,10 @@ vulkan: $(DIRS)
 
 samples: $(DIRS) vulkan
 	gprbuild -p vulkan-test.gpr
+	cp -r dependencies/windows/*.dll ./bin
+
+test: ./bin/vulkan_test-math.exe
+	./bin/vulkan_test-math.exe
 
 docs: vulkan
 	gnatdoc -Pvulkan.gpr -l -w

@@ -21,17 +21,15 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
 --------------------------------------------------------------------------------
 --< @summary
---< This package provides a single precision floating point matrix with 4 rows
---< and 3 columns.
+--< This package tests built-in GLS matrix functions
 --------------------------------------------------------------------------------
-package Vulkan.Math.Dmat4x3.Test is
+package Vulkan.Math.Matrix.Test is
 
--- Test Harness for Mat4x3 regression tests
-procedure Test_Dmat4x3;
+-- Test Harness for Mat2x2 regression tests
+procedure Test_Matrix_Functions;
 
-end Vulkan.Math.Dmat4x3.Test;
+end Vulkan.Math.Matrix.Test;

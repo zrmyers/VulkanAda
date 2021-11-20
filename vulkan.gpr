@@ -23,6 +23,8 @@
 --------------------------------------------------------------------------------
 library project Vulkan is
 
+    platform := external("platform", "windows");
+
     for Languages use ("ada");
     for Library_Name use "VulkanAda";
     for Library_Kind use "static";
@@ -37,13 +39,21 @@ library project Vulkan is
 
     package Compiler is
         for Switches ("Ada") use (
-            "-gnatwae" -- Turn on warnings as errors
+            "-gnatwae", -- Turn on warnings as errors
+            "-O2",
+            "-gnatn"
         );
     end Compiler;
 
     package Linker is
-        for Linker_Options use
-            ("-lvulkan");
+        case platform is
+            when "windows" =>
+                for Linker_Options use ("-Ldependencies/windows","-lvulkan-1");
+            when "linux" =>
+                for Linker_Options use ("-lvulkan");
+            when others =>
+                null;
+            end case;
     end Linker;
 
 end Vulkan;

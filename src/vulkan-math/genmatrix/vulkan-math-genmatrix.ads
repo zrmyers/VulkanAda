@@ -118,6 +118,18 @@ generic
                        index : in     Vkm_Indices;
                        value : in     Base_Type);
 
+
+   ----------------------------------------------------------------------------
+   --< @summary
+   --< Get the component of the vector.
+   --<
+   --< @description
+   --< Get the component of the vector.
+   --<
+   --< @param vec
+   --< The vector to Get the component for.
+   --<
+   ----------------------------------------------------------------------------
     with function Get(vec    : in     Base_Vector_Type;
                       index  : in     Vkm_Indices) return Base_Type;
 
