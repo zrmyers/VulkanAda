@@ -44,4 +44,5 @@ jobs:
 
     - name: Test Vulkan Math Package
       run: >
-        ./bin/vulkan_test-math
+        ls -la ./bin
+        make test
