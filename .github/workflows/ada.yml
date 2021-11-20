@@ -23,7 +23,7 @@ jobs:
 
     - name: Obtain GLFW dependency
       run: >
-        sudo apt-get install libglfw3-dev libvulkan1
+        sudo apt-get install libglfw3-dev vulkan-tools libvulkan-dev
 
     - name: Fetch GLFWAda
       uses: actions/checkout@master
