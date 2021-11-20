@@ -39,10 +39,9 @@ jobs:
 
     - name: Build
       run: >
-        export platform=linux
+        export platform="linux" &&
         make
 
     - name: Test Vulkan Math Package
       run: >
-        ls -la ./bin
-        make test
+        ./bin/vulkan_test-math
