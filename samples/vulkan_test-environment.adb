@@ -33,7 +33,7 @@ with Vulkan.Core;            use Vulkan.Core;
 
 procedure Vulkan_Test.Environment is
 
-    hints : Glfw.Record_Window_Hints := (
+    hints : constant Glfw.Record_Window_Hints := (
         Client_Api => Glfw.NO_API,
         others     => <>);
 

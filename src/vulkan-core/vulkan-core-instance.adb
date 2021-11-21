@@ -86,6 +86,10 @@ package body Vulkan.Core.Instance is
             end;
         end if;
 
+        if result /= VK_SUCCESS then
+            raise VULKAN_ERROR with "vkEnumerateInstanceExtensionProperties failed with result " & result'Image;
+        end if;
+
     end Enumerate_Extension_Properties;
 
 
