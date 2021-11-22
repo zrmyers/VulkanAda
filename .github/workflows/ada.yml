@@ -35,7 +35,7 @@ jobs:
     - name: Build GLFWAda
       working-directory: GLFWAda
       run: >
-        sudo chmod -R go+rwx /usr/include && export window_system="x11" && make install
+        export window_system="x11" && make install
 
     - name: Build
       run: >
