@@ -52,6 +52,7 @@ package body Vulkan.Core.Instance is
     function To_Vk_Layer_Properties(from : in     VkLayerProperties)
         return Vk_Layer_Properties;
 
+
     ----------------------------------------------------------------------------
     --< @brief
     --< This operation retrieves all of the extension properties that can be used
@@ -68,6 +69,7 @@ package body Vulkan.Core.Instance is
         properties : in out Vk_Extension_Properties_Vector) is
 
         extension_count : aliased stdint_h.uint32_t := 0;
+        
         result : VkResult;
     begin
 

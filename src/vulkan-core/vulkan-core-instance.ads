@@ -32,7 +32,6 @@ with System;
 --------------------------------------------------------------------------------
 package Vulkan.Core.Instance is
 
-
     --< Instance extension names.
     VK_EXT_debug_utils : constant Vk_String := To_Vk_String("VK_EXT_debug_utils");
 
