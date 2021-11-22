@@ -40,13 +40,13 @@ package body Vulkan.Math.Vec2.Test is
 -- Test Vec2
 procedure Test_Vec2 is
 
-    vector_1 : Vkm_Vec2 :=
+    vector_1 : constant Vkm_Vec2 :=
         Make_Vec2(1.0, 2.0);
 
-    vector_2 : Vkm_Vec2 :=
+    vector_2 : constant Vkm_Vec2 :=
         Make_Vec2;
 
-    vector_3 : Vkm_Vec2 :=
+    vector_3 : constant Vkm_Vec2 :=
         Make_Vec2(vector_1);
 begin
 

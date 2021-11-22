@@ -40,13 +40,13 @@ package body Vulkan.Math.Vec3.Test is
 -- Test Vec3
 procedure Test_Vec3 is
 
-    vector_1 : Vkm_Vec3 :=
+    vector_1 : constant Vkm_Vec3 :=
         Make_Vec3(1.0, 2.0, 3.0);
 
-    vector_2 : Vkm_Vec3 :=
+    vector_2 : constant Vkm_Vec3 :=
         Make_Vec3;
 
-    vector_3 : Vkm_Vec3 :=
+    vector_3 : constant Vkm_Vec3 :=
         Make_Vec3(vector_1);
 begin
 

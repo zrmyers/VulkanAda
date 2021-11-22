@@ -26,6 +26,7 @@ with Ada.Unchecked_Conversion;
 with Ada.Strings.Bounded;
 with Ada.Containers.Vectors;
 with Ada.Characters.Latin_1;
+with Interfaces.C;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Core
@@ -61,12 +62,12 @@ package Vulkan.Core is
     --< Describes bits used to pack or unpack data from the record.
     for Vk_Spec_Version use
         record
-            major at 0 range 0  .. 9;
-            minor at 0 range 10 .. 19;
-            patch at 0 range 20 .. 31;
+            major at 0 range 22  .. 31;
+            minor at 0 range 12 .. 21;
+            patch at 0 range 0 .. 11;
         end record;
 
-    for Vk_Spec_Version'Size use 32;
+    for Vk_Spec_Version'Size use Interfaces.C.unsigned'Size;
 
     --< Common string type used throughout Vulkan interface.
     package Vk_Strings is new Ada.Strings.Bounded.Generic_Bounded_Length (Max => 256);

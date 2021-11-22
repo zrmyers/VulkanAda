@@ -21,9 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Math.Mat2x2;
-
-use Vulkan.Math.Mat2x2;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
