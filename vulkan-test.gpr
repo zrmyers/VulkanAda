@@ -22,7 +22,7 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with "vulkan";
-limited with "glfw";
+limited with "glfwada";
 
 project Vulkan.Test is
 
