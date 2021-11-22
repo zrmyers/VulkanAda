@@ -21,7 +21,12 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
+
 package Vulkan is
     pragma Preelaborate;
     pragma Pure;
+
+    -- Version of the VulkanAda library.
+    VKADA_API_VERSION : constant String := "0.0.2";
+
 end Vulkan;

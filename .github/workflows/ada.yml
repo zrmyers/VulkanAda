@@ -35,10 +35,12 @@ jobs:
     - name: Build GLFWAda
       working-directory: GLFWAda
       run: >
-        make install
+          make compile
 
     - name: Build
       run: >
+        export GLFWADA_GPR=GLFWAda/glfwada.gpr &&
+        export window_system="x11" &&
         export platform="linux" &&
         make
 

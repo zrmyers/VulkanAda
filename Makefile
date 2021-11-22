@@ -24,6 +24,7 @@
 # This Makefile is used to build, install, and update the VulkanAda library, as
 # well as to build its tests.
 ################################################################################
+GLFWADA_GPR?=../GLFWAda/glfwada.gpr
 
 .PHONY: default samples
 
@@ -40,7 +41,7 @@ vulkan: $(DIRS)
 	gprbuild -p vulkan.gpr
 
 samples: $(DIRS) vulkan
-	gprbuild -p vulkan-test.gpr
+	gprbuild -p vulkan-test.gpr --implicit-with=$(GLFWADA_GPR)
 	cp -r dependencies/windows/*.dll ./bin
 
 test: ./bin/vulkan_test-math.exe

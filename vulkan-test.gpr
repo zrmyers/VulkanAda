@@ -22,7 +22,6 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with "vulkan";
-limited with "glfw";
 
 project Vulkan.Test is
 
@@ -34,7 +33,7 @@ project Vulkan.Test is
 
     package Compiler is
         for Switches ("Ada") use (
-            --"-gnatwae",  Turn on warnings as errors
+            --"-gnatwae",  --Turn on warnings as errors
             "-O2",
             "-gnatn"
         );
