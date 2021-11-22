@@ -24,6 +24,8 @@
 with stdint_h;
 with Ada.Unchecked_Conversion;
 with Ada.Strings.Bounded;
+with Ada.Containers.Vectors;
+with Ada.Characters.Latin_1;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Core
@@ -36,6 +38,9 @@ package Vulkan.Core is
 
     --< An exception that can be thrown during runtime.
     VULKAN_ERROR : exception;
+
+    --< Local definition of line feed.
+    LF : constant String := "" & Ada.Characters.Latin_1.LF;
 
     --< Vulkan Specification Major Version Number.
     type Vk_Spec_Major is mod (2 ** 10);
@@ -68,11 +73,21 @@ package Vulkan.Core is
 
     type Vk_String is new Vk_Strings.Bounded_String;
 
+    package Vk_String_Vectors is new Ada.Containers.Vectors (
+        Index_Type   => Natural,
+        Element_Type => Vk_String);
+
+    subtype Vk_String_Vector is Vk_String_Vectors.Vector;
+
     --< Useful function to convert an unsigned 32-bit number into a version
     --< record.
     function To_Vk_Spec_Version is new Ada.Unchecked_Conversion (
         Source => stdint_h.uint32_t,
         Target => Vk_Spec_Version);
+
+    function To_Uint32 is new Ada.Unchecked_Conversion (
+        Source => Vk_Spec_Version,
+        Target => stdint_h.uint32_t);
 
     function To_Vk_String(from : in     String) return Vk_String is
         (Vk_String(Vk_Strings.To_Bounded_String(from)));

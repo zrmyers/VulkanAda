@@ -42,7 +42,18 @@ procedure Vulkan_Test.Environment is
     matrix : Vulkan.Math.Mat4x4.Vkm_Mat4 := Vulkan.Math.Mat4x4.Make_Mat4x4;
     vector : Vulkan.Math.Vec4.Vkm_Vec4 := Vulkan.Math.Vec4.Make_Vec4;
 
+    required_extension_names : Glfw.Glfw_String_Vector;
+
     extension_properties : Vulkan.Core.Instance.Vk_Extension_Properties_Vector;
+
+    instance_info : Vk_Instance_Create_Info :=
+        (application_info => (
+             application_name => To_Vk_String("Hello Vulkan!"),
+             others => <>),
+         others => <>);
+
+    instance : Vk_Instance;
+
 begin
     Ada.Text_IO.Put_Line("Initializing Window System");
 
@@ -74,13 +85,50 @@ begin
 
     Ada.Text_IO.Put_Line(vector.Image);
 
-    Vulkan.Core.Instance.Enumerate_Extension_Properties(extension_properties);
+    Vk_Enumerate_Extension_Properties(extension_properties);
 
     for property of extension_properties loop
 
-        Ada.Text_IO.Put_Line(Image(property));
+        Ada.Text_IO.Put_Line("Supported Extension: " & Image(property));
 
     end loop;
+
+    Glfw.Get_Required_Instance_Extensions(required_extension_names);
+
+    for name of required_extension_names loop
+
+        -- Determine whether the name exists in the set of supported extensions
+        declare
+            required_name : Vk_String := Vulkan.Core.To_Bounded_String(Glfw.To_String(name));
+            is_supported : Boolean := False;
+        begin
+
+            for supported_property of extension_properties loop
+
+                if supported_property.name = required_name then
+                    is_supported := True;
+                end if;
+
+                exit when is_supported = true;
+
+            end loop;
+
+            if not is_supported then
+
+                Ada.Text_IO.Put_Line("Required Extension, " & Glfw.To_String(name) & " is NOT supported!");
+            else
+                instance_info.enabled_extension_names.Append(required_name);
+                Ada.Text_IO.Put_Line("Required Extension, " & Glfw.To_String(name) & " is supported!");
+            end if;
+        end;
+
+    end loop;
+
+    Ada.Text_IO.Put_Line(Image(instance_info));
+
+    -- Create an instance!
+    instance := Vk_Create_Instance(create_info => instance_info);
+
     -- Main Loop
     loop
 

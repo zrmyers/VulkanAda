@@ -2852,13 +2852,13 @@ package Vulkan.vulkan_core_h is
    pragma Convention (C_Pass_By_Copy, VkAllocationCallbacks);  -- vulkan_core.h:2155
 
    type VkApplicationInfo is record
-      sType : aliased VkStructureType;  -- vulkan_core.h:2165
-      pNext : System.Address;  -- vulkan_core.h:2166
-      pApplicationName : Interfaces.C.Strings.chars_ptr;  -- vulkan_core.h:2167
-      applicationVersion : aliased stdint_h.uint32_t;  -- vulkan_core.h:2168
-      pEngineName : Interfaces.C.Strings.chars_ptr;  -- vulkan_core.h:2169
-      engineVersion : aliased stdint_h.uint32_t;  -- vulkan_core.h:2170
-      apiVersion : aliased stdint_h.uint32_t;  -- vulkan_core.h:2171
+      sType : aliased VkStructureType := VK_STRUCTURE_TYPE_APPLICATION_INFO;
+      pNext : System.Address := System.Null_Address ;
+      pApplicationName : Interfaces.C.Strings.chars_ptr := Interfaces.C.Strings.Null_Ptr;
+      applicationVersion : aliased stdint_h.uint32_t := 0;
+      pEngineName : Interfaces.C.Strings.chars_ptr := Interfaces.C.Strings.Null_Ptr;
+      engineVersion : aliased stdint_h.uint32_t := 0;
+      apiVersion : aliased stdint_h.uint32_t; -- In absense of macro to use here, should force using software to initialize.
    end record;
    pragma Convention (C_Pass_By_Copy, VkApplicationInfo);  -- vulkan_core.h:2164
 
@@ -2879,14 +2879,14 @@ package Vulkan.vulkan_core_h is
    pragma Convention (C_Pass_By_Copy, VkImageFormatProperties);  -- vulkan_core.h:2180
 
    type VkInstanceCreateInfo is record
-      sType : aliased VkStructureType;  -- vulkan_core.h:2189
-      pNext : System.Address;  -- vulkan_core.h:2190
-      flags : aliased VkInstanceCreateFlags;  -- vulkan_core.h:2191
-      pApplicationInfo : System.Address;  -- vulkan_core.h:2192
-      enabledLayerCount : aliased stdint_h.uint32_t;  -- vulkan_core.h:2193
-      ppEnabledLayerNames : System.Address;  -- vulkan_core.h:2194
-      enabledExtensionCount : aliased stdint_h.uint32_t;  -- vulkan_core.h:2195
-      ppEnabledExtensionNames : System.Address;  -- vulkan_core.h:2196
+      sType : aliased VkStructureType := VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
+      pNext : System.Address := System.Null_Address ;
+      flags : aliased VkInstanceCreateFlags := 0;
+      pApplicationInfo : System.Address := System.Null_Address ;
+      enabledLayerCount : aliased stdint_h.uint32_t := 0;
+      ppEnabledLayerNames : System.Address := System.Null_Address ;
+      enabledExtensionCount : aliased stdint_h.uint32_t := 0;
+      ppEnabledExtensionNames : System.Address := System.Null_Address ;
    end record;
    pragma Convention (C_Pass_By_Copy, VkInstanceCreateInfo);  -- vulkan_core.h:2188
 
@@ -4849,7 +4849,7 @@ package Vulkan.vulkan_core_h is
 
    function vkCreateInstance
      (pCreateInfo : System.Address;
-      pAllocator : System.Address;
+      pAllocator : System.Address := System.Null_Address;
       pInstance : System.Address) return VkResult;  -- vulkan_core.h:3281
    pragma Import (C, vkCreateInstance, "vkCreateInstance");
 
