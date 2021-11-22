@@ -35,6 +35,9 @@ jobs:
     - name: Build GLFWAda
       working-directory: GLFWAda
       run: >
+        sudo chmod ug+rwx /usr/share &&
+        sudo chmod ug+rwx /usr/include &&
+        sudo chmod ug+rwx share/gpr &&
         export window_system="x11" && make install
 
     - name: Build
