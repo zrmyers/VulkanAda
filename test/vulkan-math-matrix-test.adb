@@ -89,16 +89,16 @@ end Test_Matrix_Functions;
 
 
 procedure Test_Matrix_Comp_Mult is
-    left : Vkm_Mat2x2 := Make_Mat2x2(1.0, 2.0,
+    left : constant Vkm_Mat2x2 := Make_Mat2x2(1.0, 2.0,
                                      3.0, 4.0);
 
-    right : Vkm_Mat2x2 := Make_Mat2x2(2.0, 0.5,
+    right : constant Vkm_Mat2x2 := Make_Mat2x2(2.0, 0.5,
                                       2.5, -0.5);
 
-    left1 : Vkm_Dmat2x2 := Make_Dmat2x2(1.0, 2.0,
+    left1 : constant Vkm_Dmat2x2 := Make_Dmat2x2(1.0, 2.0,
                                       3.0, 4.0);
 
-    right1 : Vkm_Dmat2x2 := Make_Dmat2x2(2.0, 0.5,
+    right1 : constant Vkm_Dmat2x2 := Make_Dmat2x2(2.0, 0.5,
                                        2.5, -0.5);
 begin
 
@@ -117,21 +117,21 @@ end Test_Matrix_Comp_Mult;
 
 procedure Test_Matrix_Outer_Product is
 
-    left : Vkm_Vec2 := Make_Vec2(1.0, 2.0);
+    left : constant Vkm_Vec2 := Make_Vec2(1.0, 2.0);
 
-    right : Vkm_Vec2 := Make_Vec2(3.0, 4.0);
+    right : constant Vkm_Vec2 := Make_Vec2(3.0, 4.0);
 
-    left1 : Vkm_Vec3 := Make_Vec3(6.0, 5.0, 6.0);
+    left1 : constant Vkm_Vec3 := Make_Vec3(6.0, 5.0, 6.0);
 
-    right1 : Vkm_Vec4 := Make_Vec4(7.0, 8.0, 9.0, 10.0);
+    right1 : constant Vkm_Vec4 := Make_Vec4(7.0, 8.0, 9.0, 10.0);
 
-    left_d : Vkm_Dvec2 := Make_Dvec2(1.0, 2.0);
+    left_d : constant Vkm_Dvec2 := Make_Dvec2(1.0, 2.0);
 
-    right_d : Vkm_Dvec2 := Make_Dvec2(3.0, 4.0);
+    right_d : constant Vkm_Dvec2 := Make_Dvec2(3.0, 4.0);
 
-    left1_d : Vkm_Dvec3 := Make_Dvec3(6.0, 5.0, 6.0);
+    left1_d : constant Vkm_Dvec3 := Make_Dvec3(6.0, 5.0, 6.0);
 
-    right1_d : Vkm_Dvec4 := Make_Dvec4(7.0, 8.0, 9.0, 10.0);
+    right1_d : constant Vkm_Dvec4 := Make_Dvec4(7.0, 8.0, 9.0, 10.0);
 
 begin
 
@@ -164,18 +164,18 @@ end Test_Matrix_Outer_Product;
 
 procedure Test_Matrix_Transpose is
 
-    mat : Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
+    mat : constant Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
                                     2.0, 3.0);
 
-    mat1 : Vkm_Mat4x3 := Make_Mat4x3(0.0, 1.0, 2.0,
+    mat1 : constant Vkm_Mat4x3 := Make_Mat4x3(0.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0,
                                      9.0, 10.0, 11.0);
 
-    mat_d : Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
+    mat_d : constant Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
                                     2.0, 3.0);
 
-    mat1_d : Vkm_Dmat4x3 := Make_Dmat4x3(0.0, 1.0, 2.0,
+    mat1_d : constant Vkm_Dmat4x3 := Make_Dmat4x3(0.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0,
                                      9.0, 10.0, 11.0);
@@ -221,26 +221,26 @@ end Test_Matrix_Transpose;
 
 procedure Test_Matrix_Determinant is
 
-    mat : Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
+    mat : constant Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
                                     2.0, 3.0);
 
-    mat1 : Vkm_Mat3x3 := Make_Mat3x3(1.0, 1.0, 2.0,
+    mat1 : constant Vkm_Mat3x3 := Make_Mat3x3(1.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0);
 
-    mat2 : Vkm_Mat4x4 := Make_Mat4x4(2.0, 1.0, 2.0, 3.0,
+    mat2 : constant Vkm_Mat4x4 := Make_Mat4x4(2.0, 1.0, 2.0, 3.0,
                                      3.0, 4.0, 5.0, 4.0,
                                      6.0, 7.0, 8.0, 5.0,
                                      9.0, 8.0, 7.0, 6.0);
 
-    mat_d : Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
+    mat_d : constant Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
                                     2.0, 3.0);
 
-    mat1_d : Vkm_Dmat3x3 := Make_Dmat3x3(1.0, 1.0, 2.0,
+    mat1_d : constant Vkm_Dmat3x3 := Make_Dmat3x3(1.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0);
 
-    mat2_d : Vkm_Dmat4x4 := Make_Dmat4x4(2.0, 1.0, 2.0, 3.0,
+    mat2_d : constant Vkm_Dmat4x4 := Make_Dmat4x4(2.0, 1.0, 2.0, 3.0,
                                      3.0, 4.0, 5.0, 4.0,
                                      6.0, 7.0, 8.0, 5.0,
                                      9.0, 8.0, 7.0, 6.0);
@@ -265,26 +265,26 @@ end Test_Matrix_Determinant;
 
 procedure Test_Matrix_Inversion is
 
-    mat : Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
+    mat : constant Vkm_Mat2x2 := Make_Mat2x2(0.0, 1.0,
                                     2.0, 3.0);
 
-    mat1 : Vkm_Mat3x3 := Make_Mat3x3(1.0, 1.0, 2.0,
+    mat1 : constant Vkm_Mat3x3 := Make_Mat3x3(1.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0);
 
-    mat2 : Vkm_Mat4x4 := Make_Mat4x4(2.0, 1.0, 2.0, 3.0,
+    mat2 : constant Vkm_Mat4x4 := Make_Mat4x4(2.0, 1.0, 2.0, 3.0,
                                      3.0, 4.0, 5.0, 4.0,
                                      6.0, 7.0, 8.0, 5.0,
                                      9.0, 8.0, 7.0, 6.0);
 
-    mat_d : Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
+    mat_d : constant Vkm_Dmat2x2 := Make_Dmat2x2(0.0, 1.0,
                                     2.0, 3.0);
 
-    mat1_d : Vkm_Dmat3x3 := Make_Dmat3x3(1.0, 1.0, 2.0,
+    mat1_d : constant Vkm_Dmat3x3 := Make_Dmat3x3(1.0, 1.0, 2.0,
                                      3.0, 4.0, 5.0,
                                      6.0, 7.0, 8.0);
 
-    mat2_d : Vkm_Dmat4x4 := Make_Dmat4x4(2.0, 1.0, 2.0, 3.0,
+    mat2_d : constant Vkm_Dmat4x4 := Make_Dmat4x4(2.0, 1.0, 2.0, 3.0,
                                      3.0, 4.0, 5.0, 4.0,
                                      6.0, 7.0, 8.0, 5.0,
                                      9.0, 8.0, 7.0, 6.0);

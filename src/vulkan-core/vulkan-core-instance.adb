@@ -21,11 +21,13 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Vulkan_Core_H; use Vulkan.Vulkan_Core_H;
-with stdint_h;             use stdint_h;
-with Interfaces.C;         use Interfaces.C;
-with Interfaces.C.Strings; use Interfaces.C.Strings;
-with Ada.Containers;       use Ada.Containers;
+with Vulkan.Core.Vulkan_Core_H; use Vulkan.Core.Vulkan_Core_H;
+with stdint_h;                  use stdint_h;
+with Interfaces.C;              use Interfaces.C;
+with Interfaces.C.Strings;      use Interfaces.C.Strings;
+with Ada.Containers;            use Ada.Containers;
+with System;                    use System;
+
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Core
@@ -37,11 +39,18 @@ package body Vulkan.Core.Instance is
 
     type Extension_Properties_Array is array (Positive range <>) of aliased VkExtensionProperties;
 
+    type Layer_Properties_Array is array (Positive range <>) of aliased VkLayerProperties;
+
     type Chars_Ptr_Array is array (Natural range <>) of Interfaces.C.Strings.chars_ptr;
+
 
     --< Convert Extension properties to a type that is easier to use.
     function To_Vk_Extension_Properties(from : in     VkExtensionProperties)
         return Vk_Extension_Properties;
+
+    --< Convert Layer properties t a type that is easier to use in Ada.
+    function To_Vk_Layer_Properties(from : in     VkLayerProperties)
+        return Vk_Layer_Properties;
 
     ----------------------------------------------------------------------------
     --< @brief
@@ -55,32 +64,32 @@ package body Vulkan.Core.Instance is
     --< The following exceptions can be raised by this operation:
     --<     VULKAN_ERROR
     ----------------------------------------------------------------------------
-    procedure Vk_Enumerate_Extension_Properties (
+    procedure Vk_Enumerate_Instance_Extension_Properties (
         properties : in out Vk_Extension_Properties_Vector) is
 
-        layer_count : aliased stdint_h.uint32_t := 0;
+        extension_count : aliased stdint_h.uint32_t := 0;
         result : VkResult;
     begin
 
         result := vkEnumerateInstanceExtensionProperties(
             Interfaces.C.Strings.Null_Ptr,
-            layer_count'access,
+            extension_count'access,
             null);
-        if (result = VK_SUCCESS) and (layer_count > 0) then
+        if (result = VK_SUCCESS) and (extension_count > 0) then
             declare
 
-                extension_properties : aliased Extension_Properties_Array(1 .. Positive(layer_count)) :=
+                extension_properties : aliased Extension_Properties_Array(1 .. Positive(extension_count)) :=
                     (others => (extensionName => (others => nul), specVersion => 0));
             begin
 
                 result := vkEnumerateInstanceExtensionProperties(
                     Interfaces.C.Strings.Null_Ptr,
-                    layer_count'access,
+                    extension_count'access,
                     extension_properties(1)'Access);
 
                 if result = VK_SUCCESS then
                     -- Copy to Vector.
-                    for property_index in 1 .. Positive(layer_count) loop
+                    for property_index in 1 .. Positive(extension_count) loop
 
                         properties.Append(To_Vk_Extension_Properties(extension_properties(property_index)));
                     end loop;
@@ -92,7 +101,52 @@ package body Vulkan.Core.Instance is
             raise VULKAN_ERROR with "vkEnumerateInstanceExtensionProperties failed with result " & result'Image;
         end if;
 
-    end Vk_Enumerate_Extension_Properties;
+    end Vk_Enumerate_Instance_Extension_Properties;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure Vk_Enumerate_Instance_Layer_Properties (
+        properties : in out Vk_Layer_Properties_Vector) is
+
+        layer_count : aliased stdint_h.uint32_t := 0;
+        result : VkResult;
+
+    begin
+
+        result := vkEnumerateInstanceLayerProperties(
+            layer_count'access,
+            null);
+
+        if (result = VK_SUCCESS) and (layer_count > 0) then
+            declare
+
+                layer_properties : aliased Layer_Properties_Array(1 .. Positive(layer_count)) :=
+                    (others => (layerName => (others => nul),
+                                specVersion => 0,
+                                implementationVersion => 0,
+                                description => (others => nul)));
+            begin
+
+                result := vkEnumerateInstanceLayerProperties(
+                    layer_count'access,
+                    layer_properties(1)'Access);
+
+                if result = VK_SUCCESS then
+                    -- Copy to Vector.
+                    for property_index in 1 .. Positive(layer_count) loop
+
+                        properties.Append(To_Vk_Layer_Properties(layer_properties(property_index)));
+                    end loop;
+                end if;
+            end;
+        end if;
+
+        if result /= VK_SUCCESS then
+            raise VULKAN_ERROR with "vkEnumerateInstanceExtensionProperties failed with result " & result'Image;
+        end if;
+    end Vk_Enumerate_Instance_Layer_Properties;
 
 
     ----------------------------------------------------------------------------
@@ -167,6 +221,18 @@ package body Vulkan.Core.Instance is
 
 
     ----------------------------------------------------------------------------
+
+
+    procedure Vk_Destroy_Instance(instance : in out Vk_Instance) is begin
+
+        vkDestroyInstance(vkInstance(instance.instance));
+
+        instance.instance := System.Null_Address;
+
+    end Vk_Destroy_Instance;
+
+
+    ----------------------------------------------------------------------------
     -- Local Operations
     ----------------------------------------------------------------------------
 
@@ -183,5 +249,23 @@ package body Vulkan.Core.Instance is
         return to;
     end To_Vk_Extension_Properties;
 
+
+    ----------------------------------------------------------------------------
+
+
+    function To_Vk_Layer_Properties(from : in     VkLayerProperties)
+        return Vk_Layer_Properties is
+
+        to : Vk_Layer_Properties;
+    begin
+
+        to.name := To_Vk_String(To_Ada(from.layerName));
+        to.spec_version := To_Vk_Spec_Version(from.specVersion);
+        to.implementation_version := To_Vk_Spec_Version(from.implementationVersion);
+        to.description := To_Vk_String(To_Ada(from.layerName));
+
+        return to;
+
+    end To_Vk_Layer_Properties;
 
 end Vulkan.Core.Instance;

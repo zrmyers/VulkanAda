@@ -21,8 +21,6 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Math.Vec2.Test;
-with Vulkan.Math.Vec3.Test;
 with Vulkan.Math.Mat2x2.Test;
 with Vulkan.Math.Mat2x3.Test;
 with Vulkan.Math.Mat2x4.Test;
@@ -33,8 +31,6 @@ with Vulkan.Math.Mat4x2.Test;
 with Vulkan.Math.Mat4x3.Test;
 with Vulkan.Math.Mat4x4.Test;
 
-use Vulkan.Math.Vec2.Test;
-use Vulkan.Math.Vec3.Test;
 use Vulkan.Math.Mat2x2.Test;
 use Vulkan.Math.Mat2x3.Test;
 use Vulkan.Math.Mat2x4.Test;

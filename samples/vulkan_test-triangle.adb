@@ -31,7 +31,7 @@ with Vulkan.Core.Instance;   use Vulkan.Core.Instance;
 with Vulkan.Core;            use Vulkan.Core;
 
 
-procedure Vulkan_Test.Environment is
+procedure Vulkan_Test.Triangle is
 
     hints : constant Glfw.Record_Window_Hints := (
         Client_Api => Glfw.NO_API,
@@ -39,17 +39,19 @@ procedure Vulkan_Test.Environment is
 
     window_handle : Glfw.Glfw_Window := Glfw.No_Window;
 
-    matrix : Vulkan.Math.Mat4x4.Vkm_Mat4 := Vulkan.Math.Mat4x4.Make_Mat4x4;
-    vector : Vulkan.Math.Vec4.Vkm_Vec4 := Vulkan.Math.Vec4.Make_Vec4;
-
     required_extension_names : Glfw.Glfw_String_Vector;
 
-    extension_properties : Vulkan.Core.Instance.Vk_Extension_Properties_Vector;
+    supported_extension_properties : Vk_Extension_Properties_Vector;
+
+    supported_layer_properties : Vk_Layer_Properties_Vector;
 
     instance_info : Vk_Instance_Create_Info :=
         (application_info => (
              application_name => To_Vk_String("Hello Vulkan!"),
-             others => <>),
+             application_version => (major => 1, minor => 0, patch => 0),
+             engine_name => To_Vk_String("No Engine"),
+             engine_version => (major => 1, minor => 0, patch => 0),
+             api_version => (major => 1, minor => 0, patch => 0)),
          others => <>);
 
     instance : Vk_Instance;
@@ -71,29 +73,17 @@ begin
     -- Demonstrate VulkanAda
     Ada.Text_IO.Put_Line("VulkanAda Version is " & Vulkan.VKADA_API_VERSION);
 
-    -- Demonstrate vectors
-    vector.x(1.0);
-    vector.w(1.0);
+    Vk_Enumerate_Instance_Extension_Properties(supported_extension_properties);
 
-    Ada.Text_IO.Put_Line(vector.Image);
-
-    matrix := 2.0 * matrix;
-
-    Ada.Text_IO.Put_Line(matrix.Image);
-
-    vector := matrix * vector;
-
-    Ada.Text_IO.Put_Line(vector.Image);
-
-    Vk_Enumerate_Instance_Extension_Properties(extension_properties);
-
-    for property of extension_properties loop
+    for property of supported_extension_properties loop
 
         Ada.Text_IO.Put_Line("Supported Extension: " & Image(property));
 
     end loop;
 
     Glfw.Get_Required_Instance_Extensions(required_extension_names);
+
+    required_extension_names.Append(Glfw.To_Bounded_String(To_String(VK_EXT_debug_utils)));
 
     for name of required_extension_names loop
 
@@ -103,7 +93,7 @@ begin
             is_supported : Boolean := False;
         begin
 
-            for supported_property of extension_properties loop
+            for supported_property of supported_extension_properties loop
 
                 if supported_property.name = required_name then
                     is_supported := True;
@@ -124,6 +114,37 @@ begin
 
     end loop;
 
+    -- Enable Validation layers.
+    Vk_Enumerate_Instance_Layer_Properties(supported_layer_properties);
+
+    Ada.Text_IO.Put_Line("Number of supported layers is " & supported_layer_properties.Length'Image);
+
+    for property of supported_layer_properties loop
+        Ada.Text_IO.Put_Line("Supported Layers: " & Image(property));
+
+    end loop;
+
+    declare
+        validation_supported : Boolean := false;
+    begin
+
+        for property of supported_layer_properties loop
+
+            if property.name = VK_LAYER_KHRONOS_validation then
+                validation_supported := True;
+            end if;
+
+            exit when validation_supported;
+        end loop;
+
+        if not validation_supported then
+            Ada.Text_IO.Put_Line("Required Layer " & To_String(VK_LAYER_KHRONOS_validation) & " is NOT supported!");
+        else
+            Ada.Text_IO.Put_Line("Required Layer " & To_String(VK_LAYER_KHRONOS_validation) & " is supported!");
+            instance_info.enabled_layer_names.Append(VK_LAYER_KHRONOS_validation);
+        end if;
+    end;
+
     Ada.Text_IO.Put_Line(Image(instance_info));
 
     Ada.Text_IO.Put_Line("Creating Vulkan Instance");
@@ -132,6 +153,8 @@ begin
     instance := Vk_Create_Instance(create_info => instance_info);
 
     -- Main Loop
+    Ada.Text_IO.Put_Line("Entering Main Loop");
+
     loop
 
         ------------------------------------------------------------------------
@@ -153,7 +176,7 @@ begin
 
     Ada.Text_IO.Put_Line("Destroying Vulkan Instance");
 
-    Vk_Destroy_Instance(instance => instance);
+    --Vk_Destroy_Instance(instance => instance);
 
     Ada.Text_IO.Put_Line("Destroying Window");
 
@@ -164,4 +187,4 @@ begin
     -- Shut down the GLFW instance
     Glfw.Platform_Shutdown;
 
-end Vulkan_Test.Environment;
+end Vulkan_Test.Triangle;

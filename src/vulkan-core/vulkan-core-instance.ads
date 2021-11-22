@@ -32,6 +32,13 @@ with System;
 --------------------------------------------------------------------------------
 package Vulkan.Core.Instance is
 
+
+    --< Instance extension names.
+    VK_EXT_debug_utils : constant Vk_String := To_Vk_String("VK_EXT_debug_utils");
+
+    --< Instance layer names.
+    VK_LAYER_KHRONOS_validation : constant Vk_String := To_Vk_String("VK_LAYER_KHRONOS_validation");
+
     --< A reference to the vkInstance type.
     type Vk_Instance is private;
 
@@ -54,6 +61,20 @@ package Vulkan.Core.Instance is
     --< Subtype declared for the extension properties vector to make it easier to
     --< use.
     subtype Vk_Extension_Properties_Vector is Vk_Extension_Properties_Vectors.Vector;
+
+    --< This record supported layer properties for an instant of Vulkan.
+    type Vk_Layer_Properties is record
+        name : Vk_String;
+        spec_version : Vk_Spec_Version;
+        implementation_version : Vk_Spec_Version;
+        description : Vk_String;
+    end record;
+
+    package Vk_Layer_Properties_Vectors is new Ada.Containers.Vectors
+        (Index_Type   => Natural,
+         Element_Type => Vk_Layer_Properties);
+
+    subtype Vk_Layer_Properties_Vector is Vk_Layer_Properties_Vectors.Vector;
 
     --< Application creation information.
     type Vk_Application_Create_Info is record
@@ -86,8 +107,24 @@ package Vulkan.Core.Instance is
     --< The following exceptions can be raised by this operation:
     --<     VULKAN_ERROR
     ----------------------------------------------------------------------------
-    procedure Vk_Enumerate_Extension_Properties (
+    procedure Vk_Enumerate_Instance_Extension_Properties (
         properties : in out Vk_Extension_Properties_Vector);
+
+
+    ----------------------------------------------------------------------------
+    --< @brief
+    --< This operation retrieves all of the layer properties that can be used
+    --< to create a Vulkan instance.
+    --<
+    --< @param properties
+    --< A list of properties with which an instance of Vulkan can be created.
+    --<
+    --< @errors
+    --< The following exceptions can be raised by this operation:
+    --<     VULKAN_ERROR
+    ----------------------------------------------------------------------------
+    procedure Vk_Enumerate_Instance_Layer_Properties (
+        properties : in out Vk_Layer_Properties_Vector);
 
 
     ----------------------------------------------------------------------------
@@ -104,7 +141,23 @@ package Vulkan.Core.Instance is
     --< The following exceptions can be raised by this operation:
     --<     VULKAN_ERROR
     ----------------------------------------------------------------------------
-    function Vk_Create_Instance(create_info : in     Vk_Instance_Create_Info) return Vk_Instance;
+    function Vk_Create_Instance(
+        create_info : in     Vk_Instance_Create_Info) return Vk_Instance;
+
+
+    ----------------------------------------------------------------------------
+    --< @brief
+    --< This operation destroys a Vulkan instance.
+    --<
+    --< @param instance
+    --< The instance to destroy.
+    --<
+    --< @errors
+    --< The following exceptions can be raised by this operation:
+    --<     VULKAN_ERROR
+    ----------------------------------------------------------------------------
+    procedure Vk_Destroy_Instance(
+        instance : in out Vk_Instance);
 
 
     ----------------------------------------------------------------------------
@@ -114,12 +167,18 @@ package Vulkan.Core.Instance is
     function Image(property : in     Vk_Extension_Properties) return String is
         ("[ name = " & Image(property.name) & ", version = " & Image(property.version) & " ]") with inline;
 
+    function Image(property : in     Vk_Layer_Properties) return String is
+        ("[ name = " & Image(property.name) &
+         ", spec_version = " & Image(property.spec_version) &
+         ", implementation_version = " & Image(property.implementation_version) &
+         ", description = " & Image(property.description) & "]") with inline;
+
     function Image(application_info :in     Vk_Application_Create_Info) return String is
         ("[ application_name = "    & Image(application_info.application_name) & LF &
          ", application_version = " & Image(application_info.application_version) & LF &
          ", engine_name = "         & Image(application_info.engine_name) & LF &
          ", engine_version = "      & Image(application_info.engine_version) & LF &
-         ", api_version = " & Image(application_info.api_version) & " ]");
+         ", api_version = " & Image(application_info.api_version) & " ]") with inline;
 
     function Image(instance_create_info : in     Vk_Instance_Create_Info) return String is
         ("[ application_info = " & Image(instance_create_info.application_info) & LF &
@@ -129,7 +188,7 @@ package Vulkan.Core.Instance is
 private
 
     type Vk_Instance is record
-        instance : System.Address;
+        instance : System.Address := System.Null_Address;
     end record;
 
 end Vulkan.Core.Instance;

@@ -23,9 +23,10 @@
 ################################################################################
 # This Makefile is used to build, install, and update the VulkanAda library, as
 # well as to build its tests.
+#
+# For reference, gprbuild documentation can be found here:
+#     https://docs.adacore.com/gprbuild-docs/html/gprbuild_ug/building_with_gprbuild.html
 ################################################################################
-GLFWADA_GPR?=../GLFWAda/glfwada.gpr
-
 .PHONY: default samples
 
 default: samples vulkan
@@ -38,10 +39,10 @@ $(DIRS):
 
 vulkan: $(DIRS)
 	@echo "Building VulkanAda Library"
-	gprbuild -p vulkan.gpr
+	gprbuild -p vulkan.gpr -j0
 
 samples: $(DIRS) vulkan
-	gprbuild -p vulkan-test.gpr --implicit-with=$(GLFWADA_GPR)
+	gprbuild -p vulkan-test.gpr -j0
 	cp -r dependencies/windows/*.dll ./bin
 
 test: ./bin/vulkan_test-math.exe

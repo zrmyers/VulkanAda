@@ -22,14 +22,8 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
-with Ada.Characters.Latin_1;
-with Vulkan.Math.Mat2x4;
-with Vulkan.Math.Vec2;
 
 use Ada.Text_IO;
-use Ada.Characters.Latin_1;
-use Vulkan.Math.Mat2x4;
-use Vulkan.Math.Vec2;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Math Basic Types
@@ -70,7 +64,7 @@ begin
     is_failure := not (vec.x = value1 and
                        vec.y = value2);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    actual = " & vec.Image);
         Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & " ]");
@@ -94,7 +88,7 @@ begin
                        vec.y = value2 and
                        vec.z = value3);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    actual = " & vec.Image);
         Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & ", " & value3'Image & " ]");
@@ -119,7 +113,7 @@ begin
                        vec.z = value3 and
                        vec.w = value4);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    actual = " & vec.Image);
         Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & ", " & value3'Image & ", " & value4'Image & " ]");
@@ -144,7 +138,7 @@ begin
                        mat.c0r1 = value3 and
                        mat.c1r1 = value4);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -173,7 +167,7 @@ begin
                        abs(mat.c1r1 - value5) <= 0.000001 and
                        abs(mat.c2r1 - value6) <= 0.000001);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -205,7 +199,7 @@ begin
                        mat.c2r1 = value7 and
                        mat.c3r1 = value8);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -236,7 +230,7 @@ begin
                        mat.c0r2 = value5 and
                        mat.c1r2 = value6);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -271,7 +265,7 @@ begin
                        abs(mat.c1r2 - value8) <= 0.000001 and
                        abs(mat.c2r2 - value9) <= 0.000001);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -309,7 +303,7 @@ begin
                        mat.c2r2 = value11 and
                        mat.c3r2 = value12);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -344,7 +338,7 @@ begin
                        mat.c0r3 = value7 and
                        mat.c1r3 = value8);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -384,7 +378,7 @@ begin
                        mat.c1r3 = value11 and
                        mat.c2r3 = value12);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -428,7 +422,7 @@ begin
                        abs(mat.c2r3 - value15) < 0.000001 and
                        abs(mat.c3r3 - value16) < 0.000001);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -455,7 +449,7 @@ begin
     is_failure := not (vec.x = value1 and
                        vec.y = value2);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    actual = " & vec.Image);
         Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & " ]");
@@ -479,7 +473,7 @@ begin
                        vec.y = value2 and
                        vec.z = value3);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    actual = " & vec.Image);
         Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & ", " & value3'Image & " ]");
@@ -504,7 +498,7 @@ begin
                        vec.z = value3 and
                        vec.w = value4);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    actual = " & vec.Image);
         Put_Line("    expected = [ " & value1'Image & ", " & value2'Image & ", " & value3'Image & ", " & value4'Image & " ]");
@@ -529,7 +523,7 @@ begin
                        mat.c0r1 = value3 and
                        mat.c1r1 = value4);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -558,7 +552,7 @@ begin
                        mat.c1r1 = value5 and
                        mat.c2r1 = value6);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -590,7 +584,7 @@ begin
                        mat.c2r1 = value7 and
                        mat.c3r1 = value8);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -621,7 +615,7 @@ begin
                        mat.c0r2 = value5 and
                        mat.c1r2 = value6);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -656,7 +650,7 @@ begin
                        abs(mat.c1r2 - value8) < 0.000000000000001 and
                        abs(mat.c2r2 - value9) < 0.000000000000001);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -694,7 +688,7 @@ begin
                        mat.c2r2 = value11 and
                        mat.c3r2 = value12);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -729,7 +723,7 @@ begin
                        mat.c0r3 = value7 and
                        mat.c1r3 = value8);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -769,7 +763,7 @@ begin
                        mat.c1r3 = value11 and
                        mat.c2r3 = value12);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
@@ -813,7 +807,7 @@ begin
                        abs(mat.c2r3 - value15) < 0.000000000000001 and
                        abs(mat.c3r3 - value16) < 0.000000000000001);
 
-    if is_failure = True then
+    if is_failure then
         Put_Line("Assertion FAIL!");
         Put_Line("    Actual mat = " & mat.Image);
         Put_Line("    Expected mat = " &
