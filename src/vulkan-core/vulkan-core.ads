@@ -27,7 +27,7 @@ with Ada.Strings.Bounded;
 with Ada.Containers.Vectors;
 with Ada.Characters.Latin_1;
 with Interfaces.C;
-
+with System;
 --------------------------------------------------------------------------------
 --< @group Vulkan Core
 --------------------------------------------------------------------------------
@@ -42,6 +42,9 @@ package Vulkan.Core is
 
     --< Local definition of line feed.
     LF : constant String := "" & Ada.Characters.Latin_1.LF;
+
+    --< Type is a Vk_Object.
+    type Vk_Object is private;
 
     --< Vulkan Specification Major Version Number.
     type Vk_Spec_Major is mod (2 ** 10);
@@ -98,5 +101,12 @@ package Vulkan.Core is
 
     function Image(string_ref : in     Vk_String) return String is
         (To_String(string_ref));
+
+private
+
+
+    type Vk_Object is record
+        handle : System.Address := System.Null_Address;
+    end record;
 
 end Vulkan.Core;

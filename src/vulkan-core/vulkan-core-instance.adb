@@ -21,12 +21,12 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
 --------------------------------------------------------------------------------
-with Vulkan.Core.Vulkan_Core_H; use Vulkan.Core.Vulkan_Core_H;
-with stdint_h;                  use stdint_h;
-with Interfaces.C;              use Interfaces.C;
-with Interfaces.C.Strings;      use Interfaces.C.Strings;
-with Ada.Containers;            use Ada.Containers;
-with System;                    use System;
+with Vulkan.Core.Binding;  use Vulkan.Core.Binding;
+with stdint_h;             use stdint_h;
+with Interfaces.C;         use Interfaces.C;
+with Interfaces.C.Strings; use Interfaces.C.Strings;
+with Ada.Containers;       use Ada.Containers;
+with System;               use System;
 
 
 --------------------------------------------------------------------------------
@@ -43,6 +43,7 @@ package body Vulkan.Core.Instance is
 
     type Chars_Ptr_Array is array (Natural range <>) of Interfaces.C.Strings.chars_ptr;
 
+    type Vk_Physical_Device_Array is array (Natural range <>) of VkPhysicalDevice;
 
     --< Convert Extension properties to a type that is easier to use.
     function To_Vk_Extension_Properties(from : in     VkExtensionProperties)
@@ -69,7 +70,7 @@ package body Vulkan.Core.Instance is
         properties : in out Vk_Extension_Properties_Vector) is
 
         extension_count : aliased stdint_h.uint32_t := 0;
-        
+
         result : VkResult;
     begin
 
@@ -213,7 +214,7 @@ package body Vulkan.Core.Instance is
 
         result := vkCreateInstance(
             pCreateInfo => local_create_info'Address,
-            pInstance   => instance.instance'Address);
+            pInstance   => instance.handle'Address);
 
         if result /= VK_SUCCESS then
             raise VULKAN_ERROR with "Call to vkCreateInstance() failed with result " & result'Image;
@@ -227,11 +228,59 @@ package body Vulkan.Core.Instance is
 
     procedure Vk_Destroy_Instance(instance : in out Vk_Instance) is begin
 
-        vkDestroyInstance(vkInstance(instance.instance));
+        vkDestroyInstance(vkInstance(instance.handle));
 
-        instance.instance := System.Null_Address;
+        instance.handle := System.Null_Address;
 
     end Vk_Destroy_Instance;
+
+
+    ----------------------------------------------------------------------------
+
+
+    procedure Vk_Enumerate_Physical_Devices (
+        instance         : in     Vk_Instance;
+        physical_devices : in out Vk_Physical_Device_Vector) is
+
+        physical_device_count : aliased stdint_h.uint32_t := 0;
+        result : VkResult;
+
+    begin
+
+        result := vkEnumeratePhysicalDevices(
+            VkInstance(instance.handle),
+            physical_device_count'Access,
+            System.Null_Address);
+
+        if result = VK_SUCCESS and physical_device_count > 0 then
+            declare
+                physical_device_array : Vk_Physical_Device_Array(1 .. Natural(physical_device_count)) :=
+                    (others => <>);
+            begin
+
+                result := VkEnumeratePhysicalDevices(
+                    VkInstance(instance.handle),
+                    physical_device_count'Access,
+                    physical_device_array'Address);
+
+                if result = VK_SUCCESS then
+                    for index in 1 .. Natural(physical_device_count) loop
+                        declare
+                            physical_device : constant Vk_Physical_Device
+                                := (handle => System.Address(physical_device_array(index)));
+                        begin
+                            physical_devices.Append(physical_device);
+                        end;
+                    end loop;
+                end if;
+            end;
+        end if;
+
+        if result /= VK_SUCCESS then
+            raise VULKAN_ERROR with "Call to vkEnumeratePhysicalDevices() failed with result " & result'Image;
+        end if;
+
+    end Vk_Enumerate_Physical_Devices;
 
 
     ----------------------------------------------------------------------------

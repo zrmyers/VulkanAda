@@ -23,12 +23,13 @@
 --------------------------------------------------------------------------------
 with Ada.Text_IO;
 With Glfw;
-with Vulkan; use Vulkan;
+with Vulkan;                      use Vulkan;
 With Vulkan.Math.Mat4x4;
 with Vulkan.Math.Vec4;
-with Vulkan.Math.GenFMatrix; use Vulkan.Math.GenFMatrix;
-with Vulkan.Core.Instance;   use Vulkan.Core.Instance;
-with Vulkan.Core;            use Vulkan.Core;
+with Vulkan.Math.GenFMatrix;      use Vulkan.Math.GenFMatrix;
+with Vulkan.Core.Instance;        use Vulkan.Core.Instance;
+with Vulkan.Core.Physical_Device; use Vulkan.Core.Physical_Device;
+with Vulkan.Core;                 use Vulkan.Core;
 
 
 procedure Vulkan_Test.Triangle is
@@ -56,6 +57,8 @@ procedure Vulkan_Test.Triangle is
 
     instance : Vk_Instance;
 
+    physical_devices : Vk_Physical_Device_Vector;
+
 begin
     Ada.Text_IO.Put_Line("Initializing Window System");
 
@@ -82,8 +85,6 @@ begin
     end loop;
 
     Glfw.Get_Required_Instance_Extensions(required_extension_names);
-
-    required_extension_names.Append(Glfw.To_Bounded_String(To_String(VK_EXT_debug_utils)));
 
     for name of required_extension_names loop
 
@@ -152,6 +153,11 @@ begin
     -- Create an instance!
     instance := Vk_Create_Instance(create_info => instance_info);
 
+    -- Enumerating Physical Devices
+    Ada.Text_IO.Put_Line("Enumerating Physical Devices");
+    Vk_Enumerate_Physical_Devices(instance, physical_devices);
+
+    Ada.Text_IO.Put_Line("Enumerated " & physical_devices.Length'Image & " physical devices!");
     -- Main Loop
     Ada.Text_IO.Put_Line("Entering Main Loop");
 
