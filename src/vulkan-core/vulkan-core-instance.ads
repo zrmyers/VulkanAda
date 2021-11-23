@@ -22,7 +22,7 @@
 -- SOFTWARE.
 --------------------------------------------------------------------------------
 with Ada.Containers.Vectors;
-with System;
+with Vulkan.Core.Physical_Device; use Vulkan.Core.Physical_Device;
 
 --------------------------------------------------------------------------------
 --< @group Vulkan Core
@@ -39,7 +39,7 @@ package Vulkan.Core.Instance is
     VK_LAYER_KHRONOS_validation : constant Vk_String := To_Vk_String("VK_LAYER_KHRONOS_validation");
 
     --< A reference to the vkInstance type.
-    type Vk_Instance is private;
+    type Vk_Instance is new Vk_Object;
 
     --< This record describes extensions that can be supported by an instance of
     --< Vulkan on the platform on which it is being run.
@@ -140,7 +140,7 @@ package Vulkan.Core.Instance is
     --< The following exceptions can be raised by this operation:
     --<     VULKAN_ERROR
     ----------------------------------------------------------------------------
-    function Vk_Create_Instance(
+    function Vk_Create_Instance (
         create_info : in     Vk_Instance_Create_Info) return Vk_Instance;
 
 
@@ -155,39 +155,46 @@ package Vulkan.Core.Instance is
     --< The following exceptions can be raised by this operation:
     --<     VULKAN_ERROR
     ----------------------------------------------------------------------------
-    procedure Vk_Destroy_Instance(
+    procedure Vk_Destroy_Instance (
         instance : in out Vk_Instance);
+
+
+    ----------------------------------------------------------------------------
+    --< @brief
+    --< This operation enumerates all physical devices that can be used from the instance.
+    --<
+    --< @param physical_devices
+    --< A list of physical devices that were found by the Vulkan Instance.
+    --<
+    ----------------------------------------------------------------------------
+    procedure Vk_Enumerate_Physical_Devices (
+        instance         : in     Vk_Instance;
+        physical_devices : in out Vk_Physical_Device_Vector);
 
 
     ----------------------------------------------------------------------------
     --< @brief
     --< This operation converts the extension properties object to a human readable
     --< string.
-    function Image(property : in     Vk_Extension_Properties) return String is
+    function Image (property : in     Vk_Extension_Properties) return String is
         ("[ name = " & Image(property.name) & ", version = " & Image(property.version) & " ]") with inline;
 
-    function Image(property : in     Vk_Layer_Properties) return String is
+    function Image (property : in     Vk_Layer_Properties) return String is
         ("[ name = " & Image(property.name) &
          ", spec_version = " & Image(property.spec_version) &
          ", implementation_version = " & Image(property.implementation_version) &
          ", description = " & Image(property.description) & "]") with inline;
 
-    function Image(application_info :in     Vk_Application_Create_Info) return String is
+    function Image (application_info :in     Vk_Application_Create_Info) return String is
         ("[ application_name = "    & Image(application_info.application_name) & LF &
          ", application_version = " & Image(application_info.application_version) & LF &
          ", engine_name = "         & Image(application_info.engine_name) & LF &
          ", engine_version = "      & Image(application_info.engine_version) & LF &
          ", api_version = " & Image(application_info.api_version) & " ]") with inline;
 
-    function Image(instance_create_info : in     Vk_Instance_Create_Info) return String is
+    function Image (instance_create_info : in     Vk_Instance_Create_Info) return String is
         ("[ application_info = " & Image(instance_create_info.application_info) & LF &
          ", enabled_extension_names.Length = " & instance_create_info.enabled_extension_names.Length'Image & LF &
          ", enabled_layer_names.Length = "  & instance_create_info.enabled_layer_names.Length'Image & "]") with inline;
-
-private
-
-    type Vk_Instance is record
-        instance : System.Address := System.Null_Address;
-    end record;
 
 end Vulkan.Core.Instance;

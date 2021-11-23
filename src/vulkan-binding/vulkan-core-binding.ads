@@ -5,7 +5,7 @@ with crtdefs_h;
 with Interfaces.C.Strings;
 with Interfaces.C.Extensions;
 
-package Vulkan.vulkan_core_h is
+package Vulkan.Core.Binding is
     pragma Preelaborate;
 
    --  unsupported macro: VULKAN_CORE_H_ 1
@@ -3158,7 +3158,7 @@ package Vulkan.vulkan_core_h is
       implementationVersion : aliased stdint_h.uint32_t;  -- vulkan_core.h:2440
       description : aliased VkLayerProperties_description_array;  -- vulkan_core.h:2441
    end record;
-   pragma Convention (C_Pass_By_Copy, VkLayerProperties);  -- vulkan_core.h:2437
+   pragma Convention (C, VkLayerProperties);  -- vulkan_core.h:2437
 
    type VkSubmitInfo is record
       sType : aliased VkStructureType;  -- vulkan_core.h:2445
@@ -4853,7 +4853,7 @@ package Vulkan.vulkan_core_h is
       pInstance : System.Address) return VkResult;  -- vulkan_core.h:3281
    pragma Import (C, vkCreateInstance, "vkCreateInstance");
 
-   procedure vkDestroyInstance (instance : VkInstance; pAllocator : System.Address);  -- vulkan_core.h:3286
+   procedure vkDestroyInstance (instance : VkInstance; pAllocator : System.Address := System.Null_Address);  -- vulkan_core.h:3286
    pragma Import (C, vkDestroyInstance, "vkDestroyInstance");
 
    function vkEnumeratePhysicalDevices
@@ -14873,4 +14873,4 @@ package Vulkan.vulkan_core_h is
    end record;
    pragma Convention (C_Pass_By_Copy, VkPhysicalDeviceRayQueryFeaturesKHR);  -- vulkan_core.h:12173
 
-end Vulkan.vulkan_core_h;
+end Vulkan.Core.Binding;
